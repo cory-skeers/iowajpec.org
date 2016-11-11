@@ -1,0 +1,13 @@
+.large-text {
+  @include fontsize(1.375);
+  font-family: BlenderProMedium;
+
+  @include breakpoint($bp-font-size-medium) {
+    @include fontsize(1.5625);
+  }
+
+  @include breakpoint($bp-font-size-large) {
+    @include fontsize(1.875);
+    margin-bottom: 40px;
+  }
+}

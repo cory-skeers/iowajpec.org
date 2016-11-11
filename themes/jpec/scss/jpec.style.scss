@@ -1,0 +1,111 @@
+// @file
+// SASS partials import
+// -----------------------------------------------------------------------------
+
+// Bootstrap global partials.
+// -----------------------------------------------------------------------------
+@import "base/variables";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Bootswatch partial
+// -----------------------------------------------------------------------------
+@import "bootswatch/variables";
+
+// Compass mixins for backward compatibility.
+// -----------------------------------------------------------------------------
+@import "compass";
+
+// jpec global partials.
+// -----------------------------------------------------------------------------
+@import "breakpoint";
+@import "radix/mixins";
+
+// Bootstrap reset and dependencies
+// -----------------------------------------------------------------------------
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+@import "bootstrap/glyphicons";
+
+// Bootstrap core
+// -----------------------------------------------------------------------------
+@import "bootstrap/scaffolding";
+@import "bootstrap/type";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+
+// Bootstrap components
+// -----------------------------------------------------------------------------
+@import "bootstrap/component-animations";
+@import "bootstrap/dropdowns";
+@import "bootstrap/button-groups";
+@import "bootstrap/input-groups";
+@import "bootstrap/navs";
+@import "bootstrap/navbar";
+@import "bootstrap/breadcrumbs";
+@import "bootstrap/pagination";
+@import "bootstrap/pager";
+@import "bootstrap/labels";
+@import "bootstrap/badges";
+@import "bootstrap/jumbotron";
+@import "bootstrap/thumbnails";
+@import "bootstrap/alerts";
+@import "bootstrap/progress-bars";
+@import "bootstrap/media";
+@import "bootstrap/list-group";
+@import "bootstrap/panels";
+@import "bootstrap/responsive-embed";
+@import "bootstrap/wells";
+@import "bootstrap/close";
+
+// Bootstrap components w/ JavaScript
+// -----------------------------------------------------------------------------
+@import "bootstrap/modals";
+@import "bootstrap/tooltip";
+@import "bootstrap/popovers";
+@import "bootstrap/carousel";
+
+// Bootstrap utility classes
+// -----------------------------------------------------------------------------
+@import "bootstrap/utilities";
+@import "bootstrap/responsive-utilities";
+
+// FontAwesome
+// -----------------------------------------------------------------------------
+@import "font-awesome";
+
+// Bootswatch
+// -----------------------------------------------------------------------------
+@import "bootswatch/bootswatch";
+
+// Radix styles overrides and fixes.
+// -----------------------------------------------------------------------------
+@import "radix/admin";
+@import "radix/comment";
+@import "radix/form";
+@import "radix/layout";
+@import "radix/maintenance";
+@import "radix/modal";
+@import "radix/nav";
+@import "radix/node";
+@import "radix/panel";
+@import "radix/structure";
+@import "radix/view";
+
+// jpec partials
+// --------------------------------------------------
+@import "jpec/variables/**/*";
+@import "jpec/mixins/**/*";
+@import "jpec/typography/**/*";
+@import "jpec/media/**/*";
+@import "jpec/components/**/*";
+@import "jpec/entities/**/*";
+@import "jpec/navigation/**/*";
+@import "jpec/paragraphs/**/*";
+@import "jpec/header";
+@import "jpec/footer";
+@import "jpec/page";
+@import "jpec/front";

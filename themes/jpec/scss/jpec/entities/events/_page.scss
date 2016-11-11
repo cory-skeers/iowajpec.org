@@ -1,0 +1,14 @@
+.uiowa-events-add-link {
+  @extend .primary-button;
+  display: table;
+
+  @include breakpoint($tippie-sm-min) {
+    margin-top: 10px;
+    float: right;
+  }
+}
+.uiowa-events-page, .page-event #uiowa-event {
+  ul, ol {
+    margin-left: 1.2rem;
+  }
+}

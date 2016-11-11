@@ -1,0 +1,16 @@
+.primary-button {
+  background-color: $primary_button;
+  color: $primary_button_text;
+  font-family: FranklinGothicDemi;
+  padding: 1em 2em;
+  display: inline-block;
+
+  &:hover, &:active {
+    background-color: $dark_orange;
+    text-decoration: none;
+    color: $primary_button_text;
+  }
+  &:visited {
+    color: $primary_button_text;
+  }
+}

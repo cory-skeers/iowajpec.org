@@ -1,0 +1,39 @@
+// Text alignment.
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-justify {
+  text-align: justify;
+}
+
+.pull-left {
+  margin-bottom: 2em;
+  margin-right: 2em;
+}
+
+.pull-right {
+  margin-bottom: 2em;
+  margin-left: 2em;
+}
+
+.hidden {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}

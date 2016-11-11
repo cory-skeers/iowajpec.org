@@ -1,0 +1,24 @@
+.card-wrapper {
+  background-color: $light_grey;
+  margin-bottom: 1%;
+}
+
+.card-body {
+  padding: 1.3rem;
+  h3 {
+    //padding-top: 1rem;
+  }
+}
+
+.card-header {
+  background-color: $gold;
+  font-family: FranklinGothicDemi;
+  padding: 0.6rem 1.3rem;
+}
+
+.card-title {
+  @include fontsize(1.5625);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: FranklinGothicBook;
+}

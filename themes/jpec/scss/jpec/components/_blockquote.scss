@@ -1,0 +1,21 @@
+blockquote {
+  font-family: BlenderProMedium;
+  font-size: 1.2rem;
+
+  border: none;
+  display: table;
+  
+  padding: 0.5em 2em 0.5em 1em;
+  margin: 0.5rem;
+  
+  background: linear-gradient(-45deg,  transparent 50%, $gold 50%) bottom left;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 3em 3em;
+  min-height: 3.5em;  
+
+  @include breakpoint($bp-font-size-medium) {
+    @include fontsize(1.5625);
+	margin: 1rem 2rem;
+  }
+}
