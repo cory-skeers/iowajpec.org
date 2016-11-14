@@ -109,49 +109,4 @@ function jpec_core_update_7004() {
   if (!module_exists('menu_block')) {
     module_enable(array('menu_block'));
   }
-
-  // Determine the delta of the new block.
-  $block_ids = variable_get('menu_block_ids', array());
-  $delta = empty($block_ids) ? 1 : max($block_ids) + 1;
-  $form_state['values']['delta'] = $delta;
-
-  // Save the delta so we can get this block later.
-  variable_set('jpec_core_sidebar_menu_delta', $delta);
-
-  // Save the new array of blocks IDs.
-  $block_ids[] = $delta;
-  variable_set('menu_block_ids', $block_ids);
-
-  // Save the block configuration.
-  variable_set("menu_block_{$delta}_title_link", 1);
-  variable_set("menu_block_{$delta}_admin_title", 'Main menu (levels 2+)');
-  variable_set("menu_block_{$delta}_parent", 'main-menu:0');
-  variable_set("menu_block_{$delta}_level", '1');
-  variable_set("menu_block_{$delta}_follow", 'active');
-  variable_set("menu_block_{$delta}_depth", '2');
-  variable_set("menu_block_{$delta}_depth_relative", 1);
-  variable_set("menu_block_{$delta}_expanded", 1);
-  variable_set("menu_block_{$delta}_sort", 0);
-
-  // Run the normal new block submission.
-  $query = db_insert('block')->fields(array('visibility', 'pages', 'custom', 'title', 'module', 'theme', 'region', 'status', 'weight', 'delta', 'cache'));
-  foreach (list_themes() as $key => $theme) {
-    if ($theme->status) {
-      $query->values(array(
-        'visibility' => 0,
-        'pages' => '',
-        'custom' => 0,
-        'title' => '',
-        'module' => 'menu_block',
-        'theme' => $theme->name,
-        'region' => BLOCK_REGION_NONE,
-        'status' => 0,
-        'status' => 0,
-        'weight' => 0,
-        'delta' => $delta,
-        'cache' => DRUPAL_NO_CACHE,
-      ));
-    }
-  }
-  $query->execute();
 }
