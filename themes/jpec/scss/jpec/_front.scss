@@ -25,7 +25,7 @@ $love-it-background: $light_grey;
     }
   }
 
-  h2 {
+  .main h2 {
     @include fontsize(2.7);
     text-transform: uppercase;
     font-family: BlenderProMedium;

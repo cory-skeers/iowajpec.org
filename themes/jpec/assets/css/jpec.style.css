@@ -1141,7 +1141,7 @@ hr {
   cursor: pointer; }
 
 h1, h2, h3, .page-program-finder .view-header, h4, h5, h6,
-.h1, .h2, .modal-title, .h3, .h4, .node-department-full .department-contact-wrapper h3, .node-department-full .department-contact-wrapper .page-program-finder .view-header, .page-program-finder .node-department-full .department-contact-wrapper .view-header, .field-name-field-org-contact-name .field-item, .node-person-teaser h3, .node-person-teaser .page-program-finder .view-header, .page-program-finder .node-person-teaser .view-header, .h5, .page-event .event-time, .page-event .event-location, .h6 {
+.h1, .h2, .modal-title, .h3, .h4, .node-department-full .department-contact-wrapper h3, .node-department-full .department-contact-wrapper .page-program-finder .view-header, .page-program-finder .node-department-full .department-contact-wrapper .view-header, .field-name-field-org-contact-name .field-item, .node-person-teaser h3, .node-person-teaser .page-program-finder .view-header, .page-program-finder .node-person-teaser .view-header, .h5, .h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
@@ -1157,8 +1157,8 @@ h1, h2, h3, .page-program-finder .view-header, h4, h5, h6,
   .h1 .small, .h2 small, .modal-title small,
   .h2 .small, .modal-title .small, .h3 small,
   .h3 .small, .h4 small, .node-department-full .department-contact-wrapper h3 small, .node-department-full .department-contact-wrapper .page-program-finder .view-header small, .page-program-finder .node-department-full .department-contact-wrapper .view-header small, .field-name-field-org-contact-name .field-item small, .node-person-teaser h3 small, .node-person-teaser .page-program-finder .view-header small, .page-program-finder .node-person-teaser .view-header small,
-  .h4 .small, .node-department-full .department-contact-wrapper h3 .small, .node-department-full .department-contact-wrapper .page-program-finder .view-header .small, .page-program-finder .node-department-full .department-contact-wrapper .view-header .small, .field-name-field-org-contact-name .field-item .small, .node-person-teaser h3 .small, .node-person-teaser .page-program-finder .view-header .small, .page-program-finder .node-person-teaser .view-header .small, .h5 small, .page-event .event-time small, .page-event .event-location small,
-  .h5 .small, .page-event .event-time .small, .page-event .event-location .small, .h6 small,
+  .h4 .small, .node-department-full .department-contact-wrapper h3 .small, .node-department-full .department-contact-wrapper .page-program-finder .view-header .small, .page-program-finder .node-department-full .department-contact-wrapper .view-header .small, .field-name-field-org-contact-name .field-item .small, .node-person-teaser h3 .small, .node-person-teaser .page-program-finder .view-header .small, .page-program-finder .node-person-teaser .view-header .small, .h5 small,
+  .h5 .small, .h6 small,
   .h6 .small {
     font-weight: normal;
     line-height: 1;
@@ -1182,7 +1182,7 @@ h3,
     font-size: 65%; }
 
 h4, .h4, .node-department-full .department-contact-wrapper h3, .node-department-full .department-contact-wrapper .page-program-finder .view-header, .page-program-finder .node-department-full .department-contact-wrapper .view-header, .field-name-field-org-contact-name .field-item, .node-person-teaser h3, .node-person-teaser .page-program-finder .view-header, .page-program-finder .node-person-teaser .view-header,
-h5, .h5, .page-event .event-time, .page-event .event-location,
+h5, .h5,
 h6, .h6 {
   margin-top: 10px;
   margin-bottom: 10px; }
@@ -1190,8 +1190,8 @@ h6, .h6 {
   h4 .small, .h4 small, .node-department-full .department-contact-wrapper h3 small, .node-department-full .department-contact-wrapper .page-program-finder .view-header small, .page-program-finder .node-department-full .department-contact-wrapper .view-header small, .field-name-field-org-contact-name .field-item small, .node-person-teaser h3 small, .node-person-teaser .page-program-finder .view-header small, .page-program-finder .node-person-teaser .view-header small,
   .h4 .small, .node-department-full .department-contact-wrapper h3 .small, .node-department-full .department-contact-wrapper .page-program-finder .view-header .small, .page-program-finder .node-department-full .department-contact-wrapper .view-header .small, .field-name-field-org-contact-name .field-item .small, .node-person-teaser h3 .small, .node-person-teaser .page-program-finder .view-header .small, .page-program-finder .node-person-teaser .view-header .small,
   h5 small,
-  h5 .small, .h5 small, .page-event .event-time small, .page-event .event-location small,
-  .h5 .small, .page-event .event-time .small, .page-event .event-location .small,
+  h5 .small, .h5 small,
+  .h5 .small,
   h6 small,
   h6 .small, .h6 small,
   .h6 .small {
@@ -1209,7 +1209,7 @@ h3, .page-program-finder .view-header, .h3 {
 h4, .h4, .node-department-full .department-contact-wrapper h3, .node-department-full .department-contact-wrapper .page-program-finder .view-header, .page-program-finder .node-department-full .department-contact-wrapper .view-header, .field-name-field-org-contact-name .field-item, .node-person-teaser h3, .node-person-teaser .page-program-finder .view-header, .page-program-finder .node-person-teaser .view-header {
   font-size: 18px; }
 
-h5, .h5, .page-event .event-time, .page-event .event-location {
+h5, .h5 {
   font-size: 14px; }
 
 h6, .h6 {
@@ -5666,7 +5666,7 @@ button.close {
   overflow: hidden;
   text-align: left; }
 
-.hidden, .page-news .views-exposed-form .views-widget-filter-combine label, .page-people .views-exposed-form .views-widget-filter-combine label, .page-people .views-exposed-form .views-exposed-widget label, .page-program-finder .views-exposed-form label, .page-research .views-exposed-form label, .front .pane-views-exp-programs-explore-programs .views-exposed-form label {
+.hidden, .page-news .views-exposed-form .views-widget-filter-combine label, .page-people .views-exposed-form .views-widget-filter-combine label, .page-people .views-exposed-form .views-exposed-widget label, .page-program-finder .views-exposed-form label, .front .pane-views-exp-programs-explore-programs .views-exposed-form label {
   display: none !important; }
 
 .affix {
@@ -8747,11 +8747,11 @@ h4, .h4, .node-department-full .department-contact-wrapper h3, .node-department-
     h4, .h4, .node-department-full .department-contact-wrapper h3, .node-department-full .department-contact-wrapper .page-program-finder .view-header, .page-program-finder .node-department-full .department-contact-wrapper .view-header, .field-name-field-org-contact-name .field-item, .node-person-teaser h3, .node-person-teaser .page-program-finder .view-header, .page-program-finder .node-person-teaser .view-header {
       font-size: 1.5625rem; } }
 
-h5, .h5, .page-event .event-time, .page-event .event-location {
+h5, .h5 {
   font-family: FranklinGothicMedium;
   font-size: 1.1875rem; }
   @media (min-width: 1200px) {
-    h5, .h5, .page-event .event-time, .page-event .event-location {
+    h5, .h5 {
       font-size: 1.3125rem; } }
 
 h6, .h6 {
@@ -8767,14 +8767,14 @@ a {
   color: #0098D9; }
   .background-gold a {
     color: #006382; }
-  .background-gold a.primary-button, .background-gold a.btn-primary, .background-gold body.maintenance-page .form-actions a.btn:first-child, body.maintenance-page .form-actions .background-gold a.btn:first-child, .background-gold body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .background-gold .media-widget > a:first-child, .background-gold a.cta-button, .background-gold a.uiowa-events-add-link, .background-gold .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .background-gold a, .background-gold .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .background-gold a, .background-gold .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .background-gold a, .background-gold .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .background-gold a {
+  .background-gold a.primary-button, .background-gold a.btn-primary, .background-gold body.maintenance-page .form-actions a.btn:first-child, body.maintenance-page .form-actions .background-gold a.btn:first-child, .background-gold body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .background-gold .media-widget > a:first-child, .background-gold a.cta-button, .background-gold .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .background-gold a, .background-gold .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .background-gold a, .background-gold .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .background-gold a, .background-gold .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .background-gold a {
     color: #FFFFFF; }
   a:hover, a:focus {
     color: #E55500;
     text-decoration: none; }
     .background-gold a:hover, .background-gold a:focus {
       color: #A43602; }
-    .background-gold a:hover.primary-button, .background-gold a.btn-primary:hover, .background-gold body.maintenance-page .form-actions a.btn:hover:first-child, body.maintenance-page .form-actions .background-gold a.btn:hover:first-child, .background-gold body.maintenance-page .form-actions .media-widget > a:hover:first-child, body.maintenance-page .form-actions .background-gold .media-widget > a:hover:first-child, .background-gold a.cta-button:hover, .background-gold a.uiowa-events-add-link:hover, .background-gold .node-factoid-card .field-name-field-factoid-source a:hover, .node-factoid-card .field-name-field-factoid-source .background-gold a:hover, .background-gold .node-factoid-full .field-name-field-factoid-source a:hover, .node-factoid-full .field-name-field-factoid-source .background-gold a:hover, .background-gold .node-factoid-teaser .field-name-field-factoids-link a:hover, .node-factoid-teaser .field-name-field-factoids-link .background-gold a:hover, .background-gold .view-display-id-story_card_pane .views-field-view-node a:hover, .view-display-id-story_card_pane .views-field-view-node .background-gold a:hover, .background-gold a:focus.primary-button, .background-gold a.btn-primary:focus, .background-gold body.maintenance-page .form-actions a.btn:focus:first-child, body.maintenance-page .form-actions .background-gold a.btn:focus:first-child, .background-gold body.maintenance-page .form-actions .media-widget > a:focus:first-child, body.maintenance-page .form-actions .background-gold .media-widget > a:focus:first-child, .background-gold a.cta-button:focus, .background-gold a.uiowa-events-add-link:focus, .background-gold .node-factoid-card .field-name-field-factoid-source a:focus, .node-factoid-card .field-name-field-factoid-source .background-gold a:focus, .background-gold .node-factoid-full .field-name-field-factoid-source a:focus, .node-factoid-full .field-name-field-factoid-source .background-gold a:focus, .background-gold .node-factoid-teaser .field-name-field-factoids-link a:focus, .node-factoid-teaser .field-name-field-factoids-link .background-gold a:focus, .background-gold .view-display-id-story_card_pane .views-field-view-node a:focus, .view-display-id-story_card_pane .views-field-view-node .background-gold a:focus {
+    .background-gold a:hover.primary-button, .background-gold a.btn-primary:hover, .background-gold body.maintenance-page .form-actions a.btn:hover:first-child, body.maintenance-page .form-actions .background-gold a.btn:hover:first-child, .background-gold body.maintenance-page .form-actions .media-widget > a:hover:first-child, body.maintenance-page .form-actions .background-gold .media-widget > a:hover:first-child, .background-gold a.cta-button:hover, .background-gold .node-factoid-card .field-name-field-factoid-source a:hover, .node-factoid-card .field-name-field-factoid-source .background-gold a:hover, .background-gold .node-factoid-full .field-name-field-factoid-source a:hover, .node-factoid-full .field-name-field-factoid-source .background-gold a:hover, .background-gold .node-factoid-teaser .field-name-field-factoids-link a:hover, .node-factoid-teaser .field-name-field-factoids-link .background-gold a:hover, .background-gold .view-display-id-story_card_pane .views-field-view-node a:hover, .view-display-id-story_card_pane .views-field-view-node .background-gold a:hover, .background-gold a:focus.primary-button, .background-gold a.btn-primary:focus, .background-gold body.maintenance-page .form-actions a.btn:focus:first-child, body.maintenance-page .form-actions .background-gold a.btn:focus:first-child, .background-gold body.maintenance-page .form-actions .media-widget > a:focus:first-child, body.maintenance-page .form-actions .background-gold .media-widget > a:focus:first-child, .background-gold a.cta-button:focus, .background-gold .node-factoid-card .field-name-field-factoid-source a:focus, .node-factoid-card .field-name-field-factoid-source .background-gold a:focus, .background-gold .node-factoid-full .field-name-field-factoid-source a:focus, .node-factoid-full .field-name-field-factoid-source .background-gold a:focus, .background-gold .node-factoid-teaser .field-name-field-factoids-link a:focus, .node-factoid-teaser .field-name-field-factoids-link .background-gold a:focus, .background-gold .view-display-id-story_card_pane .views-field-view-node a:focus, .view-display-id-story_card_pane .views-field-view-node .background-gold a:focus {
       color: #FFFFFF; }
 
 table {
@@ -8849,7 +8849,7 @@ img {
   margin-bottom: 2em;
   margin-left: 2em; }
 
-.hidden, .page-news .views-exposed-form .views-widget-filter-combine label, .page-people .views-exposed-form .views-widget-filter-combine label, .page-people .views-exposed-form .views-exposed-widget label, .page-program-finder .views-exposed-form label, .page-research .views-exposed-form label, .front .pane-views-exp-programs-explore-programs .views-exposed-form label {
+.hidden, .page-news .views-exposed-form .views-widget-filter-combine label, .page-people .views-exposed-form .views-widget-filter-combine label, .page-people .views-exposed-form .views-exposed-widget label, .page-program-finder .views-exposed-form label, .front .pane-views-exp-programs-explore-programs .views-exposed-form label {
   position: absolute;
   left: -10000px;
   top: auto;
@@ -8917,30 +8917,30 @@ blockquote {
       font-size: 1.5625rem;
       margin: 1rem 2rem; } }
 
-.primary-button, .btn-primary, body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .media-widget > a:first-child, .page-google-search .cse input.gsc-search-button, .page-google-search input.gsc-search-button, .cta-button, .uiowa-events-add-link, .node-factoid-card .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source a, .node-factoid-teaser .field-name-field-factoids-link a, .view-display-id-story_card_pane .views-field-view-node a {
+.primary-button, .btn-primary, body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .media-widget > a:first-child, .page-google-search .cse input.gsc-search-button, .page-google-search input.gsc-search-button, .cta-button, .node-factoid-card .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source a, .node-factoid-teaser .field-name-field-factoids-link a, .view-display-id-story_card_pane .views-field-view-node a {
   background-color: #FE5E00;
   color: #FFFFFF;
   font-family: FranklinGothicDemi;
   padding: 1em 2em;
   display: inline-block; }
-  .primary-button:hover, .btn-primary:hover, body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions .media-widget > a:hover:first-child, .page-google-search input.gsc-search-button:hover, .cta-button:hover, .uiowa-events-add-link:hover, .node-factoid-card .field-name-field-factoid-source a:hover, .node-factoid-full .field-name-field-factoid-source a:hover, .node-factoid-teaser .field-name-field-factoids-link a:hover, .view-display-id-story_card_pane .views-field-view-node a:hover, .primary-button:active, .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .media-widget > a:active:first-child, .page-google-search input.gsc-search-button:active, .cta-button:active, .uiowa-events-add-link:active, .node-factoid-card .field-name-field-factoid-source a:active, .node-factoid-full .field-name-field-factoid-source a:active, .node-factoid-teaser .field-name-field-factoids-link a:active, .view-display-id-story_card_pane .views-field-view-node a:active {
+  .primary-button:hover, .btn-primary:hover, body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions .media-widget > a:hover:first-child, .page-google-search input.gsc-search-button:hover, .cta-button:hover, .node-factoid-card .field-name-field-factoid-source a:hover, .node-factoid-full .field-name-field-factoid-source a:hover, .node-factoid-teaser .field-name-field-factoids-link a:hover, .view-display-id-story_card_pane .views-field-view-node a:hover, .primary-button:active, .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .media-widget > a:active:first-child, .page-google-search input.gsc-search-button:active, .cta-button:active, .node-factoid-card .field-name-field-factoid-source a:active, .node-factoid-full .field-name-field-factoid-source a:active, .node-factoid-teaser .field-name-field-factoids-link a:active, .view-display-id-story_card_pane .views-field-view-node a:active {
     background-color: #E55500;
     text-decoration: none;
     color: #FFFFFF; }
-  .primary-button:visited, .btn-primary:visited, body.maintenance-page .form-actions .btn:visited:first-child, body.maintenance-page .form-actions .media-widget > a:visited:first-child, .page-google-search input.gsc-search-button:visited, .cta-button:visited, .uiowa-events-add-link:visited, .node-factoid-card .field-name-field-factoid-source a:visited, .node-factoid-full .field-name-field-factoid-source a:visited, .node-factoid-teaser .field-name-field-factoids-link a:visited, .view-display-id-story_card_pane .views-field-view-node a:visited {
+  .primary-button:visited, .btn-primary:visited, body.maintenance-page .form-actions .btn:visited:first-child, body.maintenance-page .form-actions .media-widget > a:visited:first-child, .page-google-search input.gsc-search-button:visited, .cta-button:visited, .node-factoid-card .field-name-field-factoid-source a:visited, .node-factoid-full .field-name-field-factoid-source a:visited, .node-factoid-teaser .field-name-field-factoids-link a:visited, .view-display-id-story_card_pane .views-field-view-node a:visited {
     color: #FFFFFF; }
 
 .card-wrapper, .node-department-full .field-name-field-department-highlight > .field-items > .field-item,
-.node-department-full .field-name-field-department-program > .field-items > .field-item, .page-taxonomy-term .views-row, .field-name-field-program-offerings > .field-items > .field-item, .page-program-finder .view-content .views-row, .page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item {
+.node-department-full .field-name-field-department-program > .field-items > .field-item, .field-name-field-program-offerings > .field-items > .field-item, .page-program-finder .view-content .views-row, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item {
   background-color: #EBE7E3;
   margin-bottom: 1%; }
 
-.card-body, .node-factoid-card .card-description-wrapper, .node-factoid-full .card-description-wrapper, .node-generic_block-card .card-description-wrapper, .page-program-finder .view-content .views-row, .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title, .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-field-publication-publish, .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title-1, .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item, .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper
+.card-body, .node-factoid-card .card-description-wrapper, .node-factoid-full .card-description-wrapper, .node-generic_block-card .card-description-wrapper, .page-program-finder .view-content .views-row, .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item, .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper
 .node-department-full .field-name-field-department-program > .field-items > .field-item,
-.node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .views-row, .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .views-row, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row, .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .view-content > .views-row, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-generic_block-card .card-description-wrapper, .node-generic_block-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-program-finder .view-content .views-row, .page-program-finder .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title, .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-field-title, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-field-publication-publish, .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-field-field-publication-publish, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title-1, .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-field-title-1, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .views-row, .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .views-row, .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row, .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-content > .views-row, .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-content > .views-row {
+.node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-generic_block-card .card-description-wrapper, .node-generic_block-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-program-finder .view-content .views-row, .page-program-finder .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-wrapper {
   padding: 1.3rem; }
 
-.card-header, .node-factoid-card .field-name-field-factoid-type, .node-factoid-full .field-name-field-factoid-type, .node-generic_block-card .field-name-field-generic-header, .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-field-person-primary-dept, .view-display-id-story_card_pane .views-field-field-profile-category, .paragraphs-item-social .content .social-card .field-label {
+.card-header, .node-factoid-card .field-name-field-factoid-type, .node-factoid-full .field-name-field-factoid-type, .node-generic_block-card .field-name-field-generic-header, .view-display-id-story_card_pane .views-field-field-profile-category, .paragraphs-item-social .content .social-card .field-label {
   background-color: #FFCD00;
   font-family: FranklinGothicDemi;
   padding: 0.6rem 1.3rem; }
@@ -8951,7 +8951,7 @@ blockquote {
 .node-department-full .field-name-field-department-highlight .view-header,
 .node-department-full .field-name-field-department-program h3,
 .node-department-full .field-name-field-department-program .page-program-finder .view-header, .page-program-finder
-.node-department-full .field-name-field-department-program .view-header, .node-generic_block-card .node-title, .page-taxonomy-term h3.node-title, .page-taxonomy-term .page-program-finder .node-title.view-header, .page-program-finder .page-taxonomy-term .node-title.view-header, .page-program-finder .view-content .views-field-title, .view-display-id-story_card_pane .views-field-title {
+.node-department-full .field-name-field-department-program .view-header, .node-generic_block-card .node-title, .page-program-finder .view-content .views-field-title, .view-display-id-story_card_pane .views-field-title {
   font-size: 1.5625rem;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -9861,104 +9861,6 @@ table.table-condensed th, table.table-condensed td {
       width: 31%;
       margin: 10px; } }
 
-.uiowa-events-add-link {
-  display: table; }
-  @media (min-width: 768px) {
-    .uiowa-events-add-link {
-      margin-top: 10px;
-      float: right; } }
-
-.uiowa-events-page ul, .uiowa-events-page ol, .page-event #uiowa-event ul, .page-event #uiowa-event ol {
-  margin-left: 1.2rem; }
-
-.page-event .page-header .header-content {
-  background: none;
-  margin-left: 0;
-  padding-left: 0;
-  padding-right: 0;
-  width: 100%; }
-
-.page-event h1 {
-  text-transform: capitalize;
-  font-size: 2rem;
-  border-bottom: solid 2px #56565A;
-  padding-bottom: 1.5rem; }
-
-.page-event #uiowa-event {
-  margin-bottom: 3rem;
-  display: block; }
-
-.page-event img {
-  margin-bottom: 1rem;
-  max-width: 100%; }
-  @media (min-width: 992px) {
-    .page-event img {
-      float: right;
-      margin-left: 1.5rem; } }
-
-.page-event .event-time, .page-event .event-location {
-  margin-bottom: 1rem; }
-
-.page-event .event-address {
-  font-family: FranklinGothicMedium;
-  margin-bottom: 1rem; }
-
-.date-string {
-  font-family: FranklinGothicDemi;
-  margin-bottom: 0.5rem; }
-
-.uiowa-event p + ul, .uiowa-event p + ol {
-  margin-top: 0; }
-
-.uiowa-events-add-link {
-  display: table; }
-  @media (min-width: 768px) {
-    .uiowa-events-add-link {
-      margin-top: 10px;
-      float: right; } }
-
-.uiowa-events-page ul, .uiowa-events-page ol, .page-event #uiowa-event ul, .page-event #uiowa-event ol {
-  margin-left: 1.2rem; }
-
-.page-event .page-header .header-content {
-  background: none;
-  margin-left: 0;
-  padding-left: 0;
-  padding-right: 0;
-  width: 100%; }
-
-.page-event h1 {
-  text-transform: capitalize;
-  font-size: 2rem;
-  border-bottom: solid 2px #56565A;
-  padding-bottom: 1.5rem; }
-
-.page-event #uiowa-event {
-  margin-bottom: 3rem;
-  display: block; }
-
-.page-event img {
-  margin-bottom: 1rem;
-  max-width: 100%; }
-  @media (min-width: 992px) {
-    .page-event img {
-      float: right;
-      margin-left: 1.5rem; } }
-
-.page-event .event-time, .page-event .event-location {
-  margin-bottom: 1rem; }
-
-.page-event .event-address {
-  font-family: FranklinGothicMedium;
-  margin-bottom: 1rem; }
-
-.date-string {
-  font-family: FranklinGothicDemi;
-  margin-bottom: 0.5rem; }
-
-.uiowa-event p + ul, .uiowa-event p + ol {
-  margin-top: 0; }
-
 .node-factoid-card .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source a {
   font-size: 0.9rem;
   padding: 0.6em 1.8em;
@@ -10056,130 +9958,6 @@ table.table-condensed th, table.table-condensed td {
     font-size: 1.2rem;
     line-height: 1;
     color: #FFFFFF; }
-
-.page-jobs h3, .page-jobs .page-program-finder .view-header, .page-program-finder .page-jobs .view-header {
-  text-transform: lowercase;
-  text-transform: capitalize !important; }
-
-.page-jobs h2 {
-  margin-top: 2rem; }
-  .page-jobs h2:nth-child(1) {
-    margin-top: 0; }
-
-.page-jobs .views-row {
-  margin-top: 3rem; }
-  .page-jobs .views-row p {
-    margin-bottom: 0.7rem; }
-    .page-jobs .views-row p b {
-      font-family: FranklinGothicDemi;
-      font-weight: normal; }
-  .page-jobs .views-row br + br {
-    display: none; }
-
-.page-jobs h3, .page-jobs .page-program-finder .view-header, .page-program-finder .page-jobs .view-header {
-  text-transform: lowercase;
-  text-transform: capitalize !important; }
-
-.page-jobs h2 {
-  margin-top: 2rem; }
-  .page-jobs h2:nth-child(1) {
-    margin-top: 0; }
-
-.page-jobs .views-row {
-  margin-top: 3rem; }
-  .page-jobs .views-row p {
-    margin-bottom: 0.7rem; }
-    .page-jobs .views-row p b {
-      font-family: FranklinGothicDemi;
-      font-weight: normal; }
-  .page-jobs .views-row br + br {
-    display: none; }
-
-.page-locations .views-field-description {
-  margin-top: 1.6rem; }
-
-@media (min-width: 768px) {
-  .page-locations .view-content {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-right: -30px; }
-    .page-locations .view-content .views-row {
-      -moz-flex: 0 0 43%;
-      -ms-flex: 0 0 43%;
-      flex: 0 0 43%;
-      margin: 10px 30px; } }
-
-.page-taxonomy-term .term-listing {
-  padding: 1rem; }
-
-.page-taxonomy-term h3.node-title, .page-taxonomy-term .page-program-finder .node-title.view-header, .page-program-finder .page-taxonomy-term .node-title.view-header {
-  margin-bottom: 0.5rem; }
-
-@media (min-width: 768px) {
-  .page-taxonomy-term .view-content {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px; }
-    .page-taxonomy-term .view-content .views-row {
-      -moz-flex: 0 0 31.3%;
-      -ms-flex: 0 0 31.3%;
-      flex: 0 0 31.3%;
-      margin: 10px; } }
-
-.page-locations .views-field-description {
-  margin-top: 1.6rem; }
-
-@media (min-width: 768px) {
-  .page-locations .view-content {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-right: -30px; }
-    .page-locations .view-content .views-row {
-      -moz-flex: 0 0 43%;
-      -ms-flex: 0 0 43%;
-      flex: 0 0 43%;
-      margin: 10px 30px; } }
-
-.page-taxonomy-term .term-listing {
-  padding: 1rem; }
-
-.page-taxonomy-term h3.node-title, .page-taxonomy-term .page-program-finder .node-title.view-header, .page-program-finder .page-taxonomy-term .node-title.view-header {
-  margin-bottom: 0.5rem; }
-
-@media (min-width: 768px) {
-  .page-taxonomy-term .view-content {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px; }
-    .page-taxonomy-term .view-content .views-row {
-      -moz-flex: 0 0 31.3%;
-      -ms-flex: 0 0 31.3%;
-      flex: 0 0 31.3%;
-      margin: 10px; } }
 
 .node-type-news {
   margin-bottom: 2rem; }
@@ -10472,10 +10250,10 @@ table.table-condensed th, table.table-condensed td {
 .node-department-full .field-name-field-department-program .page-program-finder .view-header,
 .node-department-full .field-name-field-department-program .page-program-finder .field-name-field-org-twitter .view-header, .field-name-field-org-twitter .page-program-finder
 .node-department-full .field-name-field-department-program .view-header, .page-program-finder
-.node-department-full .field-name-field-department-program .field-name-field-org-twitter .view-header, .field-name-field-org-twitter .node-generic_block-card .node-title, .node-generic_block-card .field-name-field-org-twitter .node-title, .field-name-field-org-twitter .page-taxonomy-term h3.node-title, .page-taxonomy-term .field-name-field-org-twitter h3.node-title, .field-name-field-org-twitter .page-taxonomy-term .page-program-finder .node-title.view-header, .page-taxonomy-term .page-program-finder .field-name-field-org-twitter .node-title.view-header, .field-name-field-org-twitter .page-program-finder .page-taxonomy-term .node-title.view-header, .page-program-finder .page-taxonomy-term .field-name-field-org-twitter .node-title.view-header, .field-name-field-org-twitter .page-program-finder .view-content .views-field-title, .page-program-finder .view-content .field-name-field-org-twitter .views-field-title, .field-name-field-org-twitter .view-display-id-story_card_pane .views-field-title, .view-display-id-story_card_pane .field-name-field-org-twitter .views-field-title {
+.node-department-full .field-name-field-department-program .field-name-field-org-twitter .view-header, .field-name-field-org-twitter .node-generic_block-card .node-title, .node-generic_block-card .field-name-field-org-twitter .node-title, .field-name-field-org-twitter .page-program-finder .view-content .views-field-title, .page-program-finder .view-content .field-name-field-org-twitter .views-field-title, .field-name-field-org-twitter .view-display-id-story_card_pane .views-field-title, .view-display-id-story_card_pane .field-name-field-org-twitter .views-field-title {
   margin-bottom: 0; }
 
-.field-name-field-org-twitter .primary-button, .field-name-field-org-twitter .btn-primary, .field-name-field-org-twitter body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .field-name-field-org-twitter .btn:first-child, .field-name-field-org-twitter body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .field-name-field-org-twitter .media-widget > a:first-child, .field-name-field-org-twitter .page-google-search input.gsc-search-button, .page-google-search .field-name-field-org-twitter input.gsc-search-button, .field-name-field-org-twitter .cta-button, .field-name-field-org-twitter .uiowa-events-add-link, .field-name-field-org-twitter .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .field-name-field-org-twitter a, .field-name-field-org-twitter .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .field-name-field-org-twitter a, .field-name-field-org-twitter .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .field-name-field-org-twitter a, .field-name-field-org-twitter .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .field-name-field-org-twitter a {
+.field-name-field-org-twitter .primary-button, .field-name-field-org-twitter .btn-primary, .field-name-field-org-twitter body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .field-name-field-org-twitter .btn:first-child, .field-name-field-org-twitter body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .field-name-field-org-twitter .media-widget > a:first-child, .field-name-field-org-twitter .page-google-search input.gsc-search-button, .page-google-search .field-name-field-org-twitter input.gsc-search-button, .field-name-field-org-twitter .cta-button, .field-name-field-org-twitter .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .field-name-field-org-twitter a, .field-name-field-org-twitter .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .field-name-field-org-twitter a, .field-name-field-org-twitter .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .field-name-field-org-twitter a, .field-name-field-org-twitter .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .field-name-field-org-twitter a {
   display: inline-block; }
 
 @media (min-width: 992px) {
@@ -10547,17 +10325,17 @@ table.table-condensed th, table.table-condensed td {
 .node-department-full .field-name-field-department-program .page-program-finder .view-header,
 .node-department-full .field-name-field-department-program .page-program-finder .field-name-field-org-twitter .view-header, .field-name-field-org-twitter .page-program-finder
 .node-department-full .field-name-field-department-program .view-header, .page-program-finder
-.node-department-full .field-name-field-department-program .field-name-field-org-twitter .view-header, .field-name-field-org-twitter .node-generic_block-card .node-title, .node-generic_block-card .field-name-field-org-twitter .node-title, .field-name-field-org-twitter .page-taxonomy-term h3.node-title, .page-taxonomy-term .field-name-field-org-twitter h3.node-title, .field-name-field-org-twitter .page-taxonomy-term .page-program-finder .node-title.view-header, .page-taxonomy-term .page-program-finder .field-name-field-org-twitter .node-title.view-header, .field-name-field-org-twitter .page-program-finder .page-taxonomy-term .node-title.view-header, .page-program-finder .page-taxonomy-term .field-name-field-org-twitter .node-title.view-header, .field-name-field-org-twitter .page-program-finder .view-content .views-field-title, .page-program-finder .view-content .field-name-field-org-twitter .views-field-title, .field-name-field-org-twitter .view-display-id-story_card_pane .views-field-title, .view-display-id-story_card_pane .field-name-field-org-twitter .views-field-title {
+.node-department-full .field-name-field-department-program .field-name-field-org-twitter .view-header, .field-name-field-org-twitter .node-generic_block-card .node-title, .node-generic_block-card .field-name-field-org-twitter .node-title, .field-name-field-org-twitter .page-program-finder .view-content .views-field-title, .page-program-finder .view-content .field-name-field-org-twitter .views-field-title, .field-name-field-org-twitter .view-display-id-story_card_pane .views-field-title, .view-display-id-story_card_pane .field-name-field-org-twitter .views-field-title {
   margin-bottom: 0; }
 
-.field-name-field-org-twitter .primary-button, .field-name-field-org-twitter .btn-primary, .field-name-field-org-twitter body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .field-name-field-org-twitter .btn:first-child, .field-name-field-org-twitter body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .field-name-field-org-twitter .media-widget > a:first-child, .field-name-field-org-twitter .page-google-search input.gsc-search-button, .page-google-search .field-name-field-org-twitter input.gsc-search-button, .field-name-field-org-twitter .cta-button, .field-name-field-org-twitter .uiowa-events-add-link, .field-name-field-org-twitter .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .field-name-field-org-twitter a, .field-name-field-org-twitter .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .field-name-field-org-twitter a, .field-name-field-org-twitter .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .field-name-field-org-twitter a, .field-name-field-org-twitter .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .field-name-field-org-twitter a {
+.field-name-field-org-twitter .primary-button, .field-name-field-org-twitter .btn-primary, .field-name-field-org-twitter body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .field-name-field-org-twitter .btn:first-child, .field-name-field-org-twitter body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .field-name-field-org-twitter .media-widget > a:first-child, .field-name-field-org-twitter .page-google-search input.gsc-search-button, .page-google-search .field-name-field-org-twitter input.gsc-search-button, .field-name-field-org-twitter .cta-button, .field-name-field-org-twitter .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .field-name-field-org-twitter a, .field-name-field-org-twitter .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .field-name-field-org-twitter a, .field-name-field-org-twitter .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .field-name-field-org-twitter a, .field-name-field-org-twitter .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .field-name-field-org-twitter a {
   display: inline-block; }
 
 .field-name-field-leading-text {
   padding: 35px 0 15px 0; }
-  .card-body .field-name-field-leading-text, .node-factoid-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-full .card-description-wrapper .field-name-field-leading-text, .node-generic_block-card .card-description-wrapper .field-name-field-leading-text, .page-program-finder .view-content .views-row .field-name-field-leading-text, .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title .field-name-field-leading-text, .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-field-publication-publish .field-name-field-leading-text, .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title-1 .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .card-wrapper .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item .field-name-field-leading-text, .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper
+  .card-body .field-name-field-leading-text, .node-factoid-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-full .card-description-wrapper .field-name-field-leading-text, .node-generic_block-card .card-description-wrapper .field-name-field-leading-text, .page-program-finder .view-content .views-row .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .card-wrapper .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item .field-name-field-leading-text, .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper
   .node-department-full .field-name-field-department-program > .field-items > .field-item .field-name-field-leading-text,
-  .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .views-row .field-name-field-leading-text, .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .views-row .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row .field-name-field-leading-text, .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .view-content > .views-row .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-leading-text, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper .field-name-field-leading-text, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-generic_block-card .card-description-wrapper .field-name-field-leading-text, .node-generic_block-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-program-finder .view-content .views-row .field-name-field-leading-text, .page-program-finder .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper .field-name-field-leading-text {
+  .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-leading-text, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper .field-name-field-leading-text, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-generic_block-card .card-description-wrapper .field-name-field-leading-text, .node-generic_block-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-program-finder .view-content .views-row .field-name-field-leading-text, .page-program-finder .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper .field-name-field-leading-text {
     padding: 0; }
   @media (min-width: 1200px) {
     .field-name-field-leading-text {
@@ -10565,9 +10343,9 @@ table.table-condensed th, table.table-condensed td {
 
 .field-name-field-leading-text {
   padding: 35px 0 15px 0; }
-  .card-body .field-name-field-leading-text, .node-factoid-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-full .card-description-wrapper .field-name-field-leading-text, .node-generic_block-card .card-description-wrapper .field-name-field-leading-text, .page-program-finder .view-content .views-row .field-name-field-leading-text, .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title .field-name-field-leading-text, .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-field-publication-publish .field-name-field-leading-text, .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title-1 .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .card-wrapper .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item .field-name-field-leading-text, .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper
+  .card-body .field-name-field-leading-text, .node-factoid-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-full .card-description-wrapper .field-name-field-leading-text, .node-generic_block-card .card-description-wrapper .field-name-field-leading-text, .page-program-finder .view-content .views-row .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .card-wrapper .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item .field-name-field-leading-text, .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper
   .node-department-full .field-name-field-department-program > .field-items > .field-item .field-name-field-leading-text,
-  .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .views-row .field-name-field-leading-text, .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .views-row .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row .field-name-field-leading-text, .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .view-content > .views-row .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-leading-text, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper .field-name-field-leading-text, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-generic_block-card .card-description-wrapper .field-name-field-leading-text, .node-generic_block-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-program-finder .view-content .views-row .field-name-field-leading-text, .page-program-finder .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper .field-name-field-leading-text {
+  .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-leading-text, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper .field-name-field-leading-text, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-generic_block-card .card-description-wrapper .field-name-field-leading-text, .node-generic_block-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-program-finder .view-content .views-row .field-name-field-leading-text, .page-program-finder .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper .field-name-field-leading-text {
     padding: 0; }
   @media (min-width: 1200px) {
     .field-name-field-leading-text {
@@ -10916,244 +10694,6 @@ table.table-condensed th, table.table-condensed td {
       margin: 10px; }
     .page-program-finder .view-content .views-field-title {
       margin-bottom: 0.5rem; } }
-
-.page-research .pane-publications-all-recent-publications-pane {
-  margin-top: 2rem; }
-
-.page-research .views-row {
-  padding: 1rem; }
-  .page-research .views-row .views-field-title-1 {
-    font-family: FranklinGothicDemi; }
-
-.page-research .views-row-even {
-  background-color: #EBE7E3; }
-
-.page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title {
-  font-size: 1.5rem;
-  padding-bottom: 0; }
-
-.page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-field-publication-publish {
-  padding-bottom: 0; }
-
-@media (min-width: 768px) {
-  .page-research .view-display-id-publication_per_dept_attachment .view-content {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-pack: justify;
-        justify-content: space-between; } }
-
-.page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row {
-  margin-bottom: 22px;
-  max-width: 100%;
-  padding: 0; }
-  .page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row:last-of-type {
-    margin-bottom: 0; }
-  @media (min-width: 768px) {
-    .page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row {
-      max-width: 32%; } }
-
-.page-research .views-exposed-form {
-  margin-bottom: 1.5rem; }
-  .page-research .views-exposed-form .views-exposed-widget .form-submit,
-  .page-research .views-exposed-form .views-submit-button,
-  .page-research .views-exposed-form .views-reset-button {
-    margin-top: 0; }
-
-.page-research .pane-publications-all-recent-publications-pane {
-  margin-top: 2rem; }
-
-.page-research .views-row {
-  padding: 1rem; }
-  .page-research .views-row .views-field-title-1 {
-    font-family: FranklinGothicDemi; }
-
-.page-research .views-row-even {
-  background-color: #EBE7E3; }
-
-.page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title {
-  font-size: 1.5rem;
-  padding-bottom: 0; }
-
-.page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-field-publication-publish {
-  padding-bottom: 0; }
-
-@media (min-width: 768px) {
-  .page-research .view-display-id-publication_per_dept_attachment .view-content {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-pack: justify;
-        justify-content: space-between; } }
-
-.page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row {
-  margin-bottom: 22px;
-  max-width: 100%;
-  padding: 0; }
-  .page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row:last-of-type {
-    margin-bottom: 0; }
-  @media (min-width: 768px) {
-    .page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row {
-      max-width: 32%; } }
-
-.page-research .views-exposed-form {
-  margin-bottom: 1.5rem; }
-  .page-research .views-exposed-form .views-exposed-widget .form-submit,
-  .page-research .views-exposed-form .views-submit-button,
-  .page-research .views-exposed-form .views-reset-button {
-    margin-top: 0; }
-
-.tippie-rfi-form {
-  padding-bottom: 2rem; }
-  @media (min-width: 992px) {
-    .tippie-rfi-form {
-      width: 75%; } }
-  .tippie-rfi-form .form-item-first-name,
-  .tippie-rfi-form .form-item-state-province,
-  .tippie-rfi-form .form-item-campus,
-  .tippie-rfi-form .form-item-current-employer,
-  .tippie-rfi-form .form-item-start-term,
-  .tippie-rfi-form .form-item-marketing,
-  .tippie-rfi-form .form-item-alumnus,
-  .tippie-rfi-form .form-item-gre-verbal {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding: 0; }
-    @media (min-width: 768px) {
-      .tippie-rfi-form .form-item-first-name,
-      .tippie-rfi-form .form-item-state-province,
-      .tippie-rfi-form .form-item-campus,
-      .tippie-rfi-form .form-item-current-employer,
-      .tippie-rfi-form .form-item-start-term,
-      .tippie-rfi-form .form-item-marketing,
-      .tippie-rfi-form .form-item-alumnus,
-      .tippie-rfi-form .form-item-gre-verbal {
-        float: left;
-        width: 50%; } }
-    @media (min-width: 768px) {
-      .tippie-rfi-form .form-item-first-name,
-      .tippie-rfi-form .form-item-state-province,
-      .tippie-rfi-form .form-item-campus,
-      .tippie-rfi-form .form-item-current-employer,
-      .tippie-rfi-form .form-item-start-term,
-      .tippie-rfi-form .form-item-marketing,
-      .tippie-rfi-form .form-item-alumnus,
-      .tippie-rfi-form .form-item-gre-verbal {
-        padding-right: 1rem; } }
-  .tippie-rfi-form .form-item-last-name,
-  .tippie-rfi-form .form-item-zip-postal-code,
-  .tippie-rfi-form .form-item-current-title,
-  .tippie-rfi-form .form-item-gre-quant {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding: 0; }
-    @media (min-width: 768px) {
-      .tippie-rfi-form .form-item-last-name,
-      .tippie-rfi-form .form-item-zip-postal-code,
-      .tippie-rfi-form .form-item-current-title,
-      .tippie-rfi-form .form-item-gre-quant {
-        float: left;
-        width: 50%; } }
-    @media (min-width: 768px) {
-      .tippie-rfi-form .form-item-last-name,
-      .tippie-rfi-form .form-item-zip-postal-code,
-      .tippie-rfi-form .form-item-current-title,
-      .tippie-rfi-form .form-item-gre-quant {
-        padding-left: 1rem; } }
-  .tippie-rfi-form h2 {
-    clear: both;
-    padding-top: 1.5rem; }
-  .tippie-rfi-form .form-submit {
-    display: block;
-    clear: both; }
-
-#tippie-pmba-info-form .form-item-start-term,
-#tippie-pmba-info-form .form-item-marketing {
-  clear: both; }
-
-.tippie-rfi-form {
-  padding-bottom: 2rem; }
-  @media (min-width: 992px) {
-    .tippie-rfi-form {
-      width: 75%; } }
-  .tippie-rfi-form .form-item-first-name,
-  .tippie-rfi-form .form-item-state-province,
-  .tippie-rfi-form .form-item-campus,
-  .tippie-rfi-form .form-item-current-employer,
-  .tippie-rfi-form .form-item-start-term,
-  .tippie-rfi-form .form-item-marketing,
-  .tippie-rfi-form .form-item-alumnus,
-  .tippie-rfi-form .form-item-gre-verbal {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding: 0; }
-    @media (min-width: 768px) {
-      .tippie-rfi-form .form-item-first-name,
-      .tippie-rfi-form .form-item-state-province,
-      .tippie-rfi-form .form-item-campus,
-      .tippie-rfi-form .form-item-current-employer,
-      .tippie-rfi-form .form-item-start-term,
-      .tippie-rfi-form .form-item-marketing,
-      .tippie-rfi-form .form-item-alumnus,
-      .tippie-rfi-form .form-item-gre-verbal {
-        float: left;
-        width: 50%; } }
-    @media (min-width: 768px) {
-      .tippie-rfi-form .form-item-first-name,
-      .tippie-rfi-form .form-item-state-province,
-      .tippie-rfi-form .form-item-campus,
-      .tippie-rfi-form .form-item-current-employer,
-      .tippie-rfi-form .form-item-start-term,
-      .tippie-rfi-form .form-item-marketing,
-      .tippie-rfi-form .form-item-alumnus,
-      .tippie-rfi-form .form-item-gre-verbal {
-        padding-right: 1rem; } }
-  .tippie-rfi-form .form-item-last-name,
-  .tippie-rfi-form .form-item-zip-postal-code,
-  .tippie-rfi-form .form-item-current-title,
-  .tippie-rfi-form .form-item-gre-quant {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding: 0; }
-    @media (min-width: 768px) {
-      .tippie-rfi-form .form-item-last-name,
-      .tippie-rfi-form .form-item-zip-postal-code,
-      .tippie-rfi-form .form-item-current-title,
-      .tippie-rfi-form .form-item-gre-quant {
-        float: left;
-        width: 50%; } }
-    @media (min-width: 768px) {
-      .tippie-rfi-form .form-item-last-name,
-      .tippie-rfi-form .form-item-zip-postal-code,
-      .tippie-rfi-form .form-item-current-title,
-      .tippie-rfi-form .form-item-gre-quant {
-        padding-left: 1rem; } }
-  .tippie-rfi-form h2 {
-    clear: both;
-    padding-top: 1.5rem; }
-  .tippie-rfi-form .form-submit {
-    display: block;
-    clear: both; }
-
-#tippie-pmba-info-form .form-item-start-term,
-#tippie-pmba-info-form .form-item-marketing {
-  clear: both; }
 
 .node-type-profile .field-name-field-profile-subtitle {
   font-family: FranklinGothicDemi;
@@ -11198,7 +10738,7 @@ table.table-condensed th, table.table-condensed td {
       position: relative; }
     .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item, .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper
     .node-department-full .field-name-field-department-program > .field-items > .field-item,
-    .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .views-row, .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .views-row, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .page-program-finder .view-content .views-row, .page-program-finder .view-content .view-display-id-story_featured_pane .border-wrapper .views-row, .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row, .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .view-content > .views-row, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item {
+    .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .page-program-finder .view-content .views-row, .page-program-finder .view-content .view-display-id-story_featured_pane .border-wrapper .views-row, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item {
       margin: 0 1rem;
       background-color: transparent; }
     @media (min-width: 768px) {
@@ -11207,7 +10747,7 @@ table.table-condensed th, table.table-condensed td {
         width: auto; }
       .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item, .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper
       .node-department-full .field-name-field-department-program > .field-items > .field-item,
-      .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .views-row, .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .views-row, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .page-program-finder .view-content .views-row, .page-program-finder .view-content .view-display-id-story_featured_pane .border-wrapper .views-row, .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row, .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .view-content > .views-row, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item {
+      .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .page-program-finder .view-content .views-row, .page-program-finder .view-content .view-display-id-story_featured_pane .border-wrapper .views-row, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item {
         margin-left: 340px; } }
 
 .node-type-profile .field-name-field-profile-subtitle {
@@ -11253,7 +10793,7 @@ table.table-condensed th, table.table-condensed td {
       position: relative; }
     .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item, .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper
     .node-department-full .field-name-field-department-program > .field-items > .field-item,
-    .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .views-row, .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .views-row, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .page-program-finder .view-content .views-row, .page-program-finder .view-content .view-display-id-story_featured_pane .border-wrapper .views-row, .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row, .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .view-content > .views-row, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item {
+    .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .page-program-finder .view-content .views-row, .page-program-finder .view-content .view-display-id-story_featured_pane .border-wrapper .views-row, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item {
       margin: 0 1rem;
       background-color: transparent; }
     @media (min-width: 768px) {
@@ -11262,7 +10802,7 @@ table.table-condensed th, table.table-condensed td {
         width: auto; }
       .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item, .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper
       .node-department-full .field-name-field-department-program > .field-items > .field-item,
-      .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .views-row, .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .views-row, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .page-program-finder .view-content .views-row, .page-program-finder .view-content .view-display-id-story_featured_pane .border-wrapper .views-row, .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row, .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .view-content > .views-row, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item {
+      .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .page-program-finder .view-content .views-row, .page-program-finder .view-content .view-display-id-story_featured_pane .border-wrapper .views-row, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item {
         margin-left: 340px; } }
 
 .breadcrumb-container {
@@ -11300,39 +10840,39 @@ table.table-condensed th, table.table-condensed td {
     .cta-wrapper {
       display: block; } }
 
-.block-tippie-megamenu {
+.block-jpec-megamenu {
   width: 100%; }
-  .block-tippie-megamenu ul.nav {
+  .block-jpec-megamenu ul.nav {
     background-color: #EBE7E3;
     margin: 0;
     height: 100%; }
     @media (min-width: 992px) {
-      .block-tippie-megamenu ul.nav {
+      .block-jpec-megamenu ul.nav {
         background-color: transparent;
         display: inline-block;
         margin: 0; } }
-    .block-tippie-megamenu ul.nav a {
+    .block-jpec-megamenu ul.nav a {
       color: #000000;
       font-family: FranklinGothicMedium;
       position: relative;
       padding: 20px 30px;
       font-size: 1rem; }
       @media (min-width: 992px) {
-        .block-tippie-megamenu ul.nav a {
+        .block-jpec-megamenu ul.nav a {
           padding: 10px 30px 10px 30px; } }
       @media (min-width: 992px) and (max-width: 1200px) {
-        .block-tippie-megamenu ul.nav a {
+        .block-jpec-megamenu ul.nav a {
           padding: 10px 25px; } }
       @media (min-width: 1200px) {
-        .block-tippie-megamenu ul.nav a {
+        .block-jpec-megamenu ul.nav a {
           padding-right: 40px;
           padding-left: 40px; } }
-      .block-tippie-megamenu ul.nav a .first-word {
+      .block-jpec-megamenu ul.nav a .first-word {
         font-family: FranklinGothicBook; }
         @media (min-width: 992px) {
-          .block-tippie-megamenu ul.nav a .first-word {
+          .block-jpec-megamenu ul.nav a .first-word {
             display: block; } }
-      .block-tippie-megamenu ul.nav a .caret {
+      .block-jpec-megamenu ul.nav a .caret {
         border-top: 10px dashed;
         border-right: 10px solid transparent;
         border-left: 10px solid transparent;
@@ -11340,35 +10880,35 @@ table.table-condensed th, table.table-condensed td {
         float: right;
         margin-top: 8px; }
         @media (min-width: 992px) {
-          .block-tippie-megamenu ul.nav a .caret {
+          .block-jpec-megamenu ul.nav a .caret {
             display: none; } }
-    .block-tippie-megamenu ul.nav li.link-depth-1 {
+    .block-jpec-megamenu ul.nav li.link-depth-1 {
       border-top: solid 1px #000; }
       @media (min-width: 992px) {
-        .block-tippie-megamenu ul.nav li.link-depth-1 {
+        .block-jpec-megamenu ul.nav li.link-depth-1 {
           border-top: none; } }
-      .block-tippie-megamenu ul.nav li.link-depth-1 > a {
+      .block-jpec-megamenu ul.nav li.link-depth-1 > a {
         line-height: 1.3; }
         @media (min-width: 992px) {
-          .block-tippie-megamenu ul.nav li.link-depth-1 > a {
+          .block-jpec-megamenu ul.nav li.link-depth-1 > a {
             border-bottom: 4px solid transparent; } }
-        .block-tippie-megamenu ul.nav li.link-depth-1 > a:hover, .block-tippie-megamenu ul.nav li.link-depth-1 > a:focus, .block-tippie-megamenu ul.nav li.link-depth-1 > a.active {
+        .block-jpec-megamenu ul.nav li.link-depth-1 > a:hover, .block-jpec-megamenu ul.nav li.link-depth-1 > a:focus, .block-jpec-megamenu ul.nav li.link-depth-1 > a.active {
           background-color: transparent;
           border-bottom-color: #000; }
-    .block-tippie-megamenu ul.nav li.link-depth-2 {
+    .block-jpec-megamenu ul.nav li.link-depth-2 {
       padding: 8px 0 4px 0;
       background-color: #EBE7E3; }
-      .block-tippie-megamenu ul.nav li.link-depth-2 > a {
+      .block-jpec-megamenu ul.nav li.link-depth-2 > a {
         padding-top: 4px;
         padding-bottom: 4px; }
         @media (min-width: 992px) {
-          .block-tippie-megamenu ul.nav li.link-depth-2 > a {
+          .block-jpec-megamenu ul.nav li.link-depth-2 > a {
             padding-left: 40px; } }
-      .block-tippie-megamenu ul.nav li.link-depth-2 li.active.link-depth-3 > a:active, .block-tippie-megamenu ul.nav li.link-depth-2 li.active.link-depth-3 > a.active {
+      .block-jpec-megamenu ul.nav li.link-depth-2 li.active.link-depth-3 > a:active, .block-jpec-megamenu ul.nav li.link-depth-2 li.active.link-depth-3 > a.active {
         background-color: #FFCD00; }
-      .block-tippie-megamenu ul.nav li.link-depth-2.last {
+      .block-jpec-megamenu ul.nav li.link-depth-2.last {
         padding-bottom: 1.2rem; }
-      .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu {
+      .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu {
         display: block;
         float: none;
         border: none;
@@ -11376,23 +10916,23 @@ table.table-condensed th, table.table-condensed td {
         position: relative;
         padding-top: 5px;
         padding-bottom: 0; }
-        .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu > li, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu > li, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu > li, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu > li, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu > li, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu > li {
+        .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu > li, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu > li, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu > li, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu > li, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu > li, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu > li {
           padding-top: 0px;
           padding-bottom: 0px; }
-          .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu > li.menu-link-compare-programs, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu > li.menu-link-short-courses, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu > li.menu-link-custom-corporate-education, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu > li.menu-link-contact-us, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu > li.menu-link-compare-programs, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu > li.menu-link-short-courses, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu > li.menu-link-custom-corporate-education, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu > li.menu-link-contact-us, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu > li.menu-link-compare-programs, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu > li.menu-link-short-courses, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu > li.menu-link-custom-corporate-education, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu > li.menu-link-contact-us, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu > li.menu-link-compare-programs, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu > li.menu-link-short-courses, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu > li.menu-link-custom-corporate-education, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu > li.menu-link-contact-us, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu > li.menu-link-compare-programs, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu > li.menu-link-short-courses, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu > li.menu-link-custom-corporate-education, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu > li.menu-link-contact-us, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu > li.menu-link-compare-programs, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu > li.menu-link-short-courses, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu > li.menu-link-custom-corporate-education, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu > li.menu-link-contact-us {
+          .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu > li.menu-link-compare-programs, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu > li.menu-link-short-courses, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu > li.menu-link-custom-corporate-education, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu > li.menu-link-contact-us, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu > li.menu-link-compare-programs, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu > li.menu-link-short-courses, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu > li.menu-link-custom-corporate-education, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu > li.menu-link-contact-us, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu > li.menu-link-compare-programs, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu > li.menu-link-short-courses, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu > li.menu-link-custom-corporate-education, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu > li.menu-link-contact-us, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu > li.menu-link-compare-programs, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu > li.menu-link-short-courses, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu > li.menu-link-custom-corporate-education, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu > li.menu-link-contact-us, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu > li.menu-link-compare-programs, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu > li.menu-link-short-courses, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu > li.menu-link-custom-corporate-education, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu > li.menu-link-contact-us, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu > li.menu-link-compare-programs, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu > li.menu-link-short-courses, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu > li.menu-link-custom-corporate-education, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu > li.menu-link-contact-us {
             display: none; }
-        .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu a, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu a, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu a, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu a, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu a, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu a {
+        .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu a {
           font-family: FranklinGothicBook;
           font-size: 0.9rem;
           padding-top: 4px;
           padding-bottom: 3px;
           padding-left: 30px; }
           @media (min-width: 992px) {
-            .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu a, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu a, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu a, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu a, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu a, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu a {
+            .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu a {
               padding-left: 40px; } }
-          .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu a:hover, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu a:hover, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu a:hover, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu a:hover, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu a:hover, .block-tippie-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu a:hover {
+          .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu a:hover, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu a:hover, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu a:hover, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu a:hover, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu a:hover, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu a:hover {
             background-color: transparent; }
-  .block-tippie-megamenu ul.nav li li a:hover:before {
+  .block-jpec-megamenu ul.nav li li a:hover:before {
     content: '\f105';
     font-family: FontAwesome;
     font-weight: 800;
@@ -11401,14 +10941,14 @@ table.table-condensed th, table.table-condensed td {
     left: 20px;
     width: 12px;
     height: 12px; }
-  .block-tippie-megamenu .open .dropdown-menu {
+  .block-jpec-megamenu .open .dropdown-menu {
     min-width: 25em;
     border-top: solid 1px #000;
     margin: 0;
     padding: 0;
     border-radius: 0; }
     @media (min-width: 992px) {
-      .block-tippie-megamenu .open .dropdown-menu {
+      .block-jpec-megamenu .open .dropdown-menu {
         border: none; } }
 
 ol.megamenu-column {
@@ -11633,15 +11173,11 @@ ol.megamenu-column {
 .paragraphs-item-card .content.container {
   padding-top: 0; }
 
-.paragraphs-item-card .card-body h3, .paragraphs-item-card .node-factoid-card .card-description-wrapper h3, .node-factoid-card .paragraphs-item-card .card-description-wrapper h3, .paragraphs-item-card .node-factoid-full .card-description-wrapper h3, .node-factoid-full .paragraphs-item-card .card-description-wrapper h3, .paragraphs-item-card .node-generic_block-card .card-description-wrapper h3, .node-generic_block-card .paragraphs-item-card .card-description-wrapper h3, .paragraphs-item-card .page-program-finder .view-content .views-row h3, .page-program-finder .view-content .paragraphs-item-card .views-row h3, .paragraphs-item-card .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title h3, .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .views-field-title h3, .paragraphs-item-card .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-field-publication-publish h3, .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .views-field-field-publication-publish h3, .paragraphs-item-card .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title-1 h3, .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .views-field-title-1 h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .card-wrapper h3, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .card-wrapper h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item h3, .view-display-id-story_featured_pane .border-wrapper .node-department-full .paragraphs-item-card .field-name-field-department-highlight > .field-items > .field-item h3, .paragraphs-item-card .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item h3, .node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-department-highlight > .field-items > .field-item h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper
+.paragraphs-item-card .card-body h3, .paragraphs-item-card .node-factoid-card .card-description-wrapper h3, .node-factoid-card .paragraphs-item-card .card-description-wrapper h3, .paragraphs-item-card .node-factoid-full .card-description-wrapper h3, .node-factoid-full .paragraphs-item-card .card-description-wrapper h3, .paragraphs-item-card .node-generic_block-card .card-description-wrapper h3, .node-generic_block-card .paragraphs-item-card .card-description-wrapper h3, .paragraphs-item-card .page-program-finder .view-content .views-row h3, .page-program-finder .view-content .paragraphs-item-card .views-row h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .card-wrapper h3, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .card-wrapper h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item h3, .view-display-id-story_featured_pane .border-wrapper .node-department-full .paragraphs-item-card .field-name-field-department-highlight > .field-items > .field-item h3, .paragraphs-item-card .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item h3, .node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-department-highlight > .field-items > .field-item h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper
 .node-department-full .field-name-field-department-program > .field-items > .field-item h3, .view-display-id-story_featured_pane .border-wrapper
 .node-department-full .paragraphs-item-card .field-name-field-department-program > .field-items > .field-item h3, .paragraphs-item-card
 .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item h3,
-.node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-department-program > .field-items > .field-item h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .views-row h3, .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .paragraphs-item-card .views-row h3, .paragraphs-item-card .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .views-row h3, .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .views-row h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item h3, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-program-offerings > .field-items > .field-item h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .page-program-finder .view-content .views-row h3, .view-display-id-story_featured_pane .border-wrapper .page-program-finder .view-content .paragraphs-item-card .views-row h3, .paragraphs-item-card .page-program-finder .view-content .view-display-id-story_featured_pane .border-wrapper .views-row h3, .page-program-finder .view-content .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .views-row h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row h3, .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .paragraphs-item-card .view-content > .views-row h3, .paragraphs-item-card .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .view-content > .views-row h3, .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .view-content > .views-row h3, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper h3, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper h3, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-generic_block-card .card-description-wrapper h3, .node-generic_block-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-program-finder .view-content .views-row h3, .page-program-finder .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title h3, .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-field-title h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-field-publication-publish h3, .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-field-field-publication-publish h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title-1 h3, .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-field-title-1 h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper h3, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-wrapper h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item h3, .view-display-id-story_featured_pane .border-wrapper .node-department-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-department-highlight > .field-items > .field-item h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item h3, .node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-department-highlight > .field-items > .field-item h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper
-.node-department-full .field-name-field-department-program > .field-items > .field-item h3, .view-display-id-story_featured_pane .border-wrapper
-.node-department-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-department-program > .field-items > .field-item h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item
-.node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item h3,
-.node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-department-program > .field-items > .field-item h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .views-row h3, .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .views-row h3, .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item h3, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-program-offerings > .field-items > .field-item h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row h3, .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-content > .views-row h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .view-content > .views-row h3, .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-content > .views-row h3, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-type-entityreference > .field-items > .field-item h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .field-type-entityreference > .field-items > .field-item h3, .paragraphs-item-card .card-body .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .card-body .view-header, .paragraphs-item-card .node-factoid-card .card-description-wrapper .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .node-factoid-card .card-description-wrapper .view-header, .node-factoid-card .paragraphs-item-card .card-description-wrapper .page-program-finder .view-header, .page-program-finder .node-factoid-card .paragraphs-item-card .card-description-wrapper .view-header, .paragraphs-item-card .node-factoid-full .card-description-wrapper .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .node-factoid-full .card-description-wrapper .view-header, .node-factoid-full .paragraphs-item-card .card-description-wrapper .page-program-finder .view-header, .page-program-finder .node-factoid-full .paragraphs-item-card .card-description-wrapper .view-header, .paragraphs-item-card .node-generic_block-card .card-description-wrapper .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .node-generic_block-card .card-description-wrapper .view-header, .node-generic_block-card .paragraphs-item-card .card-description-wrapper .page-program-finder .view-header, .page-program-finder .node-generic_block-card .paragraphs-item-card .card-description-wrapper .view-header, .paragraphs-item-card .page-program-finder .view-content .views-row .view-header, .page-program-finder .view-content .paragraphs-item-card .views-row .view-header, .paragraphs-item-card .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title .view-header, .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .views-field-title .page-program-finder .view-header, .page-program-finder .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .views-field-title .view-header, .paragraphs-item-card .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-field-publication-publish .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-field-publication-publish .view-header, .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .views-field-field-publication-publish .page-program-finder .view-header, .page-program-finder .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .views-field-field-publication-publish .view-header, .paragraphs-item-card .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title-1 .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title-1 .view-header, .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .views-field-title-1 .page-program-finder .view-header, .page-program-finder .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .views-field-title-1 .view-header, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .card-wrapper .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .card-wrapper .view-header, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .card-wrapper .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .card-wrapper .view-header, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item .view-header, .view-display-id-story_featured_pane .border-wrapper .node-department-full .paragraphs-item-card .field-name-field-department-highlight > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper .node-department-full .paragraphs-item-card .field-name-field-department-highlight > .field-items > .field-item .view-header, .paragraphs-item-card .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item .view-header, .node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-department-highlight > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-department-highlight > .field-items > .field-item .view-header, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper
+.node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-department-program > .field-items > .field-item h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item h3, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-program-offerings > .field-items > .field-item h3, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper h3, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper h3, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-generic_block-card .card-description-wrapper h3, .node-generic_block-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-program-finder .view-content .views-row h3, .page-program-finder .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper h3, .paragraphs-item-card .card-body .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .card-body .view-header, .paragraphs-item-card .node-factoid-card .card-description-wrapper .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .node-factoid-card .card-description-wrapper .view-header, .node-factoid-card .paragraphs-item-card .card-description-wrapper .page-program-finder .view-header, .page-program-finder .node-factoid-card .paragraphs-item-card .card-description-wrapper .view-header, .paragraphs-item-card .node-factoid-full .card-description-wrapper .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .node-factoid-full .card-description-wrapper .view-header, .node-factoid-full .paragraphs-item-card .card-description-wrapper .page-program-finder .view-header, .page-program-finder .node-factoid-full .paragraphs-item-card .card-description-wrapper .view-header, .paragraphs-item-card .node-generic_block-card .card-description-wrapper .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .node-generic_block-card .card-description-wrapper .view-header, .node-generic_block-card .paragraphs-item-card .card-description-wrapper .page-program-finder .view-header, .page-program-finder .node-generic_block-card .paragraphs-item-card .card-description-wrapper .view-header, .paragraphs-item-card .page-program-finder .view-content .views-row .view-header, .page-program-finder .view-content .paragraphs-item-card .views-row .view-header, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .card-wrapper .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .card-wrapper .view-header, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .card-wrapper .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .card-wrapper .view-header, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item .view-header, .view-display-id-story_featured_pane .border-wrapper .node-department-full .paragraphs-item-card .field-name-field-department-highlight > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper .node-department-full .paragraphs-item-card .field-name-field-department-highlight > .field-items > .field-item .view-header, .paragraphs-item-card .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item .view-header, .node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-department-highlight > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-department-highlight > .field-items > .field-item .view-header, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper
 .node-department-full .field-name-field-department-program > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper
 .node-department-full .field-name-field-department-program > .field-items > .field-item .view-header, .view-display-id-story_featured_pane .border-wrapper
 .node-department-full .paragraphs-item-card .field-name-field-department-program > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper
@@ -11649,15 +11185,7 @@ ol.megamenu-column {
 .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card
 .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item .view-header,
 .node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-department-program > .field-items > .field-item .page-program-finder .view-header, .page-program-finder
-.node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-department-program > .field-items > .field-item .view-header, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .views-row .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .views-row .view-header, .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .paragraphs-item-card .views-row .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .paragraphs-item-card .views-row .view-header, .paragraphs-item-card .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .views-row .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .views-row .view-header, .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .views-row .page-program-finder .view-header, .page-program-finder .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .views-row .view-header, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item .view-header, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-program-offerings > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-program-offerings > .field-items > .field-item .view-header, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .page-program-finder .view-content .views-row .view-header, .view-display-id-story_featured_pane .border-wrapper .page-program-finder .view-content .paragraphs-item-card .views-row .view-header, .paragraphs-item-card .page-program-finder .view-content .view-display-id-story_featured_pane .border-wrapper .views-row .view-header, .page-program-finder .view-content .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .views-row .view-header, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row .view-header, .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .paragraphs-item-card .view-content > .views-row .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .paragraphs-item-card .view-content > .views-row .view-header, .paragraphs-item-card .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .view-content > .views-row .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .view-content > .views-row .view-header, .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .view-content > .views-row .page-program-finder .view-header, .page-program-finder .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .view-content > .views-row .view-header, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-header, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper .view-header, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .page-program-finder .view-header, .page-program-finder .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper .view-header, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .page-program-finder .view-header, .page-program-finder .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-generic_block-card .card-description-wrapper .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-generic_block-card .card-description-wrapper .view-header, .node-generic_block-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .page-program-finder .view-header, .page-program-finder .node-generic_block-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-program-finder .view-content .views-row .view-header, .page-program-finder .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title .view-header, .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-field-title .page-program-finder .view-header, .page-program-finder .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-field-title .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-field-publication-publish .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-field-publication-publish .view-header, .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-field-field-publication-publish .page-program-finder .view-header, .page-program-finder .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-field-field-publication-publish .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title-1 .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title-1 .view-header, .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-field-title-1 .page-program-finder .view-header, .page-program-finder .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-field-title-1 .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper .view-header, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-wrapper .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-wrapper .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item .view-header, .view-display-id-story_featured_pane .border-wrapper .node-department-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-department-highlight > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper .node-department-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-department-highlight > .field-items > .field-item .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item .view-header, .node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-department-highlight > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-department-highlight > .field-items > .field-item .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper
-.node-department-full .field-name-field-department-program > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper
-.node-department-full .field-name-field-department-program > .field-items > .field-item .view-header, .view-display-id-story_featured_pane .border-wrapper
-.node-department-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-department-program > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper
-.node-department-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-department-program > .field-items > .field-item .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item
-.node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .field-type-entityreference > .field-items > .field-item
-.node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item .view-header,
-.node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-department-program > .field-items > .field-item .page-program-finder .view-header, .page-program-finder
-.node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-department-program > .field-items > .field-item .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .views-row .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .views-row .view-header, .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .views-row .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .views-row .view-header, .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row .page-program-finder .view-header, .page-program-finder .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item .view-header, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-program-offerings > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-program-offerings > .field-items > .field-item .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row .view-header, .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-content > .views-row .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-content > .views-row .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .view-content > .views-row .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .view-content > .views-row .view-header, .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-content > .views-row .page-program-finder .view-header, .page-program-finder .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-content > .views-row .view-header, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-type-entityreference > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-type-entityreference > .field-items > .field-item .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .view-header, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .field-type-entityreference > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .field-type-entityreference > .field-items > .field-item .view-header {
+.node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-department-program > .field-items > .field-item .view-header, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item .view-header, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-program-offerings > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-program-offerings > .field-items > .field-item .view-header, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-header, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body .view-header {
   font-family: FranklinGothicBook;
   font-size: 1.6rem; }
 
@@ -11717,17 +11245,17 @@ ol.megamenu-column {
 .paragraphs-item-social .content .social-card {
   background-color: #EBE7E3;
   margin: 10px; }
-  .paragraphs-item-social .content .social-card .primary-button, .paragraphs-item-social .content .social-card .btn-primary, .paragraphs-item-social .content .social-card body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .paragraphs-item-social .content .social-card .btn:first-child, .paragraphs-item-social .content .social-card body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .paragraphs-item-social .content .social-card .media-widget > a:first-child, .paragraphs-item-social .content .social-card .page-google-search input.gsc-search-button, .page-google-search .paragraphs-item-social .content .social-card input.gsc-search-button, .paragraphs-item-social .content .social-card .cta-button, .paragraphs-item-social .content .social-card .uiowa-events-add-link, .paragraphs-item-social .content .social-card .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .paragraphs-item-social .content .social-card a {
+  .paragraphs-item-social .content .social-card .primary-button, .paragraphs-item-social .content .social-card .btn-primary, .paragraphs-item-social .content .social-card body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .paragraphs-item-social .content .social-card .btn:first-child, .paragraphs-item-social .content .social-card body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .paragraphs-item-social .content .social-card .media-widget > a:first-child, .paragraphs-item-social .content .social-card .page-google-search input.gsc-search-button, .page-google-search .paragraphs-item-social .content .social-card input.gsc-search-button, .paragraphs-item-social .content .social-card .cta-button, .paragraphs-item-social .content .social-card .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .paragraphs-item-social .content .social-card a {
     padding: 6px 17px; }
-  .paragraphs-item-social .content .social-card .card-body, .paragraphs-item-social .content .social-card .node-factoid-card .card-description-wrapper, .node-factoid-card .paragraphs-item-social .content .social-card .card-description-wrapper, .paragraphs-item-social .content .social-card .node-factoid-full .card-description-wrapper, .node-factoid-full .paragraphs-item-social .content .social-card .card-description-wrapper, .paragraphs-item-social .content .social-card .node-generic_block-card .card-description-wrapper, .node-generic_block-card .paragraphs-item-social .content .social-card .card-description-wrapper, .paragraphs-item-social .content .social-card .page-program-finder .view-content .views-row, .page-program-finder .view-content .paragraphs-item-social .content .social-card .views-row, .paragraphs-item-social .content .social-card .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title, .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-social .content .social-card .views-field-title, .paragraphs-item-social .content .social-card .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-field-publication-publish, .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-social .content .social-card .views-field-field-publication-publish, .paragraphs-item-social .content .social-card .page-research .view-display-id-publication_per_dept_attachment .view-content .views-field-title-1, .page-research .view-display-id-publication_per_dept_attachment .view-content .paragraphs-item-social .content .social-card .views-field-title-1, .paragraphs-item-social .content .social-card .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-social .content .social-card .card-wrapper, .paragraphs-item-social .content .social-card .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .node-department-full .paragraphs-item-social .content .social-card .field-name-field-department-highlight > .field-items > .field-item, .paragraphs-item-social .content .social-card .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item, .node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-social .content .social-card .field-name-field-department-highlight > .field-items > .field-item, .paragraphs-item-social .content .social-card .view-display-id-story_featured_pane .border-wrapper
+  .paragraphs-item-social .content .social-card .card-body, .paragraphs-item-social .content .social-card .node-factoid-card .card-description-wrapper, .node-factoid-card .paragraphs-item-social .content .social-card .card-description-wrapper, .paragraphs-item-social .content .social-card .node-factoid-full .card-description-wrapper, .node-factoid-full .paragraphs-item-social .content .social-card .card-description-wrapper, .paragraphs-item-social .content .social-card .node-generic_block-card .card-description-wrapper, .node-generic_block-card .paragraphs-item-social .content .social-card .card-description-wrapper, .paragraphs-item-social .content .social-card .page-program-finder .view-content .views-row, .page-program-finder .view-content .paragraphs-item-social .content .social-card .views-row, .paragraphs-item-social .content .social-card .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-social .content .social-card .card-wrapper, .paragraphs-item-social .content .social-card .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .node-department-full .paragraphs-item-social .content .social-card .field-name-field-department-highlight > .field-items > .field-item, .paragraphs-item-social .content .social-card .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item, .node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-social .content .social-card .field-name-field-department-highlight > .field-items > .field-item, .paragraphs-item-social .content .social-card .view-display-id-story_featured_pane .border-wrapper
   .node-department-full .field-name-field-department-program > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper
   .node-department-full .paragraphs-item-social .content .social-card .field-name-field-department-program > .field-items > .field-item, .paragraphs-item-social .content .social-card
   .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item,
-  .node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-social .content .social-card .field-name-field-department-program > .field-items > .field-item, .paragraphs-item-social .content .social-card .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .views-row, .view-display-id-story_featured_pane .border-wrapper .page-taxonomy-term .paragraphs-item-social .content .social-card .views-row, .paragraphs-item-social .content .social-card .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .views-row, .page-taxonomy-term .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-social .content .social-card .views-row, .paragraphs-item-social .content .social-card .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-social .content .social-card .field-name-field-program-offerings > .field-items > .field-item, .paragraphs-item-social .content .social-card .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .view-content > .views-row, .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .paragraphs-item-social .content .social-card .view-content > .views-row, .paragraphs-item-social .content .social-card .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .view-content > .views-row, .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-social .content .social-card .view-content > .views-row, .paragraphs-item-social .content .social-card .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .paragraphs-item-social .content .social-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-social .content .social-card .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-social .content .social-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-social .content .social-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .paragraphs-item-social .content .social-card .card-body, .paragraphs-item-social .content .social-card .view-display-id-story_featured_pane .border-wrapper .page-research .view-display-id-publication_per_dept_attachment .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-content > .views-row, .paragraphs-item-social .content .social-card .page-research .view-display-id-publication_per_dept_attachment .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-content > .views-row {
+  .node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-social .content .social-card .field-name-field-department-program > .field-items > .field-item, .paragraphs-item-social .content .social-card .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-social .content .social-card .field-name-field-program-offerings > .field-items > .field-item, .paragraphs-item-social .content .social-card .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .paragraphs-item-social .content .social-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-social .content .social-card .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-social .content .social-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-social .content .social-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .paragraphs-item-social .content .social-card .card-body {
     padding: 0 1.5rem; }
   .paragraphs-item-social .content .social-card .field-items {
     padding: 1.5rem; }
-  .paragraphs-item-social .content .social-card .primary-button, .paragraphs-item-social .content .social-card .btn-primary, .paragraphs-item-social .content .social-card body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .paragraphs-item-social .content .social-card .btn:first-child, .paragraphs-item-social .content .social-card body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .paragraphs-item-social .content .social-card .media-widget > a:first-child, .paragraphs-item-social .content .social-card .page-google-search input.gsc-search-button, .page-google-search .paragraphs-item-social .content .social-card input.gsc-search-button, .paragraphs-item-social .content .social-card .cta-button, .paragraphs-item-social .content .social-card .uiowa-events-add-link, .paragraphs-item-social .content .social-card .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .paragraphs-item-social .content .social-card a {
+  .paragraphs-item-social .content .social-card .primary-button, .paragraphs-item-social .content .social-card .btn-primary, .paragraphs-item-social .content .social-card body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .paragraphs-item-social .content .social-card .btn:first-child, .paragraphs-item-social .content .social-card body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .paragraphs-item-social .content .social-card .media-widget > a:first-child, .paragraphs-item-social .content .social-card .page-google-search input.gsc-search-button, .page-google-search .paragraphs-item-social .content .social-card input.gsc-search-button, .paragraphs-item-social .content .social-card .cta-button, .paragraphs-item-social .content .social-card .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .paragraphs-item-social .content .social-card a {
     margin-top: 1rem; }
   .paragraphs-item-social .content .social-card i {
     margin-right: 0.5rem; }
@@ -11847,7 +11375,7 @@ ol.megamenu-column {
   display: block;
   font-family: BlenderProBold; }
 
-.page-header .primary-button, .page-header .btn-primary, .page-header body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .page-header .btn:first-child, .page-header body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .page-header .media-widget > a:first-child, .page-header .page-google-search input.gsc-search-button, .page-google-search .page-header input.gsc-search-button, .page-header .cta-button, .page-header .uiowa-events-add-link, .page-header .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .page-header a, .page-header .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .page-header a, .page-header .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .page-header a, .page-header .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .page-header a {
+.page-header .primary-button, .page-header .btn-primary, .page-header body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .page-header .btn:first-child, .page-header body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .page-header .media-widget > a:first-child, .page-header .page-google-search input.gsc-search-button, .page-google-search .page-header input.gsc-search-button, .page-header .cta-button, .page-header .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .page-header a, .page-header .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .page-header a, .page-header .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .page-header a, .page-header .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .page-header a {
   display: table;
   margin-top: 1.5rem; }
 
@@ -11919,7 +11447,8 @@ ol.megamenu-column {
     width: 65%; } }
 
 .tippie-footer-link img {
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  max-width: 320px; }
 
 @media (min-width: 670px) {
   .footer-link-list {
@@ -11938,12 +11467,16 @@ ol.megamenu-column {
   border-bottom: 1px solid #FFCD00;
   display: inline-block;
   font-family: FranklinGothicDemi;
+  margin-top: 19px;
   margin-bottom: 0;
   padding-bottom: 10px;
-  font-size: 1rem; }
+  font-size: 1.1rem; }
   @media (min-width: 1200px) {
     .footer-link-list .link-list-heading {
       display: block; } }
+
+.footer-link-list.jpec-resources .link-list-heading {
+  margin-top: 0; }
 
 @media (min-width: 670px) {
   .footer-link-list .link-list {
@@ -12203,7 +11736,7 @@ iframe[name^='google_conversion_frame'] {
     font-family: FranklinGothicDemi;
     color: #FE5E00; }
 
-.front h2 {
+.front .main h2 {
   font-size: 2.7rem;
   text-transform: uppercase;
   font-family: BlenderProMedium;
@@ -12211,10 +11744,10 @@ iframe[name^='google_conversion_frame'] {
   line-height: 1.1;
   margin-top: 4rem; }
   @media (min-width: 480px) {
-    .front h2 {
+    .front .main h2 {
       font-size: 4rem; } }
   @media (min-width: 768px) {
-    .front h2 {
+    .front .main h2 {
       font-size: 5rem; } }
 
 .front #content .container {
@@ -12261,7 +11794,7 @@ iframe[name^='google_conversion_frame'] {
     font-family: BlenderProMedium;
     line-height: 1;
     color: #FFFFFF; }
-  .front .header-content .primary-button, .front .header-content .btn-primary, .front .header-content body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .front .header-content .btn:first-child, .front .header-content body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .front .header-content .media-widget > a:first-child, .front .header-content .page-google-search input.gsc-search-button, .page-google-search .front .header-content input.gsc-search-button, .front .header-content .cta-button, .front .header-content .uiowa-events-add-link, .front .header-content .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .front .header-content a, .front .header-content .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .front .header-content a, .front .header-content .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .front .header-content a, .front .header-content .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .front .header-content a {
+  .front .header-content .primary-button, .front .header-content .btn-primary, .front .header-content body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .front .header-content .btn:first-child, .front .header-content body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .front .header-content .media-widget > a:first-child, .front .header-content .page-google-search input.gsc-search-button, .page-google-search .front .header-content input.gsc-search-button, .front .header-content .cta-button, .front .header-content .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .front .header-content a, .front .header-content .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .front .header-content a, .front .header-content .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .front .header-content a, .front .header-content .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .front .header-content a {
     margin-top: 3rem;
     text-align: center;
     margin-left: auto;
@@ -12350,7 +11883,7 @@ iframe[name^='google_conversion_frame'] {
     display: block;
     max-width: 100%;
     padding: 0rem 2rem; }
-  .front .pane-employers .primary-button, .front .pane-employers .btn-primary, .front .pane-employers body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .front .pane-employers .btn:first-child, .front .pane-employers body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .front .pane-employers .media-widget > a:first-child, .front .pane-employers .page-google-search input.gsc-search-button, .page-google-search .front .pane-employers input.gsc-search-button, .front .pane-employers .cta-button, .front .pane-employers .uiowa-events-add-link, .front .pane-employers .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .front .pane-employers a, .front .pane-employers .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .front .pane-employers a, .front .pane-employers .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .front .pane-employers a, .front .pane-employers .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .front .pane-employers a {
+  .front .pane-employers .primary-button, .front .pane-employers .btn-primary, .front .pane-employers body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .front .pane-employers .btn:first-child, .front .pane-employers body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .front .pane-employers .media-widget > a:first-child, .front .pane-employers .page-google-search input.gsc-search-button, .page-google-search .front .pane-employers input.gsc-search-button, .front .pane-employers .cta-button, .front .pane-employers .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .front .pane-employers a, .front .pane-employers .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .front .pane-employers a, .front .pane-employers .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .front .pane-employers a, .front .pane-employers .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .front .pane-employers a {
     margin: 0 2rem 2rem 2rem; }
   @media (min-width: 768px) {
     .front .pane-employers {
@@ -12364,7 +11897,7 @@ iframe[name^='google_conversion_frame'] {
         padding: 0; }
       .front .pane-employers .description {
         padding: 0; }
-      .front .pane-employers .primary-button, .front .pane-employers .btn-primary, .front .pane-employers body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .front .pane-employers .btn:first-child, .front .pane-employers body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .front .pane-employers .media-widget > a:first-child, .front .pane-employers .page-google-search input.gsc-search-button, .page-google-search .front .pane-employers input.gsc-search-button, .front .pane-employers .cta-button, .front .pane-employers .uiowa-events-add-link, .front .pane-employers .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .front .pane-employers a, .front .pane-employers .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .front .pane-employers a, .front .pane-employers .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .front .pane-employers a, .front .pane-employers .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .front .pane-employers a {
+      .front .pane-employers .primary-button, .front .pane-employers .btn-primary, .front .pane-employers body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .front .pane-employers .btn:first-child, .front .pane-employers body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .front .pane-employers .media-widget > a:first-child, .front .pane-employers .page-google-search input.gsc-search-button, .page-google-search .front .pane-employers input.gsc-search-button, .front .pane-employers .cta-button, .front .pane-employers .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .front .pane-employers a, .front .pane-employers .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .front .pane-employers a, .front .pane-employers .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .front .pane-employers a, .front .pane-employers .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .front .pane-employers a {
         margin: 0; } }
   @media (min-width: 768px) {
     .front .pane-employers {
