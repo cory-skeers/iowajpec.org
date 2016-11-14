@@ -1,0 +1,5 @@
+settings.php
+settings.local.php
+.idea/
+*.css.map
+files/
