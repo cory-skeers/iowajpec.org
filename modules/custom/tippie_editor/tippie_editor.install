@@ -1,0 +1,54 @@
+<?php
+/**
+ * @file
+ * Install and update functionality for the editor.
+ */
+
+/**
+ * Install the bootstrap_library module.
+ */
+function tippie_editor_update_7100() {
+
+  if (!module_exists('bootstrap_library')) {
+    module_enable(array('bootstrap_library'));
+  }
+
+}
+
+/**
+ * Switch from Editor to CKEditor.
+ */
+function tippie_editor_update_7101() {
+
+  if (module_exists('editor')) {
+    module_disable(array('editor'));
+    drupal_uninstall_modules(array('editor_ckeditor'));
+    drupal_uninstall_modules(array('editor'));
+  }
+
+  if (!module_exists('ckeditor')) {
+    module_enable(array('ckeditor'));
+  }
+
+  if (!module_exists('wysiwyg_filter')) {
+    module_enable(array('wysiwyg_filter'));
+  }
+
+  features_revert_module('tippie_editor');
+
+  drupal_flush_all_caches();
+}
+
+/**
+ * Install wysiwyg-related modules.
+ */
+function tippie_editor_update_7102() {
+
+  if (!module_exists('ckeditor_link_file')) {
+    module_enable(array('ckeditor_link_file'));
+  }
+
+  if (!module_exists('better_formats')) {
+    module_enable(array('better_formats'));
+  }
+}
