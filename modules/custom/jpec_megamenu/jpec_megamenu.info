@@ -1,0 +1,4 @@
+name = JPEC Megamenu
+description = Provides a custom megamenu block for the Main Menu.
+core = 7.x
+version = 7.x-1.0
