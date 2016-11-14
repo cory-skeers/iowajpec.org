@@ -160,16 +160,8 @@ function tippie_preprocess_page(&$variables) {
     }
 
     switch ($variables['node']->type) {
-      case 'department':
-        // Make this content type full width.
-        $variables['theme_hook_suggestions'][] = 'page__edgy';
-        break;
 
       case 'page':
-
-
-        // Make this content type full width.
-        $variables['theme_hook_suggestions'][] = 'page__edgy';
 
         if (!empty($variables['node']->field_section_title)) {
 
@@ -180,11 +172,6 @@ function tippie_preprocess_page(&$variables) {
           $variables['section_title'] = $wrapper->field_section_title->value();
         }
 
-        break;
-
-      case 'org':
-        // Make this content type full width.
-        $variables['theme_hook_suggestions'][] = 'page__edgy';
         break;
 
       case 'person':
@@ -203,8 +190,6 @@ function tippie_preprocess_page(&$variables) {
         break;        
 
       case 'profile':
-        // Make this content type full width.
-        $variables['theme_hook_suggestions'][] = 'page__edgy';
 
         // Add generic tall-image class for layout.
         $variables['header_classes_array'][] = 'tall-image';
@@ -223,19 +208,7 @@ function tippie_preprocess_page(&$variables) {
           'intro' => $intro,
         );
 
-        break;
-
-      case 'program':
-        // Make this content type full width.
-        $variables['theme_hook_suggestions'][] = 'page__edgy';
-
-        break;
-
-      case 'center_institute':
-        // Make this content type full width.
-        $variables['theme_hook_suggestions'][] = 'page__edgy';
-
-        break;        
+        break;      
 
       case 'webform':
         if (!empty($variables['node']->field_webform_public_title)) {
@@ -253,9 +226,6 @@ function tippie_preprocess_page(&$variables) {
 
   // Front page configuration.
   if ($variables['is_front']) {
-
-    // Make this content type full width.
-    $variables['theme_hook_suggestions'][] = 'page__edgy';
 
     // Add generic tall-image class for layout.
     $variables['header_classes_array'][] = 'tall-image';
