@@ -1,0 +1,90 @@
+// Person full node page
+.node-type-person {    
+
+  .field-name-field-person-primary-dept, .field-name-field-person-sec-dept {
+    // departments in the header
+    font-family: BlenderProBook;
+    @include fontsize(1.4);
+    .field-item {
+      margin-top: 0.3rem;
+      a {
+        color: $body-text;
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  .node-person-full {
+    padding-bottom: 2rem;
+
+  }
+  .field-label {
+    @include fontsize(2);
+    margin-top: 2rem;
+    
+  }
+  .field-name-field-person-academics .field-label {
+    margin-top: 2rem;
+    @include breakpoint($tippie-md-min) {
+      margin-top: 0;
+    }
+  }
+
+  .field-item {
+    color: $dark_grey;
+    margin-top: 0.6rem;
+  }
+  .contact, .location {
+    margin-top: 2rem;
+    .field-item {
+      margin-top: 0;
+    }
+    .person-label {
+      font-family: FranklinGothicDemi;
+    }
+  }
+}
+
+// People Directory page
+.page-people {
+  h2.pane-title {
+    text-transform: capitalize;
+  }
+  td {
+    @include fontsize(1);
+  }
+  thead > tr > th {
+    font-family: BlenderProBook;
+    @include fontsize(1.5);
+  }
+  // defined column widths
+  // name
+  td.views-field-title {
+    width: 30%;
+  }
+  // departments, contact
+  td.views-field-title-1, td.views-field-field-person-email  {
+    width: 25%;
+  }
+
+ // 
+  .views-widget-filter-field_person_primary_dept_target_id {
+    margin-top: 0;
+  }
+  // hiding the label for the exposed search filter, department, and category filters
+  .views-exposed-form {
+    .views-widget-filter-combine label, .views-exposed-widget label{
+      @extend .hidden;
+    }
+    .views-exposed-widget .form-submit,
+    .views-submit-button, 
+    .views-reset-button {
+      margin-top: 0;
+    }
+    .form-item-keywords .form-control {
+      width: 295px;
+    }
+  }
+}

@@ -1,0 +1,162 @@
+$bp-section-menu-expanded: $tippie-md-min;
+$bp-section-max: 360px;
+$section-menu-max-width: 360px;
+
+#content .block-menu-block {
+
+  .dropdown {
+    @include breakpoint($bp-section-max) {
+      max-width: $section-menu-max-width;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: $light_grey;
+    border: none;
+    border-radius: 0;
+    margin-top: 0;
+    max-width: $section-menu-max-width;
+    padding-top: 0;
+    width: 100%;
+  }
+
+  ul.menu {
+    padding: 0;
+    
+    // hiding top level menu items from side menu
+    & > li.collapsed, & > li.last.leaf {
+      &.menu-link-future-graduate-students,
+      &.menu-link-future-undergraduates,
+      &.menu-link-current-students,
+      &.menu-link-about-tippie,
+      &.menu-link-program-finder
+       {
+        display: none;
+      }
+    }
+
+    & > li > ul.menu {
+      margin: 0;
+
+      & > li > ul > li > a {
+        // 3rd level
+        padding-left: 3rem;
+      }
+      & > li > ul > li > ul > li > a {
+        // 4th level
+        padding-left: 4rem;
+      } 
+      & > li > ul > li > ul > li > ul > li > a {
+        // 5th level
+        padding-left: 5rem;
+      } 
+      & > li > ul > li > ul > li > ul > li > ul > li > a {
+        // 6th level
+        padding-left: 6rem;
+      }
+      & > li > ul > li > ul > li > ul > li > ul > li > ul > li > a {
+        // 7th level
+        padding-left: 7rem;
+      }                        
+    }
+
+    @include breakpoint($bp-section-menu-expanded) {
+      padding-top: 0.5rem;
+    }
+
+    li {
+      margin: 0;
+    }
+
+    a {
+      color: #000000;
+      //font-family: FranklinGothicDemi;
+      @include fontsize(1.1);
+      padding: 0.4rem 2rem;
+
+      &:hover {
+        color: $blue;
+        background-color: transparent;
+      }
+      &:focus {
+        color: $blue;
+        background-color: $gold;
+      }
+
+      &.active {
+        background-color: $gold;
+
+        &:hover, &:focus {
+          color: $blue;
+        }
+      }
+    }
+    &.nav-pills > li > a {
+      border-radius: 0;
+      font-family: FranklinGothicDemi;
+      @include fontsize(1.2);
+    }
+    &.nav-pills > li.expanded > ul > li > a {
+      border-radius: 0;
+      font-family: FranklinGothicMedium;
+      @include fontsize(1.1);
+    } 
+    &.nav-pills > li.expanded > ul > li > ul > li > a {
+      border-radius: 0;
+      font-family: FranklinGothicBook;
+      @include fontsize(1);
+    }        
+    
+    &.nav-pills > li.active > a {
+      background-color: transparent;
+      color: #000;
+    } 
+    &.nav-pills > li.active > a:hover, 
+    &.nav-pills > li.active > a:focus {
+      
+      color: $blue;
+    }
+    &.nav-pills > li.active > a.active {
+      background-color: $gold;
+    }
+    // &.nav-pills > li.active > a:hover {
+    //   color: $blue;
+    // }
+  }
+}
+
+.section-menu-toggle {
+  background-color: $dark_grey;
+  border: none;
+  color: $gold;
+  font-family: BlenderProMedium;
+  @include fontsize(1.5);
+  padding: 0.7rem 50px;
+  position: relative;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
+
+  &:before {
+    content: '\f0c9';
+    font-family: FontAwesome;
+    position: absolute;
+    top: 10px;
+    left: 17px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .caret {
+    border-width: 8px;
+    position: absolute;
+    right: 1rem;
+    top: 42%;
+
+    &.up {
+      border-top-width: 0;
+      border-bottom-width: 8px;
+      border-bottom-style: solid;
+    }
+  }
+}

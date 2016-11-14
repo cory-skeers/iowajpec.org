@@ -1,0 +1,76 @@
+.node-org-full {
+	@include radix_breakpoint(md) {
+		.field-name-body {
+			margin-top: 0;
+		  h2:nth-of-type(1) {
+			  margin-top: 0;
+		  }
+    }
+	}
+}
+.field-name-field-org-website a {
+	font-family: FranklinGothicDemi;
+	&:before {
+      font-family: FontAwesome;
+      content: "\f08e";
+      padding: 0 5px;
+    }
+}
+.field-name-field-org-facebook {
+	padding-top: 8px;
+	a {
+		font-family: FranklinGothicDemi;
+		&:before {
+	      font-family: FontAwesome;
+	      content: "\f230";
+	      padding: 5px;
+	    }
+	}
+}
+.field-name-field-org-image {
+	margin-top: 2rem;
+}
+
+.org-contact {
+	//background-color: $light-grey;
+	padding: 1rem;
+  @include blue-angle(80%);
+}
+
+.field-name-field-org-contact-name .field-item {
+  @extend .h4;
+  margin: 1.3rem 0;
+}
+
+.field-name-field-org-contact-email  a {
+	font-family: FranklinGothicDemi;
+	&:before {
+		font-family: FontAwesome;
+	    content: "\f003";
+	    padding: 0 10px 0 0;
+    }
+}
+.field-name-field-org-contact-phone .field-item{
+	font-family: FranklinGothicDemi;
+	color: $link;
+	padding-top: 0.5rem;
+	&:before {
+      font-family: FontAwesome;
+      content: "\f095";
+      padding: 0 10px 0 0;
+    }
+}
+
+.field-name-field-org-twitter {
+  @include breakpoint($screen-sm-min) {
+    width: 33%;
+    //margin: 10px 20px 10px 0;
+  } 
+  .card-title {
+    margin-bottom: 0;
+  }
+
+  .primary-button {
+    display: inline-block;
+  }
+}

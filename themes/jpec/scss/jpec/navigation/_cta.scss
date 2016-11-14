@@ -1,0 +1,25 @@
+#cta-section {
+  .content.container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+.cta-wrapper {
+  display: none;
+  position: absolute;
+  top: 200px;
+  right: 0;
+  z-index: 150;
+  width: 110px;
+
+  a {
+    display: block;
+    font-size: 15px;
+    padding: 13px 0;
+    margin-top: 10px;
+    text-align: center;
+  }      
+  @include breakpoint($tippie-md-min) { 
+    display: block; 
+  }
+}

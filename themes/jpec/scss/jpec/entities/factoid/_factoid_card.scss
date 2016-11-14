@@ -1,0 +1,46 @@
+.node-factoid-card {
+
+  .field-name-field-factoid-type {
+    @extend .card-header;
+  }
+
+  .card-description-wrapper {
+    @extend .card-body;
+  }
+
+  .field-name-field-factoid-source a {
+    @extend .primary-button;
+    //font-family: FranklinGothicBook;
+    @include fontsize(0.9);
+    padding: 0.6em 1.8em;
+    margin-top: 1rem;
+    display: inline-block;
+  }
+
+  .field-name-field-factoid-image {
+    background-color: $blue;
+    width: 100%;
+    text-align: center;
+    img {
+      width: 150px;
+      height: auto;
+      margin: 50px 0;
+      text-align: center;
+      vertical-align: center;
+    }
+  }
+
+}
+.node-factoid-full {
+  @extend .node-factoid-card;
+  width: 380px;
+}
+.node-factoid-teaser {
+  padding: 30px;
+  h3.node-title {
+    font-family: FranklinGothicMedium;
+    color: $white;
+    font-weight: normal;
+    @include fontsize(1.2);
+  }
+}

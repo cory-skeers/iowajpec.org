@@ -1,0 +1,136 @@
+.node-type-news {
+
+  margin-bottom: 2rem;
+
+  .node-news {
+    ul, ol {
+      margin-left: 1.2rem;
+    }
+  }
+
+  .page-header .container {
+    padding-top: 2rem;
+    padding-bottom: 0;
+  }
+  .field-name-body {
+    margin-top: 2rem;
+  }
+}
+.node-type-news .page-header {
+	margin-bottom: 0;
+	padding-bottom: 0;
+  .header-content {
+    background:none;
+    margin-left:0;
+    padding-left:0;
+    padding-right:0;
+    width:100%;
+  }
+	h1.title {
+		text-transform: none;
+		@include fontsize(1.6);
+    line-height: 1.3;
+		border-bottom: solid 2px $dark-grey;
+		padding-bottom: 1.5rem;
+    @include breakpoint($screen-sm-min) { 
+      @include fontsize(2.5);
+    }
+	}
+}
+.field-name-field-news-date {
+	font-family: FranklinGothicDemi;
+	margin-top: 1rem;
+}
+
+// Tags.
+.field-type-taxonomy-term-reference {
+	.field-label {
+		font-family: FranklinGothicDemi;
+		font-weight: normal;
+    display: inline-block;
+    padding-bottom: 5px;
+    @include breakpoint($tippie-sm-min) {
+      padding-top: 5px;
+      padding-bottom: 0;
+    }
+	}
+	.field-items .field-item {
+		display: inline-block;
+		margin: 0 0.5rem 0.5rem 0;
+
+		a {
+			font-family: FranklinGothicBook;
+			color: $dark-grey;
+			background-color: $light-grey;
+			padding: 0.3rem 0.5rem;
+			display: inline-block;
+			text-decoration: none;
+			font-weight: normal;
+		}
+		a:hover {
+			color: $blue;
+		}
+	}
+}
+
+// Featured view mode
+.view-display-id-featured_news {
+  margin-bottom: 3rem;
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+// Teaser view for the listing of news
+.view-display-id-teaser {
+ .view-content div {
+    display: block;
+  }
+}
+
+// Related and Recent News cards; using flexbox
+
+.view-display-id-related_news_block, 
+.view-display-id-recent_news_cards_attachment {
+  .views-row {
+  	background-color: $light-grey;
+  	padding: 0 0 0.8rem 0;
+  	margin: 0 0 10px 0;
+    @include breakpoint($tippie-sm-min) {
+      margin-right: 15px;
+      width: 31%;
+    }
+  	h4, .field-name-body {
+  		padding: 1rem 1.2rem 0 1.2rem;
+      margin: 0;
+  	}
+  	img {
+  		width: 100%;
+  		height: auto;
+  	}
+  }
+}
+
+.view-display-id-recent_news_cards_attachment > .view-content,
+.view-display-id-related_news_block > .view-content {
+  @include breakpoint($tippie-sm-min) {
+    @include flexbox();
+  }
+	@include alignitems(stretch);
+}
+
+// hiding the label for the exposed search filter on the News page
+.page-news {
+  .views-exposed-form {
+    .views-widget-filter-combine label {
+      @extend .hidden;
+    }
+    .views-exposed-widget .form-submit,
+    .views-submit-button, 
+    .views-reset-button {
+      margin-top: 0;
+    }
+  }
+}

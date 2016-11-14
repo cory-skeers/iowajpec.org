@@ -1,0 +1,62 @@
+$cardBodyPadding: 1.5rem;
+
+// Story Card Pane - gold header, white background, card image, title, quote in Blender, button link to the full Profile node
+.view-display-id-story_card_pane {
+  max-width: 40rem;
+  background-color: $white;
+  .views-field-field-profile-category {
+    @extend .card-header;
+  }
+  .views-field-field-profile-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  .views-field-title {
+    @extend .card-title;
+    padding-top: $cardBodyPadding;
+    padding-left: $cardBodyPadding;
+  }
+  .views-field-field-story-quote {
+    padding-left: $cardBodyPadding;
+    padding-right: $cardBodyPadding;
+    font-family: BlenderProMedium;
+    @include fontsize(1.5);
+  }
+  .views-field-view-node a {
+    @extend .primary-button;
+    margin: 0 0 1.5*$cardBodyPadding $cardBodyPadding;
+    display: inline-block;
+    padding: 0.5em 0.8em;
+    @include fontsize(1);
+  }
+}
+
+// Story Featured Pane - white background, square image, title in Blender, quote
+.view-display-id-story_featured_pane {
+  background-color: $white;
+
+  .border-wrapper {  
+    padding-bottom: 2rem;  
+    img {
+      //width: auto;
+      width: calc(100% - 4rem);
+      height: auto;
+      margin: 2rem 2rem 0 2rem;
+      position: relative;    
+    }
+    .card-wrapper {
+      @extend .card-body;
+      margin: 0 1rem;
+      background-color: transparent;
+    }  
+    @include breakpoint($tippie-sm-min) {
+      img {
+        float: left;
+        width: auto;
+      }
+      .card-wrapper {
+        margin-left: 340px;
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@mixin triangle($background-size) {
+  background: url(../images/triangle.svg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: $background-size;
+}

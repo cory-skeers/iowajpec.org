@@ -1,0 +1,174 @@
+$bp-menu-links-inline: $grid-float-breakpoint;
+
+.block-tippie-megamenu {
+  width: 100%;
+  
+  ul.nav {
+
+    background-color: $light_grey;
+    margin: 0;
+    height: 100%;
+
+    @include breakpoint($bp-menu-links-inline) {
+      background-color: transparent;
+      display: inline-block;
+      margin: 0;
+    }
+
+    a {
+      color: #000000;
+      font-family: FranklinGothicMedium;
+      position: relative;
+      padding: 20px 30px;
+      @include fontsize(1);
+
+      @include breakpoint($bp-menu-links-inline) {
+        padding: 10px 30px 10px 30px;
+      }  
+      @include breakpoint($bp-menu-links-inline $tippie-lg-min) {
+        padding: 10px 25px;
+      }    
+      @include breakpoint($tippie-lg-min) {
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+
+      .first-word {
+        font-family: FranklinGothicBook;
+
+        @include breakpoint($bp-menu-links-inline) {
+          display: block;
+        }
+      }
+
+      .caret {
+        border-top: 10px dashed;
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        display: block;
+        float: right;
+        margin-top: 8px;
+        @include breakpoint($bp-menu-links-inline) {
+          display: none;
+        }
+      }
+    }
+
+    li.link-depth-1 {
+ 
+      border-top: solid 1px #000;
+      @include breakpoint($bp-menu-links-inline) {
+        border-top: none;
+      }
+
+      > a {
+        line-height: 1.3;
+        @include breakpoint($bp-menu-links-inline) {
+          border-bottom: 4px solid transparent;
+        }
+
+        &:hover, &:focus, &.active {
+          background-color: transparent;
+          border-bottom-color: #000;
+        }
+      }
+    }
+
+    li.link-depth-2 {
+      padding: 8px 0 4px 0;    
+      background-color: $light_grey;
+
+      > a {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        @include breakpoint($bp-menu-links-inline) {
+          padding-left: 40px;
+        }
+      }
+      li.active.link-depth-3 > a {
+          &:active, &.active {
+            background-color: $gold;
+          }
+        }
+      &.last {
+        padding-bottom: 1.2rem;
+      }
+      // show children for Majors, MBA Programs, Master Programs
+      &.menu-link-majors, &.menu-link-mba-programs, 
+      &.menu-link-masters-programs, &.menu-link-mba-students,
+      &.menu-link-masters-students, &.menu-link-professional--executive-education {
+        .dropdown-menu {
+          display: block;
+          float: none;
+          border: none;
+          background-color: transparent;
+          position: relative;
+          padding-top: 5px;
+          padding-bottom: 0;
+          > li {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            // hide some items from the Future Grad menu
+            &.menu-link-compare-programs,
+            &.menu-link-short-courses,
+            &.menu-link-custom-corporate-education,
+            &.menu-link-contact-us {
+              display: none;
+            }
+           
+          }
+          a {
+            font-family: FranklinGothicBook;
+            @include fontsize(0.9);
+            padding-top: 4px;
+            padding-bottom: 3px;
+            padding-left: 30px;
+            @include breakpoint($bp-menu-links-inline) {
+              padding-left: 40px;
+            }
+            &:hover {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  ul.nav li li {
+
+    a:hover {
+    
+      &:before {
+        content: '\f105';
+        font-family: FontAwesome;
+        font-weight: 800;
+        position: absolute;
+        top: 2px;
+        left: 20px;
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+
+  .open .dropdown-menu {
+    min-width: 25em;
+    border-top: solid 1px #000;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    @include breakpoint($bp-menu-links-inline) {
+      border: none;
+    }
+    
+  }
+}
+
+ol.megamenu-column {
+  list-style: none;
+  padding-left: 0;
+}
+.dropdown-backdrop {
+  position: static;
+}
