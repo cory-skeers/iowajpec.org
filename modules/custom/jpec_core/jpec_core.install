@@ -110,3 +110,57 @@ function jpec_core_update_7004() {
     module_enable(array('menu_block'));
   }
 }
+
+/**
+ * Disable default blocks, try 2.
+ */
+function jpec_core_update_7005() {
+  db_update('block')
+    ->fields(array(
+      'status' => 0,
+      'region' => '-1',
+    ))
+    ->condition(db_or()
+      ->condition(db_and()
+        ->condition('module', 'system')
+        ->condition('delta', 'navigation')
+      )
+      ->condition(db_and()
+        ->condition('module', 'system')
+        ->condition('delta', 'management')
+      )
+      ->condition(db_and()
+        ->condition('module', 'user')
+        ->condition('delta', 'login')
+      )
+    )
+    ->execute();
+
+      // Turn off toolbar if it exists.
+  if (module_exists('toolbar')) {
+    module_disable(array('toolbar'));
+    drupal_uninstall_modules(array('toolbar'));
+  }
+
+  // Turn off admin_menu if it exists.
+  if (module_exists('admin_menu')) {
+    module_disable(array('admin_menu'));
+    drupal_uninstall_modules(array('admin_menu'));
+  }
+
+  // Turn on navbar.
+  if (!module_exists('navbar')) {
+    module_enable(array('navbar'));
+  }
+
+  // Enable ember administration theme.
+  theme_enable(array('adminimal'));
+
+  // Disable seven and bartik since they are not needed.
+  theme_disable(array('seven', 'bartik'));
+
+  // Set admin theme to ember.
+  variable_set('admin_theme', 'adminimal');
+
+  drupal_flush_all_caches();
+}
