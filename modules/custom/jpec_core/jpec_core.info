@@ -1,0 +1,16 @@
+name = JPEC Core
+core = 7.x
+package = JPEC
+version = 7.x-1.0
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[node][] = page
+features[variable][] = menu_options_page
+features[variable][] = menu_parent_page
+features[variable][] = node_options_page
+features[variable][] = node_preview_page
+features[variable][] = node_submitted_page
+project path = sites/www.iowajpec.org/modules/custom
