@@ -1,0 +1,41 @@
+/* https://accessibility.oit.ncsu.edu/tools/color-contrast/accessible-color-palette.php?colors=000,fff,ffcd00,f5bd18,fe5e00,e55500,56565a,ebe7e3,00a1c6,0098d9&level=AA */
+
+$gold: #FFCD00;
+$dark_gold: #F5BD18;
+$orange: #FE5E00;
+$dark_orange: #E55500;
+$dark_grey: #56565A;
+$light_grey: #EBE7E3;
+$blue: #00A1C6;
+$dark_blue: #0098D9;
+$neon: #00CCCC;
+$white: #FFFFFF;
+$black: #000000;
+
+$body_text: #000000;
+$primary_footer_text: #FFFFFF;
+$secondary_footer_text: #FFFFFF;
+
+$link: $dark_blue;
+$link_active: $dark_orange;
+$link_on_gold: #006382;
+$link_active_on_gold: #A43602;
+$link_in_footer: #FFFFFF;
+$link_in_footer_active: $gold;
+$link_in_sub_footer: $gold;
+$link_in_sub_footer_active: #FFFFFF;
+
+$background_gold: $gold;
+$background_grey: $light_grey;
+$background_blue_line: $dark_blue;
+
+$primary_button: $orange;
+$primary_button_text: $white;
+
+$color-facebook: #4A5E91;
+$color-twitter: #3ECEFB;
+$color-linkedin: #1A6DA1;
+$color-instagram: #406989;
+$color-flickr: #FF0084;
+$color-youtube: #B9242A;
+$color-pinterest: #bd081c;

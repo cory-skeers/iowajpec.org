@@ -1,0 +1,8 @@
+@mixin blue-angle($horizontal-position) {
+  @include breakpoint(min-width $screen-sm-min) {
+    background-image: url(../images/chevron.png);
+    background-repeat: no-repeat;
+    background-position: $horizontal-position 50%;
+    background-size: contain;
+  }
+}

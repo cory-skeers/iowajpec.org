@@ -1,0 +1,17 @@
+.breadcrumb-container {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.breadcrumb {
+	background-color: transparent;
+	padding: 8px 0;
+	margin-bottom: 0;
+	a {
+		color: $body_text;
+    padding: 0 8px 0 3px;
+		&:hover {
+      color: $blue;
+    }
+  }
+}

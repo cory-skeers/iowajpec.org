@@ -1,0 +1,204 @@
+<?php
+/**
+ * @file
+ * Code for the Tippie WYSIWYG Editor feature.
+ */
+
+include_once 'tippie_editor.features.inc';
+
+/**
+ * Implements hook_ckeditor_settings_alter().
+ */
+function tippie_editor_ckeditor_settings_alter(&$settings, $conf) {
+
+  $styles = array();
+
+  $styles[] = array(
+    'name' => 'Primary Button',
+    'element' => 'a',
+    'attributes' => array('class' => 'primary-button'),
+  );
+
+  $styles[] = array(
+    'name' => 'Large Text',
+    'element' => 'p',
+    'attributes' => array('class' => 'large-text'),
+  );
+
+  $styles[] = array(
+    'name' => 'Condensed Table',
+    'element' => 'table',
+    'attributes' => array('class' => 'table-condensed'),
+  );  
+
+  $styles[] = array(
+    'name' => 'Gold Background',
+    'element' => 'td',
+    'attributes' => array('class' => 'background-dark-gold'),
+  ); 
+
+  $styles[] = array(
+    'name' => 'Neon Background',
+    'element' => 'td',
+    'attributes' => array('class' => 'background-neon'),
+  );    
+
+  $settings['stylesSet'] = $styles;
+
+  $settings['justifyClasses'] = array('align-left', 'align-center', 'align-right', 'align-justify');
+
+  unset($settings['stylesCombo_stylesSet']);
+
+  $settings['contentsCss'][] = $GLOBALS['base_path'] . drupal_get_path('theme', 'jpec') . '/assets/css/jpec.style.css';
+
+  $settings['contentsCss'][] = $GLOBALS['base_path'] . drupal_get_path('module', 'tippie_editor') . '/css/ckeditor-styles.css';
+
+}
+
+/**
+ * Implements hook_libraries_info().
+ */
+function tippie_editor_libraries_info() {
+
+  $libraries['ckeditor_autogrow'] = array(
+    'name' => 'AutoGrow',
+    'vendor url' => 'http://cksource.com',
+    'download url' => 'http://ckeditor.com/addon/autogrow',
+    'version' => '4.5.7',
+    'files' => array(
+      'js' => array(
+        'plugin.js',
+      ),
+    ),
+  );
+
+  $libraries['ckeditor_basewidget'] = array(
+    'name' => 'BaseWidget',
+    'vendor url' => 'http://ckeditor.com/users/rpet',
+    'download url' => 'http://ckeditor.com/addon/basewidget',
+    'version' => '4.5.7',
+    'files' => array(
+      'js' => array(
+        'plugin.js',
+      ),
+    ),
+  );
+
+  $libraries['ckeditor_layoutmanager'] = array(
+    'name' => 'LayoutManager',
+    'vendor url' => 'http://ckeditor.com/users/rpet',
+    'download url' => 'http://ckeditor.com/addon/layoutmanager',
+    'version' => '4.5.7',
+    'files' => array(
+      'js' => array(
+        'plugin.js',
+      ),
+    ),
+  );
+
+  $libraries['ckeditor_menubutton'] = array(
+    'name' => 'MenuButton',
+    'vendor url' => 'http://cksource.com/',
+    'download url' => 'http://ckeditor.com/addon/menubutton',
+    'version' => '4.5.7',
+    'files' => array(
+      'js' => array(
+        'plugin.js',
+      ),
+    ),
+  );
+
+  $libraries['tippiewidgets'] = array(
+    'name' => 'TippieWidgets',
+    'vendor url' => 'http://uiowa.edu/',
+    'download url' => '',
+    'version' => '4.5.7',
+    'files' => array(
+      'js' => array(
+        'plugin.js',
+      ),
+    ),
+  );
+
+  return $libraries;
+}
+
+/**
+ * Implements hook_ckeditor_plugin().
+ */
+function tippie_editor_ckeditor_plugin() {
+  $plugins = array();
+
+  if (($library = libraries_detect('ckeditor_autogrow')) && !empty($library['installed'])) {
+
+    $plugins['autogrow'] = array(
+      'name' => 'autogrow',
+      'desc' => t('Autogrow the height of the editor'),
+      'path' => $GLOBALS['base_path'] . $library['library path'] . '/',
+      'buttons' => FALSE,
+    );
+  }
+
+  if (($library = libraries_detect('ckeditor_basewidget')) && !empty($library['installed'])) {
+    $plugins['basewidget'] = array(
+      'name' => 'basewidget',
+      'desc' => t('Base Widget'),
+      'path' => $GLOBALS['base_path'] . $library['library path'] . '/',
+      'buttons' => FALSE,
+    );
+  }
+
+  if (($library = libraries_detect('ckeditor_layoutmanager')) && !empty($library['installed'])) {
+    $plugins['layoutmanager'] = array(
+      'name' => 'layoutmanager',
+      'desc' => t('Bootstrap Layout Manager'),
+      'path' => $GLOBALS['base_path'] . $library['library path'] . '/',
+      'buttons' => array(
+        'AddLayout' => array(
+          'icon' => 'icons/addlayout.png',
+          'label' => t('Layout Manager'),
+          'required_html' => array(array(
+            'tags' => array('div'),
+            'attributes' => array('class' => array(
+              'layoutmanager',
+              'container-fluid',
+              'layout-container',
+              'row',
+              'layout-row',
+              'layout-column',
+              'col-xs-4',
+              'col-sm-4',
+              'col-md-4',
+              'col-lg-4'
+            )),
+          )),
+        ),
+      ),
+    );
+  }
+
+  if (($library = libraries_detect('ckeditor_menubutton')) && !empty($library['installed'])) {
+    $plugins['menubutton'] = array(
+      'name' => 'menubutton',
+      'desc' => t('Menu Button'),
+      'path' => $GLOBALS['base_path'] . $library['library path'] . '/',
+      'buttons' => FALSE,
+    );
+  }
+
+  if (($library = libraries_detect('tippiewidgets')) && !empty($library['installed'])) {
+    $plugins['tippiewidgets'] = array(
+      'name' => 'tippiewidgets',
+      'desc' => t('Tippie Widgets'),
+      'path' => $GLOBALS['base_path'] . $library['library path'] . '/',
+      'buttons' => array(
+        'TippieWidgetMenu' => array(
+          'label' => t('Widget Manager'),
+          'icon' => 'icons/tippiewidgetmenu.png'
+        ),
+      ),
+    );
+  }
+
+  return $plugins;
+}

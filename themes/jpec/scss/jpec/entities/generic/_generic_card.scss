@@ -1,0 +1,14 @@
+.node-generic_block-card {
+
+  .field-name-field-generic-header {
+    @extend .card-header;
+  }
+
+  .card-description-wrapper {
+    @extend .card-body;
+  }
+
+  .node-title {
+    @extend .card-title;
+  }
+}

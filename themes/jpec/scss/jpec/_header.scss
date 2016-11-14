@@ -1,0 +1,173 @@
+$header_suffix_background: $light_grey;
+
+//use this breakpoint value pairs to fix the header font sizes and padding and prevent header content going lower than image for medium-large and small screens
+$tippie-xl: 1200px 1430px; 
+$tippie-sm: $tippie-sm-min $tippie-sm-max; 
+$tippie-md: $tippie-md-min $screen-lg-min; 
+// 984 - 1180
+
+$header_padding: 1.5rem;
+
+.page-header {
+  img {
+    height: auto;
+    max-width: 100%;
+  }    
+  .container {
+    padding: 1.5rem;
+    @include breakpoint($tippie-lg-min) {
+      padding: 3rem 5rem;
+    }
+  }
+
+  .header-content {
+    padding: 1.5rem;
+    @include triangle(contain);
+
+    @include breakpoint($tippie-lg-min) {
+      width: 75%;
+      margin: 1rem 0;
+      h1 {
+        @include fontsize(4);
+      }
+    }
+
+    .section-title {
+      @include fontsize(1.2);
+      text-transform: uppercase;
+      font-family: BlenderProBold;
+
+      @include breakpoint($tippie-lg-min) {
+        @include fontsize(1.75);
+      }
+    }
+    
+    // fix overflow issues on medium-large screens (1200px - 1430 px)
+    @include breakpoint($tippie-xl) {
+      margin: 1rem 0 0 1rem;
+      width: 65%;
+      h1 {
+        @include fontsize(3); 
+      }
+      .custom-text {
+        @include fontsize(1.7);
+      }
+    }
+
+    // fix overflow issues on medium screens (992px - 1199 px)
+    @include breakpoint($tippie-md) {
+      margin: 1rem 0 0 0;
+      width: 65%;
+      // h1 {
+      //   @include fontsize(2.5); 
+      // }
+      // .custom-text {
+      //   @include fontsize(1.5);
+      //   line-height: 2rem;
+      // }
+    } 
+
+    // fix overflow issues on small screens (768px - 992 px)
+    @include breakpoint($tippie-sm) {
+      margin: 1rem 0 0 0;
+      width: 65%;
+      h1 {
+        @include fontsize(2.5); 
+      }
+      .custom-text {
+        @include fontsize(1.5);
+        line-height: 2rem;
+      }
+    }    
+
+  }
+
+  .custom-text {
+    @include fontsize(1.4);
+    margin-top: 0.9rem;
+    display: block;
+    font-family: BlenderProMedium;
+    line-height: 1.3;
+
+    p {
+      margin-bottom: $header_padding/3;
+    }
+  }
+
+  @include breakpoint($tippie-sm-min) {
+    .custom-text {
+      @include fontsize(2);
+      width: 100%;
+    }
+  }
+
+  .display-title {
+    @include fontsize(1.2);
+    display: block;
+    font-family: BlenderProBold;
+  }
+
+  .primary-button {
+    display: table;
+    margin-top: $header_padding;
+  }
+
+  .header-suffix {
+    background-color: $header_suffix_background;
+    padding: $header_padding;
+  }
+
+  &.tall-image-story {
+    .header-fields {
+      display: none !important;
+    }
+  }
+
+  @include breakpoint(max-width $tippie-sm-max) {
+    &.short-image {
+      background: none !important;
+    }
+  }
+
+  @include breakpoint($tippie-sm-min) {
+
+    &.short-image {
+      height: 290px;
+
+      // Center the container vertically.
+      .container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &.tall-image {
+      margin:auto;
+      position:relative;
+
+      img {
+        width:100%;
+        height:auto;
+      }
+
+      .container {
+        position:absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0px;
+      }
+    }
+
+    &.tall-image-story {
+      .header-fields {
+        display: block !important;
+      }
+
+      .header-suffix {
+        display: none !important;
+      }
+    }
+  }
+}

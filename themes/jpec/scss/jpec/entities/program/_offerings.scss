@@ -1,0 +1,28 @@
+.field-name-field-program-offerings {
+  padding: 2rem 0;
+
+  & > .field-items {
+
+    & > .field-item {
+      @extend .card-wrapper;
+      // Image max width is 640px;
+      max-width: 640px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @include breakpoint(min-width $screen-sm-min) {
+
+    & > .field-items {
+      @include flexbox();
+      flex-wrap: wrap;
+      margin-left: -10px;
+      margin-right: -10px;
+
+      & > .field-item {
+        width: 31%;
+        margin: 10px;
+      }
+    }
+  }
+}

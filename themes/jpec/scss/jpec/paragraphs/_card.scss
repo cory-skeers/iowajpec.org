@@ -1,0 +1,37 @@
+$card_padding: 1.5rem;
+
+.entity-paragraphs-item.paragraphs-item-card {
+  padding-top: 0;
+}
+.paragraphs-item-card { 
+  .content.container {
+    padding-top: 0;
+  }
+  .card-body h3 {
+    font-family: FranklinGothicBook;
+    @include fontsize(1.6);
+  }
+
+  .field-type-entityreference > .field-items {
+
+    & > .field-item {
+      margin-bottom: 15px;
+      @extend .card-wrapper;
+      .card-body {
+        @extend .card-body;
+      }
+    }
+    //flexbox on larger screens
+    @include breakpoint(min-width $screen-sm-min) {
+      @include flexbox();
+      flex-wrap: wrap;
+      margin-left: -10px;
+      margin-right: -10px;
+
+      & > .field-item {
+        width: 31%;
+        margin: 10px;
+      }
+    }
+  }
+}

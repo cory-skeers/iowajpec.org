@@ -1,0 +1,11 @@
+.field-name-field-leading-text {
+  padding: 35px 0 15px 0;
+  .card-body & {
+    padding: 0;
+  }
+  @include breakpoint($tippie-lg-min) {
+    padding: 0;
+  }
+}
+
+

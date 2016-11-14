@@ -1,0 +1,62 @@
+$card_padding: 1.5rem;
+
+.paragraphs-item-social { 
+  h3 {
+    font-family: FranklinGothicBook;
+    @include fontsize(1.6);
+  }
+  .content {
+    .social-card {
+      background-color: $background_grey;
+      margin: 10px;
+      .primary-button {
+        padding: 6px 17px;
+      }
+      .card-body {
+        padding: 0 $card_padding;
+      }
+      .field-label {
+        @extend .card-header;
+      }
+      .field-items {
+        padding: $card_padding;
+      }
+      .primary-button {
+        margin-top: 1rem;
+      }
+      i {
+        margin-right: 0.5rem;
+      }
+      .view-mba-events {
+        // event name
+        .views-field-text-2 {
+          font-family: FranklinGothicMedium;
+          margin-bottom: 1rem;
+        }
+      }
+      .view-news {
+        .views-field-title {
+          font-family: FranklinGothicMedium;
+          margin-bottom: 1rem;        
+        }
+      }
+
+
+    }
+
+    .social-wrapper {
+      //flexbox on larger screens
+      @include breakpoint(min-width $screen-sm-min) {
+        @include flexbox();
+        flex-wrap: wrap;
+        // margin-left: -10px;
+        // margin-right: -10px;
+
+        & > .social-card {
+          width: 31%;
+          margin: 10px 20px 10px 0;
+        }
+      }  
+    }
+  }
+}

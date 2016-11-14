@@ -1,0 +1,52 @@
+.modal-dialog {
+  @include breakpoint($tippie-sm-min) {
+    width: 705px;
+  }
+
+  @include breakpoint($tippie-md-min) {
+    width: 940px;
+  }
+
+  @include breakpoint($tippie-lg-min) {
+    width: 1130px;
+  }
+}
+
+.modal-content {
+  border-radius: 0;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding: 1rem 2rem 0;
+
+  @include breakpoint($tippie-md-min) {
+    padding: 2rem 5rem 0;
+  }
+
+  .close {
+    margin-top: 0;
+    margin-right: -1rem;
+
+    @include breakpoint($tippie-md-min) {
+      margin-right: -3rem;
+    }
+  }
+}
+
+.modal-title {
+  @extend .h2;
+  margin-top: 1rem;
+
+  @include breakpoint($tippie-md-min) {
+    margin-top: 3rem;
+  }
+}
+
+.modal-body {
+  padding: 0 2rem 2rem;
+
+  @include breakpoint($tippie-md-min) {
+    padding: 0 5rem 5rem;
+  }
+}

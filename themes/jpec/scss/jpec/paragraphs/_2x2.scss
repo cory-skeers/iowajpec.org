@@ -1,0 +1,180 @@
+$main_2x2_background: $light_grey;
+$item_2x2_background: $gold;
+$item_2x2_link_active: $link_on_gold;
+
+.paragraphs-item-2x2-feature {
+
+  margin: 2rem 0;
+
+  // Layout styles.
+  .main-item-2x2 {
+    background-color: $main_2x2_background;
+  }
+
+  // Layout styles.
+  .leading-text {
+    padding: 2rem;
+  }
+
+  .item-2x2 {
+    margin: 1rem 0;
+    width: 100%;
+    background-color: $item_2x2_background;
+    @include breakpoint($tippie-sm-min) {
+      margin: 1rem 2rem;
+    }
+  }
+
+  .info {
+    background-color: $item_2x2_background;
+    padding: 1.5rem;
+    padding-right: 2rem;
+    position: relative;
+  }
+
+  // Element styles.
+  h2 {
+    margin: 0 0 1rem 0;
+  }
+
+  a {
+    color: #000000;
+  }
+
+  a:hover, a:focus {
+    color: $item_2x2_link_active;
+    text-decoration: none;
+  }
+
+  .caret {
+    color: $orange;
+    margin: 0;
+    position: absolute;
+    right: 10px;
+    top: 48%;
+
+    &.right {
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px dashed;
+      border-right: none;
+    }
+  }
+
+  .field-name-field-2x2-description {
+    @include fontsize(1.1);
+    font-family: BlenderProBook;
+  }
+
+
+  .field-title {
+    @include fontsize(1.3);
+    margin-bottom: 0.3rem;
+  }
+
+  .field-description {
+    @include fontsize(0.9);
+  }
+
+  &.leading-image .main-item-2x2 {
+
+    position: relative;
+
+    .field-name-field-2x2-image {
+      position: relative;
+    }
+
+    .leading-text {
+      color: $white;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
+
+    h2 {
+      @include fontsize(2);
+      text-transform: uppercase;
+      //width: 50%;
+    }
+  }
+
+
+  @include breakpoint(min-width 585px) {
+    .content {
+      @include flexbox();
+      flex-wrap: wrap;
+    }
+
+    .item-2x2,
+    .main-item-2x2 {
+      margin: 0;
+      width: 49.9%;
+      position: relative;
+    }
+
+    .info {
+      position: absolute;
+      bottom: 0;
+    }
+
+    .field-name-field-2x2-description {
+      @include fontsize(1.4);
+      font-family: BlenderProBook;
+    }
+
+    .field-description {
+      @include fontsize(1.0);
+    }
+
+    &.leading-image .main-item-2x2 {
+      h2 {
+        @include fontsize(2.5);
+      }
+
+      .field-name-field-2x2-description {
+        @include fontsize(1.3);
+      }
+    }
+  }
+
+  @include breakpoint(min-width 700px) {
+
+    &.leading-image .main-item-2x2 {
+      h2 {
+        @include fontsize(3.0);
+      }
+    }
+  }
+
+  @include breakpoint(min-width $tippie-md-min) {
+
+    .leading-text {
+      padding: 4rem;
+    }
+
+    .field-name-field-2x2-description {
+      @include fontsize(1.7);
+    }
+
+    .field-title {
+      @include fontsize(1.4);
+      margin-bottom: 1.0rem;
+    }
+
+    .info {
+      width: 50%;
+    }
+
+     &.leading-image .main-item-2x2 {
+      h2 {
+        @include fontsize(3.5);
+        width: 65%;
+      }
+
+      .field-name-field-2x2-description {
+        @include fontsize(1.8);
+        width: 85%;
+      }
+    }
+  }
+}

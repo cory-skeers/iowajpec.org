@@ -1,0 +1,133 @@
+.node-department-full {
+
+  .department-factoid-wrapper {
+    background-color: $blue;
+    .field-label {
+      color: $white;
+    }
+  }
+
+  .department-contact-wrapper {
+    background-color: $light_grey;
+    padding-bottom: 2rem;
+    @include breakpoint($screen-md-min) {
+      @include blue-angle(90%);
+    }
+    h3 {
+      margin: 0;
+      @extend .h4;
+    }
+    .field {
+      margin-top: 0.5rem;
+    }
+    .field-name-field-department-contact {
+      margin-top: 0;
+    }
+    .field-name-field-department-email {
+      .field-label {
+        @include offscreen;
+      }
+
+      a {
+        //font-family: FranklinGothicDemi;
+        &:before {
+        font-family: FontAwesome;
+          content: "\f003";
+          padding: 0 10px 0 0;
+        }
+      }
+    }
+    .field-name-field-department-phone {
+
+      .field-label {
+        @include offscreen;
+      }
+
+      .field-item {
+        &:before {
+          font-family: FontAwesome;
+          content: "\f095";
+          padding: 0 10px 0 0;
+        }
+      }
+    }
+
+    .field-name-field-department-fax {
+
+      .field-label {
+        @include offscreen;
+      }
+
+      .field-item {
+        &:before {
+          font-family: FontAwesome;
+          content: "\f1ac";
+          padding: 0 10px 0 0;
+        }
+      }
+    }
+
+  }
+
+  .field-name-field-department-factoid,
+  .field-name-field-department-highlight,
+  .field-name-field-department-program {
+    h3 {
+      @extend .card-title;
+      padding-top: 0;
+    }
+    > .field-items {
+      > .field-item {
+        margin: 30px 0;
+      }
+      @include breakpoint($screen-sm-min) { 
+        @include flexbox();
+        @include alignitems(stretch);
+        margin-left: -10px;
+        margin-right: -10px;
+        > .field-item {
+          width: 31%;
+          margin: 10px;
+        }
+      }
+    }
+  }
+
+  .field-name-field-department-highlight {
+    margin-top: 2rem;
+  }
+  .view-display-id-department_block .view-content {
+    img {
+      width: 100%;
+      height: auto;
+    }
+    h4, .views-field-title {
+      padding: 1rem 1.2rem 0 1.2rem;
+      margin: 0;
+    }
+    > .views-row {
+      background-color: $light-grey;
+      padding: 0 0 0.8rem 0;
+      margin: 0 0 10px 0;
+    }
+    @include breakpoint($screen-sm-min) { 
+      @include flexbox();
+      @include alignitems(stretch);
+      margin-left: -10px;
+      margin-right: -10px;
+      > .views-row {
+        width: 31%;
+        margin: 10px;
+      }
+    }
+  }
+
+  .field-name-field-department-highlight,
+  .field-name-field-department-program { 
+    > .field-items {
+      > .field-item {
+        @extend .card-wrapper;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.table-bordered, .calendar-calendar table.mini {
+  & > tbody > tr > td, 
+  & > thead:first-child > tr:first-child > th {
+    border: 2px solid $white;
+  }
+}
+
+tr.even, tr.odd {
+  background-color: $light_grey;
+}
+thead > tr:nth-child(odd) {
+  background-color: transparent;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: $white;
+}
+thead > tr > th[scope=row] {
+  background-color: transparent;
+}
+table.table-condensed {
+  th, td {
+    text-align: center;
+  }
+}

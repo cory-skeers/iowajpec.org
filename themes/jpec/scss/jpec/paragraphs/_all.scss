@@ -1,0 +1,16 @@
+.entity-paragraphs-item {
+  padding-top: 1.5rem;
+  h3:first-of-type {
+    margin-top: 0;
+  }
+  &.background-gold,
+  &.background-blue-line,
+  &.background-grey {
+    padding: 1.5rem 0;
+
+    & + .entity-paragraphs-item {
+      padding-top: 1.5rem;
+    }
+  }
+}
+

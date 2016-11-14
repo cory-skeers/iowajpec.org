@@ -1,0 +1,22 @@
+$card_padding: 1.5rem;
+
+.paragraphs-item-story-card {
+  background-color: $background_grey;
+  padding-top: 1.5rem;
+  .col-md-6 {
+    margin-bottom: 1.5*$card_padding;
+  }
+
+  @include breakpoint($tippie-md-min) {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+    h2, h3 {
+      margin-top: 0;
+    }
+
+    .col-md-6 {
+      margin-bottom: 0;
+    }
+  }
+}

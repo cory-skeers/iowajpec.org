@@ -1,0 +1,36 @@
+/**
+ * Background styles and general content containers.
+ */
+
+.dashed-line {
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 10px;
+  border-top: dashed 2px $white;
+}
+.background-neon {
+  background-color: $neon;
+}
+.background-dark-gold {
+  background-color: $gold;
+}
+.background-gold {
+  position: relative;
+  overflow: hidden;
+  background-color: $gold;
+}
+.background-gold:before {
+  @extend .dashed-line;
+  top: -10%;
+  left: -45%;
+  transform: rotate(8deg);
+}
+.background-blue-line {
+  position: relative;
+  overflow: hidden;
+  @include blue-angle(98%);
+}
+.background-grey {
+  background-color: $background_grey;
+}
