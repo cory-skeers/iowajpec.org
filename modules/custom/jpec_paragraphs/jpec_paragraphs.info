@@ -1,0 +1,17 @@
+name = JPEC Paragraphs
+core = 7.x
+package = JPEC
+version = 7.x-1.0
+dependencies[] = classy_paragraphs
+dependencies[] = features
+dependencies[] = jpec_core
+dependencies[] = options
+dependencies[] = paragraphs
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = field_paragraph_body
+features[field_base][] = field_paragraph_container_style
+features[field_instance][] = paragraphs_item-text_area-field_paragraph_body
+features[field_instance][] = paragraphs_item-text_area-field_paragraph_container_style
+features[paragraphs][] = text_area
+project path = sites/www.iowajpec.org/modules/custom
