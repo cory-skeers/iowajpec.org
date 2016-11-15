@@ -164,3 +164,16 @@ function jpec_core_update_7005() {
 
   drupal_flush_all_caches();
 }
+
+/**
+ * Enable jpec_page and jpec_paragraphs feature
+ */
+function jpec_core_update_7006() {
+  if (!module_exists('jpec_paragraphs')) {
+    module_enable(array('jpec_paragraphs'));
+  }
+
+  if (!module_exists('jpec_page')) {
+    module_enable(array('jpec_page'));
+  }
+}
