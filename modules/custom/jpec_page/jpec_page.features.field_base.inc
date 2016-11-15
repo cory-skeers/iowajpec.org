@@ -10,6 +10,21 @@
 function jpec_page_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_content_block'.
+  $field_bases['field_content_block'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_content_block',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'paragraphs',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'paragraphs',
+  );
+
   // Exported field_base: 'field_header_custom_text'.
   $field_bases['field_header_custom_text'] = array(
     'active' => 1,

@@ -24,6 +24,7 @@ function jpec_page_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'field_summary',
+      1 => 'field_content_block',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

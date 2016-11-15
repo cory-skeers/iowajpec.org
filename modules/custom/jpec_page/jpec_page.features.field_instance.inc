@@ -10,6 +10,55 @@
 function jpec_page_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-page-field_content_block'.
+  $field_instances['node-page-field_content_block'] = array(
+    'bundle' => 'page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'paragraphs',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'paragraphs_view',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_content_block',
+    'label' => 'Content Block',
+    'required' => 0,
+    'settings' => array(
+      'add_mode' => 'select',
+      'allowed_bundles' => array(
+        'text_area' => 'text_area',
+      ),
+      'bundle_weights' => array(
+        'text_area' => 2,
+      ),
+      'default_edit_mode' => 'preview',
+      'title' => 'Content Block',
+      'title_multiple' => 'Content Blocks',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'paragraphs',
+      'settings' => array(),
+      'type' => 'paragraphs_embed',
+      'weight' => 5,
+    ),
+  );
+
   // Exported field_instance: 'node-page-field_header_custom_text'.
   $field_instances['node-page-field_header_custom_text'] = array(
     'bundle' => 'page',
@@ -475,6 +524,7 @@ function jpec_page_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Add an optional section title. This is shown in smaller text above the page title. E.g. "Professional MBA"');
+  t('Content Block');
   t('Custom Text');
   t('Header Type');
   t('Page Title');
