@@ -181,21 +181,3 @@ function jpec_core_image_default_styles() {
 
   return $styles;
 }
-
-/**
- * Implements hook_node_info().
- */
-function jpec_core_node_info() {
-  $items = array(
-    'page' => array(
-      'name' => t('Page'),
-      'base' => 'node_content',
-      'description' => t('General Resource page'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
-  );
-  drupal_alter('node_info', $items);
-  return $items;
-}
