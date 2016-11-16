@@ -5,3 +5,13 @@
  */
 
 include_once 'jpec_page.features.inc';
+
+/**
+ * Implements hook_auto_entitylabel_title_alter().
+ */
+function jpec_page_auto_entitylabel_title_alter(&$titles, $entity) {
+  // Trim the title.
+  foreach ($titles as $k => $v) {
+    $titles[$k] = trim($v);
+  }
+}
