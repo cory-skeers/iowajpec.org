@@ -5,3 +5,108 @@
  */
 
 include_once 'jpec_paragraphs.features.inc';
+
+/**
+ * Implements hook_field_widget_form_alter().
+ */
+// function jpec_paragraphs_field_widget_form_alter(&$element, &$form_state, $context) {
+
+//   switch ($context['field']['field_name']) {
+    
+//     // Story Reference view
+//     case 'field_story_view':
+//       // Do not show the view name selector.
+//       $element['vname']['#access'] = FALSE;
+
+//       // Use title and description from vname on vargs.
+//       $element['vargs']['#title'] = $element['vname']['#title'];
+//       $element['vargs']['#description'] = $element['vname']['#description'];
+//       $element['vargs']['#required'] = TRUE;
+
+//       // Disable the token options.
+//       $element['token_help']['#access'] = FALSE;
+//       break;
+
+//     // Up and Coming paragraph, mba recruiting events view
+//     case 'field_social_recruiting_events':
+
+//       // Hide the Master display of mba_events view
+//       unset($element['vname']['#options']['mba_events|default']);
+      
+//       // Do not show the arguments selector.
+//       $element['vargs']['#access'] = FALSE;
+
+//       // Disable the token options.
+//       $element['token_help']['#access'] = FALSE;
+//       break; 
+
+//     // Up and Coming paragraph, news items view (by tag)
+//     case 'field_social_news_view':
+      
+//       // Hide the views dropdown selector - the social_news_view is selected by default and doesn't need to be changed by user.
+//       $element['vname']['#access'] = FALSE;    
+
+//       // Customize the arguments selector - change the title and description.
+//       $element['vargs']['#title'] = 'News Tag'; 
+//       $element['vargs']['#description'] = 'Please enter a tag from the News Vocabulary to display the news items.'; 
+
+//       // Disable the token options.
+//       $element['token_help']['#access'] = FALSE;
+//       break;            
+    
+//     default:
+//       break;
+//   }
+
+// }
+
+/**
+ * Implements hook_classy_paragraphs_list_options().
+ */
+function jpec_paragraphs_classy_paragraphs_list_options($options, $field, $instance) {
+  if ($field['field_name'] == 'field_paragraph_container_style') {
+    $options['background-gold'] = t('Gold Background');
+    $options['background-blue-line'] = t('Blue Line Background');
+    $options['background-grey'] = t('Grey Background');
+  }
+
+  return $options;
+}
+
+/**
+ * Implements hook_inline_entity_form_table_fields_alter().
+ * Displays previews of factoid images in the Factoid Paragraph.
+ */
+// function tippie_paragraphs_inline_entity_form_table_fields_alter(&$fields, $context) {
+//   // Alter inline entity form to include images.
+  
+//   $image_field_info = array(
+//     'type' => 'field',
+//     'label' => t('Image'),
+//     'weight' => 0,
+//     'formatter' => 'file_rendered',
+//     'settings' => array('file_view_mode' => 'teaser'),
+//   );
+
+//   switch ($context['field_name']) {
+//     case 'field_factoids_factoid_ref':
+//       $fields['field_factoid_image'] = $image_field_info;
+//       break;
+//   }
+// }
+
+/**
+ * Implements template_preprocess_field().
+ */
+// function tippie_paragraphs_preprocess_field(&$variables) {
+
+//   // add javascript for Facebook
+//   if (isset($variables['element']['#field_name']) && $variables['element']['#field_name'] == 'field_facebook_page_name') {
+//     drupal_add_js(drupal_get_path('module', 'tippie_paragraphs') . '/js/facebook-widget.js');
+//   }
+
+//   // add javascript for Twitter
+//   if (isset($variables['element']['#field_name']) && $variables['element']['#field_name'] == 'field_org_twitter') {
+//     drupal_add_js(drupal_get_path('module', 'tippie_paragraphs') . '/js/twitter-widget.js');
+//   }
+// }
