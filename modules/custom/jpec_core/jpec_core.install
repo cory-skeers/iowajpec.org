@@ -177,3 +177,87 @@ function jpec_core_update_7006() {
     module_enable(array('jpec_page'));
   }
 }
+
+/**
+ * Move the section menu into content region.
+ */
+
+function jpec_core_update_7007() {
+
+  if (module_exists('bootstrap_library')) {
+    module_disable(array('bootstrap_library'));
+    drupal_uninstall_modules(array('bootstrap_library'));
+  }
+
+  // Update the section block configuration.
+  variable_set("menu_block_1_title_link", 0);
+  variable_set("menu_block_1_level", '1');
+  variable_set("menu_block_1_follow", 'child');
+
+  // Update help block weight.
+  db_update('block')
+    ->fields(array(
+      'weight' => '-11',
+    ))
+    ->condition(db_and()
+      ->condition('theme', 'jpec')
+      ->condition('module', 'system')
+      ->condition('delta', 'help')
+    )
+    ->execute();
+
+  db_update('block')
+    ->fields(array(
+      'status' => 1,
+      'region' => 'content',
+      'weight' => '-10',
+    ))
+    ->condition(db_and()
+      ->condition('theme', 'jpec')
+      ->condition('module', 'menu_block')
+      ->condition('delta', '1')
+    )
+    ->execute();
+}
+
+/**
+ * Hide section menu from the homepage.
+ */
+
+function jpec_core_update_7008() {
+  db_update('block')
+    ->fields(array(
+      'pages' => '<front>',
+    ))
+    ->condition(db_and()
+      ->condition('theme', 'jpec')
+      ->condition('module', 'menu_block')
+      ->condition('delta', '1')
+    )
+    ->execute();
+}
+
+/**
+ * Section menu modifications.
+ */
+function jpec_core_update_7009() {
+
+  // Update the section block configuration.
+  variable_set("menu_block_1_admin_title", 'Section Menu');
+  variable_set("menu_block_1_depth", 0);
+  variable_set("menu_block_1_follow", 0);
+  variable_set("menu_block_1_sort", 1);
+}
+
+/**
+ * Enable jquery_update and admin_views modules
+ */
+function jpec_core_update_7010() {
+  if (!module_exists('jquery_update')) {
+    module_enable(array('jquery_update'));
+  }
+
+  if (!module_exists('admin_views')) {
+    module_enable(array('admin_views'));
+  }
+}
