@@ -36,6 +36,7 @@ features[image][] = tall_header_large
 features[image][] = tall_header_medium
 features[image][] = tall_header_original
 features[image][] = tall_header_small
+features[menu_custom][] = main-menu
 features[picture_mapping][] = tall_header
 features[variable][] = field_bundle_settings_node__page
 features[variable][] = menu_options_page

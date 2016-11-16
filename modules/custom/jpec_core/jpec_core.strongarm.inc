@@ -28,6 +28,12 @@ function jpec_core_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'featured' => array(
+        'custom_settings' => FALSE,
+      ),
+      'card' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -73,7 +79,7 @@ function jpec_core_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_page';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_page'] = $strongarm;
 
   $strongarm = new stdClass();
