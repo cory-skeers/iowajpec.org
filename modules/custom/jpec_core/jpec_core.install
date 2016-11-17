@@ -279,3 +279,108 @@ function jpec_core_update_7012() {
     module_enable(array('auto_entitylabel'));
   }
 }
+
+/**
+ * Allow images to be categorized in the media library.
+ */
+function jpec_core_update_7013() {
+  if (!module_exists('transliteration')) {
+    module_enable(array('transliteration'));
+  }
+
+  if (!module_exists('media_browser_plus')) {
+    module_enable(array('media_browser_plus'));
+  }
+
+  // Create the initial media folders.
+  $new_terms = array(
+    'Documents',
+    'Images',
+    '2x2',
+    'Cards',
+    'Directory',
+    'Factoids',
+    'Headers',
+    'Short',
+    'Tall',
+    'News'
+  );
+
+  // Load the media_folders vocabulary ID.
+  $vid = taxonomy_vocabulary_machine_name_load('media_folders')->vid;
+
+  // Create new terms from the $new_terms array.
+  foreach ($new_terms as $item) {
+    $new_term = new stdClass();
+    $new_term->name = $item;
+    $new_term->vid = $vid;
+
+    $parent = '';
+
+    switch ($item) {
+      case 'Headers':
+        $parent = taxonomy_get_term_by_name('Images', 'media_folders');
+        break;
+
+      case 'Short':
+        $parent = taxonomy_get_term_by_name('Headers', 'media_folders');
+        break;
+
+      case 'Tall':
+        $parent = taxonomy_get_term_by_name('Headers', 'media_folders');
+        break;
+
+      case 'News':
+        $parent = taxonomy_get_term_by_name('Images', 'media_folders');
+        break;
+
+      case '2x2':
+        $parent = taxonomy_get_term_by_name('Images', 'media_folders');
+        break;
+
+      case 'Factoids':
+        $parent = taxonomy_get_term_by_name('Images', 'media_folders');
+        break;
+
+      case 'Directory':
+        $parent = taxonomy_get_term_by_name('Images', 'media_folders');
+        break;
+
+      case 'Cards':
+        $parent = taxonomy_get_term_by_name('Images', 'media_folders');
+        break;                
+
+      default:
+        break;
+    }
+
+    if (!empty($parent)) {
+      $tid = array_pop($parent)->tid;
+      $new_term->parent = $tid;
+    }
+
+    taxonomy_term_save($new_term);
+  }
+
+  // A list of views to disable.
+  $viewnames = array(
+    'media_default',
+    'media_browser_plus',
+  );
+
+  // Grab list of views that are already disabled.
+  $views_status = variable_get('views_defaults', array());
+
+  // Add our views to be disabled to the list.
+  foreach ($viewnames as $key => $viewname) {
+    $views_status[$viewname] = TRUE;
+  }
+
+  // Reset the variable with the new list.
+  variable_set('views_defaults', $views_status);
+
+  // Empty cache now.
+  if (function_exists('views_invalidate_cache')) {
+    views_invalidate_cache();
+  }
+}
