@@ -10859,7 +10859,7 @@ table.table-condensed th, table.table-condensed td {
       font-size: 1rem; }
       @media (min-width: 992px) {
         .block-jpec-megamenu ul.nav a {
-          padding: 10px 30px 10px 30px; } }
+          padding: 20px 30px 10px 30px; } }
       @media (min-width: 992px) and (max-width: 1200px) {
         .block-jpec-megamenu ul.nav a {
           padding: 10px 25px; } }
@@ -11668,7 +11668,7 @@ ol.megamenu-column {
 .site-name {
   color: #000000;
   font-family: FranklinGothicMedium;
-  font-size: 1.4em; }
+  font-size: 1.2em; }
 
 .navigation-wrapper {
   background-color: #FFCD00; }
@@ -11705,10 +11705,11 @@ ol.megamenu-column {
   margin-right: 20px;
   padding: 0.8em 0;
   padding-left: 1.5rem;
-  width: 100%; }
+  width: 100%;
+  max-width: 290px; }
   @media (min-width: 992px) {
     .site-branding {
-      padding: 0.8em 0; } }
+      padding: 0.4em 0; } }
   @media (min-width: 992px) {
     .site-branding {
       width: auto; } }
