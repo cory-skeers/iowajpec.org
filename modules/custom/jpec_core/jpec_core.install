@@ -270,3 +270,12 @@ function jpec_core_update_7011() {
     module_enable(array('jpec_roles'));
   }
 }
+
+/**
+ * Enable auto_entitylabel module
+ */
+function jpec_core_update_7012() {
+  if (!module_exists('auto_entitylabel')) {
+    module_enable(array('auto_entitylabel'));
+  }
+}
