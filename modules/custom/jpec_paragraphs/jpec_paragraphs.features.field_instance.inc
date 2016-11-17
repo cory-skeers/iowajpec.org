@@ -1517,6 +1517,130 @@ function jpec_paragraphs_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'paragraphs_item-social-field_facebook_page_name'.
+  $field_instances['paragraphs_item-social-field_facebook_page_name'] = array(
+    'bundle' => 'social',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_facebook_page_name',
+    'label' => 'Facebook Page Name',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'filtered_html' => array(
+              'weight' => -10,
+            ),
+            'full_html' => array(
+              'weight' => -9,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-social-field_twitter_username'.
+  $field_instances['paragraphs_item-social-field_twitter_username'] = array(
+    'bundle' => 'social',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_twitter_username',
+    'label' => 'Twitter Username',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'filtered_html' => array(
+              'weight' => -10,
+            ),
+            'full_html' => array(
+              'weight' => -9,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 1,
+    ),
+  );
+
   // Exported field_instance: 'paragraphs_item-text_area-field_paragraph_body'.
   $field_instances['paragraphs_item-text_area-field_paragraph_body'] = array(
     'bundle' => 'text_area',
@@ -1628,6 +1752,7 @@ function jpec_paragraphs_field_default_field_instances() {
   t('Container Style');
   t('Container style');
   t('Description');
+  t('Facebook Page Name');
   t('Factoid');
   t('Image');
   t('Image position');
@@ -1641,6 +1766,7 @@ function jpec_paragraphs_field_default_field_instances() {
   t('Supply a 585x585px image.');
   t('Title');
   t('Title will be displayed above the factoids.');
+  t('Twitter Username');
   t('URL');
 
   return $field_instances;
