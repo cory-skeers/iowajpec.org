@@ -38,6 +38,11 @@ function jpec_paragraphs_paragraphs_info() {
       'bundle' => 'image',
       'locked' => '1',
     ),
+    'social' => array(
+      'name' => 'Up and coming',
+      'bundle' => 'social',
+      'locked' => '1',
+    ),
     'text_area' => array(
       'name' => 'Text area',
       'bundle' => 'text_area',

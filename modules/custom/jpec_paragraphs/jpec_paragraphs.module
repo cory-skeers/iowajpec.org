@@ -77,36 +77,36 @@ function jpec_paragraphs_classy_paragraphs_list_options($options, $field, $insta
  * Implements hook_inline_entity_form_table_fields_alter().
  * Displays previews of factoid images in the Factoid Paragraph.
  */
-// function tippie_paragraphs_inline_entity_form_table_fields_alter(&$fields, $context) {
-//   // Alter inline entity form to include images.
+function jpec_paragraphs_inline_entity_form_table_fields_alter(&$fields, $context) {
+  // Alter inline entity form to include images.
   
-//   $image_field_info = array(
-//     'type' => 'field',
-//     'label' => t('Image'),
-//     'weight' => 0,
-//     'formatter' => 'file_rendered',
-//     'settings' => array('file_view_mode' => 'teaser'),
-//   );
+  $image_field_info = array(
+    'type' => 'field',
+    'label' => t('Image'),
+    'weight' => 0,
+    'formatter' => 'file_rendered',
+    'settings' => array('file_view_mode' => 'teaser'),
+  );
 
-//   switch ($context['field_name']) {
-//     case 'field_factoids_factoid_ref':
-//       $fields['field_factoid_image'] = $image_field_info;
-//       break;
-//   }
-// }
+  switch ($context['field_name']) {
+    case 'field_factoids_factoid_ref':
+      $fields['field_factoid_image'] = $image_field_info;
+      break;
+  }
+}
 
 /**
  * Implements template_preprocess_field().
  */
-// function tippie_paragraphs_preprocess_field(&$variables) {
+function jpec_paragraphs_preprocess_field(&$variables) {
 
-//   // add javascript for Facebook
-//   if (isset($variables['element']['#field_name']) && $variables['element']['#field_name'] == 'field_facebook_page_name') {
-//     drupal_add_js(drupal_get_path('module', 'tippie_paragraphs') . '/js/facebook-widget.js');
-//   }
+  // add javascript for Facebook
+  if (isset($variables['element']['#field_name']) && $variables['element']['#field_name'] == 'field_facebook_page_name') {
+    drupal_add_js(drupal_get_path('module', 'jpec_paragraphs') . '/js/facebook-widget.js');
+  }
 
-//   // add javascript for Twitter
-//   if (isset($variables['element']['#field_name']) && $variables['element']['#field_name'] == 'field_org_twitter') {
-//     drupal_add_js(drupal_get_path('module', 'tippie_paragraphs') . '/js/twitter-widget.js');
-//   }
-// }
+  // add javascript for Twitter
+  if (isset($variables['element']['#field_name']) && $variables['element']['#field_name'] == 'field_twitter_username') {
+    drupal_add_js(drupal_get_path('module', 'jpec_paragraphs') . '/js/twitter-widget.js');
+  }
+}
