@@ -141,6 +141,7 @@ function jpec_page_field_default_field_instances() {
         'card' => 'card',
         'factoids' => 'factoids',
         'image' => 'image',
+        'social' => 'social',
         'text_area' => 'text_area',
       ),
       'bundle_weights' => array(
@@ -148,6 +149,7 @@ function jpec_page_field_default_field_instances() {
         'card' => -8,
         'factoids' => 10,
         'image' => 4,
+        'social' => -12,
         'text_area' => 2,
       ),
       'default_edit_mode' => 'preview',
