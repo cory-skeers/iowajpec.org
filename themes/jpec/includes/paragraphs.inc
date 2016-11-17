@@ -87,23 +87,23 @@ function jpec_preprocess_entity(&$variables) {
 
         break;
 
-      // case '2x2_feature':
+      case '2x2_feature':
 
-      //   $image = $wrapper->field_2x2_image->value();
+        $image = $wrapper->field_2x2_image->value();
 
-      //   if (!empty($image)) {
-      //     $variables['classes_array'][] = 'leading-image';
-      //   }
+        if (!empty($image)) {
+          $variables['classes_array'][] = 'leading-image';
+        }
 
-      //   try {
-      //     $variables['url_1'] = $wrapper->field_2x2_1_url->url->value();
-      //     $variables['url_2'] = $wrapper->field_2x2_2_url->url->value();
-      //     $variables['url_3'] = $wrapper->field_2x2_3_url->url->value();
-      //   }
-      //   catch (Exception $e) {
-      //     // Do nothing.
-      //   }
-      //   break;
+        try {
+          $variables['url_1'] = $wrapper->field_2x2_1_url->url->value();
+          $variables['url_2'] = $wrapper->field_2x2_2_url->url->value();
+          $variables['url_3'] = $wrapper->field_2x2_3_url->url->value();
+        }
+        catch (Exception $e) {
+          // Do nothing.
+        }
+        break;
 
       default:
         break;
