@@ -7,20 +7,7 @@
 /**
  * Implements hook_preprocess_node().
  */
-function tippie_preprocess_node(&$variables) {
-  // Add menu_block block.
-  if ($variables['page']) {
-    switch ($variables['type']) {
-      case 'page':
-        // Provide the common suggestion.
-        $variables['theme_hook_suggestions'][] = 'node__common_leading';
-
-        break;
-
-      default:
-        break;
-    }
-  }
+function jpec_preprocess_node(&$variables) {
 
   // Add theme suggestion per view mode.
   $variables['theme_hook_suggestions'][] = 'node__' . $variables['type'] . '__' . $variables['view_mode'];

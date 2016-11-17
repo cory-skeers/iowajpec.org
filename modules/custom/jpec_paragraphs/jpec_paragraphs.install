@@ -1,0 +1,18 @@
+<?php
+/**
+ * @file
+ * Install, update, and uninstall code for the Tippie Paragraphs feature.
+ */
+
+/**
+ * Enable classy paragraphs module. Remove Body field
+ */
+function jpec_paragraphs_update_7001() {
+  if (!module_exists('classy_paragraphs')) {
+    module_enable(array('classy_paragraphs'));
+  }
+
+  // Delete body field.
+  field_delete_field('body');
+  field_purge_batch(1);
+}

@@ -5,3 +5,230 @@
  */
 
 include_once 'jpec_core.features.inc';
+
+/**
+ * Implements hook_entity_info_alter().
+ */
+function jpec_core_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['featured'] = array(
+    'label' => t('Featured'),
+    'custom settings' => FALSE,
+  );
+
+  $entity_info['node']['view modes']['card'] = array(
+    'label' => t('Card'),
+    'custom settings' => FALSE,
+  );
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function jpec_core_form_node_form_alter(&$form, &$form_state, $form_id) {
+
+  $content_type = $form['#node']->type;
+
+  switch ($content_type) {
+    case 'page':
+
+      // If there is a value from the 'values' form state (ajax).
+      if (!empty($form_state['values']['field_header_profile'])) {
+        $selected = $form_state['values']['field_header_profile'][LANGUAGE_NONE][0]['target_id'];
+      }
+      // Initial edit form load.
+      elseif (!empty($form_state['node']->field_header_profile)) {
+        $selected = $form_state['node']->field_header_profile[LANGUAGE_NONE][0]['target_id'];
+      }
+      // New node.
+      else {
+        $selected = NULL;
+      }
+
+      // Add custom validation for the header fields.
+      // $form['#validate'][] = 'header_fields_custom_validate';
+
+      // $form['field_header_profile'][LANGUAGE_NONE] += array(
+      //   '#ajax' => array(
+      //     'callback' => 'tippie_core_story_reference_dropdown_callback',
+      //     'wrapper' => 'field-header-story-wrapper',
+      //   ),
+      // );
+
+      // $form['field_header_story'][LANGUAGE_NONE]['#options'] = _tippie_core_story_reference_dropdown($selected, $form_state);
+      // $form['field_header_story']['#prefix'] = '<div id="field-header-story-wrapper">';
+      // $form['field_header_story']['#suffix'] = '</div>';
+
+      $form['field_header_image_short']['#states'] = array(
+        // Show the Short Image field if 'short_image' has been selected for the
+        // Header Type field.
+        'visible' => array(
+          ':input[name="field_header_type[und]"]' => array('value' => 'short_image'),
+        ),
+        'required' => array(
+          ':input[name="field_header_type[und]"]' => array('value' => 'short_image'),
+        ),
+      );
+
+      $form['field_header_image_tall']['#states'] = array(
+        // Show the Tall Image field if 'tall_image_custom' has been selected
+        // for the Header Type field.
+        'visible' => array(
+          ':input[name="field_header_type[und]"]' => array(
+            array('value' => 'tall_image_custom'),
+            array('value' => 'tall_image_story'),
+          ),
+        ),
+        'required' => array(
+          ':input[name="field_header_type[und]"]' => array(
+            array('value' => 'tall_image_custom'),
+            array('value' => 'tall_image_story'),
+          ),
+        ),
+      );
+
+      $form['field_header_custom_text']['#states'] = array(
+        // Show the Custom Text field if 'tall_image_custom' has been selected
+        // for the Header Type field.
+        'visible' => array(
+          ':input[name="field_header_type[und]"]' => array('value' => 'tall_image_custom'),
+        ),
+        'required' => array(
+          ':input[name="field_header_type[und]"]' => array('value' => 'tall_image_custom'),
+        ),
+      );
+
+      // $form['field_header_profile']['#states'] = array(
+      //   // Show the Profile Reference field if 'tall_image_story' has been
+      //   // selected for the Header Type field.
+      //   'visible' => array(
+      //     ':input[name="field_header_type[und]"]' => array('value' => 'tall_image_story'),
+      //   ),
+      //   'required' => array(
+      //     ':input[name="field_header_type[und]"]' => array('value' => 'tall_image_story'),
+      //   ),
+      // );
+
+      // $form['field_header_story']['#states'] = array(
+      //   // Show the Story Reference field if 'tall_image_story' has been
+      //   // selected for the Header Type field.
+      //   'visible' => array(
+      //     ':input[name="field_header_type[und]"]' => array('value' => 'tall_image_story'),
+      //   ),
+      //   'required' => array(
+      //     ':input[name="field_header_type[und]"]' => array('value' => 'tall_image_story'),
+      //   ),
+      // );
+
+      break;
+
+    default:
+      break;
+  }
+}
+
+/**
+ * Return options for the story references.
+ *
+ * @param string $key
+ *   A node id for a profile.
+ *
+ * @return array $options
+ *   The populated options array.
+ */
+function _tippie_core_story_reference_dropdown($key = '') {
+
+  $options = array();
+
+  if (!empty($key)) {
+    // Load the entity reference.
+    $profile = node_load($key);
+
+    // Create the EntityMetadataWrapper.
+    $wrapper = entity_metadata_wrapper('node', $profile);
+
+    // Iterate through each story reference and populate the $options array.
+    foreach ($wrapper->field_profile_stories->getIterator() as $delta => $story) {
+      $options[$story->getIdentifier()] = $story->label();
+    }
+  }
+
+  return $options;
+}
+
+/**
+ * Replace the field_header_story field via AJAX.
+ */
+function tippie_core_story_reference_dropdown_callback($form, $form_state) {
+
+  return $form['field_header_story'];
+}
+
+/**
+ * Validates the header fields based on the Header Type selection.
+ */
+function header_fields_custom_validate($form, &$form_state) {
+
+  $header_type = $form_state['values']['field_header_type'][LANGUAGE_NONE][0]['value'];
+
+  switch ($header_type) {
+
+    case 'tall_image_custom':
+      $tall_image = $form_state['values']['field_header_image_tall'][LANGUAGE_NONE][0]['fid'];
+
+      if ($tall_image == 0) {
+        form_set_error('field_header_image_tall', t('Please upload or choose the image.'));
+      }
+
+      $custom_text = $form_state['values']['field_header_custom_text'][LANGUAGE_NONE][0]['value'];
+
+      if ($custom_text == '') {
+        form_set_error('field_header_custom_text', t('Please enter the custom text.'));
+      }
+      break;
+
+    case 'tall_image_story':
+
+      $tall_image = $form_state['values']['field_header_image_tall'][LANGUAGE_NONE][0]['fid'];
+
+      if ($tall_image == 0) {
+        form_set_error('field_header_image_tall', t('Please upload or choose the image.'));
+      }
+
+      $profile = $form_state['values']['field_header_profile'][LANGUAGE_NONE][0]['target_id'];
+
+      if (empty($profile)) {
+        form_set_error('field_header_profile', t('Please enter a Profile reference.'));
+      }
+      break;
+
+    case 'short_image':
+      $small_image = $form_state['values']['field_header_image_short'][LANGUAGE_NONE][0]['fid'];
+      if ($small_image == 0) {
+        form_set_error('field_header_image_short', t('Please upload or choose the image.'));
+      }
+      break;
+
+    default:
+      break;
+  }
+}
+
+/**
+ * Implements hook_node_view().
+ */
+function jpec_core_node_view($node, $view_mode, $langcode) {
+  // Display a custom message if the node has not been published.
+  if ($node->status == 0 && $view_mode == 'full') {
+    $message = 'This ' . $node->type . ' has not been published.';
+    drupal_set_message(t($message),'warning',FALSE);
+  }
+}
+
+/**
+ * Implements hook_page_alter().
+ */
+function jpec_core_page_alter(&$page) {
+  // Remove footer provided by uiowa_bar.
+  $uiowa_footer_location = variable_get('uiowa_bar_footer_location');
+  unset($page[$uiowa_footer_location]['uiowa_bar_footer']);
+}
