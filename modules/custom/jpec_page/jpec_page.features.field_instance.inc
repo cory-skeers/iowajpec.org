@@ -40,9 +40,11 @@ function jpec_page_field_default_field_instances() {
     'settings' => array(
       'add_mode' => 'select',
       'allowed_bundles' => array(
+        'image' => 'image',
         'text_area' => 'text_area',
       ),
       'bundle_weights' => array(
+        'image' => 4,
         'text_area' => 2,
       ),
       'default_edit_mode' => 'preview',
@@ -174,8 +176,8 @@ function jpec_page_field_default_field_instances() {
           'video' => 0,
         ),
         'browser_plugins' => array(
-          'media_default--media_browser_1' => 'media_default--media_browser_1',
-          'media_default--media_browser_my_files' => 0,
+          'jpec_media_browser--media_browser_my_files' => 0,
+          'jpec_media_browser--media_browser_thumbnails' => 'jpec_media_browser--media_browser_thumbnails',
           'media_internet' => 0,
           'upload' => 'upload',
         ),
@@ -262,8 +264,8 @@ function jpec_page_field_default_field_instances() {
           'video' => 0,
         ),
         'browser_plugins' => array(
-          'media_default--media_browser_1' => 'media_default--media_browser_1',
-          'media_default--media_browser_my_files' => 0,
+          'jpec_media_browser--media_browser_my_files' => 0,
+          'jpec_media_browser--media_browser_thumbnails' => 'jpec_media_browser--media_browser_thumbnails',
           'media_internet' => 0,
           'upload' => 'upload',
         ),
