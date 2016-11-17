@@ -29,81 +29,81 @@ function jpec_preprocess_entity(&$variables) {
         }
         break;
       
-      // case 'image':
-      //    if (!empty($variables['paragraphs_item']->field_image_image_style)) { 
-      //     //dpm($variables['paragraphs_item']->field_image_image_style,'image style');
-      //     $image_size = $variables['paragraphs_item']->field_image_image_style[LANGUAGE_NONE][0]['value'];
+      case 'image':
+         if (!empty($variables['paragraphs_item']->field_image_image_style)) { 
+          $image_size = $variables['paragraphs_item']->field_image_image_style[LANGUAGE_NONE][0]['value'];
          
-      //      switch ($image_size) {
-      //       case '16%':
-      //         $variables['image_classes_array'] = array('paragraph-image', 'col-sm-2');
-      //         $variables['text_classes_array'] = array('paragraph-body', 'col-sm-10');
-      //         // If image is right, push and pull items in grid so they are flipped.
-      //         if ($variables['paragraphs_item']->field_image_image_postition[LANGUAGE_NONE][0]['value'] == 'right') {
-      //           $variables['image_classes_array'][] = 'col-sm-push-10';
-      //           $variables['text_classes_array'][] = 'col-sm-pull-2';
-      //         }              
-      //       break;
-      //       case '33%':
-      //         $variables['image_classes_array'] = array('paragraph-image', 'col-sm-4');
-      //         $variables['text_classes_array'] = array('paragraph-body', 'col-sm-8');
-      //         // If image is right, push and pull items in grid so they are flipped.
-      //         if ($variables['paragraphs_item']->field_image_image_postition[LANGUAGE_NONE][0]['value'] == 'right') {
-      //           $variables['image_classes_array'][] = 'col-sm-push-8';
-      //           $variables['text_classes_array'][] = 'col-sm-pull-4';
-      //         }
-      //       break; 
-      //       case '50%':
-      //         $variables['image_classes_array'] = array('paragraph-image', 'col-sm-6');
-      //         $variables['text_classes_array'] = array('paragraph-body', 'col-sm-6');
-      //         // If image is right, push and pull items in grid so they are flipped.
-      //         if ($variables['paragraphs_item']->field_image_image_postition[LANGUAGE_NONE][0]['value'] == 'right') {
-      //           $variables['image_classes_array'][] = 'col-sm-push-6';
-      //           $variables['text_classes_array'][] = 'col-sm-pull-6';
-      //         }              
-      //       break; 
-      //       case '100%':
-      //         $variables['image_classes_array'] = array('paragraph-image', 'col-sm-12');
-      //         $variables['text_classes_array'] = array('paragraph-body', 'col-sm-12');
-      //         // If image is right, push and pull items in grid so they are flipped.
-      //         if ($variables['paragraphs_item']->field_image_image_postition[LANGUAGE_NONE][0]['value'] == 'right') {
-      //           $variables['image_classes_array'][] = 'col-sm-push-12';
-      //           $variables['text_classes_array'][] = 'col-sm-pull-12';
-      //         }              
-      //       break;                              
-      //      }
-      //    }
-      //    else {
-      //     // Set default image classes.
-      //     $variables['image_classes_array'] = array('paragraph-image', 'col-sm-4');
-      //     // Set default text classes.
-      //     $variables['text_classes_array'] = array('paragraph-body', 'col-sm-8');
-      //     // If image is right, push and pull items in grid so they are flipped.
-      //     if ($variables['paragraphs_item']->field_image_image_postition[LANGUAGE_NONE][0]['value'] == 'right') {
-      //       $variables['image_classes_array'][] = 'col-sm-push-8';
-      //       $variables['text_classes_array'][] = 'col-sm-pull-4';
-      //     }          
-      //   }
+           switch ($image_size) {
 
-      //   break;
+            case '16%':
+              $variables['image_classes_array'] = array('paragraph-image', 'col-sm-2');
+              $variables['text_classes_array'] = array('paragraph-body', 'col-sm-10');
+              // If image is right, push and pull items in grid so they are flipped.
+              if ($variables['paragraphs_item']->field_image_image_position[LANGUAGE_NONE][0]['value'] == 'right') {
+                $variables['image_classes_array'][] = 'col-sm-push-10';
+                $variables['text_classes_array'][] = 'col-sm-pull-2';
+              }              
+            break;
+            case '33%':
+              $variables['image_classes_array'] = array('paragraph-image', 'col-sm-4');
+              $variables['text_classes_array'] = array('paragraph-body', 'col-sm-8');
+              // If image is right, push and pull items in grid so they are flipped.
+              if ($variables['paragraphs_item']->field_image_image_position[LANGUAGE_NONE][0]['value'] == 'right') {
+                $variables['image_classes_array'][] = 'col-sm-push-8';
+                $variables['text_classes_array'][] = 'col-sm-pull-4';
+              }
+            break; 
+            case '50%':
+              $variables['image_classes_array'] = array('paragraph-image', 'col-sm-6');
+              $variables['text_classes_array'] = array('paragraph-body', 'col-sm-6');
+              // If image is right, push and pull items in grid so they are flipped.
+              if ($variables['paragraphs_item']->field_image_image_position[LANGUAGE_NONE][0]['value'] == 'right') {
+                $variables['image_classes_array'][] = 'col-sm-push-6';
+                $variables['text_classes_array'][] = 'col-sm-pull-6';
+              }              
+            break; 
+            case '100%':
+              $variables['image_classes_array'] = array('paragraph-image', 'col-sm-12');
+              $variables['text_classes_array'] = array('paragraph-body', 'col-sm-12');
+              // If image is right, push and pull items in grid so they are flipped.
+              if ($variables['paragraphs_item']->field_image_image_position[LANGUAGE_NONE][0]['value'] == 'right') {
+                $variables['image_classes_array'][] = 'col-sm-push-12';
+                $variables['text_classes_array'][] = 'col-sm-pull-12';
+              }              
+            break;                              
+           }
+         }
+         else {
+          // Set default image classes.
+          $variables['image_classes_array'] = array('paragraph-image', 'col-sm-4');
+          // Set default text classes.
+          $variables['text_classes_array'] = array('paragraph-body', 'col-sm-8');
+          // If image is right, push and pull items in grid so they are flipped.
+          if ($variables['paragraphs_item']->field_image_image_position[LANGUAGE_NONE][0]['value'] == 'right') {
+            $variables['image_classes_array'][] = 'col-sm-push-8';
+            $variables['text_classes_array'][] = 'col-sm-pull-4';
+          }          
+        }
 
-      // case '2x2_feature':
+        break;
 
-      //   $image = $wrapper->field_2x2_image->value();
+      case '2x2_feature':
 
-      //   if (!empty($image)) {
-      //     $variables['classes_array'][] = 'leading-image';
-      //   }
+        $image = $wrapper->field_2x2_image->value();
 
-      //   try {
-      //     $variables['url_1'] = $wrapper->field_2x2_1_url->url->value();
-      //     $variables['url_2'] = $wrapper->field_2x2_2_url->url->value();
-      //     $variables['url_3'] = $wrapper->field_2x2_3_url->url->value();
-      //   }
-      //   catch (Exception $e) {
-      //     // Do nothing.
-      //   }
-      //   break;
+        if (!empty($image)) {
+          $variables['classes_array'][] = 'leading-image';
+        }
+
+        try {
+          $variables['url_1'] = $wrapper->field_2x2_1_url->url->value();
+          $variables['url_2'] = $wrapper->field_2x2_2_url->url->value();
+          $variables['url_3'] = $wrapper->field_2x2_3_url->url->value();
+        }
+        catch (Exception $e) {
+          // Do nothing.
+        }
+        break;
 
       default:
         break;

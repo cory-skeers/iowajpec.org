@@ -35,29 +35,29 @@ function jpec_field__field_content_block($variables) {
  * Implements hook_preprocess_field().
  */
 function jpec_preprocess_field(&$variables) {
-  // switch ($variables['element']['#field_name']) {
-  //   case 'field_2x2_1_title':
-  //   case 'field_2x2_2_title':
-  //   case 'field_2x2_3_title':
-  //     $variables['classes_array'][] = 'field-title';
-  //     break;
+  switch ($variables['element']['#field_name']) {
+    case 'field_2x2_1_title':
+    case 'field_2x2_2_title':
+    case 'field_2x2_3_title':
+      $variables['classes_array'][] = 'field-title';
+      break;
 
-  //   case 'field_2x2_1_description':
-  //   case 'field_2x2_2_description':
-  //   case 'field_2x2_3_description':
-  //     $variables['classes_array'][] = 'field-description';
-  //     break;
+    case 'field_2x2_1_description':
+    case 'field_2x2_2_description':
+    case 'field_2x2_3_description':
+      $variables['classes_array'][] = 'field-description';
+      break;
 
-  //   case 'field_social_recruiting_events':
-  //   case 'field_org_twitter':
-  //   case 'field_facebook_page_name': 
-  //     $variables['classes_array'][] = 'social-card';
-  //     break;
-  //   case 'field_facebook_app_id':
-  //     $variables['classes_array'][] = 'hidden';
-  //     break;
-  //   default:
-  //     break;
-  // }
+    case 'field_social_recruiting_events':
+    case 'field_org_twitter':
+    case 'field_facebook_page_name': 
+      $variables['classes_array'][] = 'social-card';
+      break;
+    case 'field_facebook_app_id':
+      $variables['classes_array'][] = 'hidden';
+      break;
+    default:
+      break;
+  }
 
 }
