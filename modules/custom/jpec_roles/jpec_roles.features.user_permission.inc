@@ -10,6 +10,16 @@
 function jpec_roles_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'access ckeditor link'.
+  $permissions['access ckeditor link'] = array(
+    'name' => 'access ckeditor link',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'ckeditor_link',
+  );
+
   // Exported permission: 'access content'.
   $permissions['access content'] = array(
     'name' => 'access content',
@@ -166,6 +176,16 @@ function jpec_roles_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'create factoid content'.
+  $permissions['create factoid content'] = array(
+    'name' => 'create factoid content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create files'.
   $permissions['create files'] = array(
     'name' => 'create files',
@@ -207,6 +227,16 @@ function jpec_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'delete any factoid content'.
+  $permissions['delete any factoid content'] = array(
+    'name' => 'delete any factoid content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any image files'.
   $permissions['delete any image files'] = array(
     'name' => 'delete any image files',
@@ -236,6 +266,16 @@ function jpec_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete own factoid content'.
+  $permissions['delete own factoid content'] = array(
+    'name' => 'delete own factoid content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete own image files'.
@@ -319,6 +359,16 @@ function jpec_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit any factoid content'.
+  $permissions['edit any factoid content'] = array(
+    'name' => 'edit any factoid content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any image files'.
   $permissions['edit any image files'] = array(
     'name' => 'edit any image files',
@@ -368,6 +418,16 @@ function jpec_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit own factoid content'.
+  $permissions['edit own factoid content'] = array(
+    'name' => 'edit own factoid content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'edit own image files'.
