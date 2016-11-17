@@ -23,7 +23,7 @@ $bp-menu-links-inline: $grid-float-breakpoint;
       @include fontsize(1);
 
       @include breakpoint($bp-menu-links-inline) {
-        padding: 10px 30px 10px 30px;
+        padding: 20px 30px 10px 30px;
       }  
       @include breakpoint($bp-menu-links-inline $tippie-lg-min) {
         padding: 10px 25px;

@@ -110,7 +110,7 @@
 .site-name {
   color: #000000;
   font-family: FranklinGothicMedium;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .navigation-wrapper {
@@ -157,9 +157,10 @@
   padding: 0.8em 0;
   padding-left: 1.5rem;
   width: 100%;
+  max-width: 290px;
 
   @include breakpoint($tippie-md-min) {
-    padding: 0.8em 0;
+    padding: 0.4em 0;
   }
 
   @include breakpoint($grid-float-breakpoint) {
