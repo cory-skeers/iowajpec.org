@@ -40,10 +40,12 @@ function jpec_page_field_default_field_instances() {
     'settings' => array(
       'add_mode' => 'select',
       'allowed_bundles' => array(
+        '2x2_feature' => '2x2_feature',
         'image' => 'image',
         'text_area' => 'text_area',
       ),
       'bundle_weights' => array(
+        '2x2_feature' => 6,
         'image' => 4,
         'text_area' => 2,
       ),
