@@ -157,12 +157,15 @@
   padding: 0.8em 0;
   padding-left: 1.5rem;
   width: 100%;
-  max-width: 290px;
+  
 
   @include breakpoint($tippie-md-min) {
     padding: 0.4em 0;
+    max-width: 290px;
   }
-
+  @include breakpoint($grid-float-breakpoint $tippie-lg-min) {
+    max-width: 200px;
+  }  
   @include breakpoint($grid-float-breakpoint) {
     width: auto;
   }
