@@ -32,6 +32,9 @@ function jpec_core_strongarm() {
         'custom_settings' => FALSE,
       ),
       'card' => array(
+        'custom_settings' => TRUE,
+      ),
+      'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
     ),
