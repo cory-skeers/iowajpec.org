@@ -261,3 +261,12 @@ function jpec_core_update_7010() {
     module_enable(array('admin_views'));
   }
 }
+
+/**
+ * Enable jpec_roles feature
+ */
+function jpec_core_update_7011() {
+  if (!module_exists('jpec_roles')) {
+    module_enable(array('jpec_roles'));
+  }
+}
