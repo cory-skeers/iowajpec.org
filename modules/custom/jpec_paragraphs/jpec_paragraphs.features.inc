@@ -23,6 +23,16 @@ function jpec_paragraphs_paragraphs_info() {
       'bundle' => '2x2_feature',
       'locked' => '1',
     ),
+    'card' => array(
+      'name' => 'Card Reference',
+      'bundle' => 'card',
+      'locked' => '1',
+    ),
+    'factoids' => array(
+      'name' => 'Factoids',
+      'bundle' => 'factoids',
+      'locked' => '1',
+    ),
     'image' => array(
       'name' => 'Image',
       'bundle' => 'image',
