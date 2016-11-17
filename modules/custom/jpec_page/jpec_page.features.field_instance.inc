@@ -10,6 +10,97 @@
 function jpec_page_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-page-field_card_image'.
+  $field_instances['node-page-field_card_image'] = array(
+    'bundle' => 'page',
+    'deleted' => 0,
+    'description' => 'Please select or upload the image that will be used in \'cards\' format, referenced from other pages. Dimensions should be equal or more than 640x325 px.',
+    'display' => array(
+      'card' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'card_640x325',
+        ),
+        'type' => 'image',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'card_640x325',
+        ),
+        'type' => 'image',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_card_image',
+    'label' => 'Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => 'images/cards',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '4 MB',
+      'max_resolution' => '2000x2000',
+      'min_resolution' => '640x325',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+          'sharestream' => 0,
+          'youtube' => 0,
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'jpec_media_browser--media_browser_my_files' => 0,
+          'jpec_media_browser--media_browser_thumbnails' => 'jpec_media_browser--media_browser_thumbnails',
+          'media_internet' => 0,
+          'upload' => 'upload',
+        ),
+        'manualcrop_crop_info' => 1,
+        'manualcrop_default_crop_area' => 1,
+        'manualcrop_enable' => 1,
+        'manualcrop_inline_crop' => 0,
+        'manualcrop_instant_crop' => FALSE,
+        'manualcrop_instant_preview' => 1,
+        'manualcrop_keyboard' => 1,
+        'manualcrop_maximize_default_crop_area' => 0,
+        'manualcrop_require_cropping' => array(
+          'card_640x325' => 'card_640x325',
+        ),
+        'manualcrop_styles_list' => array(
+          'card_640x325' => 'card_640x325',
+        ),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => 0,
+      ),
+      'type' => 'media_generic',
+      'weight' => 8,
+    ),
+  );
+
   // Exported field_instance: 'node-page-field_content_block'.
   $field_instances['node-page-field_content_block'] = array(
     'bundle' => 'page',
@@ -17,6 +108,12 @@ function jpec_page_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'paragraphs',
@@ -30,7 +127,7 @@ function jpec_page_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 3,
       ),
     ),
     'entity_type' => 'node',
@@ -41,11 +138,15 @@ function jpec_page_field_default_field_instances() {
       'add_mode' => 'select',
       'allowed_bundles' => array(
         '2x2_feature' => '2x2_feature',
+        'card' => 'card',
+        'factoids' => 'factoids',
         'image' => 'image',
         'text_area' => 'text_area',
       ),
       'bundle_weights' => array(
         '2x2_feature' => 6,
+        'card' => -8,
+        'factoids' => 10,
         'image' => 4,
         'text_area' => 2,
       ),
@@ -70,17 +171,23 @@ function jpec_page_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 5,
       ),
     ),
     'entity_type' => 'node',
@@ -134,17 +241,23 @@ function jpec_page_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'Upload a 2000px by 290px image. Face should fit in to the area within 500px from the center of the image, preferably closer to the right edge.',
     'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 7,
       ),
     ),
     'entity_type' => 'node',
@@ -207,6 +320,12 @@ function jpec_page_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'Upload a 2000px by 700px image. Face should fit in to the area within 500px from the center of the image, preferably closer to the right edge. You will be required to specify a cropping selection for small screens.',
     'display' => array(
+      'card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'picture',
@@ -232,7 +351,7 @@ function jpec_page_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 8,
       ),
     ),
     'entity_type' => 'node',
@@ -300,17 +419,23 @@ function jpec_page_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 6,
       ),
     ),
     'entity_type' => 'node',
@@ -336,17 +461,23 @@ function jpec_page_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'node',
@@ -401,17 +532,23 @@ function jpec_page_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'Add an optional section title. This is shown in smaller text above the page title. E.g. "Professional MBA"',
     'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'node',
@@ -466,17 +603,25 @@ function jpec_page_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
       'default' => array(
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'teaser' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'text_default',
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'node',
@@ -520,7 +665,7 @@ function jpec_page_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 4,
+      'weight' => 9,
     ),
   );
 
@@ -530,7 +675,9 @@ function jpec_page_field_default_field_instances() {
   t('Content Block');
   t('Custom Text');
   t('Header Type');
+  t('Image');
   t('Page Title');
+  t('Please select or upload the image that will be used in \'cards\' format, referenced from other pages. Dimensions should be equal or more than 640x325 px.');
   t('Section Title');
   t('Short Image');
   t('Summary');

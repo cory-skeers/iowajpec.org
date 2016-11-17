@@ -11,16 +11,14 @@
  * @ingroup themeable
  */
 ?>
+
 <article class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div class="content"<?php print $content_attributes; ?>>
+  <?php print render($content['field_card_image']); ?>
+    <div class="card-description-wrapper card-body">
 
-    <?php print render($content['field_factoid_image']); ?>
-
-    <div class="card-description-wrapper">
-      <?php
-        print '<h3 class="node-title">' . render($content['field_factoid_description']) . '</h3>';
-        print render($content['field_factoid_body']);
-      ?>
+      <h3 class="card-title"><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h3>
+      <?php print render($content); ?>
     </div>
   </div>
 </article>
