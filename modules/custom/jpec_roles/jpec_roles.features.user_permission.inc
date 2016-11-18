@@ -72,6 +72,16 @@ function jpec_roles_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'administer files'.
+  $permissions['administer files'] = array(
+    'name' => 'administer files',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'file_entity',
+  );
+
   // Exported permission: 'administer menu'.
   $permissions['administer menu'] = array(
     'name' => 'administer menu',

@@ -24,6 +24,7 @@ features[user_permission][] = access content overview
 features[user_permission][] = access media browser
 features[user_permission][] = access navbar
 features[user_permission][] = access user profiles
+features[user_permission][] = administer files
 features[user_permission][] = administer menu
 features[user_permission][] = administer permissions
 features[user_permission][] = administer userprotect
