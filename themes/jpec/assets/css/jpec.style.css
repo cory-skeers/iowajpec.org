@@ -8864,13 +8864,6 @@ img {
 /**
  * Background styles and general content containers.
  */
-.dashed-line, .background-gold:before {
-  content: "";
-  position: absolute;
-  width: 150%;
-  height: 10px;
-  border-top: dashed 2px #FFFFFF; }
-
 .background-neon {
   background-color: #00CCCC; }
 
@@ -8878,23 +8871,18 @@ img {
   background-color: #FFCD00; }
 
 .background-gold {
-  position: relative;
-  overflow: hidden;
   background-color: #FFCD00; }
-
-.background-gold:before {
-  top: -10%;
-  left: -45%;
-  transform: rotate(8deg); }
 
 .background-blue-line {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  background: #00A1C6;
+  color: #FFFFFF; }
   @media (min-width: 768px) {
     .background-blue-line {
-      background-image: url(../images/chevron.png);
+      background-image: url(../images/white_angled_lines.png);
       background-repeat: no-repeat;
-      background-position: 98% 50%;
+      background-position: 102% 50%;
       background-size: contain; } }
 
 .background-grey {
@@ -9630,7 +9618,7 @@ table.table-condensed th, table.table-condensed td {
 
 @media (min-width: 992px) and (min-width: 768px) {
   .node-department-full .department-contact-wrapper {
-    background-image: url(../images/chevron.png);
+    background-image: url(../images/white_angled_lines.png);
     background-repeat: no-repeat;
     background-position: 90% 50%;
     background-size: contain; } }
@@ -9751,7 +9739,7 @@ table.table-condensed th, table.table-condensed td {
 
 @media (min-width: 992px) and (min-width: 768px) {
   .node-department-full .department-contact-wrapper {
-    background-image: url(../images/chevron.png);
+    background-image: url(../images/white_angled_lines.png);
     background-repeat: no-repeat;
     background-position: 90% 50%;
     background-size: contain; } }
@@ -10210,7 +10198,7 @@ table.table-condensed th, table.table-condensed td {
   padding: 1rem; }
   @media (min-width: 768px) {
     .org-contact {
-      background-image: url(../images/chevron.png);
+      background-image: url(../images/white_angled_lines.png);
       background-repeat: no-repeat;
       background-position: 80% 50%;
       background-size: contain; } }
@@ -10285,7 +10273,7 @@ table.table-condensed th, table.table-condensed td {
   padding: 1rem; }
   @media (min-width: 768px) {
     .org-contact {
-      background-image: url(../images/chevron.png);
+      background-image: url(../images/white_angled_lines.png);
       background-repeat: no-repeat;
       background-position: 80% 50%;
       background-size: contain; } }
@@ -12017,7 +12005,7 @@ iframe[name^='google_conversion_frame'] {
   padding-bottom: 3rem; }
   @media (min-width: 768px) {
     .front .pane-views-exp-programs-explore-programs {
-      background-image: url(../images/chevron.png);
+      background-image: url(../images/white_angled_lines.png);
       background-repeat: no-repeat;
       background-position: 98% 50%;
       background-size: contain; } }
