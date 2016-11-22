@@ -66,7 +66,7 @@ include_once 'jpec_paragraphs.features.inc';
 function jpec_paragraphs_classy_paragraphs_list_options($options, $field, $instance) {
   if ($field['field_name'] == 'field_paragraph_container_style') {
     $options['background-gold'] = t('Gold Background');
-    $options['background-blue-line'] = t('Blue Line Background');
+    $options['background-blue-line'] = t('Blue Background');
     $options['background-grey'] = t('Grey Background');
   }
 
