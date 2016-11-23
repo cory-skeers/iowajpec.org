@@ -43,60 +43,60 @@ function jpec_preprocess_page(&$variables) {
           }
           break;
 
-        // case 'tall_image_story':
+        case 'tall_image_story':
 
-        //   // Add generic tall-image class for layout.
-        //   $variables['header_classes_array'][] = 'tall-image';
+          // Add generic tall-image class for layout.
+          $variables['header_classes_array'][] = 'tall-image';
 
-        //   $header_image = $wrapper->field_header_image_tall->value();
+          $header_image = $wrapper->field_header_image_tall->value();
 
-        //   if (!empty($header_image)) {
+          if (!empty($header_image)) {
 
-        //     $header_image_tall = field_view_field('node', $variables['node'], 'field_header_image_tall', $display = 'default', $langcode = NULL);
+            $header_image_tall = field_view_field('node', $variables['node'], 'field_header_image_tall', $display = 'default', $langcode = NULL);
 
-        //     $variables['header_image_tall'] = $header_image_tall;
+            $variables['header_image_tall'] = $header_image_tall;
 
-        //   }
+          }
 
-        //   // Create reference to story entity.
-        //   $story = $wrapper->field_header_story;
+          // Create reference to story entity.
+          $story = $wrapper->field_header_story;
 
-        //   $variables['header_fields']['custom_text'] = array(
-        //     '#prefix' => '<span class="custom-text">',
-        //     '#markup' => $story->field_story_quote->value->value(),
-        //     '#suffix' => '</span>',
-        //   );
+          $variables['header_fields']['custom_text'] = array(
+            '#prefix' => '<span class="custom-text">',
+            '#markup' => $story->field_story_quote->value->value(),
+            '#suffix' => '</span>',
+          );
 
-        //   $variables['header_suffix_fields']['custom_text'] = array(
-        //     '#prefix' => '<span class="custom-text">',
-        //     '#markup' => $story->field_story_quote->value->value(),
-        //     '#suffix' => '</span>',
-        //   );
+          $variables['header_suffix_fields']['custom_text'] = array(
+            '#prefix' => '<span class="custom-text">',
+            '#markup' => $story->field_story_quote->value->value(),
+            '#suffix' => '</span>',
+          );
 
-        //   // Create reference to profile entity.
-        //   $profile = $wrapper->field_header_profile;
+          // Create reference to profile entity.
+          $profile = $wrapper->field_header_profile;
 
-        //   $first_name = trim($profile->field_profile_fname->value()) . "'s";
+          $first_name = trim($profile->field_profile_fname->value()) . "'s";
 
-        //   $variables['header_fields']['button'] = array(
-        //     '#theme' => 'link',
-        //     '#text' => "Read " . $first_name . " story",
-        //     '#path' => 'node/' . $profile->getIdentifier(),
-        //     '#options' => array(
-        //       'attributes' => array('class' => array('primary-button')),
-        //     ),
-        //   );
+          $variables['header_fields']['button'] = array(
+            '#theme' => 'link',
+            '#text' => "Read " . $first_name . " story",
+            '#path' => 'node/' . $profile->getIdentifier(),
+            '#options' => array(
+              'attributes' => array('class' => array('primary-button')),
+            ),
+          );
 
-        //   $variables['header_suffix_fields']['button'] = array(
-        //     '#theme' => 'link',
-        //     '#text' => "Read " . $first_name . " story",
-        //     '#path' => 'node/' . $profile->getIdentifier(),
-        //     '#options' => array(
-        //       'attributes' => array('class' => array('primary-button')),
-        //     ),
-        //   );
+          $variables['header_suffix_fields']['button'] = array(
+            '#theme' => 'link',
+            '#text' => "Read " . $first_name . " story",
+            '#path' => 'node/' . $profile->getIdentifier(),
+            '#options' => array(
+              'attributes' => array('class' => array('primary-button')),
+            ),
+          );
 
-        //   break;
+          break;
 
         case 'tall_image_custom':
 
@@ -161,26 +161,26 @@ function jpec_preprocess_page(&$variables) {
       //   }
       //   break;        
 
-      // case 'profile':
+      case 'profile':
 
-      //   // Add generic tall-image class for layout.
-      //   $variables['header_classes_array'][] = 'tall-image';
+        // Add generic tall-image class for layout.
+        $variables['header_classes_array'][] = 'tall-image';
 
-      //   // Get profile image field and set it as the tall header image.
-      //   $header_image_tall = field_view_field('node', $variables['node'], 'field_profile_image', $display = 'default', $langcode = NULL);
+        // Get profile image field and set it as the tall header image.
+        $header_image_tall = field_view_field('node', $variables['node'], 'field_profile_image', $display = 'default', $langcode = NULL);
 
-      //   $variables['header_image_tall'] = $header_image_tall;
+        $variables['header_image_tall'] = $header_image_tall;
 
-      //   // Get the content that goes in the header.
-      //   $subtitle = field_view_field('node', $variables['node'], 'field_profile_subtitle', $display = 'default', $langcode = NULL);
-      //   $intro = field_view_field('node', $variables['node'], 'field_profile_intro', $display = 'default', $langcode = NULL);
+        // Get the content that goes in the header.
+        $subtitle = field_view_field('node', $variables['node'], 'field_profile_subtitle', $display = 'default', $langcode = NULL);
+        $intro = field_view_field('node', $variables['node'], 'field_profile_intro', $display = 'default', $langcode = NULL);
 
-      //   $variables['header_fields'] = array(
-      //     'subtitle' => $subtitle,
-      //     'intro' => $intro,
-      //   );
+        $variables['header_fields'] = array(
+          'subtitle' => $subtitle,
+          'intro' => $intro,
+        );
 
-      //   break;      
+        break;      
 
       // case 'webform':
       //   if (!empty($variables['node']->field_webform_public_title)) {
