@@ -11298,17 +11298,16 @@ ol.megamenu-column {
   max-width: 100%; }
 
 .page-header .container {
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  background-image: url(../images/header_lines.png);
+  background-repeat: no-repeat;
+  background-position: 20px -30px; }
   @media (min-width: 1200px) {
     .page-header .container {
-      padding: 3rem 5rem; } }
+      padding: 1rem 5rem; } }
 
 .page-header .header-content {
-  padding: 1.5rem;
-  background: url(../images/triangle.svg);
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  padding: 1.5rem; }
   @media (min-width: 1200px) {
     .page-header .header-content {
       width: 75%;

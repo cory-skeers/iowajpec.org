@@ -43,6 +43,11 @@ function jpec_paragraphs_paragraphs_info() {
       'bundle' => 'social',
       'locked' => '1',
     ),
+    'story_featured' => array(
+      'name' => 'Story reference',
+      'bundle' => 'story_featured',
+      'locked' => '1',
+    ),
     'text_area' => array(
       'name' => 'Text area',
       'bundle' => 'text_area',
