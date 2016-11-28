@@ -35,6 +35,9 @@ $cardBodyPadding: 1.5rem;
 .view-display-id-story_featured_pane {
   background-color: $white;
 
+  .story-header {
+    @extend .card-header;
+  }
   .border-wrapper {  
     padding-bottom: 2rem;  
     img {
@@ -55,7 +58,7 @@ $cardBodyPadding: 1.5rem;
         width: auto;
       }
       .card-wrapper {
-        margin-left: 340px;
+        //margin-left: 340px;
       }
     }
   }
