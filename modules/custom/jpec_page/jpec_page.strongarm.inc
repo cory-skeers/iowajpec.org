@@ -22,8 +22,8 @@ function jpec_page_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'auto_entitylabel_pattern_node_page';
   $strongarm->value = '<?php 
-$array1= \'[node:field_page_title]\';
-$array2= \'[node:field_section_title]\';
+$array1= \'[node:field-page-title]\';
+$array2= \'[node:field-section-title]\';
 if(empty($array2)) {
   return  $array1;
 } else {
