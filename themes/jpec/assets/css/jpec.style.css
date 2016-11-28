@@ -8928,7 +8928,7 @@ blockquote {
 .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-generic_block-card .card-description-wrapper, .node-generic_block-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-program-finder .view-content .views-row, .page-program-finder .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-wrapper {
   padding: 1.3rem; }
 
-.card-header, .node-factoid-card .field-name-field-factoid-type, .node-factoid-full .field-name-field-factoid-type, .node-generic_block-card .field-name-field-generic-header, .view-display-id-story_card_pane .views-field-field-profile-category, .paragraphs-item-social .content .social-card .field-label {
+.card-header, .node-factoid-card .field-name-field-factoid-type, .node-factoid-full .field-name-field-factoid-type, .node-generic_block-card .field-name-field-generic-header, .view-display-id-story_card_pane .views-field-field-profile-category, .view-display-id-story_featured_pane .story-header, .paragraphs-item-social .content .social-card .field-label {
   background-color: #FFCD00;
   font-family: FranklinGothicDemi;
   padding: 0.6rem 1.3rem; }
@@ -10732,11 +10732,7 @@ table.table-condensed th, table.table-condensed td {
     @media (min-width: 768px) {
       .view-display-id-story_featured_pane .border-wrapper img {
         float: left;
-        width: auto; }
-      .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item, .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper
-      .node-department-full .field-name-field-department-program > .field-items > .field-item,
-      .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .page-program-finder .view-content .views-row, .page-program-finder .view-content .view-display-id-story_featured_pane .border-wrapper .views-row, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item {
-        margin-left: 340px; } }
+        width: auto; } }
 
 .node-type-profile .field-name-field-profile-subtitle {
   font-family: FranklinGothicDemi;
@@ -10787,11 +10783,7 @@ table.table-condensed th, table.table-condensed td {
     @media (min-width: 768px) {
       .view-display-id-story_featured_pane .border-wrapper img {
         float: left;
-        width: auto; }
-      .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item, .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper
-      .node-department-full .field-name-field-department-program > .field-items > .field-item,
-      .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .page-program-finder .view-content .views-row, .page-program-finder .view-content .view-display-id-story_featured_pane .border-wrapper .views-row, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item {
-        margin-left: 340px; } }
+        width: auto; } }
 
 .breadcrumb-container {
   padding-top: 1em;
