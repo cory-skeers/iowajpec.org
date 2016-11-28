@@ -29,6 +29,7 @@ function jpec_core_form_node_form_alter(&$form, &$form_state, $form_id) {
   $content_type = $form['#node']->type;
 
   switch ($content_type) {
+
     case 'page':
 
       // If there is a value from the 'values' form state (ajax).
@@ -45,18 +46,32 @@ function jpec_core_form_node_form_alter(&$form, &$form_state, $form_id) {
       }
 
       // Add custom validation for the header fields.
-      // $form['#validate'][] = 'header_fields_custom_validate';
+      $form['#validate'][] = 'header_fields_custom_validate';
 
-      // $form['field_header_profile'][LANGUAGE_NONE] += array(
+      $form['field_header_profile'][LANGUAGE_NONE] += array(
+        '#ajax' => array(
+          'callback' => 'jpec_core_story_reference_dropdown_callback',
+          'wrapper' => 'field-header-story-wrapper',
+        ),
+      );
+
+
+// story reference content block
+      //dpm($form);
+      // $form['field_story_featured_profile_ref'][LANGUAGE_NONE] += array(
       //   '#ajax' => array(
-      //     'callback' => 'tippie_core_story_reference_dropdown_callback',
-      //     'wrapper' => 'field-header-story-wrapper',
+      //     'callback' => 'jpec_core_featured_story_reference_dropdown_callback',
+      //     'wrapper' => 'field-story-featured-story-ref-wrapper',
       //   ),
-      // );
+      // );      
 
-      // $form['field_header_story'][LANGUAGE_NONE]['#options'] = _tippie_core_story_reference_dropdown($selected, $form_state);
-      // $form['field_header_story']['#prefix'] = '<div id="field-header-story-wrapper">';
-      // $form['field_header_story']['#suffix'] = '</div>';
+      $form['field_header_story'][LANGUAGE_NONE]['#options'] = _jpec_core_story_reference_dropdown($selected, $form_state);
+      $form['field_header_story']['#prefix'] = '<div id="field-header-story-wrapper">';
+      $form['field_header_story']['#suffix'] = '</div>';
+
+      $form['field_story_featured_story_ref'][LANGUAGE_NONE]['#options'] = _jpec_core_story_reference_dropdown($selected, $form_state);
+      $form['field_story_featured_story_ref']['#prefix'] = '<div id="field-story-featured-story-ref-wrapper">';
+      $form['field_story_featured_story_ref']['#suffix'] = '</div>';      
 
       $form['field_header_image_short']['#states'] = array(
         // Show the Short Image field if 'short_image' has been selected for the
@@ -97,27 +112,27 @@ function jpec_core_form_node_form_alter(&$form, &$form_state, $form_id) {
         ),
       );
 
-      // $form['field_header_profile']['#states'] = array(
-      //   // Show the Profile Reference field if 'tall_image_story' has been
-      //   // selected for the Header Type field.
-      //   'visible' => array(
-      //     ':input[name="field_header_type[und]"]' => array('value' => 'tall_image_story'),
-      //   ),
-      //   'required' => array(
-      //     ':input[name="field_header_type[und]"]' => array('value' => 'tall_image_story'),
-      //   ),
-      // );
+      $form['field_header_profile']['#states'] = array(
+        // Show the Profile Reference field if 'tall_image_story' has been
+        // selected for the Header Type field.
+        'visible' => array(
+          ':input[name="field_header_type[und]"]' => array('value' => 'tall_image_story'),
+        ),
+        'required' => array(
+          ':input[name="field_header_type[und]"]' => array('value' => 'tall_image_story'),
+        ),
+      );
 
-      // $form['field_header_story']['#states'] = array(
-      //   // Show the Story Reference field if 'tall_image_story' has been
-      //   // selected for the Header Type field.
-      //   'visible' => array(
-      //     ':input[name="field_header_type[und]"]' => array('value' => 'tall_image_story'),
-      //   ),
-      //   'required' => array(
-      //     ':input[name="field_header_type[und]"]' => array('value' => 'tall_image_story'),
-      //   ),
-      // );
+      $form['field_header_story']['#states'] = array(
+        // Show the Story Reference field if 'tall_image_story' has been
+        // selected for the Header Type field.
+        'visible' => array(
+          ':input[name="field_header_type[und]"]' => array('value' => 'tall_image_story'),
+        ),
+        'required' => array(
+          ':input[name="field_header_type[und]"]' => array('value' => 'tall_image_story'),
+        ),
+      );
 
       break;
 
@@ -135,7 +150,7 @@ function jpec_core_form_node_form_alter(&$form, &$form_state, $form_id) {
  * @return array $options
  *   The populated options array.
  */
-function _tippie_core_story_reference_dropdown($key = '') {
+function _jpec_core_story_reference_dropdown($key = '') {
 
   $options = array();
 
@@ -158,9 +173,17 @@ function _tippie_core_story_reference_dropdown($key = '') {
 /**
  * Replace the field_header_story field via AJAX.
  */
-function tippie_core_story_reference_dropdown_callback($form, $form_state) {
+function jpec_core_story_reference_dropdown_callback($form, $form_state) {
 
   return $form['field_header_story'];
+}
+
+/**
+ * Replace the field_featured_story_story_ref field via AJAX.
+ */
+function jpec_core_featured_story_reference_dropdown_callback($form, $form_state) {
+
+  return $form['field_story_featured_story_ref'];
 }
 
 /**
