@@ -35,6 +35,7 @@ function jpec_field__field_content_block($variables) {
  * Implements hook_preprocess_field().
  */
 function jpec_preprocess_field(&$variables) {
+  //dpm($variables['element']['#field_name']);
   switch ($variables['element']['#field_name']) {
     case 'field_2x2_1_title':
     case 'field_2x2_2_title':
@@ -52,6 +53,7 @@ function jpec_preprocess_field(&$variables) {
     case 'field_facebook_page_name': 
       $variables['classes_array'][] = 'social-card';
       break;
+
     default:
       break;
   }
