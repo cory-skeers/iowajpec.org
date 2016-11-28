@@ -1641,6 +1641,138 @@ function jpec_paragraphs_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'paragraphs_item-story_featured-field_featured_story_view'.
+  $field_instances['paragraphs_item-story_featured-field_featured_story_view'] = array(
+    'bundle' => 'story_featured',
+    'default_value' => array(
+      0 => array(
+        'vname' => 'story|story_featured_pane',
+        'vargs' => '[paragraphs_item:field-story-featured-story-ref:nid]',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'viewfield',
+        'settings' => array(),
+        'type' => 'viewfield_default',
+        'weight' => 4,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_featured_story_view',
+    'label' => 'Story view',
+    'required' => 0,
+    'settings' => array(
+      'allowed_views' => array(
+        'admin_views_file' => 0,
+        'admin_views_node' => 0,
+        'admin_views_user' => 0,
+        'jpec_media_browser' => 0,
+        'media_browser_plus_folders' => 0,
+        'story' => 'story',
+      ),
+      'force_default' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'viewfield',
+      'settings' => array(),
+      'type' => 'viewfield_select',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-story_featured-field_story_featured_profile_ref'.
+  $field_instances['paragraphs_item-story_featured-field_story_featured_profile_ref'] = array(
+    'bundle' => 'story_featured',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => 1,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 1,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_story_featured_profile_ref',
+    'label' => 'Profile',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-story_featured-field_story_featured_story_ref'.
+  $field_instances['paragraphs_item-story_featured-field_story_featured_story_ref'] = array(
+    'bundle' => 'story_featured',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_story_featured_story_ref',
+    'label' => 'Story',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'fields' => array(),
+        'type_settings' => array(),
+      ),
+      'type' => 'options_select',
+      'weight' => 1,
+    ),
+  );
+
   // Exported field_instance: 'paragraphs_item-text_area-field_paragraph_body'.
   $field_instances['paragraphs_item-text_area-field_paragraph_body'] = array(
     'bundle' => 'text_area',
@@ -1761,7 +1893,10 @@ function jpec_paragraphs_field_default_field_instances() {
   t('Link will be displayed as a button below the factoids.');
   t('Please add 3 factoids.');
   t('Please select pages or generic content blocks.');
+  t('Profile');
   t('Provide a URL, used to link to related content.');
+  t('Story');
+  t('Story view');
   t('Supply a 585x585px image which will have enough contrast with a white text overlay. This image is optional.');
   t('Supply a 585x585px image.');
   t('Title');
