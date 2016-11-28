@@ -29,11 +29,8 @@
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <div class="content container"<?php print $content_attributes; ?>>
     <div class="row">
-      <div class="col-md-6">
-        <?php print render($content['field_paragraph_body']); ?>
-      </div>
-      <div class="col-md-6">
-        <?php print render($content['field_story_view']); ?>
+      <div class="col-md-12">
+        <?php print render($content['field_featured_story_view']); ?>
       </div>
     </div>
   </div>
