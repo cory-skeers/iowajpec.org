@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the JPEC Story feature.
+ */
+
+include_once 'jpec_story.features.inc';
