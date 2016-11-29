@@ -217,6 +217,26 @@ function jpec_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create profile content'.
+  $permissions['create profile content'] = array(
+    'name' => 'create profile content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create story content'.
+  $permissions['create story content'] = array(
+    'name' => 'create story content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create url aliases'.
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
@@ -268,6 +288,26 @@ function jpec_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any profile content'.
+  $permissions['delete any profile content'] = array(
+    'name' => 'delete any profile content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any story content'.
+  $permissions['delete any story content'] = array(
+    'name' => 'delete any story content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own document files'.
   $permissions['delete own document files'] = array(
     'name' => 'delete own document files',
@@ -309,6 +349,26 @@ function jpec_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete own profile content'.
+  $permissions['delete own profile content'] = array(
+    'name' => 'delete own profile content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own story content'.
+  $permissions['delete own story content'] = array(
+    'name' => 'delete own story content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete revisions'.
   $permissions['delete revisions'] = array(
     'name' => 'delete revisions',
@@ -317,6 +377,13 @@ function jpec_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'delete terms in stories'.
+  $permissions['delete terms in stories'] = array(
+    'name' => 'delete terms in stories',
+    'roles' => array(),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: 'download any document files'.
@@ -400,6 +467,26 @@ function jpec_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any profile content'.
+  $permissions['edit any profile content'] = array(
+    'name' => 'edit any profile content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit any story content'.
+  $permissions['edit any story content'] = array(
+    'name' => 'edit any story content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit meta tags'.
   $permissions['edit meta tags'] = array(
     'name' => 'edit meta tags',
@@ -459,6 +546,33 @@ function jpec_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'edit own profile content'.
+  $permissions['edit own profile content'] = array(
+    'name' => 'edit own profile content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own story content'.
+  $permissions['edit own story content'] = array(
+    'name' => 'edit own story content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit terms in stories'.
+  $permissions['edit terms in stories'] = array(
+    'name' => 'edit terms in stories',
+    'roles' => array(),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: 'masquerade as user'.

@@ -393,3 +393,12 @@ function jpec_core_update_7014() {
     module_enable(array('jpec_factoid'));
   }
 }
+
+/**
+ * Enable jpec_story feature
+ */
+function jpec_core_update_7015() {
+  if (!module_exists('jpec_story')) {
+    module_enable(array('jpec_story'));
+  }
+}
