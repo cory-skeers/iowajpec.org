@@ -402,3 +402,12 @@ function jpec_core_update_7015() {
     module_enable(array('jpec_story'));
   }
 }
+
+/**
+ * Enable better_formats module
+ */
+function jpec_core_update_7016() {
+  if (!module_exists('better_formats')) {
+    module_enable(array('better_formats'));
+  }
+}
