@@ -1,39 +1,37 @@
 // Person full node page
 .node-type-person {    
 
-  .field-name-field-person-primary-dept, .field-name-field-person-sec-dept {
-    // departments in the header
-    font-family: BlenderProBook;
-    @include fontsize(1.4);
-    .field-item {
-      margin-top: 0.3rem;
-      a {
-        color: $body-text;
-        &:hover {
-          color: $orange;
-        }
-      }
-    }
-  }
-
   .node-person-full {
     padding-bottom: 2rem;
 
   }
-  .field-label {
-    @include fontsize(2);
-    margin-top: 2rem;
-    
+  .field-name-field-person-education {
+    .field-label {
+      @extend .h3;
+      
+    }
   }
-  .field-name-field-person-academics .field-label {
-    margin-top: 2rem;
-    @include breakpoint($tippie-md-min) {
-      margin-top: 0;
+  .person-title .field-item {
+    font-family: BlenderProMedium;
+    @include fontsize(1.7);
+    line-height: 1.1;
+    color: $blue;
+  }
+
+  .person-category {
+    margin-top: 1.2rem;
+    margin-bottom: 1.5rem;
+    .field-item{
+      font-family: BlenderProMedium;
+      font-style: italic;
+      @include fontsize(1.2);
+      display: inline;
+      
     }
   }
 
   .field-item {
-    color: $dark_grey;
+    //color: $dark_grey;
     margin-top: 0.6rem;
   }
   .contact, .location {
