@@ -10348,10 +10348,10 @@ table.table-condensed th, table.table-condensed td {
   line-height: 1.1;
   color: #00A1C6; }
 
-.node-type-person .person-category {
+.node-type-person .field-name-field-person-categories {
   margin-top: 1.2rem;
   margin-bottom: 1.5rem; }
-  .node-type-person .person-category .field-item {
+  .node-type-person .field-name-field-person-categories .field-item {
     font-family: BlenderProMedium;
     font-style: italic;
     font-size: 1.2rem;
@@ -10491,10 +10491,10 @@ table.table-condensed th, table.table-condensed td {
   line-height: 1.1;
   color: #00A1C6; }
 
-.node-type-person .person-category {
+.node-type-person .field-name-field-person-categories {
   margin-top: 1.2rem;
   margin-bottom: 1.5rem; }
-  .node-type-person .person-category .field-item {
+  .node-type-person .field-name-field-person-categories .field-item {
     font-family: BlenderProMedium;
     font-style: italic;
     font-size: 1.2rem;
