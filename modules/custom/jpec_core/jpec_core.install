@@ -411,3 +411,12 @@ function jpec_core_update_7016() {
     module_enable(array('better_formats'));
   }
 }
+
+/**
+ * Enable jpec_person feature
+ */
+function jpec_core_update_7017() {
+  if (!module_exists('jpec_person')) {
+    module_enable(array('jpec_person'));
+  }
+}
