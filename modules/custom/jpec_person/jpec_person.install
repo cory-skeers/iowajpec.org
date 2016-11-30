@@ -1,0 +1,43 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall code for the JPEC Person feature.
+ */
+
+/**
+ * Add People taxonomy terms to the Person Categories vocabulary.
+*/
+function jpec_person_update_7000() {
+  $new_terms = array(
+    'Advisory Council',
+    'Lecturer',
+    'Staff'
+  );
+  $vocab = 'person_categories';
+  $vid = taxonomy_vocabulary_machine_name_load($vocab)->vid;
+
+  // Delete all existing terms.
+  $terms = taxonomy_get_tree((int) $vid);
+  foreach ($terms as $t) {
+    taxonomy_term_delete($t->tid);
+  }
+
+  // Create new terms in the vocabulary.
+  foreach ($new_terms as $item) {
+    $tid = taxonomy_get_term_by_name($item, $vocab);
+    if (empty($tid)) {
+      $new_term = new stdClass();
+      $new_term->name = $item;
+      $new_term->vid = $vid;
+      taxonomy_term_save($new_term);
+    }
+  }
+}
+
+/**
+ * Delete field_person_category field
+*/
+function jpec_person_update_7001() {
+  field_delete_field('field_person_category');
+  field_purge_batch(1);
+}
