@@ -34,10 +34,7 @@
         <div class="col-md-9">
           <div class="person-title">
             <?php print render($content['field_person_title']); ?>
-          </div>
-          <div class="person-category">
-            <?php print render($content['field_person_category']); ?>
-          </div>          
+          </div>        
           <?php print render($content); ?>
         </div>          
       </div>  
