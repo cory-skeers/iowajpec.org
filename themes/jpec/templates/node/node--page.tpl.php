@@ -27,9 +27,6 @@
   <?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
-    <div class="container">
-         <?php print render($content['field_leading_text']); ?>
-    </div>
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
