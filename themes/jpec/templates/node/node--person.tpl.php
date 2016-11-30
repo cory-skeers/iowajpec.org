@@ -12,37 +12,32 @@
  */
 ?>
 
-<article class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<article class="<?php print $classes; ?> clearfix container"<?php print $attributes; ?>>
       <div class="row">
         <div class="col-md-3">
           <?php print render($content['field_person_image']); ?>
-          <?php print render($content['field_person_title']); ?>
-          <?php print render($content['field_person_fellow_title']); ?>
 
           <div class="contact">
-            <div class="person-label">Contact</div>
-            <?php print render($content['field_phone']); ?>
+            <h3>Contact</h3>
+            <?php print render($content['field_person_phone']); ?>
             <?php print render($content['field_person_email']); ?>
           </div>
 
           <div class="location">
-            <div class="person-label">Office</div>
-            <?php print render($content['field_person_location']); ?>
+            <h3>Office</h3>
+            <?php print render($content['field_person_office']); ?>
+            <?php print render($content['field_person_building']); ?>
           </div>        
-          
-          <?php print render($content['field_person_blog']); ?>
-          <?php print render($content['field_person_cv']); ?>
-          <?php print render($content['field_person_website']); ?>
-          <?php print render($content['field_person_scholar']); ?>
-            
-          
+       
         </div>
+
         <div class="col-md-9">
-          <?php
-            // Hide primary and secondary departments from content, as they are printed in the header
-            hide($content['field_person_primary_dept']);
-            hide($content['field_person_sec_dept']);
-          ?>
+          <div class="person-title">
+            <?php print render($content['field_person_title']); ?>
+          </div>
+          <div class="person-category">
+            <?php print render($content['field_person_category']); ?>
+          </div>          
           <?php print render($content); ?>
         </div>          
       </div>  
@@ -51,12 +46,9 @@
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
-      hide($content['field_person_primary_dept']);
-      hide($content['field_person_sec_dept']);
     ?>
 
   <?php print render($content['links']); ?>
-
   <?php print render($content['comments']); ?>
 
 </article>
