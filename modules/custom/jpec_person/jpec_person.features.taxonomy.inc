@@ -1,19 +1,19 @@
 <?php
 /**
  * @file
- * jpec_core.features.taxonomy.inc
+ * jpec_person.features.taxonomy.inc
  */
 
 /**
  * Implements hook_taxonomy_default_vocabularies().
  */
-function jpec_core_taxonomy_default_vocabularies() {
+function jpec_person_taxonomy_default_vocabularies() {
   return array(
-    'media_folders' => array(
-      'name' => 'Media Folders',
-      'machine_name' => 'media_folders',
-      'description' => 'Use media folders to organize your media',
-      'hierarchy' => 1,
+    'person_categories' => array(
+      'name' => 'Person categories',
+      'machine_name' => 'person_categories',
+      'description' => '',
+      'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
       'rdf_mapping' => array(
