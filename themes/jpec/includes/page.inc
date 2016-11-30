@@ -144,22 +144,7 @@ function jpec_preprocess_page(&$variables) {
           $variables['section_title'] = $wrapper->field_section_title->value();
         }
 
-        break;
-
-      // case 'person':
-
-      //   // print the Primary and Secondary departments in the header
-      //   if (!empty($variables['node']->field_person_primary_dept['und'][0]['entity']->title)) {
-
-      //     $primary_department = field_view_field('node', $variables['node'], 'field_person_primary_dept', $display = 'default', $langcode = NULL);
-      //     $secondary_department = field_view_field('node', $variables['node'], 'field_person_sec_dept', $display = 'default', $langcode = NULL);
-          
-      //     $variables['header_fields'] = array(
-      //       'dep_primary' => $primary_department,
-      //       'dep_secondary' => $secondary_department
-      //     );
-      //   }
-      //   break;        
+        break;       
 
       case 'profile':
 
