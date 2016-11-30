@@ -134,8 +134,8 @@ function jpec_person_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-person-field_person_category'.
-  $field_instances['node-person-field_person_category'] = array(
+  // Exported field_instance: 'node-person-field_person_categories'.
+  $field_instances['node-person-field_person_categories'] = array(
     'bundle' => 'person',
     'default_value' => NULL,
     'deleted' => 0,
@@ -143,20 +143,20 @@ function jpec_person_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'list',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 0,
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_person_category',
+    'field_name' => 'field_person_categories',
     'label' => 'Category',
     'required' => 1,
     'settings' => array(
@@ -589,7 +589,7 @@ function jpec_person_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'hidden',

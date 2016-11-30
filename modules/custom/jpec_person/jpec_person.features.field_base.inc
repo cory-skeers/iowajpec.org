@@ -50,30 +50,30 @@ function jpec_person_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_person_category'.
-  $field_bases['field_person_category'] = array(
+  // Exported field_base: 'field_person_categories'.
+  $field_bases['field_person_categories'] = array(
     'active' => 1,
-    'cardinality' => -1,
+    'cardinality' => 3,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_person_category',
+    'field_name' => 'field_person_categories',
     'indexes' => array(
-      'value' => array(
-        0 => 'value',
+      'tid' => array(
+        0 => 'tid',
       ),
     ),
     'locked' => 0,
-    'module' => 'list',
+    'module' => 'taxonomy',
     'settings' => array(
       'allowed_values' => array(
-        'staff' => 'Staff',
-        'lecturer' => 'Lecturer',
-        'advisory_council' => 'Advisory Council',
+        0 => array(
+          'vocabulary' => 'person_categories',
+          'parent' => 0,
+        ),
       ),
-      'allowed_values_function' => '',
     ),
     'translatable' => 0,
-    'type' => 'list_text',
+    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_person_education'.
