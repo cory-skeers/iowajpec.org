@@ -469,3 +469,12 @@ function jpec_core_update_7019() {
   }
   $query->execute();
 }
+
+/**
+ * Enable custom_breadcrumbs module
+ */
+function jpec_core_update_7020() {
+  if (!module_exists('custom_breadcrumbs')) {
+    module_enable(array('custom_breadcrumbs'));
+  }
+}
