@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6,',
           'allow_comments' => 0,
           'nofollow_policy' => 'whitelist',
           'nofollow_domains' => array(
-            0 => 'tippie.uiowa.edu.dd',
+            0 => 'org-iowajpec.stage.drupal.uiowa.edu',
           ),
           'style_color' => array(
             'color' => 0,
@@ -193,9 +193,8 @@ h1, h2, h3, h4, h5, h6,',
         'weight' => 50,
         'status' => 1,
         'settings' => array(
-          'local_paths' => 'http://test.sitenow.uiowa.edu/tippie
-http://tippie.stage.drupal.uiowa.edu
-/tippie/',
+          'local_paths' => 'https://org-iowajpec.stage.drupal.uiowa.edu
+/org-iowajpec/',
           'protocol_style' => 'full',
         ),
       ),

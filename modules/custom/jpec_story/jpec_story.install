@@ -1,0 +1,13 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall code for the JPEC Story feature.
+ */
+
+/**
+ * Delete field_story_intro field
+*/
+function jpec_story_update_7000() {
+  field_delete_field('field_story_intro');
+  field_purge_batch(1);
+}

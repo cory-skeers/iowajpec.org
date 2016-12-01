@@ -158,6 +158,7 @@ function jpec_story_field_default_field_instances() {
         'allowed_formats' => array(
           'filtered_html' => 'filtered_html',
           'full_html' => 0,
+          'imported_html' => 0,
           'plain_text' => 0,
         ),
         'allowed_formats_toggle' => 1,
@@ -169,6 +170,9 @@ function jpec_story_field_default_field_instances() {
             ),
             'full_html' => array(
               'weight' => -9,
+            ),
+            'imported_html' => array(
+              'weight' => -11,
             ),
             'plain_text' => array(
               'weight' => 10,
@@ -610,75 +614,6 @@ function jpec_story_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-story-field_story_intro'.
-  $field_instances['node-story-field_story_intro'] = array(
-    'bundle' => 'story',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'card' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_story_intro',
-    'label' => 'Intro',
-    'required' => 0,
-    'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'filtered_html' => 'filtered_html',
-          'full_html' => 0,
-          'plain_text' => 0,
-        ),
-        'allowed_formats_toggle' => 1,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'filtered_html' => array(
-              'weight' => -10,
-            ),
-            'full_html' => array(
-              'weight' => -9,
-            ),
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-          ),
-        ),
-      ),
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 2,
-    ),
-  );
-
   // Exported field_instance: 'node-story-field_story_quote'.
   $field_instances['node-story-field_story_quote'] = array(
     'bundle' => 'story',
@@ -709,7 +644,7 @@ function jpec_story_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_story_quote',
-    'label' => 'Quote',
+    'label' => 'Body',
     'required' => 1,
     'settings' => array(
       'better_formats' => array(
@@ -844,15 +779,14 @@ function jpec_story_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Body');
   t('Email');
   t('First name');
   t('Full story');
   t('Header');
   t('Image');
-  t('Intro');
   t('Intro text');
   t('Last name');
-  t('Quote');
   t('Show link to full profile');
   t('Stories');
   t('Subtitle');
