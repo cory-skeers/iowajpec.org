@@ -478,3 +478,15 @@ function jpec_core_update_7020() {
     module_enable(array('custom_breadcrumbs'));
   }
 }
+
+/**
+ * Enable jpec_news and jpec_news_views features
+ */
+function jpec_core_update_7021() {
+  if (!module_exists('jpec_news')) {
+    module_enable(array('jpec_news'));
+  }
+  if (!module_exists('jpec_news_views')) {
+    module_enable(array('jpec_news_views'));
+  }  
+}
