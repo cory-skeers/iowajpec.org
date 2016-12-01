@@ -17,6 +17,26 @@ function jpec_person_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_custom_breadcrumb_features_default_settings().
+ */
+function jpec_person_custom_breadcrumb_features_default_settings() {
+  $custom_breadcrumbs = array();
+
+  // Exported custom breadcrumb: person_node.
+  $custom_breadcrumbs['person_node'] = array(
+    'name' => 'Person node',
+    'titles' => 'Faculty/Staff Directory',
+    'paths' => 'people',
+    'visibility_php' => '',
+    'node_type' => 'person',
+    'language' => '',
+    'machine_name' => 'person_node',
+  );
+
+  return $custom_breadcrumbs;
+}
+
+/**
  * Implements hook_node_info().
  */
 function jpec_person_node_info() {
