@@ -7,7 +7,7 @@
 /**
  * Implementation of theme_breadcrumb().
  */
-function tippie_breadcrumb($variables) {
+function jpec_breadcrumb($variables) {
   $breadcrumb = $variables['breadcrumb'];
   // hide breadcumbs if it's just Home
   if (!empty($breadcrumb) && count($breadcrumb)>1) {
