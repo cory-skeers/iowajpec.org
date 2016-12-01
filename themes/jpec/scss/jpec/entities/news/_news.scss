@@ -12,7 +12,7 @@
     padding-top: 2rem;
     padding-bottom: 0;
   }
-  .field-name-body {
+  .field-name-field-news-body {
     margin-top: 2rem;
   }
 }
@@ -37,10 +37,16 @@
     }
 	}
 }
-.field-name-field-news-date {
-	font-family: FranklinGothicDemi;
-	margin-top: 1rem;
+.field-name-field-news-date, .field-name-field-news-source {
+  font-family: BlenderProMedium;
+  font-style: italic;
+  @include fontsize(1.3);
 }
+.field-name-field-news-date {
+  font-family: BlenderProBold;
+  margin-top: 0.5rem;
+}
+
 
 // Tags.
 .field-type-taxonomy-term-reference {
