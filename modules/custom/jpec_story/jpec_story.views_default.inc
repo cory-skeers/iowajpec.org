@@ -64,6 +64,7 @@ function jpec_story_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Header */
   $handler->display->display_options['fields']['field_story_header']['id'] = 'field_story_header';
   $handler->display->display_options['fields']['field_story_header']['table'] = 'field_data_field_story_header';
@@ -84,15 +85,7 @@ function jpec_story_views_default_views() {
     'image_style' => 'square_290x290',
     'image_link' => '',
   );
-  /* Field: Content: Intro */
-  $handler->display->display_options['fields']['field_story_intro']['id'] = 'field_story_intro';
-  $handler->display->display_options['fields']['field_story_intro']['table'] = 'field_data_field_story_intro';
-  $handler->display->display_options['fields']['field_story_intro']['field'] = 'field_story_intro';
-  $handler->display->display_options['fields']['field_story_intro']['relationship'] = 'field_profile_stories_target_id';
-  $handler->display->display_options['fields']['field_story_intro']['label'] = '';
-  $handler->display->display_options['fields']['field_story_intro']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_story_intro']['element_label_colon'] = FALSE;
-  /* Field: Content: Quote */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['field_story_quote']['id'] = 'field_story_quote';
   $handler->display->display_options['fields']['field_story_quote']['table'] = 'field_data_field_story_quote';
   $handler->display->display_options['fields']['field_story_quote']['field'] = 'field_story_quote';
@@ -110,8 +103,7 @@ function jpec_story_views_default_views() {
 [field_profile_image]
 <div class="card-wrapper">
 <h3>[title]</h3>
-[field_story_intro]
-<blockquote>[field_story_quote]</blockquote>
+[field_story_quote]
 [field_story_show_link]
 </div>
 </div>';
