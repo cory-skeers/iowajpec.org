@@ -13,6 +13,13 @@ function jpec_news_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'custom_breadcrumbs_show_form_table_news';
+  $strongarm->value = 0;
+  $export['custom_breadcrumbs_show_form_table_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__news';
   $strongarm->value = array(
     'view_modes' => array(
@@ -119,6 +126,34 @@ function jpec_news_strongarm() {
   $strongarm->name = 'pathauto_taxonomy_term_news_pattern';
   $strongarm->value = '';
   $export['pathauto_taxonomy_term_news_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rrssb_chosen';
+  $strongarm->value = array(
+    'facebook' => 'facebook',
+    'linkedin' => 'linkedin',
+    'twitter' => 'twitter',
+    'email' => 0,
+    'tumblr' => 0,
+    'reddit' => 0,
+    'hackernews' => 0,
+    'googleplus' => 0,
+    'youtube' => 0,
+    'pinterest' => 0,
+    'pocket' => 0,
+    'github' => 0,
+    'vk' => 0,
+  );
+  $export['rrssb_chosen'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'rrssb_news';
+  $strongarm->value = 1;
+  $export['rrssb_news'] = $strongarm;
 
   return $export;
 }
