@@ -508,3 +508,14 @@ function jpec_core_update_7022() {
     module_enable(array('viewfield'));
   } 
 }
+
+/**
+ * Disable wysiwyg module
+ */
+function jpec_core_update_7023() {
+  // Turn off admin_menu if it exists.
+  if (module_exists('wysiwyg')) {
+    module_disable(array('wysiwyg'));
+    drupal_uninstall_modules(array('wysiwyg'));
+  }
+}
