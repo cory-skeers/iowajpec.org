@@ -490,3 +490,21 @@ function jpec_core_update_7021() {
     module_enable(array('jpec_news_views'));
   }  
 }
+
+/**
+ * Enable date, date_popup, rrssb, viewfield modules
+ */
+function jpec_core_update_7022() {
+  if (!module_exists('date')) {
+    module_enable(array('date'));
+  }
+  if (!module_exists('date_popup')) {
+    module_enable(array('date_popup'));
+  } 
+  if (!module_exists('rrssb')) {
+    module_enable(array('rrssb'));
+  }
+  if (!module_exists('viewfield')) {
+    module_enable(array('viewfield'));
+  } 
+}
