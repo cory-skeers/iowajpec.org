@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the JPEC News feature.
+ */
+
+include_once 'jpec_news.features.inc';
