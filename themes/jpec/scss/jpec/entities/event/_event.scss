@@ -1,0 +1,54 @@
+.page-events {
+  .views-row {
+    padding: 0.5rem 1.7rem;
+    h4 {
+      @extend .h3;
+      margin-bottom: 0;
+    }
+    .field-name-field-event-date, .field-name-field-event-time {
+      font-family: BlenderProBold;
+      @include fontsize(1.4);
+      display: inline-block;
+    }
+    .field-name-field-event-audience {
+      .field-item, .field-label {
+        margin: 0;
+        padding-top: 4px;
+        font-family: BlenderProMedium;
+        font-style: italic;
+      }
+    }
+    .field-name-body {
+      margin-top: 1rem;
+    }
+  }
+  .views-row-odd {
+    background-color: $light_grey;
+  }
+}
+
+// full node
+.node-type-event {
+  .page-header .header-content {
+    width: 100%;
+  }
+  .field-name-field-event-image {
+    float: left;
+    margin-right: 2rem;
+  }
+  .field-name-field-event-date {
+    font-family: BlenderProBold;
+    @include fontsize(1.7);
+  }
+  .field-name-field-event-audience {
+    font-family: BlenderProBold;
+    @include fontsize(1.5);
+    margin-bottom: 2rem;
+  } 
+  .deadline {
+    margin-top: 2rem;
+  }
+  .field-name-body {
+    margin-top: 2rem;
+  }
+}
