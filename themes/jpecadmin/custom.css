@@ -1,3 +1,12 @@
+body.adminimal-theme.adminimal-skin-material a {
+  color: #0098D9;
+}
+
+/* replace the ugly arrow in circle for Add content choices */
+body.adminimal-theme.adminimal-skin-material ul.admin-list li {
+  background: url(images/chevron-right.png) no-repeat 0 0;
+}
+
 /* get rid of yellow hover on content blocks
 */
 .adminimal-theme tr.draggable.even:hover {
@@ -16,6 +25,10 @@
   color: white;
   padding: 1rem;
   font-weight: bold;
+}
+
+body.adminimal-theme.adminimal-skin-material fieldset legend {
+  position: static;
 }
 
 .adminimal-theme .field-type-paragraphs tr.draggable.even td.field-multiple-drag,
@@ -52,3 +65,22 @@
   border: 1px solid #eeeeee;
 }
 
+/* Mini calendar widget */
+#ui-datepicker-div {
+  font-family: inherit;
+}
+.ui-datepicker {
+  width: 19em;
+}
+body.adminimal-skin-material table th {
+  background: #96b2be;
+}
+
+body.adminimal-skin-material fieldset.vertical-tabs-pane > legend {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+body.adminimal-theme.adminimal-skin-material fieldset {
+  padding-top: 15px;
+}
