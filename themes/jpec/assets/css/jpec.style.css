@@ -1141,7 +1141,7 @@ hr {
   cursor: pointer; }
 
 h1, h2, h3, .page-program-finder .view-header, h4, h5, h6,
-.h1, .h2, .modal-title, .h3, .node-type-person .field-name-field-person-education .field-label, .h4, .node-department-full .department-contact-wrapper h3, .node-department-full .department-contact-wrapper .page-program-finder .view-header, .page-program-finder .node-department-full .department-contact-wrapper .view-header, .field-name-field-org-contact-name .field-item, .node-person-teaser h3, .node-person-teaser .page-program-finder .view-header, .page-program-finder .node-person-teaser .view-header, .h5, .h6 {
+.h1, .h2, .modal-title, .h3, .page-events .views-row h4, .node-type-person .field-name-field-person-education .field-label, .h4, .node-department-full .department-contact-wrapper h3, .node-department-full .department-contact-wrapper .page-program-finder .view-header, .page-program-finder .node-department-full .department-contact-wrapper .view-header, .field-name-field-org-contact-name .field-item, .node-person-teaser h3, .node-person-teaser .page-program-finder .view-header, .page-program-finder .node-person-teaser .view-header, .h5, .h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
@@ -1155,8 +1155,8 @@ h1, h2, h3, .page-program-finder .view-header, h4, h5, h6,
   h6 .small,
   .h1 small,
   .h1 .small, .h2 small, .modal-title small,
-  .h2 .small, .modal-title .small, .h3 small, .node-type-person .field-name-field-person-education .field-label small,
-  .h3 .small, .node-type-person .field-name-field-person-education .field-label .small, .h4 small, .node-department-full .department-contact-wrapper h3 small, .node-department-full .department-contact-wrapper .page-program-finder .view-header small, .page-program-finder .node-department-full .department-contact-wrapper .view-header small, .field-name-field-org-contact-name .field-item small, .node-person-teaser h3 small, .node-person-teaser .page-program-finder .view-header small, .page-program-finder .node-person-teaser .view-header small,
+  .h2 .small, .modal-title .small, .h3 small, .page-events .views-row h4 small, .node-type-person .field-name-field-person-education .field-label small,
+  .h3 .small, .page-events .views-row h4 .small, .node-type-person .field-name-field-person-education .field-label .small, .h4 small, .node-department-full .department-contact-wrapper h3 small, .node-department-full .department-contact-wrapper .page-program-finder .view-header small, .page-program-finder .node-department-full .department-contact-wrapper .view-header small, .field-name-field-org-contact-name .field-item small, .node-person-teaser h3 small, .node-person-teaser .page-program-finder .view-header small, .page-program-finder .node-person-teaser .view-header small,
   .h4 .small, .node-department-full .department-contact-wrapper h3 .small, .node-department-full .department-contact-wrapper .page-program-finder .view-header .small, .page-program-finder .node-department-full .department-contact-wrapper .view-header .small, .field-name-field-org-contact-name .field-item .small, .node-person-teaser h3 .small, .node-person-teaser .page-program-finder .view-header .small, .page-program-finder .node-person-teaser .view-header .small, .h5 small,
   .h5 .small, .h6 small,
   .h6 .small {
@@ -1167,7 +1167,7 @@ h1, h2, h3, .page-program-finder .view-header, h4, h5, h6,
 h1, .h1,
 h2, .h2, .modal-title,
 h3,
-.page-program-finder .view-header, .h3, .node-type-person .field-name-field-person-education .field-label {
+.page-program-finder .view-header, .h3, .page-events .views-row h4, .node-type-person .field-name-field-person-education .field-label {
   margin-top: 20px;
   margin-bottom: 10px; }
   h1 small,
@@ -1177,8 +1177,8 @@ h3,
   h2 .small, .h2 small, .modal-title small,
   .h2 .small, .modal-title .small,
   h3 small, .page-program-finder .view-header small,
-  h3 .small, .page-program-finder .view-header .small, .h3 small, .node-type-person .field-name-field-person-education .field-label small,
-  .h3 .small, .node-type-person .field-name-field-person-education .field-label .small {
+  h3 .small, .page-program-finder .view-header .small, .h3 small, .page-events .views-row h4 small, .node-type-person .field-name-field-person-education .field-label small,
+  .h3 .small, .page-events .views-row h4 .small, .node-type-person .field-name-field-person-education .field-label .small {
     font-size: 65%; }
 
 h4, .h4, .node-department-full .department-contact-wrapper h3, .node-department-full .department-contact-wrapper .page-program-finder .view-header, .page-program-finder .node-department-full .department-contact-wrapper .view-header, .field-name-field-org-contact-name .field-item, .node-person-teaser h3, .node-person-teaser .page-program-finder .view-header, .page-program-finder .node-person-teaser .view-header,
@@ -1203,7 +1203,7 @@ h1, .h1 {
 h2, .h2, .modal-title {
   font-size: 30px; }
 
-h3, .page-program-finder .view-header, .h3, .node-type-person .field-name-field-person-education .field-label {
+h3, .page-program-finder .view-header, .h3, .page-events .views-row h4, .node-type-person .field-name-field-person-education .field-label {
   font-size: 24px; }
 
 h4, .h4, .node-department-full .department-contact-wrapper h3, .node-department-full .department-contact-wrapper .page-program-finder .view-header, .page-program-finder .node-department-full .department-contact-wrapper .view-header, .field-name-field-org-contact-name .field-item, .node-person-teaser h3, .node-person-teaser .page-program-finder .view-header, .page-program-finder .node-person-teaser .view-header {
@@ -8725,15 +8725,15 @@ h2, .h2, .modal-title {
     h2, .h2, .modal-title {
       margin-top: 0; } }
 
-h3, .page-program-finder .view-header, .h3, .node-type-person .field-name-field-person-education .field-label {
+h3, .page-program-finder .view-header, .h3, .page-events .views-row h4, .node-type-person .field-name-field-person-education .field-label {
   font-size: 1.6875rem;
   font-family: BlenderProMedium;
   line-height: 1.3; }
   @media (min-width: 770px) {
-    h3, .page-program-finder .view-header, .h3, .node-type-person .field-name-field-person-education .field-label {
+    h3, .page-program-finder .view-header, .h3, .page-events .views-row h4, .node-type-person .field-name-field-person-education .field-label {
       font-size: 1.875rem; } }
   @media (min-width: 1200px) {
-    h3, .page-program-finder .view-header, .h3, .node-type-person .field-name-field-person-education .field-label {
+    h3, .page-program-finder .view-header, .h3, .page-events .views-row h4, .node-type-person .field-name-field-person-education .field-label {
       font-size: 2.1875rem; } }
 
 h4, .h4, .node-department-full .department-contact-wrapper h3, .node-department-full .department-contact-wrapper .page-program-finder .view-header, .page-program-finder .node-department-full .department-contact-wrapper .view-header, .field-name-field-org-contact-name .field-item, .node-person-teaser h3, .node-person-teaser .page-program-finder .view-header, .page-program-finder .node-person-teaser .view-header {
@@ -8882,7 +8882,7 @@ img {
     .background-blue-line {
       background-image: url(../images/white_angled_lines.png);
       background-repeat: no-repeat;
-      background-position: 102% 50%;
+      background-position: 100% 50%;
       background-size: contain; } }
 
 .background-grey {
@@ -9404,6 +9404,9 @@ thead > tr > th[scope=row] {
 table.table-condensed th, table.table-condensed td {
   text-align: center; }
 
+.nav-tabs > li > a {
+  border-radius: 0; }
+
 .page-google-search h3, .page-google-search .page-program-finder .view-header, .page-program-finder .page-google-search .view-header {
   display: none; }
 
@@ -9848,6 +9851,88 @@ table.table-condensed th, table.table-condensed td {
     .node-department-full .view-display-id-department_block .view-content > .views-row {
       width: 31%;
       margin: 10px; } }
+
+.page-events .views-row {
+  padding: 0.5rem 1.7rem; }
+  .page-events .views-row h4 {
+    margin-bottom: 0; }
+  .page-events .views-row .field-name-field-event-date, .page-events .views-row .field-name-field-event-time {
+    font-family: BlenderProBold;
+    font-size: 1.4rem;
+    display: inline-block; }
+  .page-events .views-row .field-name-field-event-audience .field-item, .page-events .views-row .field-name-field-event-audience .field-label {
+    margin: 0;
+    padding-top: 4px;
+    font-family: BlenderProMedium;
+    font-style: italic; }
+  .page-events .views-row .field-name-body {
+    margin-top: 1rem; }
+
+.page-events .views-row-odd {
+  background-color: #EBE7E3; }
+
+.node-type-event .page-header .header-content {
+  width: 100%; }
+
+.node-type-event .field-name-field-event-image {
+  float: left;
+  margin-right: 2rem; }
+
+.node-type-event .field-name-field-event-date {
+  font-family: BlenderProBold;
+  font-size: 1.7rem; }
+
+.node-type-event .field-name-field-event-audience {
+  font-family: BlenderProBold;
+  font-size: 1.5rem;
+  margin-bottom: 2rem; }
+
+.node-type-event .deadline {
+  margin-top: 2rem; }
+
+.node-type-event .field-name-body {
+  margin-top: 2rem; }
+
+.page-events .views-row {
+  padding: 0.5rem 1.7rem; }
+  .page-events .views-row h4 {
+    margin-bottom: 0; }
+  .page-events .views-row .field-name-field-event-date, .page-events .views-row .field-name-field-event-time {
+    font-family: BlenderProBold;
+    font-size: 1.4rem;
+    display: inline-block; }
+  .page-events .views-row .field-name-field-event-audience .field-item, .page-events .views-row .field-name-field-event-audience .field-label {
+    margin: 0;
+    padding-top: 4px;
+    font-family: BlenderProMedium;
+    font-style: italic; }
+  .page-events .views-row .field-name-body {
+    margin-top: 1rem; }
+
+.page-events .views-row-odd {
+  background-color: #EBE7E3; }
+
+.node-type-event .page-header .header-content {
+  width: 100%; }
+
+.node-type-event .field-name-field-event-image {
+  float: left;
+  margin-right: 2rem; }
+
+.node-type-event .field-name-field-event-date {
+  font-family: BlenderProBold;
+  font-size: 1.7rem; }
+
+.node-type-event .field-name-field-event-audience {
+  font-family: BlenderProBold;
+  font-size: 1.5rem;
+  margin-bottom: 2rem; }
+
+.node-type-event .deadline {
+  margin-top: 2rem; }
+
+.node-type-event .field-name-body {
+  margin-top: 2rem; }
 
 .node-factoid-card .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source a {
   font-size: 0.9rem;
