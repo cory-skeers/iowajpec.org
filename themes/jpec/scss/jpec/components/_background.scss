@@ -14,7 +14,7 @@
 .background-blue-line {
   position: relative;
   overflow: hidden;
-  @include blue-angle(102%);
+  @include blue-angle(100%);
   background: $blue;
   color: $white;
 }
