@@ -537,3 +537,12 @@ function jpec_core_update_7025() {
     module_enable(array('jpec_event_views'));
   }
 }
+
+/**
+ * Enable timefield module
+ */
+function jpec_core_update_7026() {
+  if (!module_exists('timefield')) {
+    module_enable(array('timefield'));
+  }
+}
