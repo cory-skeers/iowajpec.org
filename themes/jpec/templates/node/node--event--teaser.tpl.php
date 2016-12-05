@@ -16,7 +16,7 @@
   hide($content['comments']);
   hide($content['links']);
 ?>
-<div class="term-listing">
+<div>
   <?php 
     print '<h4><a href="'. $node_url . '">' . $title . '</a></h4>';
     print render($content);
