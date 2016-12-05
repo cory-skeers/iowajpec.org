@@ -37,6 +37,34 @@ function jpec_events_custom_breadcrumb_features_default_settings() {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function jpec_events_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: event.
+  $styles['event'] = array(
+    'label' => 'Event',
+    'effects' => array(
+      2 => array(
+        'name' => 'manualcrop_crop_and_scale',
+        'data' => array(
+          'width' => 480,
+          'height' => 300,
+          'upscale' => 0,
+          'respectminimum' => 1,
+          'onlyscaleifcrop' => 0,
+          'style_name' => 'event',
+        ),
+        'weight' => 0,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function jpec_events_node_info() {

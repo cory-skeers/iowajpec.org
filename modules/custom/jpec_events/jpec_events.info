@@ -46,6 +46,7 @@ features[field_instance][] = node-event-field_event_info
 features[field_instance][] = node-event-field_event_location
 features[field_instance][] = node-event-field_event_room
 features[field_instance][] = node-event-field_event_time
+features[image][] = event
 features[node][] = event
 features[taxonomy][] = audiences
 features[variable][] = date_format_deadline
