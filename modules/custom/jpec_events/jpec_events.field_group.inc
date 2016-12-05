@@ -59,7 +59,8 @@ function jpec_events_field_group_info() {
       1 => 'field_event_image',
       2 => 'field_event_audience',
       3 => 'field_event_info',
-      4 => 'title',
+      4 => 'field_event_featured',
+      5 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
