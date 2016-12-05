@@ -519,3 +519,21 @@ function jpec_core_update_7023() {
     drupal_uninstall_modules(array('wysiwyg'));
   }
 }
+
+/**
+ * Enable jpec_events feature
+ */
+function jpec_core_update_7024() {
+  if (!module_exists('jpec_events')) {
+    module_enable(array('jpec_events'));
+  }
+}
+
+/**
+ * Enable jpec_event_views feature
+ */
+function jpec_core_update_7025() {
+  if (!module_exists('jpec_event_views')) {
+    module_enable(array('jpec_event_views'));
+  }
+}
