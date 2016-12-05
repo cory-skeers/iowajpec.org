@@ -12,6 +12,7 @@ dependencies[] = date_views
 dependencies[] = features
 dependencies[] = field_group
 dependencies[] = image
+dependencies[] = jpec_core
 dependencies[] = link
 dependencies[] = list
 dependencies[] = media
