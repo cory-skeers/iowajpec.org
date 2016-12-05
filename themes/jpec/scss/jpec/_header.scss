@@ -24,7 +24,7 @@ $header_padding: 1.5rem;
   }
 
   .header-content {
-    padding: 1.5rem;
+    padding: 1.5rem 0;
     //@include triangle(contain);
 
     @include breakpoint($tippie-lg-min) {
@@ -47,7 +47,7 @@ $header_padding: 1.5rem;
     
     // fix overflow issues on medium-large screens (1200px - 1430 px)
     @include breakpoint($tippie-xl) {
-      margin: 1rem 0 0 1rem;
+      margin: 1rem 0 0 0;
       width: 65%;
       h1 {
         @include fontsize(3); 

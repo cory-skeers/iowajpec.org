@@ -65,6 +65,13 @@
           <?php print $breadcrumb; ?>
         </div>
         <?php endif; ?>
+
+        <?php if (!empty($extra_content)): ?>
+        <div class="extra_content">
+          <?php print render($extra_content); ?>
+        </div>
+        <?php endif; ?>
+
         <?php if ($tabs): ?>
           <div class="tabs">
             <?php print render($tabs); ?>

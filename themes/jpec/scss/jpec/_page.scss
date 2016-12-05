@@ -176,3 +176,8 @@
 iframe[name^='google_conversion_frame'] {
   display: none;
 }
+.page-user {
+  .region-content {
+    @extend .container;
+  }
+}

@@ -181,6 +181,11 @@ function jpec_preprocess_page(&$variables) {
     }
   }
 
+  // Events page - add a Featured Event view to Extra_content field so it can be printed then in the page.tpl.php
+  if ($variables['theme_hook_suggestions'][0] == 'page__events') {
+    $variables['extra_content'] = views_embed_view('calendar', 'featured_event_block'); 
+  }
+
   // Front page configuration.
   // if ($variables['is_front']) {
 
