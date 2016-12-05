@@ -38,17 +38,55 @@
   }
   .field-name-field-event-date {
     font-family: BlenderProBold;
-    @include fontsize(1.7);
+    @include fontsize(2.4);
+    color: $orange;
+  }
+  .field-name-field-event-time {
+    margin-bottom: 1.3rem;
   }
   .field-name-field-event-audience {
-    font-family: BlenderProBold;
+    font-family: BlenderProMedium;
     @include fontsize(1.5);
-    margin-bottom: 2rem;
+    line-height: 1;
+    margin-bottom: 1.3rem;
+    color: $orange;
+    text-transform: uppercase;
+    font-style: italic;
   } 
   .deadline {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
   .field-name-body {
     margin-top: 2rem;
+  }
+}
+
+// featured event view
+.featured-event {
+  margin: 2rem 0;
+  h3 {
+    margin: 0;
+    color: $orange;
+  }
+  img {
+    float: left;
+    margin-right: 2rem;
+  }
+  .field-name-field-event-date, .field-name-field-event-time, .field-name-field-event-location {
+    font-family: BlenderProBold;
+    @include fontsize(1.4);
+    //  display: inline-block;    
+  }
+  .field-name-field-event-audience {
+    font-family: BlenderProMedium;
+    font-style: italic;
+    @include fontsize(1.3);
+    margin-bottom: 1rem;
+    &.field-type-taxonomy-term-reference .field-items .field-item {
+      margin: 0;
+    }
+  }
+  .field-name-body {
+    margin-top: 1rem;
   }
 }

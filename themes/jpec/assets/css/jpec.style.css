@@ -9880,18 +9880,47 @@ table.table-condensed th, table.table-condensed td {
 
 .node-type-event .field-name-field-event-date {
   font-family: BlenderProBold;
-  font-size: 1.7rem; }
+  font-size: 2.4rem;
+  color: #FE5E00; }
+
+.node-type-event .field-name-field-event-time {
+  margin-bottom: 1.3rem; }
 
 .node-type-event .field-name-field-event-audience {
-  font-family: BlenderProBold;
+  font-family: BlenderProMedium;
   font-size: 1.5rem;
-  margin-bottom: 2rem; }
+  line-height: 1;
+  margin-bottom: 1.3rem;
+  color: #FE5E00;
+  text-transform: uppercase;
+  font-style: italic; }
 
 .node-type-event .deadline {
-  margin-top: 2rem; }
+  margin-top: 1.5rem; }
 
 .node-type-event .field-name-body {
   margin-top: 2rem; }
+
+.featured-event {
+  margin: 2rem 0; }
+  .featured-event h3, .featured-event .page-program-finder .view-header, .page-program-finder .featured-event .view-header {
+    margin: 0;
+    color: #FE5E00; }
+  .featured-event img {
+    float: left;
+    margin-right: 2rem; }
+  .featured-event .field-name-field-event-date, .featured-event .field-name-field-event-time, .featured-event .field-name-field-event-location {
+    font-family: BlenderProBold;
+    font-size: 1.4rem; }
+  .featured-event .field-name-field-event-audience {
+    font-family: BlenderProMedium;
+    font-style: italic;
+    font-size: 1.3rem;
+    margin-bottom: 1rem; }
+    .featured-event .field-name-field-event-audience.field-type-taxonomy-term-reference .field-items .field-item {
+      margin: 0; }
+  .featured-event .field-name-body {
+    margin-top: 1rem; }
 
 .page-events .views-row {
   padding: 0.5rem 1.7rem; }
@@ -9921,18 +9950,47 @@ table.table-condensed th, table.table-condensed td {
 
 .node-type-event .field-name-field-event-date {
   font-family: BlenderProBold;
-  font-size: 1.7rem; }
+  font-size: 2.4rem;
+  color: #FE5E00; }
+
+.node-type-event .field-name-field-event-time {
+  margin-bottom: 1.3rem; }
 
 .node-type-event .field-name-field-event-audience {
-  font-family: BlenderProBold;
+  font-family: BlenderProMedium;
   font-size: 1.5rem;
-  margin-bottom: 2rem; }
+  line-height: 1;
+  margin-bottom: 1.3rem;
+  color: #FE5E00;
+  text-transform: uppercase;
+  font-style: italic; }
 
 .node-type-event .deadline {
-  margin-top: 2rem; }
+  margin-top: 1.5rem; }
 
 .node-type-event .field-name-body {
   margin-top: 2rem; }
+
+.featured-event {
+  margin: 2rem 0; }
+  .featured-event h3, .featured-event .page-program-finder .view-header, .page-program-finder .featured-event .view-header {
+    margin: 0;
+    color: #FE5E00; }
+  .featured-event img {
+    float: left;
+    margin-right: 2rem; }
+  .featured-event .field-name-field-event-date, .featured-event .field-name-field-event-time, .featured-event .field-name-field-event-location {
+    font-family: BlenderProBold;
+    font-size: 1.4rem; }
+  .featured-event .field-name-field-event-audience {
+    font-family: BlenderProMedium;
+    font-style: italic;
+    font-size: 1.3rem;
+    margin-bottom: 1rem; }
+    .featured-event .field-name-field-event-audience.field-type-taxonomy-term-reference .field-items .field-item {
+      margin: 0; }
+  .featured-event .field-name-body {
+    margin-top: 1rem; }
 
 .node-factoid-card .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source a {
   font-size: 0.9rem;
@@ -11382,7 +11440,7 @@ ol.megamenu-column {
       padding: 1rem 5rem; } }
 
 .page-header .header-content {
-  padding: 1.5rem; }
+  padding: 1.5rem 0; }
   @media (min-width: 1200px) {
     .page-header .header-content {
       width: 75%;
@@ -11398,7 +11456,7 @@ ol.megamenu-column {
         font-size: 1.75rem; } }
   @media (min-width: 1200px) and (max-width: 1430px) {
     .page-header .header-content {
-      margin: 1rem 0 0 1rem;
+      margin: 1rem 0 0 0;
       width: 65%; }
       .page-header .header-content h1 {
         font-size: 3rem; }
