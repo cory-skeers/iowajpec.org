@@ -10512,7 +10512,8 @@ table.table-condensed th, table.table-condensed td {
     font-family: BlenderProMedium;
     font-style: italic;
     font-size: 1.2rem;
-    display: inline; }
+    display: inline;
+    margin-right: 0; }
 
 .node-type-person .field-item {
   margin-top: 0.6rem; }
@@ -10655,7 +10656,8 @@ table.table-condensed th, table.table-condensed td {
     font-family: BlenderProMedium;
     font-style: italic;
     font-size: 1.2rem;
-    display: inline; }
+    display: inline;
+    margin-right: 0; }
 
 .node-type-person .field-item {
   margin-top: 0.6rem; }
