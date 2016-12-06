@@ -1,0 +1,13 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall code for the JPEC Events feature.
+ */
+
+/**
+ * Delete body field
+*/
+function jpec_events_update_7000() {
+  field_delete_field('body');
+  field_purge_batch(1);
+}
