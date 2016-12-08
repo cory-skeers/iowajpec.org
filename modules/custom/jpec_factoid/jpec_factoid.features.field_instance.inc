@@ -290,7 +290,7 @@ function jpec_factoid_field_default_field_instances() {
       'enable_tokens' => 1,
       'rel_remove' => 'default',
       'title' => 'required',
-      'title_label_use_field_label' => 0,
+      'title_label_use_field_label' => 1,
       'title_maxlength' => 128,
       'title_value' => '',
       'url' => 'optional',
