@@ -8884,7 +8884,7 @@ img {
   color: #FFFFFF; }
   @media (min-width: 768px) {
     .background-blue-line {
-      background-image: url(../images/white_angled_lines.png);
+      background-image: url(../images/white_lines.png);
       background-repeat: no-repeat;
       background-position: 100% 50%;
       background-size: contain; } }
@@ -9625,7 +9625,7 @@ table.table-condensed th, table.table-condensed td {
 
 @media (min-width: 992px) and (min-width: 768px) {
   .node-department-full .department-contact-wrapper {
-    background-image: url(../images/white_angled_lines.png);
+    background-image: url(../images/white_lines.png);
     background-repeat: no-repeat;
     background-position: 90% 50%;
     background-size: contain; } }
@@ -9746,7 +9746,7 @@ table.table-condensed th, table.table-condensed td {
 
 @media (min-width: 992px) and (min-width: 768px) {
   .node-department-full .department-contact-wrapper {
-    background-image: url(../images/white_angled_lines.png);
+    background-image: url(../images/white_lines.png);
     background-repeat: no-repeat;
     background-position: 90% 50%;
     background-size: contain; } }
@@ -10395,7 +10395,7 @@ table.table-condensed th, table.table-condensed td {
   padding: 1rem; }
   @media (min-width: 768px) {
     .org-contact {
-      background-image: url(../images/white_angled_lines.png);
+      background-image: url(../images/white_lines.png);
       background-repeat: no-repeat;
       background-position: 80% 50%;
       background-size: contain; } }
@@ -10470,7 +10470,7 @@ table.table-condensed th, table.table-condensed td {
   padding: 1rem; }
   @media (min-width: 768px) {
     .org-contact {
-      background-image: url(../images/white_angled_lines.png);
+      background-image: url(../images/white_lines.png);
       background-repeat: no-repeat;
       background-position: 80% 50%;
       background-size: contain; } }
@@ -12195,7 +12195,7 @@ iframe[name^='google_conversion_frame'] {
   padding-bottom: 3rem; }
   @media (min-width: 768px) {
     .front .pane-views-exp-programs-explore-programs {
-      background-image: url(../images/white_angled_lines.png);
+      background-image: url(../images/white_lines.png);
       background-repeat: no-repeat;
       background-position: 98% 50%;
       background-size: contain; } }
