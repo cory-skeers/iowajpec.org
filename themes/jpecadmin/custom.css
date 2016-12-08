@@ -93,3 +93,8 @@ body.adminimal-theme.adminimal-skin-material fieldset {
   margin-top: -0.7rem;
   margin-right: 5px;
 }
+
+.adminimal-theme .field-widget-inline-entity-form .ief-entity-operations input[id*="edit"],
+.adminimal-theme input[type="submit"], input.form-submit {
+  margin-right: 5px;
+}
