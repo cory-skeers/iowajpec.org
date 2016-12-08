@@ -12,23 +12,50 @@
  */
 ?>
 
+    <?php
+      // We hide the comments and links now so that we can render them later.
+      //hide($content['field_event_external_url']);
+      hide($content['field_event_deadline_text']);
+    ?>
+
 <article class="<?php print $classes; ?> clearfix container"<?php print $attributes; ?>>
       <div class="row">
         <div class="col-md-12">
           <?php print render($content['field_event_image']); ?>
 
-          <?php print render($content['field_event_date']); ?>
-          <?php print render($content['field_event_audience']); ?>
-          <?php print render($content['field_event_time']); ?>
-          <?php print render($content['field_event_location']); ?>
-          <?php print render($content['field_event_room']); ?>
+          <?php 
+            print render($content['field_event_date']);
+            print render($content['field_event_audience']);
+            print render($content['field_event_time']);
+            print trim(render($content['field_event_location']));
+            if (!empty($content['field_event_room']) && $content['field_event_room'] != '') {
+              echo ', '; 
+            }
+            print render($content['field_event_room']);
+            print render($content['field_event_address']);
+            if (!empty($content['field_event_deadline']) && $content['field_event_deadline'] != '') {
+              print '<br/>' . render($content['field_event_deadline_text']);
+              print render($content['field_event_deadline']);
+              print render($content['field_event_deadline_time']); 
+            }
 
-          <?php if (!empty($content['field_event_deadline']) && $content['field_event_deadline'] != '') { ?>
-            <div class="deadline">
-              Apply by
-              <?php print render($content['field_event_deadline']); ?>
-            </div>
-          <?php } ?>
+            $action_url = '';  
+
+            if (!empty($content['field_event_url']) && $content['field_event_url'] != '') {
+              $action_url = '/' . trim(render($content['field_event_url'])); 
+            }
+            else if (!empty($content['field_event_external_url']) && $content['field_event_external_url'] != '') { 
+              $action_url = render($content['field_event_external_url']); 
+            }   
+          ?>
+          
+           <?php 
+            if ($action_url != '') {
+              print '<br/><a href="' . $action_url . '" class="primary-button action">' . render($content['field_event_action_label']) . '</a>';
+            }
+           ?>
+           
+            
         </div>
       </div>
       <div class="row">  
