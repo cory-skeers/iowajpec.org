@@ -9863,13 +9863,14 @@ table.table-condensed th, table.table-condensed td {
   .page-events .views-row .field-name-field-event-date, .page-events .views-row .field-name-field-event-time {
     font-family: BlenderProBold;
     font-size: 1.4rem;
-    display: inline-block; }
+    display: inline-block;
+    margin-right: 1.5rem; }
   .page-events .views-row .field-name-field-event-audience .field-item, .page-events .views-row .field-name-field-event-audience .field-label {
     margin: 0;
     padding-top: 4px;
     font-family: BlenderProMedium;
     font-style: italic; }
-  .page-events .views-row .field-name-body {
+  .page-events .views-row .field-name-field-event-body {
     margin-top: 1rem; }
 
 .page-events .views-row-odd {
@@ -9880,12 +9881,14 @@ table.table-condensed th, table.table-condensed td {
 
 .node-type-event .field-name-field-event-image {
   float: left;
-  margin-right: 2rem; }
+  margin-right: 2rem;
+  margin-bottom: 1rem; }
 
 .node-type-event .field-name-field-event-date {
   font-family: BlenderProBold;
   font-size: 2.4rem;
-  color: #FE5E00; }
+  color: #FE5E00;
+  margin-top: -0.7rem; }
 
 .node-type-event .field-name-field-event-time {
   margin-bottom: 1.3rem; }
@@ -9899,10 +9902,21 @@ table.table-condensed th, table.table-condensed td {
   text-transform: uppercase;
   font-style: italic; }
 
-.node-type-event .deadline {
-  margin-top: 1.5rem; }
+.node-type-event .field-name-field-event-location, .node-type-event .field-name-field-event-room {
+  display: inline-block; }
 
-.node-type-event .field-name-body {
+.node-type-event .field-name-field-event-deadline-text,
+.node-type-event .field-name-field-event-deadline,
+.node-type-event .field-name-field-event-deadline-time {
+  display: inline-block; }
+
+.node-type-event .field-name-field-event-deadline {
+  font-weight: bold; }
+
+.node-type-event a.action {
+  margin-top: 1rem; }
+
+.node-type-event .field-name-field-event-body {
   margin-top: 2rem; }
 
 .featured-event {
@@ -9913,9 +9927,15 @@ table.table-condensed th, table.table-condensed td {
   .featured-event img {
     float: left;
     margin-right: 2rem; }
-  .featured-event .field-name-field-event-date, .featured-event .field-name-field-event-time, .featured-event .field-name-field-event-location {
+  .featured-event .field-name-field-event-date,
+  .featured-event .field-name-field-event-time,
+  .featured-event .field-name-field-event-location,
+  .featured-event .field-name-field-event-room {
     font-family: BlenderProBold;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    display: inline-block; }
+  .featured-event .field-name-field-event-time {
+    display: block; }
   .featured-event .field-name-field-event-audience {
     font-family: BlenderProMedium;
     font-style: italic;
@@ -9923,7 +9943,7 @@ table.table-condensed th, table.table-condensed td {
     margin-bottom: 1rem; }
     .featured-event .field-name-field-event-audience.field-type-taxonomy-term-reference .field-items .field-item {
       margin: 0; }
-  .featured-event .field-name-body {
+  .featured-event .field-name-field-event-body {
     margin-top: 1rem; }
 
 .page-events .views-row {
@@ -9933,13 +9953,14 @@ table.table-condensed th, table.table-condensed td {
   .page-events .views-row .field-name-field-event-date, .page-events .views-row .field-name-field-event-time {
     font-family: BlenderProBold;
     font-size: 1.4rem;
-    display: inline-block; }
+    display: inline-block;
+    margin-right: 1.5rem; }
   .page-events .views-row .field-name-field-event-audience .field-item, .page-events .views-row .field-name-field-event-audience .field-label {
     margin: 0;
     padding-top: 4px;
     font-family: BlenderProMedium;
     font-style: italic; }
-  .page-events .views-row .field-name-body {
+  .page-events .views-row .field-name-field-event-body {
     margin-top: 1rem; }
 
 .page-events .views-row-odd {
@@ -9950,12 +9971,14 @@ table.table-condensed th, table.table-condensed td {
 
 .node-type-event .field-name-field-event-image {
   float: left;
-  margin-right: 2rem; }
+  margin-right: 2rem;
+  margin-bottom: 1rem; }
 
 .node-type-event .field-name-field-event-date {
   font-family: BlenderProBold;
   font-size: 2.4rem;
-  color: #FE5E00; }
+  color: #FE5E00;
+  margin-top: -0.7rem; }
 
 .node-type-event .field-name-field-event-time {
   margin-bottom: 1.3rem; }
@@ -9969,10 +9992,21 @@ table.table-condensed th, table.table-condensed td {
   text-transform: uppercase;
   font-style: italic; }
 
-.node-type-event .deadline {
-  margin-top: 1.5rem; }
+.node-type-event .field-name-field-event-location, .node-type-event .field-name-field-event-room {
+  display: inline-block; }
 
-.node-type-event .field-name-body {
+.node-type-event .field-name-field-event-deadline-text,
+.node-type-event .field-name-field-event-deadline,
+.node-type-event .field-name-field-event-deadline-time {
+  display: inline-block; }
+
+.node-type-event .field-name-field-event-deadline {
+  font-weight: bold; }
+
+.node-type-event a.action {
+  margin-top: 1rem; }
+
+.node-type-event .field-name-field-event-body {
   margin-top: 2rem; }
 
 .featured-event {
@@ -9983,9 +10017,15 @@ table.table-condensed th, table.table-condensed td {
   .featured-event img {
     float: left;
     margin-right: 2rem; }
-  .featured-event .field-name-field-event-date, .featured-event .field-name-field-event-time, .featured-event .field-name-field-event-location {
+  .featured-event .field-name-field-event-date,
+  .featured-event .field-name-field-event-time,
+  .featured-event .field-name-field-event-location,
+  .featured-event .field-name-field-event-room {
     font-family: BlenderProBold;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    display: inline-block; }
+  .featured-event .field-name-field-event-time {
+    display: block; }
   .featured-event .field-name-field-event-audience {
     font-family: BlenderProMedium;
     font-style: italic;
@@ -9993,7 +10033,7 @@ table.table-condensed th, table.table-condensed td {
     margin-bottom: 1rem; }
     .featured-event .field-name-field-event-audience.field-type-taxonomy-term-reference .field-items .field-item {
       margin: 0; }
-  .featured-event .field-name-body {
+  .featured-event .field-name-field-event-body {
     margin-top: 1rem; }
 
 .node-factoid-card .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source a {
