@@ -24,7 +24,7 @@ function jpec_paragraphs_paragraphs_info() {
       'locked' => '1',
     ),
     'card' => array(
-      'name' => 'Card Reference',
+      'name' => '3 Cards',
       'bundle' => 'card',
       'locked' => '1',
     ),

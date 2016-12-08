@@ -375,7 +375,7 @@ function jpec_paragraphs_field_default_field_bases() {
   // Exported field_base: 'field_cards_card_ref'.
   $field_bases['field_cards_card_ref'] = array(
     'active' => 1,
-    'cardinality' => -1,
+    'cardinality' => 3,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_cards_card_ref',
@@ -400,7 +400,7 @@ function jpec_paragraphs_field_default_field_bases() {
           'type' => 'property',
         ),
         'target_bundles' => array(
-          'page' => 'page',
+          'card_content' => 'card_content',
         ),
       ),
       'target_type' => 'node',

@@ -29,4 +29,5 @@ features[variable][] = menu_parent_factoid
 features[variable][] = node_options_factoid
 features[variable][] = node_preview_factoid
 features[variable][] = node_submitted_factoid
+features[variable][] = pathauto_node_factoid_pattern
 project path = sites/www.iowajpec.org/modules/custom

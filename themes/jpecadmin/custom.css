@@ -84,3 +84,17 @@ body.adminimal-skin-material fieldset.vertical-tabs-pane > legend {
 body.adminimal-theme.adminimal-skin-material fieldset {
   padding-top: 15px;
 }
+
+/* Add a style for 2 columns */
+.adminimal-theme .field-name-field-event-deadline,
+.adminimal-theme .form-item-field-event-time-und-0-value {
+  width: 40%;
+  float: left;
+  margin-top: -0.7rem;
+  margin-right: 5px;
+}
+
+.adminimal-theme .field-widget-inline-entity-form .ief-entity-operations input[id*="edit"],
+.adminimal-theme input[type="submit"], input.form-submit {
+  margin-right: 5px;
+}

@@ -14,7 +14,7 @@ function jpec_events_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'date_format_deadline';
-  $strongarm->value = 'Y-m-d H:i';
+  $strongarm->value = 'd/m/Y - g:ia';
   $export['date_format_deadline'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -73,13 +73,13 @@ function jpec_events_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '3',
+          'weight' => '4',
         ),
         'title' => array(
           'weight' => '1',
         ),
         'path' => array(
-          'weight' => '2',
+          'weight' => '3',
         ),
       ),
       'display' => array(),

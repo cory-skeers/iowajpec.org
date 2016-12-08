@@ -1053,13 +1053,14 @@ function jpec_paragraphs_field_default_field_instances() {
     'bundle' => 'card',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Please select pages or generic content blocks.',
+    'description' => 'Please add up to 3 content cards.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'card',
         ),
         'type' => 'entityreference_entity_view',
@@ -1081,13 +1082,21 @@ function jpec_paragraphs_field_default_field_instances() {
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'entityreference',
+      'module' => 'inline_entity_form',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
-        'path' => '',
-        'size' => 60,
+        'fields' => array(),
+        'type_settings' => array(
+          'allow_clone' => 0,
+          'allow_existing' => 1,
+          'allow_new' => 1,
+          'delete_references' => 0,
+          'label_plural' => 'Content cards',
+          'label_singular' => 'Content card',
+          'match_operator' => 'CONTAINS',
+          'override_labels' => 1,
+        ),
       ),
-      'type' => 'entityreference_autocomplete',
+      'type' => 'inline_entity_form',
       'weight' => 2,
     ),
   );
@@ -1104,6 +1113,7 @@ function jpec_paragraphs_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'teaser',
         ),
         'type' => 'entityreference_entity_view',
@@ -1892,7 +1902,7 @@ function jpec_paragraphs_field_default_field_instances() {
   t('Link');
   t('Link will be displayed as a button below the factoids.');
   t('Please add 3 factoids.');
-  t('Please select pages or generic content blocks.');
+  t('Please add up to 3 content cards.');
   t('Profile');
   t('Provide a URL, used to link to related content.');
   t('Story');

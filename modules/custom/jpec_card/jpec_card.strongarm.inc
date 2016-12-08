@@ -1,28 +1,55 @@
 <?php
 /**
  * @file
- * jpec_factoid.strongarm.inc
+ * jpec_card.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function jpec_factoid_strongarm() {
+function jpec_card_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__factoid';
+  $strongarm->name = 'auto_entitylabel_node_card_content';
+  $strongarm->value = '1';
+  $export['auto_entitylabel_node_card_content'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_pattern_node_card_content';
+  $strongarm->value = '[node:field-card-title:title]';
+  $export['auto_entitylabel_pattern_node_card_content'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'auto_entitylabel_php_node_card_content';
+  $strongarm->value = 0;
+  $export['auto_entitylabel_php_node_card_content'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_node__card_content';
   $strongarm->value = array(
     'view_modes' => array(
-      'teaser' => array(
+      'card' => array(
         'custom_settings' => TRUE,
       ),
       'full' => array(
         'custom_settings' => FALSE,
       ),
+      'teaser' => array(
+        'custom_settings' => FALSE,
+      ),
       'rss' => array(
+        'custom_settings' => FALSE,
+      ),
+      'ical' => array(
         'custom_settings' => FALSE,
       ),
       'diff_standard' => array(
@@ -31,9 +58,6 @@ function jpec_factoid_strongarm() {
       'featured' => array(
         'custom_settings' => FALSE,
       ),
-      'card' => array(
-        'custom_settings' => TRUE,
-      ),
       'token' => array(
         'custom_settings' => FALSE,
       ),
@@ -41,64 +65,56 @@ function jpec_factoid_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '3',
+          'weight' => '2',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '2',
+          'weight' => '1',
         ),
       ),
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_node__factoid'] = $strongarm;
+  $export['field_bundle_settings_node__card_content'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_factoid';
+  $strongarm->name = 'menu_options_card_content';
   $strongarm->value = array();
-  $export['menu_options_factoid'] = $strongarm;
+  $export['menu_options_card_content'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_factoid';
+  $strongarm->name = 'menu_parent_card_content';
   $strongarm->value = 'main-menu:0';
-  $export['menu_parent_factoid'] = $strongarm;
+  $export['menu_parent_card_content'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_factoid';
+  $strongarm->name = 'node_options_card_content';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'revision',
   );
-  $export['node_options_factoid'] = $strongarm;
+  $export['node_options_card_content'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_factoid';
+  $strongarm->name = 'node_preview_card_content';
   $strongarm->value = '1';
-  $export['node_preview_factoid'] = $strongarm;
+  $export['node_preview_card_content'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_factoid';
+  $strongarm->name = 'node_submitted_card_content';
   $strongarm->value = 0;
-  $export['node_submitted_factoid'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_factoid_pattern';
-  $strongarm->value = '';
-  $export['pathauto_node_factoid_pattern'] = $strongarm;
+  $export['node_submitted_card_content'] = $strongarm;
 
   return $export;
 }

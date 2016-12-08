@@ -9,6 +9,7 @@
       font-family: BlenderProBold;
       @include fontsize(1.4);
       display: inline-block;
+      margin-right: 1.5rem;
     }
     .field-name-field-event-audience {
       .field-item, .field-label {
@@ -18,7 +19,7 @@
         font-style: italic;
       }
     }
-    .field-name-body {
+    .field-name-field-event-body {
       margin-top: 1rem;
     }
   }
@@ -35,14 +36,17 @@
   .field-name-field-event-image {
     float: left;
     margin-right: 2rem;
+    margin-bottom: 1rem;
   }
   .field-name-field-event-date {
     font-family: BlenderProBold;
     @include fontsize(2.4);
     color: $orange;
+    margin-top: -0.7rem;
   }
   .field-name-field-event-time {
     margin-bottom: 1.3rem;
+
   }
   .field-name-field-event-audience {
     font-family: BlenderProMedium;
@@ -53,10 +57,22 @@
     text-transform: uppercase;
     font-style: italic;
   } 
-  .deadline {
-    margin-top: 1.5rem;
+  .field-name-field-event-location, .field-name-field-event-room {
+    display: inline-block;
+
   }
-  .field-name-body {
+  .field-name-field-event-deadline-text, 
+  .field-name-field-event-deadline,
+  .field-name-field-event-deadline-time {
+    display: inline-block;
+  }
+  .field-name-field-event-deadline {
+    font-weight: bold;
+  }
+  a.action {
+    margin-top: 1rem;
+  }
+  .field-name-field-event-body {
     margin-top: 2rem;
   }
 }
@@ -72,10 +88,17 @@
     float: left;
     margin-right: 2rem;
   }
-  .field-name-field-event-date, .field-name-field-event-time, .field-name-field-event-location {
+  .field-name-field-event-date, 
+  .field-name-field-event-time, 
+  .field-name-field-event-location,
+  .field-name-field-event-room
+   {
     font-family: BlenderProBold;
     @include fontsize(1.4);
-    //  display: inline-block;    
+    display: inline-block;    
+  }
+  .field-name-field-event-time {
+    display: block;
   }
   .field-name-field-event-audience {
     font-family: BlenderProMedium;
@@ -86,7 +109,7 @@
       margin: 0;
     }
   }
-  .field-name-body {
+  .field-name-field-event-body {
     margin-top: 1rem;
   }
 }
