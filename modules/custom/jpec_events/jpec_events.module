@@ -5,3 +5,13 @@
  */
 
 include_once 'jpec_events.features.inc';
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function jpec_events_field_widget_timefield_standard_form_alter(&$element, &$form_state, $context) {  
+  // remove the fieldset and label from the Time field
+  if ($context['instance']['bundle'] == 'event'){
+    $element['#type'] = 'container';  
+  }  
+}
