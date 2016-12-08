@@ -546,3 +546,12 @@ function jpec_core_update_7026() {
     module_enable(array('timefield'));
   }
 }
+
+/**
+ * Enable jpec_webform feature
+ */
+function jpec_core_update_7027() {
+  if (!module_exists('jpec_webform')) {
+    module_enable(array('jpec_webform'));
+  }
+}
