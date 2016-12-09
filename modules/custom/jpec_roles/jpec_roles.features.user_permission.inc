@@ -25,6 +25,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'access ckeditor link',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'ckeditor_link',
@@ -68,6 +69,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'access navbar',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'navbar',
@@ -93,6 +95,15 @@ function jpec_roles_user_default_permissions() {
     'module' => 'webform',
   );
 
+  // Exported permission: 'access site reports'.
+  $permissions['access site reports'] = array(
+    'name' => 'access site reports',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'system',
+  );
+
   // Exported permission: 'access user profiles'.
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
@@ -107,6 +118,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'administer files',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -117,10 +129,19 @@ function jpec_roles_user_default_permissions() {
     'name' => 'administer menu',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'menu',
+  );
+
+  // Exported permission: 'administer nodes'.
+  $permissions['administer nodes'] = array(
+    'name' => 'administer nodes',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'administer permissions'.
@@ -130,6 +151,15 @@ function jpec_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'user',
+  );
+
+  // Exported permission: 'administer url aliases'.
+  $permissions['administer url aliases'] = array(
+    'name' => 'administer url aliases',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'path',
   );
 
   // Exported permission: 'administer userprotect'.
@@ -176,7 +206,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'cancel account',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'user',
   );
@@ -265,6 +294,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'create files',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -308,6 +338,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'create profile content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -318,6 +349,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'create story content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -512,6 +544,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'delete own image files',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -555,6 +588,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'delete own profile content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -565,6 +599,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'delete own story content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -732,6 +767,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit any image files',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -802,6 +838,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit meta tags',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'metatag',
@@ -909,6 +946,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit own profile content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -919,6 +957,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit own story content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -977,6 +1016,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit terms in stories',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'taxonomy',
@@ -1133,6 +1173,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'view own files',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -1143,6 +1184,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'view own private files',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -1174,6 +1216,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'view revisions',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
