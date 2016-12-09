@@ -60,5 +60,6 @@ features[variable][] = menu_parent_page
 features[variable][] = node_options_page
 features[variable][] = node_preview_page
 features[variable][] = node_submitted_page
+features[variable][] = pathauto_taxonomy_term_media_folders_pattern
 features[views_view][] = jpec_media_browser
 project path = sites/www.iowajpec.org/modules/custom
