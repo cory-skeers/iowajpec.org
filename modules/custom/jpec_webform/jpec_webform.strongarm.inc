@@ -36,7 +36,7 @@ function jpec_webform_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_webform';
   $strongarm->value = array(
-    0 => 'status',
+    0 => 'revision',
   );
   $export['node_options_webform'] = $strongarm;
 
