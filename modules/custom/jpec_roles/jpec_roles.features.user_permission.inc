@@ -300,6 +300,17 @@ function jpec_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'create founders_profile content'.
+  $permissions['create founders_profile content'] = array(
+    'name' => 'create founders_profile content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create news content'.
   $permissions['create news content'] = array(
     'name' => 'create news content',
@@ -426,6 +437,16 @@ function jpec_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any founders_profile content'.
+  $permissions['delete any founders_profile content'] = array(
+    'name' => 'delete any founders_profile content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any image files'.
   $permissions['delete any image files'] = array(
     'name' => 'delete any image files',
@@ -534,6 +555,16 @@ function jpec_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own founders_profile content'.
+  $permissions['delete own founders_profile content'] = array(
+    'name' => 'delete own founders_profile content',
+    'roles' => array(
+      'administrator' => 'administrator',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -762,6 +793,17 @@ function jpec_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any founders_profile content'.
+  $permissions['edit any founders_profile content'] = array(
+    'name' => 'edit any founders_profile content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any image files'.
   $permissions['edit any image files'] = array(
     'name' => 'edit any image files',
@@ -889,6 +931,17 @@ function jpec_roles_user_default_permissions() {
   // Exported permission: 'edit own factoid content'.
   $permissions['edit own factoid content'] = array(
     'name' => 'edit own factoid content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own founders_profile content'.
+  $permissions['edit own founders_profile content'] = array(
+    'name' => 'edit own founders_profile content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
