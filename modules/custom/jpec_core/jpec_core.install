@@ -564,3 +564,12 @@ function jpec_core_update_7028() {
     module_enable(array('jpec_card'));
   }
 }
+
+/**
+ * Enable jpec_founders_club feature
+ */
+function jpec_core_update_7029() {
+  if (!module_exists('jpec_founders_club')) {
+    module_enable(array('jpec_founders_club'));
+  }
+}
