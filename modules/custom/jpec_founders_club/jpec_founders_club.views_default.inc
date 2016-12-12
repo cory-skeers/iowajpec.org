@@ -120,6 +120,8 @@ function jpec_founders_club_views_default_views() {
 
   /* Display: Current */
   $handler = $view->new_display('page', 'Current', 'founders_club_current_page');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Current Founders Club Businesses';
   $handler->display->display_options['path'] = 'founders-club/current';
   $handler->display->display_options['menu']['title'] = 'Current Founders Club Businesses';
   $handler->display->display_options['menu']['weight'] = '0';
