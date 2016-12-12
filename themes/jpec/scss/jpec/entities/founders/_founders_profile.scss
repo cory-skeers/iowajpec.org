@@ -1,0 +1,31 @@
+// full node
+.node-type-founders-profile {
+  h2 {
+    color: $orange;
+  }
+  .field-name-field-card-image {
+    float: left;
+    margin-right: 2rem;
+  }
+  .field-name-field-fp-student-degree, .field-name-field-fp-student-date {
+    display: inline;
+    div {
+      display: inline;
+    }
+  }
+}
+
+// participants page
+.page-founders-club {
+  .view-founders-club-profiles {
+    @extend .container;
+    .views-row {
+      background-color: $light_grey;
+      padding: 0.5rem 2rem 0 2rem;
+      margin-bottom: 1rem;
+      h2 {
+        @extend .h3;
+      }
+    }
+  }
+}
