@@ -130,7 +130,7 @@ function jpec_preprocess_page(&$variables) {
           break;
       }
     }
-
+ 
     switch ($variables['node']->type) {
 
       case 'page':
@@ -165,7 +165,12 @@ function jpec_preprocess_page(&$variables) {
           'intro' => $intro,
         );
 
-        break;      
+        break;     
+
+      case 'founders_profile': 
+          // Reset the title to "Founders Club"
+          $variables['title'] = 'Founders Club Business';
+        break;
 
       // case 'webform':
       //   if (!empty($variables['node']->field_webform_public_title)) {
