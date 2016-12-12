@@ -15,6 +15,7 @@ dependencies[] = link
 dependencies[] = manualcrop
 dependencies[] = media
 dependencies[] = media_browser_plus
+dependencies[] = metatag
 dependencies[] = rrssb
 dependencies[] = strongarm
 dependencies[] = taxonomy

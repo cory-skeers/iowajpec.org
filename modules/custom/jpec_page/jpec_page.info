@@ -13,6 +13,7 @@ dependencies[] = jpec_paragraphs
 dependencies[] = list
 dependencies[] = media
 dependencies[] = menu
+dependencies[] = metatag
 dependencies[] = options
 dependencies[] = paragraphs
 dependencies[] = picture
