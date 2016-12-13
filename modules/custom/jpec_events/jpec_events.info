@@ -17,6 +17,7 @@ dependencies[] = jpec_core
 dependencies[] = link
 dependencies[] = list
 dependencies[] = media
+dependencies[] = metatag
 dependencies[] = options
 dependencies[] = strongarm
 dependencies[] = taxonomy
