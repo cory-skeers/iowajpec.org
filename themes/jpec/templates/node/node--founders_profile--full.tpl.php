@@ -33,8 +33,14 @@
         
         <div class="col-md-6">
           <h2><?php print render($title); ?></h2>
-          <h3>The Team</h3>
-          <?php print render($content['field_founders_profile_student']); ?>
+
+          <?php 
+            if (count($content['field_founders_profile_student']['#items']) == 1) {
+              print '<h3>Student Entrepreneur</h3>'; }
+            else { print '<h3>The Team</h3>'; }
+            
+            print render($content['field_founders_profile_student']); 
+          ?>
         </div>
       </div>
       <div class="row">

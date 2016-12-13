@@ -5,3 +5,17 @@
  */
 
 include_once 'jpec_founders_club.features.inc';
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ * Open the summary field by default.
+ */
+function jpec_founders_club_form_founders_profile_node_form_alter(&$form, &$form_state, $form_id) {
+
+// Expose the summary and make it required
+  if ($form_id == "founders_profile_node_form") {
+    $form['field_founders_profile_body'][LANGUAGE_NONE][0]['summary']['#required'] = TRUE;
+    $script = 'jQuery(document).ready(function(){ jQuery(".link-edit-summary").click(); });';
+    drupal_add_js($script, 'inline');
+  }
+}

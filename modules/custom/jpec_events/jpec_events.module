@@ -15,3 +15,18 @@ function jpec_events_field_widget_timefield_standard_form_alter(&$element, &$for
     $element['#type'] = 'container';  
   }  
 }
+
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ * Open the summary field by default.
+ */
+function jpec_events_form_event_node_form_alter(&$form, &$form_state, $form_id) {
+
+// Expose the summary and make it required
+  if ($form_id == "event_node_form") {
+    $form['field_event_body'][LANGUAGE_NONE][0]['summary']['#required'] = TRUE;
+    $script = 'jQuery(document).ready(function(){ jQuery(".link-edit-summary").click(); });';
+    drupal_add_js($script, 'inline');
+  }
+}
