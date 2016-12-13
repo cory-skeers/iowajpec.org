@@ -573,3 +573,44 @@ function jpec_core_update_7029() {
     module_enable(array('jpec_founders_club'));
   }
 }
+
+/**
+ * Add events and founders club profile media folders.
+ */
+function jpec_core_update_7030() {
+
+  $new_terms = array(
+    'Events',
+    'Founders Club'
+  );
+
+  // Load the media_folders vocabulary ID.
+  $vid = taxonomy_vocabulary_machine_name_load('media_folders')->vid;
+
+  // Create new terms from the $new_terms array.
+  foreach ($new_terms as $item) {
+    $new_term = new stdClass();
+    $new_term->name = $item;
+    $new_term->vid = $vid;
+
+    $parent = '';
+
+    switch ($item) {
+      case 'Events':
+        $parent = taxonomy_get_term_by_name('Images', 'media_folders');
+        break;
+      case 'Founders Club':
+        $parent = taxonomy_get_term_by_name('Images', 'media_folders');
+        break;        
+
+      default:
+        break;
+    }
+
+    if (!empty($parent)) {
+      $tid = array_pop($parent)->tid;
+      $new_term->parent = $tid;
+    }
+    taxonomy_term_save($new_term);
+  }
+}
