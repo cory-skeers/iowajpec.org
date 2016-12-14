@@ -221,13 +221,11 @@ th {
     max-width: 100% !important; }
   p,
   h2,
-  h3,
-  .page-program-finder .view-header {
+  h3 {
     orphans: 3;
     widows: 3; }
   h2,
-  h3,
-  .page-program-finder .view-header {
+  h3 {
     page-break-after: avoid; }
   .navbar {
     display: none; }
@@ -1140,24 +1138,24 @@ hr {
 [role="button"] {
   cursor: pointer; }
 
-h1, h2, h3, .page-program-finder .view-header, h4, h5, h6,
-.h1, .h2, .modal-title, .h3, .page-events .views-row h4, .page-founders-club .view-founders-club-profiles .views-row h2, .node-type-person .field-name-field-person-education .field-label, .h4, .node-department-full .department-contact-wrapper h3, .node-department-full .department-contact-wrapper .page-program-finder .view-header, .page-program-finder .node-department-full .department-contact-wrapper .view-header, .field-name-field-org-contact-name .field-item, .node-person-teaser h3, .node-person-teaser .page-program-finder .view-header, .page-program-finder .node-person-teaser .view-header, .h5, .h6 {
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .modal-title, .h3, .page-events .views-row h4, .page-founders-club .view-founders-club-profiles .views-row h2, .node-type-person .field-name-field-person-education .field-label, .h4, .field-name-field-org-contact-name .field-item, .node-person-teaser h3, .h5, .h6 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit; }
   h1 small,
   h1 .small, h2 small,
-  h2 .small, h3 small, .page-program-finder .view-header small,
-  h3 .small, .page-program-finder .view-header .small, h4 small,
+  h2 .small, h3 small,
+  h3 .small, h4 small,
   h4 .small, h5 small,
   h5 .small, h6 small,
   h6 .small,
   .h1 small,
   .h1 .small, .h2 small, .modal-title small,
   .h2 .small, .modal-title .small, .h3 small, .page-events .views-row h4 small, .page-founders-club .view-founders-club-profiles .views-row h2 small, .node-type-person .field-name-field-person-education .field-label small,
-  .h3 .small, .page-events .views-row h4 .small, .page-founders-club .view-founders-club-profiles .views-row h2 .small, .node-type-person .field-name-field-person-education .field-label .small, .h4 small, .node-department-full .department-contact-wrapper h3 small, .node-department-full .department-contact-wrapper .page-program-finder .view-header small, .page-program-finder .node-department-full .department-contact-wrapper .view-header small, .field-name-field-org-contact-name .field-item small, .node-person-teaser h3 small, .node-person-teaser .page-program-finder .view-header small, .page-program-finder .node-person-teaser .view-header small,
-  .h4 .small, .node-department-full .department-contact-wrapper h3 .small, .node-department-full .department-contact-wrapper .page-program-finder .view-header .small, .page-program-finder .node-department-full .department-contact-wrapper .view-header .small, .field-name-field-org-contact-name .field-item .small, .node-person-teaser h3 .small, .node-person-teaser .page-program-finder .view-header .small, .page-program-finder .node-person-teaser .view-header .small, .h5 small,
+  .h3 .small, .page-events .views-row h4 .small, .page-founders-club .view-founders-club-profiles .views-row h2 .small, .node-type-person .field-name-field-person-education .field-label .small, .h4 small, .field-name-field-org-contact-name .field-item small, .node-person-teaser h3 small,
+  .h4 .small, .field-name-field-org-contact-name .field-item .small, .node-person-teaser h3 .small, .h5 small,
   .h5 .small, .h6 small,
   .h6 .small {
     font-weight: normal;
@@ -1166,8 +1164,7 @@ h1, h2, h3, .page-program-finder .view-header, h4, h5, h6,
 
 h1, .h1,
 h2, .h2, .modal-title,
-h3,
-.page-program-finder .view-header, .h3, .page-events .views-row h4, .page-founders-club .view-founders-club-profiles .views-row h2, .node-type-person .field-name-field-person-education .field-label {
+h3, .h3, .page-events .views-row h4, .page-founders-club .view-founders-club-profiles .views-row h2, .node-type-person .field-name-field-person-education .field-label {
   margin-top: 20px;
   margin-bottom: 10px; }
   h1 small,
@@ -1176,19 +1173,19 @@ h3,
   h2 small,
   h2 .small, .h2 small, .modal-title small,
   .h2 .small, .modal-title .small,
-  h3 small, .page-program-finder .view-header small,
-  h3 .small, .page-program-finder .view-header .small, .h3 small, .page-events .views-row h4 small, .page-founders-club .view-founders-club-profiles .views-row h2 small, .node-type-person .field-name-field-person-education .field-label small,
+  h3 small,
+  h3 .small, .h3 small, .page-events .views-row h4 small, .page-founders-club .view-founders-club-profiles .views-row h2 small, .node-type-person .field-name-field-person-education .field-label small,
   .h3 .small, .page-events .views-row h4 .small, .page-founders-club .view-founders-club-profiles .views-row h2 .small, .node-type-person .field-name-field-person-education .field-label .small {
     font-size: 65%; }
 
-h4, .h4, .node-department-full .department-contact-wrapper h3, .node-department-full .department-contact-wrapper .page-program-finder .view-header, .page-program-finder .node-department-full .department-contact-wrapper .view-header, .field-name-field-org-contact-name .field-item, .node-person-teaser h3, .node-person-teaser .page-program-finder .view-header, .page-program-finder .node-person-teaser .view-header,
+h4, .h4, .field-name-field-org-contact-name .field-item, .node-person-teaser h3,
 h5, .h5,
 h6, .h6 {
   margin-top: 10px;
   margin-bottom: 10px; }
   h4 small,
-  h4 .small, .h4 small, .node-department-full .department-contact-wrapper h3 small, .node-department-full .department-contact-wrapper .page-program-finder .view-header small, .page-program-finder .node-department-full .department-contact-wrapper .view-header small, .field-name-field-org-contact-name .field-item small, .node-person-teaser h3 small, .node-person-teaser .page-program-finder .view-header small, .page-program-finder .node-person-teaser .view-header small,
-  .h4 .small, .node-department-full .department-contact-wrapper h3 .small, .node-department-full .department-contact-wrapper .page-program-finder .view-header .small, .page-program-finder .node-department-full .department-contact-wrapper .view-header .small, .field-name-field-org-contact-name .field-item .small, .node-person-teaser h3 .small, .node-person-teaser .page-program-finder .view-header .small, .page-program-finder .node-person-teaser .view-header .small,
+  h4 .small, .h4 small, .field-name-field-org-contact-name .field-item small, .node-person-teaser h3 small,
+  .h4 .small, .field-name-field-org-contact-name .field-item .small, .node-person-teaser h3 .small,
   h5 small,
   h5 .small, .h5 small,
   .h5 .small,
@@ -1203,10 +1200,10 @@ h1, .h1 {
 h2, .h2, .modal-title {
   font-size: 30px; }
 
-h3, .page-program-finder .view-header, .h3, .page-events .views-row h4, .page-founders-club .view-founders-club-profiles .views-row h2, .node-type-person .field-name-field-person-education .field-label {
+h3, .h3, .page-events .views-row h4, .page-founders-club .view-founders-club-profiles .views-row h2, .node-type-person .field-name-field-person-education .field-label {
   font-size: 24px; }
 
-h4, .h4, .node-department-full .department-contact-wrapper h3, .node-department-full .department-contact-wrapper .page-program-finder .view-header, .page-program-finder .node-department-full .department-contact-wrapper .view-header, .field-name-field-org-contact-name .field-item, .node-person-teaser h3, .node-person-teaser .page-program-finder .view-header, .page-program-finder .node-person-teaser .view-header {
+h4, .h4, .field-name-field-org-contact-name .field-item, .node-person-teaser h3 {
   font-size: 18px; }
 
 h5, .h5 {
@@ -1503,24 +1500,24 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container, .page-founders-club .view-founders-club-profiles, .page-user .region-content {
+.container, .page-node-done .region, .page-founders-club .view-founders-club-profiles, .page-user .region-content {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
-  .container:before, .page-founders-club .view-founders-club-profiles:before, .page-user .region-content:before, .container:after, .page-founders-club .view-founders-club-profiles:after, .page-user .region-content:after {
+  .container:before, .page-node-done .region:before, .page-founders-club .view-founders-club-profiles:before, .page-user .region-content:before, .container:after, .page-node-done .region:after, .page-founders-club .view-founders-club-profiles:after, .page-user .region-content:after {
     content: " ";
     display: table; }
-  .container:after, .page-founders-club .view-founders-club-profiles:after, .page-user .region-content:after {
+  .container:after, .page-node-done .region:after, .page-founders-club .view-founders-club-profiles:after, .page-user .region-content:after {
     clear: both; }
   @media (min-width: 768px) {
-    .container, .page-founders-club .view-founders-club-profiles, .page-user .region-content {
+    .container, .page-node-done .region, .page-founders-club .view-founders-club-profiles, .page-user .region-content {
       width: 750px; } }
   @media (min-width: 992px) {
-    .container, .page-founders-club .view-founders-club-profiles, .page-user .region-content {
+    .container, .page-node-done .region, .page-founders-club .view-founders-club-profiles, .page-user .region-content {
       width: 970px; } }
   @media (min-width: 1200px) {
-    .container, .page-founders-club .view-founders-club-profiles, .page-user .region-content {
+    .container, .page-node-done .region, .page-founders-club .view-founders-club-profiles, .page-user .region-content {
       width: 1170px; } }
 
 .container-fluid {
@@ -3765,15 +3762,15 @@ tbody.collapse.in {
     .navbar-fixed-bottom .navbar-collapse {
       max-height: 200px; } }
 
-.container > .navbar-header, .page-founders-club .view-founders-club-profiles > .navbar-header, .page-user .region-content > .navbar-header,
-.container > .navbar-collapse, .page-founders-club .view-founders-club-profiles > .navbar-collapse, .page-user .region-content > .navbar-collapse,
+.container > .navbar-header, .page-node-done .region > .navbar-header, .page-founders-club .view-founders-club-profiles > .navbar-header, .page-user .region-content > .navbar-header,
+.container > .navbar-collapse, .page-node-done .region > .navbar-collapse, .page-founders-club .view-founders-club-profiles > .navbar-collapse, .page-user .region-content > .navbar-collapse,
 .container-fluid > .navbar-header,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px; }
   @media (min-width: 992px) {
-    .container > .navbar-header, .page-founders-club .view-founders-club-profiles > .navbar-header, .page-user .region-content > .navbar-header,
-    .container > .navbar-collapse, .page-founders-club .view-founders-club-profiles > .navbar-collapse, .page-user .region-content > .navbar-collapse,
+    .container > .navbar-header, .page-node-done .region > .navbar-header, .page-founders-club .view-founders-club-profiles > .navbar-header, .page-user .region-content > .navbar-header,
+    .container > .navbar-collapse, .page-node-done .region > .navbar-collapse, .page-founders-club .view-founders-club-profiles > .navbar-collapse, .page-user .region-content > .navbar-collapse,
     .container-fluid > .navbar-header,
     .container-fluid > .navbar-collapse {
       margin-right: 0;
@@ -3817,7 +3814,7 @@ tbody.collapse.in {
   .navbar-brand > img {
     display: block; }
   @media (min-width: 992px) {
-    .navbar > .container .navbar-brand, .page-founders-club .navbar > .view-founders-club-profiles .navbar-brand, .page-user .navbar > .region-content .navbar-brand,
+    .navbar > .container .navbar-brand, .page-node-done .navbar > .region .navbar-brand, .page-founders-club .navbar > .view-founders-club-profiles .navbar-brand, .page-user .navbar > .region-content .navbar-brand,
     .navbar > .container-fluid .navbar-brand {
       margin-left: -15px; } }
 
@@ -4343,18 +4340,18 @@ a.badge:hover, a.badge:focus {
     font-weight: 200; }
   .jumbotron > hr {
     border-top-color: #d5d5d5; }
-  .container .jumbotron, .page-founders-club .view-founders-club-profiles .jumbotron, .page-user .region-content .jumbotron,
+  .container .jumbotron, .page-node-done .region .jumbotron, .page-founders-club .view-founders-club-profiles .jumbotron, .page-user .region-content .jumbotron,
   .container-fluid .jumbotron {
     border-radius: 6px;
     padding-left: 15px;
     padding-right: 15px; }
-  .jumbotron .container, .jumbotron .page-founders-club .view-founders-club-profiles, .page-founders-club .jumbotron .view-founders-club-profiles, .jumbotron .page-user .region-content, .page-user .jumbotron .region-content {
+  .jumbotron .container, .jumbotron .page-node-done .region, .page-node-done .jumbotron .region, .jumbotron .page-founders-club .view-founders-club-profiles, .page-founders-club .jumbotron .view-founders-club-profiles, .jumbotron .page-user .region-content, .page-user .jumbotron .region-content {
     max-width: 100%; }
   @media screen and (min-width: 768px) {
     .jumbotron {
       padding-top: 48px;
       padding-bottom: 48px; }
-      .container .jumbotron, .page-founders-club .view-founders-club-profiles .jumbotron, .page-user .region-content .jumbotron,
+      .container .jumbotron, .page-node-done .region .jumbotron, .page-founders-club .view-founders-club-profiles .jumbotron, .page-user .region-content .jumbotron,
       .container-fluid .jumbotron {
         padding-left: 60px;
         padding-right: 60px; }
@@ -5666,7 +5663,7 @@ button.close {
   overflow: hidden;
   text-align: left; }
 
-.hidden, .page-news .views-exposed-form .views-widget-filter-combine label, .page-people .views-exposed-form .views-widget-filter-combine label, .page-people .views-exposed-form .views-exposed-widget label, .page-program-finder .views-exposed-form label, .front .pane-views-exp-programs-explore-programs .views-exposed-form label {
+.hidden, .page-news .views-exposed-form .views-widget-filter-combine label, .page-people .views-exposed-form .views-widget-filter-combine label, .page-people .views-exposed-form .views-exposed-widget label, .front .pane-views-exp-programs-explore-programs .views-exposed-form label {
   display: none !important; }
 
 .affix {
@@ -8027,16 +8024,20 @@ html.js fieldset.collapsed {
     #features-export-form .features-export-parent .features-export-list .form-item {
       float: none !important; }
 
-#panels-panel-context-edit-move .container, #panels-panel-context-edit-move .page-founders-club .view-founders-club-profiles, .page-founders-club #panels-panel-context-edit-move .view-founders-club-profiles, #panels-panel-context-edit-move .page-user .region-content, .page-user #panels-panel-context-edit-move .region-content,
+#panels-panel-context-edit-move .container, #panels-panel-context-edit-move .page-node-done .region, .page-node-done #panels-panel-context-edit-move .region, #panels-panel-context-edit-move .page-founders-club .view-founders-club-profiles, .page-founders-club #panels-panel-context-edit-move .view-founders-club-profiles, #panels-panel-context-edit-move .page-user .region-content, .page-user #panels-panel-context-edit-move .region-content,
 #panels-panel-context-edit-content .container,
+#panels-panel-context-edit-content .page-node-done .region, .page-node-done
+#panels-panel-context-edit-content .region,
 #panels-panel-context-edit-content .page-founders-club .view-founders-club-profiles, .page-founders-club
 #panels-panel-context-edit-content .view-founders-club-profiles,
 #panels-panel-context-edit-content .page-user .region-content, .page-user
 #panels-panel-context-edit-content .region-content {
   width: auto;
   padding: 0; }
-  #panels-panel-context-edit-move .container .row, #panels-panel-context-edit-move .page-founders-club .view-founders-club-profiles .row, .page-founders-club #panels-panel-context-edit-move .view-founders-club-profiles .row, #panels-panel-context-edit-move .page-user .region-content .row, .page-user #panels-panel-context-edit-move .region-content .row,
+  #panels-panel-context-edit-move .container .row, #panels-panel-context-edit-move .page-node-done .region .row, .page-node-done #panels-panel-context-edit-move .region .row, #panels-panel-context-edit-move .page-founders-club .view-founders-club-profiles .row, .page-founders-club #panels-panel-context-edit-move .view-founders-club-profiles .row, #panels-panel-context-edit-move .page-user .region-content .row, .page-user #panels-panel-context-edit-move .region-content .row,
   #panels-panel-context-edit-content .container .row,
+  #panels-panel-context-edit-content .page-node-done .region .row, .page-node-done
+  #panels-panel-context-edit-content .region .row,
   #panels-panel-context-edit-content .page-founders-club .view-founders-club-profiles .row, .page-founders-club
   #panels-panel-context-edit-content .view-founders-club-profiles .row,
   #panels-panel-context-edit-content .page-user .region-content .row, .page-user
@@ -8060,8 +8061,8 @@ html.js fieldset.collapsed {
 .tabledrag-handle .handle {
   box-sizing: content-box; }
 
-.container .container, .page-founders-club .view-founders-club-profiles .container, .page-user .region-content .container, .container .page-founders-club .view-founders-club-profiles, .page-founders-club .container .view-founders-club-profiles, .page-founders-club .view-founders-club-profiles .view-founders-club-profiles, .page-user .region-content .page-founders-club .view-founders-club-profiles, .page-founders-club .page-user .region-content .view-founders-club-profiles, .container .page-user .region-content, .page-user .container .region-content, .page-founders-club .view-founders-club-profiles .page-user .region-content, .page-user .page-founders-club .view-founders-club-profiles .region-content, .page-user .region-content .region-content,
-.container .container-fluid, .page-founders-club .view-founders-club-profiles .container-fluid, .page-user .region-content .container-fluid {
+.container .container, .page-node-done .region .container, .page-founders-club .view-founders-club-profiles .container, .page-user .region-content .container, .container .page-node-done .region, .page-node-done .container .region, .page-node-done .region .region, .page-founders-club .view-founders-club-profiles .page-node-done .region, .page-node-done .page-founders-club .view-founders-club-profiles .region, .page-user .region-content .page-node-done .region, .page-node-done .page-user .region-content .region, .container .page-founders-club .view-founders-club-profiles, .page-founders-club .container .view-founders-club-profiles, .page-node-done .region .page-founders-club .view-founders-club-profiles, .page-founders-club .page-node-done .region .view-founders-club-profiles, .page-founders-club .view-founders-club-profiles .view-founders-club-profiles, .page-user .region-content .page-founders-club .view-founders-club-profiles, .page-founders-club .page-user .region-content .view-founders-club-profiles, .container .page-user .region-content, .page-user .container .region-content, .page-node-done .region .page-user .region-content, .page-user .page-node-done .region .region-content, .page-founders-club .view-founders-club-profiles .page-user .region-content, .page-user .page-founders-club .view-founders-club-profiles .region-content, .page-user .region-content .region-content,
+.container .container-fluid, .page-node-done .region .container-fluid, .page-founders-club .view-founders-club-profiles .container-fluid, .page-user .region-content .container-fluid {
   width: auto;
   margin-left: -15px;
   margin-right: -15px; }
@@ -8069,7 +8070,7 @@ html.js fieldset.collapsed {
 #footer {
   margin: 36px 0; }
 
-body.maintenance-page .container, body.maintenance-page .page-founders-club .view-founders-club-profiles, .page-founders-club body.maintenance-page .view-founders-club-profiles, body.maintenance-page .page-user .region-content, .page-user body.maintenance-page .region-content {
+body.maintenance-page .container, body.maintenance-page .page-node-done .region, .page-node-done body.maintenance-page .region, body.maintenance-page .page-founders-club .view-founders-club-profiles, .page-founders-club body.maintenance-page .view-founders-club-profiles, body.maintenance-page .page-user .region-content, .page-user body.maintenance-page .region-content {
   max-width: 970px !important; }
 
 body.maintenance-page .jumbotron {
@@ -8221,7 +8222,7 @@ body.ctools-modal-open {
 #modalContent #panopoly-form-widget-preview {
   width: 50%;
   float: right; }
-  #modalContent #panopoly-form-widget-preview .container, #modalContent #panopoly-form-widget-preview .page-founders-club .view-founders-club-profiles, .page-founders-club #modalContent #panopoly-form-widget-preview .view-founders-club-profiles, #modalContent #panopoly-form-widget-preview .page-user .region-content, .page-user #modalContent #panopoly-form-widget-preview .region-content {
+  #modalContent #panopoly-form-widget-preview .container, #modalContent #panopoly-form-widget-preview .page-node-done .region, .page-node-done #modalContent #panopoly-form-widget-preview .region, #modalContent #panopoly-form-widget-preview .page-founders-club .view-founders-club-profiles, .page-founders-club #modalContent #panopoly-form-widget-preview .view-founders-club-profiles, #modalContent #panopoly-form-widget-preview .page-user .region-content, .page-user #modalContent #panopoly-form-widget-preview .region-content {
     width: auto; }
 
 ul.menu > li > ul.menu {
@@ -8493,7 +8494,7 @@ ul.links {
   .carousel .carousel-indicators li a {
     display: none; }
 
-.carousel .carousel-caption h1, .carousel .carousel-caption h2, .carousel .carousel-caption h3, .carousel .carousel-caption .page-program-finder .view-header, .page-program-finder .carousel .carousel-caption .view-header, .carousel .carousel-caption h4, .carousel .carousel-caption h5, .carousel .carousel-caption h6 {
+.carousel .carousel-caption h1, .carousel .carousel-caption h2, .carousel .carousel-caption h3, .carousel .carousel-caption h4, .carousel .carousel-caption h5, .carousel .carousel-caption h6 {
   color: white; }
 
 .item-list ul.pagination {
@@ -8525,7 +8526,7 @@ ul.dropdown-menu li {
   border: 1px solid #eeeeee !important;
   padding: 5px; }
 
-.view-header .date-nav-wrapper h3, .view-header .date-nav-wrapper .page-program-finder .view-header, .page-program-finder .view-header .date-nav-wrapper .view-header {
+.view-header .date-nav-wrapper h3 {
   margin-top: 5px !important;
   margin-bottom: 0; }
 
@@ -8733,26 +8734,26 @@ h2, .h2, .modal-title {
     h2, .h2, .modal-title {
       margin-top: 0; } }
 
-h3, .page-program-finder .view-header, .h3, .page-events .views-row h4, .page-founders-club .view-founders-club-profiles .views-row h2, .node-type-person .field-name-field-person-education .field-label {
+h3, .h3, .page-events .views-row h4, .page-founders-club .view-founders-club-profiles .views-row h2, .node-type-person .field-name-field-person-education .field-label {
   font-size: 1.6875rem;
   font-family: BlenderProMedium;
   line-height: 1.3; }
   @media (min-width: 770px) {
-    h3, .page-program-finder .view-header, .h3, .page-events .views-row h4, .page-founders-club .view-founders-club-profiles .views-row h2, .node-type-person .field-name-field-person-education .field-label {
+    h3, .h3, .page-events .views-row h4, .page-founders-club .view-founders-club-profiles .views-row h2, .node-type-person .field-name-field-person-education .field-label {
       font-size: 1.875rem; } }
   @media (min-width: 1200px) {
-    h3, .page-program-finder .view-header, .h3, .page-events .views-row h4, .page-founders-club .view-founders-club-profiles .views-row h2, .node-type-person .field-name-field-person-education .field-label {
+    h3, .h3, .page-events .views-row h4, .page-founders-club .view-founders-club-profiles .views-row h2, .node-type-person .field-name-field-person-education .field-label {
       font-size: 2.1875rem; } }
 
-h4, .h4, .node-department-full .department-contact-wrapper h3, .node-department-full .department-contact-wrapper .page-program-finder .view-header, .page-program-finder .node-department-full .department-contact-wrapper .view-header, .field-name-field-org-contact-name .field-item, .node-person-teaser h3, .node-person-teaser .page-program-finder .view-header, .page-program-finder .node-person-teaser .view-header {
+h4, .h4, .field-name-field-org-contact-name .field-item, .node-person-teaser h3 {
   font-family: FranklinGothicBook;
   font-size: 1.25rem;
   line-height: 2rem; }
   @media (min-width: 770px) {
-    h4, .h4, .node-department-full .department-contact-wrapper h3, .node-department-full .department-contact-wrapper .page-program-finder .view-header, .page-program-finder .node-department-full .department-contact-wrapper .view-header, .field-name-field-org-contact-name .field-item, .node-person-teaser h3, .node-person-teaser .page-program-finder .view-header, .page-program-finder .node-person-teaser .view-header {
+    h4, .h4, .field-name-field-org-contact-name .field-item, .node-person-teaser h3 {
       font-size: 1.375rem; } }
   @media (min-width: 1200px) {
-    h4, .h4, .node-department-full .department-contact-wrapper h3, .node-department-full .department-contact-wrapper .page-program-finder .view-header, .page-program-finder .node-department-full .department-contact-wrapper .view-header, .field-name-field-org-contact-name .field-item, .node-person-teaser h3, .node-person-teaser .page-program-finder .view-header, .page-program-finder .node-person-teaser .view-header {
+    h4, .h4, .field-name-field-org-contact-name .field-item, .node-person-teaser h3 {
       font-size: 1.5625rem; } }
 
 h5, .h5 {
@@ -8775,14 +8776,14 @@ a {
   color: #0098D9; }
   .background-gold a {
     color: #006382; }
-  .background-gold a.primary-button, .background-gold a.btn-primary, .background-gold body.maintenance-page .form-actions a.btn:first-child, body.maintenance-page .form-actions .background-gold a.btn:first-child, .background-gold body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .background-gold .media-widget > a:first-child, .background-gold a.cta-button, .background-gold .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .background-gold a, .background-gold .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .background-gold a, .background-gold .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .background-gold a, .background-gold .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .background-gold a, .background-gold .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .background-gold a {
+  .background-gold a.primary-button, .background-gold a.btn-primary, .background-gold body.maintenance-page .form-actions a.btn:first-child, body.maintenance-page .form-actions .background-gold a.btn:first-child, .background-gold body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .background-gold .media-widget > a:first-child, .background-gold .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .background-gold a, .background-gold .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .background-gold a, .background-gold .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .background-gold a, .background-gold .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .background-gold a, .background-gold .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .background-gold a {
     color: #FFFFFF; }
   a:hover, a:focus {
     color: #E55500;
     text-decoration: none; }
     .background-gold a:hover, .background-gold a:focus {
       color: #A43602; }
-    .background-gold a:hover.primary-button, .background-gold a.btn-primary:hover, .background-gold body.maintenance-page .form-actions a.btn:hover:first-child, body.maintenance-page .form-actions .background-gold a.btn:hover:first-child, .background-gold body.maintenance-page .form-actions .media-widget > a:hover:first-child, body.maintenance-page .form-actions .background-gold .media-widget > a:hover:first-child, .background-gold a.cta-button:hover, .background-gold .node-factoid-card .field-name-field-factoid-source a:hover, .node-factoid-card .field-name-field-factoid-source .background-gold a:hover, .background-gold .node-factoid-full .field-name-field-factoid-source a:hover, .node-factoid-full .field-name-field-factoid-source .background-gold a:hover, .background-gold .node-factoid-teaser .field-name-field-factoids-link a:hover, .node-factoid-teaser .field-name-field-factoids-link .background-gold a:hover, .background-gold .view-display-id-story_card_pane .views-field-view-node a:hover, .view-display-id-story_card_pane .views-field-view-node .background-gold a:hover, .background-gold .paragraphs-item-factoids .field-name-field-factoids-link a:hover, .paragraphs-item-factoids .field-name-field-factoids-link .background-gold a:hover, .background-gold a:focus.primary-button, .background-gold a.btn-primary:focus, .background-gold body.maintenance-page .form-actions a.btn:focus:first-child, body.maintenance-page .form-actions .background-gold a.btn:focus:first-child, .background-gold body.maintenance-page .form-actions .media-widget > a:focus:first-child, body.maintenance-page .form-actions .background-gold .media-widget > a:focus:first-child, .background-gold a.cta-button:focus, .background-gold .node-factoid-card .field-name-field-factoid-source a:focus, .node-factoid-card .field-name-field-factoid-source .background-gold a:focus, .background-gold .node-factoid-full .field-name-field-factoid-source a:focus, .node-factoid-full .field-name-field-factoid-source .background-gold a:focus, .background-gold .node-factoid-teaser .field-name-field-factoids-link a:focus, .node-factoid-teaser .field-name-field-factoids-link .background-gold a:focus, .background-gold .view-display-id-story_card_pane .views-field-view-node a:focus, .view-display-id-story_card_pane .views-field-view-node .background-gold a:focus, .background-gold .paragraphs-item-factoids .field-name-field-factoids-link a:focus, .paragraphs-item-factoids .field-name-field-factoids-link .background-gold a:focus {
+    .background-gold a:hover.primary-button, .background-gold a.btn-primary:hover, .background-gold body.maintenance-page .form-actions a.btn:hover:first-child, body.maintenance-page .form-actions .background-gold a.btn:hover:first-child, .background-gold body.maintenance-page .form-actions .media-widget > a:hover:first-child, body.maintenance-page .form-actions .background-gold .media-widget > a:hover:first-child, .background-gold .node-factoid-card .field-name-field-factoid-source a:hover, .node-factoid-card .field-name-field-factoid-source .background-gold a:hover, .background-gold .node-factoid-full .field-name-field-factoid-source a:hover, .node-factoid-full .field-name-field-factoid-source .background-gold a:hover, .background-gold .node-factoid-teaser .field-name-field-factoids-link a:hover, .node-factoid-teaser .field-name-field-factoids-link .background-gold a:hover, .background-gold .view-display-id-story_card_pane .views-field-view-node a:hover, .view-display-id-story_card_pane .views-field-view-node .background-gold a:hover, .background-gold .paragraphs-item-factoids .field-name-field-factoids-link a:hover, .paragraphs-item-factoids .field-name-field-factoids-link .background-gold a:hover, .background-gold a:focus.primary-button, .background-gold a.btn-primary:focus, .background-gold body.maintenance-page .form-actions a.btn:focus:first-child, body.maintenance-page .form-actions .background-gold a.btn:focus:first-child, .background-gold body.maintenance-page .form-actions .media-widget > a:focus:first-child, body.maintenance-page .form-actions .background-gold .media-widget > a:focus:first-child, .background-gold .node-factoid-card .field-name-field-factoid-source a:focus, .node-factoid-card .field-name-field-factoid-source .background-gold a:focus, .background-gold .node-factoid-full .field-name-field-factoid-source a:focus, .node-factoid-full .field-name-field-factoid-source .background-gold a:focus, .background-gold .node-factoid-teaser .field-name-field-factoids-link a:focus, .node-factoid-teaser .field-name-field-factoids-link .background-gold a:focus, .background-gold .view-display-id-story_card_pane .views-field-view-node a:focus, .view-display-id-story_card_pane .views-field-view-node .background-gold a:focus, .background-gold .paragraphs-item-factoids .field-name-field-factoids-link a:focus, .paragraphs-item-factoids .field-name-field-factoids-link .background-gold a:focus {
       color: #FFFFFF; }
 
 table {
@@ -8857,7 +8858,7 @@ img {
   margin-bottom: 2em;
   margin-left: 2em; }
 
-.hidden, .page-news .views-exposed-form .views-widget-filter-combine label, .page-people .views-exposed-form .views-widget-filter-combine label, .page-people .views-exposed-form .views-exposed-widget label, .page-program-finder .views-exposed-form label, .front .pane-views-exp-programs-explore-programs .views-exposed-form label {
+.hidden, .page-news .views-exposed-form .views-widget-filter-combine label, .page-people .views-exposed-form .views-widget-filter-combine label, .page-people .views-exposed-form .views-exposed-widget label, .front .pane-views-exp-programs-explore-programs .views-exposed-form label {
   position: absolute;
   left: -10000px;
   top: auto;
@@ -8913,27 +8914,24 @@ blockquote {
       font-size: 1.5625rem;
       margin: 1rem 2rem; } }
 
-.primary-button, .btn-primary, body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .media-widget > a:first-child, .page-google-search .cse input.gsc-search-button, .page-google-search input.gsc-search-button, .cta-button, .node-factoid-card .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source a, .node-factoid-teaser .field-name-field-factoids-link a, .view-display-id-story_card_pane .views-field-view-node a, .paragraphs-item-factoids .field-name-field-factoids-link a {
+.primary-button, .btn-primary, body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .media-widget > a:first-child, .page-google-search .cse input.gsc-search-button, .page-google-search input.gsc-search-button, .node-factoid-card .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source a, .node-factoid-teaser .field-name-field-factoids-link a, .view-display-id-story_card_pane .views-field-view-node a, .paragraphs-item-factoids .field-name-field-factoids-link a {
   background-color: #FE5E00;
   color: #FFFFFF;
   font-family: FranklinGothicDemi;
   padding: 1em 2em;
   display: inline-block; }
-  .primary-button:hover, .btn-primary:hover, body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions .media-widget > a:hover:first-child, .page-google-search input.gsc-search-button:hover, .cta-button:hover, .node-factoid-card .field-name-field-factoid-source a:hover, .node-factoid-full .field-name-field-factoid-source a:hover, .node-factoid-teaser .field-name-field-factoids-link a:hover, .view-display-id-story_card_pane .views-field-view-node a:hover, .paragraphs-item-factoids .field-name-field-factoids-link a:hover, .primary-button:active, .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .media-widget > a:active:first-child, .page-google-search input.gsc-search-button:active, .cta-button:active, .node-factoid-card .field-name-field-factoid-source a:active, .node-factoid-full .field-name-field-factoid-source a:active, .node-factoid-teaser .field-name-field-factoids-link a:active, .view-display-id-story_card_pane .views-field-view-node a:active, .paragraphs-item-factoids .field-name-field-factoids-link a:active {
+  .primary-button:hover, .btn-primary:hover, body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions .media-widget > a:hover:first-child, .page-google-search input.gsc-search-button:hover, .node-factoid-card .field-name-field-factoid-source a:hover, .node-factoid-full .field-name-field-factoid-source a:hover, .node-factoid-teaser .field-name-field-factoids-link a:hover, .view-display-id-story_card_pane .views-field-view-node a:hover, .paragraphs-item-factoids .field-name-field-factoids-link a:hover, .primary-button:active, .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .media-widget > a:active:first-child, .page-google-search input.gsc-search-button:active, .node-factoid-card .field-name-field-factoid-source a:active, .node-factoid-full .field-name-field-factoid-source a:active, .node-factoid-teaser .field-name-field-factoids-link a:active, .view-display-id-story_card_pane .views-field-view-node a:active, .paragraphs-item-factoids .field-name-field-factoids-link a:active {
     background-color: #E55500;
     text-decoration: none;
     color: #FFFFFF; }
-  .primary-button:visited, .btn-primary:visited, body.maintenance-page .form-actions .btn:visited:first-child, body.maintenance-page .form-actions .media-widget > a:visited:first-child, .page-google-search input.gsc-search-button:visited, .cta-button:visited, .node-factoid-card .field-name-field-factoid-source a:visited, .node-factoid-full .field-name-field-factoid-source a:visited, .node-factoid-teaser .field-name-field-factoids-link a:visited, .view-display-id-story_card_pane .views-field-view-node a:visited, .paragraphs-item-factoids .field-name-field-factoids-link a:visited {
+  .primary-button:visited, .btn-primary:visited, body.maintenance-page .form-actions .btn:visited:first-child, body.maintenance-page .form-actions .media-widget > a:visited:first-child, .page-google-search input.gsc-search-button:visited, .node-factoid-card .field-name-field-factoid-source a:visited, .node-factoid-full .field-name-field-factoid-source a:visited, .node-factoid-teaser .field-name-field-factoids-link a:visited, .view-display-id-story_card_pane .views-field-view-node a:visited, .paragraphs-item-factoids .field-name-field-factoids-link a:visited {
     color: #FFFFFF; }
 
-.card-wrapper, .node-department-full .field-name-field-department-highlight > .field-items > .field-item,
-.node-department-full .field-name-field-department-program > .field-items > .field-item, .field-name-field-program-offerings > .field-items > .field-item, .page-program-finder .view-content .views-row, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item {
+.card-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item {
   background-color: #EBE7E3;
   margin-bottom: 1%; }
 
-.card-body, .node-card_content-card .card-description-wrapper, .node-factoid-card .card-description-wrapper, .node-factoid-full .card-description-wrapper, .page-program-finder .view-content .views-row, .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item, .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper
-.node-department-full .field-name-field-department-program > .field-items > .field-item,
-.node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .card-description-wrapper, .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-program-finder .view-content .views-row, .page-program-finder .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-wrapper {
+.card-body, .node-card_content-card .card-description-wrapper, .node-factoid-card .card-description-wrapper, .node-factoid-full .card-description-wrapper, .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .card-description-wrapper, .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-wrapper {
   padding: 1.3rem; }
 
 .card-header, .node-card_content-card .field-name-field-generic-header, .node-factoid-card .field-name-field-factoid-type, .node-factoid-full .field-name-field-factoid-type, .view-display-id-story_card_pane .views-field-field-profile-category, .view-display-id-story_featured_pane .story-header, .paragraphs-item-social .content .social-card .field-label {
@@ -8941,13 +8939,7 @@ blockquote {
   font-family: FranklinGothicDemi;
   padding: 0.6rem 1.3rem; }
 
-.card-title, .node-card_content-card .node-title, .node-department-full .field-name-field-department-factoid h3, .node-department-full .field-name-field-department-factoid .page-program-finder .view-header, .page-program-finder .node-department-full .field-name-field-department-factoid .view-header,
-.node-department-full .field-name-field-department-highlight h3,
-.node-department-full .field-name-field-department-highlight .page-program-finder .view-header, .page-program-finder
-.node-department-full .field-name-field-department-highlight .view-header,
-.node-department-full .field-name-field-department-program h3,
-.node-department-full .field-name-field-department-program .page-program-finder .view-header, .page-program-finder
-.node-department-full .field-name-field-department-program .view-header, .page-program-finder .view-content .views-field-title, .view-display-id-story_card_pane .views-field-title {
+.card-title, .node-card_content-card .node-title, .view-display-id-story_card_pane .views-field-title {
   font-size: 1.5625rem;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -9415,7 +9407,7 @@ table.table-condensed th, table.table-condensed td {
 .nav-tabs > li > a {
   border-radius: 0; }
 
-.page-google-search h3, .page-google-search .page-program-finder .view-header, .page-program-finder .page-google-search .view-header {
+.page-google-search h3 {
   display: none; }
 
 .page-google-search #search-results {
@@ -9466,400 +9458,6 @@ table.table-condensed th, table.table-condensed td {
     width: 80px;
     color: #0098D9; }
 
-#cta-section {
-  background: url("/sites/tippie.uiowa.edu/themes/tippie/assets/images/next_steps_background.jpg") no-repeat scroll calc(100% + 10rem) top;
-  background-size: cover; }
-  @media (min-width: 768px) {
-    #cta-section {
-      background-position: right top; } }
-  #cta-section .container, #cta-section .page-founders-club .view-founders-club-profiles, .page-founders-club #cta-section .view-founders-club-profiles, #cta-section .page-user .region-content, .page-user #cta-section .region-content {
-    padding: 1.5rem; }
-    @media (min-width: 992px) {
-      #cta-section .container, #cta-section .page-founders-club .view-founders-club-profiles, .page-founders-club #cta-section .view-founders-club-profiles, #cta-section .page-user .region-content, .page-user #cta-section .region-content {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: row;
-            flex-direction: row;
-        -ms-flex-align: baseline;
-            align-items: baseline; } }
-    @media (min-width: 1200px) {
-      #cta-section .container, #cta-section .page-founders-club .view-founders-club-profiles, .page-founders-club #cta-section .view-founders-club-profiles, #cta-section .page-user .region-content, .page-user #cta-section .region-content {
-        padding-left: 5rem;
-        padding-right: 5rem; } }
-
-.cta-button {
-  border: none;
-  text-align: center;
-  width: 100%;
-  max-width: 250px; }
-  @media (min-width: 768px) {
-    .cta-button {
-      max-width: 100%; } }
-
-.cta-section-title {
-  margin-top: 0; }
-  @media (min-width: 992px) {
-    .cta-section-title {
-      -ms-flex-positive: 1;
-          flex-grow: 1; } }
-
-@media (min-width: 768px) {
-  .cta-items.ctas-horizontal-list {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    margin: 3rem -5px 1.5rem; } }
-
-@media (min-width: 992px) {
-  .cta-items.ctas-horizontal-list {
-    -ms-flex-positive: 3;
-        flex-grow: 3; } }
-
-@media (min-width: 768px) {
-  .cta-items.ctas-horizontal-list .cta-item {
-    margin-left: 5px;
-    margin-right: 5px;
-    -ms-flex-positive: 1;
-        flex-grow: 1; } }
-
-.cta-items.ctas-vertical-list {
-  display: none; }
-  @media (min-width: 768px) {
-    .cta-items.ctas-vertical-list {
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 175px;
-      width: 110px;
-      z-index: 150; }
-      .cta-items.ctas-vertical-list .cta-button {
-        padding: 13px;
-        font-size: 0.9rem; } }
-
-.cta-item {
-  margin-bottom: 10px; }
-  .cta-item:last-of-type {
-    margin-bottom: 0; }
-
-#cta-section {
-  background: url("/sites/tippie.uiowa.edu/themes/tippie/assets/images/next_steps_background.jpg") no-repeat scroll calc(100% + 10rem) top;
-  background-size: cover; }
-  @media (min-width: 768px) {
-    #cta-section {
-      background-position: right top; } }
-  #cta-section .container, #cta-section .page-founders-club .view-founders-club-profiles, .page-founders-club #cta-section .view-founders-club-profiles, #cta-section .page-user .region-content, .page-user #cta-section .region-content {
-    padding: 1.5rem; }
-    @media (min-width: 992px) {
-      #cta-section .container, #cta-section .page-founders-club .view-founders-club-profiles, .page-founders-club #cta-section .view-founders-club-profiles, #cta-section .page-user .region-content, .page-user #cta-section .region-content {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-direction: row;
-            flex-direction: row;
-        -ms-flex-align: baseline;
-            align-items: baseline; } }
-    @media (min-width: 1200px) {
-      #cta-section .container, #cta-section .page-founders-club .view-founders-club-profiles, .page-founders-club #cta-section .view-founders-club-profiles, #cta-section .page-user .region-content, .page-user #cta-section .region-content {
-        padding-left: 5rem;
-        padding-right: 5rem; } }
-
-.cta-button {
-  border: none;
-  text-align: center;
-  width: 100%;
-  max-width: 250px; }
-  @media (min-width: 768px) {
-    .cta-button {
-      max-width: 100%; } }
-
-.cta-section-title {
-  margin-top: 0; }
-  @media (min-width: 992px) {
-    .cta-section-title {
-      -ms-flex-positive: 1;
-          flex-grow: 1; } }
-
-@media (min-width: 768px) {
-  .cta-items.ctas-horizontal-list {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    margin: 3rem -5px 1.5rem; } }
-
-@media (min-width: 992px) {
-  .cta-items.ctas-horizontal-list {
-    -ms-flex-positive: 3;
-        flex-grow: 3; } }
-
-@media (min-width: 768px) {
-  .cta-items.ctas-horizontal-list .cta-item {
-    margin-left: 5px;
-    margin-right: 5px;
-    -ms-flex-positive: 1;
-        flex-grow: 1; } }
-
-.cta-items.ctas-vertical-list {
-  display: none; }
-  @media (min-width: 768px) {
-    .cta-items.ctas-vertical-list {
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 175px;
-      width: 110px;
-      z-index: 150; }
-      .cta-items.ctas-vertical-list .cta-button {
-        padding: 13px;
-        font-size: 0.9rem; } }
-
-.cta-item {
-  margin-bottom: 10px; }
-  .cta-item:last-of-type {
-    margin-bottom: 0; }
-
-.node-department-full .department-factoid-wrapper {
-  background-color: #00A1C6; }
-  .node-department-full .department-factoid-wrapper .field-label {
-    color: #FFFFFF; }
-
-.node-department-full .department-contact-wrapper {
-  background-color: #EBE7E3;
-  padding-bottom: 2rem; }
-
-@media (min-width: 992px) and (min-width: 768px) {
-  .node-department-full .department-contact-wrapper {
-    background-image: url(../images/white_lines.png);
-    background-repeat: no-repeat;
-    background-position: 90% 50%;
-    background-size: contain; } }
-  .node-department-full .department-contact-wrapper h3, .node-department-full .department-contact-wrapper .page-program-finder .view-header, .page-program-finder .node-department-full .department-contact-wrapper .view-header {
-    margin: 0; }
-  .node-department-full .department-contact-wrapper .field {
-    margin-top: 0.5rem; }
-  .node-department-full .department-contact-wrapper .field-name-field-department-contact {
-    margin-top: 0; }
-  .node-department-full .department-contact-wrapper .field-name-field-department-email .field-label {
-    position: absolute;
-    top: -99999em;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    outline: 0; }
-  .node-department-full .department-contact-wrapper .field-name-field-department-email a:before {
-    font-family: FontAwesome;
-    content: "\f003";
-    padding: 0 10px 0 0; }
-  .node-department-full .department-contact-wrapper .field-name-field-department-phone .field-label {
-    position: absolute;
-    top: -99999em;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    outline: 0; }
-  .node-department-full .department-contact-wrapper .field-name-field-department-phone .field-item:before {
-    font-family: FontAwesome;
-    content: "\f095";
-    padding: 0 10px 0 0; }
-  .node-department-full .department-contact-wrapper .field-name-field-department-fax .field-label {
-    position: absolute;
-    top: -99999em;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    outline: 0; }
-  .node-department-full .department-contact-wrapper .field-name-field-department-fax .field-item:before {
-    font-family: FontAwesome;
-    content: "\f1ac";
-    padding: 0 10px 0 0; }
-
-.node-department-full .field-name-field-department-factoid h3, .node-department-full .field-name-field-department-factoid .page-program-finder .view-header, .page-program-finder .node-department-full .field-name-field-department-factoid .view-header,
-.node-department-full .field-name-field-department-highlight h3,
-.node-department-full .field-name-field-department-highlight .page-program-finder .view-header, .page-program-finder
-.node-department-full .field-name-field-department-highlight .view-header,
-.node-department-full .field-name-field-department-program h3,
-.node-department-full .field-name-field-department-program .page-program-finder .view-header, .page-program-finder
-.node-department-full .field-name-field-department-program .view-header {
-  padding-top: 0; }
-
-.node-department-full .field-name-field-department-factoid > .field-items > .field-item,
-.node-department-full .field-name-field-department-highlight > .field-items > .field-item,
-.node-department-full .field-name-field-department-program > .field-items > .field-item {
-  margin: 30px 0; }
-
-@media (min-width: 768px) {
-  .node-department-full .field-name-field-department-factoid > .field-items,
-  .node-department-full .field-name-field-department-highlight > .field-items,
-  .node-department-full .field-name-field-department-program > .field-items {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-align: stretch;
-        align-items: stretch;
-    margin-left: -10px;
-    margin-right: -10px; }
-    .node-department-full .field-name-field-department-factoid > .field-items > .field-item,
-    .node-department-full .field-name-field-department-highlight > .field-items > .field-item,
-    .node-department-full .field-name-field-department-program > .field-items > .field-item {
-      width: 31%;
-      margin: 10px; } }
-
-.node-department-full .field-name-field-department-highlight {
-  margin-top: 2rem; }
-
-.node-department-full .view-display-id-department_block .view-content img {
-  width: 100%;
-  height: auto; }
-
-.node-department-full .view-display-id-department_block .view-content h4, .node-department-full .view-display-id-department_block .view-content .views-field-title {
-  padding: 1rem 1.2rem 0 1.2rem;
-  margin: 0; }
-
-.node-department-full .view-display-id-department_block .view-content > .views-row {
-  background-color: #EBE7E3;
-  padding: 0 0 0.8rem 0;
-  margin: 0 0 10px 0; }
-
-@media (min-width: 768px) {
-  .node-department-full .view-display-id-department_block .view-content {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-align: stretch;
-        align-items: stretch;
-    margin-left: -10px;
-    margin-right: -10px; }
-    .node-department-full .view-display-id-department_block .view-content > .views-row {
-      width: 31%;
-      margin: 10px; } }
-
-.node-department-full .department-factoid-wrapper {
-  background-color: #00A1C6; }
-  .node-department-full .department-factoid-wrapper .field-label {
-    color: #FFFFFF; }
-
-.node-department-full .department-contact-wrapper {
-  background-color: #EBE7E3;
-  padding-bottom: 2rem; }
-
-@media (min-width: 992px) and (min-width: 768px) {
-  .node-department-full .department-contact-wrapper {
-    background-image: url(../images/white_lines.png);
-    background-repeat: no-repeat;
-    background-position: 90% 50%;
-    background-size: contain; } }
-  .node-department-full .department-contact-wrapper h3, .node-department-full .department-contact-wrapper .page-program-finder .view-header, .page-program-finder .node-department-full .department-contact-wrapper .view-header {
-    margin: 0; }
-  .node-department-full .department-contact-wrapper .field {
-    margin-top: 0.5rem; }
-  .node-department-full .department-contact-wrapper .field-name-field-department-contact {
-    margin-top: 0; }
-  .node-department-full .department-contact-wrapper .field-name-field-department-email .field-label {
-    position: absolute;
-    top: -99999em;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    outline: 0; }
-  .node-department-full .department-contact-wrapper .field-name-field-department-email a:before {
-    font-family: FontAwesome;
-    content: "\f003";
-    padding: 0 10px 0 0; }
-  .node-department-full .department-contact-wrapper .field-name-field-department-phone .field-label {
-    position: absolute;
-    top: -99999em;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    outline: 0; }
-  .node-department-full .department-contact-wrapper .field-name-field-department-phone .field-item:before {
-    font-family: FontAwesome;
-    content: "\f095";
-    padding: 0 10px 0 0; }
-  .node-department-full .department-contact-wrapper .field-name-field-department-fax .field-label {
-    position: absolute;
-    top: -99999em;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    outline: 0; }
-  .node-department-full .department-contact-wrapper .field-name-field-department-fax .field-item:before {
-    font-family: FontAwesome;
-    content: "\f1ac";
-    padding: 0 10px 0 0; }
-
-.node-department-full .field-name-field-department-factoid h3, .node-department-full .field-name-field-department-factoid .page-program-finder .view-header, .page-program-finder .node-department-full .field-name-field-department-factoid .view-header,
-.node-department-full .field-name-field-department-highlight h3,
-.node-department-full .field-name-field-department-highlight .page-program-finder .view-header, .page-program-finder
-.node-department-full .field-name-field-department-highlight .view-header,
-.node-department-full .field-name-field-department-program h3,
-.node-department-full .field-name-field-department-program .page-program-finder .view-header, .page-program-finder
-.node-department-full .field-name-field-department-program .view-header {
-  padding-top: 0; }
-
-.node-department-full .field-name-field-department-factoid > .field-items > .field-item,
-.node-department-full .field-name-field-department-highlight > .field-items > .field-item,
-.node-department-full .field-name-field-department-program > .field-items > .field-item {
-  margin: 30px 0; }
-
-@media (min-width: 768px) {
-  .node-department-full .field-name-field-department-factoid > .field-items,
-  .node-department-full .field-name-field-department-highlight > .field-items,
-  .node-department-full .field-name-field-department-program > .field-items {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-align: stretch;
-        align-items: stretch;
-    margin-left: -10px;
-    margin-right: -10px; }
-    .node-department-full .field-name-field-department-factoid > .field-items > .field-item,
-    .node-department-full .field-name-field-department-highlight > .field-items > .field-item,
-    .node-department-full .field-name-field-department-program > .field-items > .field-item {
-      width: 31%;
-      margin: 10px; } }
-
-.node-department-full .field-name-field-department-highlight {
-  margin-top: 2rem; }
-
-.node-department-full .view-display-id-department_block .view-content img {
-  width: 100%;
-  height: auto; }
-
-.node-department-full .view-display-id-department_block .view-content h4, .node-department-full .view-display-id-department_block .view-content .views-field-title {
-  padding: 1rem 1.2rem 0 1.2rem;
-  margin: 0; }
-
-.node-department-full .view-display-id-department_block .view-content > .views-row {
-  background-color: #EBE7E3;
-  padding: 0 0 0.8rem 0;
-  margin: 0 0 10px 0; }
-
-@media (min-width: 768px) {
-  .node-department-full .view-display-id-department_block .view-content {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-align: stretch;
-        align-items: stretch;
-    margin-left: -10px;
-    margin-right: -10px; }
-    .node-department-full .view-display-id-department_block .view-content > .views-row {
-      width: 31%;
-      margin: 10px; } }
-
 .page-events .views-row {
   padding: 0.5rem 1.7rem; }
   .page-events .views-row h4 {
@@ -9925,7 +9523,7 @@ table.table-condensed th, table.table-condensed td {
 
 .featured-event {
   margin: 2rem 0; }
-  .featured-event h3, .featured-event .page-program-finder .view-header, .page-program-finder .featured-event .view-header {
+  .featured-event h3 {
     margin: 0;
     color: #FE5E00; }
   .featured-event img {
@@ -10015,7 +9613,7 @@ table.table-condensed th, table.table-condensed td {
 
 .featured-event {
   margin: 2rem 0; }
-  .featured-event h3, .featured-event .page-program-finder .view-header, .page-program-finder .featured-event .view-header {
+  .featured-event h3 {
     margin: 0;
     color: #FE5E00; }
   .featured-event img {
@@ -10062,7 +9660,7 @@ table.table-condensed th, table.table-condensed td {
 
 .node-factoid-teaser {
   padding: 30px; }
-  .node-factoid-teaser h3.node-title, .node-factoid-teaser .page-program-finder .node-title.view-header, .page-program-finder .node-factoid-teaser .node-title.view-header {
+  .node-factoid-teaser h3.node-title {
     font-family: FranklinGothicMedium;
     color: #FFFFFF;
     font-weight: normal;
@@ -10111,7 +9709,7 @@ table.table-condensed th, table.table-condensed td {
 
 .node-factoid-teaser {
   padding: 30px; }
-  .node-factoid-teaser h3.node-title, .node-factoid-teaser .page-program-finder .node-title.view-header, .page-program-finder .node-factoid-teaser .node-title.view-header {
+  .node-factoid-teaser h3.node-title {
     font-family: FranklinGothicMedium;
     color: #FFFFFF;
     font-weight: normal;
@@ -10176,7 +9774,7 @@ table.table-condensed th, table.table-condensed td {
   margin-bottom: 2rem; }
   .node-type-news .node-news ul, .node-type-news .node-news ol {
     margin-left: 1.2rem; }
-  .node-type-news .page-header .container, .node-type-news .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-news .page-header .view-founders-club-profiles, .node-type-news .page-header .page-user .region-content, .page-user .node-type-news .page-header .region-content {
+  .node-type-news .page-header .container, .node-type-news .page-header .page-node-done .region, .page-node-done .node-type-news .page-header .region, .node-type-news .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-news .page-header .view-founders-club-profiles, .node-type-news .page-header .page-user .region-content, .page-user .node-type-news .page-header .region-content {
     padding-top: 2rem;
     padding-bottom: 0; }
   .node-type-news .field-name-field-news-body {
@@ -10292,7 +9890,7 @@ table.table-condensed th, table.table-condensed td {
   margin-bottom: 2rem; }
   .node-type-news .node-news ul, .node-type-news .node-news ol {
     margin-left: 1.2rem; }
-  .node-type-news .page-header .container, .node-type-news .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-news .page-header .view-founders-club-profiles, .node-type-news .page-header .page-user .region-content, .page-user .node-type-news .page-header .region-content {
+  .node-type-news .page-header .container, .node-type-news .page-header .page-node-done .region, .page-node-done .node-type-news .page-header .region, .node-type-news .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-news .page-header .view-founders-club-profiles, .node-type-news .page-header .page-user .region-content, .page-user .node-type-news .page-header .region-content {
     padding-top: 2rem;
     padding-bottom: 0; }
   .node-type-news .field-name-field-news-body {
@@ -10461,22 +10059,10 @@ table.table-condensed th, table.table-condensed td {
   .field-name-field-org-twitter {
     width: 33%; } }
 
-.field-name-field-org-twitter .card-title, .field-name-field-org-twitter .node-card_content-card .node-title, .node-card_content-card .field-name-field-org-twitter .node-title, .field-name-field-org-twitter .node-department-full .field-name-field-department-factoid h3, .node-department-full .field-name-field-department-factoid .field-name-field-org-twitter h3, .field-name-field-org-twitter .node-department-full .field-name-field-department-factoid .page-program-finder .view-header, .node-department-full .field-name-field-department-factoid .page-program-finder .field-name-field-org-twitter .view-header, .field-name-field-org-twitter .page-program-finder .node-department-full .field-name-field-department-factoid .view-header, .page-program-finder .node-department-full .field-name-field-department-factoid .field-name-field-org-twitter .view-header, .field-name-field-org-twitter
-.node-department-full .field-name-field-department-highlight h3,
-.node-department-full .field-name-field-department-highlight .field-name-field-org-twitter h3, .field-name-field-org-twitter
-.node-department-full .field-name-field-department-highlight .page-program-finder .view-header,
-.node-department-full .field-name-field-department-highlight .page-program-finder .field-name-field-org-twitter .view-header, .field-name-field-org-twitter .page-program-finder
-.node-department-full .field-name-field-department-highlight .view-header, .page-program-finder
-.node-department-full .field-name-field-department-highlight .field-name-field-org-twitter .view-header, .field-name-field-org-twitter
-.node-department-full .field-name-field-department-program h3,
-.node-department-full .field-name-field-department-program .field-name-field-org-twitter h3, .field-name-field-org-twitter
-.node-department-full .field-name-field-department-program .page-program-finder .view-header,
-.node-department-full .field-name-field-department-program .page-program-finder .field-name-field-org-twitter .view-header, .field-name-field-org-twitter .page-program-finder
-.node-department-full .field-name-field-department-program .view-header, .page-program-finder
-.node-department-full .field-name-field-department-program .field-name-field-org-twitter .view-header, .field-name-field-org-twitter .page-program-finder .view-content .views-field-title, .page-program-finder .view-content .field-name-field-org-twitter .views-field-title, .field-name-field-org-twitter .view-display-id-story_card_pane .views-field-title, .view-display-id-story_card_pane .field-name-field-org-twitter .views-field-title {
+.field-name-field-org-twitter .card-title, .field-name-field-org-twitter .node-card_content-card .node-title, .node-card_content-card .field-name-field-org-twitter .node-title, .field-name-field-org-twitter .view-display-id-story_card_pane .views-field-title, .view-display-id-story_card_pane .field-name-field-org-twitter .views-field-title {
   margin-bottom: 0; }
 
-.field-name-field-org-twitter .primary-button, .field-name-field-org-twitter .btn-primary, .field-name-field-org-twitter body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .field-name-field-org-twitter .btn:first-child, .field-name-field-org-twitter body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .field-name-field-org-twitter .media-widget > a:first-child, .field-name-field-org-twitter .page-google-search input.gsc-search-button, .page-google-search .field-name-field-org-twitter input.gsc-search-button, .field-name-field-org-twitter .cta-button, .field-name-field-org-twitter .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .field-name-field-org-twitter a, .field-name-field-org-twitter .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .field-name-field-org-twitter a, .field-name-field-org-twitter .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .field-name-field-org-twitter a, .field-name-field-org-twitter .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .field-name-field-org-twitter a, .field-name-field-org-twitter .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .field-name-field-org-twitter a {
+.field-name-field-org-twitter .primary-button, .field-name-field-org-twitter .btn-primary, .field-name-field-org-twitter body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .field-name-field-org-twitter .btn:first-child, .field-name-field-org-twitter body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .field-name-field-org-twitter .media-widget > a:first-child, .field-name-field-org-twitter .page-google-search input.gsc-search-button, .page-google-search .field-name-field-org-twitter input.gsc-search-button, .field-name-field-org-twitter .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .field-name-field-org-twitter a, .field-name-field-org-twitter .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .field-name-field-org-twitter a, .field-name-field-org-twitter .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .field-name-field-org-twitter a, .field-name-field-org-twitter .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .field-name-field-org-twitter a, .field-name-field-org-twitter .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .field-name-field-org-twitter a {
   display: inline-block; }
 
 @media (min-width: 992px) {
@@ -10536,29 +10122,15 @@ table.table-condensed th, table.table-condensed td {
   .field-name-field-org-twitter {
     width: 33%; } }
 
-.field-name-field-org-twitter .card-title, .field-name-field-org-twitter .node-card_content-card .node-title, .node-card_content-card .field-name-field-org-twitter .node-title, .field-name-field-org-twitter .node-department-full .field-name-field-department-factoid h3, .node-department-full .field-name-field-department-factoid .field-name-field-org-twitter h3, .field-name-field-org-twitter .node-department-full .field-name-field-department-factoid .page-program-finder .view-header, .node-department-full .field-name-field-department-factoid .page-program-finder .field-name-field-org-twitter .view-header, .field-name-field-org-twitter .page-program-finder .node-department-full .field-name-field-department-factoid .view-header, .page-program-finder .node-department-full .field-name-field-department-factoid .field-name-field-org-twitter .view-header, .field-name-field-org-twitter
-.node-department-full .field-name-field-department-highlight h3,
-.node-department-full .field-name-field-department-highlight .field-name-field-org-twitter h3, .field-name-field-org-twitter
-.node-department-full .field-name-field-department-highlight .page-program-finder .view-header,
-.node-department-full .field-name-field-department-highlight .page-program-finder .field-name-field-org-twitter .view-header, .field-name-field-org-twitter .page-program-finder
-.node-department-full .field-name-field-department-highlight .view-header, .page-program-finder
-.node-department-full .field-name-field-department-highlight .field-name-field-org-twitter .view-header, .field-name-field-org-twitter
-.node-department-full .field-name-field-department-program h3,
-.node-department-full .field-name-field-department-program .field-name-field-org-twitter h3, .field-name-field-org-twitter
-.node-department-full .field-name-field-department-program .page-program-finder .view-header,
-.node-department-full .field-name-field-department-program .page-program-finder .field-name-field-org-twitter .view-header, .field-name-field-org-twitter .page-program-finder
-.node-department-full .field-name-field-department-program .view-header, .page-program-finder
-.node-department-full .field-name-field-department-program .field-name-field-org-twitter .view-header, .field-name-field-org-twitter .page-program-finder .view-content .views-field-title, .page-program-finder .view-content .field-name-field-org-twitter .views-field-title, .field-name-field-org-twitter .view-display-id-story_card_pane .views-field-title, .view-display-id-story_card_pane .field-name-field-org-twitter .views-field-title {
+.field-name-field-org-twitter .card-title, .field-name-field-org-twitter .node-card_content-card .node-title, .node-card_content-card .field-name-field-org-twitter .node-title, .field-name-field-org-twitter .view-display-id-story_card_pane .views-field-title, .view-display-id-story_card_pane .field-name-field-org-twitter .views-field-title {
   margin-bottom: 0; }
 
-.field-name-field-org-twitter .primary-button, .field-name-field-org-twitter .btn-primary, .field-name-field-org-twitter body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .field-name-field-org-twitter .btn:first-child, .field-name-field-org-twitter body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .field-name-field-org-twitter .media-widget > a:first-child, .field-name-field-org-twitter .page-google-search input.gsc-search-button, .page-google-search .field-name-field-org-twitter input.gsc-search-button, .field-name-field-org-twitter .cta-button, .field-name-field-org-twitter .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .field-name-field-org-twitter a, .field-name-field-org-twitter .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .field-name-field-org-twitter a, .field-name-field-org-twitter .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .field-name-field-org-twitter a, .field-name-field-org-twitter .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .field-name-field-org-twitter a, .field-name-field-org-twitter .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .field-name-field-org-twitter a {
+.field-name-field-org-twitter .primary-button, .field-name-field-org-twitter .btn-primary, .field-name-field-org-twitter body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .field-name-field-org-twitter .btn:first-child, .field-name-field-org-twitter body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .field-name-field-org-twitter .media-widget > a:first-child, .field-name-field-org-twitter .page-google-search input.gsc-search-button, .page-google-search .field-name-field-org-twitter input.gsc-search-button, .field-name-field-org-twitter .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .field-name-field-org-twitter a, .field-name-field-org-twitter .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .field-name-field-org-twitter a, .field-name-field-org-twitter .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .field-name-field-org-twitter a, .field-name-field-org-twitter .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .field-name-field-org-twitter a, .field-name-field-org-twitter .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .field-name-field-org-twitter a {
   display: inline-block; }
 
 .field-name-field-leading-text {
   padding: 35px 0 15px 0; }
-  .card-body .field-name-field-leading-text, .node-card_content-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-full .card-description-wrapper .field-name-field-leading-text, .page-program-finder .view-content .views-row .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .card-wrapper .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item .field-name-field-leading-text, .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper
-  .node-department-full .field-name-field-department-program > .field-items > .field-item .field-name-field-leading-text,
-  .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-leading-text, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .card-description-wrapper .field-name-field-leading-text, .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper .field-name-field-leading-text, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-program-finder .view-content .views-row .field-name-field-leading-text, .page-program-finder .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper .field-name-field-leading-text {
+  .card-body .field-name-field-leading-text, .node-card_content-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-full .card-description-wrapper .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .card-wrapper .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-leading-text, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .card-description-wrapper .field-name-field-leading-text, .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper .field-name-field-leading-text, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper .field-name-field-leading-text {
     padding: 0; }
   @media (min-width: 1200px) {
     .field-name-field-leading-text {
@@ -10566,9 +10138,7 @@ table.table-condensed th, table.table-condensed td {
 
 .field-name-field-leading-text {
   padding: 35px 0 15px 0; }
-  .card-body .field-name-field-leading-text, .node-card_content-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-full .card-description-wrapper .field-name-field-leading-text, .page-program-finder .view-content .views-row .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .card-wrapper .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item .field-name-field-leading-text, .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper
-  .node-department-full .field-name-field-department-program > .field-items > .field-item .field-name-field-leading-text,
-  .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-leading-text, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .card-description-wrapper .field-name-field-leading-text, .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper .field-name-field-leading-text, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-program-finder .view-content .views-row .field-name-field-leading-text, .page-program-finder .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper .field-name-field-leading-text {
+  .card-body .field-name-field-leading-text, .node-card_content-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-full .card-description-wrapper .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .card-wrapper .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-leading-text, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .card-description-wrapper .field-name-field-leading-text, .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper .field-name-field-leading-text, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper .field-name-field-leading-text {
     padding: 0; }
   @media (min-width: 1200px) {
     .field-name-field-leading-text {
@@ -10773,140 +10343,6 @@ table.table-condensed th, table.table-condensed td {
 
 .page-people .views-exposed-form .form-item-keywords .form-control {
   width: 295px; }
-
-.field-name-field-program-offerings {
-  padding: 2rem 0; }
-  .field-name-field-program-offerings > .field-items > .field-item {
-    max-width: 640px;
-    margin-bottom: 20px; }
-  @media (min-width: 768px) {
-    .field-name-field-program-offerings > .field-items {
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      flex-wrap: wrap;
-      margin-left: -10px;
-      margin-right: -10px; }
-      .field-name-field-program-offerings > .field-items > .field-item {
-        width: 31%;
-        margin: 10px; } }
-
-.page-program-finder .views-field-field-program-locations {
-  display: block;
-  position: relative;
-  padding-left: 12px;
-  margin-bottom: 0.4rem;
-  font-size: 0.9rem; }
-  .page-program-finder .views-field-field-program-locations:before {
-    content: '\f041';
-    font-family: FontAwesome;
-    color: #FE5E00;
-    position: absolute;
-    top: -1px;
-    left: 0; }
-
-.page-program-finder .pane-views-exp-programs-explore-programs h2 {
-  display: none; }
-
-.page-program-finder .pane-views-exp-programs-explore-programs .container, .page-program-finder .pane-views-exp-programs-explore-programs .page-founders-club .view-founders-club-profiles, .page-founders-club .page-program-finder .pane-views-exp-programs-explore-programs .view-founders-club-profiles, .page-program-finder .pane-views-exp-programs-explore-programs .page-user .region-content, .page-user .page-program-finder .pane-views-exp-programs-explore-programs .region-content {
-  margin-left: 0px;
-  padding-left: 0px; }
-
-.page-program-finder .views-exposed-form {
-  margin-bottom: 1.5rem; }
-  .page-program-finder .views-exposed-form .views-exposed-widget .form-submit,
-  .page-program-finder .views-exposed-form .views-submit-button,
-  .page-program-finder .views-exposed-form .views-reset-button {
-    margin-top: 0; }
-
-@media (min-width: 768px) {
-  .page-program-finder .view-content {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px; }
-    .page-program-finder .view-content .views-row {
-      -moz-flex: 0 0 31.3%;
-      -ms-flex: 0 0 31.3%;
-      flex: 0 0 31.3%;
-      margin: 10px; }
-    .page-program-finder .view-content .views-field-title {
-      margin-bottom: 0.5rem; } }
-
-.field-name-field-program-offerings {
-  padding: 2rem 0; }
-  .field-name-field-program-offerings > .field-items > .field-item {
-    max-width: 640px;
-    margin-bottom: 20px; }
-  @media (min-width: 768px) {
-    .field-name-field-program-offerings > .field-items {
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      flex-wrap: wrap;
-      margin-left: -10px;
-      margin-right: -10px; }
-      .field-name-field-program-offerings > .field-items > .field-item {
-        width: 31%;
-        margin: 10px; } }
-
-.page-program-finder .views-field-field-program-locations {
-  display: block;
-  position: relative;
-  padding-left: 12px;
-  margin-bottom: 0.4rem;
-  font-size: 0.9rem; }
-  .page-program-finder .views-field-field-program-locations:before {
-    content: '\f041';
-    font-family: FontAwesome;
-    color: #FE5E00;
-    position: absolute;
-    top: -1px;
-    left: 0; }
-
-.page-program-finder .pane-views-exp-programs-explore-programs h2 {
-  display: none; }
-
-.page-program-finder .pane-views-exp-programs-explore-programs .container, .page-program-finder .pane-views-exp-programs-explore-programs .page-founders-club .view-founders-club-profiles, .page-founders-club .page-program-finder .pane-views-exp-programs-explore-programs .view-founders-club-profiles, .page-program-finder .pane-views-exp-programs-explore-programs .page-user .region-content, .page-user .page-program-finder .pane-views-exp-programs-explore-programs .region-content {
-  margin-left: 0px;
-  padding-left: 0px; }
-
-.page-program-finder .views-exposed-form {
-  margin-bottom: 1.5rem; }
-  .page-program-finder .views-exposed-form .views-exposed-widget .form-submit,
-  .page-program-finder .views-exposed-form .views-submit-button,
-  .page-program-finder .views-exposed-form .views-reset-button {
-    margin-top: 0; }
-
-@media (min-width: 768px) {
-  .page-program-finder .view-content {
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px; }
-    .page-program-finder .view-content .views-row {
-      -moz-flex: 0 0 31.3%;
-      -ms-flex: 0 0 31.3%;
-      flex: 0 0 31.3%;
-      margin: 10px; }
-    .page-program-finder .view-content .views-field-title {
-      margin-bottom: 0.5rem; } }
 
 .node-type-profile .field-name-field-profile-subtitle {
   font-family: FranklinGothicDemi;
@@ -10949,9 +10385,7 @@ table.table-condensed th, table.table-condensed td {
       height: auto;
       margin: 2rem 2rem 0 2rem;
       position: relative; }
-    .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item, .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper
-    .node-department-full .field-name-field-department-program > .field-items > .field-item,
-    .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .page-program-finder .view-content .views-row, .page-program-finder .view-content .view-display-id-story_featured_pane .border-wrapper .views-row, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item {
+    .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item {
       margin: 0 1rem;
       background-color: transparent; }
     @media (min-width: 768px) {
@@ -11000,9 +10434,7 @@ table.table-condensed th, table.table-condensed td {
       height: auto;
       margin: 2rem 2rem 0 2rem;
       position: relative; }
-    .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item, .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper
-    .node-department-full .field-name-field-department-program > .field-items > .field-item,
-    .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .page-program-finder .view-content .views-row, .page-program-finder .view-content .view-display-id-story_featured_pane .border-wrapper .views-row, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item {
+    .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item {
       margin: 0 1rem;
       background-color: transparent; }
     @media (min-width: 768px) {
@@ -11024,7 +10456,7 @@ table.table-condensed th, table.table-condensed td {
     .breadcrumb a:hover {
       color: #00A1C6; }
 
-#cta-section .content.container, #cta-section .page-founders-club .content.view-founders-club-profiles, .page-founders-club #cta-section .content.view-founders-club-profiles, #cta-section .page-user .content.region-content, .page-user #cta-section .content.region-content {
+#cta-section .content.container, #cta-section .page-node-done .content.region, .page-node-done #cta-section .content.region, #cta-section .page-founders-club .content.view-founders-club-profiles, .page-founders-club #cta-section .content.view-founders-club-profiles, #cta-section .page-user .content.region-content, .page-user #cta-section .content.region-content {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem; }
 
@@ -11365,7 +10797,7 @@ ol.megamenu-column {
 
 .entity-paragraphs-item {
   padding-top: 1.5rem; }
-  .entity-paragraphs-item h3:first-of-type, .entity-paragraphs-item .page-program-finder .view-header:first-of-type, .page-program-finder .entity-paragraphs-item .view-header:first-of-type {
+  .entity-paragraphs-item h3:first-of-type {
     margin-top: 0; }
   .entity-paragraphs-item.background-gold, .entity-paragraphs-item.background-blue-line, .entity-paragraphs-item.background-grey {
     padding: 1.5rem 0; }
@@ -11375,22 +10807,10 @@ ol.megamenu-column {
 .entity-paragraphs-item.paragraphs-item-card {
   padding-top: 0; }
 
-.paragraphs-item-card .content.container, .paragraphs-item-card .page-founders-club .content.view-founders-club-profiles, .page-founders-club .paragraphs-item-card .content.view-founders-club-profiles, .paragraphs-item-card .page-user .content.region-content, .page-user .paragraphs-item-card .content.region-content {
+.paragraphs-item-card .content.container, .paragraphs-item-card .page-node-done .content.region, .page-node-done .paragraphs-item-card .content.region, .paragraphs-item-card .page-founders-club .content.view-founders-club-profiles, .page-founders-club .paragraphs-item-card .content.view-founders-club-profiles, .paragraphs-item-card .page-user .content.region-content, .page-user .paragraphs-item-card .content.region-content {
   padding-top: 0; }
 
-.paragraphs-item-card .card-body h3, .paragraphs-item-card .node-card_content-card .card-description-wrapper h3, .node-card_content-card .paragraphs-item-card .card-description-wrapper h3, .paragraphs-item-card .node-factoid-card .card-description-wrapper h3, .node-factoid-card .paragraphs-item-card .card-description-wrapper h3, .paragraphs-item-card .node-factoid-full .card-description-wrapper h3, .node-factoid-full .paragraphs-item-card .card-description-wrapper h3, .paragraphs-item-card .page-program-finder .view-content .views-row h3, .page-program-finder .view-content .paragraphs-item-card .views-row h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .card-wrapper h3, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .card-wrapper h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item h3, .view-display-id-story_featured_pane .border-wrapper .node-department-full .paragraphs-item-card .field-name-field-department-highlight > .field-items > .field-item h3, .paragraphs-item-card .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item h3, .node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-department-highlight > .field-items > .field-item h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper
-.node-department-full .field-name-field-department-program > .field-items > .field-item h3, .view-display-id-story_featured_pane .border-wrapper
-.node-department-full .paragraphs-item-card .field-name-field-department-program > .field-items > .field-item h3, .paragraphs-item-card
-.node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item h3,
-.node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-department-program > .field-items > .field-item h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item h3, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-program-offerings > .field-items > .field-item h3, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .card-description-wrapper h3, .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper h3, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper h3, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-program-finder .view-content .views-row h3, .page-program-finder .view-content .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .views-row h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper h3, .paragraphs-item-card .card-body .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .card-body .view-header, .paragraphs-item-card .node-card_content-card .card-description-wrapper .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .node-card_content-card .card-description-wrapper .view-header, .node-card_content-card .paragraphs-item-card .card-description-wrapper .page-program-finder .view-header, .page-program-finder .node-card_content-card .paragraphs-item-card .card-description-wrapper .view-header, .paragraphs-item-card .node-factoid-card .card-description-wrapper .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .node-factoid-card .card-description-wrapper .view-header, .node-factoid-card .paragraphs-item-card .card-description-wrapper .page-program-finder .view-header, .page-program-finder .node-factoid-card .paragraphs-item-card .card-description-wrapper .view-header, .paragraphs-item-card .node-factoid-full .card-description-wrapper .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .node-factoid-full .card-description-wrapper .view-header, .node-factoid-full .paragraphs-item-card .card-description-wrapper .page-program-finder .view-header, .page-program-finder .node-factoid-full .paragraphs-item-card .card-description-wrapper .view-header, .paragraphs-item-card .page-program-finder .view-content .views-row .view-header, .page-program-finder .view-content .paragraphs-item-card .views-row .view-header, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .card-wrapper .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .card-wrapper .view-header, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .card-wrapper .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .card-wrapper .view-header, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item .view-header, .view-display-id-story_featured_pane .border-wrapper .node-department-full .paragraphs-item-card .field-name-field-department-highlight > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper .node-department-full .paragraphs-item-card .field-name-field-department-highlight > .field-items > .field-item .view-header, .paragraphs-item-card .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item .view-header, .node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-department-highlight > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-department-highlight > .field-items > .field-item .view-header, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper
-.node-department-full .field-name-field-department-program > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper
-.node-department-full .field-name-field-department-program > .field-items > .field-item .view-header, .view-display-id-story_featured_pane .border-wrapper
-.node-department-full .paragraphs-item-card .field-name-field-department-program > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper
-.node-department-full .paragraphs-item-card .field-name-field-department-program > .field-items > .field-item .view-header, .paragraphs-item-card
-.node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card
-.node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item .view-header,
-.node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-department-program > .field-items > .field-item .page-program-finder .view-header, .page-program-finder
-.node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-department-program > .field-items > .field-item .view-header, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item .view-header, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-program-offerings > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-name-field-program-offerings > .field-items > .field-item .view-header, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-header, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .view-header, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body .page-program-finder .view-header, .page-program-finder .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body .view-header {
+.paragraphs-item-card .card-body h3, .paragraphs-item-card .node-card_content-card .card-description-wrapper h3, .node-card_content-card .paragraphs-item-card .card-description-wrapper h3, .paragraphs-item-card .node-factoid-card .card-description-wrapper h3, .node-factoid-card .paragraphs-item-card .card-description-wrapper h3, .paragraphs-item-card .node-factoid-full .card-description-wrapper h3, .node-factoid-full .paragraphs-item-card .card-description-wrapper h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .card-wrapper h3, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .card-wrapper h3, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .card-description-wrapper h3, .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper h3, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper h3, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper h3 {
   font-family: FranklinGothicBook;
   font-size: 1.6rem; }
 
@@ -11443,24 +10863,20 @@ ol.megamenu-column {
       margin-left: auto;
       margin-right: auto; } }
 
-.paragraphs-item-social h3, .paragraphs-item-social .page-program-finder .view-header, .page-program-finder .paragraphs-item-social .view-header {
+.paragraphs-item-social h3 {
   font-family: FranklinGothicBook;
   font-size: 1.6rem; }
 
 .paragraphs-item-social .content .social-card {
   background-color: #EBE7E3;
   margin: 10px; }
-  .paragraphs-item-social .content .social-card .primary-button, .paragraphs-item-social .content .social-card .btn-primary, .paragraphs-item-social .content .social-card body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .paragraphs-item-social .content .social-card .btn:first-child, .paragraphs-item-social .content .social-card body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .paragraphs-item-social .content .social-card .media-widget > a:first-child, .paragraphs-item-social .content .social-card .page-google-search input.gsc-search-button, .page-google-search .paragraphs-item-social .content .social-card input.gsc-search-button, .paragraphs-item-social .content .social-card .cta-button, .paragraphs-item-social .content .social-card .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .paragraphs-item-social .content .social-card a {
+  .paragraphs-item-social .content .social-card .primary-button, .paragraphs-item-social .content .social-card .btn-primary, .paragraphs-item-social .content .social-card body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .paragraphs-item-social .content .social-card .btn:first-child, .paragraphs-item-social .content .social-card body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .paragraphs-item-social .content .social-card .media-widget > a:first-child, .paragraphs-item-social .content .social-card .page-google-search input.gsc-search-button, .page-google-search .paragraphs-item-social .content .social-card input.gsc-search-button, .paragraphs-item-social .content .social-card .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .paragraphs-item-social .content .social-card a {
     padding: 6px 17px; }
-  .paragraphs-item-social .content .social-card .card-body, .paragraphs-item-social .content .social-card .node-card_content-card .card-description-wrapper, .node-card_content-card .paragraphs-item-social .content .social-card .card-description-wrapper, .paragraphs-item-social .content .social-card .node-factoid-card .card-description-wrapper, .node-factoid-card .paragraphs-item-social .content .social-card .card-description-wrapper, .paragraphs-item-social .content .social-card .node-factoid-full .card-description-wrapper, .node-factoid-full .paragraphs-item-social .content .social-card .card-description-wrapper, .paragraphs-item-social .content .social-card .page-program-finder .view-content .views-row, .page-program-finder .view-content .paragraphs-item-social .content .social-card .views-row, .paragraphs-item-social .content .social-card .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-social .content .social-card .card-wrapper, .paragraphs-item-social .content .social-card .view-display-id-story_featured_pane .border-wrapper .node-department-full .field-name-field-department-highlight > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .node-department-full .paragraphs-item-social .content .social-card .field-name-field-department-highlight > .field-items > .field-item, .paragraphs-item-social .content .social-card .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-highlight > .field-items > .field-item, .node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-social .content .social-card .field-name-field-department-highlight > .field-items > .field-item, .paragraphs-item-social .content .social-card .view-display-id-story_featured_pane .border-wrapper
-  .node-department-full .field-name-field-department-program > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper
-  .node-department-full .paragraphs-item-social .content .social-card .field-name-field-department-program > .field-items > .field-item, .paragraphs-item-social .content .social-card
-  .node-department-full .view-display-id-story_featured_pane .border-wrapper .field-name-field-department-program > .field-items > .field-item,
-  .node-department-full .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-social .content .social-card .field-name-field-department-program > .field-items > .field-item, .paragraphs-item-social .content .social-card .view-display-id-story_featured_pane .border-wrapper .field-name-field-program-offerings > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-social .content .social-card .field-name-field-program-offerings > .field-items > .field-item, .paragraphs-item-social .content .social-card .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .paragraphs-item-social .content .social-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-social .content .social-card .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-social .content .social-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-social .content .social-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .paragraphs-item-social .content .social-card .card-body {
+  .paragraphs-item-social .content .social-card .card-body, .paragraphs-item-social .content .social-card .node-card_content-card .card-description-wrapper, .node-card_content-card .paragraphs-item-social .content .social-card .card-description-wrapper, .paragraphs-item-social .content .social-card .node-factoid-card .card-description-wrapper, .node-factoid-card .paragraphs-item-social .content .social-card .card-description-wrapper, .paragraphs-item-social .content .social-card .node-factoid-full .card-description-wrapper, .node-factoid-full .paragraphs-item-social .content .social-card .card-description-wrapper, .paragraphs-item-social .content .social-card .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-social .content .social-card .card-wrapper, .paragraphs-item-social .content .social-card .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .paragraphs-item-social .content .social-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-social .content .social-card .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-social .content .social-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-social .content .social-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .paragraphs-item-social .content .social-card .card-body {
     padding: 0 1.5rem; }
   .paragraphs-item-social .content .social-card .field-items {
     padding: 1.5rem; }
-  .paragraphs-item-social .content .social-card .primary-button, .paragraphs-item-social .content .social-card .btn-primary, .paragraphs-item-social .content .social-card body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .paragraphs-item-social .content .social-card .btn:first-child, .paragraphs-item-social .content .social-card body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .paragraphs-item-social .content .social-card .media-widget > a:first-child, .paragraphs-item-social .content .social-card .page-google-search input.gsc-search-button, .page-google-search .paragraphs-item-social .content .social-card input.gsc-search-button, .paragraphs-item-social .content .social-card .cta-button, .paragraphs-item-social .content .social-card .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .paragraphs-item-social .content .social-card a {
+  .paragraphs-item-social .content .social-card .primary-button, .paragraphs-item-social .content .social-card .btn-primary, .paragraphs-item-social .content .social-card body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .paragraphs-item-social .content .social-card .btn:first-child, .paragraphs-item-social .content .social-card body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .paragraphs-item-social .content .social-card .media-widget > a:first-child, .paragraphs-item-social .content .social-card .page-google-search input.gsc-search-button, .page-google-search .paragraphs-item-social .content .social-card input.gsc-search-button, .paragraphs-item-social .content .social-card .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .paragraphs-item-social .content .social-card a, .paragraphs-item-social .content .social-card .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .paragraphs-item-social .content .social-card a {
     margin-top: 1rem; }
   .paragraphs-item-social .content .social-card i {
     margin-right: 0.5rem; }
@@ -11493,7 +10909,7 @@ ol.megamenu-column {
     .paragraphs-item-story-card {
       padding-top: 2rem;
       padding-bottom: 3rem; }
-      .paragraphs-item-story-card h2, .paragraphs-item-story-card h3, .paragraphs-item-story-card .page-program-finder .view-header, .page-program-finder .paragraphs-item-story-card .view-header {
+      .paragraphs-item-story-card h2, .paragraphs-item-story-card h3 {
         margin-top: 0; }
       .paragraphs-item-story-card .col-md-6, .paragraphs-item-story-card .node-webform .half, .node-webform .paragraphs-item-story-card .half {
         margin-bottom: 0; } }
@@ -11514,13 +10930,13 @@ ol.megamenu-column {
   height: auto;
   max-width: 100%; }
 
-.page-header .container, .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .page-header .view-founders-club-profiles, .page-header .page-user .region-content, .page-user .page-header .region-content {
+.page-header .container, .page-header .page-node-done .region, .page-node-done .page-header .region, .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .page-header .view-founders-club-profiles, .page-header .page-user .region-content, .page-user .page-header .region-content {
   padding: 1.5rem;
   background-image: url(../images/header_lines.png);
   background-repeat: no-repeat;
   background-position: 20px -30px; }
   @media (min-width: 1200px) {
-    .page-header .container, .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .page-header .view-founders-club-profiles, .page-header .page-user .region-content, .page-user .page-header .region-content {
+    .page-header .container, .page-header .page-node-done .region, .page-node-done .page-header .region, .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .page-header .view-founders-club-profiles, .page-header .page-user .region-content, .page-user .page-header .region-content {
       padding: 1rem 5rem; } }
 
 .page-header .header-content {
@@ -11579,7 +10995,7 @@ ol.megamenu-column {
   display: block;
   font-family: BlenderProBold; }
 
-.page-header .primary-button, .page-header .btn-primary, .page-header body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .page-header .btn:first-child, .page-header body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .page-header .media-widget > a:first-child, .page-header .page-google-search input.gsc-search-button, .page-google-search .page-header input.gsc-search-button, .page-header .cta-button, .page-header .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .page-header a, .page-header .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .page-header a, .page-header .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .page-header a, .page-header .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .page-header a, .page-header .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .page-header a {
+.page-header .primary-button, .page-header .btn-primary, .page-header body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .page-header .btn:first-child, .page-header body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .page-header .media-widget > a:first-child, .page-header .page-google-search input.gsc-search-button, .page-google-search .page-header input.gsc-search-button, .page-header .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .page-header a, .page-header .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .page-header a, .page-header .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .page-header a, .page-header .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .page-header a, .page-header .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .page-header a {
   display: table;
   margin-top: 1.5rem; }
 
@@ -11597,7 +11013,7 @@ ol.megamenu-column {
 @media (min-width: 768px) {
   .page-header.short-image {
     height: 290px; }
-    .page-header.short-image .container, .page-header.short-image .page-founders-club .view-founders-club-profiles, .page-founders-club .page-header.short-image .view-founders-club-profiles, .page-header.short-image .page-user .region-content, .page-user .page-header.short-image .region-content {
+    .page-header.short-image .container, .page-header.short-image .page-node-done .region, .page-node-done .page-header.short-image .region, .page-header.short-image .page-founders-club .view-founders-club-profiles, .page-founders-club .page-header.short-image .view-founders-club-profiles, .page-header.short-image .page-user .region-content, .page-user .page-header.short-image .region-content {
       position: relative;
       top: 50%;
       transform: translateY(-50%); }
@@ -11607,7 +11023,7 @@ ol.megamenu-column {
     .page-header.tall-image img {
       width: 100%;
       height: auto; }
-    .page-header.tall-image .container, .page-header.tall-image .page-founders-club .view-founders-club-profiles, .page-founders-club .page-header.tall-image .view-founders-club-profiles, .page-header.tall-image .page-user .region-content, .page-user .page-header.tall-image .region-content {
+    .page-header.tall-image .container, .page-header.tall-image .page-node-done .region, .page-node-done .page-header.tall-image .region, .page-header.tall-image .page-founders-club .view-founders-club-profiles, .page-founders-club .page-header.tall-image .view-founders-club-profiles, .page-header.tall-image .page-user .region-content, .page-user .page-header.tall-image .region-content {
       position: absolute;
       top: 0;
       left: 0;
@@ -11758,7 +11174,7 @@ ol.megamenu-column {
   color: #FFFFFF;
   font-size: 1rem; }
   @media (min-width: 670px) {
-    .secondary-footer .container, .secondary-footer .page-founders-club .view-founders-club-profiles, .page-founders-club .secondary-footer .view-founders-club-profiles, .secondary-footer .page-user .region-content, .page-user .secondary-footer .region-content {
+    .secondary-footer .container, .secondary-footer .page-node-done .region, .page-node-done .secondary-footer .region, .secondary-footer .page-founders-club .view-founders-club-profiles, .page-founders-club .secondary-footer .view-founders-club-profiles, .secondary-footer .page-user .region-content, .page-user .secondary-footer .region-content {
       padding-top: 24px;
       padding-bottom: 24px; } }
 
@@ -11789,61 +11205,73 @@ ol.megamenu-column {
   .secondary-footer-links a:hover, .secondary-footer-links a:active {
     color: #FFFFFF; }
 
-.container, .page-founders-club .view-founders-club-profiles, .page-user .region-content {
+.container, .page-node-done .region, .page-founders-club .view-founders-club-profiles, .page-user .region-content {
   padding: 1.5rem; }
 
-.content .container, .content .page-founders-club .view-founders-club-profiles, .page-founders-club .content .view-founders-club-profiles, .content .page-user .region-content, .page-user .content .region-content {
+.content .container, .content .page-node-done .region, .page-node-done .content .region, .content .page-founders-club .view-founders-club-profiles, .page-founders-club .content .view-founders-club-profiles, .content .page-user .region-content, .page-user .content .region-content {
   padding: 0; }
 
-#content > .block-menu-block, #content.container, .page-founders-club #content.view-founders-club-profiles, .page-user #content.region-content,
+#content > .block-menu-block, #content.container, .page-node-done #content.region, .page-founders-club #content.view-founders-club-profiles, .page-user #content.region-content,
 #content .container,
+#content .page-node-done .region, .page-node-done
+#content .region,
 #content .page-founders-club .view-founders-club-profiles, .page-founders-club
 #content .view-founders-club-profiles,
 #content .page-user .region-content, .page-user
 #content .region-content,
 #content .entity-paragraphs-item .content.container,
+#content .entity-paragraphs-item .page-node-done .content.region, .page-node-done
+#content .entity-paragraphs-item .content.region,
 #content .entity-paragraphs-item .page-founders-club .content.view-founders-club-profiles, .page-founders-club
 #content .entity-paragraphs-item .content.view-founders-club-profiles,
 #content .entity-paragraphs-item .page-user .content.region-content, .page-user
 #content .entity-paragraphs-item .content.region-content,
 #content .container.breadcrumb-container,
+#content .page-node-done .breadcrumb-container.region, .page-node-done
+#content .breadcrumb-container.region,
 #content .page-founders-club .breadcrumb-container.view-founders-club-profiles, .page-founders-club
 #content .breadcrumb-container.view-founders-club-profiles,
 #content .page-user .breadcrumb-container.region-content, .page-user
 #content .breadcrumb-container.region-content {
   padding: 0 1.5rem; }
   @media (min-width: 1200px) {
-    #content > .block-menu-block, #content.container, .page-founders-club #content.view-founders-club-profiles, .page-user #content.region-content,
+    #content > .block-menu-block, #content.container, .page-node-done #content.region, .page-founders-club #content.view-founders-club-profiles, .page-user #content.region-content,
     #content .container,
+    #content .page-node-done .region, .page-node-done
+    #content .region,
     #content .page-founders-club .view-founders-club-profiles, .page-founders-club
     #content .view-founders-club-profiles,
     #content .page-user .region-content, .page-user
     #content .region-content,
     #content .entity-paragraphs-item .content.container,
+    #content .entity-paragraphs-item .page-node-done .content.region, .page-node-done
+    #content .entity-paragraphs-item .content.region,
     #content .entity-paragraphs-item .page-founders-club .content.view-founders-club-profiles, .page-founders-club
     #content .entity-paragraphs-item .content.view-founders-club-profiles,
     #content .entity-paragraphs-item .page-user .content.region-content, .page-user
     #content .entity-paragraphs-item .content.region-content,
     #content .container.breadcrumb-container,
+    #content .page-node-done .breadcrumb-container.region, .page-node-done
+    #content .breadcrumb-container.region,
     #content .page-founders-club .breadcrumb-container.view-founders-club-profiles, .page-founders-club
     #content .breadcrumb-container.view-founders-club-profiles,
     #content .page-user .breadcrumb-container.region-content, .page-user
     #content .breadcrumb-container.region-content {
       padding: 1.5rem 5rem; } }
 
-.navigation-wrapper .container, .navigation-wrapper .page-founders-club .view-founders-club-profiles, .page-founders-club .navigation-wrapper .view-founders-club-profiles, .navigation-wrapper .page-user .region-content, .page-user .navigation-wrapper .region-content {
+.navigation-wrapper .container, .navigation-wrapper .page-node-done .region, .page-node-done .navigation-wrapper .region, .navigation-wrapper .page-founders-club .view-founders-club-profiles, .page-founders-club .navigation-wrapper .view-founders-club-profiles, .navigation-wrapper .page-user .region-content, .page-user .navigation-wrapper .region-content {
   padding: 0; }
   @media (min-width: 992px) {
-    .navigation-wrapper .container, .navigation-wrapper .page-founders-club .view-founders-club-profiles, .page-founders-club .navigation-wrapper .view-founders-club-profiles, .navigation-wrapper .page-user .region-content, .page-user .navigation-wrapper .region-content {
+    .navigation-wrapper .container, .navigation-wrapper .page-node-done .region, .page-node-done .navigation-wrapper .region, .navigation-wrapper .page-founders-club .view-founders-club-profiles, .page-founders-club .navigation-wrapper .view-founders-club-profiles, .navigation-wrapper .page-user .region-content, .page-user .navigation-wrapper .region-content {
       padding-left: 1.5rem; } }
 
-.container.breadcrumb-container, .page-founders-club .breadcrumb-container.view-founders-club-profiles, .page-user .breadcrumb-container.region-content {
+.container.breadcrumb-container, .page-node-done .breadcrumb-container.region, .page-founders-club .breadcrumb-container.view-founders-club-profiles, .page-user .breadcrumb-container.region-content {
   padding: 0 1.5rem 0.5rem 1.5rem; }
   @media (min-width: 1200px) {
-    .container.breadcrumb-container, .page-founders-club .breadcrumb-container.view-founders-club-profiles, .page-user .breadcrumb-container.region-content {
+    .container.breadcrumb-container, .page-node-done .breadcrumb-container.region, .page-founders-club .breadcrumb-container.view-founders-club-profiles, .page-user .breadcrumb-container.region-content {
       padding: 0.5rem 5rem; } }
 
-#content.container .block-menu-block, .page-founders-club #content.view-founders-club-profiles .block-menu-block, .page-user #content.region-content .block-menu-block {
+#content.container .block-menu-block, .page-node-done #content.region .block-menu-block, .page-founders-club #content.view-founders-club-profiles .block-menu-block, .page-user #content.region-content .block-menu-block {
   padding-right: 1rem;
   padding-left: 1rem; }
 
@@ -11877,7 +11305,7 @@ ol.megamenu-column {
     .uiowa-bar-dark #ui-wrapper #ui-search-toggle.is-active {
       background-color: transparent;
       box-shadow: none; }
-  #ui-wrapper .container, #ui-wrapper .page-founders-club .view-founders-club-profiles, .page-founders-club #ui-wrapper .view-founders-club-profiles, #ui-wrapper .page-user .region-content, .page-user #ui-wrapper .region-content {
+  #ui-wrapper .container, #ui-wrapper .page-node-done .region, .page-node-done #ui-wrapper .region, #ui-wrapper .page-founders-club .view-founders-club-profiles, .page-founders-club #ui-wrapper .view-founders-club-profiles, #ui-wrapper .page-user .region-content, .page-user #ui-wrapper .region-content {
     padding-top: 0;
     padding-bottom: 0;
     position: relative; }
@@ -11924,7 +11352,7 @@ ol.megamenu-column {
     .navbar-collapse {
       border: none; } }
 
-.navigation.container, .page-founders-club .navigation.view-founders-club-profiles, .page-user .navigation.region-content {
+.navigation.container, .page-node-done .navigation.region, .page-founders-club .navigation.view-founders-club-profiles, .page-user .navigation.region-content {
   padding-top: 0;
   padding-bottom: 0; }
 
@@ -11982,7 +11410,7 @@ iframe[name^='google_conversion_frame'] {
     .front .main h2 {
       font-size: 5rem; } }
 
-.front #content .container, .front #content .page-founders-club .view-founders-club-profiles, .page-founders-club .front #content .view-founders-club-profiles, .front #content .page-user .region-content, .page-user .front #content .region-content {
+.front #content .container, .front #content .page-node-done .region, .page-node-done .front #content .region, .front #content .page-founders-club .view-founders-club-profiles, .page-founders-club .front #content .view-founders-club-profiles, .front #content .page-user .region-content, .page-user .front #content .region-content {
   padding: 0; }
 
 .front .description {
@@ -11998,12 +11426,12 @@ iframe[name^='google_conversion_frame'] {
     .front .content-wrapper {
       padding: 4rem 5rem 4rem 5rem; } }
 
-.front .region-content .container, .front .region-content .page-founders-club .view-founders-club-profiles, .page-founders-club .front .region-content .view-founders-club-profiles, .front .region-content .page-user .region-content, .page-user .front .region-content .region-content {
+.front .region-content .container, .front .region-content .page-node-done .region, .page-node-done .front .region-content .region, .front .region-content .page-founders-club .view-founders-club-profiles, .page-founders-club .front .region-content .view-founders-club-profiles, .front .region-content .page-user .region-content, .page-user .front .region-content .region-content {
   padding: 0; }
 
 .front .page-header {
   padding-bottom: 0; }
-  .front .page-header > .container, .front .page-founders-club .page-header > .view-founders-club-profiles, .page-founders-club .front .page-header > .view-founders-club-profiles, .front .page-user .page-header > .region-content, .page-user .front .page-header > .region-content {
+  .front .page-header > .container, .front .page-node-done .page-header > .region, .page-node-done .front .page-header > .region, .front .page-founders-club .page-header > .view-founders-club-profiles, .page-founders-club .front .page-header > .view-founders-club-profiles, .front .page-user .page-header > .region-content, .page-user .front .page-header > .region-content {
     z-index: 3;
     padding: 0; }
 
@@ -12026,7 +11454,7 @@ iframe[name^='google_conversion_frame'] {
     font-family: BlenderProMedium;
     line-height: 1;
     color: #FFFFFF; }
-  .front .header-content .primary-button, .front .header-content .btn-primary, .front .header-content body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .front .header-content .btn:first-child, .front .header-content body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .front .header-content .media-widget > a:first-child, .front .header-content .page-google-search input.gsc-search-button, .page-google-search .front .header-content input.gsc-search-button, .front .header-content .cta-button, .front .header-content .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .front .header-content a, .front .header-content .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .front .header-content a, .front .header-content .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .front .header-content a, .front .header-content .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .front .header-content a, .front .header-content .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .front .header-content a {
+  .front .header-content .primary-button, .front .header-content .btn-primary, .front .header-content body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .front .header-content .btn:first-child, .front .header-content body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .front .header-content .media-widget > a:first-child, .front .header-content .page-google-search input.gsc-search-button, .page-google-search .front .header-content input.gsc-search-button, .front .header-content .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .front .header-content a, .front .header-content .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .front .header-content a, .front .header-content .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .front .header-content a, .front .header-content .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .front .header-content a, .front .header-content .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .front .header-content a {
     margin-top: 3rem;
     text-align: center;
     margin-left: auto;
@@ -12115,7 +11543,7 @@ iframe[name^='google_conversion_frame'] {
     display: block;
     max-width: 100%;
     padding: 0rem 2rem; }
-  .front .pane-employers .primary-button, .front .pane-employers .btn-primary, .front .pane-employers body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .front .pane-employers .btn:first-child, .front .pane-employers body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .front .pane-employers .media-widget > a:first-child, .front .pane-employers .page-google-search input.gsc-search-button, .page-google-search .front .pane-employers input.gsc-search-button, .front .pane-employers .cta-button, .front .pane-employers .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .front .pane-employers a, .front .pane-employers .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .front .pane-employers a, .front .pane-employers .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .front .pane-employers a, .front .pane-employers .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .front .pane-employers a, .front .pane-employers .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .front .pane-employers a {
+  .front .pane-employers .primary-button, .front .pane-employers .btn-primary, .front .pane-employers body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .front .pane-employers .btn:first-child, .front .pane-employers body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .front .pane-employers .media-widget > a:first-child, .front .pane-employers .page-google-search input.gsc-search-button, .page-google-search .front .pane-employers input.gsc-search-button, .front .pane-employers .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .front .pane-employers a, .front .pane-employers .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .front .pane-employers a, .front .pane-employers .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .front .pane-employers a, .front .pane-employers .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .front .pane-employers a, .front .pane-employers .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .front .pane-employers a {
     margin: 0 2rem 2rem 2rem; }
   @media (min-width: 768px) {
     .front .pane-employers {
@@ -12129,7 +11557,7 @@ iframe[name^='google_conversion_frame'] {
         padding: 0; }
       .front .pane-employers .description {
         padding: 0; }
-      .front .pane-employers .primary-button, .front .pane-employers .btn-primary, .front .pane-employers body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .front .pane-employers .btn:first-child, .front .pane-employers body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .front .pane-employers .media-widget > a:first-child, .front .pane-employers .page-google-search input.gsc-search-button, .page-google-search .front .pane-employers input.gsc-search-button, .front .pane-employers .cta-button, .front .pane-employers .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .front .pane-employers a, .front .pane-employers .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .front .pane-employers a, .front .pane-employers .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .front .pane-employers a, .front .pane-employers .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .front .pane-employers a, .front .pane-employers .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .front .pane-employers a {
+      .front .pane-employers .primary-button, .front .pane-employers .btn-primary, .front .pane-employers body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .front .pane-employers .btn:first-child, .front .pane-employers body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .front .pane-employers .media-widget > a:first-child, .front .pane-employers .page-google-search input.gsc-search-button, .page-google-search .front .pane-employers input.gsc-search-button, .front .pane-employers .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .front .pane-employers a, .front .pane-employers .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .front .pane-employers a, .front .pane-employers .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .front .pane-employers a, .front .pane-employers .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .front .pane-employers a, .front .pane-employers .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .front .pane-employers a {
         margin: 0; } }
   @media (min-width: 768px) {
     .front .pane-employers {
@@ -12249,7 +11677,7 @@ iframe[name^='google_conversion_frame'] {
       background-repeat: no-repeat;
       background-position: 98% 50%;
       background-size: contain; } }
-  .front .pane-views-exp-programs-explore-programs .container, .front .pane-views-exp-programs-explore-programs .page-founders-club .view-founders-club-profiles, .page-founders-club .front .pane-views-exp-programs-explore-programs .view-founders-club-profiles, .front .pane-views-exp-programs-explore-programs .page-user .region-content, .page-user .front .pane-views-exp-programs-explore-programs .region-content {
+  .front .pane-views-exp-programs-explore-programs .container, .front .pane-views-exp-programs-explore-programs .page-node-done .region, .page-node-done .front .pane-views-exp-programs-explore-programs .region, .front .pane-views-exp-programs-explore-programs .page-founders-club .view-founders-club-profiles, .page-founders-club .front .pane-views-exp-programs-explore-programs .view-founders-club-profiles, .front .pane-views-exp-programs-explore-programs .page-user .region-content, .page-user .front .pane-views-exp-programs-explore-programs .region-content {
     padding: 2rem; }
   .front .pane-views-exp-programs-explore-programs .views-exposed-form {
     margin-bottom: 1.5rem; }
@@ -12263,11 +11691,11 @@ iframe[name^='google_conversion_frame'] {
       .front .pane-views-exp-programs-explore-programs .content-wrapper {
         padding: 0; } }
 
-.front .pane-next-steps #cta-section .container, .front .pane-next-steps #cta-section .page-founders-club .view-founders-club-profiles, .page-founders-club .front .pane-next-steps #cta-section .view-founders-club-profiles, .front .pane-next-steps #cta-section .page-user .region-content, .page-user .front .pane-next-steps #cta-section .region-content {
+.front .pane-next-steps #cta-section .container, .front .pane-next-steps #cta-section .page-node-done .region, .page-node-done .front .pane-next-steps #cta-section .region, .front .pane-next-steps #cta-section .page-founders-club .view-founders-club-profiles, .page-founders-club .front .pane-next-steps #cta-section .view-founders-club-profiles, .front .pane-next-steps #cta-section .page-user .region-content, .page-user .front .pane-next-steps #cta-section .region-content {
   display: block;
   padding: 0 2rem; }
   @media (min-width: 768px) {
-    .front .pane-next-steps #cta-section .container, .front .pane-next-steps #cta-section .page-founders-club .view-founders-club-profiles, .page-founders-club .front .pane-next-steps #cta-section .view-founders-club-profiles, .front .pane-next-steps #cta-section .page-user .region-content, .page-user .front .pane-next-steps #cta-section .region-content {
+    .front .pane-next-steps #cta-section .container, .front .pane-next-steps #cta-section .page-node-done .region, .page-node-done .front .pane-next-steps #cta-section .region, .front .pane-next-steps #cta-section .page-founders-club .view-founders-club-profiles, .page-founders-club .front .pane-next-steps #cta-section .view-founders-club-profiles, .front .pane-next-steps #cta-section .page-user .region-content, .page-user .front .pane-next-steps #cta-section .region-content {
       padding: 0; } }
 
 .front .pane-next-steps .cta-items {
@@ -12337,10 +11765,10 @@ iframe[name^='google_conversion_frame'] {
       .front #instagram-feed .instagram-social-feed img:hover {
         cursor: hand;
         opacity: 0.8; }
-  .front #instagram-feed .container, .front #instagram-feed .page-founders-club .view-founders-club-profiles, .page-founders-club .front #instagram-feed .view-founders-club-profiles, .front #instagram-feed .page-user .region-content, .page-user .front #instagram-feed .region-content {
+  .front #instagram-feed .container, .front #instagram-feed .page-node-done .region, .page-node-done .front #instagram-feed .region, .front #instagram-feed .page-founders-club .view-founders-club-profiles, .page-founders-club .front #instagram-feed .view-founders-club-profiles, .front #instagram-feed .page-user .region-content, .page-user .front #instagram-feed .region-content {
     padding: 0 2rem; }
     @media (min-width: 768px) {
-      .front #instagram-feed .container, .front #instagram-feed .page-founders-club .view-founders-club-profiles, .page-founders-club .front #instagram-feed .view-founders-club-profiles, .front #instagram-feed .page-user .region-content, .page-user .front #instagram-feed .region-content {
+      .front #instagram-feed .container, .front #instagram-feed .page-node-done .region, .page-node-done .front #instagram-feed .region, .front #instagram-feed .page-founders-club .view-founders-club-profiles, .page-founders-club .front #instagram-feed .view-founders-club-profiles, .front #instagram-feed .page-user .region-content, .page-user .front #instagram-feed .region-content {
         padding: 0; } }
 
 .front #video_modal {
