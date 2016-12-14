@@ -5,3 +5,13 @@
  */
 
 include_once 'jpec_webform.features.inc';
+
+/**
+ * Implements hook_menu_alter().
+ * Hide the Analysis and Submissions tabs from the Webform Results page
+ */
+function jpec_webform_menu_alter(&$items) {
+  // Disable access entirely:
+  $items['node/%webform_menu/webform-results/analysis']['access callback'] = FALSE;
+  $items['node/%webform_menu/webform-results/table']['access callback'] = FALSE;
+}
