@@ -142,13 +142,9 @@ function jpec_events_field_default_field_instances() {
   // Exported field_instance: 'node-event-field_event_audience'.
   $field_instances['node-event-field_event_audience'] = array(
     'bundle' => 'event',
-    'default_value' => array(
-      0 => array(
-        'tid' => 65,
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Start typing the audience, then select from the dropdown list. If no tag is found, keep typing, and the new tag will be created.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -187,10 +183,13 @@ function jpec_events_field_default_field_instances() {
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
       'weight' => 4,
     ),
   );
@@ -1132,6 +1131,7 @@ function jpec_events_field_default_field_instances() {
   t('Location');
   t('Or link to external URL');
   t('Room');
+  t('Start typing the audience, then select from the dropdown list. If no tag is found, keep typing, and the new tag will be created.');
   t('Start typing the form\'s title, then select an existing form from the list.');
   t('Time');
 
