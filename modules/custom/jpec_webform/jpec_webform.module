@@ -5,3 +5,48 @@
  */
 
 include_once 'jpec_webform.features.inc';
+
+/**
+ * Implements hook_menu_alter().
+ * Hide the Analysis and Submissions tabs from the Webform Results page
+ */
+function jpec_webform_menu_alter(&$items) {
+  // Disable access entirely:
+  $items['node/%webform_menu/webform-results/analysis']['access callback'] = FALSE;
+  $items['node/%webform_menu/webform-results/table']['access callback'] = FALSE;
+}
+
+/**
+ * Implements hook_node_view().
+ * Hide the status messages, and display the 'after' or 'before' message in the content 
+ * instead. Only for webforms that are scheduled.
+ */
+function jpec_webform_node_view($node, $view_mode) {
+
+  if ($node->type == 'webform' && $view_mode == 'full') {
+
+    if (($node->webform['scheduler']['begin'] > 0 && 
+        REQUEST_TIME < $node->webform['scheduler']['begin']) && 
+        $node->webform['scheduler']['msg_before'] != '') {
+      foreach ($_SESSION['messages']['warning'] as $key => $value) {
+        unset($_SESSION['messages']['warning'][$key]);
+      }
+      unset($_SESSION['messages']['warning']);
+      $node->content['scheduler_message'] = array (
+        '#markup' => $node->webform['scheduler']['msg_before'],
+      );
+    } 
+    elseif ((
+      $node->webform['scheduler']['end'] > 0 && 
+      REQUEST_TIME > $node->webform['scheduler']['end']) && 
+      $node->webform['scheduler']['msg_after'] != '') {
+      foreach ($_SESSION['messages']['warning'] as $key => $value) {
+        unset($_SESSION['messages']['warning'][$key]);
+      }
+      unset($_SESSION['messages']['warning']);
+      $node->content['scheduler_message'] = array (
+        '#markup' => $node->webform['scheduler']['msg_after'],
+      );
+    }
+  }
+}

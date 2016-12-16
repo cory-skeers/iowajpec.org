@@ -113,3 +113,10 @@
     margin-top: 1rem;
   }
 }
+
+// webform confirmation
+.page-node-done {
+  .region {
+    @extend .container;
+  }
+}
