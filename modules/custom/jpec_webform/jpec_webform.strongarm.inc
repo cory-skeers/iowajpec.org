@@ -27,6 +27,13 @@ function jpec_webform_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'display_clone_menu_link';
+  $strongarm->value = '0';
+  $export['display_clone_menu_link'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_webform';
   $strongarm->value = array();
   $export['menu_options_webform'] = $strongarm;
