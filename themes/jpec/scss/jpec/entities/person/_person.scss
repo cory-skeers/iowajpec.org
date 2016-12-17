@@ -45,44 +45,54 @@
   }
 }
 
-// People Directory page
-.page-people {
-  h2.pane-title {
-    text-transform: capitalize;
+.node-person-teaser {
+  h3 {
+    @extend .h4;
+    margin: 0;
   }
-  td {
-    @include fontsize(1);
-  }
-  thead > tr > th {
-    font-family: BlenderProBook;
-    @include fontsize(1.5);
-  }
-  // defined column widths
-  // name
-  td.views-field-title {
-    width: 30%;
-  }
-  // departments, contact
-  td.views-field-title-1, td.views-field-field-person-email  {
-    width: 25%;
-  }
+  
+  .field-name-field-person-title,
+  .field-name-field-person-custom-title {
+    font-family: FranklinGothicBookItalic;
+    margin-bottom: 0.5rem;
 
- // 
-  .views-widget-filter-field_person_primary_dept_target_id {
-    margin-top: 0;
+    .field-label {
+      @include offscreen;
+    }
   }
-  // hiding the label for the exposed search filter, department, and category filters
-  .views-exposed-form {
-    .views-widget-filter-combine label, .views-exposed-widget label{
-      @extend .hidden;
+}
+
+// People Directory page
+.page-faculty-staff {
+  .tabs {
+    margin-top: 2rem;
+  }
+  .view-faculty-staff {
+    @extend .container;
+    .views-row {
+      margin-bottom: 1rem;
+      padding: 1rem;
+      &.views-row-odd {
+        background-color: $light_grey;
+      }
     }
-    .views-exposed-widget .form-submit,
-    .views-submit-button, 
-    .views-reset-button {
-      margin-top: 0;
-    }
-    .form-item-keywords .form-control {
-      width: 295px;
+    &.view-display-id-advisory_council_page {
+      .views-row {
+        @include clearfix;
+      }
+      .views-field-title {
+        @extend .col-sm-4;
+        .field-content {
+          @include fontsize(1.5); 
+        }        
+      }
+      .views-field-field-person-title {
+        @extend .col-sm-8;
+        .field-content {
+          padding-top: 5px;
+          
+        }
+      }
     }
   }
 }

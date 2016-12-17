@@ -287,9 +287,8 @@ function jpec_person_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 1,
       ),
     ),
@@ -338,7 +337,7 @@ function jpec_person_field_default_field_instances() {
   $field_instances['node-person-field_person_image'] = array(
     'bundle' => 'person',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Upload the image with dimensions 200x200 px.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -352,11 +351,12 @@ function jpec_person_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'file_entity',
+        'module' => 'image',
         'settings' => array(
-          'file_view_mode' => 'default',
+          'image_link' => 'content',
+          'image_style' => 'medium',
         ),
-        'type' => 'file_rendered',
+        'type' => 'image',
         'weight' => 0,
       ),
     ),
@@ -367,11 +367,11 @@ function jpec_person_field_default_field_instances() {
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
-      'file_directory' => 'images/people',
+      'file_directory' => 'images/directory',
       'file_extensions' => 'png jpg jpeg',
       'max_filesize' => '4 MB',
       'max_resolution' => '2000x2000',
-      'min_resolution' => '',
+      'min_resolution' => '200x200',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -380,6 +380,7 @@ function jpec_person_field_default_field_instances() {
       'module' => 'media',
       'settings' => array(
         'allowed_schemes' => array(
+          'private' => 0,
           'public' => 'public',
           'sharestream' => 0,
           'youtube' => 0,
@@ -429,9 +430,8 @@ function jpec_person_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 2,
       ),
     ),
@@ -653,6 +653,7 @@ function jpec_person_field_default_field_instances() {
   t('Office');
   t('Phone');
   t('Title');
+  t('Upload the image with dimensions 200x200 px.');
 
   return $field_instances;
 }

@@ -17,6 +17,13 @@ function jpec_person_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function jpec_person_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_custom_breadcrumb_features_default_settings().
  */
 function jpec_person_custom_breadcrumb_features_default_settings() {
@@ -26,7 +33,7 @@ function jpec_person_custom_breadcrumb_features_default_settings() {
   $custom_breadcrumbs['person_node'] = array(
     'name' => 'Person node',
     'titles' => 'Faculty/Staff Directory',
-    'paths' => 'people',
+    'paths' => 'faculty-staff',
     'visibility_php' => '',
     'node_type' => 'person',
     'language' => '',
@@ -52,4 +59,21 @@ function jpec_person_node_info() {
   );
   drupal_alter('node_info', $items);
   return $items;
+}
+
+/**
+ * Implements hook_weight_features_default_settings().
+ */
+function jpec_person_weight_features_default_settings() {
+  $settings = array();
+
+  $settings['person'] = array(
+    'enabled' => 1,
+    'range' => 10,
+    'menu_weight' => 0,
+    'default' => 1,
+    'sync_translations' => 0,
+  );
+
+  return $settings;
 }
