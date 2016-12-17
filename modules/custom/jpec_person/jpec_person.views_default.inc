@@ -72,7 +72,7 @@ function jpec_person_views_default_views() {
   $handler->display->display_options['filters']['field_person_categories_tid']['vocabulary'] = 'person_categories';
 
   /* Display: Staff */
-  $handler = $view->new_display('page', 'Staff', 'page');
+  $handler = $view->new_display('page', 'Staff', 'staff_page');
   $handler->display->display_options['path'] = 'faculty-staff/staff';
   $handler->display->display_options['menu']['type'] = 'default tab';
   $handler->display->display_options['menu']['title'] = 'Staff';
@@ -84,7 +84,7 @@ function jpec_person_views_default_views() {
   $handler->display->display_options['tab_options']['weight'] = '0';
 
   /* Display: Lecturers */
-  $handler = $view->new_display('page', 'Lecturers', 'page_1');
+  $handler = $view->new_display('page', 'Lecturers', 'lecturers_page');
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Content: Last name (field_person_lname) */
   $handler->display->display_options['sorts']['field_person_lname_value']['id'] = 'field_person_lname_value';
@@ -125,7 +125,7 @@ function jpec_person_views_default_views() {
   $handler->display->display_options['tab_options']['weight'] = '0';
 
   /* Display: Advisory Council */
-  $handler = $view->new_display('page', 'Advisory Council', 'page_2');
+  $handler = $view->new_display('page', 'Advisory Council', 'advisory_council_page');
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -140,6 +140,8 @@ function jpec_person_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['field_person_title']['id'] = 'field_person_title';
   $handler->display->display_options['fields']['field_person_title']['table'] = 'field_data_field_person_title';
