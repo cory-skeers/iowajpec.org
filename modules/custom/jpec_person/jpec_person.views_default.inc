@@ -69,6 +69,7 @@ function jpec_person_views_default_views() {
   $handler->display->display_options['filters']['field_person_categories_tid']['value'] = array(
     0 => '55',
   );
+  $handler->display->display_options['filters']['field_person_categories_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_person_categories_tid']['vocabulary'] = 'person_categories';
 
   /* Display: Staff */
@@ -113,6 +114,7 @@ function jpec_person_views_default_views() {
   $handler->display->display_options['filters']['field_person_categories_tid']['value'] = array(
     0 => '56',
   );
+  $handler->display->display_options['filters']['field_person_categories_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_person_categories_tid']['vocabulary'] = 'person_categories';
   $handler->display->display_options['path'] = 'faculty-staff/lecturers';
   $handler->display->display_options['menu']['type'] = 'tab';
@@ -176,6 +178,7 @@ function jpec_person_views_default_views() {
   $handler->display->display_options['filters']['field_person_categories_tid']['value'] = array(
     0 => '57',
   );
+  $handler->display->display_options['filters']['field_person_categories_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_person_categories_tid']['vocabulary'] = 'person_categories';
   $handler->display->display_options['path'] = 'faculty-staff/advisory-council';
   $handler->display->display_options['menu']['type'] = 'tab';
