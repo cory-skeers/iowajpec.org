@@ -53,17 +53,7 @@ function jpec_core_form_node_form_alter(&$form, &$form_state, $form_id) {
           'callback' => 'jpec_core_story_reference_dropdown_callback',
           'wrapper' => 'field-header-story-wrapper',
         ),
-      );
-
-
-// story reference content block
-      //dpm($form);
-      // $form['field_story_featured_profile_ref'][LANGUAGE_NONE] += array(
-      //   '#ajax' => array(
-      //     'callback' => 'jpec_core_featured_story_reference_dropdown_callback',
-      //     'wrapper' => 'field-story-featured-story-ref-wrapper',
-      //   ),
-      // );      
+      );    
 
       $form['field_header_story'][LANGUAGE_NONE]['#options'] = _jpec_core_story_reference_dropdown($selected, $form_state);
       $form['field_header_story']['#prefix'] = '<div id="field-header-story-wrapper">';
