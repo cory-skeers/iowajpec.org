@@ -21,6 +21,13 @@ function jpec_events_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 7,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'list',
@@ -71,6 +78,12 @@ function jpec_events_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -146,6 +159,12 @@ function jpec_events_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'Start typing the audience, then select from the dropdown list. If no tag is found, keep typing, and the new tag will be created.',
     'display' => array(
+      'card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 11,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'taxonomy',
@@ -201,6 +220,12 @@ function jpec_events_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'text',
@@ -283,6 +308,20 @@ function jpec_events_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'hidden',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'competition_event',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => 0,
+        ),
+        'type' => 'date_default',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'date',
@@ -374,6 +413,20 @@ function jpec_events_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'hidden',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'full',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => 0,
+        ),
+        'type' => 'date_default',
+        'weight' => 5,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'date',
@@ -454,6 +507,13 @@ function jpec_events_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 4,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'list',
@@ -504,6 +564,21 @@ function jpec_events_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'hidden',
+        'module' => 'timefield',
+        'settings' => array(
+          'display_format' => array(
+            'hour' => 'g',
+            'minute' => 'i',
+            'period' => 'a',
+            'period_separator' => '',
+            'separator' => ':',
+          ),
+        ),
+        'type' => 'timefield_default',
+        'weight' => 6,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'timefield',
@@ -589,6 +664,13 @@ function jpec_events_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'Enter a valid webpage URL.',
     'display' => array(
+      'card' => array(
+        'label' => 'hidden',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_plain',
+        'weight' => 9,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'link',
@@ -663,6 +745,12 @@ function jpec_events_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'list',
@@ -713,6 +801,12 @@ function jpec_events_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'image',
@@ -816,6 +910,13 @@ function jpec_events_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'hidden',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_title_plain',
+        'weight' => 2,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'link',
@@ -887,6 +988,13 @@ function jpec_events_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -963,6 +1071,21 @@ function jpec_events_field_default_field_instances() {
     'deleted' => 0,
     'description' => ' ',
     'display' => array(
+      'card' => array(
+        'label' => 'hidden',
+        'module' => 'timefield',
+        'settings' => array(
+          'display_format' => array(
+            'hour' => 'g',
+            'minute' => 'i',
+            'period' => 'a',
+            'period_separator' => ' ',
+            'separator' => ':',
+          ),
+        ),
+        'type' => 'timefield_default',
+        'weight' => 1,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'timefield',
@@ -1066,6 +1189,13 @@ function jpec_events_field_default_field_instances() {
     'deleted' => 0,
     'description' => 'Start typing the form\'s title, then select an existing form from the list.',
     'display' => array(
+      'card' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(),
+        'type' => 'entityreference_entity_id',
+        'weight' => 8,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'entityreference',
