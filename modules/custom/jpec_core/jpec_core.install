@@ -614,3 +614,12 @@ function jpec_core_update_7030() {
     taxonomy_term_save($new_term);
   }
 }
+
+/**
+ * Enable jpec_competition feature
+ */
+function jpec_core_update_7031() {
+  if (!module_exists('jpec_competition')) {
+    module_enable(array('jpec_competition'));
+  }
+}
