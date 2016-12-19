@@ -257,6 +257,17 @@ function jpec_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create competition content'.
+  $permissions['create competition content'] = array(
+    'name' => 'create competition content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create drupal users'.
   $permissions['create drupal users'] = array(
     'name' => 'create drupal users',
@@ -407,6 +418,16 @@ function jpec_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any competition content'.
+  $permissions['delete any competition content'] = array(
+    'name' => 'delete any competition content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any document files'.
   $permissions['delete any document files'] = array(
     'name' => 'delete any document files',
@@ -520,6 +541,17 @@ function jpec_roles_user_default_permissions() {
   // Exported permission: 'delete own card_content content'.
   $permissions['delete own card_content content'] = array(
     'name' => 'delete own card_content content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own competition content'.
+  $permissions['delete own competition content'] = array(
+    'name' => 'delete own competition content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -763,6 +795,16 @@ function jpec_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any competition content'.
+  $permissions['edit any competition content'] = array(
+    'name' => 'edit any competition content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any document files'.
   $permissions['edit any document files'] = array(
     'name' => 'edit any document files',
@@ -899,6 +941,17 @@ function jpec_roles_user_default_permissions() {
   // Exported permission: 'edit own card_content content'.
   $permissions['edit own card_content content'] = array(
     'name' => 'edit own card_content content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own competition content'.
+  $permissions['edit own competition content'] = array(
+    'name' => 'edit own competition content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
