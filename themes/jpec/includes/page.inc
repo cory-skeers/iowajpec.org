@@ -133,6 +133,29 @@ function jpec_preprocess_page(&$variables) {
  
     switch ($variables['node']->type) {
 
+      case 'competition':
+
+        // Add generic tall-image class for layout.
+        $variables['header_classes_array'][] = 'short-image';
+        if (!empty($variables['node']->field_section_title)) {
+
+          // Reset the title to the page title field.
+          $variables['title'] = $wrapper->field_page_title->value();
+
+          // Add section_title field.
+          $variables['section_title'] = $wrapper->field_section_title->value();
+        }
+        $header_image = $wrapper->field_header_image_short->value();
+
+          if (!empty($header_image)) {
+
+            $header_image_url = image_style_url('short_header', $header_image['uri']);
+
+            $variables['header_attributes_array']['style'][] = 'background:url(' . $header_image_url . ') no-repeat center center';
+          }
+
+        break; 
+
       case 'page':
 
         if (!empty($variables['node']->field_section_title)) {

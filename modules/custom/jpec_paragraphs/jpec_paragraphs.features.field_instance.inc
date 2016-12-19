@@ -1102,6 +1102,52 @@ function jpec_paragraphs_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'paragraphs_item-event_reference-field_event_reference_event'.
+  $field_instances['paragraphs_item-event_reference-field_event_reference_event'] = array(
+    'bundle' => 'event_reference',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => 0,
+          'use_content_language' => 1,
+          'view_mode' => 'card',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 0,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_event_reference_event',
+    'label' => 'Event',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance:
   // 'paragraphs_item-factoids-field_factoids_factoid_ref'.
   $field_instances['paragraphs_item-factoids-field_factoids_factoid_ref'] = array(
     'bundle' => 'factoids',
@@ -1894,6 +1940,7 @@ function jpec_paragraphs_field_default_field_instances() {
   t('Container Style');
   t('Container style');
   t('Description');
+  t('Event');
   t('Facebook Page Name');
   t('Factoid');
   t('Image');
