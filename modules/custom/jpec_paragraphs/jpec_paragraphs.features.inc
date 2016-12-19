@@ -28,6 +28,11 @@ function jpec_paragraphs_paragraphs_info() {
       'bundle' => 'card',
       'locked' => '1',
     ),
+    'event_reference' => array(
+      'name' => 'Event reference',
+      'bundle' => 'event_reference',
+      'locked' => '1',
+    ),
     'factoids' => array(
       'name' => 'Factoids',
       'bundle' => 'factoids',
