@@ -9552,6 +9552,44 @@ table.table-condensed th, table.table-condensed td {
   .featured-event .field-name-field-event-body {
     margin-top: 1rem; }
 
+.node-event-card .field-name-field-event-date {
+  font-family: BlenderProBold;
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 1; }
+
+.node-event-card h3 {
+  padding: 0;
+  margin-bottom: 0; }
+
+.node-event-card a.primary-button, .node-event-card a.btn-primary, .node-event-card body.maintenance-page .form-actions a.btn:first-child, body.maintenance-page .form-actions .node-event-card a.btn:first-child, .node-event-card body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .node-event-card .media-widget > a:first-child, .node-event-card .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .node-event-card a, .node-event-card .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .node-event-card a, .node-event-card .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .node-event-card a, .node-event-card .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .node-event-card a, .node-event-card .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .node-event-card a {
+  margin-top: 1rem; }
+
+.node-event-card .field-name-field-event-location,
+.node-event-card .field-name-field-event-time,
+.node-event-card .field-name-field-event-deadline,
+.node-event-card .field-name-field-event-deadline-text {
+  display: inline-block; }
+
+.node-event-card .field-name-field-event-date {
+  font-family: BlenderProBold;
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 1; }
+
+.node-event-card h3 {
+  padding: 0;
+  margin-bottom: 0; }
+
+.node-event-card a.primary-button, .node-event-card a.btn-primary, .node-event-card body.maintenance-page .form-actions a.btn:first-child, body.maintenance-page .form-actions .node-event-card a.btn:first-child, .node-event-card body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .node-event-card .media-widget > a:first-child, .node-event-card .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .node-event-card a, .node-event-card .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .node-event-card a, .node-event-card .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .node-event-card a, .node-event-card .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .node-event-card a, .node-event-card .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .node-event-card a {
+  margin-top: 1rem; }
+
+.node-event-card .field-name-field-event-location,
+.node-event-card .field-name-field-event-time,
+.node-event-card .field-name-field-event-deadline,
+.node-event-card .field-name-field-event-deadline-text {
+  display: inline-block; }
+
 .page-events .views-row {
   padding: 0.5rem 1.7rem; }
   .page-events .views-row h4 {
@@ -10769,6 +10807,34 @@ ol.megamenu-column {
     .paragraphs-item-card .field-type-entityreference > .field-items > .field-item {
       width: 31%;
       margin: 10px; } }
+
+.entity-paragraphs-item.paragraphs-item-event-reference {
+  padding: 0; }
+
+.paragraphs-item-event-reference .content.container, .paragraphs-item-event-reference .page-node-done .content.region, .page-node-done .paragraphs-item-event-reference .content.region, .paragraphs-item-event-reference .page-founders-club .content.view-founders-club-profiles, .page-founders-club .paragraphs-item-event-reference .content.view-founders-club-profiles, .paragraphs-item-event-reference .page-faculty-staff .content.view-faculty-staff, .page-faculty-staff .paragraphs-item-event-reference .content.view-faculty-staff, .paragraphs-item-event-reference .page-user .content.region-content, .page-user .paragraphs-item-event-reference .content.region-content {
+  padding-top: 0; }
+
+.paragraphs-item-event-reference .event_container .next, .paragraphs-item-event-reference .event_container .event {
+  width: 100%;
+  padding: 1rem 2rem; }
+  .paragraphs-item-event-reference .event_container .next h3, .paragraphs-item-event-reference .event_container .event h3 {
+    margin-bottom: 0; }
+
+@media (min-width: 768px) {
+  .paragraphs-item-event-reference .event_container {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px; }
+    .paragraphs-item-event-reference .event_container .next {
+      width: 30%; }
+    .paragraphs-item-event-reference .event_container .event {
+      width: 70%; } }
 
 .paragraphs-item-factoids {
   background-color: #00A1C6;

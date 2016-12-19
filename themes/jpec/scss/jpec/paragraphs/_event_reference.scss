@@ -1,0 +1,32 @@
+.entity-paragraphs-item.paragraphs-item-event-reference {
+  padding: 0;
+
+}
+.paragraphs-item-event-reference { 
+  .content.container {
+    padding-top: 0;
+  }
+
+  .event_container {
+    .next, .event {
+      width: 100%;
+      padding: 1rem 2rem;
+      h3 {
+        margin-bottom: 0;
+      }
+    }
+    //flexbox on larger screens
+    @include breakpoint(min-width $screen-sm-min) {
+      @include flexbox();
+      flex-wrap: wrap;
+      margin-left: -10px;
+      margin-right: -10px;
+      .next {
+        width: 30%;
+      }
+      .event {
+        width: 70%;
+      }
+    }
+  }
+}
