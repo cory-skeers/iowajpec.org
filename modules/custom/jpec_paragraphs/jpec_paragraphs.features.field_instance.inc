@@ -1704,7 +1704,7 @@ function jpec_paragraphs_field_default_field_instances() {
     'default_value' => array(
       0 => array(
         'vname' => 'story|story_featured_pane',
-        'vargs' => '[paragraphs_item:field-story-featured-story-ref:nid]',
+        'vargs' => '[paragraphs_item:field-story-featured-story:nid]',
       ),
     ),
     'deleted' => 0,
@@ -1733,9 +1733,19 @@ function jpec_paragraphs_field_default_field_instances() {
         'admin_views_file' => 0,
         'admin_views_node' => 0,
         'admin_views_user' => 0,
+        'calendar' => 0,
+        'faculty_staff' => 0,
+        'fieldable_pane_entities' => 0,
+        'fieldable_pane_entity_revisions' => 0,
+        'founders_club_profiles' => 0,
         'jpec_media_browser' => 0,
         'media_browser_plus_folders' => 0,
+        'news' => 0,
         'story' => 'story',
+        'webform_results' => 0,
+        'webform_submissions' => 0,
+        'webform_webforms' => 0,
+        'weight' => 0,
       ),
       'force_default' => 1,
       'user_register_form' => FALSE,
@@ -1750,8 +1760,8 @@ function jpec_paragraphs_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-story_featured-field_story_featured_profile_ref'.
-  $field_instances['paragraphs_item-story_featured-field_story_featured_profile_ref'] = array(
+  // 'paragraphs_item-story_featured-field_story_featured_story'.
+  $field_instances['paragraphs_item-story_featured-field_story_featured_story'] = array(
     'bundle' => 'story_featured',
     'default_value' => NULL,
     'deleted' => 0,
@@ -1761,10 +1771,12 @@ function jpec_paragraphs_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => 1,
+          'links' => 0,
+          'use_content_language' => 1,
+          'view_mode' => 'full',
         ),
-        'type' => 'entityreference_label',
-        'weight' => 1,
+        'type' => 'entityreference_entity_view',
+        'weight' => 5,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -1774,8 +1786,8 @@ function jpec_paragraphs_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_story_featured_profile_ref',
-    'label' => 'Profile',
+    'field_name' => 'field_story_featured_story',
+    'label' => 'Story Reference',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1785,47 +1797,7 @@ function jpec_paragraphs_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 0,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'paragraphs_item-story_featured-field_story_featured_story_ref'.
-  $field_instances['paragraphs_item-story_featured-field_story_featured_story_ref'] = array(
-    'bundle' => 'story_featured',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 2,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_story_featured_story_ref',
-    'label' => 'Story',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(
-        'fields' => array(),
-        'type_settings' => array(),
-      ),
-      'type' => 'options_select',
-      'weight' => 1,
+      'weight' => 4,
     ),
   );
 
@@ -1950,9 +1922,8 @@ function jpec_paragraphs_field_default_field_instances() {
   t('Link will be displayed as a button below the factoids.');
   t('Please add 3 factoids.');
   t('Please add up to 3 content cards.');
-  t('Profile');
   t('Provide a URL, used to link to related content.');
-  t('Story');
+  t('Story Reference');
   t('Story view');
   t('Supply a 585x585px image which will have enough contrast with a white text overlay. This image is optional.');
   t('Supply a 585x585px image.');
