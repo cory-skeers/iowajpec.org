@@ -15,7 +15,8 @@
     font-family: BlenderProMedium;
     @include fontsize(1.7);
     line-height: 1.1;
-    color: $blue;
+    color: $orange;
+    margin-bottom: 1.5rem;
   }
 
   .field-name-field-person-categories {

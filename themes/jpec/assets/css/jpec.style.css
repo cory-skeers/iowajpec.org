@@ -10183,7 +10183,8 @@ table.table-condensed th, table.table-condensed td {
   font-family: BlenderProMedium;
   font-size: 1.7rem;
   line-height: 1.1;
-  color: #00A1C6; }
+  color: #FE5E00;
+  margin-bottom: 1.5rem; }
 
 .node-type-person .field-name-field-person-categories {
   margin-top: 1.2rem;
@@ -10250,7 +10251,8 @@ table.table-condensed th, table.table-condensed td {
   font-family: BlenderProMedium;
   font-size: 1.7rem;
   line-height: 1.1;
-  color: #00A1C6; }
+  color: #FE5E00;
+  margin-bottom: 1.5rem; }
 
 .node-type-person .field-name-field-person-categories {
   margin-top: 1.2rem;
