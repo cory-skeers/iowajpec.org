@@ -143,13 +143,79 @@ function jpec_story_views_default_views() {
   $handler->display->display_options['argument_input'] = array(
     'nid' => array(
       'type' => 'context',
-      'context' => 'node_edit_form.field-header-story',
+      'context' => 'entity:paragraphs_item.field-story-featured-story',
       'context_optional' => 0,
       'panel' => '0',
       'fixed' => '',
       'label' => 'Content: Nid',
     ),
   );
+
+  /* Display: Story Entity Reference */
+  $handler = $view->new_display('entityreference', 'Story Entity Reference', 'story_entityreference');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'entityreference_style';
+  $handler->display->display_options['style_options']['search_fields'] = array(
+    'field_profile_fname' => 'field_profile_fname',
+    'field_profile_lname' => 'field_profile_lname',
+    'title' => 'title',
+  );
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'entityreference_fields';
+  $handler->display->display_options['row_options']['inline'] = array(
+    'field_profile_fname' => 'field_profile_fname',
+    'field_profile_lname' => 'field_profile_lname',
+  );
+  $handler->display->display_options['row_options']['separator'] = '';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Entity Reference: Referencing entity */
+  $handler->display->display_options['relationships']['reverse_field_profile_stories_node']['id'] = 'reverse_field_profile_stories_node';
+  $handler->display->display_options['relationships']['reverse_field_profile_stories_node']['table'] = 'node';
+  $handler->display->display_options['relationships']['reverse_field_profile_stories_node']['field'] = 'reverse_field_profile_stories_node';
+  $handler->display->display_options['relationships']['reverse_field_profile_stories_node']['required'] = TRUE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: First name */
+  $handler->display->display_options['fields']['field_profile_fname']['id'] = 'field_profile_fname';
+  $handler->display->display_options['fields']['field_profile_fname']['table'] = 'field_data_field_profile_fname';
+  $handler->display->display_options['fields']['field_profile_fname']['field'] = 'field_profile_fname';
+  $handler->display->display_options['fields']['field_profile_fname']['relationship'] = 'reverse_field_profile_stories_node';
+  $handler->display->display_options['fields']['field_profile_fname']['label'] = '';
+  $handler->display->display_options['fields']['field_profile_fname']['element_label_colon'] = FALSE;
+  /* Field: Content: Last name */
+  $handler->display->display_options['fields']['field_profile_lname']['id'] = 'field_profile_lname';
+  $handler->display->display_options['fields']['field_profile_lname']['table'] = 'field_data_field_profile_lname';
+  $handler->display->display_options['fields']['field_profile_lname']['field'] = 'field_profile_lname';
+  $handler->display->display_options['fields']['field_profile_lname']['relationship'] = 'reverse_field_profile_stories_node';
+  $handler->display->display_options['fields']['field_profile_lname']['label'] = '';
+  $handler->display->display_options['fields']['field_profile_lname']['element_label_colon'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type_1']['id'] = 'type_1';
+  $handler->display->display_options['filters']['type_1']['table'] = 'node';
+  $handler->display->display_options['filters']['type_1']['field'] = 'type';
+  $handler->display->display_options['filters']['type_1']['value'] = array(
+    'story' => 'story',
+  );
+  $handler->display->display_options['filters']['type_1']['group'] = 1;
   $export['story'] = $view;
 
   return $export;
