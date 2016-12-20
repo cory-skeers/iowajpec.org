@@ -1,6 +1,6 @@
 .paragraphs-item-factoids {
-  background-color: $blue;
-  padding: 2rem 0;
+  background-color: $gold;
+  padding: 1rem 0;
 
   .field-name-field-factoids-link {
     a {
@@ -10,7 +10,6 @@
 
   h2 .field-name-field-factoids-title {
     @include fontsize(2.5);
-    color: $white;
   }
 
   .field-name-field-factoids-factoid-ref > .field-items {

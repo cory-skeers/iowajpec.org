@@ -9702,33 +9702,28 @@ table.table-condensed th, table.table-condensed td {
   width: 380px; }
 
 .node-factoid-teaser {
-  padding: 30px; }
-  .node-factoid-teaser h3.node-title {
-    font-family: FranklinGothicMedium;
-    color: #FFFFFF;
-    font-weight: normal;
-    font-size: 1.2rem; }
-
-.node-factoid-teaser {
   padding: 1rem;
   background-color: transparent; }
   .node-factoid-teaser .field-name-field-factoids-link a {
     display: inline-block;
     margin-top: 2rem; }
   .node-factoid-teaser .field-name-field-body {
-    color: #FFFFFF;
     font-family: FranklinGothicBookItalic; }
-  .node-factoid-teaser .field-name-field-factoid-image {
-    text-align: left; }
-    .node-factoid-teaser .field-name-field-factoid-image img {
-      width: 200px;
-      height: auto;
-      margin: 15px 0; }
+  .node-factoid-teaser .field-name-field-factoid-number {
+    font-size: 9rem;
+    color: #FE5E00;
+    margin: 0;
+    line-height: 0.8;
+    letter-spacing: 0.1px;
+    font-family: BlenderProMedium; }
+  .node-factoid-teaser h3.node-title {
+    font-family: FranklinGothicMedium;
+    font-weight: normal;
+    font-size: 1.2rem; }
   .node-factoid-teaser h4 {
     font-family: FranklinGothicMedium;
     font-size: 1.2rem;
-    line-height: 1;
-    color: #FFFFFF; }
+    line-height: 1; }
 
 .node-factoid-card .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source a {
   font-size: 0.9rem;
@@ -9751,33 +9746,28 @@ table.table-condensed th, table.table-condensed td {
   width: 380px; }
 
 .node-factoid-teaser {
-  padding: 30px; }
-  .node-factoid-teaser h3.node-title {
-    font-family: FranklinGothicMedium;
-    color: #FFFFFF;
-    font-weight: normal;
-    font-size: 1.2rem; }
-
-.node-factoid-teaser {
   padding: 1rem;
   background-color: transparent; }
   .node-factoid-teaser .field-name-field-factoids-link a {
     display: inline-block;
     margin-top: 2rem; }
   .node-factoid-teaser .field-name-field-body {
-    color: #FFFFFF;
     font-family: FranklinGothicBookItalic; }
-  .node-factoid-teaser .field-name-field-factoid-image {
-    text-align: left; }
-    .node-factoid-teaser .field-name-field-factoid-image img {
-      width: 200px;
-      height: auto;
-      margin: 15px 0; }
+  .node-factoid-teaser .field-name-field-factoid-number {
+    font-size: 9rem;
+    color: #FE5E00;
+    margin: 0;
+    line-height: 0.8;
+    letter-spacing: 0.1px;
+    font-family: BlenderProMedium; }
+  .node-factoid-teaser h3.node-title {
+    font-family: FranklinGothicMedium;
+    font-weight: normal;
+    font-size: 1.2rem; }
   .node-factoid-teaser h4 {
     font-family: FranklinGothicMedium;
     font-size: 1.2rem;
-    line-height: 1;
-    color: #FFFFFF; }
+    line-height: 1; }
 
 .node-type-founders-profile h2 {
   color: #FE5E00; }
@@ -10814,11 +10804,10 @@ ol.megamenu-column {
       width: 70%; } }
 
 .paragraphs-item-factoids {
-  background-color: #00A1C6;
-  padding: 2rem 0; }
+  background-color: #FFCD00;
+  padding: 1rem 0; }
   .paragraphs-item-factoids h2 .field-name-field-factoids-title {
-    font-size: 2.5rem;
-    color: #FFFFFF; }
+    font-size: 2.5rem; }
   @media (min-width: 768px) {
     .paragraphs-item-factoids .field-name-field-factoids-factoid-ref > .field-items {
       display: -moz-flex;
