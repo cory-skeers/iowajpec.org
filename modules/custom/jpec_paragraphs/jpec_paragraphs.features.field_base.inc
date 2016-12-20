@@ -679,13 +679,13 @@ function jpec_paragraphs_field_default_field_bases() {
     'type' => 'cp_list',
   );
 
-  // Exported field_base: 'field_story_featured_profile_ref'.
-  $field_bases['field_story_featured_profile_ref'] = array(
+  // Exported field_base: 'field_story_featured_story'.
+  $field_bases['field_story_featured_story'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_story_featured_profile_ref',
+    'field_name' => 'field_story_featured_story',
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -694,53 +694,17 @@ function jpec_paragraphs_field_default_field_bases() {
     'locked' => 0,
     'module' => 'entityreference',
     'settings' => array(
-      'handler' => 'base',
+      'handler' => 'views',
       'handler_settings' => array(
         'behaviors' => array(
           'views-select-list' => array(
             'status' => 0,
           ),
         ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'profile' => 'profile',
-        ),
-      ),
-      'target_type' => 'node',
-    ),
-    'translatable' => 0,
-    'type' => 'entityreference',
-  );
-
-  // Exported field_base: 'field_story_featured_story_ref'.
-  $field_bases['field_story_featured_story_ref'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_story_featured_story_ref',
-    'indexes' => array(
-      'target_id' => array(
-        0 => 'target_id',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'entityreference',
-    'settings' => array(
-      'handler' => 'base',
-      'handler_settings' => array(
-        'behaviors' => array(
-          'views-select-list' => array(
-            'status' => 1,
-          ),
-        ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'story' => 'story',
+        'view' => array(
+          'args' => array(),
+          'display_name' => 'story_entityreference',
+          'view_name' => 'story',
         ),
       ),
       'target_type' => 'node',
