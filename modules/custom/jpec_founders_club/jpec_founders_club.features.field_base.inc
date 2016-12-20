@@ -224,27 +224,6 @@ function jpec_founders_club_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_fp_student_date'.
-  $field_bases['field_fp_student_date'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_fp_student_date',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
   // Exported field_base: 'field_fp_student_degree'.
   $field_bases['field_fp_student_degree'] = array(
     'active' => 1,
