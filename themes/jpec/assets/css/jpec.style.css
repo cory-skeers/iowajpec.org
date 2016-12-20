@@ -8716,7 +8716,8 @@ h1, .h1 {
   font-size: 1.875rem;
   font-family: BlenderProBold;
   text-transform: uppercase;
-  line-height: 0.95; }
+  line-height: 0.95;
+  color: #FE5E00; }
   @media (min-width: 770px) {
     h1, .h1 {
       font-size: 3.4375rem; } }
@@ -10160,22 +10161,6 @@ table.table-condensed th, table.table-condensed td {
 .field-name-field-org-twitter .primary-button, .field-name-field-org-twitter .btn-primary, .field-name-field-org-twitter body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .field-name-field-org-twitter .btn:first-child, .field-name-field-org-twitter body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .field-name-field-org-twitter .media-widget > a:first-child, .field-name-field-org-twitter .page-google-search input.gsc-search-button, .page-google-search .field-name-field-org-twitter input.gsc-search-button, .field-name-field-org-twitter .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .field-name-field-org-twitter a, .field-name-field-org-twitter .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .field-name-field-org-twitter a, .field-name-field-org-twitter .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .field-name-field-org-twitter a, .field-name-field-org-twitter .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .field-name-field-org-twitter a, .field-name-field-org-twitter .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .field-name-field-org-twitter a {
   display: inline-block; }
 
-.field-name-field-leading-text {
-  padding: 35px 0 15px 0; }
-  .card-body .field-name-field-leading-text, .node-card_content-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-full .card-description-wrapper .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .card-wrapper .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-leading-text, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .card-description-wrapper .field-name-field-leading-text, .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper .field-name-field-leading-text, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper .field-name-field-leading-text {
-    padding: 0; }
-  @media (min-width: 1200px) {
-    .field-name-field-leading-text {
-      padding: 0; } }
-
-.field-name-field-leading-text {
-  padding: 35px 0 15px 0; }
-  .card-body .field-name-field-leading-text, .node-card_content-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-full .card-description-wrapper .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .card-wrapper .field-name-field-leading-text, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .field-name-field-leading-text, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .card-description-wrapper .field-name-field-leading-text, .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper .field-name-field-leading-text, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper .field-name-field-leading-text, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper .field-name-field-leading-text, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper .field-name-field-leading-text {
-    padding: 0; }
-  @media (min-width: 1200px) {
-    .field-name-field-leading-text {
-      padding: 0; } }
-
 .node-type-person .node-person-full {
   padding-bottom: 2rem; }
 
@@ -10927,10 +10912,7 @@ ol.megamenu-column {
   max-width: 100%; }
 
 .page-header .container, .page-header .page-node-done .region, .page-node-done .page-header .region, .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .page-header .view-founders-club-profiles, .page-header .page-people-directory .view-faculty-staff, .page-people-directory .page-header .view-faculty-staff, .page-header .page-user .region-content, .page-user .page-header .region-content {
-  padding: 1.5rem;
-  background-image: url(../images/header_lines.png);
-  background-repeat: no-repeat;
-  background-position: 20px -30px; }
+  padding: 1.5rem; }
   @media (min-width: 1200px) {
     .page-header .container, .page-header .page-node-done .region, .page-node-done .page-header .region, .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .page-header .view-founders-club-profiles, .page-header .page-people-directory .view-faculty-staff, .page-people-directory .page-header .view-faculty-staff, .page-header .page-user .region-content, .page-user .page-header .region-content {
       padding: 1rem 5rem; } }
