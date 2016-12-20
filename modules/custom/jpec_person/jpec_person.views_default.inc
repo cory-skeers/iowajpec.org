@@ -22,7 +22,7 @@ function jpec_person_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Faculty and staff directory';
+  $handler->display->display_options['title'] = 'People directory';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -74,14 +74,14 @@ function jpec_person_views_default_views() {
 
   /* Display: Staff */
   $handler = $view->new_display('page', 'Staff', 'staff_page');
-  $handler->display->display_options['path'] = 'faculty-staff/staff';
+  $handler->display->display_options['path'] = 'people-directory/staff';
   $handler->display->display_options['menu']['type'] = 'default tab';
   $handler->display->display_options['menu']['title'] = 'Staff';
   $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['context'] = 0;
   $handler->display->display_options['menu']['context_only_inline'] = 0;
   $handler->display->display_options['tab_options']['type'] = 'normal';
-  $handler->display->display_options['tab_options']['title'] = 'Faculty/Staff';
+  $handler->display->display_options['tab_options']['title'] = 'People directory';
   $handler->display->display_options['tab_options']['weight'] = '0';
 
   /* Display: Lecturers */
@@ -116,7 +116,7 @@ function jpec_person_views_default_views() {
   );
   $handler->display->display_options['filters']['field_person_categories_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_person_categories_tid']['vocabulary'] = 'person_categories';
-  $handler->display->display_options['path'] = 'faculty-staff/lecturers';
+  $handler->display->display_options['path'] = 'people-directory/lecturers';
   $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Lecturers';
   $handler->display->display_options['menu']['weight'] = '1';
@@ -180,7 +180,7 @@ function jpec_person_views_default_views() {
   );
   $handler->display->display_options['filters']['field_person_categories_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_person_categories_tid']['vocabulary'] = 'person_categories';
-  $handler->display->display_options['path'] = 'faculty-staff/advisory-council';
+  $handler->display->display_options['path'] = 'people-directory/advisory-council';
   $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Advisory Council';
   $handler->display->display_options['menu']['weight'] = '2';
