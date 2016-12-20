@@ -161,7 +161,7 @@
               <?php print l(t('Competitions'), 'tba');?>
             </li>
             <li>
-              <?php print l(t('Staff Directory'), 'faculty-staff');?>
+              <?php print l(t('People Directory'), 'people-directory');?>
             </li>           
             <li>
               <?php print l(t('Contact Us'), 'contact-us');?>

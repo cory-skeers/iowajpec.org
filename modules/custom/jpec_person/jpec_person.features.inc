@@ -32,8 +32,8 @@ function jpec_person_custom_breadcrumb_features_default_settings() {
   // Exported custom breadcrumb: person_node.
   $custom_breadcrumbs['person_node'] = array(
     'name' => 'Person node',
-    'titles' => 'Faculty/Staff Directory',
-    'paths' => 'faculty-staff',
+    'titles' => 'People Directory',
+    'paths' => 'people-directory',
     'visibility_php' => '',
     'node_type' => 'person',
     'language' => '',

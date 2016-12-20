@@ -19,6 +19,7 @@ h1, .h1 {
   font-family: BlenderProBold;
   text-transform: uppercase;
   line-height: 0.95;
+  color: $orange;
 
   @include breakpoint($bp-font-size-medium) {
     @include fontsize(3.4375);

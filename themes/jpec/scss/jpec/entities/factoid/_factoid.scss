@@ -35,12 +35,37 @@
   @extend .node-factoid-card;
   width: 380px;
 }
+
 .node-factoid-teaser {
-  padding: 30px;
+  padding: 1rem;
+  background-color: transparent;
+
+  .field-name-field-factoids-link a {
+    @extend .primary-button;
+    display: inline-block;
+    margin-top: 2rem;
+  }
+  .field-name-field-body {
+    //color: $white;
+    font-family: FranklinGothicBookItalic;
+  }
+  .field-name-field-factoid-number {
+    @include fontsize(9);
+    color: $orange;
+    margin: 0;
+    line-height: 0.8;
+    letter-spacing: 0.1px;
+    font-family: BlenderProMedium;
+  }
   h3.node-title {
     font-family: FranklinGothicMedium;
-    color: $white;
     font-weight: normal;
     @include fontsize(1.2);
   }
+  h4 {
+    font-family: FranklinGothicMedium;
+    @include fontsize(1.2);
+    line-height: 1;
+    //color: $white;
+  }    
 }

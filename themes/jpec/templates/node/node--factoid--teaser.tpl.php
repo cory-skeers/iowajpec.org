@@ -14,7 +14,7 @@
 <article class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div class="content"<?php print $content_attributes; ?>>
 
-    <?php print render($content['field_factoid_image']); ?>
+    <?php print render($content['field_factoid_number']); ?>
 
     <div class="card-description-wrapper">
       <?php

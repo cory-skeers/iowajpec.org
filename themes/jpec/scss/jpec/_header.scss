@@ -18,9 +18,9 @@ $header_padding: 1.5rem;
     @include breakpoint($tippie-lg-min) {
       padding: 1rem 5rem;
     }
-    background-image: url(../images/header_lines.png);
-    background-repeat: no-repeat;
-    background-position: 20px -30px;
+    // background-image: url(../images/header_lines.png);
+    // background-repeat: no-repeat;
+    // background-position: 20px -30px;
   }
 
   .header-content {
@@ -61,13 +61,6 @@ $header_padding: 1.5rem;
     @include breakpoint($tippie-md) {
       margin: 1rem 0 0 0;
       width: 65%;
-      // h1 {
-      //   @include fontsize(2.5); 
-      // }
-      // .custom-text {
-      //   @include fontsize(1.5);
-      //   line-height: 2rem;
-      // }
     } 
 
     // fix overflow issues on small screens (768px - 992 px)

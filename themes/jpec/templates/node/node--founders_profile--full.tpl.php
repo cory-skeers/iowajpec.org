@@ -10,6 +10,10 @@
  *
  * @ingroup themeable
  */
+$location = 1;
+if (empty($content['field_founders_profile_location'])) {
+  $location = 0;
+};
 ?>
 
     <?php
@@ -48,7 +52,7 @@
           
           <?php print render($content); ?>
 
-          <?php if (!empty($content['field_founders_profile_location']) && $content['field_founders_profile_location'] != ''):?>
+          <?php if ($location): ?>
             <h3>Office</h3>
             <?php print render($content['field_founders_profile_location']); ?>
           <?php endif; ?>

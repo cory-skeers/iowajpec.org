@@ -11,63 +11,6 @@ function jpec_founders_club_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
-  // 'field_collection_item-field_founders_profile_student-field_fp_student_date'.
-  $field_instances['field_collection_item-field_founders_profile_student-field_fp_student_date'] = array(
-    'bundle' => 'field_founders_profile_student',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_plain',
-        'weight' => 2,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_fp_student_date',
-    'label' => 'Estimated graduation date',
-    'required' => 0,
-    'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'filtered_html' => 'filtered_html',
-          'full_html' => 'full_html',
-          'plain_text' => 'plain_text',
-        ),
-        'allowed_formats_toggle' => 0,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'filtered_html' => array(
-              'weight' => -10,
-            ),
-            'full_html' => array(
-              'weight' => -9,
-            ),
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-          ),
-        ),
-      ),
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance:
   // 'field_collection_item-field_founders_profile_student-field_fp_student_degree'.
   $field_instances['field_collection_item-field_founders_profile_student-field_fp_student_degree'] = array(
     'bundle' => 'field_founders_profile_student',
@@ -85,7 +28,7 @@ function jpec_founders_club_field_default_field_instances() {
     ),
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_fp_student_degree',
-    'label' => 'Degree',
+    'label' => 'Degree, estimated graduation date',
     'required' => 0,
     'settings' => array(
       'better_formats' => array(
@@ -838,10 +781,9 @@ function jpec_founders_club_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Category');
-  t('Degree');
+  t('Degree, estimated graduation date');
   t('Description');
   t('Email');
-  t('Estimated graduation date');
   t('Facebook URL');
   t('Image');
   t('Name');
