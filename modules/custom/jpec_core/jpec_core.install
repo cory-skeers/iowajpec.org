@@ -632,3 +632,12 @@ function jpec_core_update_7032() {
     module_enable(array('jpec_competitions'));
   }
 }
+
+/**
+ * Delete field_fp_student_date, field_factoid_image field
+*/
+function jpec_core_update_7033() {
+  field_delete_field('field_fp_student_date');
+  field_delete_field('field_factoid_image');
+  field_purge_batch(2);
+}
