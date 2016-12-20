@@ -191,6 +191,17 @@ function jpec_roles_user_default_permissions() {
     'module' => 'role_delegation',
   );
 
+  // Exported permission: 'assign node weight'.
+  $permissions['assign node weight'] = array(
+    'name' => 'assign node weight',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'weight',
+  );
+
   // Exported permission: 'assign webmaster role'.
   $permissions['assign webmaster role'] = array(
     'name' => 'assign webmaster role',
@@ -1156,6 +1167,17 @@ function jpec_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'schedule webforms'.
+  $permissions['schedule webforms'] = array(
+    'name' => 'schedule webforms',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'webform_scheduler',
   );
 
   // Exported permission: 'select account cancellation method'.
