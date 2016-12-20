@@ -9785,11 +9785,6 @@ table.table-condensed th, table.table-condensed td {
   float: left;
   margin-right: 2rem; }
 
-.node-type-founders-profile .field-name-field-fp-student-degree, .node-type-founders-profile .field-name-field-fp-student-date {
-  display: inline; }
-  .node-type-founders-profile .field-name-field-fp-student-degree div, .node-type-founders-profile .field-name-field-fp-student-date div {
-    display: inline; }
-
 .page-founders-club .view-founders-club-profiles .views-row {
   background-color: #EBE7E3;
   padding: 0.5rem 2rem 0 2rem;
@@ -9801,11 +9796,6 @@ table.table-condensed th, table.table-condensed td {
 .node-type-founders-profile .field-name-field-card-image {
   float: left;
   margin-right: 2rem; }
-
-.node-type-founders-profile .field-name-field-fp-student-degree, .node-type-founders-profile .field-name-field-fp-student-date {
-  display: inline; }
-  .node-type-founders-profile .field-name-field-fp-student-degree div, .node-type-founders-profile .field-name-field-fp-student-date div {
-    display: inline; }
 
 .page-founders-club .view-founders-club-profiles .views-row {
   background-color: #EBE7E3;
