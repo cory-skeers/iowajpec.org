@@ -10331,6 +10331,10 @@ table.table-condensed th, table.table-condensed td {
     .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item {
       margin: 0 1rem;
       background-color: transparent; }
+      .view-display-id-story_featured_pane .border-wrapper .card-wrapper h3, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item h3 {
+        color: #FE5E00;
+        text-transform: uppercase;
+        font-family: BlenderProBold; }
     @media (min-width: 768px) {
       .view-display-id-story_featured_pane .border-wrapper img {
         float: left;
@@ -10380,6 +10384,10 @@ table.table-condensed th, table.table-condensed td {
     .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item {
       margin: 0 1rem;
       background-color: transparent; }
+      .view-display-id-story_featured_pane .border-wrapper .card-wrapper h3, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item h3 {
+        color: #FE5E00;
+        text-transform: uppercase;
+        font-family: BlenderProBold; }
     @media (min-width: 768px) {
       .view-display-id-story_featured_pane .border-wrapper img {
         float: left;

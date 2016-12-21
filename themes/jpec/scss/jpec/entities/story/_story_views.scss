@@ -48,6 +48,11 @@ $cardBodyPadding: 1.5rem;
       position: relative;    
     }
     .card-wrapper {
+      h3 {
+        color: $orange;
+        text-transform: uppercase;
+        font-family: BlenderProBold;
+      }
       @extend .card-body;
       margin: 0 1rem;
       background-color: transparent;
