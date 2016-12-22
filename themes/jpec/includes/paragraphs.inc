@@ -105,6 +105,15 @@ function jpec_preprocess_entity(&$variables) {
         }
         break;
 
+      case 'social':
+        // hide  the news view if the field_show_news is FALSE
+        $show_news = $wrapper->field_social_show_news->value();
+
+        if (empty($show_news) || $show_news == 0) {
+          hide($variables['content']['field_social_news_view']);
+        }
+        break;
+
       default:
         break;
     }
