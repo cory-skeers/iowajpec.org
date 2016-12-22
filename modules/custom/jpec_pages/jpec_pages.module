@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the JPEC Pages feature.
+ */
+
+include_once 'jpec_pages.features.inc';
