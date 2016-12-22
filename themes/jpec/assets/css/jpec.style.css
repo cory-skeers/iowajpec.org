@@ -8728,7 +8728,8 @@ h1, .h1 {
 h2, .h2, .modal-title {
   font-size: 1.875rem;
   font-family: BlenderProMedium;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  text-transform: uppercase; }
   @media (min-width: 770px) {
     h2, .h2, .modal-title {
       font-size: 2.25rem; } }
@@ -10858,7 +10859,7 @@ ol.megamenu-column {
     margin-top: 1rem; }
   .paragraphs-item-social .content .social-card i {
     margin-right: 0.5rem; }
-  .paragraphs-item-social .content .social-card .view-mba-events .views-field-text-2 {
+  .paragraphs-item-social .content .social-card .view-display-id-events_social_block .views-field-title {
     font-family: FranklinGothicMedium;
     margin-bottom: 1rem; }
   .paragraphs-item-social .content .social-card .view-news .views-field-title {
