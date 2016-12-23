@@ -62,15 +62,14 @@ function jpec_person_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'person' => 'person',
   );
-  /* Filter criterion: Content: Category (field_person_categories) */
-  $handler->display->display_options['filters']['field_person_categories_tid']['id'] = 'field_person_categories_tid';
-  $handler->display->display_options['filters']['field_person_categories_tid']['table'] = 'field_data_field_person_categories';
-  $handler->display->display_options['filters']['field_person_categories_tid']['field'] = 'field_person_categories_tid';
-  $handler->display->display_options['filters']['field_person_categories_tid']['value'] = array(
-    0 => '55',
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Category (field_person_category) */
+  $handler->display->display_options['filters']['field_person_category_value']['id'] = 'field_person_category_value';
+  $handler->display->display_options['filters']['field_person_category_value']['table'] = 'field_data_field_person_category';
+  $handler->display->display_options['filters']['field_person_category_value']['field'] = 'field_person_category_value';
+  $handler->display->display_options['filters']['field_person_category_value']['value'] = array(
+    'staff' => 'staff',
   );
-  $handler->display->display_options['filters']['field_person_categories_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_person_categories_tid']['vocabulary'] = 'person_categories';
 
   /* Display: Staff */
   $handler = $view->new_display('page', 'Staff', 'staff_page');
@@ -107,15 +106,14 @@ function jpec_person_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'person' => 'person',
   );
-  /* Filter criterion: Content: Category (field_person_categories) */
-  $handler->display->display_options['filters']['field_person_categories_tid']['id'] = 'field_person_categories_tid';
-  $handler->display->display_options['filters']['field_person_categories_tid']['table'] = 'field_data_field_person_categories';
-  $handler->display->display_options['filters']['field_person_categories_tid']['field'] = 'field_person_categories_tid';
-  $handler->display->display_options['filters']['field_person_categories_tid']['value'] = array(
-    0 => '56',
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Category (field_person_category) */
+  $handler->display->display_options['filters']['field_person_category_value']['id'] = 'field_person_category_value';
+  $handler->display->display_options['filters']['field_person_category_value']['table'] = 'field_data_field_person_category';
+  $handler->display->display_options['filters']['field_person_category_value']['field'] = 'field_person_category_value';
+  $handler->display->display_options['filters']['field_person_category_value']['value'] = array(
+    'lecturer' => 'lecturer',
   );
-  $handler->display->display_options['filters']['field_person_categories_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_person_categories_tid']['vocabulary'] = 'person_categories';
   $handler->display->display_options['path'] = 'people-directory/lecturers';
   $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Lecturers';
@@ -171,15 +169,14 @@ function jpec_person_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'person' => 'person',
   );
-  /* Filter criterion: Content: Category (field_person_categories) */
-  $handler->display->display_options['filters']['field_person_categories_tid']['id'] = 'field_person_categories_tid';
-  $handler->display->display_options['filters']['field_person_categories_tid']['table'] = 'field_data_field_person_categories';
-  $handler->display->display_options['filters']['field_person_categories_tid']['field'] = 'field_person_categories_tid';
-  $handler->display->display_options['filters']['field_person_categories_tid']['value'] = array(
-    0 => '57',
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Category (field_person_category) */
+  $handler->display->display_options['filters']['field_person_category_value']['id'] = 'field_person_category_value';
+  $handler->display->display_options['filters']['field_person_category_value']['table'] = 'field_data_field_person_category';
+  $handler->display->display_options['filters']['field_person_category_value']['field'] = 'field_person_category_value';
+  $handler->display->display_options['filters']['field_person_category_value']['value'] = array(
+    'advisory_council' => 'advisory_council',
   );
-  $handler->display->display_options['filters']['field_person_categories_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_person_categories_tid']['vocabulary'] = 'person_categories';
   $handler->display->display_options['path'] = 'people-directory/advisory-council';
   $handler->display->display_options['menu']['type'] = 'tab';
   $handler->display->display_options['menu']['title'] = 'Advisory Council';
