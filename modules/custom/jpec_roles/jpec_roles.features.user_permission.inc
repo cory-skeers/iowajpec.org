@@ -729,13 +729,6 @@ function jpec_roles_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: 'delete terms in person_categories'.
-  $permissions['delete terms in person_categories'] = array(
-    'name' => 'delete terms in person_categories',
-    'roles' => array(),
-    'module' => 'taxonomy',
-  );
-
   // Exported permission: 'delete terms in stories'.
   $permissions['delete terms in stories'] = array(
     'name' => 'delete terms in stories',
@@ -1118,13 +1111,6 @@ function jpec_roles_user_default_permissions() {
       'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'edit terms in person_categories'.
-  $permissions['edit terms in person_categories'] = array(
-    'name' => 'edit terms in person_categories',
-    'roles' => array(),
     'module' => 'taxonomy',
   );
 
