@@ -41,3 +41,11 @@ function jpec_person_update_7001() {
   field_delete_field('field_person_category');
   field_purge_batch(1);
 }
+
+/**
+ * Delete field_person_category field
+*/
+function jpec_person_update_7002() {
+  field_delete_field('field_person_categories');
+  field_purge_batch(1);
+}
