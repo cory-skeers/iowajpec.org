@@ -53,7 +53,12 @@ function jpec_competitions_field_group_info() {
       0 => 'field_section_title',
       1 => 'field_page_title',
       2 => 'field_header_image_short',
-      3 => 'title',
+      3 => 'field_header_type',
+      4 => 'field_header_image_tall',
+      5 => 'field_header_custom_text',
+      6 => 'field_header_profile',
+      7 => 'field_header_story',
+      8 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
