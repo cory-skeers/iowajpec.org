@@ -641,3 +641,12 @@ function jpec_core_update_7033() {
   field_delete_field('field_factoid_image');
   field_purge_batch(2);
 }
+
+/**
+ * Enable jpec_pages feature
+ */
+function jpec_core_update_7034() {
+  if (!module_exists('jpec_pages')) {
+    module_enable(array('jpec_pages'));
+  }
+}

@@ -49,6 +49,7 @@ function jpec_preprocess_field(&$variables) {
       $variables['classes_array'][] = 'field-description';
       break;
 
+    case 'field_social_events':
     case 'field_twitter_username':
     case 'field_facebook_page_name': 
       $variables['classes_array'][] = 'social-card';

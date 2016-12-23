@@ -28,7 +28,8 @@ function jpec_news_field_group_info() {
       2 => 'field_news_body',
       3 => 'field_news_source',
       4 => 'field_tags',
-      5 => 'title',
+      5 => 'field_news_featured',
+      6 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

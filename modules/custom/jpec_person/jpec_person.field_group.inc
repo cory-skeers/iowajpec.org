@@ -86,7 +86,8 @@ function jpec_person_field_group_info() {
       2 => 'field_person_lname',
       3 => 'field_person_title',
       4 => 'field_person_categories',
-      5 => 'title',
+      5 => 'field_person_category',
+      6 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

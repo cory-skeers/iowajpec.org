@@ -41,6 +41,12 @@ function jpec_news_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'ical' => array(
+        'custom_settings' => FALSE,
+      ),
+      'diff_standard' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -65,11 +71,15 @@ function jpec_news_strongarm() {
             'visible' => FALSE,
           ),
           'featured' => array(
-            'weight' => '0',
-            'visible' => TRUE,
+            'weight' => '5',
+            'visible' => FALSE,
           ),
           'card' => array(
             'weight' => '0',
+            'visible' => FALSE,
+          ),
+          'teaser' => array(
+            'weight' => '3',
             'visible' => FALSE,
           ),
         ),

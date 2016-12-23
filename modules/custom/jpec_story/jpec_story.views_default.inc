@@ -140,6 +140,81 @@ function jpec_story_views_default_views() {
 
   /* Display: Featured Story Pane */
   $handler = $view->new_display('panel_pane', 'Featured Story Pane', 'story_featured_pane');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Field: Content: Show link to full profile */
+  $handler->display->display_options['fields']['field_story_show_link']['id'] = 'field_story_show_link';
+  $handler->display->display_options['fields']['field_story_show_link']['table'] = 'field_data_field_story_show_link';
+  $handler->display->display_options['fields']['field_story_show_link']['field'] = 'field_story_show_link';
+  $handler->display->display_options['fields']['field_story_show_link']['relationship'] = 'field_profile_stories_target_id';
+  $handler->display->display_options['fields']['field_story_show_link']['label'] = '';
+  $handler->display->display_options['fields']['field_story_show_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_story_show_link']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_story_show_link']['alter']['text'] = '<a href="[path]" class="primary-button">Read Story</a>';
+  $handler->display->display_options['fields']['field_story_show_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_story_show_link']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_story_show_link']['empty_zero'] = TRUE;
+  $handler->display->display_options['fields']['field_story_show_link']['type'] = 'list_key';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Header */
+  $handler->display->display_options['fields']['field_story_header']['id'] = 'field_story_header';
+  $handler->display->display_options['fields']['field_story_header']['table'] = 'field_data_field_story_header';
+  $handler->display->display_options['fields']['field_story_header']['field'] = 'field_story_header';
+  $handler->display->display_options['fields']['field_story_header']['relationship'] = 'field_profile_stories_target_id';
+  $handler->display->display_options['fields']['field_story_header']['label'] = '';
+  $handler->display->display_options['fields']['field_story_header']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_story_header']['element_label_colon'] = FALSE;
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_profile_image']['id'] = 'field_profile_image';
+  $handler->display->display_options['fields']['field_profile_image']['table'] = 'field_data_field_profile_image';
+  $handler->display->display_options['fields']['field_profile_image']['field'] = 'field_profile_image';
+  $handler->display->display_options['fields']['field_profile_image']['label'] = '';
+  $handler->display->display_options['fields']['field_profile_image']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_profile_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_profile_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_profile_image']['settings'] = array(
+    'image_style' => 'square_290x290',
+    'image_link' => '',
+  );
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['field_story_quote']['id'] = 'field_story_quote';
+  $handler->display->display_options['fields']['field_story_quote']['table'] = 'field_data_field_story_quote';
+  $handler->display->display_options['fields']['field_story_quote']['field'] = 'field_story_quote';
+  $handler->display->display_options['fields']['field_story_quote']['relationship'] = 'field_profile_stories_target_id';
+  $handler->display->display_options['fields']['field_story_quote']['label'] = '';
+  $handler->display->display_options['fields']['field_story_quote']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_story_quote']['element_label_colon'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="border-wrapper">
+<div class="image-wrapper">
+[field_profile_image]
+</div>
+<div class="card-wrapper">
+<h3>[field_story_header]</h3>
+[field_story_quote]
+[field_story_show_link]
+</div>
+</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['argument_input'] = array(
     'nid' => array(
       'type' => 'context',

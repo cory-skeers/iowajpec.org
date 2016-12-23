@@ -74,12 +74,6 @@ function jpec_paragraphs_inline_entity_form_table_fields_alter(&$fields, $contex
     'formatter' => 'file_rendered',
     'settings' => array('file_view_mode' => 'teaser'),
   );
-
-  switch ($context['field_name']) {
-    case 'field_factoids_factoid_ref':
-      $fields['field_factoid_image'] = $image_field_info;
-      break;
-  }
 }
 
 /**

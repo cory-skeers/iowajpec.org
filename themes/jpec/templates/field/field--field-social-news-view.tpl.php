@@ -44,7 +44,6 @@
  * @ingroup themeable
  */
 ?>
-<?php if (!empty($items[0]['#view_arguments'])):?>
 
   <div class="card-wrapper <?php print $classes; ?> social-card"<?php print $attributes; ?>>
     <?php if (!$label_hidden): ?>
@@ -59,4 +58,3 @@
       <?php print l(t('See All News'), 'news', array('attributes' => array('class' => 'primary-button')));?>
     </div>
   </div>
-<?php endif; ?>

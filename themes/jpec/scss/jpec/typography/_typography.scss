@@ -34,6 +34,7 @@ h2, .h2 {
   @include fontsize(1.875);
   font-family: BlenderProMedium;
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
 
   @include breakpoint($bp-font-size-medium) {
     @include fontsize(2.25);

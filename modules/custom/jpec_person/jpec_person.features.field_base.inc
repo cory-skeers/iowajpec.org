@@ -76,6 +76,32 @@ function jpec_person_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
+  // Exported field_base: 'field_person_category'.
+  $field_bases['field_person_category'] = array(
+    'active' => 1,
+    'cardinality' => 3,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_person_category',
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        'staff' => 'Staff',
+        'lecturer' => 'Lecturer',
+        'advisory_council' => 'Advisory Council',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_text',
+  );
+
   // Exported field_base: 'field_person_education'.
   $field_bases['field_person_education'] = array(
     'active' => 1,

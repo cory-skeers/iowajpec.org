@@ -1586,7 +1586,7 @@ function jpec_paragraphs_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 3,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -1597,7 +1597,7 @@ function jpec_paragraphs_field_default_field_instances() {
     ),
     'entity_type' => 'paragraphs_item',
     'field_name' => 'field_facebook_page_name',
-    'label' => 'Facebook Page Name',
+    'label' => 'Facebook page name',
     'required' => 0,
     'settings' => array(
       'better_formats' => array(
@@ -1632,6 +1632,207 @@ function jpec_paragraphs_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-social-field_social_event_tag'.
+  $field_instances['paragraphs_item-social-field_social_event_tag'] = array(
+    'bundle' => 'social',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select the audience tag. Only events with this tag will be displayed. Type \'all\' if all events should be displayed.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_social_event_tag',
+    'label' => 'Event tag',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-social-field_social_events'.
+  $field_instances['paragraphs_item-social-field_social_events'] = array(
+    'bundle' => 'social',
+    'default_value' => array(
+      0 => array(
+        'vname' => 'calendar|events_social_block',
+        'vargs' => '[paragraphs_item:field_social_event_tag]',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'viewfield',
+        'settings' => array(),
+        'type' => 'viewfield_default',
+        'weight' => 0,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_social_events',
+    'label' => 'Events',
+    'required' => 0,
+    'settings' => array(
+      'allowed_views' => array(
+        'admin_views_file' => 0,
+        'admin_views_node' => 0,
+        'admin_views_user' => 0,
+        'calendar' => 'calendar',
+        'faculty_staff' => 0,
+        'fieldable_pane_entities' => 0,
+        'fieldable_pane_entity_revisions' => 0,
+        'founders_club_profiles' => 0,
+        'jpec_media_browser' => 0,
+        'media_browser_plus_folders' => 0,
+        'news' => 0,
+        'story' => 0,
+        'webform_results' => 0,
+        'webform_submissions' => 0,
+        'webform_webforms' => 0,
+        'weight' => 0,
+      ),
+      'force_default' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'viewfield',
+      'settings' => array(),
+      'type' => 'viewfield_select',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-social-field_social_news_view'.
+  $field_instances['paragraphs_item-social-field_social_news_view'] = array(
+    'bundle' => 'social',
+    'default_value' => array(
+      0 => array(
+        'vname' => 'news|social_news_block',
+        'vargs' => '',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'viewfield',
+        'settings' => array(),
+        'type' => 'viewfield_default',
+        'weight' => 1,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_social_news_view',
+    'label' => 'News',
+    'required' => 0,
+    'settings' => array(
+      'allowed_views' => array(
+        'admin_views_file' => 0,
+        'admin_views_node' => 0,
+        'admin_views_user' => 0,
+        'calendar' => 0,
+        'faculty_staff' => 0,
+        'fieldable_pane_entities' => 0,
+        'fieldable_pane_entity_revisions' => 0,
+        'founders_club_profiles' => 0,
+        'jpec_media_browser' => 0,
+        'media_browser_plus_folders' => 0,
+        'news' => 'news',
+        'story' => 0,
+        'webform_results' => 0,
+        'webform_submissions' => 0,
+        'webform_webforms' => 0,
+        'weight' => 0,
+      ),
+      'force_default' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'viewfield',
+      'settings' => array(),
+      'type' => 'viewfield_select',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-social-field_social_show_news'.
+  $field_instances['paragraphs_item-social-field_social_show_news'] = array(
+    'bundle' => 'social',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_social_show_news',
+    'label' => 'Show news',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
       'weight' => 2,
     ),
   );
@@ -1648,7 +1849,7 @@ function jpec_paragraphs_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 2,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -1659,7 +1860,7 @@ function jpec_paragraphs_field_default_field_instances() {
     ),
     'entity_type' => 'paragraphs_item',
     'field_name' => 'field_twitter_username',
-    'label' => 'Twitter Username',
+    'label' => 'Twitter username',
     'required' => 0,
     'settings' => array(
       'better_formats' => array(
@@ -1694,7 +1895,7 @@ function jpec_paragraphs_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 1,
+      'weight' => 4,
     ),
   );
 
@@ -1914,23 +2115,28 @@ function jpec_paragraphs_field_default_field_instances() {
   t('Container style');
   t('Description');
   t('Event');
-  t('Facebook Page Name');
+  t('Event tag');
+  t('Events');
+  t('Facebook page name');
   t('Factoid');
   t('Image');
   t('Image position');
   t('Image size');
   t('Link');
   t('Link will be displayed as a button below the factoids.');
+  t('News');
   t('Please add 3 factoids.');
   t('Please add up to 3 content cards.');
   t('Provide a URL, used to link to related content.');
+  t('Select the audience tag. Only events with this tag will be displayed. Type \'all\' if all events should be displayed.');
+  t('Show news');
   t('Story Reference');
   t('Story view');
   t('Supply a 585x585px image which will have enough contrast with a white text overlay. This image is optional.');
   t('Supply a 585x585px image.');
   t('Title');
   t('Title will be displayed above the factoids.');
-  t('Twitter Username');
+  t('Twitter username');
   t('URL');
 
   return $field_instances;

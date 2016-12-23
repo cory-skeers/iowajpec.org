@@ -8728,7 +8728,8 @@ h1, .h1 {
 h2, .h2, .modal-title {
   font-size: 1.875rem;
   font-family: BlenderProMedium;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  text-transform: uppercase; }
   @media (min-width: 770px) {
     h2, .h2, .modal-title {
       font-size: 2.25rem; } }
@@ -9822,14 +9823,11 @@ table.table-condensed th, table.table-condensed td {
       .node-type-news .page-header h1.title {
         font-size: 2.5rem; } }
 
-.field-name-field-news-date, .field-name-field-news-source {
-  font-family: BlenderProMedium;
-  font-style: italic;
-  font-size: 1.3rem; }
-
 .field-name-field-news-date {
-  font-family: BlenderProBold;
-  margin-top: 0.5rem; }
+  font-family: FranklinGothicDemi; }
+
+.field-name-field-news-image {
+  margin-bottom: 1.5rem; }
 
 .field-type-taxonomy-term-reference .field-label {
   font-family: FranklinGothicDemi;
@@ -9854,6 +9852,12 @@ table.table-condensed th, table.table-condensed td {
     font-weight: normal; }
   .field-type-taxonomy-term-reference .field-items .field-item a:hover {
     color: #00A1C6; }
+
+.page-news .view-filters {
+  margin-bottom: 2rem; }
+
+.page-news h4 {
+  margin-bottom: 0; }
 
 .view-display-id-featured_news {
   margin-bottom: 3rem; }
@@ -9938,14 +9942,11 @@ table.table-condensed th, table.table-condensed td {
       .node-type-news .page-header h1.title {
         font-size: 2.5rem; } }
 
-.field-name-field-news-date, .field-name-field-news-source {
-  font-family: BlenderProMedium;
-  font-style: italic;
-  font-size: 1.3rem; }
-
 .field-name-field-news-date {
-  font-family: BlenderProBold;
-  margin-top: 0.5rem; }
+  font-family: FranklinGothicDemi; }
+
+.field-name-field-news-image {
+  margin-bottom: 1.5rem; }
 
 .field-type-taxonomy-term-reference .field-label {
   font-family: FranklinGothicDemi;
@@ -9970,6 +9971,12 @@ table.table-condensed th, table.table-condensed td {
     font-weight: normal; }
   .field-type-taxonomy-term-reference .field-items .field-item a:hover {
     color: #00A1C6; }
+
+.page-news .view-filters {
+  margin-bottom: 2rem; }
+
+.page-news h4 {
+  margin-bottom: 0; }
 
 .view-display-id-featured_news {
   margin-bottom: 3rem; }
@@ -10331,6 +10338,10 @@ table.table-condensed th, table.table-condensed td {
     .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item {
       margin: 0 1rem;
       background-color: transparent; }
+      .view-display-id-story_featured_pane .border-wrapper .card-wrapper h3, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item h3 {
+        color: #FE5E00;
+        text-transform: uppercase;
+        font-family: BlenderProBold; }
     @media (min-width: 768px) {
       .view-display-id-story_featured_pane .border-wrapper img {
         float: left;
@@ -10380,6 +10391,10 @@ table.table-condensed th, table.table-condensed td {
     .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item {
       margin: 0 1rem;
       background-color: transparent; }
+      .view-display-id-story_featured_pane .border-wrapper .card-wrapper h3, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item h3 {
+        color: #FE5E00;
+        text-transform: uppercase;
+        font-family: BlenderProBold; }
     @media (min-width: 768px) {
       .view-display-id-story_featured_pane .border-wrapper img {
         float: left;
@@ -10850,7 +10865,7 @@ ol.megamenu-column {
     margin-top: 1rem; }
   .paragraphs-item-social .content .social-card i {
     margin-right: 0.5rem; }
-  .paragraphs-item-social .content .social-card .view-mba-events .views-field-text-2 {
+  .paragraphs-item-social .content .social-card .view-display-id-events_social_block .views-field-title {
     font-family: FranklinGothicMedium;
     margin-bottom: 1rem; }
   .paragraphs-item-social .content .social-card .view-news .views-field-title {
