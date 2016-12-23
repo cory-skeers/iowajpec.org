@@ -30,6 +30,7 @@ function jpec_core_form_node_form_alter(&$form, &$form_state, $form_id) {
 
   switch ($content_type) {
 
+    case 'competition':
     case 'page':
 
       // If there is a value from the 'values' form state (ajax).
