@@ -55,6 +55,24 @@ function jpec_preprocess_field(&$variables) {
       $variables['classes_array'][] = 'social-card';
       break;
 
+    case 'field_event_action_label':
+
+      $wrapper = entity_metadata_wrapper('node', $variables['element']['#object']);
+      // Get value of the event url field if there is one.
+      if (!empty($wrapper->field_event_url->value())) {
+        $form_id = $wrapper->field_event_url->value()->nid;
+        $form_url = '/node/' . $form_id;
+        $action_url = drupal_get_path_alias($form_url); 
+      }
+      else if (!empty($wrapper->field_event_external_url->value())) {
+        $form_url = $wrapper->field_event_external_url->value();
+        $action_url = $form_url['display_url']; 
+      }
+
+      $variables['items'][0]['#markup'] = '<a href="' . $action_url . '" class="primary-button">' . $variables['items'][0]['#markup'] . '</a>';
+
+      break;
+
     default:
       break;
   }

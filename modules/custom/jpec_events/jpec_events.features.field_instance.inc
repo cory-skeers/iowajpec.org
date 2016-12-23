@@ -666,9 +666,8 @@ function jpec_events_field_default_field_instances() {
     'display' => array(
       'card' => array(
         'label' => 'hidden',
-        'module' => 'link',
         'settings' => array(),
-        'type' => 'link_plain',
+        'type' => 'hidden',
         'weight' => 9,
       ),
       'default' => array(
@@ -686,9 +685,8 @@ function jpec_events_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'link',
         'settings' => array(),
-        'type' => 'link_plain',
+        'type' => 'hidden',
         'weight' => 11,
       ),
       'teaser' => array(
@@ -1191,9 +1189,8 @@ function jpec_events_field_default_field_instances() {
     'display' => array(
       'card' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
         'settings' => array(),
-        'type' => 'entityreference_entity_id',
+        'type' => 'hidden',
         'weight' => 8,
       ),
       'default' => array(
@@ -1213,9 +1210,8 @@ function jpec_events_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'entityreference',
         'settings' => array(),
-        'type' => 'entityreference_entity_id',
+        'type' => 'hidden',
         'weight' => 12,
       ),
       'teaser' => array(
