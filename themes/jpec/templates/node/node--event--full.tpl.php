@@ -14,7 +14,6 @@
 
     <?php
       // We hide the comments and links now so that we can render them later.
-      //hide($content['field_event_external_url']);
       hide($content['field_event_deadline_text']);
     ?>
 
@@ -37,25 +36,13 @@
               print '<br/>' . render($content['field_event_deadline_text']);
               print render($content['field_event_deadline']);
               print render($content['field_event_deadline_time']); 
-            }
-
-            $action_url = '';  
-
-            if (!empty($content['field_event_url']) && $content['field_event_url'] != '') {
-              $action_url = '/' . trim(render($content['field_event_url'])); 
-            }
-            else if (!empty($content['field_event_external_url']) && $content['field_event_external_url'] != '') { 
-              $action_url = render($content['field_event_external_url']); 
-            }   
-          ?>
-          
-           <?php 
-            if ($action_url != '') {
-              print '<br/><a href="' . $action_url . '" class="primary-button action">' . render($content['field_event_action_label']) . '</a>';
-            }
-           ?>
-           
+            }  
             
+            if (!empty($content['field_event_action_label'])) {
+              print render($content['field_event_action_label']); 
+            }
+          ?>
+                       
         </div>
       </div>
       <div class="row">  
