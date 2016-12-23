@@ -9570,8 +9570,12 @@ table.table-condensed th, table.table-condensed td {
 .node-event-card .field-name-field-event-location,
 .node-event-card .field-name-field-event-time,
 .node-event-card .field-name-field-event-deadline,
-.node-event-card .field-name-field-event-deadline-text {
+.node-event-card .field-name-field-event-deadline-text,
+.node-event-card .field-name-field-event-deadline-time {
   display: inline-block; }
+
+.node-event-card .field-name-field-event-room {
+  display: none; }
 
 .node-event-card .field-name-field-event-date {
   font-family: BlenderProBold;
@@ -9589,8 +9593,12 @@ table.table-condensed th, table.table-condensed td {
 .node-event-card .field-name-field-event-location,
 .node-event-card .field-name-field-event-time,
 .node-event-card .field-name-field-event-deadline,
-.node-event-card .field-name-field-event-deadline-text {
+.node-event-card .field-name-field-event-deadline-text,
+.node-event-card .field-name-field-event-deadline-time {
   display: inline-block; }
+
+.node-event-card .field-name-field-event-room {
+  display: none; }
 
 .page-events .views-row {
   padding: 0.5rem 1.7rem; }

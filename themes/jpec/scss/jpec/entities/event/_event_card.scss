@@ -14,10 +14,14 @@
   a.primary-button {
     margin-top: 1rem;
   }
-  .field-name-field-event-location, 
+  .field-name-field-event-location,
   .field-name-field-event-time,
   .field-name-field-event-deadline,
-  .field-name-field-event-deadline-text { 
+  .field-name-field-event-deadline-text ,
+  .field-name-field-event-deadline-time{ 
     display: inline-block;
+  }
+  .field-name-field-event-room {
+    display: none;
   }
 }
