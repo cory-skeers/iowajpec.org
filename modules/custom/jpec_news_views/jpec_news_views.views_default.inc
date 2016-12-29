@@ -92,6 +92,34 @@ function jpec_news_views_views_default_views() {
   /* Display: Related News Block */
   $handler = $view->new_display('block', 'Related News Block', 'related_news_block');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Taxonomy term: Term ID */
+  $handler->display->display_options['arguments']['tid']['id'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['arguments']['tid']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['relationship'] = 'field_tags_tid';
+  $handler->display->display_options['arguments']['tid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'taxonomy_tid';
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['term_page'] = FALSE;
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['node'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['anyall'] = '+';
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['limit'] = TRUE;
+  $handler->display->display_options['arguments']['tid']['default_argument_options']['vocabularies'] = array(
+    'news' => 'news',
+  );
+  $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['tid']['summary_options']['items_per_page'] = '25';
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['nid']['not'] = TRUE;
 
   /* Display: Featured News Pane */
   $handler = $view->new_display('panel_pane', 'Featured News Pane', 'featured_news_pane');
@@ -220,6 +248,14 @@ function jpec_news_views_views_default_views() {
   $handler->display->display_options['filters']['combine']['fields'] = array(
     'title' => 'title',
     'field_news_body' => 'field_news_body',
+  );
+  /* Filter criterion: Content: Featured (field_news_featured) */
+  $handler->display->display_options['filters']['field_news_featured_value']['id'] = 'field_news_featured_value';
+  $handler->display->display_options['filters']['field_news_featured_value']['table'] = 'field_data_field_news_featured';
+  $handler->display->display_options['filters']['field_news_featured_value']['field'] = 'field_news_featured_value';
+  $handler->display->display_options['filters']['field_news_featured_value']['operator'] = 'not';
+  $handler->display->display_options['filters']['field_news_featured_value']['value'] = array(
+    1 => '1',
   );
   $handler->display->display_options['inherit_panels_path'] = '1';
 
