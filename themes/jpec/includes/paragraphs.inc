@@ -5,12 +5,6 @@
  */
 
 /**
- * Implements hook_preprocess_paragraphs_items().
- */
-// function tippie_preprocess_paragraphs_items(&$variables) {
-// }
-
-/**
  * Implements hook_preprocess_entity().
  *
  * @see : https://www.drupal.org/node/2394519
@@ -87,6 +81,23 @@ function jpec_preprocess_entity(&$variables) {
 
         break;
 
+      case 'video':
+
+         if (!empty($variables['paragraphs_item']->field_video_position)) { 
+
+          // Set default text classes.
+          $variables['text_classes_array'] = array('paragraph-body', 'col-sm-6');            
+          // Set default video classes.
+          $variables['video_classes_array'] = array('paragraph-video', 'col-sm-6');
+          // If video is left, push and pull items in grid so they are flipped.
+          if ($variables['paragraphs_item']->field_video_position[LANGUAGE_NONE][0]['value'] == 'left') {
+            $variables['video_classes_array'][] = 'col-sm-pull-6';
+            $variables['text_classes_array'][] = 'col-sm-push-6';
+          }          
+        }
+
+        break;        
+
       case '2x2_feature':
 
         $image = $wrapper->field_2x2_image->value();
@@ -131,4 +142,9 @@ function jpec_process_entity(&$variables) {
     $variables['image_classes'] = implode(' ', $variables['image_classes_array']);
     $variables['text_classes'] = implode(' ', $variables['text_classes_array']);
   }
+  if ($variables['entity_type'] == 'paragraphs_item' && $variables['elements']['#bundle'] == 'video') {
+    // Flatten the image and text classes.
+    $variables['video_classes'] = implode(' ', $variables['video_classes_array']);
+    $variables['text_classes'] = implode(' ', $variables['text_classes_array']);
+  }  
 }
