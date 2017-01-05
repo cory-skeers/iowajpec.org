@@ -229,8 +229,8 @@ function jpec_paragraphs_field_group_info() {
     'label' => 'Tab group',
     'weight' => '0',
     'children' => array(
-      0 => 'group_image',
-      1 => 'group_content',
+      0 => 'group_content',
+      1 => 'group_image',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(

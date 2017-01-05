@@ -61,6 +61,11 @@ function jpec_paragraphs_paragraphs_info() {
       'bundle' => 'text_area',
       'locked' => '1',
     ),
+    'video' => array(
+      'name' => 'Video',
+      'bundle' => 'video',
+      'locked' => '1',
+    ),
   );
   return $items;
 }

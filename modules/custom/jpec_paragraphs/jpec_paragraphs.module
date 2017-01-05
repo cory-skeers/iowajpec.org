@@ -25,21 +25,7 @@ function jpec_paragraphs_field_widget_form_alter(&$element, &$form_state, $conte
 
       // Disable the token options.
       $element['token_help']['#access'] = FALSE;
-      break;
-
-    // // Up and Coming paragraph, news items view (by tag)
-    // case 'field_social_news_view':
-      
-    //   // Hide the views dropdown selector - the social_news_view is selected by default and doesn't need to be changed by user.
-    //   $element['vname']['#access'] = FALSE;    
-
-    //   // Customize the arguments selector - change the title and description.
-    //   $element['vargs']['#title'] = 'News Tag'; 
-    //   $element['vargs']['#description'] = 'Please enter a tag from the News Vocabulary to display the news items.'; 
-
-    //   // Disable the token options.
-    //   $element['token_help']['#access'] = FALSE;
-    //   break;            
+      break;            
     
     default:
       break;
@@ -58,22 +44,6 @@ function jpec_paragraphs_classy_paragraphs_list_options($options, $field, $insta
   }
 
   return $options;
-}
-
-/**
- * Implements hook_inline_entity_form_table_fields_alter().
- * Displays previews of factoid images in the Factoid Paragraph.
- */
-function jpec_paragraphs_inline_entity_form_table_fields_alter(&$fields, $context) {
-  // Alter inline entity form to include images.
-  
-  $image_field_info = array(
-    'type' => 'field',
-    'label' => t('Image'),
-    'weight' => 0,
-    'formatter' => 'file_rendered',
-    'settings' => array('file_view_mode' => 'teaser'),
-  );
 }
 
 /**
