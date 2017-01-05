@@ -11053,6 +11053,9 @@ ol.megamenu-column {
   background-color: #000000;
   color: #FFFFFF;
   font-size: 1rem; }
+  .primary-footer h2 {
+    color: #FFFFFF;
+    text-transform: none; }
   .primary-footer a {
     color: #f5f3f1;
     font-family: FranklinGothicBook; }

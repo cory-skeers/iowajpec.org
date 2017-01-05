@@ -21,7 +21,10 @@ $bp-subfooter-one-line: 1200px;
   background-color: #000000;
   color: $primary_footer_text;
   @include fontsize(1);
-
+  h2 {
+    color: $white;
+    text-transform: none;
+  }
   a {
     color: #f5f3f1;
     font-family: FranklinGothicBook;
