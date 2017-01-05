@@ -48,6 +48,7 @@ function jpec_competitions_field_default_field_instances() {
         'social' => -1,
         'story_featured' => -1,
         'text_area' => 'text_area',
+        'video' => 'video',
       ),
       'bundle_weights' => array(
         '2x2_feature' => -16,
@@ -58,6 +59,7 @@ function jpec_competitions_field_default_field_instances() {
         'social' => -13,
         'story_featured' => -12,
         'text_area' => -11,
+        'video' => 10,
       ),
       'default_edit_mode' => 'preview',
       'title' => 'Content block',
