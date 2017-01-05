@@ -1,0 +1,13 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall code for the JPEC Factoid feature.
+ */
+
+/**
+ * Delete field_factoid_source field again
+*/
+function jpec_factoid_update_7000() {
+  field_delete_field('field_factoid_source');
+  field_purge_batch(1);
+}
