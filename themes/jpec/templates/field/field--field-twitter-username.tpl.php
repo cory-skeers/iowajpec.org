@@ -54,7 +54,7 @@ Twitter</div>
         data-widget-id="717788956713037824"
         href="https://twitter.com/<?php print $screen_name; ?>"
         data-screen-name="<?php print $screen_name; ?>"
-        data-tweet-limit="1"
+        data-tweet-limit="4"
         data-chrome="noheader nofooter noborders noscrollbar transparent">
         Tweets by @<?php print $screen_name; ?>
       </a>
