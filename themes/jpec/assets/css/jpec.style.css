@@ -10554,6 +10554,9 @@ table.table-condensed th, table.table-condensed td {
       .block-jpec-megamenu .open .dropdown-menu {
         border: none; } }
 
+.dropdown-menu {
+  z-index: 3000; }
+
 ol.megamenu-column {
   list-style: none;
   padding-left: 0; }
