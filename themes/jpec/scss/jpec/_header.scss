@@ -25,8 +25,7 @@ $header_padding: 1.5rem;
 
   .header-content {
     padding: 1.5rem 0;
-    //@include triangle(contain);
-
+    z-index: 3000;
     @include breakpoint($tippie-lg-min) {
       width: 75%;
       margin: 1rem 0;
@@ -153,6 +152,29 @@ $header_padding: 1.5rem;
         left:0;
         right:0;
         bottom:0px;
+        z-index: 1000;
+      }
+    }
+
+    &.tall-image picture:after {
+  
+      @include breakpoint($tippie-sm-min) {
+        background: url(../images/yellow-double-lines.png);
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 0;
+        position: absolute;
+        top: -30px;
+        left: -60px;
+        display: block;
+        width: 310px;
+        height: 620px;
+        content: "";        
+      }
+      @include breakpoint($tippie-xl) { 
+        width: 250px;
+        height: 550px;
       }
     }
 

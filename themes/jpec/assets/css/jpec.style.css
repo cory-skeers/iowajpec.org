@@ -10946,7 +10946,8 @@ ol.megamenu-column {
       padding: 1rem 5rem; } }
 
 .page-header .header-content {
-  padding: 1.5rem 0; }
+  padding: 1.5rem 0;
+  z-index: 3000; }
   @media (min-width: 1200px) {
     .page-header .header-content {
       width: 75%;
@@ -11034,7 +11035,30 @@ ol.megamenu-column {
       top: 0;
       left: 0;
       right: 0;
-      bottom: 0px; }
+      bottom: 0px;
+      z-index: 1000; } }
+
+@media (min-width: 768px) and (min-width: 768px) {
+  .page-header.tall-image picture:after {
+    background: url(../images/yellow-double-lines.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    position: absolute;
+    top: -30px;
+    left: -60px;
+    display: block;
+    width: 310px;
+    height: 620px;
+    content: ""; } }
+
+@media (min-width: 768px) and (min-width: 1200px) and (max-width: 1430px) {
+  .page-header.tall-image picture:after {
+    width: 250px;
+    height: 550px; } }
+
+@media (min-width: 768px) {
   .page-header.tall-image-story .header-fields {
     display: block !important; }
   .page-header.tall-image-story .header-suffix {
