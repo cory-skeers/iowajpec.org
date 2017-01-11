@@ -28,7 +28,6 @@
 ?>
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <div class="content container"<?php print $content_attributes; ?>>
-    <h2>Up and coming</h2>
     <div class="social-wrapper">
       <?php print render($content); ?>
     </div>
