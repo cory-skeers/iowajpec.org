@@ -9781,9 +9781,9 @@ table.table-condensed th, table.table-condensed td {
 .node-type-founders-profile h2 {
   color: #FE5E00; }
 
-.node-type-founders-profile .field-name-field-card-image {
-  float: left;
-  margin-right: 2rem; }
+.node-type-founders-profile img {
+  width: 100%;
+  height: auto; }
 
 .page-founders-club .view-founders-club-profiles .views-row {
   background-color: #EBE7E3;
@@ -9793,9 +9793,9 @@ table.table-condensed th, table.table-condensed td {
 .node-type-founders-profile h2 {
   color: #FE5E00; }
 
-.node-type-founders-profile .field-name-field-card-image {
-  float: left;
-  margin-right: 2rem; }
+.node-type-founders-profile img {
+  width: 100%;
+  height: auto; }
 
 .page-founders-club .view-founders-club-profiles .views-row {
   background-color: #EBE7E3;
