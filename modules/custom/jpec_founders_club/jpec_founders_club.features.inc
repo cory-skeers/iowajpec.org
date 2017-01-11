@@ -44,6 +44,34 @@ function jpec_founders_club_custom_breadcrumb_features_default_settings() {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function jpec_founders_club_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: founders_club_image.
+  $styles['founders_club_image'] = array(
+    'label' => 'Founders club image',
+    'effects' => array(
+      3 => array(
+        'name' => 'manualcrop_crop_and_scale',
+        'data' => array(
+          'width' => 500,
+          'height' => 350,
+          'upscale' => 0,
+          'respectminimum' => 1,
+          'onlyscaleifcrop' => 0,
+          'style_name' => 'founders_club_image',
+        ),
+        'weight' => 0,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function jpec_founders_club_node_info() {

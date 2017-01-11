@@ -135,7 +135,7 @@ function jpec_founders_club_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'card_640x325',
+          'image_style' => 'founders_club_image',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -145,7 +145,7 @@ function jpec_founders_club_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'card_640x325',
+          'image_style' => 'founders_club_image',
         ),
         'type' => 'image',
         'weight' => 0,
@@ -168,7 +168,7 @@ function jpec_founders_club_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '4 MB',
       'max_resolution' => '2000x2000',
-      'min_resolution' => '640x325',
+      'min_resolution' => '500x350',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -183,10 +183,8 @@ function jpec_founders_club_field_default_field_instances() {
           'youtube' => 0,
         ),
         'allowed_types' => array(
-          'audio' => 0,
           'document' => 0,
           'image' => 'image',
-          'video' => 0,
         ),
         'browser_plugins' => array(
           'jpec_media_browser--media_browser_my_files' => 0,
@@ -203,10 +201,10 @@ function jpec_founders_club_field_default_field_instances() {
         'manualcrop_keyboard' => 1,
         'manualcrop_maximize_default_crop_area' => 0,
         'manualcrop_require_cropping' => array(
-          'card_640x325' => 'card_640x325',
+          'founders_club_image' => 'founders_club_image',
         ),
         'manualcrop_styles_list' => array(
-          'card_640x325' => 'card_640x325',
+          'founders_club_image' => 'founders_club_image',
         ),
         'manualcrop_styles_mode' => 'include',
         'manualcrop_thumblist' => 0,

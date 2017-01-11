@@ -61,7 +61,7 @@ function jpec_founders_club_views_default_views() {
   $handler->display->display_options['fields']['field_founders_profile_body']['label'] = '';
   $handler->display->display_options['fields']['field_founders_profile_body']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_founders_profile_body']['element_label_colon'] = FALSE;
-  /* Sort criterion: Content: Page Title (field_page_title) */
+  /* Sort criterion: Content: Page title (field_page_title) */
   $handler->display->display_options['sorts']['field_page_title_value']['id'] = 'field_page_title_value';
   $handler->display->display_options['sorts']['field_page_title_value']['table'] = 'field_data_field_page_title';
   $handler->display->display_options['sorts']['field_page_title_value']['field'] = 'field_page_title_value';
