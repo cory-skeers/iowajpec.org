@@ -11,7 +11,7 @@ function jpec_page_field_group_info() {
   $field_groups = array();
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_card|node|page|form';
   $field_group->group_name = 'group_card';
@@ -78,12 +78,12 @@ function jpec_page_field_group_info() {
     'label' => 'Header',
     'weight' => '0',
     'children' => array(
-      0 => 'field_header_type',
+      0 => 'field_header_custom_text',
       1 => 'field_header_image_short',
       2 => 'field_header_image_tall',
-      3 => 'field_header_custom_text',
-      4 => 'field_section_title',
-      5 => 'field_page_title',
+      3 => 'field_header_type',
+      4 => 'field_page_title',
+      5 => 'field_section_title',
       6 => 'field_header_profile',
       7 => 'field_header_story',
       8 => 'title',

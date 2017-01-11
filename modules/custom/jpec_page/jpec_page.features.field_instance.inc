@@ -10,103 +10,6 @@
 function jpec_page_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-page-field_card_image'.
-  $field_instances['node-page-field_card_image'] = array(
-    'bundle' => 'page',
-    'deleted' => 0,
-    'description' => 'Please select or upload the image that will be used in \'cards\' format, referenced from other pages. Dimensions should be equal or more than 640x325 px.',
-    'display' => array(
-      'card' => array(
-        'label' => 'hidden',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => 'card_640x325',
-        ),
-        'type' => 'image',
-        'weight' => 0,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => 'card_640x325',
-        ),
-        'type' => 'image',
-        'weight' => 0,
-      ),
-      'token' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_card_image',
-    'label' => 'Image',
-    'required' => 0,
-    'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => 'images/cards',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '4 MB',
-      'max_resolution' => '2000x2000',
-      'min_resolution' => '640x325',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'media',
-      'settings' => array(
-        'allowed_schemes' => array(
-          'public' => 'public',
-          'sharestream' => 0,
-          'youtube' => 0,
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 0,
-          'image' => 'image',
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'jpec_media_browser--media_browser_my_files' => 0,
-          'jpec_media_browser--media_browser_thumbnails' => 'jpec_media_browser--media_browser_thumbnails',
-          'media_internet' => 0,
-          'upload' => 'upload',
-        ),
-        'manualcrop_crop_info' => 1,
-        'manualcrop_default_crop_area' => 1,
-        'manualcrop_enable' => 1,
-        'manualcrop_inline_crop' => 0,
-        'manualcrop_instant_crop' => FALSE,
-        'manualcrop_instant_preview' => 1,
-        'manualcrop_keyboard' => 1,
-        'manualcrop_maximize_default_crop_area' => 0,
-        'manualcrop_require_cropping' => array(
-          'card_640x325' => 'card_640x325',
-        ),
-        'manualcrop_styles_list' => array(
-          'card_640x325' => 'card_640x325',
-        ),
-        'manualcrop_styles_mode' => 'include',
-        'manualcrop_thumblist' => 0,
-      ),
-      'type' => 'media_generic',
-      'weight' => 8,
-    ),
-  );
-
   // Exported field_instance: 'node-page-field_content_block'.
   $field_instances['node-page-field_content_block'] = array(
     'bundle' => 'page',
@@ -756,99 +659,17 @@ function jpec_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_summary'.
-  $field_instances['node-page-field_summary'] = array(
-    'bundle' => 'page',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'card' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'token' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 5,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_summary',
-    'label' => 'Summary',
-    'required' => 0,
-    'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'filtered_html' => 'filtered_html',
-          'full_html' => 0,
-          'imported_html' => 0,
-          'plain_text' => 0,
-        ),
-        'allowed_formats_toggle' => 1,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'filtered_html' => array(
-              'weight' => -10,
-            ),
-            'full_html' => array(
-              'weight' => -9,
-            ),
-            'imported_html' => array(
-              'weight' => -11,
-            ),
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-          ),
-        ),
-      ),
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 9,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Add an optional section title. This is shown in smaller text above the page title. E.g. "Professional MBA"');
   t('Content Block');
   t('Custom Text');
   t('Header Type');
-  t('Image');
   t('Page Title');
-  t('Please select or upload the image that will be used in \'cards\' format, referenced from other pages. Dimensions should be equal or more than 640x325 px.');
   t('Profile Reference');
   t('Section Title');
   t('Short Image');
   t('Story Reference');
-  t('Summary');
   t('Tall Image');
   t('Upload a 2000px by 290px image. Face should fit in to the area within 500px from the center of the image, preferably closer to the right edge.');
   t('Upload a 2000px by 700px image. Face should fit in to the area within 500px from the center of the image, preferably closer to the right edge. You will be required to specify a cropping selection for small screens.');
