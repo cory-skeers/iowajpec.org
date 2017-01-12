@@ -26,11 +26,6 @@
   <div class="content"<?php print $content_attributes; ?>>
     <div class="container">
       <div class="row">
-        <div class="col-md-2 col-md-offset-10 text-right">
-          <div align="right">
-            <?php print render($content['rrssb']); ?>
-          </div>
-        </div>
         <div class="col-md-12">  
           <?php print render($content); ?>
         </div>
