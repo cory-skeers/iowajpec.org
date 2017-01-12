@@ -63,13 +63,13 @@ function jpec_preprocess_page(&$variables) {
 
           $variables['header_fields']['custom_text'] = array(
             '#prefix' => '<span class="custom-text">',
-            '#markup' => $story->field_story_quote->value->value(),
+            '#markup' => $story->field_story_summary->value->value(),
             '#suffix' => '</span>',
           );
 
           $variables['header_suffix_fields']['custom_text'] = array(
             '#prefix' => '<span class="custom-text">',
-            '#markup' => $story->field_story_quote->value->value(),
+            '#markup' => $story->field_story_summary->value->value(),
             '#suffix' => '</span>',
           );
 
