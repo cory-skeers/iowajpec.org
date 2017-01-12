@@ -179,15 +179,15 @@ function jpec_story_views_default_views() {
   $handler->display->display_options['fields']['field_story_header']['label'] = '';
   $handler->display->display_options['fields']['field_story_header']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_story_header']['element_label_colon'] = FALSE;
-  /* Field: Content: Image */
-  $handler->display->display_options['fields']['field_profile_image']['id'] = 'field_profile_image';
-  $handler->display->display_options['fields']['field_profile_image']['table'] = 'field_data_field_profile_image';
-  $handler->display->display_options['fields']['field_profile_image']['field'] = 'field_profile_image';
-  $handler->display->display_options['fields']['field_profile_image']['label'] = '';
-  $handler->display->display_options['fields']['field_profile_image']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_profile_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_profile_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_profile_image']['settings'] = array(
+  /* Field: Content: Story image */
+  $handler->display->display_options['fields']['field_profile_story_image']['id'] = 'field_profile_story_image';
+  $handler->display->display_options['fields']['field_profile_story_image']['table'] = 'field_data_field_profile_story_image';
+  $handler->display->display_options['fields']['field_profile_story_image']['field'] = 'field_profile_story_image';
+  $handler->display->display_options['fields']['field_profile_story_image']['label'] = '';
+  $handler->display->display_options['fields']['field_profile_story_image']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_profile_story_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_profile_story_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_profile_story_image']['settings'] = array(
     'image_style' => 'square_290x290',
     'image_link' => '',
   );
@@ -206,7 +206,7 @@ function jpec_story_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="border-wrapper">
 <div class="image-wrapper">
-[field_profile_image]
+[field_profile_story_image]
 </div>
 <div class="card-wrapper">
 <h3>[field_story_header]</h3>
