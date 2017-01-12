@@ -10302,6 +10302,12 @@ table.table-condensed th, table.table-condensed td {
 .page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-field-person-title .field-content {
   padding-top: 5px; }
 
+.node-type-profile .page-header.tall-image {
+  min-height: 70px; }
+  @media (min-width: 768px) {
+    .node-type-profile .page-header.tall-image {
+      min-height: 300px; } }
+
 .node-type-profile .field-name-field-profile-subtitle {
   font-family: FranklinGothicDemi;
   line-height: 2.5; }
@@ -10354,6 +10360,12 @@ table.table-condensed th, table.table-condensed td {
       .view-display-id-story_featured_pane .border-wrapper img {
         float: left;
         width: auto; } }
+
+.node-type-profile .page-header.tall-image {
+  min-height: 70px; }
+  @media (min-width: 768px) {
+    .node-type-profile .page-header.tall-image {
+      min-height: 300px; } }
 
 .node-type-profile .field-name-field-profile-subtitle {
   font-family: FranklinGothicDemi;
@@ -11041,7 +11053,7 @@ ol.megamenu-column {
       bottom: 0px;
       z-index: 1000; } }
 
-@media (min-width: 768px) and (min-width: 768px) {
+@media (min-width: 768px) and (min-width: 992px) {
   .page-header.tall-image picture:after {
     background: url(../images/yellow-double-lines.png);
     background-position: left top;

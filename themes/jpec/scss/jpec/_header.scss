@@ -158,7 +158,7 @@ $header_padding: 1.5rem;
 
     &.tall-image picture:after {
   
-      @include breakpoint($tippie-sm-min) {
+      @include breakpoint($tippie-md-min) {
         background: url(../images/yellow-double-lines.png);
         background-position: left top;
         background-repeat: no-repeat;
