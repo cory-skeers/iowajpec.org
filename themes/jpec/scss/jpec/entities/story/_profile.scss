@@ -1,5 +1,11 @@
 .node-type-profile {
-
+  
+  .page-header.tall-image {
+    min-height: 70px;
+    @include breakpoint($tippie-sm-min) {
+      min-height: 300px;
+    }
+  }
   .field-name-field-profile-subtitle {
     font-family: FranklinGothicDemi;
     line-height: 2.5;
