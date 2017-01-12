@@ -112,7 +112,7 @@ function jpec_core_image_default_styles() {
         'name' => 'manualcrop_crop_and_scale',
         'data' => array(
           'width' => 1200,
-          'height' => 700,
+          'height' => 500,
           'upscale' => 0,
           'respectminimum' => 1,
           'onlyscaleifcrop' => 0,
