@@ -457,6 +457,16 @@ function jpec_event_views_views_default_views() {
   $handler->display->display_options['footer']['area']['label'] = 'See all events';
   $handler->display->display_options['footer']['area']['content'] = '<a href="/events" class="primary-button">See All Events</a>';
   $handler->display->display_options['footer']['area']['format'] = 'filtered_html';
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['label'] = 'No events text';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = 'There are no upcoming events.
+<a href="/events" class="primary-button">See all events</a>';
+  $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Audience */
   $handler->display->display_options['fields']['field_event_audience']['id'] = 'field_event_audience';
