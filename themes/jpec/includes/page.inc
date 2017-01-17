@@ -5,9 +5,28 @@
  */
 
 /**
+* Loads fieldable panels pane based on machine name.
+*/
+function jpec_load_fieldable_panels_by_name($name) {
+  $query = new EntityFieldQuery();
+  $result = $query
+    ->entityCondition('entity_type', 'fieldable_panels_pane')
+    ->propertyCondition('bundle', $name)
+    ->execute();
+  foreach ($result['fieldable_panels_pane'] as $panel) {
+    $panel_entity = fieldable_panels_panes_load($panel->fpid);
+  }
+  return $panel_entity;
+}
+
+
+/**
  * Implements hook_preprocess_page().
  */
 function jpec_preprocess_page(&$variables) {
+
+
+//dpm($variables);
 
   // Create header_classes_array.
   $variables['header_classes_array'] = array('page-header');
@@ -61,20 +80,22 @@ function jpec_preprocess_page(&$variables) {
           // Create reference to story entity.
           $story = $wrapper->field_header_story;
 
+          // Create reference to profile entity.
+          $profile = $wrapper->field_header_profile;          
+
           $variables['header_fields']['custom_text'] = array(
             '#prefix' => '<span class="custom-text">',
-            '#markup' => $story->field_story_summary->value->value(),
+            '#markup' => $profile->field_profile_intro->value->value(),
             '#suffix' => '</span>',
           );
 
           $variables['header_suffix_fields']['custom_text'] = array(
             '#prefix' => '<span class="custom-text">',
-            '#markup' => $story->field_story_summary->value->value(),
+            '#markup' => $profile->field_profile_intro->value->value(),
             '#suffix' => '</span>',
           );
 
-          // Create reference to profile entity.
-          $profile = $wrapper->field_header_profile;
+
 
           $first_name = trim($profile->field_profile_fname->value()) . "'s";
 
@@ -185,6 +206,7 @@ function jpec_preprocess_page(&$variables) {
       default:
         break;
     }
+    //dpm($variables);
   }
 
   // Events page - add a Featured Event view to Extra_content field so it can be printed then in the page.tpl.php
@@ -193,85 +215,37 @@ function jpec_preprocess_page(&$variables) {
   }
 
   // Front page configuration.
-  // if ($variables['is_front']) {
+  if ($variables['is_front']) {
 
-  //   // Add generic tall-image class for layout.
-  //   $variables['header_classes_array'][] = 'tall-image';
+    // Add generic tall-image class for layout.
+    $variables['header_classes_array'][] = 'tall-image';
 
-  //   $variables['header_classes_array'][] = 'tall-image-custom';
+    $pane_entity = jpec_load_fieldable_panels_by_name('homepage_panes');
+    //dpm($pane_entity,'pane_entity');
+    
+    // Reset the title to the title field from the pane.
+    $variables['title'] = $pane_entity->field_page_title['und'][0]['safe_value'];
 
-  //   drupal_set_title(variable_get('tippie_homepage_title', 'Hard to Beat'));
+    $pane_header_image = field_view_field('fieldable_panels_pane', $pane_entity, 'field_header_image_tall', $display = 'default', $langcode = NULL);
+    //dpm($pane_header_image,'pane_header_image');
 
-  //   $video_uri = drupal_get_path("module", "tippie_pages") . '/video/';
+    $variables['header_image_tall'] = $pane_header_image;
 
-  //   $variables['header_image_tall'] = array(
-  //     '#markup' => '<video autoplay loop poster="' . $video_uri . 'poster.png" id="headervid">
-  //             <source src="' . $video_uri . 'homepage.mp4" type="video/mp4"></video>',
-  //   );
+    $pane_wrapper = entity_metadata_wrapper('fieldable_panels_pane', $pane_entity);
+    $header_text = $pane_wrapper->field_homepage_text_1->value->value();
 
-  //   $variables['video_uri'] = drupal_get_path('module', 'tippie_pages') . '/video/homepage.mp4';
+    //dpm($block1_text,'block1_text');
+    //dpm($wrapper_text,'wrapper_text');
 
+    //$header_text = $panel->field_homepage_text_1['und'][0]['safe_value'];
+    $variables['header_classes_array'][] = 'tall-image';
+    $variables['header_fields'] = array(
+      '#prefix' => '<span class="custom-text">',
+      '#markup' => $header_text,
+      '#suffix' => '<span>',
+    );
 
-
-  //   $variables['header_fields'] = array(
-  //     'subtitle' => array(
-  //       '#prefix' => '<span class="home-subtitle">',
-  //       '#suffix' => '</span>',
-  //       '#markup' => variable_get('tippie_homepage_subtitle', 'For business'),
-  //     ),
-  //     'button' => array(
-  //       '#theme' => 'link',
-  //       '#text' => 'Watch the Video<i class="fa fa-play" aria-hidden="true"></i>',
-  //       '#path' => '"#"',
-  //       '#options' => array(
-  //         'external' => TRUE,
-  //         'attributes' => array(
-  //           'class' => array('video-launcher', 'primary-button'),
-  //           'data-toggle' => 'modal',
-  //           'data-target' => '#video_modal',
-  //           'data-theVideo' => variable_get('tippie_homepage_video_url'),
-  //         ),
-  //         'html' => TRUE,
-  //       ),
-  //     ),      
-  //   );
-
-  //   $variables['video_modal'] = array(
-  //     'modal' => array(
-  //       '#prefix' => '<div class="modal fade" id="video_modal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">',
-  //       '#suffix' => '</div>',
-  //       'modal_dialog' => array(
-  //         '#prefix' => '<div class="modal-dialog full-overlay"><div class="modal-content">',
-  //         '#suffix' => '</div></div>',
-  //         'content' => array(
-  //           'header' => array(
-  //             '#prefix' => '<div class="modal-header">',
-  //             '#suffix' => '</div>',
-  //             '#markup' => '<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>'
-  //           ),
-  //           'video' => array(
-  //             '#prefix' => '<div class="modal-body">',
-  //             '#suffix' => '</div>',
-  //             '#markup' => '<div id="player"></div>',
-  //           ),
-  //         ),
-  //       ),
-  //     ),
-  //   );
-
-
-  //   // $variables['header_fields']['button']['#attached']['js'][] = array(
-  //   //   'type' => 'external',
-  //   //   'data' => 'https://www.youtube.com/iframe_api',
-  //   // );
-
-
-  //   $variables['header_fields']['button']['#attached']['js'][] = array(
-  //     'type' => 'file',
-  //     'data' => drupal_get_path('theme', 'tippie') . '/js/tippie.youtube.js',
-  //   );
-
-  // }
+  }
 
  
   // Add a body class for taxonomy vocabulary machine names
@@ -281,15 +255,9 @@ function jpec_preprocess_page(&$variables) {
     $variables['classes_array'][] = 'vocabulary-' . $voc_name;
 
     // Overwrite the title of the term page with 'Tagged: <tag name>' for 'news' vocabulary;
-    // 'Location:' <tag name> - for program locations
     switch ($voc_name) {
       case 'news':
         $new_title = 'Tagged: ' . $term->name;
-        drupal_set_title($new_title);
-        break;
-
-      case 'program_locations':
-        $new_title = 'Location: ' . $term->name;
         drupal_set_title($new_title);
         break;        
       
