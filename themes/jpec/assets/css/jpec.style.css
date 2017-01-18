@@ -5663,7 +5663,7 @@ button.close {
   overflow: hidden;
   text-align: left; }
 
-.hidden, .page-news .views-exposed-form .views-widget-filter-combine label, .front .pane-views-exp-programs-explore-programs .views-exposed-form label {
+.hidden, .page-news .views-exposed-form .views-widget-filter-combine label {
   display: none !important; }
 
 .affix {
@@ -8864,7 +8864,7 @@ img {
   margin-bottom: 2em;
   margin-left: 2em; }
 
-.hidden, .page-news .views-exposed-form .views-widget-filter-combine label, .front .pane-views-exp-programs-explore-programs .views-exposed-form label {
+.hidden, .page-news .views-exposed-form .views-widget-filter-combine label {
   position: absolute;
   left: -10000px;
   top: auto;
@@ -8924,7 +8924,7 @@ blockquote {
   background-color: #FE5E00;
   color: #FFFFFF;
   font-family: FranklinGothicDemi;
-  padding: 1em 2em;
+  padding: 0.5em 1em;
   display: inline-block; }
   .primary-button:hover, .btn-primary:hover, body.maintenance-page .form-actions .btn:hover:first-child, body.maintenance-page .form-actions .media-widget > a:hover:first-child, .page-google-search input.gsc-search-button:hover, .node-factoid-card .field-name-field-factoid-source a:hover, .node-factoid-full .field-name-field-factoid-source a:hover, .node-factoid-teaser .field-name-field-factoids-link a:hover, .view-display-id-story_card_pane .views-field-view-node a:hover, .paragraphs-item-factoids .field-name-field-factoids-link a:hover, .primary-button:active, .btn-primary:active, body.maintenance-page .form-actions .btn:active:first-child, body.maintenance-page .form-actions .media-widget > a:active:first-child, .page-google-search input.gsc-search-button:active, .node-factoid-card .field-name-field-factoid-source a:active, .node-factoid-full .field-name-field-factoid-source a:active, .node-factoid-teaser .field-name-field-factoids-link a:active, .view-display-id-story_card_pane .views-field-view-node a:active, .paragraphs-item-factoids .field-name-field-factoids-link a:active {
     background-color: #E55500;
@@ -11439,37 +11439,6 @@ ol.megamenu-column {
 iframe[name^='google_conversion_frame'] {
   display: none; }
 
-.front #headervid {
-  display: none; }
-
-.front #alert {
-  background: #56565A;
-  color: #FFFFFF;
-  font-family: FranklinGothicMedium;
-  text-align: center; }
-  .front #alert .alert-title {
-    font-family: FranklinGothicDemi;
-    color: #FE5E00;
-    display: inline-block;
-    padding-right: 1rem; }
-  .front #alert .alert-subtitle {
-    font-family: FranklinGothicDemi;
-    color: #FE5E00; }
-
-.front .main h2 {
-  font-size: 2.7rem;
-  text-transform: uppercase;
-  font-family: BlenderProMedium;
-  font-weight: normal;
-  line-height: 1.1;
-  margin-top: 4rem; }
-  @media (min-width: 480px) {
-    .front .main h2 {
-      font-size: 4rem; } }
-  @media (min-width: 768px) {
-    .front .main h2 {
-      font-size: 5rem; } }
-
 .front #content .container, .front #content .page-node-done .region, .page-node-done .front #content .region, .front #content .page-founders-club .view-founders-club-profiles, .page-founders-club .front #content .view-founders-club-profiles, .front #content .page-people-directory .view-faculty-staff, .page-people-directory .front #content .view-faculty-staff, .front #content .page-user .region-content, .page-user .front #content .region-content {
   padding: 0; }
 
@@ -11480,149 +11449,88 @@ iframe[name^='google_conversion_frame'] {
   margin-top: 2.5rem;
   margin-bottom: 3.2rem; }
 
-.front .content-wrapper {
-  padding: 1rem; }
-  @media (min-width: 992px) {
-    .front .content-wrapper {
-      padding: 4rem 5rem 4rem 5rem; } }
-
 .front .region-content .container, .front .region-content .page-node-done .region, .page-node-done .front .region-content .region, .front .region-content .page-founders-club .view-founders-club-profiles, .page-founders-club .front .region-content .view-founders-club-profiles, .front .region-content .page-people-directory .view-faculty-staff, .page-people-directory .front .region-content .view-faculty-staff, .front .region-content .page-user .region-content, .page-user .front .region-content .region-content {
   padding: 0; }
 
 .front .page-header {
   padding-bottom: 0; }
   .front .page-header > .container, .front .page-node-done .page-header > .region, .page-node-done .front .page-header > .region, .front .page-founders-club .page-header > .view-founders-club-profiles, .page-founders-club .front .page-header > .view-founders-club-profiles, .front .page-people-directory .page-header > .view-faculty-staff, .page-people-directory .front .page-header > .view-faculty-staff, .front .page-user .page-header > .region-content, .page-user .front .page-header > .region-content {
-    z-index: 3;
-    padding: 0; }
+    z-index: 3; }
 
 .front .breadcrumb-container {
   display: none; }
 
-.front .header-content {
-  width: 100%;
-  background-image: url("../../../../modules/custom/tippie_pages/images/mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  text-align: center; }
-  .front .header-content .title {
-    font-family: BlenderProMedium;
-    font-size: 5rem;
-    color: #FFFFFF; }
-  .front .header-content .home-subtitle {
-    text-transform: uppercase;
-    font-family: BlenderProMedium;
-    line-height: 1;
-    color: #FFFFFF; }
-  .front .header-content .primary-button, .front .header-content .btn-primary, .front .header-content body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .front .header-content .btn:first-child, .front .header-content body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .front .header-content .media-widget > a:first-child, .front .header-content .page-google-search input.gsc-search-button, .page-google-search .front .header-content input.gsc-search-button, .front .header-content .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .front .header-content a, .front .header-content .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .front .header-content a, .front .header-content .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .front .header-content a, .front .header-content .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .front .header-content a, .front .header-content .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .front .header-content a {
-    margin-top: 3rem;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto; }
-  .front .header-content .fa-play {
-    padding-left: 0.5rem; }
+.front .header-content a.primary-button, .front .header-content a.btn-primary, .front .header-content body.maintenance-page .form-actions a.btn:first-child, body.maintenance-page .form-actions .front .header-content a.btn:first-child, .front .header-content body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .front .header-content .media-widget > a:first-child, .front .header-content .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .front .header-content a, .front .header-content .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .front .header-content a, .front .header-content .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .front .header-content a, .front .header-content .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .front .header-content a, .front .header-content .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .front .header-content a {
+  font-size: 1.2rem; }
 
-.front .pane-top-ranked {
-  color: #FFFFFF;
-  background-color: #00A1C6;
+.front .header-content .home-subtitle {
+  text-transform: uppercase;
+  font-family: BlenderProMedium;
+  line-height: 1;
+  color: #FFFFFF; }
+
+.front .pane-bundle-homepage-panes {
   position: relative; }
-  .front .pane-top-ranked .classroom {
-    display: none; }
-  .front .pane-top-ranked .content-wrapper {
-    padding: 3rem;
-    position: relative; }
-    .front .pane-top-ranked .content-wrapper:before {
-      background-image: url("../images/lines.png");
-      background-position: right bottom;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 900px;
-      height: 160px;
-      content: ''; }
-  .front .pane-top-ranked h2 {
-    margin-top: 0; }
-  .front .pane-top-ranked .description {
-    line-height: 1.5;
-    margin-top: inherit;
-    margin-bottom: 2rem; }
-  .front .pane-top-ranked .featured-factoids {
-    margin-top: 1rem;
-    padding-bottom: 2.5rem; }
-  .front .pane-top-ranked article {
-    position: relative;
-    float: left;
-    width: 50%;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-left: 0; }
-    .front .pane-top-ranked article img {
-      max-width: 80%; }
-    .front .pane-top-ranked article .node-title {
-      font-size: 1.1rem; }
-    .front .pane-top-ranked article .node-title {
-      font-size: 1.1rem;
+  .front .pane-bundle-homepage-panes .homepage-block-2, .front .pane-bundle-homepage-panes .homepage-block-3 {
+    padding: 2rem 2rem 1rem 2rem; }
+    .front .pane-bundle-homepage-panes .homepage-block-2 h2, .front .pane-bundle-homepage-panes .homepage-block-3 h2 {
       margin-bottom: 0; }
-    .front .pane-top-ranked article .field-name-field-body {
-      font-size: 0.8rem;
-      font-style: italic; }
-  @media (min-width: 992px) {
-    .front .pane-top-ranked {
-      padding-bottom: 2rem; }
-      .front .pane-top-ranked .content-wrapper {
-        padding: 5rem 2rem 4rem 1rem; }
-      .front .pane-top-ranked .classroom {
-        display: block;
-        position: absolute;
-        background-image: url("../../../../modules/custom/tippie_pages/images/classroom.jpg");
-        background-position: right top;
-        background-repeat: no-repeat;
-        background-size: cover;
-        right: 0;
-        height: 100%;
-        width: 50%; } }
+    .front .pane-bundle-homepage-panes .homepage-block-2 h3, .front .pane-bundle-homepage-panes .homepage-block-3 h3 {
+      color: #FFCD00;
+      margin: 0.2rem 0 1rem 0;
+      font-size: 1.4rem; }
+  .front .pane-bundle-homepage-panes .homepage-block-2 {
+    background-color: #00A1C6;
+    color: #FFFFFF; }
+  .front .pane-bundle-homepage-panes .homepage-block-3 {
+    background-color: #FFCD00; }
+    .front .pane-bundle-homepage-panes .homepage-block-3 h3 {
+      color: #000000; }
+  .front .pane-bundle-homepage-panes .field-name-field-homepage-image-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 57%; }
+    .front .pane-bundle-homepage-panes .field-name-field-homepage-image-2 img {
+      display: none; }
 
-.front .pane-employers {
-  background-image: none;
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: #FFFFFF; }
-  .front .pane-employers .row {
-    margin: 0; }
-  .front .pane-employers .content-wrapper {
-    padding: 0 0 1rem 0; }
-  .front .pane-employers h2 {
-    margin: 0;
-    padding: 2rem 2rem 0 2rem;
-    background-image: none; }
-  .front .pane-employers .description {
-    display: block;
-    max-width: 100%;
-    padding: 0rem 2rem; }
-  .front .pane-employers .primary-button, .front .pane-employers .btn-primary, .front .pane-employers body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .front .pane-employers .btn:first-child, .front .pane-employers body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .front .pane-employers .media-widget > a:first-child, .front .pane-employers .page-google-search input.gsc-search-button, .page-google-search .front .pane-employers input.gsc-search-button, .front .pane-employers .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .front .pane-employers a, .front .pane-employers .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .front .pane-employers a, .front .pane-employers .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .front .pane-employers a, .front .pane-employers .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .front .pane-employers a, .front .pane-employers .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .front .pane-employers a {
-    margin: 0 2rem 2rem 2rem; }
+.front .pane-calendar-homepage-events-pane {
+  background-color: #EBE7E3;
+  margin: 2rem 0;
+  padding: 2rem 0; }
+  .front .pane-calendar-homepage-events-pane .event-wrapper {
+    margin: 1rem 1.5rem; }
+    .front .pane-calendar-homepage-events-pane .event-wrapper .event-date {
+      font-family: BlenderProBold;
+      text-transform: uppercase;
+      font-size: 2rem;
+      line-height: 1;
+      margin: 0;
+      padding: 0; }
+    .front .pane-calendar-homepage-events-pane .event-wrapper h4 {
+      font-family: BlenderProMedium;
+      margin: 0;
+      padding: 0; }
+      .front .pane-calendar-homepage-events-pane .event-wrapper h4 a {
+        color: #000000; }
+        .front .pane-calendar-homepage-events-pane .event-wrapper h4 a:hover {
+          color: #0098D9; }
   @media (min-width: 768px) {
-    .front .pane-employers {
-      background-image: url("../../../../modules/custom/tippie_pages/images/kandis.jpg");
-      background-size: cover; }
-      .front .pane-employers .content-wrapper {
-        max-width: 60%; }
-      .front .pane-employers h2 {
-        background: none;
-        margin-top: 3rem;
-        padding: 0; }
-      .front .pane-employers .description {
-        padding: 0; }
-      .front .pane-employers .primary-button, .front .pane-employers .btn-primary, .front .pane-employers body.maintenance-page .form-actions .btn:first-child, body.maintenance-page .form-actions .front .pane-employers .btn:first-child, .front .pane-employers body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .front .pane-employers .media-widget > a:first-child, .front .pane-employers .page-google-search input.gsc-search-button, .page-google-search .front .pane-employers input.gsc-search-button, .front .pane-employers .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .front .pane-employers a, .front .pane-employers .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .front .pane-employers a, .front .pane-employers .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .front .pane-employers a, .front .pane-employers .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .front .pane-employers a, .front .pane-employers .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .front .pane-employers a {
-        margin: 0; } }
-  @media (min-width: 768px) {
-    .front .pane-employers {
-      background-position: center;
-      padding: 4rem 0 5rem 0; } }
+    .front .pane-calendar-homepage-events-pane .view-content {
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-left: -10px;
+      margin-right: -10px; } }
+  .front .pane-calendar-homepage-events-pane .view-content > .views-row {
+    width: 31%;
+    margin: 10px;
+    background-color: #FFCD00;
+    position: relative; }
 
 .front .pane-love-it-here {
   background-color: #EBE7E3;
@@ -11729,28 +11637,6 @@ iframe[name^='google_conversion_frame'] {
     border-width: 30px 30px 30px 0;
     border-color: transparent #FE5E00 transparent transparent; }
 
-.front .pane-views-exp-programs-explore-programs {
-  padding-bottom: 3rem; }
-  @media (min-width: 768px) {
-    .front .pane-views-exp-programs-explore-programs {
-      background-image: url(../images/white_lines.png);
-      background-repeat: no-repeat;
-      background-position: 98% 50%;
-      background-size: contain; } }
-  .front .pane-views-exp-programs-explore-programs .container, .front .pane-views-exp-programs-explore-programs .page-node-done .region, .page-node-done .front .pane-views-exp-programs-explore-programs .region, .front .pane-views-exp-programs-explore-programs .page-founders-club .view-founders-club-profiles, .page-founders-club .front .pane-views-exp-programs-explore-programs .view-founders-club-profiles, .front .pane-views-exp-programs-explore-programs .page-people-directory .view-faculty-staff, .page-people-directory .front .pane-views-exp-programs-explore-programs .view-faculty-staff, .front .pane-views-exp-programs-explore-programs .page-user .region-content, .page-user .front .pane-views-exp-programs-explore-programs .region-content {
-    padding: 2rem; }
-  .front .pane-views-exp-programs-explore-programs .views-exposed-form {
-    margin-bottom: 1.5rem; }
-    .front .pane-views-exp-programs-explore-programs .views-exposed-form .views-exposed-widget .form-submit,
-    .front .pane-views-exp-programs-explore-programs .views-exposed-form .views-submit-button,
-    .front .pane-views-exp-programs-explore-programs .views-exposed-form .views-reset-button {
-      margin-top: 0; }
-  .front .pane-views-exp-programs-explore-programs .content-wrapper {
-    padding: 0 2rem; }
-    @media (min-width: 992px) {
-      .front .pane-views-exp-programs-explore-programs .content-wrapper {
-        padding: 0; } }
-
 .front .pane-next-steps #cta-section .container, .front .pane-next-steps #cta-section .page-node-done .region, .page-node-done .front .pane-next-steps #cta-section .region, .front .pane-next-steps #cta-section .page-founders-club .view-founders-club-profiles, .page-founders-club .front .pane-next-steps #cta-section .view-founders-club-profiles, .front .pane-next-steps #cta-section .page-people-directory .view-faculty-staff, .page-people-directory .front .pane-next-steps #cta-section .view-faculty-staff, .front .pane-next-steps #cta-section .page-user .region-content, .page-user .front .pane-next-steps #cta-section .region-content {
   display: block;
   padding: 0 2rem; }
@@ -11766,148 +11652,22 @@ iframe[name^='google_conversion_frame'] {
   width: 100%;
   text-align: center; }
 
-.front .pane-instagram-pane {
-  background-color: #00A1C6; }
-
-.front #instagram-feed {
-  position: relative;
-  overflow: hidden;
-  z-index: 40;
-  background-color: #00A1C6;
-  color: #FFFFFF;
-  padding-bottom: 2rem; }
-  .front #instagram-feed:before {
-    content: "";
-    position: absolute;
-    width: 1000px;
-    height: 250px;
-    top: 83px;
-    left: 0;
-    z-index: -1;
-    background: url("../images/lines.png") 0 0 no-repeat;
-    background-position: right bottom;
-    transform: rotate(-170deg); }
-  .front #instagram-feed ul {
-    margin-left: 0; }
-    .front #instagram-feed ul li {
-      list-style-type: none;
-      display: inline-block; }
-  .front #instagram-feed .tippie-social-media {
-    margin: 1rem 0 1rem 0; }
-    .front #instagram-feed .tippie-social-media .link-list li:nth-child(3n+1) {
-      clear: none; }
-    .front #instagram-feed .tippie-social-media ul {
-      float: left; }
-    @media (min-width: 768px) {
-      .front #instagram-feed .tippie-social-media {
-        margin-top: 5rem; }
-        .front #instagram-feed .tippie-social-media ul {
-          float: right; } }
-  .front #instagram-feed .instagram-social-feed {
-    z-index: 50; }
-    .front #instagram-feed .instagram-social-feed li {
-      width: 50%;
-      height: auto;
-      overflow: hidden;
-      padding: 0;
-      margin: 0;
-      display: inline-block;
-      vertical-align: middle;
-      background-color: #000000; }
-      @media (min-width: 768px) {
-        .front #instagram-feed .instagram-social-feed li {
-          width: 25%; } }
-    .front #instagram-feed .instagram-social-feed img {
-      width: 100%;
-      height: auto;
-      vertical-align: middle;
-      position: relative; }
-      .front #instagram-feed .instagram-social-feed img:hover {
-        cursor: hand;
-        opacity: 0.8; }
-  .front #instagram-feed .container, .front #instagram-feed .page-node-done .region, .page-node-done .front #instagram-feed .region, .front #instagram-feed .page-founders-club .view-founders-club-profiles, .page-founders-club .front #instagram-feed .view-founders-club-profiles, .front #instagram-feed .page-people-directory .view-faculty-staff, .page-people-directory .front #instagram-feed .view-faculty-staff, .front #instagram-feed .page-user .region-content, .page-user .front #instagram-feed .region-content {
-    padding: 0 2rem; }
-    @media (min-width: 768px) {
-      .front #instagram-feed .container, .front #instagram-feed .page-node-done .region, .page-node-done .front #instagram-feed .region, .front #instagram-feed .page-founders-club .view-founders-club-profiles, .page-founders-club .front #instagram-feed .view-founders-club-profiles, .front #instagram-feed .page-people-directory .view-faculty-staff, .page-people-directory .front #instagram-feed .view-faculty-staff, .front #instagram-feed .page-user .region-content, .page-user .front #instagram-feed .region-content {
-        padding: 0; } }
-
-.front #video_modal {
-  overflow: hidden; }
-
-.front .modal-backdrop {
-  opacity: 0.8 !important; }
-
-.front .video-modal .modal-content {
-  background-color: transparent;
-  border: none; }
-
-.front .video-modal .modal-body {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 0;
-  height: 0;
-  overflow: hidden; }
-  .front .video-modal .modal-body iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-
-.front .video-modal .modal-header {
-  padding: 0 0 2rem 0; }
-  .front .video-modal .modal-header .close {
-    font-size: 30px;
-    opacity: 1;
-    text-shadow: none;
-    color: #FE5E00;
-    margin: 0; }
-    .front .video-modal .modal-header .close:hover {
-      color: #FFCD00; }
-
-.front .video-modal #video_modal {
-  position: fixed;
-  top: 0;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: scroll; }
-
-.front .video-modal .modal-dialog {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  height: auto; }
-
 @media (min-width: 768px) {
-  .front #headervid {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 100%;
-    z-index: 2; }
   .front .header-content {
-    background-image: none;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0;
-    padding: 0; }
-    .front .header-content .home-subtitle {
-      font-size: 2rem; } }
+    width: 60%; }
+  .front .page-header {
+    padding-bottom: 2rem; }
+  .front .pane-bundle-homepage-panes .homepage-block-2, .front .pane-bundle-homepage-panes .homepage-block-3 {
+    width: 60%; }
+  .front .pane-bundle-homepage-panes .homepage-block-2 {
+    margin-bottom: 2rem; }
+  .front .pane-bundle-homepage-panes .field-name-field-homepage-image-2 img {
+    display: none; } }
 
 @media (min-width: 992px) {
-  .front .header-content .title {
-    font-size: 5.8rem; }
-  .front .header-content .home-subtitle {
-    font-size: 3.5rem; } }
-
-@media (min-width: 1200px) {
-  .front .header-content .title {
-    font-size: 8rem; }
-  .front .header-content .home-subtitle {
-    font-size: 5rem; } }
+  .front .pane-bundle-homepage-panes .homepage-block-2, .front .pane-bundle-homepage-panes .homepage-block-3 {
+    width: 40%; }
+  .front .pane-bundle-homepage-panes .field-name-field-homepage-image-2 img {
+    display: block; } }
 
 /*# sourceMappingURL=jpec.style.css.map */
