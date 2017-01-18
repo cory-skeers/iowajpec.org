@@ -5,25 +5,23 @@
  */
 function jpec_preprocess_panels_pane(&$vars) {
   
-  //dpm($vars['content']['#bundle'],'bundle');
-
-  // switch ($vars['content']['#bundle']) {
+  // hide pane title from the homepage
+  switch ($vars['content']['#bundle']) {
+    case 'homepage_panes':
+      unset($vars['title']);
       
-  //     case 'homepage_panes':
-  //       dpm($vars, 'all vars from panel homepage');
-  //       dpm($vars['content']['field_header_image_tall'],'img from panel');
-  //       $vraiables['header_image_tall'] = $vars['content']['field_header_image_tall'];
-  //       // if (!empty($variables['paragraphs_item']->field_text_area_style)) {
-  //       //   $variables['classes_array'][] = $variables['paragraphs_item']->field_text_area_style[LANGUAGE_NONE][0]['value'];
-  //       // }
-  //       break;
+      // $block2_image = $vars['content']['field_homepage_image_2'];
+      
+      // if (!empty($block2_image)) {
 
-  //       default:
-  //       break;
-  // }
+      //   $block2_image_url = file_create_url($block2_image['#items'][0]['uri']); 
 
-
-  //dpm($vars['content']['field_header_image_tall']);
-  //$variables[$header_image_tall]
-  //$vars['header_image_tall'] = $vars['content']['field_header_image_tall'];
+      //   $vars['attributes_array']['style'][] = 'background:url(' . $block2_image_url . ') no-repeat top right';
+      // }
+      // hide($vars['content']['field_homepage_image_2']);
+      // dpm($vars);
+      break;
+    default:
+    break;
+  }
 }
