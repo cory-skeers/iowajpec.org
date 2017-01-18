@@ -337,7 +337,7 @@ function jpec_story_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_profile_intro',
     'label' => 'Intro text',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'better_formats' => array(
         'allowed_formats' => array(
@@ -809,74 +809,6 @@ function jpec_story_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-story-field_story_summary'.
-  $field_instances['node-story-field_story_summary'] = array(
-    'bundle' => 'story',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'This text will display in the tall header when referenced from the page.',
-    'display' => array(
-      'card' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_story_summary',
-    'label' => 'Header summary',
-    'required' => 1,
-    'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'filtered_html' => 'filtered_html',
-          'full_html' => 0,
-          'plain_text' => 0,
-        ),
-        'allowed_formats_toggle' => 1,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'filtered_html' => array(
-              'weight' => -10,
-            ),
-            'full_html' => array(
-              'weight' => -9,
-            ),
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-          ),
-        ),
-      ),
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 2,
-    ),
-  );
-
   // Exported field_instance: 'node-story-field_story_tags'.
   $field_instances['node-story-field_story_tags'] = array(
     'bundle' => 'story',
@@ -931,7 +863,6 @@ function jpec_story_field_default_field_instances() {
   t('First name');
   t('Full story');
   t('Header');
-  t('Header summary');
   t('Image');
   t('Intro text');
   t('Last name');
@@ -940,7 +871,6 @@ function jpec_story_field_default_field_instances() {
   t('Story image');
   t('Subtitle');
   t('Tags');
-  t('This text will display in the tall header when referenced from the page.');
   t('Upload a 2000px by 700px image. Face should fit in to the area within 500px from the center of the image, preferably closer to the right edge. You will be required to specify a cropping selection for a small horizontal image.');
   t('Will be used only in the pulled story in the content block.');
 
