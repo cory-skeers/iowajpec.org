@@ -61,18 +61,20 @@ th td tr[scope,class];',
         'html_entities' => 'f',
         'scayt_autoStartup' => 'f',
         'theme_config_js' => 'f',
-        'js_conf' => '',
+        'js_conf' => 'config.disableNativeSpellChecker = false;
+config.removePlugins = \'scayt,menubutton,contextmenu\';
+config.browserContextMenuOnCtrl = true;',
         'loadPlugins' => array(
           'autogrow' => array(
             'name' => 'autogrow',
             'desc' => 'Autogrow the height of the editor',
-            'path' => '%base_path%sites/www.iowajpec.org/libraries/ckeditor_autogrow/',
+            'path' => '/sites/www.iowajpec.org/libraries/ckeditor_autogrow/',
             'buttons' => FALSE,
           ),
           'basewidget' => array(
             'name' => 'basewidget',
             'desc' => 'Base Widget',
-            'path' => '%base_path%sites/www.iowajpec.org/libraries/ckeditor_basewidget/',
+            'path' => '/sites/www.iowajpec.org/libraries/ckeditor_basewidget/',
             'buttons' => FALSE,
           ),
           'ckeditor_link' => array(
@@ -83,7 +85,7 @@ th td tr[scope,class];',
           'layoutmanager' => array(
             'name' => 'layoutmanager',
             'desc' => 'Bootstrap Layout Manager',
-            'path' => '%base_path%sites/www.iowajpec.org/libraries/ckeditor_layoutmanager/',
+            'path' => '/sites/www.iowajpec.org/libraries/ckeditor_layoutmanager/',
             'buttons' => array(
               'AddLayout' => array(
                 'icon' => 'icons/addlayout.png',
@@ -115,13 +117,13 @@ th td tr[scope,class];',
           'menubutton' => array(
             'name' => 'menubutton',
             'desc' => 'Menu Button',
-            'path' => '%base_path%sites/www.iowajpec.org/libraries/ckeditor_menubutton/',
+            'path' => '/sites/www.iowajpec.org/libraries/ckeditor_menubutton/',
             'buttons' => FALSE,
           ),
           'tippiewidgets' => array(
             'name' => 'tippiewidgets',
             'desc' => 'Tippie Widgets',
-            'path' => '%base_path%sites/www.iowajpec.org/libraries/tippiewidgets/',
+            'path' => '/sites/www.iowajpec.org/libraries/tippiewidgets/',
             'buttons' => array(
               'TippieWidgetMenu' => array(
                 'label' => 'Widget Manager',
