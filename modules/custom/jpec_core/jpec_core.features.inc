@@ -54,6 +54,21 @@ function jpec_core_image_default_styles() {
     ),
   );
 
+  // Exported image style: homepage_event__380x105_.
+  $styles['homepage_event__380x105_'] = array(
+    'label' => 'Homepage event (380x105)',
+    'effects' => array(
+      5 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 380,
+          'height' => 100,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: short_header.
   $styles['short_header'] = array(
     'label' => 'Short Header',
