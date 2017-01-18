@@ -25,7 +25,6 @@ function jpec_load_fieldable_panels_by_name($name) {
  */
 function jpec_preprocess_page(&$variables) {
 
-
 //dpm($variables);
 
   // Create header_classes_array.
@@ -217,11 +216,12 @@ function jpec_preprocess_page(&$variables) {
   // Front page configuration.
   if ($variables['is_front']) {
 
+    $pane_entity = jpec_load_fieldable_panels_by_name('homepage_panes');
+    //dpm($pane_entity,'pane_entity');
     // Add generic tall-image class for layout.
     $variables['header_classes_array'][] = 'tall-image';
 
-    $pane_entity = jpec_load_fieldable_panels_by_name('homepage_panes');
-    //dpm($pane_entity,'pane_entity');
+
     
     // Reset the title to the title field from the pane.
     $variables['title'] = $pane_entity->field_page_title['und'][0]['safe_value'];
