@@ -13,19 +13,25 @@ function jpec_roles_user_default_roles() {
   // Exported role: administrator.
   $roles['administrator'] = array(
     'name' => 'administrator',
-    'weight' => 4,
+    'weight' => 5,
   );
 
   // Exported role: editor.
   $roles['editor'] = array(
     'name' => 'editor',
+    'weight' => 3,
+  );
+
+  // Exported role: founders club editor.
+  $roles['founders club editor'] = array(
+    'name' => 'founders club editor',
     'weight' => 2,
   );
 
   // Exported role: webmaster.
   $roles['webmaster'] = array(
     'name' => 'webmaster',
-    'weight' => 3,
+    'weight' => 4,
   );
 
   return $roles;

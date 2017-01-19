@@ -158,5 +158,6 @@ features[user_permission][] = view private files
 features[user_permission][] = view revisions
 features[user_role][] = administrator
 features[user_role][] = editor
+features[user_role][] = founders club editor
 features[user_role][] = webmaster
 project path = sites/www.iowajpec.org/modules/custom

@@ -26,6 +26,7 @@ function jpec_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'ckeditor_link',
@@ -48,6 +49,7 @@ function jpec_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -59,6 +61,7 @@ function jpec_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'media',
@@ -70,6 +73,7 @@ function jpec_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'navbar',
@@ -119,6 +123,7 @@ function jpec_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -317,6 +322,7 @@ function jpec_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -328,6 +334,7 @@ function jpec_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -474,6 +481,8 @@ function jpec_roles_user_default_permissions() {
     'name' => 'delete any founders_profile content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -608,6 +617,8 @@ function jpec_roles_user_default_permissions() {
     'name' => 'delete own founders_profile content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -619,6 +630,7 @@ function jpec_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -845,6 +857,7 @@ function jpec_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -856,6 +869,7 @@ function jpec_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -927,6 +941,7 @@ function jpec_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'metatag',
@@ -1002,6 +1017,7 @@ function jpec_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1013,6 +1029,7 @@ function jpec_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -1266,6 +1283,7 @@ function jpec_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'filter',
@@ -1297,6 +1315,7 @@ function jpec_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -1308,6 +1327,7 @@ function jpec_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
@@ -1319,6 +1339,7 @@ function jpec_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1340,6 +1361,7 @@ function jpec_roles_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
