@@ -15,11 +15,23 @@
     @extend .container;
     .views-row {
       background-color: $light_grey;
-      padding: 0.5rem 2rem 0 2rem;
+      padding: 0.5rem 2rem 0.5rem 2rem;
       margin-bottom: 1rem;
       h2 {
         @extend .h3;
       }
     }
+  }
+  .views-field-title {
+    @extend .h3;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .field-name-field-fp-student-name, .field-collection-item-field-founders-profile-student {
+    display: inline;
+    font-family: FranklinGothicMedium;
+  }
+  .views-field-field-founders-profile-body {
+    margin: 1.5rem 0;
   }
 }
