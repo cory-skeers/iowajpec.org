@@ -51,6 +51,7 @@ features[field_instance][] = node-founders_profile-field_founders_profile_twitte
 features[field_instance][] = node-founders_profile-field_founders_profile_url
 features[image][] = founders_club_image
 features[node][] = founders_profile
+features[variable][] = field_bundle_settings_field_collection_item__field_founders_profile_student
 features[variable][] = field_bundle_settings_node__founders_profile
 features[variable][] = menu_options_founders_profile
 features[variable][] = menu_parent_founders_profile
