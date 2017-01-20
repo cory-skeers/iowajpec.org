@@ -60,10 +60,10 @@ function jpec_pages_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
   $pane = new stdClass();
-  $pane->pid = 'new-f18b1a72-ab84-40a4-9573-4137cdac8279';
+  $pane->pid = 'new-2886541d-52f3-472f-a1b9-89838d960d6b';
   $pane->panel = 'middle';
   $pane->type = 'fieldable_panels_pane';
-  $pane->subtype = 'fpid:4';
+  $pane->subtype = 'uuid:f2f04ce9-a856-4688-8bcc-79463100aa68';
   $pane->shown = TRUE;
   $pane->access = array();
   $pane->configuration = array(
@@ -80,9 +80,9 @@ function jpec_pages_default_page_manager_pages() {
   $pane->extras = array();
   $pane->position = 0;
   $pane->locks = array();
-  $pane->uuid = 'f18b1a72-ab84-40a4-9573-4137cdac8279';
-  $display->content['new-f18b1a72-ab84-40a4-9573-4137cdac8279'] = $pane;
-  $display->panels['middle'][0] = 'new-f18b1a72-ab84-40a4-9573-4137cdac8279';
+  $pane->uuid = '2886541d-52f3-472f-a1b9-89838d960d6b';
+  $display->content['new-2886541d-52f3-472f-a1b9-89838d960d6b'] = $pane;
+  $display->panels['middle'][0] = 'new-2886541d-52f3-472f-a1b9-89838d960d6b';
   $pane = new stdClass();
   $pane->pid = 'new-15d4598b-4de4-47fe-85ee-73f7f1b98011';
   $pane->panel = 'middle';
