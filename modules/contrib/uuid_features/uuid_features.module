@@ -20,7 +20,7 @@ function uuid_features_menu() {
 function uuid_features_entity_info_alter(&$entity_info) {
   // Provide a list of entities that provide bundles
   // to be exported by uuid_features.
-  $entity_types = array('bean', 'node', 'taxonomy_term');
+  $entity_types = array('bean', 'node', 'taxonomy_term', 'fieldable_panels_pane');
   foreach ($entity_types as $type) {
     // Only add flag on existing entity types.
     if (isset($entity_info[$type])) {
@@ -70,6 +70,16 @@ function uuid_features_features_api() {
     'file' => drupal_get_path('module', 'uuid_features') . '/includes/uuid_bean.features.inc',
   );
 
+  if (module_exists('fieldable_panels_panes')) {
+    $components['uuid_fpp'] = array(
+      'name' => t('Fieldable Panels Pane'),
+      'feature_source' => TRUE,
+      'default_hook' => 'uuid_features_default_fpps',
+      'default_file' => FEATURES_DEFAULTS_INCLUDED,
+      'file' => drupal_get_path('module', 'uuid_features') . '/includes/uuid_fpp.features.inc',
+    );
+  }
+
   return $components;
 }
 
@@ -117,6 +127,59 @@ function uuid_features_features_pipe_taxonomy_alter(&$pipe, $data, $export) {
       }
     }
   }
+}
+
+/**
+ * Implements hook_features_pipe_COMPONENT_alter().
+ *
+ * When exporting a Panel, include any attached Fieldable Panels Panes.
+ */
+function uuid_features_features_pipe_uuid_fpp_alter(&$pipe, $data, $export) {
+  $fpp_uuids = array();
+  foreach ($export['features'] as $component => $feature) {
+    if ($component == 'page_manager_pages') {
+      $page_name = key($feature);
+      $handlers = db_select('page_manager_handlers', 'pmh')
+        ->fields('pmh', array('did'))
+        ->condition('subtask', $page_name)
+        ->execute()
+        ->fetchAll();
+      foreach ($handlers as $handler) {
+        $display_id = $handler->did;
+        $panes = db_select('panels_pane', 'pp')
+          ->fields('pp', array('subtype'))
+          ->condition('type', 'fieldable_panels_pane')
+          ->condition('did', $display_id)
+          ->execute()
+          ->fetchAll();
+        foreach ($panes as $pane) {
+          $fpp_uuids[] = str_replace('uuid:', '', $pane->subtype);
+        }
+      }
+    }
+    elseif ($component == 'panels_mini') {
+      $panel_name = key($feature);
+      $display_id = db_select('panels_mini', 'pm')
+        ->fields('pm', array('did'))
+        ->condition('name', $panel_name)
+        ->execute()
+        ->fetchField();
+      if (empty($display_id)) {
+        continue;
+      }
+
+      $panes = db_select('panels_pane', 'pp')
+        ->fields('pp', array('subtype'))
+        ->condition('type', 'fieldable_panels_pane')
+        ->condition('did', $display_id)
+        ->execute()
+        ->fetchAll();
+      foreach ($panes as $pane) {
+        $fpp_uuids[] = str_replace('uuid:', '', $pane->subtype);
+      }
+    }
+  }
+  $pipe['uuid_fpp'] = $fpp_uuids;
 }
 
 /**
@@ -211,6 +274,9 @@ function uuid_features_file_field_export(&$export, $entity_type) {
       break;
     case "node":
       $export_bundle = $export->type;
+      break;
+    case "fieldable_panels_pane":
+      $export_bundle = $export->bundle;
       break;
   }
   $fields = field_info_instances($entity_type, $export_bundle);
