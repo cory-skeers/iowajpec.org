@@ -90,15 +90,17 @@ $love-it-background: $light_grey;
 // Upcoming Events
   .pane-calendar-homepage-events-pane {
     background-color: $light_grey;
-    margin: 2rem 0;
-    padding: 2rem 0;
+    //margin: 2rem 0;
+    padding: 3rem 0 2rem 0;
     
-    .views-field-nothing {
-      //position: absolute;
-      //bottom: 0;
+    .views-field-field-event-image {
+      min-height: 100px;
     }
+
     .event-wrapper {
       margin: 1rem 1.5rem;
+      //display: table-cell;
+      //vertical-align: bottom;
       .event-date {
         font-family: BlenderProBold;
         text-transform: uppercase;
@@ -125,170 +127,44 @@ $love-it-background: $light_grey;
     .view-content {
       @include breakpoint($tippie-sm-min) {
         @include flexbox();
-        flex-wrap: wrap;
+        //flex-wrap: wrap;
         margin-left: -10px;
         margin-right: -10px;
       }
       & > .views-row {
         width: 31%;
+
         margin: 10px;
         background-color: $gold;
         position: relative;
+        flex:1;
+        align-self: flex-end;
       }
     }
   }
 // End Upcoming Events
 
-// Love it Here
-  .pane-love-it-here {
-    background-color: $love-it-background;
-    position: relative;
-    padding: 3rem;
-
-    .slide__content {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-    .scroll-box {
-      background-color: $item_2x2_background;
-      
-      height: auto;
-      max-width: 480px;
-      width: 100%;
-      position: relative;
-      vertical-align: middle;
-      margin-left: auto;
-      margin-right: auto;
-
-      // first block - You'll love it here
-      .leading-text {
-        padding: 0;
-        color: $white;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        @include breakpoint($tippie-xs-min) { 
-          padding: 2.2rem;
-        } 
-        h2 {
-          font-size: 13vw;
-          line-height: 1;
-          margin: 0 0 1.5rem 0;
-          padding: 1.5rem;
-          @include breakpoint($tippie-xs-min) { 
-            @include fontsize(3.5);
-          }        
-          @include breakpoint($tippie-md-min) { 
-            font-size: 3.5vw;
-            padding: 0;
-          }
-          @include breakpoint($tippie-lg-min) { 
-            font-size: 4.7vw;
-          }          
-
-        }
-        .description {
-          background-color: $gold;
-          color: $body_text;
-          @include fontsize(0.8);
-          position: absolute;
-          bottom: -62px;
-          padding: 1rem;
-          width: 100%;
-          @include breakpoint($tippie-xs-min) { 
-            position: relative;
-            bottom: 0;
-            background-color: transparent;
-            color: $white;
-            font-family: BlenderProMedium;
-            @include fontsize(1.4);
-            padding: 0;
-          }          
-        }
-      }      
- 
-      .info {
-        background-color: $item_2x2_background;
-        padding: 1rem;        
-        position: relative;
-        width: 100%;
-        @include breakpoint($tippie-xs-min) { 
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          width: 50%;
-        }
-      }       
-      .description {
-        color: $body_text;
-        @include fontsize(0.8);
-        line-height: 1.2;
-        margin: 0;
-        padding-right: 15px;
-      }  
-
-      .caret {
-        color: $orange;
-        margin: 0;
-        position: absolute;
-        right: 10px;
-        top: 48%;
-        &.right {
-          border-top: 10px solid transparent;
-          border-bottom: 10px solid transparent;
-          border-left: 10px dashed;
-          border-right: none;
-        }
-      }     
-    }
-    .slick-arrow {
-      color: transparent;
-      background-color: transparent;
-      margin: 0;
-      padding: 0;
-      top: 48%;
-      width: 0;
-      height: 0;
-      position: absolute;
-      border-style: solid;
-    }
-    .slick-next {
-      @extend .slick-arrow;
-      right: 10px;
-      border-width: 30px 0 30px 30px;
-      border-color: transparent transparent transparent $orange;
-    }
-    .slick-prev {
-      @extend .slick-arrow;
-      left: 10px;
-      border-width: 30px 30px 30px 0;
-      border-color: transparent $orange transparent transparent;
-    }
-  }
-// End Love It Here
-
 // Next Steps
-  .pane-next-steps {
+  .pane-bundle-homepage-next-steps {
 
-    #cta-section .container {
-      display: block;
-      padding: 0 2rem;
-      @include breakpoint($tippie-sm-min) { 
-        padding: 0;
-      }
+    margin: 0;
+    padding: 3rem 2rem;
+    background: url(../images/yellow-double-lines-cropped.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .pane-content, .pane-title {
+      @extend .container;
     }
-    .cta-items {
-      max-width: 70%;
-      margin: 1.5rem 0 3rem 0;
-    }
-    a {
-      width: 100%;
-      text-align: center;
-    }
+    
   }
- // End Next Steps
+  // #content .pane-bundle-homepage-next-steps.container {
+  //   padding: 2rem 0 2.5rem 0;
+  //   margin-top: 0;
+  // } 
+// End Next Steps
+
 
   @include breakpoint($tippie-sm-min) {
     
