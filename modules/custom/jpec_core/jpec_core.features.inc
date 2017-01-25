@@ -58,6 +58,21 @@ function jpec_core_image_default_styles() {
   $styles['homepage_event__380x105_'] = array(
     'label' => 'Homepage event (380x105)',
     'effects' => array(
+      6 => array(
+        'name' => 'manualcrop_auto_reuse',
+        'data' => array(
+          'style_priority' => array(
+            0 => 'event',
+            1 => 'card_640x325',
+            2 => 'square_290x290',
+            3 => 'tall_header_large',
+            4 => 'founders_club_image',
+          ),
+          'apply_all_effects' => 1,
+          'fallback_style' => '',
+        ),
+        'weight' => 0,
+      ),
       5 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
