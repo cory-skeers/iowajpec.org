@@ -5,6 +5,13 @@ $card_padding: 1.5rem;
     font-family: FranklinGothicBook;
     @include fontsize(1.6);
   }
+  .field-name-field-twitter-username {
+    .card-body {
+      height: 400px;
+      overflow: scroll;
+      margin-bottom: 1rem;
+    }
+  }
   .content {
     .social-card {
       background-color: $background_grey;
