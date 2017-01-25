@@ -10,5 +10,13 @@
 
   .node-title {
     @extend .card-title;
+    margin-bottom: 0.2rem;
   }
+  .field-name-field-card-body {
+    margin-top: 1rem;
+  }
+  .field-name-field-card-subtitle {
+    text-transform: uppercase;
+    @include fontsize(1);
+  }  
 }
