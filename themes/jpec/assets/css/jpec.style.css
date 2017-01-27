@@ -9398,6 +9398,30 @@ blockquote {
     top: 10px;
     left: -25px; }
 
+.facebook-link, .twitter-link, .instagram-link, .linkedin-link, .email-link, .website-link {
+  font-family: FranklinGothicDemi; }
+  .facebook-link:before, .twitter-link:before, .instagram-link:before, .linkedin-link:before, .email-link:before, .website-link:before {
+    font-family: FontAwesome;
+    padding: 5px; }
+
+.facebook-link:before {
+  content: "\f230"; }
+
+.twitter-link:before {
+  content: "\f099"; }
+
+.instagram-link:before {
+  content: "\f16d"; }
+
+.linkedin-link:before {
+  content: "\f08c"; }
+
+.email-link:before {
+  content: "\f003"; }
+
+.website-link:before {
+  content: "\f08e"; }
+
 .table-bordered > tbody > tr > td, .calendar-calendar table.mini > tbody > tr > td,
 .table-bordered > thead:first-child > tr:first-child > th, .calendar-calendar table.mini > thead:first-child > tr:first-child > th, .calendar-calendar table.mini > tbody > tr > td,
 .calendar-calendar table.mini > thead:first-child > tr:first-child > th {
@@ -9753,7 +9777,7 @@ table.table-condensed th, table.table-condensed td {
   .node-factoid-teaser .field-name-field-body {
     font-family: FranklinGothicBookItalic; }
   .node-factoid-teaser .field-name-field-factoid-number {
-    font-size: 9rem;
+    font-size: 7rem;
     color: #FE5E00;
     margin: 0;
     line-height: 0.8;
@@ -9797,7 +9821,7 @@ table.table-condensed th, table.table-condensed td {
   .node-factoid-teaser .field-name-field-body {
     font-family: FranklinGothicBookItalic; }
   .node-factoid-teaser .field-name-field-factoid-number {
-    font-size: 9rem;
+    font-size: 7rem;
     color: #FE5E00;
     margin: 0;
     line-height: 0.8;

@@ -1,0 +1,46 @@
+// social icons
+
+.facebook-link, .twitter-link, .instagram-link, .linkedin-link, .email-link, .website-link {
+  //padding-top: 8px;
+  font-family: FranklinGothicDemi;
+  &:before {
+      font-family: FontAwesome;
+      padding: 5px;
+    }
+}
+
+.facebook-link {
+  &:before {
+    content: "\f230";
+  }
+}
+
+.twitter-link {
+  &:before {
+    content: "\f099";
+  }
+}
+
+.instagram-link {
+  &:before {
+    content: "\f16d";
+  }
+}
+
+.linkedin-link {
+  &:before {
+    content: "\f08c";
+  }
+}
+
+.email-link {
+  &:before {
+    content: "\f003";
+  }
+}
+
+.website-link {
+  &:before {
+    content: "\f08e";
+  }
+}
