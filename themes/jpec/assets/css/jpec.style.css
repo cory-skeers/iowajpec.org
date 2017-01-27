@@ -9546,6 +9546,9 @@ table.table-condensed th, table.table-condensed td {
 .node-type-event .field-name-field-event-deadline-time {
   display: inline-block; }
 
+.node-type-event a.primary-button, .node-type-event a.btn-primary, .node-type-event body.maintenance-page .form-actions a.btn:first-child, body.maintenance-page .form-actions .node-type-event a.btn:first-child, .node-type-event body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .node-type-event .media-widget > a:first-child, .node-type-event .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .node-type-event a, .node-type-event .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .node-type-event a, .node-type-event .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .node-type-event a, .node-type-event .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .node-type-event a, .node-type-event .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .node-type-event a {
+  margin-top: 1rem; }
+
 .node-type-event .field-name-field-event-deadline {
   font-weight: bold; }
 
@@ -9681,6 +9684,9 @@ table.table-condensed th, table.table-condensed td {
 .node-type-event .field-name-field-event-deadline,
 .node-type-event .field-name-field-event-deadline-time {
   display: inline-block; }
+
+.node-type-event a.primary-button, .node-type-event a.btn-primary, .node-type-event body.maintenance-page .form-actions a.btn:first-child, body.maintenance-page .form-actions .node-type-event a.btn:first-child, .node-type-event body.maintenance-page .form-actions .media-widget > a:first-child, body.maintenance-page .form-actions .node-type-event .media-widget > a:first-child, .node-type-event .node-factoid-card .field-name-field-factoid-source a, .node-factoid-card .field-name-field-factoid-source .node-type-event a, .node-type-event .node-factoid-full .field-name-field-factoid-source a, .node-factoid-full .field-name-field-factoid-source .node-type-event a, .node-type-event .node-factoid-teaser .field-name-field-factoids-link a, .node-factoid-teaser .field-name-field-factoids-link .node-type-event a, .node-type-event .view-display-id-story_card_pane .views-field-view-node a, .view-display-id-story_card_pane .views-field-view-node .node-type-event a, .node-type-event .paragraphs-item-factoids .field-name-field-factoids-link a, .paragraphs-item-factoids .field-name-field-factoids-link .node-type-event a {
+  margin-top: 1rem; }
 
 .node-type-event .field-name-field-event-deadline {
   font-weight: bold; }
