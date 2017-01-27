@@ -39,7 +39,7 @@
             }  
             
             if (!empty($content['field_event_action_label'])) {
-              print render($content['field_event_action_label']); 
+              print '<br/>' . render($content['field_event_action_label']); 
             }
           ?>
                        
