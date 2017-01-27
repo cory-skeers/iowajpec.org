@@ -20,6 +20,42 @@ function tippie_editor_ckeditor_settings_alter(&$settings, $conf) {
   );
 
   $styles[] = array(
+    'name' => 'Facebook',
+    'element' => 'a',
+    'attributes' => array('class' => 'facebook-link'),
+  );
+
+  $styles[] = array(
+    'name' => 'Twitter',
+    'element' => 'a',
+    'attributes' => array('class' => 'twitter-link'),
+  );
+
+  $styles[] = array(
+    'name' => 'Instagram',
+    'element' => 'a',
+    'attributes' => array('class' => 'instagram-link'),
+  ); 
+
+  $styles[] = array(
+    'name' => 'Linked In',
+    'element' => 'a',
+    'attributes' => array('class' => 'linkedin-link'),
+  );        
+
+  $styles[] = array(
+    'name' => 'Email',
+    'element' => 'a',
+    'attributes' => array('class' => 'email-link'),
+  );   
+
+  $styles[] = array(
+    'name' => 'Website',
+    'element' => 'a',
+    'attributes' => array('class' => 'website-link'),
+  );   
+
+  $styles[] = array(
     'name' => 'Large Text',
     'element' => 'p',
     'attributes' => array('class' => 'large-text'),
