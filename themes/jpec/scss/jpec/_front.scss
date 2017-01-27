@@ -7,6 +7,9 @@ $love-it-background: $light_grey;
   #content .container {
     padding: 0;
   }
+  h2 {
+    @include fontsize(3);
+  }
   .description {
     @include fontsize(1.2);
     line-height: 1.7;
@@ -91,17 +94,39 @@ $love-it-background: $light_grey;
 // Upcoming Events
   .pane-calendar-homepage-events-pane {
     background-color: $light_grey;
-    //margin: 2rem 0;
     padding: 3rem 0 2rem 0;
     
+    .slick {
+      position: relative;
+      
+      .slick-list {
+        margin-right: 30px;
+        margin-left: 50px;  
+        @include breakpoint($tippie-md-min) { 
+          margin: 0;
+        }
+      }
+
+        .slide {
+          max-width: 380px;
+          margin-right: 20px;
+          min-height: 250px;
+          background-color: $gold;
+          // &:last-of-type {
+          //   margin-right: 0;
+          // }
+          @include breakpoint($tippie-sm-min) {
+            max-width: 100%;
+          }
+        }
+      //}
+    }
     .views-field-field-event-image {
       min-height: 100px;
     }
 
     .event-wrapper {
       margin: 1rem 1.5rem;
-      //display: table-cell;
-      //vertical-align: bottom;
       .event-date {
         font-family: BlenderProBold;
         text-transform: uppercase;
@@ -124,24 +149,60 @@ $love-it-background: $light_grey;
       }   
     }
 
-
-    .view-content {
-      @include breakpoint($tippie-sm-min) {
-        @include flexbox();
-        //flex-wrap: wrap;
-        margin-left: -10px;
-        margin-right: -10px;
-      }
-      & > .views-row {
-        width: 31%;
-
-        margin: 10px;
-        background-color: $gold;
-        position: relative;
-        flex:1;
-        align-self: flex-end;
-      }
+    .slick-arrow {
+      color: transparent;
+      background-color: transparent;
+      margin: 0;
+      padding: 0;
+      top: 40%;
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-style: solid;
     }
+    .slick-next {
+      @extend .slick-arrow;
+      right: 5px;
+      border-width: 30px 0 30px 30px;
+      border-color: transparent transparent transparent $orange;
+    }
+    .slick-prev {
+      @extend .slick-arrow;
+      left: 5px;
+      border-width: 30px 30px 30px 0;
+      border-color: transparent $orange transparent transparent;
+    }
+    @include breakpoint($tippie-sm-min) {
+     
+    }
+    @include breakpoint($tippie-md-min) { 
+      .slick-next {
+        right: -30px;
+      }
+      .slick-prev {
+        left: -50px;
+      } 
+
+    }
+
+
+    // .view-content {
+    //   @include breakpoint($tippie-sm-min) {
+    //     @include flexbox();
+    //     //flex-wrap: wrap;
+    //     margin-left: -10px;
+    //     margin-right: -10px;
+    //   }
+    //   & > .views-row {
+    //     width: 31%;
+
+    //     margin: 10px;
+    //     background-color: $gold;
+    //     position: relative;
+    //     flex:1;
+    //     align-self: flex-end;
+    //   }
+    // }
   }
 // End Upcoming Events
 

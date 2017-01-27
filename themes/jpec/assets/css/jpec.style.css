@@ -9811,7 +9811,8 @@ table.table-condensed th, table.table-condensed td {
 
 .node-type-founders-profile img {
   width: 100%;
-  height: auto; }
+  height: auto;
+  margin-bottom: 2rem; }
 
 .page-founders-club .view-founders-club-profiles .views-row {
   background-color: #EBE7E3;
@@ -9834,7 +9835,8 @@ table.table-condensed th, table.table-condensed td {
 
 .node-type-founders-profile img {
   width: 100%;
-  height: auto; }
+  height: auto;
+  margin-bottom: 2rem; }
 
 .page-founders-club .view-founders-club-profiles .views-row {
   background-color: #EBE7E3;
@@ -11521,6 +11523,9 @@ iframe[name^='google_conversion_frame'] {
 .front #content .container, .front #content .page-node-done .region, .page-node-done .front #content .region, .front #content .page-founders-club .view-founders-club-profiles, .page-founders-club .front #content .view-founders-club-profiles, .front #content .page-people-directory .view-faculty-staff, .page-people-directory .front #content .view-faculty-staff, .front #content .page-user .region-content, .page-user .front #content .region-content, .front #content .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps #content .pane-content, .front #content .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps #content .pane-title {
   padding: 0; }
 
+.front h2 {
+  font-size: 3rem; }
+
 .front .description {
   font-size: 1.2rem;
   line-height: 1.7;
@@ -11577,6 +11582,22 @@ iframe[name^='google_conversion_frame'] {
 .front .pane-calendar-homepage-events-pane {
   background-color: #EBE7E3;
   padding: 3rem 0 2rem 0; }
+  .front .pane-calendar-homepage-events-pane .slick {
+    position: relative; }
+    .front .pane-calendar-homepage-events-pane .slick .slick-list {
+      margin-right: 30px;
+      margin-left: 50px; }
+      @media (min-width: 992px) {
+        .front .pane-calendar-homepage-events-pane .slick .slick-list {
+          margin: 0; } }
+    .front .pane-calendar-homepage-events-pane .slick .slide {
+      max-width: 380px;
+      margin-right: 20px;
+      min-height: 250px;
+      background-color: #FFCD00; }
+      @media (min-width: 768px) {
+        .front .pane-calendar-homepage-events-pane .slick .slide {
+          max-width: 100%; } }
   .front .pane-calendar-homepage-events-pane .views-field-field-event-image {
     min-height: 100px; }
   .front .pane-calendar-homepage-events-pane .event-wrapper {
@@ -11596,25 +11617,29 @@ iframe[name^='google_conversion_frame'] {
         color: #000000; }
         .front .pane-calendar-homepage-events-pane .event-wrapper h4 a:hover {
           color: #0098D9; }
-  @media (min-width: 768px) {
-    .front .pane-calendar-homepage-events-pane .view-content {
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      margin-left: -10px;
-      margin-right: -10px; } }
-  .front .pane-calendar-homepage-events-pane .view-content > .views-row {
-    width: 31%;
-    margin: 10px;
-    background-color: #FFCD00;
-    position: relative;
-    -ms-flex: 1;
-        flex: 1;
-    -ms-flex-item-align: end;
-        align-self: flex-end; }
+  .front .pane-calendar-homepage-events-pane .slick-arrow, .front .pane-calendar-homepage-events-pane .slick-next, .front .pane-calendar-homepage-events-pane .slick-prev {
+    color: transparent;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    top: 40%;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-style: solid; }
+  .front .pane-calendar-homepage-events-pane .slick-next {
+    right: 5px;
+    border-width: 30px 0 30px 30px;
+    border-color: transparent transparent transparent #FE5E00; }
+  .front .pane-calendar-homepage-events-pane .slick-prev {
+    left: 5px;
+    border-width: 30px 30px 30px 0;
+    border-color: transparent #FE5E00 transparent transparent; }
+  @media (min-width: 992px) {
+    .front .pane-calendar-homepage-events-pane .slick-next {
+      right: -30px; }
+    .front .pane-calendar-homepage-events-pane .slick-prev {
+      left: -50px; } }
 
 .front .pane-bundle-homepage-next-steps {
   margin: 0;
