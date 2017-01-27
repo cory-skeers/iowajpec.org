@@ -11,6 +11,9 @@ function jpec_event_views_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "slick" && $api == "slick_default_preset") {
     return array("version" => "1");
   }
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => "1");
+  }
 }
 
 /**
