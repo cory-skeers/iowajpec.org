@@ -547,7 +547,30 @@ function jpec_event_views_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '9';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_plugin'] = 'slick';
+  $handler->display->display_options['style_options']['slide_field_wrapper'] = 0;
+  $handler->display->display_options['style_options']['asnavfor_auto'] = 0;
+  $handler->display->display_options['style_options']['optionset'] = 'homepage_events';
+  $handler->display->display_options['style_options']['slide_caption'] = array(
+    'field_event_image' => 0,
+    'field_event_date' => 0,
+    'title' => 0,
+    'field_event_audience' => 0,
+    'nothing' => 0,
+  );
+  $handler->display->display_options['style_options']['slide_overlay'] = '';
+  $handler->display->display_options['style_options']['grid_medium'] = '2';
+  $handler->display->display_options['style_options']['grid_small'] = '1';
+  $handler->display->display_options['style_options']['visible_slides'] = '3';
+  $handler->display->display_options['style_options']['preserve_keys'] = 0;
+  $handler->display->display_options['style_options']['override'] = 0;
+  $handler->display->display_options['style_options']['overridables'] = array(
+    'arrows' => 'arrows',
+    'autoplay' => 0,
+    'dots' => 0,
+    'draggable' => 0,
+  );
+  $handler->display->display_options['style_options']['cache'] = '';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
