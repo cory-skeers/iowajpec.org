@@ -1,5 +1,5 @@
 @mixin blue-angle($horizontal-position) {
-  @include breakpoint(min-width $screen-sm-min) {
+  @include breakpoint(min-width $screen-md-min) {
     background-image: url(../images/white_lines.png);
     background-repeat: no-repeat;
     background-position: $horizontal-position 50%;
