@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Mandela Washington Fellow feature.
- */
-
-include_once 'mandela_fellow.features.inc';
