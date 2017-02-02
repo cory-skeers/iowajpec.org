@@ -193,6 +193,11 @@ function jpec_preprocess_page(&$variables) {
           $variables['title'] = 'Founders Club Business';
         break;
 
+      case 'mandela_fellow': 
+          // Reset the title to "Mandela Washington Fellow"
+          $variables['title'] = 'Mandela Washington Fellow';
+        break;        
+
       // case 'webform':
       //   if (!empty($variables['node']->field_webform_public_title)) {
       //     // Set the title to the Public Title field.
