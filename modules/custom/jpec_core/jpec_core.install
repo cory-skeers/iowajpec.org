@@ -687,3 +687,12 @@ function jpec_core_update_7036() {
     taxonomy_term_save($new_term);
   }
 }
+
+/**
+ * Enable jpec_mandela_fellow feature
+ */
+function jpec_core_update_7037() {
+  if (!module_exists('jpec_mandela_fellow')) {
+    module_enable(array('jpec_mandela_fellow'));
+  }
+}
