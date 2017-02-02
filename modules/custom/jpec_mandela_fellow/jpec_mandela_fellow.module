@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the JPEC Mandela Washington Fellow feature.
+ */
+
+include_once 'jpec_mandela_fellow.features.inc';
