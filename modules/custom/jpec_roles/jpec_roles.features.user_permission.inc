@@ -55,6 +55,16 @@ function jpec_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'access fieldable panels panes master list'.
+  $permissions['access fieldable panels panes master list'] = array(
+    'name' => 'access fieldable panels panes master list',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
   // Exported permission: 'access media browser'.
   $permissions['access media browser'] = array(
     'name' => 'access media browser',
@@ -316,6 +326,24 @@ function jpec_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create fieldable homepage_next_steps'.
+  $permissions['create fieldable homepage_next_steps'] = array(
+    'name' => 'create fieldable homepage_next_steps',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'create fieldable homepage_panes'.
+  $permissions['create fieldable homepage_panes'] = array(
+    'name' => 'create fieldable homepage_panes',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
   // Exported permission: 'create files'.
   $permissions['create files'] = array(
     'name' => 'create files',
@@ -335,6 +363,17 @@ function jpec_roles_user_default_permissions() {
       'administrator' => 'administrator',
       'editor' => 'editor',
       'founders club editor' => 'founders club editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create mandela_fellow content'.
+  $permissions['create mandela_fellow content'] = array(
+    'name' => 'create mandela_fellow content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -498,6 +537,16 @@ function jpec_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'delete any mandela_fellow content'.
+  $permissions['delete any mandela_fellow content'] = array(
+    'name' => 'delete any mandela_fellow content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any news content'.
   $permissions['delete any news content'] = array(
     'name' => 'delete any news content',
@@ -556,6 +605,20 @@ function jpec_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'delete fieldable homepage_next_steps'.
+  $permissions['delete fieldable homepage_next_steps'] = array(
+    'name' => 'delete fieldable homepage_next_steps',
+    'roles' => array(),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'delete fieldable homepage_panes'.
+  $permissions['delete fieldable homepage_panes'] = array(
+    'name' => 'delete fieldable homepage_panes',
+    'roles' => array(),
+    'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'delete own card_content content'.
@@ -634,6 +697,16 @@ function jpec_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'delete own mandela_fellow content'.
+  $permissions['delete own mandela_fellow content'] = array(
+    'name' => 'delete own mandela_fellow content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'delete own news content'.
@@ -875,6 +948,16 @@ function jpec_roles_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'edit any mandela_fellow content'.
+  $permissions['edit any mandela_fellow content'] = array(
+    'name' => 'edit any mandela_fellow content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any news content'.
   $permissions['edit any news content'] = array(
     'name' => 'edit any news content',
@@ -933,6 +1016,24 @@ function jpec_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'edit fieldable homepage_next_steps'.
+  $permissions['edit fieldable homepage_next_steps'] = array(
+    'name' => 'edit fieldable homepage_next_steps',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
+  );
+
+  // Exported permission: 'edit fieldable homepage_panes'.
+  $permissions['edit fieldable homepage_panes'] = array(
+    'name' => 'edit fieldable homepage_panes',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'edit meta tags'.
@@ -1033,6 +1134,17 @@ function jpec_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit own mandela_fellow content'.
+  $permissions['edit own mandela_fellow content'] = array(
+    'name' => 'edit own mandela_fellow content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: 'edit own news content'.
