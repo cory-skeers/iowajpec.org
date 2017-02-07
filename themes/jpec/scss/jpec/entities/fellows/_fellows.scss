@@ -21,3 +21,44 @@
     line-height: 1;
   }
 }
+
+// landing page
+.page-mandela-washington-fellows {
+  .card-body {
+    padding-top: 0;
+  }
+  h4 {
+    margin-bottom: 0;
+  }
+  img {
+    max-height: 180px;
+  }
+  .field-name-field-mwf-country, .field-name-field-mwf-city {
+    display: inline-block;
+  }
+  .field-name-field-mwf-city {
+    padding-right: 3px;
+    .field-item:after {
+      content: ", ";
+      display: inline-block;
+    }
+  }
+  .field-name-field-mwf-title {
+    margin-top: 1rem;
+  }
+  .views-row {
+    background-color: $light_grey;
+    margin-bottom: 15px;
+    max-width: 350px;
+  }
+  .view-content {
+    @include flexbox();
+    //@include alignitems(stretch);
+    .views-row {
+      @include breakpoint($tippie-sm-min) {
+        margin-right: 15px;
+        width: 23%;
+      }
+    }
+  }
+}
