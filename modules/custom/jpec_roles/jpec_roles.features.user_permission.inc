@@ -1023,6 +1023,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit fieldable homepage_next_steps',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'fieldable_panels_panes',
   );
@@ -1032,6 +1033,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit fieldable homepage_panes',
     'roles' => array(
       'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'fieldable_panels_panes',
   );
