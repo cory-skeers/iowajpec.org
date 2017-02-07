@@ -17,6 +17,13 @@ function jpec_mandela_fellow_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function jpec_mandela_fellow_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_custom_breadcrumb_features_default_settings().
  */
 function jpec_mandela_fellow_custom_breadcrumb_features_default_settings() {
