@@ -14,7 +14,7 @@
   <div class="navigation-wrapper">
     <div id="navigation" class="container navigation navbar" role="navigation">
       <div class="site-branding">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#block-tippie-megamenu-tippie-megamenu-main" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#block-jpec-megamenu-jpec-megamenu-main" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
