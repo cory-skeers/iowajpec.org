@@ -10496,17 +10496,59 @@ table.table-condensed th, table.table-condensed td {
     .node-type-profile .page-header.tall-image {
       min-height: 300px; } }
 
-.node-type-profile .field-name-field-profile-subtitle {
-  font-family: FranklinGothicDemi;
-  line-height: 2.5; }
+.node-type-profile .page-header {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat; }
+  @media (min-width: 992px) {
+    .node-type-profile .page-header {
+      background-position: right top; } }
+  .node-type-profile .page-header .container, .node-type-profile .page-header .page-node-done .region, .page-node-done .node-type-profile .page-header .region, .node-type-profile .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-profile .page-header .view-founders-club-profiles, .node-type-profile .page-header .page-people-directory .view-faculty-staff, .page-people-directory .node-type-profile .page-header .view-faculty-staff, .node-type-profile .page-header .page-user .region-content, .page-user .node-type-profile .page-header .region-content, .node-type-profile .page-header .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .node-type-profile .page-header .pane-content, .node-type-profile .page-header .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .node-type-profile .page-header .pane-title {
+    padding: 0 0 0 1rem;
+    margin-top: 2rem; }
+  .node-type-profile .page-header .header-content {
+    background-color: transparent;
+    color: #000000;
+    padding: 2rem;
+    margin: 0;
+    margin-bottom: 40%;
+    max-width: 100%; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .node-type-profile .page-header .header-content {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 50%; } }
+    @media (min-width: 992px) {
+      .node-type-profile .page-header .header-content {
+        margin-bottom: 0;
+        border-right: 10px solid #FFFFFF;
+        background-color: #00A1C6;
+        color: #FFFFFF;
+        max-width: 50%;
+        margin-bottom: 0; } }
+    @media (min-width: 1200px) {
+      .node-type-profile .page-header .header-content {
+        max-width: 50%; } }
+  @media (min-width: 992px) {
+    .node-type-profile .page-header h1 {
+      color: #FFFFFF; } }
+  .node-type-profile .page-header .field-name-field-profile-subtitle {
+    font-family: BlenderProBold;
+    text-transform: uppercase; }
+    @media (min-width: 992px) {
+      .node-type-profile .page-header .field-name-field-profile-subtitle {
+        font-size: 2rem;
+        color: #FFCD00; } }
 
 .node-type-profile .field-name-field-profile-intro {
   font-size: 1.3rem;
-  font-family: BlenderProMedium;
-  line-height: 1.5; }
-  @media (min-width: 768px) {
+  line-height: 1.5;
+  margin-top: 1rem; }
+  @media (min-width: 992px) {
     .node-type-profile .field-name-field-profile-intro {
-      font-size: 2rem; } }
+      font-size: 1.6rem; } }
 
 .view-display-id-story_card_pane {
   max-width: 40rem;
@@ -10555,17 +10597,59 @@ table.table-condensed th, table.table-condensed td {
     .node-type-profile .page-header.tall-image {
       min-height: 300px; } }
 
-.node-type-profile .field-name-field-profile-subtitle {
-  font-family: FranklinGothicDemi;
-  line-height: 2.5; }
+.node-type-profile .page-header {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat; }
+  @media (min-width: 992px) {
+    .node-type-profile .page-header {
+      background-position: right top; } }
+  .node-type-profile .page-header .container, .node-type-profile .page-header .page-node-done .region, .page-node-done .node-type-profile .page-header .region, .node-type-profile .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-profile .page-header .view-founders-club-profiles, .node-type-profile .page-header .page-people-directory .view-faculty-staff, .page-people-directory .node-type-profile .page-header .view-faculty-staff, .node-type-profile .page-header .page-user .region-content, .page-user .node-type-profile .page-header .region-content, .node-type-profile .page-header .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .node-type-profile .page-header .pane-content, .node-type-profile .page-header .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .node-type-profile .page-header .pane-title {
+    padding: 0 0 0 1rem;
+    margin-top: 2rem; }
+  .node-type-profile .page-header .header-content {
+    background-color: transparent;
+    color: #000000;
+    padding: 2rem;
+    margin: 0;
+    margin-bottom: 40%;
+    max-width: 100%; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .node-type-profile .page-header .header-content {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 50%; } }
+    @media (min-width: 992px) {
+      .node-type-profile .page-header .header-content {
+        margin-bottom: 0;
+        border-right: 10px solid #FFFFFF;
+        background-color: #00A1C6;
+        color: #FFFFFF;
+        max-width: 50%;
+        margin-bottom: 0; } }
+    @media (min-width: 1200px) {
+      .node-type-profile .page-header .header-content {
+        max-width: 50%; } }
+  @media (min-width: 992px) {
+    .node-type-profile .page-header h1 {
+      color: #FFFFFF; } }
+  .node-type-profile .page-header .field-name-field-profile-subtitle {
+    font-family: BlenderProBold;
+    text-transform: uppercase; }
+    @media (min-width: 992px) {
+      .node-type-profile .page-header .field-name-field-profile-subtitle {
+        font-size: 2rem;
+        color: #FFCD00; } }
 
 .node-type-profile .field-name-field-profile-intro {
   font-size: 1.3rem;
-  font-family: BlenderProMedium;
-  line-height: 1.5; }
-  @media (min-width: 768px) {
+  line-height: 1.5;
+  margin-top: 1rem; }
+  @media (min-width: 992px) {
     .node-type-profile .field-name-field-profile-intro {
-      font-size: 2rem; } }
+      font-size: 1.6rem; } }
 
 .view-display-id-story_card_pane {
   max-width: 40rem;

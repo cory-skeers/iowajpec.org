@@ -1,3 +1,5 @@
+$tippie-sm: $tippie-sm-min $tippie-sm-max;
+
 .node-type-profile {
   
   .page-header.tall-image {
@@ -6,16 +8,66 @@
       min-height: 300px;
     }
   }
-  .field-name-field-profile-subtitle {
-    font-family: FranklinGothicDemi;
-    line-height: 2.5;
+  .page-header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    @include breakpoint($tippie-md-min) {
+      background-position: right top;
+    }
+    .container {
+      padding: 0 0 0 1rem;
+      margin-top: 2rem;
+    }
+    .header-content {
+      background-color: transparent;
+      color: $body_text;
+      padding: 2rem;
+      margin: 0;
+      margin-bottom: 40%;
+      max-width: 100%;
+      @include breakpoint($tippie-sm) {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 50%;
+      }
+      @include breakpoint($tippie-md-min) {
+        margin-bottom: 0;
+        border-right: 10px solid $white;
+        background-color: $blue;
+        color: $white;
+        max-width: 50%;
+        margin-bottom: 0;
+      }
+     @include breakpoint($tippie-lg-min) {
+        max-width: 50%;
+     }
+    }
+    h1 {
+      
+      @include breakpoint($tippie-md-min) {
+        color: $white;
+      }
+    }
+    .field-name-field-profile-subtitle {
+      font-family: BlenderProBold;
+      text-transform: uppercase;
+      @include breakpoint($tippie-md-min) {
+        @include fontsize(2);
+        color: $gold;
+      }
+    }
   }
+
   .field-name-field-profile-intro {
     @include fontsize(1.3);
-    font-family: BlenderProMedium;
+    //font-family: BlenderProMedium;
     line-height: 1.5;
-    @include breakpoint($tippie-sm-min) {
-      @include fontsize(2);
+    margin-top: 1rem;
+    @include breakpoint($tippie-md-min) {
+      @include fontsize(1.6);
     }
   }
 }
