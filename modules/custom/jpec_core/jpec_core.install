@@ -705,3 +705,17 @@ function jpec_core_update_7038() {
     module_enable(array('jpec_news_importer'));
   }
 }
+
+/**
+ * Install wysiwyg-related modules.
+ */
+function jpec_core_update_7039() {
+
+  if (!module_exists('ckeditor_link_file')) {
+    module_enable(array('ckeditor_link_file'));
+  }
+
+  if (!module_exists('better_formats')) {
+    module_enable(array('better_formats'));
+  }
+}
