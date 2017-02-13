@@ -170,12 +170,12 @@ function jpec_preprocess_page(&$variables) {
       case 'profile':
 
         // Add generic tall-image class for layout.
-        $variables['header_classes_array'][] = 'tall-image';
+        //$variables['header_classes_array'][] = 'tall-image';
 
         // Get profile image field and set it as the tall header image.
-        $header_image_tall = field_view_field('node', $variables['node'], 'field_profile_image', $display = 'default', $langcode = NULL);
+        // $header_image_tall = field_view_field('node', $variables['node'], 'field_profile_image', $display = 'default', $langcode = NULL);
 
-        $variables['header_image_tall'] = $header_image_tall;
+        // $variables['header_image_tall'] = $header_image_tall;
 
         // Get the content that goes in the header.
         $subtitle = field_view_field('node', $variables['node'], 'field_profile_subtitle', $display = 'default', $langcode = NULL);
@@ -185,6 +185,19 @@ function jpec_preprocess_page(&$variables) {
           'subtitle' => $subtitle,
           'intro' => $intro,
         );
+
+        $header_image = $wrapper->field_profile_image->value();
+        //$header_image = field_view_field('node', $variables['node'], 'field_profile_image', $display = 'default', $langcode = NULL);
+        //dpm($header_image,'header image');
+
+        if (!empty($header_image)) {
+
+          $header_image_url = image_style_url('profile_header', $header_image['uri']);
+          //$header_image_url = $header_image['uri'];
+
+          $variables['header_attributes_array']['style'][] = 'background-image:url(' . $header_image_url . ')';
+          //dpm($variables);
+        }
 
         break;     
 
