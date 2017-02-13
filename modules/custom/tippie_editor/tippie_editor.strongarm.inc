@@ -29,20 +29,19 @@ function tippie_editor_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'ckeditor_link_autocomplete_node_types';
   $strongarm->value = array(
-    'center_institute' => 'center_institute',
-    'department' => 'department',
-    'page' => 'page',
+    'competition' => 'competition',
+    'event' => 'event',
+    'founders_profile' => 'founders_profile',
+    'mandela_fellow' => 'mandela_fellow',
     'news' => 'news',
+    'page' => 'page',
     'person' => 'person',
     'profile' => 'profile',
-    'program' => 'program',
-    'org' => 'org',
     'webform' => 'webform',
     '- any -' => 0,
-    'cta' => 0,
+    'card_content' => 0,
     'factoid' => 0,
-    'generic_block' => 0,
-    'publication' => 0,
+    'panel' => 0,
     'story' => 0,
   );
   $export['ckeditor_link_autocomplete_node_types'] = $strongarm;
@@ -53,14 +52,10 @@ function tippie_editor_strongarm() {
   $strongarm->name = 'ckeditor_link_autocomplete_vocabularies';
   $strongarm->value = array(
     '- any -' => 0,
-    3 => 0,
-    2 => 0,
-    1 => 0,
-    4 => 0,
+    14 => 0,
     6 => 0,
-    7 => 0,
-    8 => 0,
-    5 => 0,
+    13 => 0,
+    11 => 0,
   );
   $export['ckeditor_link_autocomplete_vocabularies'] = $strongarm;
 
