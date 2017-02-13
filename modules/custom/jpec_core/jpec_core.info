@@ -42,6 +42,7 @@ features[field_instance][] = file-image-field_file_image_title_text
 features[field_instance][] = file-image-field_folder
 features[image][] = card_640x325
 features[image][] = homepage_event__380x105_
+features[image][] = profile_header
 features[image][] = short_header
 features[image][] = square_290x290
 features[image][] = square_585x585

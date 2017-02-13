@@ -73,6 +73,21 @@ function jpec_core_image_default_styles() {
     ),
   );
 
+  // Exported image style: profile_header.
+  $styles['profile_header'] = array(
+    'label' => 'Profile header (900x370)',
+    'effects' => array(
+      8 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 900,
+          'height' => 370,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: short_header.
   $styles['short_header'] = array(
     'label' => 'Short Header',
