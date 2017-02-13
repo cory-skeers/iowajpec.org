@@ -198,48 +198,26 @@ function jpec_story_field_default_field_instances() {
   $field_instances['node-profile-field_profile_image'] = array(
     'bundle' => 'profile',
     'deleted' => 0,
-    'description' => 'Upload a 2000px by 700px image. Face should fit in to the area within 500px from the center of the image, preferably closer to the right edge. You will be required to specify a cropping selection for a small horizontal image.',
+    'description' => 'Upload a 900x370px image. Face should fit in to the area close to the left edge.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'picture',
+        'module' => 'image',
         'settings' => array(
-          'colorbox_settings' => array(
-            'colorbox_caption' => 'auto',
-            'colorbox_caption_custom' => '',
-            'colorbox_gallery' => 'post',
-            'colorbox_gallery_custom' => '',
-            'colorbox_group' => '',
-            'colorbox_multivalue_index' => NULL,
-          ),
-          'fallback_image_style' => 'tall_header_original',
           'image_link' => '',
-          'lazyload' => 0,
-          'lazyload_aspect_ratio' => 0,
-          'picture_mapping' => 'tall_header',
+          'image_style' => 'profile_header',
         ),
-        'type' => 'picture',
+        'type' => 'image',
         'weight' => 0,
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'picture',
+        'module' => 'image',
         'settings' => array(
-          'colorbox_settings' => array(
-            'colorbox_caption' => 'auto',
-            'colorbox_caption_custom' => '',
-            'colorbox_gallery' => 'post',
-            'colorbox_gallery_custom' => '',
-            'colorbox_group' => '',
-            'colorbox_multivalue_index' => NULL,
-          ),
-          'fallback_image_style' => 'tall_header_original',
           'image_link' => '',
-          'lazyload' => 0,
-          'lazyload_aspect_ratio' => 0,
-          'picture_mapping' => 'tall_header',
+          'image_style' => 'profile_header',
         ),
-        'type' => 'picture',
+        'type' => 'image',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -260,7 +238,7 @@ function jpec_story_field_default_field_instances() {
       'file_extensions' => 'png jpg jpeg',
       'max_filesize' => '4 MB',
       'max_resolution' => '',
-      'min_resolution' => '2000x700',
+      'min_resolution' => '900x370',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -286,7 +264,7 @@ function jpec_story_field_default_field_instances() {
         ),
         'manualcrop_crop_info' => 1,
         'manualcrop_default_crop_area' => 1,
-        'manualcrop_enable' => 1,
+        'manualcrop_enable' => 0,
         'manualcrop_inline_crop' => 0,
         'manualcrop_instant_crop' => FALSE,
         'manualcrop_instant_preview' => 1,
@@ -871,7 +849,7 @@ function jpec_story_field_default_field_instances() {
   t('Story image');
   t('Subtitle');
   t('Tags');
-  t('Upload a 2000px by 700px image. Face should fit in to the area within 500px from the center of the image, preferably closer to the right edge. You will be required to specify a cropping selection for a small horizontal image.');
+  t('Upload a 900x370px image. Face should fit in to the area close to the left edge.');
   t('Will be used only in the pulled story in the content block.');
 
   return $field_instances;
