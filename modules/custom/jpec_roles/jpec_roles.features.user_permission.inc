@@ -55,16 +55,6 @@ function jpec_roles_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'access fieldable panels panes master list'.
-  $permissions['access fieldable panels panes master list'] = array(
-    'name' => 'access fieldable panels panes master list',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
-    ),
-    'module' => 'fieldable_panels_panes',
-  );
-
   // Exported permission: 'access media browser'.
   $permissions['access media browser'] = array(
     'name' => 'access media browser',
@@ -125,6 +115,15 @@ function jpec_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'user',
+  );
+
+  // Exported permission: 'administer entityqueue'.
+  $permissions['administer entityqueue'] = array(
+    'name' => 'administer entityqueue',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'entityqueue',
   );
 
   // Exported permission: 'administer files'.
@@ -326,24 +325,6 @@ function jpec_roles_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'create fieldable homepage_next_steps'.
-  $permissions['create fieldable homepage_next_steps'] = array(
-    'name' => 'create fieldable homepage_next_steps',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'fieldable_panels_panes',
-  );
-
-  // Exported permission: 'create fieldable homepage_panes'.
-  $permissions['create fieldable homepage_panes'] = array(
-    'name' => 'create fieldable homepage_panes',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'fieldable_panels_panes',
-  );
-
   // Exported permission: 'create files'.
   $permissions['create files'] = array(
     'name' => 'create files',
@@ -363,6 +344,16 @@ function jpec_roles_user_default_permissions() {
       'administrator' => 'administrator',
       'editor' => 'editor',
       'founders club editor' => 'founders club editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create homepage content'.
+  $permissions['create homepage content'] = array(
+    'name' => 'create homepage content',
+    'roles' => array(
+      'administrator' => 'administrator',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -527,6 +518,15 @@ function jpec_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any homepage content'.
+  $permissions['delete any homepage content'] = array(
+    'name' => 'delete any homepage content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any image files'.
   $permissions['delete any image files'] = array(
     'name' => 'delete any image files',
@@ -607,20 +607,6 @@ function jpec_roles_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete fieldable homepage_next_steps'.
-  $permissions['delete fieldable homepage_next_steps'] = array(
-    'name' => 'delete fieldable homepage_next_steps',
-    'roles' => array(),
-    'module' => 'fieldable_panels_panes',
-  );
-
-  // Exported permission: 'delete fieldable homepage_panes'.
-  $permissions['delete fieldable homepage_panes'] = array(
-    'name' => 'delete fieldable homepage_panes',
-    'roles' => array(),
-    'module' => 'fieldable_panels_panes',
-  );
-
   // Exported permission: 'delete own card_content content'.
   $permissions['delete own card_content content'] = array(
     'name' => 'delete own card_content content',
@@ -683,6 +669,15 @@ function jpec_roles_user_default_permissions() {
       'editor' => 'editor',
       'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own homepage content'.
+  $permissions['delete own homepage content'] = array(
+    'name' => 'delete own homepage content',
+    'roles' => array(
+      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -936,6 +931,16 @@ function jpec_roles_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any homepage content'.
+  $permissions['edit any homepage content'] = array(
+    'name' => 'edit any homepage content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any image files'.
   $permissions['edit any image files'] = array(
     'name' => 'edit any image files',
@@ -1016,26 +1021,6 @@ function jpec_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'edit fieldable homepage_next_steps'.
-  $permissions['edit fieldable homepage_next_steps'] = array(
-    'name' => 'edit fieldable homepage_next_steps',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
-    ),
-    'module' => 'fieldable_panels_panes',
-  );
-
-  // Exported permission: 'edit fieldable homepage_panes'.
-  $permissions['edit fieldable homepage_panes'] = array(
-    'name' => 'edit fieldable homepage_panes',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
-    ),
-    'module' => 'fieldable_panels_panes',
   );
 
   // Exported permission: 'edit meta tags'.
@@ -1121,6 +1106,16 @@ function jpec_roles_user_default_permissions() {
       'administrator' => 'administrator',
       'editor' => 'editor',
       'founders club editor' => 'founders club editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own homepage content'.
+  $permissions['edit own homepage content'] = array(
+    'name' => 'edit own homepage content',
+    'roles' => array(
+      'administrator' => 'administrator',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1267,6 +1262,24 @@ function jpec_roles_user_default_permissions() {
     'module' => 'webform',
   );
 
+  // Exported permission: 'manipulate all entityqueues'.
+  $permissions['manipulate all entityqueues'] = array(
+    'name' => 'manipulate all entityqueues',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'entityqueue',
+  );
+
+  // Exported permission: 'manipulate entityqueues'.
+  $permissions['manipulate entityqueues'] = array(
+    'name' => 'manipulate entityqueues',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'entityqueue',
+  );
+
   // Exported permission: 'masquerade as user'.
   $permissions['masquerade as user'] = array(
     'name' => 'masquerade as user',
@@ -1367,6 +1380,16 @@ function jpec_roles_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'better_formats',
+  );
+
+  // Exported permission: 'update homepage_content entityqueue'.
+  $permissions['update homepage_content entityqueue'] = array(
+    'name' => 'update homepage_content entityqueue',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'entityqueue',
   );
 
   // Exported permission: 'use manual purge blocks'.
