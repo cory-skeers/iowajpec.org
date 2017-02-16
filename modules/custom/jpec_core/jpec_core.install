@@ -719,3 +719,21 @@ function jpec_core_update_7039() {
     module_enable(array('better_formats'));
   }
 }
+
+/**
+ * Enable jpec_homepage feature
+ */
+function jpec_core_update_7040() {
+  if (!module_exists('jpec_homepage')) {
+    module_enable(array('jpec_homepage'));
+  }
+}
+
+/**
+ * Disable fieldable_panels_panes module
+ */
+function jpec_core_update_7041() {
+  if (module_exists('fieldable_panels_panes')) {
+    module_disable(array('fieldable_panels_panes'));
+  }
+}
