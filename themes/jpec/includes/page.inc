@@ -25,8 +25,6 @@ function jpec_load_fieldable_panels_by_name($name) {
  */
 function jpec_preprocess_page(&$variables) {
 
-//dpm($variables);
-
   // Create header_classes_array.
   $variables['header_classes_array'] = array('page-header');
 
@@ -93,8 +91,6 @@ function jpec_preprocess_page(&$variables) {
             '#markup' => $profile->field_profile_intro->value->value(),
             '#suffix' => '</span>',
           );
-
-
 
           $first_name = trim($profile->field_profile_fname->value()) . "'s";
 
@@ -169,14 +165,6 @@ function jpec_preprocess_page(&$variables) {
 
       case 'profile':
 
-        // Add generic tall-image class for layout.
-        //$variables['header_classes_array'][] = 'tall-image';
-
-        // Get profile image field and set it as the tall header image.
-        // $header_image_tall = field_view_field('node', $variables['node'], 'field_profile_image', $display = 'default', $langcode = NULL);
-
-        // $variables['header_image_tall'] = $header_image_tall;
-
         // Get the content that goes in the header.
         $subtitle = field_view_field('node', $variables['node'], 'field_profile_subtitle', $display = 'default', $langcode = NULL);
         $intro = field_view_field('node', $variables['node'], 'field_profile_intro', $display = 'default', $langcode = NULL);
@@ -187,13 +175,10 @@ function jpec_preprocess_page(&$variables) {
         );
 
         $header_image = $wrapper->field_profile_image->value();
-        //$header_image = field_view_field('node', $variables['node'], 'field_profile_image', $display = 'default', $langcode = NULL);
-        //dpm($header_image,'header image');
 
         if (!empty($header_image)) {
 
           $header_image_url = image_style_url('profile_header', $header_image['uri']);
-          //$header_image_url = $header_image['uri'];
 
           $variables['header_attributes_array']['style'][] = 'background-image:url(' . $header_image_url . ')';
           //dpm($variables);
@@ -209,21 +194,11 @@ function jpec_preprocess_page(&$variables) {
       case 'mandela_fellow': 
           // Reset the title to "Mandela Washington Fellow"
           $variables['title'] = 'Mandela Washington Fellow';
-        break;        
-
-      // case 'webform':
-      //   if (!empty($variables['node']->field_webform_public_title)) {
-      //     // Set the title to the Public Title field.
-      //     $variables['title'] = $wrapper->field_webform_public_title->value();
-      //     // Add section_title field.
-      //     $variables['section_title'] = $wrapper->field_section_title->value();
-      //   }
-      //   break;
+        break;               
 
       default:
         break;
     }
-    //dpm($variables);
   }
 
   // Events page - add a Featured Event view to Extra_content field so it can be printed then in the page.tpl.php
@@ -234,38 +209,29 @@ function jpec_preprocess_page(&$variables) {
   // Front page configuration.
   if ($variables['is_front']) {
 
-    $pane_entity = jpec_load_fieldable_panels_by_name('homepage_panes');
-    //dpm($pane_entity,'pane_entity');
-    // Add generic tall-image class for layout.
+    $queue = entityqueue_subqueue_load('homepage_content');
+    $node_id = $queue->eq_node['und'][0]['target_id'];
+    $homepage_node = node_load($node_id);
+    $wrapper = entity_metadata_wrapper('node', $node_id);
+
+    //header
     $variables['header_classes_array'][] = 'tall-image';
+    $variables['title'] = $wrapper->title->value();
+    $header_image = $wrapper->field_header_image_tall->value();
 
+    if (!empty($header_image)) {
+      $header_image_tall = field_view_field('node', $homepage_node, 'field_header_image_tall', $display = 'default', $langcode = NULL);
+      $variables['header_image_tall'] = $header_image_tall;
+    }
 
-    
-    // Reset the title to the title field from the pane.
-    $variables['title'] = $pane_entity->field_page_title['und'][0]['safe_value'];
-
-    $pane_header_image = field_view_field('fieldable_panels_pane', $pane_entity, 'field_header_image_tall', $display = 'default', $langcode = NULL);
-    //dpm($pane_header_image,'pane_header_image');
-
-    $variables['header_image_tall'] = $pane_header_image;
-
-    $pane_wrapper = entity_metadata_wrapper('fieldable_panels_pane', $pane_entity);
-    $header_text = $pane_wrapper->field_homepage_text_1->value->value();
-
-    //dpm($block1_text,'block1_text');
-    //dpm($wrapper_text,'wrapper_text');
-
-    //$header_text = $panel->field_homepage_text_1['und'][0]['safe_value'];
-    $variables['header_classes_array'][] = 'tall-image';
+    $header_text = $wrapper->field_homepage_block_1->value->value();
     $variables['header_fields'] = array(
       '#prefix' => '<span class="custom-text">',
       '#markup' => $header_text,
       '#suffix' => '<span>',
     );
-
   }
 
- 
   // Add a body class for taxonomy vocabulary machine names
   if (arg(0) == 'taxonomy' && arg(1) == 'term') {
     $term = taxonomy_term_load(arg(2));
