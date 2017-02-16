@@ -5,3 +5,13 @@
  */
 
 include_once 'jpec_pages.features.inc';
+
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function jpec_pages_ctools_plugin_directory($owner, $plugin_type) {
+  if ($owner == 'ctools' || $owner == 'page_manager' || $owner == 'panels') {
+    return 'plugins/' . $plugin_type;
+  }
+}
