@@ -1500,24 +1500,24 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container, .page-node-done .region, .page-founders-club .view-founders-club-profiles, .page-people-directory .view-faculty-staff, .page-user .region-content, .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .pane-title {
+.container, .page-node-done .region, .page-founders-club .view-founders-club-profiles, .page-people-directory .view-faculty-staff, .page-user .region-content {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
-  .container:before, .page-node-done .region:before, .page-founders-club .view-founders-club-profiles:before, .page-people-directory .view-faculty-staff:before, .page-user .region-content:before, .front .pane-bundle-homepage-next-steps .pane-content:before, .front .pane-bundle-homepage-next-steps .pane-title:before, .container:after, .page-node-done .region:after, .page-founders-club .view-founders-club-profiles:after, .page-people-directory .view-faculty-staff:after, .page-user .region-content:after, .front .pane-bundle-homepage-next-steps .pane-content:after, .front .pane-bundle-homepage-next-steps .pane-title:after {
+  .container:before, .page-node-done .region:before, .page-founders-club .view-founders-club-profiles:before, .page-people-directory .view-faculty-staff:before, .page-user .region-content:before, .container:after, .page-node-done .region:after, .page-founders-club .view-founders-club-profiles:after, .page-people-directory .view-faculty-staff:after, .page-user .region-content:after {
     content: " ";
     display: table; }
-  .container:after, .page-node-done .region:after, .page-founders-club .view-founders-club-profiles:after, .page-people-directory .view-faculty-staff:after, .page-user .region-content:after, .front .pane-bundle-homepage-next-steps .pane-content:after, .front .pane-bundle-homepage-next-steps .pane-title:after {
+  .container:after, .page-node-done .region:after, .page-founders-club .view-founders-club-profiles:after, .page-people-directory .view-faculty-staff:after, .page-user .region-content:after {
     clear: both; }
   @media (min-width: 768px) {
-    .container, .page-node-done .region, .page-founders-club .view-founders-club-profiles, .page-people-directory .view-faculty-staff, .page-user .region-content, .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .pane-title {
+    .container, .page-node-done .region, .page-founders-club .view-founders-club-profiles, .page-people-directory .view-faculty-staff, .page-user .region-content {
       width: 750px; } }
   @media (min-width: 992px) {
-    .container, .page-node-done .region, .page-founders-club .view-founders-club-profiles, .page-people-directory .view-faculty-staff, .page-user .region-content, .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .pane-title {
+    .container, .page-node-done .region, .page-founders-club .view-founders-club-profiles, .page-people-directory .view-faculty-staff, .page-user .region-content {
       width: 970px; } }
   @media (min-width: 1200px) {
-    .container, .page-node-done .region, .page-founders-club .view-founders-club-profiles, .page-people-directory .view-faculty-staff, .page-user .region-content, .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .pane-title {
+    .container, .page-node-done .region, .page-founders-club .view-founders-club-profiles, .page-people-directory .view-faculty-staff, .page-user .region-content {
       width: 1170px; } }
 
 .container-fluid {
@@ -3762,15 +3762,15 @@ tbody.collapse.in {
     .navbar-fixed-bottom .navbar-collapse {
       max-height: 200px; } }
 
-.container > .navbar-header, .page-node-done .region > .navbar-header, .page-founders-club .view-founders-club-profiles > .navbar-header, .page-people-directory .view-faculty-staff > .navbar-header, .page-user .region-content > .navbar-header, .front .pane-bundle-homepage-next-steps .pane-content > .navbar-header, .front .pane-bundle-homepage-next-steps .pane-title > .navbar-header,
-.container > .navbar-collapse, .page-node-done .region > .navbar-collapse, .page-founders-club .view-founders-club-profiles > .navbar-collapse, .page-people-directory .view-faculty-staff > .navbar-collapse, .page-user .region-content > .navbar-collapse, .front .pane-bundle-homepage-next-steps .pane-content > .navbar-collapse, .front .pane-bundle-homepage-next-steps .pane-title > .navbar-collapse,
+.container > .navbar-header, .page-node-done .region > .navbar-header, .page-founders-club .view-founders-club-profiles > .navbar-header, .page-people-directory .view-faculty-staff > .navbar-header, .page-user .region-content > .navbar-header,
+.container > .navbar-collapse, .page-node-done .region > .navbar-collapse, .page-founders-club .view-founders-club-profiles > .navbar-collapse, .page-people-directory .view-faculty-staff > .navbar-collapse, .page-user .region-content > .navbar-collapse,
 .container-fluid > .navbar-header,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px; }
   @media (min-width: 992px) {
-    .container > .navbar-header, .page-node-done .region > .navbar-header, .page-founders-club .view-founders-club-profiles > .navbar-header, .page-people-directory .view-faculty-staff > .navbar-header, .page-user .region-content > .navbar-header, .front .pane-bundle-homepage-next-steps .pane-content > .navbar-header, .front .pane-bundle-homepage-next-steps .pane-title > .navbar-header,
-    .container > .navbar-collapse, .page-node-done .region > .navbar-collapse, .page-founders-club .view-founders-club-profiles > .navbar-collapse, .page-people-directory .view-faculty-staff > .navbar-collapse, .page-user .region-content > .navbar-collapse, .front .pane-bundle-homepage-next-steps .pane-content > .navbar-collapse, .front .pane-bundle-homepage-next-steps .pane-title > .navbar-collapse,
+    .container > .navbar-header, .page-node-done .region > .navbar-header, .page-founders-club .view-founders-club-profiles > .navbar-header, .page-people-directory .view-faculty-staff > .navbar-header, .page-user .region-content > .navbar-header,
+    .container > .navbar-collapse, .page-node-done .region > .navbar-collapse, .page-founders-club .view-founders-club-profiles > .navbar-collapse, .page-people-directory .view-faculty-staff > .navbar-collapse, .page-user .region-content > .navbar-collapse,
     .container-fluid > .navbar-header,
     .container-fluid > .navbar-collapse {
       margin-right: 0;
@@ -3814,7 +3814,7 @@ tbody.collapse.in {
   .navbar-brand > img {
     display: block; }
   @media (min-width: 992px) {
-    .navbar > .container .navbar-brand, .page-node-done .navbar > .region .navbar-brand, .page-founders-club .navbar > .view-founders-club-profiles .navbar-brand, .page-people-directory .navbar > .view-faculty-staff .navbar-brand, .page-user .navbar > .region-content .navbar-brand, .front .pane-bundle-homepage-next-steps .navbar > .pane-content .navbar-brand, .front .pane-bundle-homepage-next-steps .navbar > .pane-title .navbar-brand,
+    .navbar > .container .navbar-brand, .page-node-done .navbar > .region .navbar-brand, .page-founders-club .navbar > .view-founders-club-profiles .navbar-brand, .page-people-directory .navbar > .view-faculty-staff .navbar-brand, .page-user .navbar > .region-content .navbar-brand,
     .navbar > .container-fluid .navbar-brand {
       margin-left: -15px; } }
 
@@ -4340,18 +4340,18 @@ a.badge:hover, a.badge:focus {
     font-weight: 200; }
   .jumbotron > hr {
     border-top-color: #d5d5d5; }
-  .container .jumbotron, .page-node-done .region .jumbotron, .page-founders-club .view-founders-club-profiles .jumbotron, .page-people-directory .view-faculty-staff .jumbotron, .page-user .region-content .jumbotron, .front .pane-bundle-homepage-next-steps .pane-content .jumbotron, .front .pane-bundle-homepage-next-steps .pane-title .jumbotron,
+  .container .jumbotron, .page-node-done .region .jumbotron, .page-founders-club .view-founders-club-profiles .jumbotron, .page-people-directory .view-faculty-staff .jumbotron, .page-user .region-content .jumbotron,
   .container-fluid .jumbotron {
     border-radius: 6px;
     padding-left: 15px;
     padding-right: 15px; }
-  .jumbotron .container, .jumbotron .page-node-done .region, .page-node-done .jumbotron .region, .jumbotron .page-founders-club .view-founders-club-profiles, .page-founders-club .jumbotron .view-founders-club-profiles, .jumbotron .page-people-directory .view-faculty-staff, .page-people-directory .jumbotron .view-faculty-staff, .jumbotron .page-user .region-content, .page-user .jumbotron .region-content, .jumbotron .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .jumbotron .pane-content, .jumbotron .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .jumbotron .pane-title {
+  .jumbotron .container, .jumbotron .page-node-done .region, .page-node-done .jumbotron .region, .jumbotron .page-founders-club .view-founders-club-profiles, .page-founders-club .jumbotron .view-founders-club-profiles, .jumbotron .page-people-directory .view-faculty-staff, .page-people-directory .jumbotron .view-faculty-staff, .jumbotron .page-user .region-content, .page-user .jumbotron .region-content {
     max-width: 100%; }
   @media screen and (min-width: 768px) {
     .jumbotron {
       padding-top: 48px;
       padding-bottom: 48px; }
-      .container .jumbotron, .page-node-done .region .jumbotron, .page-founders-club .view-founders-club-profiles .jumbotron, .page-people-directory .view-faculty-staff .jumbotron, .page-user .region-content .jumbotron, .front .pane-bundle-homepage-next-steps .pane-content .jumbotron, .front .pane-bundle-homepage-next-steps .pane-title .jumbotron,
+      .container .jumbotron, .page-node-done .region .jumbotron, .page-founders-club .view-founders-club-profiles .jumbotron, .page-people-directory .view-faculty-staff .jumbotron, .page-user .region-content .jumbotron,
       .container-fluid .jumbotron {
         padding-left: 60px;
         padding-right: 60px; }
@@ -8024,7 +8024,7 @@ html.js fieldset.collapsed {
     #features-export-form .features-export-parent .features-export-list .form-item {
       float: none !important; }
 
-#panels-panel-context-edit-move .container, #panels-panel-context-edit-move .page-node-done .region, .page-node-done #panels-panel-context-edit-move .region, #panels-panel-context-edit-move .page-founders-club .view-founders-club-profiles, .page-founders-club #panels-panel-context-edit-move .view-founders-club-profiles, #panels-panel-context-edit-move .page-people-directory .view-faculty-staff, .page-people-directory #panels-panel-context-edit-move .view-faculty-staff, #panels-panel-context-edit-move .page-user .region-content, .page-user #panels-panel-context-edit-move .region-content, #panels-panel-context-edit-move .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps #panels-panel-context-edit-move .pane-content, #panels-panel-context-edit-move .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps #panels-panel-context-edit-move .pane-title,
+#panels-panel-context-edit-move .container, #panels-panel-context-edit-move .page-node-done .region, .page-node-done #panels-panel-context-edit-move .region, #panels-panel-context-edit-move .page-founders-club .view-founders-club-profiles, .page-founders-club #panels-panel-context-edit-move .view-founders-club-profiles, #panels-panel-context-edit-move .page-people-directory .view-faculty-staff, .page-people-directory #panels-panel-context-edit-move .view-faculty-staff, #panels-panel-context-edit-move .page-user .region-content, .page-user #panels-panel-context-edit-move .region-content,
 #panels-panel-context-edit-content .container,
 #panels-panel-context-edit-content .page-node-done .region, .page-node-done
 #panels-panel-context-edit-content .region,
@@ -8033,14 +8033,10 @@ html.js fieldset.collapsed {
 #panels-panel-context-edit-content .page-people-directory .view-faculty-staff, .page-people-directory
 #panels-panel-context-edit-content .view-faculty-staff,
 #panels-panel-context-edit-content .page-user .region-content, .page-user
-#panels-panel-context-edit-content .region-content,
-#panels-panel-context-edit-content .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps
-#panels-panel-context-edit-content .pane-content,
-#panels-panel-context-edit-content .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps
-#panels-panel-context-edit-content .pane-title {
+#panels-panel-context-edit-content .region-content {
   width: auto;
   padding: 0; }
-  #panels-panel-context-edit-move .container .row, #panels-panel-context-edit-move .page-node-done .region .row, .page-node-done #panels-panel-context-edit-move .region .row, #panels-panel-context-edit-move .page-founders-club .view-founders-club-profiles .row, .page-founders-club #panels-panel-context-edit-move .view-founders-club-profiles .row, #panels-panel-context-edit-move .page-people-directory .view-faculty-staff .row, .page-people-directory #panels-panel-context-edit-move .view-faculty-staff .row, #panels-panel-context-edit-move .page-user .region-content .row, .page-user #panels-panel-context-edit-move .region-content .row, #panels-panel-context-edit-move .front .pane-bundle-homepage-next-steps .pane-content .row, .front .pane-bundle-homepage-next-steps #panels-panel-context-edit-move .pane-content .row, #panels-panel-context-edit-move .front .pane-bundle-homepage-next-steps .pane-title .row, .front .pane-bundle-homepage-next-steps #panels-panel-context-edit-move .pane-title .row,
+  #panels-panel-context-edit-move .container .row, #panels-panel-context-edit-move .page-node-done .region .row, .page-node-done #panels-panel-context-edit-move .region .row, #panels-panel-context-edit-move .page-founders-club .view-founders-club-profiles .row, .page-founders-club #panels-panel-context-edit-move .view-founders-club-profiles .row, #panels-panel-context-edit-move .page-people-directory .view-faculty-staff .row, .page-people-directory #panels-panel-context-edit-move .view-faculty-staff .row, #panels-panel-context-edit-move .page-user .region-content .row, .page-user #panels-panel-context-edit-move .region-content .row,
   #panels-panel-context-edit-content .container .row,
   #panels-panel-context-edit-content .page-node-done .region .row, .page-node-done
   #panels-panel-context-edit-content .region .row,
@@ -8049,11 +8045,7 @@ html.js fieldset.collapsed {
   #panels-panel-context-edit-content .page-people-directory .view-faculty-staff .row, .page-people-directory
   #panels-panel-context-edit-content .view-faculty-staff .row,
   #panels-panel-context-edit-content .page-user .region-content .row, .page-user
-  #panels-panel-context-edit-content .region-content .row,
-  #panels-panel-context-edit-content .front .pane-bundle-homepage-next-steps .pane-content .row, .front .pane-bundle-homepage-next-steps
-  #panels-panel-context-edit-content .pane-content .row,
-  #panels-panel-context-edit-content .front .pane-bundle-homepage-next-steps .pane-title .row, .front .pane-bundle-homepage-next-steps
-  #panels-panel-context-edit-content .pane-title .row {
+  #panels-panel-context-edit-content .region-content .row {
     margin-bottom: 20px; }
 
 .navbar-form .form-wrapper {
@@ -8073,8 +8065,8 @@ html.js fieldset.collapsed {
 .tabledrag-handle .handle {
   box-sizing: content-box; }
 
-.container .container, .page-node-done .region .container, .page-founders-club .view-founders-club-profiles .container, .page-people-directory .view-faculty-staff .container, .page-user .region-content .container, .front .pane-bundle-homepage-next-steps .pane-content .container, .front .pane-bundle-homepage-next-steps .pane-title .container, .container .page-node-done .region, .page-node-done .container .region, .page-node-done .region .region, .page-founders-club .view-founders-club-profiles .page-node-done .region, .page-node-done .page-founders-club .view-founders-club-profiles .region, .page-people-directory .view-faculty-staff .page-node-done .region, .page-node-done .page-people-directory .view-faculty-staff .region, .page-user .region-content .page-node-done .region, .page-node-done .page-user .region-content .region, .front .pane-bundle-homepage-next-steps .pane-content .page-node-done .region, .page-node-done .front .pane-bundle-homepage-next-steps .pane-content .region, .front .pane-bundle-homepage-next-steps .pane-title .page-node-done .region, .page-node-done .front .pane-bundle-homepage-next-steps .pane-title .region, .container .page-founders-club .view-founders-club-profiles, .page-founders-club .container .view-founders-club-profiles, .page-node-done .region .page-founders-club .view-founders-club-profiles, .page-founders-club .page-node-done .region .view-founders-club-profiles, .page-founders-club .view-founders-club-profiles .view-founders-club-profiles, .page-people-directory .view-faculty-staff .page-founders-club .view-founders-club-profiles, .page-founders-club .page-people-directory .view-faculty-staff .view-founders-club-profiles, .page-user .region-content .page-founders-club .view-founders-club-profiles, .page-founders-club .page-user .region-content .view-founders-club-profiles, .front .pane-bundle-homepage-next-steps .pane-content .page-founders-club .view-founders-club-profiles, .page-founders-club .front .pane-bundle-homepage-next-steps .pane-content .view-founders-club-profiles, .front .pane-bundle-homepage-next-steps .pane-title .page-founders-club .view-founders-club-profiles, .page-founders-club .front .pane-bundle-homepage-next-steps .pane-title .view-founders-club-profiles, .container .page-people-directory .view-faculty-staff, .page-people-directory .container .view-faculty-staff, .page-node-done .region .page-people-directory .view-faculty-staff, .page-people-directory .page-node-done .region .view-faculty-staff, .page-founders-club .view-founders-club-profiles .page-people-directory .view-faculty-staff, .page-people-directory .page-founders-club .view-founders-club-profiles .view-faculty-staff, .page-people-directory .view-faculty-staff .view-faculty-staff, .page-user .region-content .page-people-directory .view-faculty-staff, .page-people-directory .page-user .region-content .view-faculty-staff, .front .pane-bundle-homepage-next-steps .pane-content .page-people-directory .view-faculty-staff, .page-people-directory .front .pane-bundle-homepage-next-steps .pane-content .view-faculty-staff, .front .pane-bundle-homepage-next-steps .pane-title .page-people-directory .view-faculty-staff, .page-people-directory .front .pane-bundle-homepage-next-steps .pane-title .view-faculty-staff, .container .page-user .region-content, .page-user .container .region-content, .page-node-done .region .page-user .region-content, .page-user .page-node-done .region .region-content, .page-founders-club .view-founders-club-profiles .page-user .region-content, .page-user .page-founders-club .view-founders-club-profiles .region-content, .page-people-directory .view-faculty-staff .page-user .region-content, .page-user .page-people-directory .view-faculty-staff .region-content, .page-user .region-content .region-content, .front .pane-bundle-homepage-next-steps .pane-content .page-user .region-content, .page-user .front .pane-bundle-homepage-next-steps .pane-content .region-content, .front .pane-bundle-homepage-next-steps .pane-title .page-user .region-content, .page-user .front .pane-bundle-homepage-next-steps .pane-title .region-content, .container .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .container .pane-content, .page-node-done .region .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .page-node-done .region .pane-content, .page-founders-club .view-founders-club-profiles .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .page-founders-club .view-founders-club-profiles .pane-content, .page-people-directory .view-faculty-staff .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .page-people-directory .view-faculty-staff .pane-content, .page-user .region-content .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .page-user .region-content .pane-content, .front .pane-bundle-homepage-next-steps .pane-content .pane-content, .front .pane-bundle-homepage-next-steps .pane-title .pane-content, .container .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .container .pane-title, .page-node-done .region .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .page-node-done .region .pane-title, .page-founders-club .view-founders-club-profiles .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .page-founders-club .view-founders-club-profiles .pane-title, .page-people-directory .view-faculty-staff .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .page-people-directory .view-faculty-staff .pane-title, .page-user .region-content .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .page-user .region-content .pane-title, .front .pane-bundle-homepage-next-steps .pane-content .pane-title, .front .pane-bundle-homepage-next-steps .pane-title .pane-title,
-.container .container-fluid, .page-node-done .region .container-fluid, .page-founders-club .view-founders-club-profiles .container-fluid, .page-people-directory .view-faculty-staff .container-fluid, .page-user .region-content .container-fluid, .front .pane-bundle-homepage-next-steps .pane-content .container-fluid, .front .pane-bundle-homepage-next-steps .pane-title .container-fluid {
+.container .container, .page-node-done .region .container, .page-founders-club .view-founders-club-profiles .container, .page-people-directory .view-faculty-staff .container, .page-user .region-content .container, .container .page-node-done .region, .page-node-done .container .region, .page-node-done .region .region, .page-founders-club .view-founders-club-profiles .page-node-done .region, .page-node-done .page-founders-club .view-founders-club-profiles .region, .page-people-directory .view-faculty-staff .page-node-done .region, .page-node-done .page-people-directory .view-faculty-staff .region, .page-user .region-content .page-node-done .region, .page-node-done .page-user .region-content .region, .container .page-founders-club .view-founders-club-profiles, .page-founders-club .container .view-founders-club-profiles, .page-node-done .region .page-founders-club .view-founders-club-profiles, .page-founders-club .page-node-done .region .view-founders-club-profiles, .page-founders-club .view-founders-club-profiles .view-founders-club-profiles, .page-people-directory .view-faculty-staff .page-founders-club .view-founders-club-profiles, .page-founders-club .page-people-directory .view-faculty-staff .view-founders-club-profiles, .page-user .region-content .page-founders-club .view-founders-club-profiles, .page-founders-club .page-user .region-content .view-founders-club-profiles, .container .page-people-directory .view-faculty-staff, .page-people-directory .container .view-faculty-staff, .page-node-done .region .page-people-directory .view-faculty-staff, .page-people-directory .page-node-done .region .view-faculty-staff, .page-founders-club .view-founders-club-profiles .page-people-directory .view-faculty-staff, .page-people-directory .page-founders-club .view-founders-club-profiles .view-faculty-staff, .page-people-directory .view-faculty-staff .view-faculty-staff, .page-user .region-content .page-people-directory .view-faculty-staff, .page-people-directory .page-user .region-content .view-faculty-staff, .container .page-user .region-content, .page-user .container .region-content, .page-node-done .region .page-user .region-content, .page-user .page-node-done .region .region-content, .page-founders-club .view-founders-club-profiles .page-user .region-content, .page-user .page-founders-club .view-founders-club-profiles .region-content, .page-people-directory .view-faculty-staff .page-user .region-content, .page-user .page-people-directory .view-faculty-staff .region-content, .page-user .region-content .region-content,
+.container .container-fluid, .page-node-done .region .container-fluid, .page-founders-club .view-founders-club-profiles .container-fluid, .page-people-directory .view-faculty-staff .container-fluid, .page-user .region-content .container-fluid {
   width: auto;
   margin-left: -15px;
   margin-right: -15px; }
@@ -8082,7 +8074,7 @@ html.js fieldset.collapsed {
 #footer {
   margin: 36px 0; }
 
-body.maintenance-page .container, body.maintenance-page .page-node-done .region, .page-node-done body.maintenance-page .region, body.maintenance-page .page-founders-club .view-founders-club-profiles, .page-founders-club body.maintenance-page .view-founders-club-profiles, body.maintenance-page .page-people-directory .view-faculty-staff, .page-people-directory body.maintenance-page .view-faculty-staff, body.maintenance-page .page-user .region-content, .page-user body.maintenance-page .region-content, body.maintenance-page .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps body.maintenance-page .pane-content, body.maintenance-page .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps body.maintenance-page .pane-title {
+body.maintenance-page .container, body.maintenance-page .page-node-done .region, .page-node-done body.maintenance-page .region, body.maintenance-page .page-founders-club .view-founders-club-profiles, .page-founders-club body.maintenance-page .view-founders-club-profiles, body.maintenance-page .page-people-directory .view-faculty-staff, .page-people-directory body.maintenance-page .view-faculty-staff, body.maintenance-page .page-user .region-content, .page-user body.maintenance-page .region-content {
   max-width: 970px !important; }
 
 body.maintenance-page .jumbotron {
@@ -8234,7 +8226,7 @@ body.ctools-modal-open {
 #modalContent #panopoly-form-widget-preview {
   width: 50%;
   float: right; }
-  #modalContent #panopoly-form-widget-preview .container, #modalContent #panopoly-form-widget-preview .page-node-done .region, .page-node-done #modalContent #panopoly-form-widget-preview .region, #modalContent #panopoly-form-widget-preview .page-founders-club .view-founders-club-profiles, .page-founders-club #modalContent #panopoly-form-widget-preview .view-founders-club-profiles, #modalContent #panopoly-form-widget-preview .page-people-directory .view-faculty-staff, .page-people-directory #modalContent #panopoly-form-widget-preview .view-faculty-staff, #modalContent #panopoly-form-widget-preview .page-user .region-content, .page-user #modalContent #panopoly-form-widget-preview .region-content, #modalContent #panopoly-form-widget-preview .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps #modalContent #panopoly-form-widget-preview .pane-content, #modalContent #panopoly-form-widget-preview .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps #modalContent #panopoly-form-widget-preview .pane-title {
+  #modalContent #panopoly-form-widget-preview .container, #modalContent #panopoly-form-widget-preview .page-node-done .region, .page-node-done #modalContent #panopoly-form-widget-preview .region, #modalContent #panopoly-form-widget-preview .page-founders-club .view-founders-club-profiles, .page-founders-club #modalContent #panopoly-form-widget-preview .view-founders-club-profiles, #modalContent #panopoly-form-widget-preview .page-people-directory .view-faculty-staff, .page-people-directory #modalContent #panopoly-form-widget-preview .view-faculty-staff, #modalContent #panopoly-form-widget-preview .page-user .region-content, .page-user #modalContent #panopoly-form-widget-preview .region-content {
     width: auto; }
 
 ul.menu > li > ul.menu {
@@ -9994,7 +9986,7 @@ table.table-condensed th, table.table-condensed td {
   margin-bottom: 2rem; }
   .node-type-news .node-news ul, .node-type-news .node-news ol {
     margin-left: 1.2rem; }
-  .node-type-news .page-header .container, .node-type-news .page-header .page-node-done .region, .page-node-done .node-type-news .page-header .region, .node-type-news .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-news .page-header .view-founders-club-profiles, .node-type-news .page-header .page-people-directory .view-faculty-staff, .page-people-directory .node-type-news .page-header .view-faculty-staff, .node-type-news .page-header .page-user .region-content, .page-user .node-type-news .page-header .region-content, .node-type-news .page-header .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .node-type-news .page-header .pane-content, .node-type-news .page-header .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .node-type-news .page-header .pane-title {
+  .node-type-news .page-header .container, .node-type-news .page-header .page-node-done .region, .page-node-done .node-type-news .page-header .region, .node-type-news .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-news .page-header .view-founders-club-profiles, .node-type-news .page-header .page-people-directory .view-faculty-staff, .page-people-directory .node-type-news .page-header .view-faculty-staff, .node-type-news .page-header .page-user .region-content, .page-user .node-type-news .page-header .region-content {
     padding-top: 2rem;
     padding-bottom: 0; }
   .node-type-news .field-name-field-news-body {
@@ -10113,7 +10105,7 @@ table.table-condensed th, table.table-condensed td {
   margin-bottom: 2rem; }
   .node-type-news .node-news ul, .node-type-news .node-news ol {
     margin-left: 1.2rem; }
-  .node-type-news .page-header .container, .node-type-news .page-header .page-node-done .region, .page-node-done .node-type-news .page-header .region, .node-type-news .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-news .page-header .view-founders-club-profiles, .node-type-news .page-header .page-people-directory .view-faculty-staff, .page-people-directory .node-type-news .page-header .view-faculty-staff, .node-type-news .page-header .page-user .region-content, .page-user .node-type-news .page-header .region-content, .node-type-news .page-header .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .node-type-news .page-header .pane-content, .node-type-news .page-header .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .node-type-news .page-header .pane-title {
+  .node-type-news .page-header .container, .node-type-news .page-header .page-node-done .region, .page-node-done .node-type-news .page-header .region, .node-type-news .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-news .page-header .view-founders-club-profiles, .node-type-news .page-header .page-people-directory .view-faculty-staff, .page-people-directory .node-type-news .page-header .view-faculty-staff, .node-type-news .page-header .page-user .region-content, .page-user .node-type-news .page-header .region-content {
     padding-top: 2rem;
     padding-bottom: 0; }
   .node-type-news .field-name-field-news-body {
@@ -10505,7 +10497,7 @@ table.table-condensed th, table.table-condensed td {
   @media (min-width: 992px) {
     .node-type-profile .page-header {
       background-position: right top; } }
-  .node-type-profile .page-header .container, .node-type-profile .page-header .page-node-done .region, .page-node-done .node-type-profile .page-header .region, .node-type-profile .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-profile .page-header .view-founders-club-profiles, .node-type-profile .page-header .page-people-directory .view-faculty-staff, .page-people-directory .node-type-profile .page-header .view-faculty-staff, .node-type-profile .page-header .page-user .region-content, .page-user .node-type-profile .page-header .region-content, .node-type-profile .page-header .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .node-type-profile .page-header .pane-content, .node-type-profile .page-header .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .node-type-profile .page-header .pane-title {
+  .node-type-profile .page-header .container, .node-type-profile .page-header .page-node-done .region, .page-node-done .node-type-profile .page-header .region, .node-type-profile .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-profile .page-header .view-founders-club-profiles, .node-type-profile .page-header .page-people-directory .view-faculty-staff, .page-people-directory .node-type-profile .page-header .view-faculty-staff, .node-type-profile .page-header .page-user .region-content, .page-user .node-type-profile .page-header .region-content {
     padding: 0 0 0 1rem;
     margin-top: 2rem; }
   .node-type-profile .page-header .header-content {
@@ -10606,7 +10598,7 @@ table.table-condensed th, table.table-condensed td {
   @media (min-width: 992px) {
     .node-type-profile .page-header {
       background-position: right top; } }
-  .node-type-profile .page-header .container, .node-type-profile .page-header .page-node-done .region, .page-node-done .node-type-profile .page-header .region, .node-type-profile .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-profile .page-header .view-founders-club-profiles, .node-type-profile .page-header .page-people-directory .view-faculty-staff, .page-people-directory .node-type-profile .page-header .view-faculty-staff, .node-type-profile .page-header .page-user .region-content, .page-user .node-type-profile .page-header .region-content, .node-type-profile .page-header .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .node-type-profile .page-header .pane-content, .node-type-profile .page-header .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .node-type-profile .page-header .pane-title {
+  .node-type-profile .page-header .container, .node-type-profile .page-header .page-node-done .region, .page-node-done .node-type-profile .page-header .region, .node-type-profile .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-profile .page-header .view-founders-club-profiles, .node-type-profile .page-header .page-people-directory .view-faculty-staff, .page-people-directory .node-type-profile .page-header .view-faculty-staff, .node-type-profile .page-header .page-user .region-content, .page-user .node-type-profile .page-header .region-content {
     padding: 0 0 0 1rem;
     margin-top: 2rem; }
   .node-type-profile .page-header .header-content {
@@ -10706,7 +10698,7 @@ table.table-condensed th, table.table-condensed td {
     .breadcrumb a:hover {
       color: #00A1C6; }
 
-#cta-section .content.container, #cta-section .page-node-done .content.region, .page-node-done #cta-section .content.region, #cta-section .page-founders-club .content.view-founders-club-profiles, .page-founders-club #cta-section .content.view-founders-club-profiles, #cta-section .page-people-directory .content.view-faculty-staff, .page-people-directory #cta-section .content.view-faculty-staff, #cta-section .page-user .content.region-content, .page-user #cta-section .content.region-content, #cta-section .front .pane-bundle-homepage-next-steps .content.pane-content, .front .pane-bundle-homepage-next-steps #cta-section .content.pane-content, #cta-section .front .pane-bundle-homepage-next-steps .content.pane-title, .front .pane-bundle-homepage-next-steps #cta-section .content.pane-title {
+#cta-section .content.container, #cta-section .page-node-done .content.region, .page-node-done #cta-section .content.region, #cta-section .page-founders-club .content.view-founders-club-profiles, .page-founders-club #cta-section .content.view-founders-club-profiles, #cta-section .page-people-directory .content.view-faculty-staff, .page-people-directory #cta-section .content.view-faculty-staff, #cta-section .page-user .content.region-content, .page-user #cta-section .content.region-content {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem; }
 
@@ -11060,7 +11052,7 @@ ol.megamenu-column {
 .entity-paragraphs-item.paragraphs-item-card {
   padding-top: 0; }
 
-.paragraphs-item-card .content.container, .paragraphs-item-card .page-node-done .content.region, .page-node-done .paragraphs-item-card .content.region, .paragraphs-item-card .page-founders-club .content.view-founders-club-profiles, .page-founders-club .paragraphs-item-card .content.view-founders-club-profiles, .paragraphs-item-card .page-people-directory .content.view-faculty-staff, .page-people-directory .paragraphs-item-card .content.view-faculty-staff, .paragraphs-item-card .page-user .content.region-content, .page-user .paragraphs-item-card .content.region-content, .paragraphs-item-card .front .pane-bundle-homepage-next-steps .content.pane-content, .front .pane-bundle-homepage-next-steps .paragraphs-item-card .content.pane-content, .paragraphs-item-card .front .pane-bundle-homepage-next-steps .content.pane-title, .front .pane-bundle-homepage-next-steps .paragraphs-item-card .content.pane-title {
+.paragraphs-item-card .content.container, .paragraphs-item-card .page-node-done .content.region, .page-node-done .paragraphs-item-card .content.region, .paragraphs-item-card .page-founders-club .content.view-founders-club-profiles, .page-founders-club .paragraphs-item-card .content.view-founders-club-profiles, .paragraphs-item-card .page-people-directory .content.view-faculty-staff, .page-people-directory .paragraphs-item-card .content.view-faculty-staff, .paragraphs-item-card .page-user .content.region-content, .page-user .paragraphs-item-card .content.region-content {
   padding-top: 0; }
 
 .paragraphs-item-card .card-body h3, .paragraphs-item-card .node-card_content-card .card-description-wrapper h3, .node-card_content-card .paragraphs-item-card .card-description-wrapper h3, .paragraphs-item-card .node-factoid-card .card-description-wrapper h3, .node-factoid-card .paragraphs-item-card .card-description-wrapper h3, .paragraphs-item-card .node-factoid-full .card-description-wrapper h3, .node-factoid-full .paragraphs-item-card .card-description-wrapper h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .card-wrapper h3, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .card-wrapper h3, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item h3, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .card-description-wrapper h3, .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper h3, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper h3, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper h3, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper h3 {
@@ -11088,7 +11080,7 @@ ol.megamenu-column {
 .entity-paragraphs-item.paragraphs-item-event-reference {
   padding: 0; }
 
-.paragraphs-item-event-reference .content.container, .paragraphs-item-event-reference .page-node-done .content.region, .page-node-done .paragraphs-item-event-reference .content.region, .paragraphs-item-event-reference .page-founders-club .content.view-founders-club-profiles, .page-founders-club .paragraphs-item-event-reference .content.view-founders-club-profiles, .paragraphs-item-event-reference .page-people-directory .content.view-faculty-staff, .page-people-directory .paragraphs-item-event-reference .content.view-faculty-staff, .paragraphs-item-event-reference .page-user .content.region-content, .page-user .paragraphs-item-event-reference .content.region-content, .paragraphs-item-event-reference .front .pane-bundle-homepage-next-steps .content.pane-content, .front .pane-bundle-homepage-next-steps .paragraphs-item-event-reference .content.pane-content, .paragraphs-item-event-reference .front .pane-bundle-homepage-next-steps .content.pane-title, .front .pane-bundle-homepage-next-steps .paragraphs-item-event-reference .content.pane-title {
+.paragraphs-item-event-reference .content.container, .paragraphs-item-event-reference .page-node-done .content.region, .page-node-done .paragraphs-item-event-reference .content.region, .paragraphs-item-event-reference .page-founders-club .content.view-founders-club-profiles, .page-founders-club .paragraphs-item-event-reference .content.view-founders-club-profiles, .paragraphs-item-event-reference .page-people-directory .content.view-faculty-staff, .page-people-directory .paragraphs-item-event-reference .content.view-faculty-staff, .paragraphs-item-event-reference .page-user .content.region-content, .page-user .paragraphs-item-event-reference .content.region-content {
   padding-top: 0; }
 
 .paragraphs-item-event-reference .event_container .next, .paragraphs-item-event-reference .event_container .event {
@@ -11231,10 +11223,10 @@ ol.megamenu-column {
   height: auto;
   max-width: 100%; }
 
-.page-header .container, .page-header .page-node-done .region, .page-node-done .page-header .region, .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .page-header .view-founders-club-profiles, .page-header .page-people-directory .view-faculty-staff, .page-people-directory .page-header .view-faculty-staff, .page-header .page-user .region-content, .page-user .page-header .region-content, .page-header .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .page-header .pane-content, .page-header .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .page-header .pane-title {
+.page-header .container, .page-header .page-node-done .region, .page-node-done .page-header .region, .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .page-header .view-founders-club-profiles, .page-header .page-people-directory .view-faculty-staff, .page-people-directory .page-header .view-faculty-staff, .page-header .page-user .region-content, .page-user .page-header .region-content {
   padding: 1.5rem; }
   @media (min-width: 1200px) {
-    .page-header .container, .page-header .page-node-done .region, .page-node-done .page-header .region, .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .page-header .view-founders-club-profiles, .page-header .page-people-directory .view-faculty-staff, .page-people-directory .page-header .view-faculty-staff, .page-header .page-user .region-content, .page-user .page-header .region-content, .page-header .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .page-header .pane-content, .page-header .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .page-header .pane-title {
+    .page-header .container, .page-header .page-node-done .region, .page-node-done .page-header .region, .page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .page-header .view-founders-club-profiles, .page-header .page-people-directory .view-faculty-staff, .page-people-directory .page-header .view-faculty-staff, .page-header .page-user .region-content, .page-user .page-header .region-content {
       padding: 1rem 5rem; } }
 
 .page-header .header-content {
@@ -11312,7 +11304,7 @@ ol.megamenu-column {
 @media (min-width: 768px) {
   .page-header.short-image {
     height: 290px; }
-    .page-header.short-image .container, .page-header.short-image .page-node-done .region, .page-node-done .page-header.short-image .region, .page-header.short-image .page-founders-club .view-founders-club-profiles, .page-founders-club .page-header.short-image .view-founders-club-profiles, .page-header.short-image .page-people-directory .view-faculty-staff, .page-people-directory .page-header.short-image .view-faculty-staff, .page-header.short-image .page-user .region-content, .page-user .page-header.short-image .region-content, .page-header.short-image .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .page-header.short-image .pane-content, .page-header.short-image .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .page-header.short-image .pane-title {
+    .page-header.short-image .container, .page-header.short-image .page-node-done .region, .page-node-done .page-header.short-image .region, .page-header.short-image .page-founders-club .view-founders-club-profiles, .page-founders-club .page-header.short-image .view-founders-club-profiles, .page-header.short-image .page-people-directory .view-faculty-staff, .page-people-directory .page-header.short-image .view-faculty-staff, .page-header.short-image .page-user .region-content, .page-user .page-header.short-image .region-content {
       position: relative;
       top: 50%;
       transform: translateY(-50%); }
@@ -11322,7 +11314,7 @@ ol.megamenu-column {
     .page-header.tall-image img {
       width: 100%;
       height: auto; }
-    .page-header.tall-image .container, .page-header.tall-image .page-node-done .region, .page-node-done .page-header.tall-image .region, .page-header.tall-image .page-founders-club .view-founders-club-profiles, .page-founders-club .page-header.tall-image .view-founders-club-profiles, .page-header.tall-image .page-people-directory .view-faculty-staff, .page-people-directory .page-header.tall-image .view-faculty-staff, .page-header.tall-image .page-user .region-content, .page-user .page-header.tall-image .region-content, .page-header.tall-image .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .page-header.tall-image .pane-content, .page-header.tall-image .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .page-header.tall-image .pane-title {
+    .page-header.tall-image .container, .page-header.tall-image .page-node-done .region, .page-node-done .page-header.tall-image .region, .page-header.tall-image .page-founders-club .view-founders-club-profiles, .page-founders-club .page-header.tall-image .view-founders-club-profiles, .page-header.tall-image .page-people-directory .view-faculty-staff, .page-people-directory .page-header.tall-image .view-faculty-staff, .page-header.tall-image .page-user .region-content, .page-user .page-header.tall-image .region-content {
       position: absolute;
       top: 0;
       left: 0;
@@ -11499,7 +11491,7 @@ ol.megamenu-column {
   color: #FFFFFF;
   font-size: 1rem; }
   @media (min-width: 670px) {
-    .secondary-footer .container, .secondary-footer .page-node-done .region, .page-node-done .secondary-footer .region, .secondary-footer .page-founders-club .view-founders-club-profiles, .page-founders-club .secondary-footer .view-founders-club-profiles, .secondary-footer .page-people-directory .view-faculty-staff, .page-people-directory .secondary-footer .view-faculty-staff, .secondary-footer .page-user .region-content, .page-user .secondary-footer .region-content, .secondary-footer .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .secondary-footer .pane-content, .secondary-footer .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .secondary-footer .pane-title {
+    .secondary-footer .container, .secondary-footer .page-node-done .region, .page-node-done .secondary-footer .region, .secondary-footer .page-founders-club .view-founders-club-profiles, .page-founders-club .secondary-footer .view-founders-club-profiles, .secondary-footer .page-people-directory .view-faculty-staff, .page-people-directory .secondary-footer .view-faculty-staff, .secondary-footer .page-user .region-content, .page-user .secondary-footer .region-content {
       padding-top: 24px;
       padding-bottom: 24px; } }
 
@@ -11530,13 +11522,13 @@ ol.megamenu-column {
   .secondary-footer-links a:hover, .secondary-footer-links a:active {
     color: #FFFFFF; }
 
-.container, .page-node-done .region, .page-founders-club .view-founders-club-profiles, .page-people-directory .view-faculty-staff, .page-user .region-content, .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .pane-title {
+.container, .page-node-done .region, .page-founders-club .view-founders-club-profiles, .page-people-directory .view-faculty-staff, .page-user .region-content {
   padding: 1.5rem; }
 
-.content .container, .content .page-node-done .region, .page-node-done .content .region, .content .page-founders-club .view-founders-club-profiles, .page-founders-club .content .view-founders-club-profiles, .content .page-people-directory .view-faculty-staff, .page-people-directory .content .view-faculty-staff, .content .page-user .region-content, .page-user .content .region-content, .content .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .content .pane-content, .content .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .content .pane-title {
+.content .container, .content .page-node-done .region, .page-node-done .content .region, .content .page-founders-club .view-founders-club-profiles, .page-founders-club .content .view-founders-club-profiles, .content .page-people-directory .view-faculty-staff, .page-people-directory .content .view-faculty-staff, .content .page-user .region-content, .page-user .content .region-content {
   padding: 0; }
 
-#content > .block-menu-block, #content.container, .page-node-done #content.region, .page-founders-club #content.view-founders-club-profiles, .page-people-directory #content.view-faculty-staff, .page-user #content.region-content, .front .pane-bundle-homepage-next-steps #content.pane-content, .front .pane-bundle-homepage-next-steps #content.pane-title,
+#content > .block-menu-block, #content.container, .page-node-done #content.region, .page-founders-club #content.view-founders-club-profiles, .page-people-directory #content.view-faculty-staff, .page-user #content.region-content,
 #content .container,
 #content .page-node-done .region, .page-node-done
 #content .region,
@@ -11546,10 +11538,6 @@ ol.megamenu-column {
 #content .view-faculty-staff,
 #content .page-user .region-content, .page-user
 #content .region-content,
-#content .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps
-#content .pane-content,
-#content .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps
-#content .pane-title,
 #content .entity-paragraphs-item .content.container,
 #content .entity-paragraphs-item .page-node-done .content.region, .page-node-done
 #content .entity-paragraphs-item .content.region,
@@ -11559,10 +11547,6 @@ ol.megamenu-column {
 #content .entity-paragraphs-item .content.view-faculty-staff,
 #content .entity-paragraphs-item .page-user .content.region-content, .page-user
 #content .entity-paragraphs-item .content.region-content,
-#content .entity-paragraphs-item .front .pane-bundle-homepage-next-steps .content.pane-content, .front .pane-bundle-homepage-next-steps
-#content .entity-paragraphs-item .content.pane-content,
-#content .entity-paragraphs-item .front .pane-bundle-homepage-next-steps .content.pane-title, .front .pane-bundle-homepage-next-steps
-#content .entity-paragraphs-item .content.pane-title,
 #content .container.breadcrumb-container,
 #content .page-node-done .breadcrumb-container.region, .page-node-done
 #content .breadcrumb-container.region,
@@ -11571,14 +11555,10 @@ ol.megamenu-column {
 #content .page-people-directory .breadcrumb-container.view-faculty-staff, .page-people-directory
 #content .breadcrumb-container.view-faculty-staff,
 #content .page-user .breadcrumb-container.region-content, .page-user
-#content .breadcrumb-container.region-content,
-#content .front .pane-bundle-homepage-next-steps .breadcrumb-container.pane-content, .front .pane-bundle-homepage-next-steps
-#content .breadcrumb-container.pane-content,
-#content .front .pane-bundle-homepage-next-steps .breadcrumb-container.pane-title, .front .pane-bundle-homepage-next-steps
-#content .breadcrumb-container.pane-title {
+#content .breadcrumb-container.region-content {
   padding: 0 1.5rem; }
   @media (min-width: 1200px) {
-    #content > .block-menu-block, #content.container, .page-node-done #content.region, .page-founders-club #content.view-founders-club-profiles, .page-people-directory #content.view-faculty-staff, .page-user #content.region-content, .front .pane-bundle-homepage-next-steps #content.pane-content, .front .pane-bundle-homepage-next-steps #content.pane-title,
+    #content > .block-menu-block, #content.container, .page-node-done #content.region, .page-founders-club #content.view-founders-club-profiles, .page-people-directory #content.view-faculty-staff, .page-user #content.region-content,
     #content .container,
     #content .page-node-done .region, .page-node-done
     #content .region,
@@ -11588,10 +11568,6 @@ ol.megamenu-column {
     #content .view-faculty-staff,
     #content .page-user .region-content, .page-user
     #content .region-content,
-    #content .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps
-    #content .pane-content,
-    #content .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps
-    #content .pane-title,
     #content .entity-paragraphs-item .content.container,
     #content .entity-paragraphs-item .page-node-done .content.region, .page-node-done
     #content .entity-paragraphs-item .content.region,
@@ -11601,10 +11577,6 @@ ol.megamenu-column {
     #content .entity-paragraphs-item .content.view-faculty-staff,
     #content .entity-paragraphs-item .page-user .content.region-content, .page-user
     #content .entity-paragraphs-item .content.region-content,
-    #content .entity-paragraphs-item .front .pane-bundle-homepage-next-steps .content.pane-content, .front .pane-bundle-homepage-next-steps
-    #content .entity-paragraphs-item .content.pane-content,
-    #content .entity-paragraphs-item .front .pane-bundle-homepage-next-steps .content.pane-title, .front .pane-bundle-homepage-next-steps
-    #content .entity-paragraphs-item .content.pane-title,
     #content .container.breadcrumb-container,
     #content .page-node-done .breadcrumb-container.region, .page-node-done
     #content .breadcrumb-container.region,
@@ -11613,26 +11585,22 @@ ol.megamenu-column {
     #content .page-people-directory .breadcrumb-container.view-faculty-staff, .page-people-directory
     #content .breadcrumb-container.view-faculty-staff,
     #content .page-user .breadcrumb-container.region-content, .page-user
-    #content .breadcrumb-container.region-content,
-    #content .front .pane-bundle-homepage-next-steps .breadcrumb-container.pane-content, .front .pane-bundle-homepage-next-steps
-    #content .breadcrumb-container.pane-content,
-    #content .front .pane-bundle-homepage-next-steps .breadcrumb-container.pane-title, .front .pane-bundle-homepage-next-steps
-    #content .breadcrumb-container.pane-title {
+    #content .breadcrumb-container.region-content {
       padding: 1.5rem 5rem; } }
 
-.navigation-wrapper .container, .navigation-wrapper .page-node-done .region, .page-node-done .navigation-wrapper .region, .navigation-wrapper .page-founders-club .view-founders-club-profiles, .page-founders-club .navigation-wrapper .view-founders-club-profiles, .navigation-wrapper .page-people-directory .view-faculty-staff, .page-people-directory .navigation-wrapper .view-faculty-staff, .navigation-wrapper .page-user .region-content, .page-user .navigation-wrapper .region-content, .navigation-wrapper .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .navigation-wrapper .pane-content, .navigation-wrapper .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .navigation-wrapper .pane-title {
+.navigation-wrapper .container, .navigation-wrapper .page-node-done .region, .page-node-done .navigation-wrapper .region, .navigation-wrapper .page-founders-club .view-founders-club-profiles, .page-founders-club .navigation-wrapper .view-founders-club-profiles, .navigation-wrapper .page-people-directory .view-faculty-staff, .page-people-directory .navigation-wrapper .view-faculty-staff, .navigation-wrapper .page-user .region-content, .page-user .navigation-wrapper .region-content {
   padding: 0; }
   @media (min-width: 992px) {
-    .navigation-wrapper .container, .navigation-wrapper .page-node-done .region, .page-node-done .navigation-wrapper .region, .navigation-wrapper .page-founders-club .view-founders-club-profiles, .page-founders-club .navigation-wrapper .view-founders-club-profiles, .navigation-wrapper .page-people-directory .view-faculty-staff, .page-people-directory .navigation-wrapper .view-faculty-staff, .navigation-wrapper .page-user .region-content, .page-user .navigation-wrapper .region-content, .navigation-wrapper .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .navigation-wrapper .pane-content, .navigation-wrapper .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .navigation-wrapper .pane-title {
+    .navigation-wrapper .container, .navigation-wrapper .page-node-done .region, .page-node-done .navigation-wrapper .region, .navigation-wrapper .page-founders-club .view-founders-club-profiles, .page-founders-club .navigation-wrapper .view-founders-club-profiles, .navigation-wrapper .page-people-directory .view-faculty-staff, .page-people-directory .navigation-wrapper .view-faculty-staff, .navigation-wrapper .page-user .region-content, .page-user .navigation-wrapper .region-content {
       padding-left: 1.5rem; } }
 
-.container.breadcrumb-container, .page-node-done .breadcrumb-container.region, .page-founders-club .breadcrumb-container.view-founders-club-profiles, .page-people-directory .breadcrumb-container.view-faculty-staff, .page-user .breadcrumb-container.region-content, .front .pane-bundle-homepage-next-steps .breadcrumb-container.pane-content, .front .pane-bundle-homepage-next-steps .breadcrumb-container.pane-title {
+.container.breadcrumb-container, .page-node-done .breadcrumb-container.region, .page-founders-club .breadcrumb-container.view-founders-club-profiles, .page-people-directory .breadcrumb-container.view-faculty-staff, .page-user .breadcrumb-container.region-content {
   padding: 0 1.5rem 0.5rem 1.5rem; }
   @media (min-width: 1200px) {
-    .container.breadcrumb-container, .page-node-done .breadcrumb-container.region, .page-founders-club .breadcrumb-container.view-founders-club-profiles, .page-people-directory .breadcrumb-container.view-faculty-staff, .page-user .breadcrumb-container.region-content, .front .pane-bundle-homepage-next-steps .breadcrumb-container.pane-content, .front .pane-bundle-homepage-next-steps .breadcrumb-container.pane-title {
+    .container.breadcrumb-container, .page-node-done .breadcrumb-container.region, .page-founders-club .breadcrumb-container.view-founders-club-profiles, .page-people-directory .breadcrumb-container.view-faculty-staff, .page-user .breadcrumb-container.region-content {
       padding: 0.5rem 5rem; } }
 
-#content.container .block-menu-block, .page-node-done #content.region .block-menu-block, .page-founders-club #content.view-founders-club-profiles .block-menu-block, .page-people-directory #content.view-faculty-staff .block-menu-block, .page-user #content.region-content .block-menu-block, .front .pane-bundle-homepage-next-steps #content.pane-content .block-menu-block, .front .pane-bundle-homepage-next-steps #content.pane-title .block-menu-block {
+#content.container .block-menu-block, .page-node-done #content.region .block-menu-block, .page-founders-club #content.view-founders-club-profiles .block-menu-block, .page-people-directory #content.view-faculty-staff .block-menu-block, .page-user #content.region-content .block-menu-block {
   padding-right: 1rem;
   padding-left: 1rem; }
 
@@ -11666,7 +11634,7 @@ ol.megamenu-column {
     .uiowa-bar-dark #ui-wrapper #ui-search-toggle.is-active {
       background-color: transparent;
       box-shadow: none; }
-  #ui-wrapper .container, #ui-wrapper .page-node-done .region, .page-node-done #ui-wrapper .region, #ui-wrapper .page-founders-club .view-founders-club-profiles, .page-founders-club #ui-wrapper .view-founders-club-profiles, #ui-wrapper .page-people-directory .view-faculty-staff, .page-people-directory #ui-wrapper .view-faculty-staff, #ui-wrapper .page-user .region-content, .page-user #ui-wrapper .region-content, #ui-wrapper .front .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps #ui-wrapper .pane-content, #ui-wrapper .front .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps #ui-wrapper .pane-title {
+  #ui-wrapper .container, #ui-wrapper .page-node-done .region, .page-node-done #ui-wrapper .region, #ui-wrapper .page-founders-club .view-founders-club-profiles, .page-founders-club #ui-wrapper .view-founders-club-profiles, #ui-wrapper .page-people-directory .view-faculty-staff, .page-people-directory #ui-wrapper .view-faculty-staff, #ui-wrapper .page-user .region-content, .page-user #ui-wrapper .region-content {
     padding-top: 0;
     padding-bottom: 0;
     position: relative; }
@@ -11713,7 +11681,7 @@ ol.megamenu-column {
     .navbar-collapse {
       border: none; } }
 
-.navigation.container, .page-node-done .navigation.region, .page-founders-club .navigation.view-founders-club-profiles, .page-people-directory .navigation.view-faculty-staff, .page-user .navigation.region-content, .front .pane-bundle-homepage-next-steps .navigation.pane-content, .front .pane-bundle-homepage-next-steps .navigation.pane-title {
+.navigation.container, .page-node-done .navigation.region, .page-founders-club .navigation.view-founders-club-profiles, .page-people-directory .navigation.view-faculty-staff, .page-user .navigation.region-content {
   padding-top: 0;
   padding-bottom: 0; }
 
@@ -11740,7 +11708,7 @@ ol.megamenu-column {
 iframe[name^='google_conversion_frame'] {
   display: none; }
 
-.front #content .container, .front #content .page-node-done .region, .page-node-done .front #content .region, .front #content .page-founders-club .view-founders-club-profiles, .page-founders-club .front #content .view-founders-club-profiles, .front #content .page-people-directory .view-faculty-staff, .page-people-directory .front #content .view-faculty-staff, .front #content .page-user .region-content, .page-user .front #content .region-content, .front #content .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps #content .pane-content, .front #content .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps #content .pane-title {
+.front #content .container, .front #content .page-node-done .region, .page-node-done .front #content .region, .front #content .page-founders-club .view-founders-club-profiles, .page-founders-club .front #content .view-founders-club-profiles, .front #content .page-people-directory .view-faculty-staff, .page-people-directory .front #content .view-faculty-staff, .front #content .page-user .region-content, .page-user .front #content .region-content {
   padding: 0; }
 
 .front h2 {
@@ -11753,12 +11721,12 @@ iframe[name^='google_conversion_frame'] {
   margin-top: 2.5rem;
   margin-bottom: 3.2rem; }
 
-.front .region-content .container, .front .region-content .page-node-done .region, .page-node-done .front .region-content .region, .front .region-content .page-founders-club .view-founders-club-profiles, .page-founders-club .front .region-content .view-founders-club-profiles, .front .region-content .page-people-directory .view-faculty-staff, .page-people-directory .front .region-content .view-faculty-staff, .front .region-content .page-user .region-content, .page-user .front .region-content .region-content, .front .region-content .pane-bundle-homepage-next-steps .pane-content, .front .pane-bundle-homepage-next-steps .region-content .pane-content, .front .region-content .pane-bundle-homepage-next-steps .pane-title, .front .pane-bundle-homepage-next-steps .region-content .pane-title {
+.front .region-content .container, .front .region-content .page-node-done .region, .page-node-done .front .region-content .region, .front .region-content .page-founders-club .view-founders-club-profiles, .page-founders-club .front .region-content .view-founders-club-profiles, .front .region-content .page-people-directory .view-faculty-staff, .page-people-directory .front .region-content .view-faculty-staff, .front .region-content .page-user .region-content, .page-user .front .region-content .region-content {
   padding: 0; }
 
 .front .page-header {
   padding-bottom: 0; }
-  .front .page-header > .container, .front .page-node-done .page-header > .region, .page-node-done .front .page-header > .region, .front .page-founders-club .page-header > .view-founders-club-profiles, .page-founders-club .front .page-header > .view-founders-club-profiles, .front .page-people-directory .page-header > .view-faculty-staff, .page-people-directory .front .page-header > .view-faculty-staff, .front .page-user .page-header > .region-content, .page-user .front .page-header > .region-content, .front .pane-bundle-homepage-next-steps .page-header > .pane-content, .front .pane-bundle-homepage-next-steps .page-header > .pane-title {
+  .front .page-header > .container, .front .page-node-done .page-header > .region, .page-node-done .front .page-header > .region, .front .page-founders-club .page-header > .view-founders-club-profiles, .page-founders-club .front .page-header > .view-founders-club-profiles, .front .page-people-directory .page-header > .view-faculty-staff, .page-people-directory .front .page-header > .view-faculty-staff, .front .page-user .page-header > .region-content, .page-user .front .page-header > .region-content {
     z-index: 3; }
 
 .front .breadcrumb-container {
@@ -11773,30 +11741,30 @@ iframe[name^='google_conversion_frame'] {
   line-height: 1;
   color: #FFFFFF; }
 
-.front .pane-bundle-homepage-panes {
+.front .pane-blocks {
   position: relative; }
-  .front .pane-bundle-homepage-panes .homepage-block-2, .front .pane-bundle-homepage-panes .homepage-block-3 {
+  .front .pane-blocks .homepage-block-2, .front .pane-blocks .homepage-block-3 {
     padding: 2rem 2rem 1rem 2rem; }
-    .front .pane-bundle-homepage-panes .homepage-block-2 h2, .front .pane-bundle-homepage-panes .homepage-block-3 h2 {
+    .front .pane-blocks .homepage-block-2 h2, .front .pane-blocks .homepage-block-3 h2 {
       margin-bottom: 0; }
-    .front .pane-bundle-homepage-panes .homepage-block-2 h3, .front .pane-bundle-homepage-panes .homepage-block-3 h3 {
+    .front .pane-blocks .homepage-block-2 h3, .front .pane-blocks .homepage-block-3 h3 {
       color: #FFCD00;
       margin: 0.2rem 0 1rem 0;
       font-size: 1.4rem; }
-  .front .pane-bundle-homepage-panes .homepage-block-2 {
+  .front .pane-blocks .homepage-block-2 {
     background-color: #00A1C6;
     color: #FFFFFF; }
-  .front .pane-bundle-homepage-panes .homepage-block-3 {
+  .front .pane-blocks .homepage-block-3 {
     background-color: #FFCD00;
     margin-bottom: 2rem; }
-    .front .pane-bundle-homepage-panes .homepage-block-3 h3 {
+    .front .pane-blocks .homepage-block-3 h3 {
       color: #000000; }
-  .front .pane-bundle-homepage-panes .field-name-field-homepage-image-2 {
+  .front .pane-blocks .homepage-image-block {
     position: absolute;
     top: 0;
     right: 0;
     max-width: 57%; }
-    .front .pane-bundle-homepage-panes .field-name-field-homepage-image-2 img {
+    .front .pane-blocks .homepage-image-block img {
       display: none; }
 
 .front .pane-calendar-homepage-events-pane {
@@ -11861,7 +11829,7 @@ iframe[name^='google_conversion_frame'] {
     .front .pane-calendar-homepage-events-pane .slick-prev {
       left: -50px; } }
 
-.front .pane-bundle-homepage-next-steps {
+.front .pane-next-steps {
   margin: 0;
   padding: 3rem 2rem;
   background: url(../images/yellow-double-lines-cropped.png);
@@ -11874,17 +11842,17 @@ iframe[name^='google_conversion_frame'] {
     width: 60%; }
   .front .page-header {
     padding-bottom: 2rem; }
-  .front .pane-bundle-homepage-panes .homepage-block-2, .front .pane-bundle-homepage-panes .homepage-block-3 {
+  .front .pane-blocks .homepage-block-2, .front .pane-blocks .homepage-block-3 {
     width: 60%; }
-  .front .pane-bundle-homepage-panes .homepage-block-2 {
+  .front .pane-blocks .homepage-block-2 {
     margin-bottom: 2rem; }
-  .front .pane-bundle-homepage-panes .field-name-field-homepage-image-2 img {
+  .front .pane-blocks .homepage-image-block img {
     display: none; } }
 
 @media (min-width: 992px) {
-  .front .pane-bundle-homepage-panes .homepage-block-2, .front .pane-bundle-homepage-panes .homepage-block-3 {
+  .front .pane-blocks .homepage-block-2, .front .pane-blocks .homepage-block-3 {
     width: 40%; }
-  .front .pane-bundle-homepage-panes .field-name-field-homepage-image-2 img {
+  .front .pane-blocks .homepage-image-block img {
     display: block; } }
 
 /*# sourceMappingURL=jpec.style.css.map */
