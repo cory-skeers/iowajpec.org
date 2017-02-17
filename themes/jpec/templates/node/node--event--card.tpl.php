@@ -16,12 +16,14 @@
     <?php print '<h3>'. $title . '</h3>';?>
     
     <?php 
+      hide($content['field_event_deadline_text']);
+
       print render($content['field_event_date']);
       if (!empty($content['field_event_time'])) {
         print render($content['field_event_time']) . ' | ';
       } 
       print render($content['field_event_location']) . '</br>';
-      if (!empty($content['field_event_action_label'])) {
+      if (!empty($content['field_event_deadline'])) {
         print render($content['field_event_deadline_text']) . render($content['field_event_deadline']) . render($content['field_event_deadline_time']) . '</br>';
         print render($content['field_event_action_label']); 
       }
