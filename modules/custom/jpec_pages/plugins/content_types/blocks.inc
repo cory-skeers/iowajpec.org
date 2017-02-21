@@ -59,41 +59,41 @@ function jpec_blocks_render($subtype, $conf, $panel_args, $context = NULL) {
   $wrapper = entity_metadata_wrapper('node', $node_id);
   $block2_text = $wrapper->field_homepage_block_2->value->value();
   $block3_text = $wrapper->field_homepage_block_3->value->value();
-  $block_image = $wrapper->field_homepage_block_image->value();
-  $block_image_path = file_create_url($block_image['uri']);
-  $block_image_alt = $block_image['alt'];
+  $block_image1 = $wrapper->field_homepage_block_image->value();
+  $block_image1_path = file_create_url($block_image1['uri']);
+  $block_image1_alt = $block_image1['alt'];
 
   $block = new stdClass();
   $block->title = '';
   $block->content = array(
-    '#prefix' => '<div class="content"><div class="container">',
+    '#prefix' => '<div class="content"><div class="container"><div class="row no-gutters">',
     'first' => array(
-      //'#prefix' => '<div class="row"><div class="col-md-4">',
-      'title' => array(
+      '#prefix' => '<div class="col-md-6">',
+      'block1' => array(
         '#prefix' => '<div class="homepage-block-2">',
         '#markup' => $block2_text,
         '#suffix' => '</div>',
       ),
-    ),
-    'second' => array(
-      //'#prefix' => '<div class="row"><div class="col-md-4">',
-      'title' => array(
+      'block2' => array(
         '#prefix' => '<div class="homepage-block-3">',
         '#markup' => $block3_text,
         '#suffix' => '</div>',
       ), 
-    ),  
-    'third' => array(
-      '#prefix' => '<div class="homepage-image-block">',
-      'image' => array(
+      '#suffix' => '</div>'
+    ), 
+    'second' => array(
+      '#prefix' => '<div class="col-md-6 block-bg">',
+      'image1' => array(
+        '#prefix' => '<div class="homepage-image-block">',
         '#theme' => 'image',
-        '#path' => $block_image_path,
-        '#alt' => t($block_image_alt),
+        '#path' => $block_image1_path,
+        '#alt' => t($block_image1_alt),
+        '#suffix' => '</div>',
       ),
       '#suffix' => '</div>',
     ),
     
-    '#suffix' => '</div></div>',
+    '#suffix' => '</div></div></div>',
   );
   return $block;
 }
