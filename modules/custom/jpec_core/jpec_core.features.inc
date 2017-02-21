@@ -56,13 +56,13 @@ function jpec_core_image_default_styles() {
 
   // Exported image style: homepage_event__380x105_.
   $styles['homepage_event__380x105_'] = array(
-    'label' => 'Homepage event (380x105)',
+    'label' => 'Homepage event (380x150)',
     'effects' => array(
       7 => array(
         'name' => 'manualcrop_crop_and_scale',
         'data' => array(
           'width' => 380,
-          'height' => 105,
+          'height' => 150,
           'upscale' => 0,
           'respectminimum' => 1,
           'onlyscaleifcrop' => 0,
