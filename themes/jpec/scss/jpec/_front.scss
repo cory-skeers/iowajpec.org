@@ -2,6 +2,17 @@ $top-ranked-background: $blue;
 $overlay_text: #FFFFFF;
 $love-it-background: $light_grey;
 
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 .front {
 
   #content .container {
@@ -27,7 +38,6 @@ $love-it-background: $light_grey;
 
     > .container {
       z-index: 3;
-      //padding: 0;
     }
   }
 
@@ -48,10 +58,10 @@ $love-it-background: $light_grey;
   }
 
 .pane-blocks {
-  position: relative;
+
     .homepage-block-2, .homepage-block-3 {
       padding: 2rem 2rem 1rem 2rem;
-      //width: 40%;
+
       h2 {
         margin-bottom: 0;
       }
@@ -76,15 +86,13 @@ $love-it-background: $light_grey;
       h3 {
         color: $body_text;
       }
-      margin-bottom: 2rem;
     }
   // End Block 3  
-  // 
+
+  .block-bg {
+    background: none;
+  }
   .homepage-image-block {
-    position: absolute;
-    top: 0;
-    right: 0;
-    max-width: 57%;
     img {
       display: none;
     }
@@ -95,6 +103,7 @@ $love-it-background: $light_grey;
   .pane-calendar-homepage-events-pane {
     background-color: $light_grey;
     padding: 3rem 0 2rem 0;
+    margin-top: 2rem;
     
     .slick {
       position: relative;
@@ -185,24 +194,6 @@ $love-it-background: $light_grey;
 
     }
 
-
-    // .view-content {
-    //   @include breakpoint($tippie-sm-min) {
-    //     @include flexbox();
-    //     //flex-wrap: wrap;
-    //     margin-left: -10px;
-    //     margin-right: -10px;
-    //   }
-    //   & > .views-row {
-    //     width: 31%;
-
-    //     margin: 10px;
-    //     background-color: $gold;
-    //     position: relative;
-    //     flex:1;
-    //     align-self: flex-end;
-    //   }
-    // }
   }
 // End Upcoming Events
 
@@ -221,34 +212,60 @@ $love-it-background: $light_grey;
 
 
   @include breakpoint($tippie-sm-min) {
-    
-    .header-content {
-      width: 60%;
-    }
+
     .page-header {
       padding-bottom: 2rem; 
+      .header-content {
+        width: 60%;
+        margin-top: 0;
+        .custom-text {
+          @include fontsize(1.3);
+          line-height: 1.3;
+        }
+      }
     }
     .pane-blocks {
       .homepage-block-2, .homepage-block-3 {
-        width: 60%;
+        margin-right: 2rem;
       }
       .homepage-block-2 {
         margin-bottom: 2rem;
       }
-      .homepage-image-block img{ 
+      .homepage-image-block img { 
         display: none;
       }  
     }  
 
   }
   @include breakpoint($tippie-md-min) {
-    .pane-blocks {
-      .homepage-block-2, .homepage-block-3 {
-        width: 40%;
+    .page-header {
+       
+      .header-content {
+        
+        margin-top: 1rem;
+        .custom-text {
+          @include fontsize(1.8);
+          line-height: 1.5;
+        }
       }
+    }    
+  .row {
+    @include flexbox();
+    .col-* {
+      @include alignitems(stretch);
+    }
+  }  
+    .pane-blocks {
       .homepage-image-block img { 
         display: block;
-      }  
+        border-bottom: solid 15px $white;
+      }
+      .block-bg {
+        //background-color: red;
+        background: url(../images/tablet-img.jpeg) no-repeat center bottom;
+        background-size: 100% auto;
+      }
+             
     }  
   }
 }
