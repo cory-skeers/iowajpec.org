@@ -1,24 +1,9 @@
-$top-ranked-background: $blue;
-$overlay_text: #FFFFFF;
-$love-it-background: $light_grey;
-
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-
-  > .col,
-  > [class*="col-"] {
-    padding-right: 0;
-    padding-left: 0;
-  }
-}
-
 .front {
 
   #content .container {
     padding: 0;
   }
-  h2 {
+  h1.title, h2 {
     @include fontsize(3);
   }
   .description {
@@ -35,7 +20,6 @@ $love-it-background: $light_grey;
 
   .page-header {
     padding-bottom: 0;
-
     > .container {
       z-index: 3;
     }
@@ -59,39 +43,31 @@ $love-it-background: $light_grey;
 
 .pane-blocks {
 
-    .homepage-block-2, .homepage-block-3 {
-      padding: 2rem 2rem 1rem 2rem;
+  .homepage-block-1, .homepage-block-2 {
+    padding: 3rem;
 
-      h2 {
-        margin-bottom: 0;
-      }
-      h3 {
-        color: $gold;
-        margin: 0.2rem 0 1rem 0;
-        @include fontsize(1.4);
-      }
-
+    h2 {
+      margin-bottom: 0;
+      margin-top: 0.5rem;
     }
-  // Block 2
-    .homepage-block-2 {
-      background-color: $blue;
-      color: $white;
-      
+    h3 {
+      color: $gold;
+      margin: 0.2rem 0 1rem 0;
+      @include fontsize(1.4);
     }
-  // End Block 2 
-
-  // Block 3
-    .homepage-block-3 {
-      background-color: $gold;
-      h3 {
-        color: $body_text;
-      }
-    }
-  // End Block 3  
-
-  .block-bg {
-    background: none;
   }
+
+  .homepage-block-1 {
+    background-color: $blue;
+    color: $white;
+  }
+  .homepage-block-2 {
+    background-color: $gold;
+    h3 {
+      color: $body_text;
+    }
+  }
+
   .homepage-image-block {
     img {
       display: none;
@@ -102,8 +78,12 @@ $love-it-background: $light_grey;
 // Upcoming Events
   .pane-calendar-homepage-events-pane {
     background-color: $light_grey;
-    padding: 3rem 0 2rem 0;
-    margin-top: 2rem;
+    padding: 0 0 2rem 0;
+    margin-top: 0;
+
+    h2 {
+      margin-left: 2rem;
+    }
     
     .slick {
       position: relative;
@@ -119,7 +99,7 @@ $love-it-background: $light_grey;
         .slide {
           max-width: 380px;
           margin-right: 20px;
-          min-height: 250px;
+          min-height: 270px;
           background-color: $gold;
           // &:last-of-type {
           //   margin-right: 0;
@@ -128,10 +108,9 @@ $love-it-background: $light_grey;
             max-width: 100%;
           }
         }
-      //}
     }
     .views-field-field-event-image {
-      min-height: 100px;
+      min-height: 140px;
     }
 
     .event-wrapper {
@@ -199,14 +178,15 @@ $love-it-background: $light_grey;
 
 // Next Steps
   .pane-next-steps {
-
     margin: 0;
     padding: 3rem 2rem;
     background: url(../images/yellow-double-lines-cropped.png);
     background-position: right top;
     background-repeat: no-repeat;
     background-size: contain;
-    
+    a.primary-button {
+      margin-bottom: 0.8rem;
+    }
   }
 // End Next Steps
 
@@ -224,49 +204,62 @@ $love-it-background: $light_grey;
         }
       }
     }
-    .pane-blocks {
-      .homepage-block-2, .homepage-block-3 {
-        margin-right: 2rem;
+    .homepage-block-1 {
+      margin-bottom: 2rem;
+    }
+    .pane-calendar-homepage-events-pane {
+      padding: 3rem 0 2rem 0;
+      margin-top: 2rem;
+      h2 {
+        margin-left: 0;
       }
-      .homepage-block-2 {
-        margin-bottom: 2rem;
-      }
-      .homepage-image-block img { 
-        display: none;
-      }  
-    }  
+    }
 
   }
   @include breakpoint($tippie-md-min) {
     .page-header {
-       
       .header-content {
-        
         margin-top: 1rem;
         .custom-text {
           @include fontsize(1.8);
           line-height: 1.5;
         }
       }
-    }    
-  .row {
-    @include flexbox();
-    .col-* {
-      @include alignitems(stretch);
-    }
-  }  
+    }     
     .pane-blocks {
-      .homepage-image-block img { 
-        display: block;
-        border-bottom: solid 15px $white;
+
+      .homepage-block-1, .homepage-block-2 {
+        padding-top: 1.2rem;
+        padding-bottom: 0.5rem;
+        min-height: 320px;
+        width: 39%;
+        margin-right: 2%;
+        float: left;
+        margin-bottom: 2rem;
+        padding: 2rem;
       }
-      .block-bg {
-        //background-color: red;
-        background: url(../images/tablet-img.jpeg) no-repeat center bottom;
-        background-size: 100% auto;
+      .homepage-image-block, .homepage-block-1, .homepage-block-2 {
+        height: 360px;
       }
-             
+      .homepage-image-block {
+        overflow: hidden;
+        float: right;
+        width: 58%;
+        margin-bottom: 2rem;
+        img { 
+          display: block;
+          height: 100%;
+          width: auto;
+          max-width: none;
+          overflow: hidden;
+        }
+      }     
     }  
+  }
+  @include breakpoint($tippie-lg-min) {
+    .homepage-image-block, .homepage-block-1 {
+      height: 340px;
+    }
   }
 }
 
