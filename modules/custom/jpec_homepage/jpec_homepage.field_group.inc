@@ -26,6 +26,7 @@ function jpec_homepage_field_group_info() {
       0 => 'field_homepage_block_2',
       1 => 'field_homepage_block_3',
       2 => 'field_homepage_block_image',
+      3 => 'field_homepage_block_image_2',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

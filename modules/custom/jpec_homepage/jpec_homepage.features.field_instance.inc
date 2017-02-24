@@ -203,7 +203,7 @@ function jpec_homepage_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_homepage_block_2',
-    'label' => 'Block 2 text',
+    'label' => 'Block 1 text',
     'required' => 0,
     'settings' => array(
       'better_formats' => array(
@@ -266,7 +266,7 @@ function jpec_homepage_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_homepage_block_3',
-    'label' => 'Block 3 text',
+    'label' => 'Block 2 text',
     'required' => 0,
     'settings' => array(
       'better_formats' => array(
@@ -301,7 +301,7 @@ function jpec_homepage_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -334,7 +334,7 @@ function jpec_homepage_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_homepage_block_image',
-    'label' => 'Image',
+    'label' => 'Image 1',
     'required' => 1,
     'settings' => array(
       'alt_field' => 0,
@@ -381,7 +381,83 @@ function jpec_homepage_field_default_field_instances() {
         'manualcrop_thumblist' => 0,
       ),
       'type' => 'media_generic',
-      'weight' => 6,
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance: 'node-homepage-field_homepage_block_image_2'.
+  $field_instances['node-homepage-field_homepage_block_image_2'] = array(
+    'bundle' => 'homepage',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 8,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_homepage_block_image_2',
+    'label' => 'Image 2',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => 'images',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '4 MB',
+      'max_resolution' => '2000x2000',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'private' => 0,
+          'public' => 'public',
+          'sharestream' => 0,
+          'youtube' => 0,
+        ),
+        'allowed_types' => array(
+          'document' => 0,
+          'image' => 'image',
+        ),
+        'browser_plugins' => array(
+          'jpec_media_browser--media_browser_my_files' => 0,
+          'jpec_media_browser--media_browser_thumbnails' => 'jpec_media_browser--media_browser_thumbnails',
+          'media_internet' => 0,
+          'upload' => 'upload',
+        ),
+        'manualcrop_crop_info' => 1,
+        'manualcrop_default_crop_area' => 1,
+        'manualcrop_enable' => 0,
+        'manualcrop_inline_crop' => 0,
+        'manualcrop_instant_crop' => FALSE,
+        'manualcrop_instant_preview' => 1,
+        'manualcrop_keyboard' => 1,
+        'manualcrop_maximize_default_crop_area' => 0,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => 0,
+      ),
+      'type' => 'media_generic',
+      'weight' => 7,
     ),
   );
 
@@ -513,10 +589,11 @@ function jpec_homepage_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Block 1 text');
   t('Block 2 text');
-  t('Block 3 text');
   t('Header image');
-  t('Image');
+  t('Image 1');
+  t('Image 2');
   t('Text');
   t('Title');
 
