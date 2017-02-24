@@ -57,32 +57,26 @@ function jpec_blocks_render($subtype, $conf, $panel_args, $context = NULL) {
   $node_id = $queue->eq_node['und'][0]['target_id'];
   $homepage_node = node_load($node_id);
   $wrapper = entity_metadata_wrapper('node', $node_id);
-  $block2_text = $wrapper->field_homepage_block_2->value->value();
-  $block3_text = $wrapper->field_homepage_block_3->value->value();
+  $block1_text = $wrapper->field_homepage_block_2->value->value();
+  $block2_text = $wrapper->field_homepage_block_3->value->value();
   $block_image1 = $wrapper->field_homepage_block_image->value();
   $block_image1_path = file_create_url($block_image1['uri']);
   $block_image1_alt = $block_image1['alt'];
+  $block_image2 = $wrapper->field_homepage_block_image_2->value();
+  $block_image2_path = file_create_url($block_image2['uri']);
+  $block_image2_alt = $block_image2['alt'];  
 
   $block = new stdClass();
   $block->title = '';
   $block->content = array(
-    '#prefix' => '<div class="content"><div class="container"><div class="row no-gutters">',
+    '#prefix' => '<div class="content"><div class="container">',
     'first' => array(
-      '#prefix' => '<div class="col-md-6">',
+      '#prefix' => '<div class="row">',
       'block1' => array(
-        '#prefix' => '<div class="homepage-block-2">',
-        '#markup' => $block2_text,
+        '#prefix' => '<div class="homepage-block-1">',
+        '#markup' => $block1_text,
         '#suffix' => '</div>',
       ),
-      'block2' => array(
-        '#prefix' => '<div class="homepage-block-3">',
-        '#markup' => $block3_text,
-        '#suffix' => '</div>',
-      ), 
-      '#suffix' => '</div>'
-    ), 
-    'second' => array(
-      '#prefix' => '<div class="col-md-6 block-bg">',
       'image1' => array(
         '#prefix' => '<div class="homepage-image-block">',
         '#theme' => 'image',
@@ -91,9 +85,25 @@ function jpec_blocks_render($subtype, $conf, $panel_args, $context = NULL) {
         '#suffix' => '</div>',
       ),
       '#suffix' => '</div>',
-    ),
+    ),         
+    'second' => array(
+      '#prefix' => '<div class="row">',
+      'block2' => array(
+        '#prefix' => '<div class="homepage-block-2">',
+        '#markup' => $block2_text,
+        '#suffix' => '</div>',
+      ),
+      'image2' => array(
+        '#prefix' => '<div class="homepage-image-block">',
+        '#theme' => 'image',
+        '#path' => $block_image2_path,
+        '#alt' => t($block_image2_alt),
+        '#suffix' => '</div>',
+      ),
+      '#suffix' => '</div>',
+    ), 
     
-    '#suffix' => '</div></div></div>',
+    '#suffix' => '</div></div>',
   );
   return $block;
 }
