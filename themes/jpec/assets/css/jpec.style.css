@@ -1531,16 +1531,16 @@ pre {
   .container-fluid:after {
     clear: both; }
 
-.row, .node-type-profile .page-header {
+.row {
   margin-left: -15px;
   margin-right: -15px; }
-  .row:before, .node-type-profile .page-header:before, .row:after, .node-type-profile .page-header:after {
+  .row:before, .row:after {
     content: " ";
     display: table; }
-  .row:after, .node-type-profile .page-header:after {
+  .row:after {
     clear: both; }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-title, .col-md-4, .node-webform .third, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .node-type-profile #page-header .container, .node-type-profile #page-header .page-node-done .region, .page-node-done .node-type-profile #page-header .region, .node-type-profile #page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-profile #page-header .view-founders-club-profiles, .node-type-profile #page-header .page-people-directory .view-faculty-staff, .page-people-directory .node-type-profile #page-header .view-faculty-staff, .node-type-profile #page-header #page-header, .node-type-profile #page-header .page-user .region-content, .page-user .node-type-profile #page-header .region-content, .node-type-profile .page-header.tall-image .container, .node-type-profile .page-header.tall-image .page-node-done .region, .page-node-done .node-type-profile .page-header.tall-image .region, .node-type-profile .page-header.tall-image .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-profile .page-header.tall-image .view-founders-club-profiles, .node-type-profile .page-header.tall-image .page-people-directory .view-faculty-staff, .page-people-directory .node-type-profile .page-header.tall-image .view-faculty-staff, .node-type-profile .page-header.tall-image #page-header, .node-type-profile .page-header.tall-image .page-user .region-content, .page-user .node-type-profile .page-header.tall-image .region-content, .node-type-profile .page-header.tall-image .field-name-field-profile-image, .col-md-6, .node-webform .half, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-field-person-title, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .calendar-calendar, .view .row > .list-group, .view .node-type-profile .page-header > .list-group, .node-type-profile .view .page-header > .list-group, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-title, .col-md-4, .node-webform .third, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .node-webform .half, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-field-person-title, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .calendar-calendar, .view .row > .list-group, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1703,7 +1703,7 @@ pre {
   margin-left: 100%; }
 
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-title, .col-sm-5, .col-sm-6, .node-type-profile #page-header .container, .node-type-profile #page-header .page-node-done .region, .page-node-done .node-type-profile #page-header .region, .node-type-profile #page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-profile #page-header .view-founders-club-profiles, .node-type-profile #page-header .page-people-directory .view-faculty-staff, .page-people-directory .node-type-profile #page-header .view-faculty-staff, .node-type-profile #page-header #page-header, .node-type-profile #page-header .page-user .region-content, .page-user .node-type-profile #page-header .region-content, .node-type-profile .page-header.tall-image .container, .node-type-profile .page-header.tall-image .page-node-done .region, .page-node-done .node-type-profile .page-header.tall-image .region, .node-type-profile .page-header.tall-image .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-profile .page-header.tall-image .view-founders-club-profiles, .node-type-profile .page-header.tall-image .page-people-directory .view-faculty-staff, .page-people-directory .node-type-profile .page-header.tall-image .view-faculty-staff, .node-type-profile .page-header.tall-image #page-header, .node-type-profile .page-header.tall-image .page-user .region-content, .page-user .node-type-profile .page-header.tall-image .region-content, .node-type-profile .page-header.tall-image .field-name-field-profile-image, .col-sm-7, .col-sm-8, .page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-field-person-title, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-title, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-field-person-title, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left; }
   .col-sm-1 {
     width: 8.33333%; }
@@ -1715,7 +1715,7 @@ pre {
     width: 33.33333%; }
   .col-sm-5 {
     width: 41.66667%; }
-  .col-sm-6, .node-type-profile #page-header .container, .node-type-profile #page-header .page-node-done .region, .page-node-done .node-type-profile #page-header .region, .node-type-profile #page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-profile #page-header .view-founders-club-profiles, .node-type-profile #page-header .page-people-directory .view-faculty-staff, .page-people-directory .node-type-profile #page-header .view-faculty-staff, .node-type-profile #page-header #page-header, .node-type-profile #page-header .page-user .region-content, .page-user .node-type-profile #page-header .region-content, .node-type-profile .page-header.tall-image .container, .node-type-profile .page-header.tall-image .page-node-done .region, .page-node-done .node-type-profile .page-header.tall-image .region, .node-type-profile .page-header.tall-image .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-profile .page-header.tall-image .view-founders-club-profiles, .node-type-profile .page-header.tall-image .page-people-directory .view-faculty-staff, .page-people-directory .node-type-profile .page-header.tall-image .view-faculty-staff, .node-type-profile .page-header.tall-image #page-header, .node-type-profile .page-header.tall-image .page-user .region-content, .page-user .node-type-profile .page-header.tall-image .region-content, .node-type-profile .page-header.tall-image .field-name-field-profile-image {
+  .col-sm-6 {
     width: 50%; }
   .col-sm-7 {
     width: 58.33333%; }
@@ -1809,7 +1809,7 @@ pre {
     margin-left: 100%; } }
 
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .node-webform .third, .col-md-5, .col-md-6, .node-webform .half, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .calendar-calendar, .view .row > .list-group, .view .node-type-profile .page-header > .list-group, .node-type-profile .view .page-header > .list-group {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .node-webform .third, .col-md-5, .col-md-6, .node-webform .half, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .calendar-calendar, .view .row > .list-group {
     float: left; }
   .col-md-1 {
     width: 8.33333%; }
@@ -1833,7 +1833,7 @@ pre {
     width: 83.33333%; }
   .col-md-11 {
     width: 91.66667%; }
-  .col-md-12, .calendar-calendar, .view .row > .list-group, .view .node-type-profile .page-header > .list-group, .node-type-profile .view .page-header > .list-group {
+  .col-md-12, .calendar-calendar, .view .row > .list-group {
     width: 100%; }
   .col-md-pull-0 {
     right: auto; }
@@ -8038,7 +8038,7 @@ html.js fieldset.collapsed {
 #panels-panel-context-edit-content .region-content {
   width: auto;
   padding: 0; }
-  #panels-panel-context-edit-move .container .row, #panels-panel-context-edit-move .page-node-done .region .row, .page-node-done #panels-panel-context-edit-move .region .row, #panels-panel-context-edit-move .page-founders-club .view-founders-club-profiles .row, .page-founders-club #panels-panel-context-edit-move .view-founders-club-profiles .row, #panels-panel-context-edit-move .page-people-directory .view-faculty-staff .row, .page-people-directory #panels-panel-context-edit-move .view-faculty-staff .row, #panels-panel-context-edit-move .node-type-profile #page-header .row, .node-type-profile #panels-panel-context-edit-move #page-header .row, #panels-panel-context-edit-move .page-user .region-content .row, .page-user #panels-panel-context-edit-move .region-content .row, #panels-panel-context-edit-move .container .node-type-profile .page-header, .node-type-profile #panels-panel-context-edit-move .container .page-header, #panels-panel-context-edit-move .page-node-done .region .node-type-profile .page-header, .node-type-profile #panels-panel-context-edit-move .page-node-done .region .page-header, .page-node-done #panels-panel-context-edit-move .region .node-type-profile .page-header, .node-type-profile .page-node-done #panels-panel-context-edit-move .region .page-header, #panels-panel-context-edit-move .page-founders-club .view-founders-club-profiles .node-type-profile .page-header, .node-type-profile #panels-panel-context-edit-move .page-founders-club .view-founders-club-profiles .page-header, .page-founders-club #panels-panel-context-edit-move .view-founders-club-profiles .node-type-profile .page-header, .node-type-profile .page-founders-club #panels-panel-context-edit-move .view-founders-club-profiles .page-header, #panels-panel-context-edit-move .page-people-directory .view-faculty-staff .node-type-profile .page-header, .node-type-profile #panels-panel-context-edit-move .page-people-directory .view-faculty-staff .page-header, .page-people-directory #panels-panel-context-edit-move .view-faculty-staff .node-type-profile .page-header, .node-type-profile .page-people-directory #panels-panel-context-edit-move .view-faculty-staff .page-header, #panels-panel-context-edit-move .node-type-profile #page-header .page-header, .node-type-profile #panels-panel-context-edit-move #page-header .page-header, #panels-panel-context-edit-move .page-user .region-content .node-type-profile .page-header, .node-type-profile #panels-panel-context-edit-move .page-user .region-content .page-header, .page-user #panels-panel-context-edit-move .region-content .node-type-profile .page-header, .node-type-profile .page-user #panels-panel-context-edit-move .region-content .page-header,
+  #panels-panel-context-edit-move .container .row, #panels-panel-context-edit-move .page-node-done .region .row, .page-node-done #panels-panel-context-edit-move .region .row, #panels-panel-context-edit-move .page-founders-club .view-founders-club-profiles .row, .page-founders-club #panels-panel-context-edit-move .view-founders-club-profiles .row, #panels-panel-context-edit-move .page-people-directory .view-faculty-staff .row, .page-people-directory #panels-panel-context-edit-move .view-faculty-staff .row, #panels-panel-context-edit-move .node-type-profile #page-header .row, .node-type-profile #panels-panel-context-edit-move #page-header .row, #panels-panel-context-edit-move .page-user .region-content .row, .page-user #panels-panel-context-edit-move .region-content .row,
   #panels-panel-context-edit-content .container .row,
   #panels-panel-context-edit-content .page-node-done .region .row, .page-node-done
   #panels-panel-context-edit-content .region .row,
@@ -8049,27 +8049,7 @@ html.js fieldset.collapsed {
   #panels-panel-context-edit-content .node-type-profile #page-header .row, .node-type-profile
   #panels-panel-context-edit-content #page-header .row,
   #panels-panel-context-edit-content .page-user .region-content .row, .page-user
-  #panels-panel-context-edit-content .region-content .row,
-  #panels-panel-context-edit-content .container .node-type-profile .page-header, .node-type-profile
-  #panels-panel-context-edit-content .container .page-header,
-  #panels-panel-context-edit-content .page-node-done .region .node-type-profile .page-header, .node-type-profile
-  #panels-panel-context-edit-content .page-node-done .region .page-header, .page-node-done
-  #panels-panel-context-edit-content .region .node-type-profile .page-header, .node-type-profile .page-node-done
-  #panels-panel-context-edit-content .region .page-header,
-  #panels-panel-context-edit-content .page-founders-club .view-founders-club-profiles .node-type-profile .page-header, .node-type-profile
-  #panels-panel-context-edit-content .page-founders-club .view-founders-club-profiles .page-header, .page-founders-club
-  #panels-panel-context-edit-content .view-founders-club-profiles .node-type-profile .page-header, .node-type-profile .page-founders-club
-  #panels-panel-context-edit-content .view-founders-club-profiles .page-header,
-  #panels-panel-context-edit-content .page-people-directory .view-faculty-staff .node-type-profile .page-header, .node-type-profile
-  #panels-panel-context-edit-content .page-people-directory .view-faculty-staff .page-header, .page-people-directory
-  #panels-panel-context-edit-content .view-faculty-staff .node-type-profile .page-header, .node-type-profile .page-people-directory
-  #panels-panel-context-edit-content .view-faculty-staff .page-header,
-  #panels-panel-context-edit-content .node-type-profile #page-header .page-header, .node-type-profile
-  #panels-panel-context-edit-content #page-header .page-header,
-  #panels-panel-context-edit-content .page-user .region-content .node-type-profile .page-header, .node-type-profile
-  #panels-panel-context-edit-content .page-user .region-content .page-header, .page-user
-  #panels-panel-context-edit-content .region-content .node-type-profile .page-header, .node-type-profile .page-user
-  #panels-panel-context-edit-content .region-content .page-header {
+  #panels-panel-context-edit-content .region-content .row {
     margin-bottom: 20px; }
 
 .navbar-form .form-wrapper {
@@ -8340,7 +8320,7 @@ ul.nav > li.dropdown:after {
     float: none !important;
     margin: 0 0 10px !important; } }
 
-.panel-display > .row, .node-type-profile .panel-display > .page-header {
+.panel-display > .row {
   margin-bottom: 20px; }
 
 .panel-flexible .panel-separator {
@@ -10507,21 +10487,52 @@ table.table-condensed th, table.table-condensed td {
   padding-top: 5px; }
 
 .node-type-profile #page-header .container, .node-type-profile #page-header .page-node-done .region, .page-node-done .node-type-profile #page-header .region, .node-type-profile #page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-profile #page-header .view-founders-club-profiles, .node-type-profile #page-header .page-people-directory .view-faculty-staff, .page-people-directory .node-type-profile #page-header .view-faculty-staff, .node-type-profile #page-header #page-header, .node-type-profile #page-header .page-user .region-content, .page-user .node-type-profile #page-header .region-content {
-  width: 50%; }
+  width: 100%; }
 
 .node-type-profile .page-header {
   margin-bottom: 0;
   padding-bottom: 0; }
+  .node-type-profile .page-header.tall-image .container, .node-type-profile .page-header.tall-image .page-node-done .region, .page-node-done .node-type-profile .page-header.tall-image .region, .node-type-profile .page-header.tall-image .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-profile .page-header.tall-image .view-founders-club-profiles, .node-type-profile .page-header.tall-image .page-people-directory .view-faculty-staff, .page-people-directory .node-type-profile .page-header.tall-image .view-faculty-staff, .node-type-profile .page-header.tall-image #page-header, .node-type-profile .page-header.tall-image .page-user .region-content, .page-user .node-type-profile .page-header.tall-image .region-content {
+    position: relative;
+    padding: 0; }
+  .node-type-profile .page-header.tall-image .field-name-field-profile-image {
+    overflow: hidden; }
+    .node-type-profile .page-header.tall-image .field-name-field-profile-image img {
+      overflow: hidden; }
+    @media (min-width: 992px) {
+      .node-type-profile .page-header.tall-image .field-name-field-profile-image {
+        position: absolute;
+        top: 0;
+        left: 47%;
+        clip: rect(0px, 500px, 345px, 0px); } }
+    @media (min-width: 1200px) {
+      .node-type-profile .page-header.tall-image .field-name-field-profile-image {
+        height: 425px;
+        clip: auto; } }
   .node-type-profile .page-header .header-content {
     background-color: transparent;
     color: #000000;
-    padding: 2rem;
-    margin: 0; }
+    padding: 2rem 2rem 1rem 2rem;
+    margin: 0;
+    width: 100%; }
     @media (min-width: 992px) {
       .node-type-profile .page-header .header-content {
         background-color: #00A1C6;
         color: #FFFFFF;
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        width: 45%;
+        height: 345px; }
+        .node-type-profile .page-header .header-content h1.title {
+          font-size: 2rem; }
+        .node-type-profile .page-header .header-content .field-name-field-profile-subtitle {
+          font-size: 1.2rem; } }
+    @media (min-width: 1200px) {
+      .node-type-profile .page-header .header-content {
+        height: 425px; }
+        .node-type-profile .page-header .header-content h1.title {
+          font-size: 3rem; }
+        .node-type-profile .page-header .header-content .field-name-field-profile-subtitle {
+          font-size: 2rem; } }
   @media (min-width: 992px) {
     .node-type-profile .page-header h1 {
       color: #FFFFFF; } }
@@ -10538,6 +10549,9 @@ table.table-condensed th, table.table-condensed td {
   line-height: 1.5;
   margin-top: 1rem; }
   @media (min-width: 992px) {
+    .node-type-profile .field-name-field-profile-intro {
+      font-size: 1.2rem; } }
+  @media (min-width: 1200px) {
     .node-type-profile .field-name-field-profile-intro {
       font-size: 1.4rem; } }
 
@@ -10583,21 +10597,52 @@ table.table-condensed th, table.table-condensed td {
         width: auto; } }
 
 .node-type-profile #page-header .container, .node-type-profile #page-header .page-node-done .region, .page-node-done .node-type-profile #page-header .region, .node-type-profile #page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-profile #page-header .view-founders-club-profiles, .node-type-profile #page-header .page-people-directory .view-faculty-staff, .page-people-directory .node-type-profile #page-header .view-faculty-staff, .node-type-profile #page-header #page-header, .node-type-profile #page-header .page-user .region-content, .page-user .node-type-profile #page-header .region-content {
-  width: 50%; }
+  width: 100%; }
 
 .node-type-profile .page-header {
   margin-bottom: 0;
   padding-bottom: 0; }
+  .node-type-profile .page-header.tall-image .container, .node-type-profile .page-header.tall-image .page-node-done .region, .page-node-done .node-type-profile .page-header.tall-image .region, .node-type-profile .page-header.tall-image .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-profile .page-header.tall-image .view-founders-club-profiles, .node-type-profile .page-header.tall-image .page-people-directory .view-faculty-staff, .page-people-directory .node-type-profile .page-header.tall-image .view-faculty-staff, .node-type-profile .page-header.tall-image #page-header, .node-type-profile .page-header.tall-image .page-user .region-content, .page-user .node-type-profile .page-header.tall-image .region-content {
+    position: relative;
+    padding: 0; }
+  .node-type-profile .page-header.tall-image .field-name-field-profile-image {
+    overflow: hidden; }
+    .node-type-profile .page-header.tall-image .field-name-field-profile-image img {
+      overflow: hidden; }
+    @media (min-width: 992px) {
+      .node-type-profile .page-header.tall-image .field-name-field-profile-image {
+        position: absolute;
+        top: 0;
+        left: 47%;
+        clip: rect(0px, 500px, 345px, 0px); } }
+    @media (min-width: 1200px) {
+      .node-type-profile .page-header.tall-image .field-name-field-profile-image {
+        height: 425px;
+        clip: auto; } }
   .node-type-profile .page-header .header-content {
     background-color: transparent;
     color: #000000;
-    padding: 2rem;
-    margin: 0; }
+    padding: 2rem 2rem 1rem 2rem;
+    margin: 0;
+    width: 100%; }
     @media (min-width: 992px) {
       .node-type-profile .page-header .header-content {
         background-color: #00A1C6;
         color: #FFFFFF;
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        width: 45%;
+        height: 345px; }
+        .node-type-profile .page-header .header-content h1.title {
+          font-size: 2rem; }
+        .node-type-profile .page-header .header-content .field-name-field-profile-subtitle {
+          font-size: 1.2rem; } }
+    @media (min-width: 1200px) {
+      .node-type-profile .page-header .header-content {
+        height: 425px; }
+        .node-type-profile .page-header .header-content h1.title {
+          font-size: 3rem; }
+        .node-type-profile .page-header .header-content .field-name-field-profile-subtitle {
+          font-size: 2rem; } }
   @media (min-width: 992px) {
     .node-type-profile .page-header h1 {
       color: #FFFFFF; } }
@@ -10614,6 +10659,9 @@ table.table-condensed th, table.table-condensed td {
   line-height: 1.5;
   margin-top: 1rem; }
   @media (min-width: 992px) {
+    .node-type-profile .field-name-field-profile-intro {
+      font-size: 1.2rem; } }
+  @media (min-width: 1200px) {
     .node-type-profile .field-name-field-profile-intro {
       font-size: 1.4rem; } }
 
