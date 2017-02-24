@@ -198,7 +198,7 @@ function jpec_story_field_default_field_instances() {
   $field_instances['node-profile-field_profile_image'] = array(
     'bundle' => 'profile',
     'deleted' => 0,
-    'description' => 'Upload a 900x370px image. Face should fit in to the area close to the left edge.',
+    'description' => 'Upload a 600x425px image.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -238,7 +238,7 @@ function jpec_story_field_default_field_instances() {
       'file_extensions' => 'png jpg jpeg',
       'max_filesize' => '4 MB',
       'max_resolution' => '',
-      'min_resolution' => '900x370',
+      'min_resolution' => '600x425',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -849,7 +849,7 @@ function jpec_story_field_default_field_instances() {
   t('Story image');
   t('Subtitle');
   t('Tags');
-  t('Upload a 900x370px image. Face should fit in to the area close to the left edge.');
+  t('Upload a 600x425px image.');
   t('Will be used only in the pulled story in the content block.');
 
   return $field_instances;
