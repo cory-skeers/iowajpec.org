@@ -10,6 +10,17 @@
 function jpec_roles_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: 'access administration pages'.
+  $permissions['access administration pages'] = array(
+    'name' => 'access administration pages',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'system',
+  );
+
   // Exported permission: 'access all webform results'.
   $permissions['access all webform results'] = array(
     'name' => 'access all webform results',
@@ -136,6 +147,25 @@ function jpec_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'administer main-menu menu items'.
+  $permissions['administer main-menu menu items'] = array(
+    'name' => 'administer main-menu menu items',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'menu_admin_per_menu',
+  );
+
+  // Exported permission: 'administer management menu items'.
+  $permissions['administer management menu items'] = array(
+    'name' => 'administer management menu items',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'menu_admin_per_menu',
   );
 
   // Exported permission: 'administer menu'.
@@ -1502,6 +1532,18 @@ function jpec_roles_user_default_permissions() {
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'view the administration theme'.
+  $permissions['view the administration theme'] = array(
+    'name' => 'view the administration theme',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'system',
   );
 
   return $permissions;
