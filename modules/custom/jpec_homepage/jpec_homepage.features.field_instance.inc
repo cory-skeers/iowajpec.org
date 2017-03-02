@@ -309,7 +309,7 @@ function jpec_homepage_field_default_field_instances() {
   $field_instances['node-homepage-field_homepage_block_image'] = array(
     'bundle' => 'homepage',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Image requirements: 1300x720 px, 72 ppi, optimized to minimize the file size.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -389,7 +389,7 @@ function jpec_homepage_field_default_field_instances() {
   $field_instances['node-homepage-field_homepage_block_image_2'] = array(
     'bundle' => 'homepage',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Image requirements: 1300x720 px, 72 ppi, optimized to minimize the file size.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -594,6 +594,7 @@ function jpec_homepage_field_default_field_instances() {
   t('Header image');
   t('Image 1');
   t('Image 2');
+  t('Image requirements: 1300x720 px, 72 ppi, optimized to minimize the file size.');
   t('Text');
   t('Title');
 
