@@ -41,7 +41,7 @@ function tippie_editor_strongarm() {
     '- any -' => 0,
     'card_content' => 0,
     'factoid' => 0,
-    'panel' => 0,
+    'homepage' => 0,
     'story' => 0,
   );
   $export['ckeditor_link_autocomplete_node_types'] = $strongarm;
@@ -67,8 +67,6 @@ function tippie_editor_strongarm() {
     'document' => 'document',
     '- any -' => 0,
     'image' => 0,
-    'video' => 0,
-    'audio' => 0,
   );
   $export['ckeditor_link_file_autocomplete_file_types'] = $strongarm;
 
@@ -83,7 +81,7 @@ function tippie_editor_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ckeditor_link_limit';
-  $strongarm->value = '10';
+  $strongarm->value = '100';
   $export['ckeditor_link_limit'] = $strongarm;
 
   $strongarm = new stdClass();
