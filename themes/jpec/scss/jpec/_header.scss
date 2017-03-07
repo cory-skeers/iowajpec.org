@@ -24,7 +24,7 @@ $header_padding: 1.5rem;
   }
 
   .header-content {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     z-index: 3000;
     @include breakpoint($tippie-lg-min) {
       width: 75%;
@@ -51,9 +51,6 @@ $header_padding: 1.5rem;
       h1 {
         @include fontsize(3); 
       }
-      .custom-text {
-        @include fontsize(1.7);
-      }
     }
 
     // fix overflow issues on medium screens (992px - 1199 px)
@@ -64,14 +61,10 @@ $header_padding: 1.5rem;
 
     // fix overflow issues on small screens (768px - 992 px)
     @include breakpoint($tippie-sm) {
-      margin: 1rem 0 0 0;
+      margin: 0;
       width: 65%;
       h1 {
         @include fontsize(2.5); 
-      }
-      .custom-text {
-        @include fontsize(1.5);
-        line-height: 2rem;
       }
     }    
 
@@ -87,13 +80,22 @@ $header_padding: 1.5rem;
     p {
       margin-bottom: $header_padding/3;
     }
-  }
-
-  @include breakpoint($tippie-sm-min) {
-    .custom-text {
-      @include fontsize(2);
+    @include breakpoint($tippie-xs-min) {
+      @include fontsize(1.4);
+    }
+    @include breakpoint($tippie-sm-min) {
+      @include fontsize(1.2);
+      line-height: 1.5rem;
       width: 100%;
     }
+    @include breakpoint($tippie-md-min) {
+      @include fontsize(1.6);
+      line-height: 2rem;
+    }
+    @include breakpoint($tippie-lg-min) {
+      @include fontsize(2);
+      line-height: 2.5rem;
+    }    
   }
 
   .display-title {
