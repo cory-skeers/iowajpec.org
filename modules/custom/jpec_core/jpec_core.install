@@ -737,3 +737,31 @@ function jpec_core_update_7041() {
     module_disable(array('fieldable_panels_panes'));
   }
 }
+
+/**
+ * Add profiles media folder.
+ */
+function jpec_core_update_7042() {
+
+  $new_terms = array(
+    'Profiles'
+  );
+
+  // Load the media_folders vocabulary ID.
+  $vid = taxonomy_vocabulary_machine_name_load('media_folders')->vid;
+
+  // Create new terms from the $new_terms array.
+  foreach ($new_terms as $item) {
+    $new_term = new stdClass();
+    $new_term->name = $item;
+    $new_term->vid = $vid;
+
+    $parent = taxonomy_get_term_by_name('Images', 'media_folders');
+
+    if (!empty($parent)) {
+      $tid = array_pop($parent)->tid;
+      $new_term->parent = $tid;
+    }
+    taxonomy_term_save($new_term);
+  }
+}
