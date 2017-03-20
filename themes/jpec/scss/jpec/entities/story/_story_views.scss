@@ -1,6 +1,6 @@
 $cardBodyPadding: 1.5rem;
 
-// Story Card Pane - gold header, white background, card image, title, quote in Blender, button link to the full Profile node
+// Story Card Pane - white background, card image, title, quote in Blender, button link to the full Profile node
 .view-display-id-story_card_pane {
   max-width: 40rem;
   background-color: $white;
@@ -48,10 +48,11 @@ $cardBodyPadding: 1.5rem;
       position: relative;    
     }
     .card-wrapper {
-      h3 {
+      h2 {
         color: $orange;
         text-transform: uppercase;
         font-family: BlenderProBold;
+        margin-bottom: 1rem;
       }
       @extend .card-body;
       margin: 0 1rem;
@@ -61,9 +62,6 @@ $cardBodyPadding: 1.5rem;
       img {
         float: left;
         width: auto;
-      }
-      .card-wrapper {
-        //margin-left: 340px;
       }
     }
   }
