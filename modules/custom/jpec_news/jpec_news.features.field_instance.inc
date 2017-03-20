@@ -254,12 +254,8 @@ function jpec_news_field_default_field_instances() {
     'display' => array(
       'card' => array(
         'label' => 'hidden',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => 'card_640x325',
-        ),
-        'type' => 'image',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 1,
       ),
       'default' => array(
