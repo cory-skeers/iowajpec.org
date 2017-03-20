@@ -209,7 +209,8 @@ function jpec_story_views_default_views() {
 [field_profile_story_image]
 </div>
 <div class="card-wrapper">
-<h3>[field_story_header]</h3>
+<h2>[field_story_header]</h2>
+<h3>[title]</h3>
 [field_story_quote]
 [field_story_show_link]
 </div>
