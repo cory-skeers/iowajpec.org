@@ -211,6 +211,12 @@ function jpec_news_views_views_default_views() {
   $handler->display->display_options['fields']['field_news_body']['label'] = '';
   $handler->display->display_options['fields']['field_news_body']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_news_body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content: Date (field_news_date) */
+  $handler->display->display_options['sorts']['field_news_date_value']['id'] = 'field_news_date_value';
+  $handler->display->display_options['sorts']['field_news_date_value']['table'] = 'field_data_field_news_date';
+  $handler->display->display_options['sorts']['field_news_date_value']['field'] = 'field_news_date_value';
+  $handler->display->display_options['sorts']['field_news_date_value']['order'] = 'DESC';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
