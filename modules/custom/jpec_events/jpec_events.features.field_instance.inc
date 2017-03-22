@@ -209,7 +209,7 @@ function jpec_events_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -298,7 +298,7 @@ function jpec_events_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -789,6 +789,86 @@ function jpec_events_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-event-field_event_homepage_title'.
+  $field_instances['node-event-field_event_homepage_title'] = array(
+    'bundle' => 'event',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 16,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_event_homepage_title',
+    'label' => 'Homepage title',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'filtered_html' => array(
+              'weight' => -10,
+            ),
+            'full_html' => array(
+              'weight' => -9,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
       'weight' => 2,
     ),
   );
@@ -897,7 +977,7 @@ function jpec_events_field_default_field_instances() {
         'manualcrop_thumblist' => 1,
       ),
       'type' => 'media_generic',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -1251,6 +1331,7 @@ function jpec_events_field_default_field_instances() {
   t('Description');
   t('Enter a valid webpage URL.');
   t('Featured event');
+  t('Homepage title');
   t('Image');
   t('Label');
   t('Link to the web form');
