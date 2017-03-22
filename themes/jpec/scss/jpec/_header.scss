@@ -27,7 +27,7 @@ $header_padding: 1.5rem;
     padding: 1rem 0;
     z-index: 3000;
     @include breakpoint($tippie-lg-min) {
-      width: 75%;
+      width: 65%;
       margin: 1rem 0;
       h1 {
         @include fontsize(4);
@@ -47,7 +47,7 @@ $header_padding: 1.5rem;
     // fix overflow issues on medium-large screens (1200px - 1430 px)
     @include breakpoint($tippie-xl) {
       margin: 1rem 0 0 0;
-      width: 65%;
+      width: 60%;
       h1 {
         @include fontsize(3); 
       }
@@ -56,13 +56,13 @@ $header_padding: 1.5rem;
     // fix overflow issues on medium screens (992px - 1199 px)
     @include breakpoint($tippie-md) {
       margin: 1rem 0 0 0;
-      width: 65%;
+      width: 60%;
     } 
 
     // fix overflow issues on small screens (768px - 992 px)
     @include breakpoint($tippie-sm) {
       margin: 0;
-      width: 65%;
+      width: 60%;
       h1 {
         @include fontsize(2.5); 
       }
