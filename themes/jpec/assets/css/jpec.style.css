@@ -11822,11 +11822,18 @@ iframe[name^='google_conversion_frame'] {
     .front .pane-calendar-homepage-events-pane .slick .slide {
       max-width: 380px;
       margin-right: 20px;
-      min-height: 270px;
+      min-height: 295px;
       background-color: #FFCD00; }
+      @media (min-width: 480px) {
+        .front .pane-calendar-homepage-events-pane .slick .slide {
+          max-width: 100%;
+          min-height: 370px; } }
       @media (min-width: 768px) {
         .front .pane-calendar-homepage-events-pane .slick .slide {
-          max-width: 100%; } }
+          min-height: 330px; } }
+      @media (min-width: 1200px) {
+        .front .pane-calendar-homepage-events-pane .slick .slide {
+          min-height: 295px; } }
   .front .pane-calendar-homepage-events-pane .views-field-field-event-image {
     min-height: 140px; }
   .front .pane-calendar-homepage-events-pane .event-wrapper {

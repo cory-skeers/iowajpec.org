@@ -99,14 +99,19 @@
         .slide {
           max-width: 380px;
           margin-right: 20px;
-          min-height: 270px;
+          min-height: 295px;
           background-color: $gold;
-          // &:last-of-type {
-          //   margin-right: 0;
-          // }
-          @include breakpoint($tippie-sm-min) {
+
+          @include breakpoint($tippie-xs-min) {
             max-width: 100%;
+            min-height: 370px;
           }
+          @include breakpoint($tippie-sm-min) {
+            min-height: 330px;
+          }          
+          @include breakpoint($tippie-lg-min) {
+            min-height: 295px;
+          }          
         }
     }
     .views-field-field-event-image {
