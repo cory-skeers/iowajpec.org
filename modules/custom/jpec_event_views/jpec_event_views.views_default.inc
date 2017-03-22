@@ -584,6 +584,13 @@ function jpec_event_views_views_default_views() {
   $handler->display->display_options['header']['area']['content'] = '<h2>Upcoming Events</h2>';
   $handler->display->display_options['header']['area']['format'] = 'filtered_html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_event_image']['id'] = 'field_event_image';
   $handler->display->display_options['fields']['field_event_image']['table'] = 'field_data_field_event_image';
@@ -624,6 +631,19 @@ function jpec_event_views_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
+  /* Field: Content: Homepage title */
+  $handler->display->display_options['fields']['field_event_homepage_title']['id'] = 'field_event_homepage_title';
+  $handler->display->display_options['fields']['field_event_homepage_title']['table'] = 'field_data_field_event_homepage_title';
+  $handler->display->display_options['fields']['field_event_homepage_title']['field'] = 'field_event_homepage_title';
+  $handler->display->display_options['fields']['field_event_homepage_title']['label'] = '';
+  $handler->display->display_options['fields']['field_event_homepage_title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_event_homepage_title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_event_homepage_title']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_event_homepage_title']['alter']['path'] = '[path]';
+  $handler->display->display_options['fields']['field_event_homepage_title']['alter']['trim_whitespace'] = TRUE;
+  $handler->display->display_options['fields']['field_event_homepage_title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_homepage_title']['empty'] = '[title]';
+  $handler->display->display_options['fields']['field_event_homepage_title']['hide_empty'] = TRUE;
   /* Field: Content: Audience */
   $handler->display->display_options['fields']['field_event_audience']['id'] = 'field_event_audience';
   $handler->display->display_options['fields']['field_event_audience']['table'] = 'field_data_field_event_audience';
@@ -640,7 +660,7 @@ function jpec_event_views_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="event-wrapper">
 <div class="event-date">[field_event_date]</div>
-<h4>[title]</h4>
+<h4>[field_event_homepage_title]</h4>
 <div class="event-audience">[field_event_audience]</div>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
