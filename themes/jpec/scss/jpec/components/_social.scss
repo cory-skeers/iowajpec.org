@@ -1,6 +1,6 @@
 // social icons
 
-.facebook-link, .twitter-link, .instagram-link, .linkedin-link, .email-link, .website-link {
+.facebook-link, .twitter-link, .instagram-link, .linkedin-link, .email-link, .website-link, .phone-link {
   //padding-top: 8px;
   font-family: FranklinGothicDemi;
   &:before {
@@ -42,5 +42,11 @@
 .website-link {
   &:before {
     content: "\f08e";
+  }
+}
+
+.phone-link {
+  &:before {
+    content: "\f098";
   }
 }

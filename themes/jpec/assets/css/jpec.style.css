@@ -9394,16 +9394,16 @@ blockquote {
     top: 10px;
     left: -25px; }
 
-.facebook-link, .twitter-link, .instagram-link, .linkedin-link, .email-link, .website-link {
+.facebook-link, .node-type-founders-profile .field-name-field-founders-profile-facebook a, .twitter-link, .node-type-founders-profile .field-name-field-founders-profile-twitter a, .instagram-link, .linkedin-link, .email-link, .node-type-founders-profile .field-name-field-founders-profile-email a, .website-link, .node-type-founders-profile .field-name-field-founders-profile-url a, .phone-link, .node-type-founders-profile .field-name-field-founders-profile-phone .field-item {
   font-family: FranklinGothicDemi; }
-  .facebook-link:before, .twitter-link:before, .instagram-link:before, .linkedin-link:before, .email-link:before, .website-link:before {
+  .facebook-link:before, .node-type-founders-profile .field-name-field-founders-profile-facebook a:before, .twitter-link:before, .node-type-founders-profile .field-name-field-founders-profile-twitter a:before, .instagram-link:before, .linkedin-link:before, .email-link:before, .node-type-founders-profile .field-name-field-founders-profile-email a:before, .website-link:before, .node-type-founders-profile .field-name-field-founders-profile-url a:before, .phone-link:before, .node-type-founders-profile .field-name-field-founders-profile-phone .field-item:before {
     font-family: FontAwesome;
     padding: 5px; }
 
-.facebook-link:before {
+.facebook-link:before, .node-type-founders-profile .field-name-field-founders-profile-facebook a:before {
   content: "\f230"; }
 
-.twitter-link:before {
+.twitter-link:before, .node-type-founders-profile .field-name-field-founders-profile-twitter a:before {
   content: "\f099"; }
 
 .instagram-link:before {
@@ -9412,11 +9412,14 @@ blockquote {
 .linkedin-link:before {
   content: "\f08c"; }
 
-.email-link:before {
+.email-link:before, .node-type-founders-profile .field-name-field-founders-profile-email a:before {
   content: "\f003"; }
 
-.website-link:before {
+.website-link:before, .node-type-founders-profile .field-name-field-founders-profile-url a:before {
   content: "\f08e"; }
+
+.phone-link:before, .node-type-founders-profile .field-name-field-founders-profile-phone .field-item:before {
+  content: "\f098"; }
 
 .table-bordered > tbody > tr > td, .calendar-calendar table.mini > tbody > tr > td,
 .table-bordered > thead:first-child > tr:first-child > th, .calendar-calendar table.mini > thead:first-child > tr:first-child > th, .calendar-calendar table.mini > tbody > tr > td,

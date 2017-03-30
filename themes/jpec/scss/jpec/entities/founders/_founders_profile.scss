@@ -8,6 +8,21 @@
     height: auto;
     margin-bottom: 2rem;
   }
+  .field-name-field-founders-profile-phone .field-item {
+    @extend .phone-link;
+  }
+  .field-name-field-founders-profile-email a {
+    @extend .email-link;
+  }
+  .field-name-field-founders-profile-url a {
+    @extend .website-link;
+  }
+  .field-name-field-founders-profile-facebook a {
+    @extend .facebook-link;
+  }
+  .field-name-field-founders-profile-twitter a {
+    @extend .twitter-link;
+  }
 }
 
 // participants page
