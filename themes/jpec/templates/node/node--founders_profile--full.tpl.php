@@ -14,6 +14,15 @@ $location = 1;
 if (empty($content['field_founders_profile_location'])) {
   $location = 0;
 };
+
+$contact = 1;
+if (empty($content['field_founders_profile_phone']) && 
+    empty($content['field_founders_profile_email']) &&
+    empty($content['field_founders_profile_url']) &&
+    empty($content['field_founders_profile_facebook']) &&
+    empty($content['field_founders_profile_twitter'])) {
+  $contact = 0;
+};
 ?>
 
     <?php
@@ -57,12 +66,14 @@ if (empty($content['field_founders_profile_location'])) {
             <?php print render($content['field_founders_profile_location']); ?>
           <?php endif; ?>
           
-          <h3>Contact</h3>
-          <?php print render($content['field_founders_profile_phone']); ?>
-          <?php print render($content['field_founders_profile_email']); ?>
-          <?php print render($content['field_founders_profile_url']); ?>
-          <?php print render($content['field_founders_profile_facebook']); ?>
-          <?php print render($content['field_founders_profile_twitter']); ?>          
+          <?php if ($contact): ?>
+            <h3>Contact</h3>
+            <?php print render($content['field_founders_profile_phone']); ?>
+            <?php print render($content['field_founders_profile_email']); ?>
+            <?php print render($content['field_founders_profile_url']); ?>
+            <?php print render($content['field_founders_profile_facebook']); ?>
+            <?php print render($content['field_founders_profile_twitter']); ?> 
+          <?php endif; ?>         
         </div>    
       </div>   
 
