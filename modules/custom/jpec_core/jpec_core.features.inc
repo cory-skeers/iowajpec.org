@@ -39,7 +39,7 @@ function jpec_core_image_default_styles() {
   $styles['card_640x325'] = array(
     'label' => 'Card (640x325)',
     'effects' => array(
-      10 => array(
+      9 => array(
         'name' => 'manualcrop_crop_and_scale',
         'data' => array(
           'width' => 640,
@@ -107,7 +107,7 @@ function jpec_core_image_default_styles() {
   $styles['square_290x290'] = array(
     'label' => 'Square (290x290)',
     'effects' => array(
-      3 => array(
+      10 => array(
         'name' => 'manualcrop_crop_and_scale',
         'data' => array(
           'width' => 290,
