@@ -118,24 +118,24 @@
           <h2 class="link-list-heading">UI Students</h2>
           <ul class="link-list">
             <li>
-              <?php print l(t('Academic'), 'academic');?>
+              <?php print l(t('Academic'), 'students/academics');?>
             </li>
             <li>
-              <?php print l(t('Real World Experience'), 'TBA');?>
+              <?php print l(t('Real-World Experiences'), 'students/real-world-experience');?>
             </li>
             <li>
-              <?php print l(t('Student Entrepreneurs'), 'TBA');?>
+              <?php print l(t('Student Ventures'), 'students/student-ventures');?>
             </li>
             <li>
-              <?php print l(t('Clubs & Organizations'), 'tba');?>
+              <?php print l(t('Student Organizations'), 'students/student-organizations');?>
             </li>
             <li>
-              <?php print l(t('ENTR Class Events'), 'tba');?>
+              <?php print l(t('ENTR Class Events'), 'entr-class-events');?>
             </li>
           </ul>
         </div>
         <div class="footer-link-list jpec-resources">
-          <h2 class="link-list-heading">Community Programs &amp; Resources</h2>
+          <h2 class="link-list-heading">Community Programs</h2>
           <ul class="link-list">
             <li>
               <?php print l(t('Startup Training'), 'tba');?>
@@ -158,7 +158,7 @@
               <?php print l(t('Events'), 'events');?>
             </li>
             <li>
-              <?php print l(t('Competitions'), 'tba');?>
+              <?php print l(t('Competitions'), 'competitions');?>
             </li>
             <li>
               <?php print l(t('People Directory'), 'people-directory');?>
