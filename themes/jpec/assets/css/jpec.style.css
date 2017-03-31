@@ -10416,10 +10416,9 @@ table.table-condensed th, table.table-condensed td {
   clear: both; }
 
 .page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-title .field-content {
-  font-size: 1.5rem; }
-
-.page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-field-person-title .field-content {
-  padding-top: 5px; }
+  font-size: 1.2rem;
+  line-height: 1;
+  font-family: FranklinGothicMedium; }
 
 .node-type-person .node-person-full {
   padding-bottom: 2rem; }
@@ -10484,10 +10483,9 @@ table.table-condensed th, table.table-condensed td {
   clear: both; }
 
 .page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-title .field-content {
-  font-size: 1.5rem; }
-
-.page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-field-person-title .field-content {
-  padding-top: 5px; }
+  font-size: 1.2rem;
+  line-height: 1;
+  font-family: FranklinGothicMedium; }
 
 .node-type-profile #page-header .container, .node-type-profile #page-header .page-node-done .region, .page-node-done .node-type-profile #page-header .region, .node-type-profile #page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-profile #page-header .view-founders-club-profiles, .node-type-profile #page-header .page-people-directory .view-faculty-staff, .page-people-directory .node-type-profile #page-header .view-faculty-staff, .node-type-profile #page-header #page-header, .node-type-profile #page-header .page-user .region-content, .page-user .node-type-profile #page-header .region-content {
   width: 100%; }

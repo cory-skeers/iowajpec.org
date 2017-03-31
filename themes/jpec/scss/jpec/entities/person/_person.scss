@@ -84,15 +84,13 @@
       .views-field-title {
         @extend .col-sm-4;
         .field-content {
-          @include fontsize(1.5); 
+          @include fontsize(1.2); 
+          line-height: 1;
+          font-family: FranklinGothicMedium;
         }        
       }
       .views-field-field-person-title {
         @extend .col-sm-8;
-        .field-content {
-          padding-top: 5px;
-          
-        }
       }
     }
   }
