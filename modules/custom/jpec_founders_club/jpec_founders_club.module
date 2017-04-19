@@ -19,3 +19,23 @@ function jpec_founders_club_form_founders_profile_node_form_alter(&$form, &$form
     drupal_add_js($script, 'inline');
   }
 }
+
+/**
+ * Implements hook_views_pre_render().
+ * Display only one result in views, do not display duplicates
+ */
+function jpec_founders_club_views_pre_render(&$view) {
+  $used_nids = array();
+  $new_view_result = array();
+
+  if ($view->name == 'founders_club_profiles') {
+    foreach ($view->result as $row) {
+        if (!in_array($row->nid, $used_nids)) {
+          $new_view_result[] = $row;
+          $used_nids[] = $row->nid;
+        }
+    }
+
+    $view->result = $new_view_result;
+  }
+}

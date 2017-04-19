@@ -28,8 +28,11 @@ function jpec_founders_club_views_default_views() {
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Search';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Go';
+  $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
+  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Clear';
   $handler->display->display_options['exposed_form']['options']['expose_sort_order'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '15';
@@ -38,8 +41,12 @@ function jpec_founders_club_views_default_views() {
   $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['style_options']['uses_fields'] = TRUE;
-  $handler->display->display_options['row_plugin'] = 'node';
-  $handler->display->display_options['row_options']['links'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['inline'] = array(
+    'field_founders_profile_student' => 'field_founders_profile_student',
+    'field_fp_student_name' => 'field_fp_student_name',
+  );
+  $handler->display->display_options['row_options']['hide_empty'] = TRUE;
   /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
@@ -47,6 +54,11 @@ function jpec_founders_club_views_default_views() {
   $handler->display->display_options['header']['area']['label'] = 'Intro text';
   $handler->display->display_options['header']['area']['content'] = 'Founders Club is a business incubator for students pursuing the creation of a startup while attending The University of Iowa. Individual students and teams in the program have access to dedicated office space in the remodeled 10,000 square-foot Bedell Entrepreneurship Learning Laboratory (BELL), enabling them to concentrate on developing their business concepts.';
   $handler->display->display_options['header']['area']['format'] = 'filtered_html';
+  /* Relationship: Content: Student(s) (field_founders_profile_student) */
+  $handler->display->display_options['relationships']['field_founders_profile_student_value']['id'] = 'field_founders_profile_student_value';
+  $handler->display->display_options['relationships']['field_founders_profile_student_value']['table'] = 'field_data_field_founders_profile_student';
+  $handler->display->display_options['relationships']['field_founders_profile_student_value']['field'] = 'field_founders_profile_student_value';
+  $handler->display->display_options['relationships']['field_founders_profile_student_value']['delta'] = '-1';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -54,13 +66,35 @@ function jpec_founders_club_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Student(s) */
+  $handler->display->display_options['fields']['field_founders_profile_student']['id'] = 'field_founders_profile_student';
+  $handler->display->display_options['fields']['field_founders_profile_student']['table'] = 'field_data_field_founders_profile_student';
+  $handler->display->display_options['fields']['field_founders_profile_student']['field'] = 'field_founders_profile_student';
+  $handler->display->display_options['fields']['field_founders_profile_student']['label'] = '';
+  $handler->display->display_options['fields']['field_founders_profile_student']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_founders_profile_student']['type'] = 'field_collection_fields';
+  $handler->display->display_options['fields']['field_founders_profile_student']['settings'] = array(
+    'view_mode' => 'token',
+  );
+  $handler->display->display_options['fields']['field_founders_profile_student']['delta_offset'] = '0';
   /* Field: Content: Description */
   $handler->display->display_options['fields']['field_founders_profile_body']['id'] = 'field_founders_profile_body';
   $handler->display->display_options['fields']['field_founders_profile_body']['table'] = 'field_data_field_founders_profile_body';
   $handler->display->display_options['fields']['field_founders_profile_body']['field'] = 'field_founders_profile_body';
   $handler->display->display_options['fields']['field_founders_profile_body']['label'] = '';
-  $handler->display->display_options['fields']['field_founders_profile_body']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_founders_profile_body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_founders_profile_body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['field_founders_profile_body']['settings'] = array(
+    'trim_length' => '600',
+  );
+  /* Field: Field collection item: Name */
+  $handler->display->display_options['fields']['field_fp_student_name']['id'] = 'field_fp_student_name';
+  $handler->display->display_options['fields']['field_fp_student_name']['table'] = 'field_data_field_fp_student_name';
+  $handler->display->display_options['fields']['field_fp_student_name']['field'] = 'field_fp_student_name';
+  $handler->display->display_options['fields']['field_fp_student_name']['relationship'] = 'field_founders_profile_student_value';
+  $handler->display->display_options['fields']['field_fp_student_name']['label'] = '';
+  $handler->display->display_options['fields']['field_fp_student_name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_fp_student_name']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
@@ -99,10 +133,11 @@ function jpec_founders_club_views_default_views() {
   $handler->display->display_options['filters']['combine']['expose']['operator_id'] = 'combine_op';
   $handler->display->display_options['filters']['combine']['expose']['label'] = 'Search';
   $handler->display->display_options['filters']['combine']['expose']['operator'] = 'combine_op';
-  $handler->display->display_options['filters']['combine']['expose']['identifier'] = 'keyword';
+  $handler->display->display_options['filters']['combine']['expose']['identifier'] = 'keywords';
   $handler->display->display_options['filters']['combine']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
+    6 => 0,
     3 => 0,
     4 => 0,
     5 => 0,
@@ -117,7 +152,9 @@ function jpec_founders_club_views_default_views() {
   );
   $handler->display->display_options['filters']['combine']['fields'] = array(
     'title' => 'title',
+    'field_founders_profile_student' => 'field_founders_profile_student',
     'field_founders_profile_body' => 'field_founders_profile_body',
+    'field_fp_student_name' => 'field_fp_student_name',
   );
 
   /* Display: Current */
@@ -169,6 +206,11 @@ function jpec_founders_club_views_default_views() {
 <p>Established in 2004, the Founders Club is an on-campus business incubator for UI student entrepreneurs pursuing the creation of a startup at the <a href="https://www.google.com/maps/place/322+N+Clinton+St,+Iowa+City,+IA+52245/@41.6653834,-91.5362675,17z/data=!3m1!4b1!4m5!3m4!1s0x87e441f136273b09:0xa559ffa58db739a7!8m2!3d41.6653794!4d-91.5340788">Bedell Entrepreneurial Learning Laboratory (BELL)</a>. Since it was established, the Program has supported over 400 student businesses. Below is a list of alumni startups who began their entrepreneurial journey in the Founders Club program.</p>';
   $handler->display->display_options['header']['area']['format'] = 'filtered_html';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Content: Student(s) (field_founders_profile_student) */
+  $handler->display->display_options['relationships']['field_founders_profile_student_value']['id'] = 'field_founders_profile_student_value';
+  $handler->display->display_options['relationships']['field_founders_profile_student_value']['table'] = 'field_data_field_founders_profile_student';
+  $handler->display->display_options['relationships']['field_founders_profile_student_value']['field'] = 'field_founders_profile_student_value';
+  $handler->display->display_options['relationships']['field_founders_profile_student_value']['delta'] = '-1';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -201,6 +243,14 @@ function jpec_founders_club_views_default_views() {
   $handler->display->display_options['fields']['field_founders_profile_body']['settings'] = array(
     'trim_length' => '600',
   );
+  /* Field: Field collection item: Name */
+  $handler->display->display_options['fields']['field_fp_student_name']['id'] = 'field_fp_student_name';
+  $handler->display->display_options['fields']['field_fp_student_name']['table'] = 'field_data_field_fp_student_name';
+  $handler->display->display_options['fields']['field_fp_student_name']['field'] = 'field_fp_student_name';
+  $handler->display->display_options['fields']['field_fp_student_name']['relationship'] = 'field_founders_profile_student_value';
+  $handler->display->display_options['fields']['field_fp_student_name']['label'] = '';
+  $handler->display->display_options['fields']['field_fp_student_name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_fp_student_name']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -237,10 +287,11 @@ function jpec_founders_club_views_default_views() {
   $handler->display->display_options['filters']['combine']['expose']['operator_id'] = 'combine_op';
   $handler->display->display_options['filters']['combine']['expose']['label'] = 'Search';
   $handler->display->display_options['filters']['combine']['expose']['operator'] = 'combine_op';
-  $handler->display->display_options['filters']['combine']['expose']['identifier'] = 'keyword';
+  $handler->display->display_options['filters']['combine']['expose']['identifier'] = 'keywords';
   $handler->display->display_options['filters']['combine']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
+    6 => 0,
     3 => 0,
     4 => 0,
     5 => 0,
@@ -255,7 +306,9 @@ function jpec_founders_club_views_default_views() {
   );
   $handler->display->display_options['filters']['combine']['fields'] = array(
     'title' => 'title',
+    'field_founders_profile_student' => 'field_founders_profile_student',
     'field_founders_profile_body' => 'field_founders_profile_body',
+    'field_fp_student_name' => 'field_fp_student_name',
   );
   $handler->display->display_options['path'] = 'founders-club/past';
   $handler->display->display_options['menu']['title'] = 'Past Founders Club Businesses';
