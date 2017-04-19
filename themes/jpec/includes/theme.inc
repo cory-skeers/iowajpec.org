@@ -22,26 +22,18 @@ function jpec_form_alter(&$form, &$form_state, $form_id){
       }
       break;
     
-    // exposed filter on the People Directory page
-    case 'views-exposed-form-people-list-people-list':
+    // exposed filter on the Current and Past Founders Club page
+    case 'views-exposed-form-founders-club-profiles-founders-club-current-page':
+    case 'views-exposed-form-founders-club-profiles-founders-club-past-page':
       if (isset($form['keywords'])) { 
         // add the placeholder attribute to the Keywords input field, and set it to the value of the filter label                
         $form['keywords']['#attributes'] = array(
           'placeholder' => array(t($form['#info']['filter-combine']['label'])));
-        // define the keywords input width
-        $form['keywords']['#size'] = 45;
-      }
-      if (isset($form['category'])) { 
-        // add the 'By Category' to -Any- option in the categories dropdown list               
-        $form['category']['#options']['All'] = 'By Category: All';        
-      }      
+      }     
       break;                 
     
     default:
       
       break;
   }
-  // if($form['#id'] == "views-exposed-form-news-recent-news-pane"){
-
-  // }
 }
