@@ -51,3 +51,17 @@
     margin: 1.5rem 0;
   }
 }
+
+// hiding the label for the exposed search filter on the Current Founders Club page
+.page-founders-club {
+  .views-exposed-form {
+    .views-widget-filter-combine label {
+      @extend .hidden;
+    }
+    .views-exposed-widget .form-submit,
+    .views-submit-button, 
+    .views-reset-button {
+      margin-top: 0;
+    }
+  }
+}

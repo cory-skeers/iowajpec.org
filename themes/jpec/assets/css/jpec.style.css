@@ -5663,7 +5663,7 @@ button.close {
   overflow: hidden;
   text-align: left; }
 
-.hidden, .page-news .views-exposed-form .views-widget-filter-combine label {
+.hidden, .page-founders-club .views-exposed-form .views-widget-filter-combine label, .page-news .views-exposed-form .views-widget-filter-combine label {
   display: none !important; }
 
 .affix {
@@ -8872,7 +8872,7 @@ img {
   margin-bottom: 2em;
   margin-left: 2em; }
 
-.hidden, .page-news .views-exposed-form .views-widget-filter-combine label {
+.hidden, .page-founders-club .views-exposed-form .views-widget-filter-combine label, .page-news .views-exposed-form .views-widget-filter-combine label {
   position: absolute;
   left: -10000px;
   top: auto;
@@ -9969,6 +9969,11 @@ table.table-condensed th, table.table-condensed td {
 .page-founders-club .views-field-field-founders-profile-body {
   margin: 1.5rem 0; }
 
+.page-founders-club .views-exposed-form .views-exposed-widget .form-submit,
+.page-founders-club .views-exposed-form .views-submit-button,
+.page-founders-club .views-exposed-form .views-reset-button {
+  margin-top: 0; }
+
 .node-type-founders-profile h2 {
   color: #FE5E00; }
 
@@ -9992,6 +9997,11 @@ table.table-condensed th, table.table-condensed td {
 
 .page-founders-club .views-field-field-founders-profile-body {
   margin: 1.5rem 0; }
+
+.page-founders-club .views-exposed-form .views-exposed-widget .form-submit,
+.page-founders-club .views-exposed-form .views-submit-button,
+.page-founders-club .views-exposed-form .views-reset-button {
+  margin-top: 0; }
 
 .node-type-news {
   margin-bottom: 2rem; }
