@@ -15,9 +15,9 @@ function tippie_editor_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'ckeditor_link_autocomplete_menus';
   $strongarm->value = array(
+    'main-menu' => 'main-menu',
     '- any -' => 0,
     'devel' => 0,
-    'main-menu' => 0,
     'management' => 0,
     'navigation' => 0,
     'user-menu' => 0,
