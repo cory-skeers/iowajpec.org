@@ -173,7 +173,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'administer menu',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'menu',
   );
@@ -829,6 +828,16 @@ function jpec_roles_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
+  // Exported permission: 'delete terms in fellow_year'.
+  $permissions['delete terms in fellow_year'] = array(
+    'name' => 'delete terms in fellow_year',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'webmaster' => 'webmaster',
+    ),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'delete terms in news'.
   $permissions['delete terms in news'] = array(
     'name' => 'delete terms in news',
@@ -1255,6 +1264,17 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit terms in audiences',
     'roles' => array(
       'administrator' => 'administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: 'edit terms in fellow_year'.
+  $permissions['edit terms in fellow_year'] = array(
+    'name' => 'edit terms in fellow_year',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'webmaster' => 'webmaster',
     ),
     'module' => 'taxonomy',
   );
