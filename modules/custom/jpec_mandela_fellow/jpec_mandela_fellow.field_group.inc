@@ -31,7 +31,8 @@ function jpec_mandela_fellow_field_group_info() {
       5 => 'field_mwf_body',
       6 => 'field_mwf_education',
       7 => 'field_mwf_image',
-      8 => 'title',
+      8 => 'field_mwf_year',
+      9 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
