@@ -17,6 +17,12 @@
   @include blue-angle(100%);
   background: $blue;
   color: $white;
+  a:link, a:visited {
+    color: $white !important;
+  }
+  a:hover {
+    color: $gold !important;
+  }
 }
 .background-grey {
   background-color: $background_grey;

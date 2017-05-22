@@ -8899,7 +8899,7 @@ img {
 .background-blue-line {
   position: relative;
   overflow: hidden;
-  background: #00A1C6;
+  background: #1c7da7;
   color: #FFFFFF; }
   @media (min-width: 992px) {
     .background-blue-line {
@@ -8907,6 +8907,10 @@ img {
       background-repeat: no-repeat;
       background-position: 100% 50%;
       background-size: contain; } }
+  .background-blue-line a:link, .background-blue-line a:visited {
+    color: #FFFFFF !important; }
+  .background-blue-line a:hover {
+    color: #FFCD00 !important; }
 
 .background-grey {
   background-color: #f2f2f2; }
@@ -9753,7 +9757,7 @@ table.table-condensed th, table.table-condensed td {
   display: inline-block; }
 
 .node-factoid-card .field-name-field-factoid-image, .node-factoid-full .field-name-field-factoid-image {
-  background-color: #00A1C6;
+  background-color: #1c7da7;
   width: 100%;
   text-align: center; }
   .node-factoid-card .field-name-field-factoid-image img, .node-factoid-full .field-name-field-factoid-image img {
@@ -9797,7 +9801,7 @@ table.table-condensed th, table.table-condensed td {
   display: inline-block; }
 
 .node-factoid-card .field-name-field-factoid-image, .node-factoid-full .field-name-field-factoid-image {
-  background-color: #00A1C6;
+  background-color: #1c7da7;
   width: 100%;
   text-align: center; }
   .node-factoid-card .field-name-field-factoid-image img, .node-factoid-full .field-name-field-factoid-image img {
@@ -10055,7 +10059,7 @@ table.table-condensed th, table.table-condensed td {
     text-decoration: none;
     font-weight: normal; }
   .field-type-taxonomy-term-reference .field-items .field-item a:hover {
-    color: #00A1C6; }
+    color: #1c7da7; }
 
 .page-news .view-filters {
   margin-bottom: 2rem; }
@@ -10174,7 +10178,7 @@ table.table-condensed th, table.table-condensed td {
     text-decoration: none;
     font-weight: normal; }
   .field-type-taxonomy-term-reference .field-items .field-item a:hover {
-    color: #00A1C6; }
+    color: #1c7da7; }
 
 .page-news .view-filters {
   margin-bottom: 2rem; }
@@ -10527,7 +10531,7 @@ table.table-condensed th, table.table-condensed td {
     width: 100%; }
     @media (min-width: 992px) {
       .node-type-profile .page-header .header-content {
-        background-color: #00A1C6;
+        background-color: #1c7da7;
         color: #FFFFFF;
         margin-bottom: 0;
         width: 45%;
@@ -10638,7 +10642,7 @@ table.table-condensed th, table.table-condensed td {
     width: 100%; }
     @media (min-width: 992px) {
       .node-type-profile .page-header .header-content {
-        background-color: #00A1C6;
+        background-color: #1c7da7;
         color: #FFFFFF;
         margin-bottom: 0;
         width: 45%;
@@ -10730,7 +10734,7 @@ table.table-condensed th, table.table-condensed td {
     color: #000000;
     padding: 0 8px 0 3px; }
     .breadcrumb a:hover {
-      color: #00A1C6; }
+      color: #1c7da7; }
 
 #cta-section .content.container, #cta-section .page-node-done .content.region, .page-node-done #cta-section .content.region, #cta-section .page-founders-club .content.view-founders-club-profiles, .page-founders-club #cta-section .content.view-founders-club-profiles, #cta-section .page-people-directory .content.view-faculty-staff, .page-people-directory #cta-section .content.view-faculty-staff, #cta-section .node-type-profile .content#page-header, .node-type-profile #cta-section .content#page-header, #cta-section #ui-wrapper .content#uiowa-bar, #ui-wrapper #cta-section .content#uiowa-bar, #cta-section .page-user .content.region-content, .page-user #cta-section .content.region-content {
   padding-top: 1.5rem;
@@ -10913,15 +10917,15 @@ ol.megamenu-column {
     font-size: 1.1rem;
     padding: 0.4rem 2rem; }
     #content .block-menu-block ul.menu a:hover {
-      color: #00A1C6;
+      color: #1c7da7;
       background-color: transparent; }
     #content .block-menu-block ul.menu a:focus {
-      color: #00A1C6;
+      color: #1c7da7;
       background-color: #FFCD00; }
     #content .block-menu-block ul.menu a.active {
       background-color: #FFCD00; }
       #content .block-menu-block ul.menu a.active:hover, #content .block-menu-block ul.menu a.active:focus {
-        color: #00A1C6; }
+        color: #1c7da7; }
   #content .block-menu-block ul.menu.nav-pills > li > a {
     border-radius: 0;
     font-family: FranklinGothicDemi;
@@ -10939,7 +10943,7 @@ ol.megamenu-column {
     color: #000; }
   #content .block-menu-block ul.menu.nav-pills > li.active > a:hover,
   #content .block-menu-block ul.menu.nav-pills > li.active > a:focus {
-    color: #00A1C6; }
+    color: #1c7da7; }
   #content .block-menu-block ul.menu.nav-pills > li.active > a.active {
     background-color: #FFCD00; }
 
@@ -11848,7 +11852,7 @@ iframe[name^='google_conversion_frame'] {
     font-size: 1.4rem; }
 
 .front .pane-blocks .homepage-block-1 {
-  background-color: #00A1C6;
+  background-color: #1c7da7;
   color: #FFFFFF; }
 
 .front .pane-blocks .homepage-block-2 {
