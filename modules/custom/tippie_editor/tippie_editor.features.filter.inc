@@ -50,7 +50,7 @@ table[width|cellpadding|cellspacing|border|align|summary], tr[align|valign], td[
 address, blockquote, pre, cite, code,
 h1, h2, h3, h4, h5, h6,',
           'allow_comments' => 0,
-          'nofollow_policy' => 'whitelist',
+          'nofollow_policy' => 'disabled',
           'nofollow_domains' => array(
             0 => 'org-iowajpec.stage.drupal.uiowa.edu',
           ),
