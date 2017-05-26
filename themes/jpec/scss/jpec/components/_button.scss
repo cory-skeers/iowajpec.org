@@ -14,3 +14,12 @@
     color: $primary_button_text;
   }
 }
+@include breakpoint(max-width $tippie-xs-min) {
+  .entity-paragraphs-item.background-blue-line {
+    .primary-button {
+      display: block;
+      width: 80%;
+      text-align: center;
+    }
+  }
+}
