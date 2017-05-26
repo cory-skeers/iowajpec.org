@@ -20,6 +20,12 @@
     margin-top: 0;
     line-height: 1;
   }
+  .field-name-field-mwf-city {
+    .field-item:after {
+      content: ",";
+      display: inline-block;
+    }
+  }
 }
 
 // landing page
@@ -38,9 +44,9 @@
     display: inline-block;
   }
   .field-name-field-mwf-city {
-    padding-right: 3px;
+    padding-right: 0px;
     .field-item:after {
-      content: ", ";
+      content: ",";
       display: inline-block;
     }
   }
