@@ -35,6 +35,13 @@ $cardBodyPadding: 1.5rem;
 .view-display-id-story_featured_pane {
   background-color: $white;
 
+  blockquote {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .story-header {
     @extend .card-header;
   }
@@ -62,6 +69,9 @@ $cardBodyPadding: 1.5rem;
       img {
         float: left;
         width: auto;
+      }
+      .card-wrapper {
+        margin-left: 340px;
       }
     }
   }

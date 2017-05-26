@@ -10591,6 +10591,11 @@ table.table-condensed th, table.table-condensed td {
 
 .view-display-id-story_featured_pane {
   background-color: #FFFFFF; }
+  .view-display-id-story_featured_pane blockquote {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0; }
   .view-display-id-story_featured_pane .border-wrapper {
     padding-bottom: 2rem; }
     .view-display-id-story_featured_pane .border-wrapper img {
@@ -10609,7 +10614,9 @@ table.table-condensed th, table.table-condensed td {
     @media (min-width: 768px) {
       .view-display-id-story_featured_pane .border-wrapper img {
         float: left;
-        width: auto; } }
+        width: auto; }
+      .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item {
+        margin-left: 340px; } }
 
 .node-type-profile #page-header .container, .node-type-profile #page-header .page-node-done .region, .page-node-done .node-type-profile #page-header .region, .node-type-profile #page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-profile #page-header .view-founders-club-profiles, .node-type-profile #page-header .page-people-directory .view-faculty-staff, .page-people-directory .node-type-profile #page-header .view-faculty-staff, .node-type-profile #page-header #page-header, .node-type-profile #page-header #ui-wrapper #uiowa-bar, #ui-wrapper .node-type-profile #page-header #uiowa-bar, .node-type-profile #page-header .page-user .region-content, .page-user .node-type-profile #page-header .region-content {
   width: 100%; }
@@ -10702,6 +10709,11 @@ table.table-condensed th, table.table-condensed td {
 
 .view-display-id-story_featured_pane {
   background-color: #FFFFFF; }
+  .view-display-id-story_featured_pane blockquote {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0; }
   .view-display-id-story_featured_pane .border-wrapper {
     padding-bottom: 2rem; }
     .view-display-id-story_featured_pane .border-wrapper img {
@@ -10720,7 +10732,9 @@ table.table-condensed th, table.table-condensed td {
     @media (min-width: 768px) {
       .view-display-id-story_featured_pane .border-wrapper img {
         float: left;
-        width: auto; } }
+        width: auto; }
+      .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item {
+        margin-left: 340px; } }
 
 .breadcrumb-container {
   padding-top: 1em;
