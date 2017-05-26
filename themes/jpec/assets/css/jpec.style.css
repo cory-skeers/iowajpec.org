@@ -9860,7 +9860,8 @@ table.table-condensed th, table.table-condensed td {
   margin-bottom: 0; }
 
 .page-mandela-washington-fellows img {
-  max-height: 180px; }
+  width: 100%;
+  height: auto; }
 
 .page-mandela-washington-fellows .field-name-field-mwf-country, .page-mandela-washington-fellows .field-name-field-mwf-city {
   display: inline-block; }
@@ -9913,7 +9914,8 @@ table.table-condensed th, table.table-condensed td {
   margin-bottom: 0; }
 
 .page-mandela-washington-fellows img {
-  max-height: 180px; }
+  width: 100%;
+  height: auto; }
 
 .page-mandela-washington-fellows .field-name-field-mwf-country, .page-mandela-washington-fellows .field-name-field-mwf-city {
   display: inline-block; }
