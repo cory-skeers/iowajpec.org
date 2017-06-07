@@ -27,6 +27,27 @@ function jpec_webform_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'diff_enable_revisions_page_node_webform';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_webform';
+  $strongarm->value = 1;
+  $export['diff_show_preview_changes_node_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_webform';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_webform'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'display_clone_menu_link';
   $strongarm->value = '0';
   $export['display_clone_menu_link'] = $strongarm;
@@ -58,7 +79,7 @@ function jpec_webform_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_webform';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_webform'] = $strongarm;
 
   $strongarm = new stdClass();

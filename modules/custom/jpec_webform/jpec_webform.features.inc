@@ -20,15 +20,7 @@ function jpec_webform_custom_breadcrumb_features_default_settings() {
   $custom_breadcrumbs = array();
 
   // Exported custom breadcrumb: webform_node.
-  $custom_breadcrumbs['webform_node'] = array(
-    'name' => 'Webform node',
-    'titles' => 'Events',
-    'paths' => 'events',
-    'visibility_php' => '',
-    'node_type' => 'webform',
-    'language' => '',
-    'machine_name' => 'webform_node',
-  );
+  $custom_breadcrumbs['webform_node'] = array();
 
   return $custom_breadcrumbs;
 }
