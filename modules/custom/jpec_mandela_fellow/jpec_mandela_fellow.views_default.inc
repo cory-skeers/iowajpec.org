@@ -29,7 +29,6 @@ function jpec_mandela_fellow_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Go';
-  $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Clear';
   $handler->display->display_options['exposed_form']['options']['expose_sort_order'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
@@ -51,6 +50,11 @@ function jpec_mandela_fellow_views_default_views() {
   $handler->display->display_options['fields']['field_mwf_year']['table'] = 'field_data_field_mwf_year';
   $handler->display->display_options['fields']['field_mwf_year']['field'] = 'field_mwf_year';
   $handler->display->display_options['fields']['field_mwf_year']['type'] = 'taxonomy_term_reference_plain';
+  /* Sort criterion: Content: Year (field_mwf_year) */
+  $handler->display->display_options['sorts']['field_mwf_year_tid']['id'] = 'field_mwf_year_tid';
+  $handler->display->display_options['sorts']['field_mwf_year_tid']['table'] = 'field_data_field_mwf_year';
+  $handler->display->display_options['sorts']['field_mwf_year_tid']['field'] = 'field_mwf_year_tid';
+  $handler->display->display_options['sorts']['field_mwf_year_tid']['order'] = 'DESC';
   /* Sort criterion: Content: Last name (field_mwf_last_name) */
   $handler->display->display_options['sorts']['field_mwf_last_name_value']['id'] = 'field_mwf_last_name_value';
   $handler->display->display_options['sorts']['field_mwf_last_name_value']['table'] = 'field_data_field_mwf_last_name';
@@ -73,7 +77,9 @@ function jpec_mandela_fellow_views_default_views() {
   $handler->display->display_options['filters']['field_mwf_year_tid']['id'] = 'field_mwf_year_tid';
   $handler->display->display_options['filters']['field_mwf_year_tid']['table'] = 'field_data_field_mwf_year';
   $handler->display->display_options['filters']['field_mwf_year_tid']['field'] = 'field_mwf_year_tid';
-  $handler->display->display_options['filters']['field_mwf_year_tid']['value'] = '';
+  $handler->display->display_options['filters']['field_mwf_year_tid']['value'] = array(
+    73 => '73',
+  );
   $handler->display->display_options['filters']['field_mwf_year_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_mwf_year_tid']['expose']['operator_id'] = 'field_mwf_year_tid_op';
   $handler->display->display_options['filters']['field_mwf_year_tid']['expose']['label'] = 'Filter by year';
@@ -111,6 +117,7 @@ function jpec_mandela_fellow_views_default_views() {
 
   /* Display: Fellows Content Pane */
   $handler = $view->new_display('panel_pane', 'Fellows Content Pane', 'fellows_pane');
+  $handler->display->display_options['inherit_panels_path'] = '1';
   $export['mandela_fellows'] = $view;
 
   return $export;
