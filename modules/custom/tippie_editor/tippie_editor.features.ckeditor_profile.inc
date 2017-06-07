@@ -62,7 +62,7 @@ th td tr[scope,class];',
         'scayt_autoStartup' => 'f',
         'theme_config_js' => 'f',
         'js_conf' => 'config.disableNativeSpellChecker = false;
-config.removePlugins = \'scayt,menubutton,contextmenu\';
+config.removePlugins = \'scayt\';
 config.browserContextMenuOnCtrl = true;',
         'loadPlugins' => array(
           'autogrow' => array(
@@ -81,6 +81,12 @@ config.browserContextMenuOnCtrl = true;',
             'name' => 'drupal_path',
             'desc' => 'CKEditor Link - A plugin to easily create links to Drupal internal paths',
             'path' => '%base_path%profiles/sitenow/modules/contrib/ckeditor_link/plugins/link/',
+          ),
+          'contextmenu' => array(
+            'name' => 'contextmenu',
+            'desc' => 'Context Menu',
+            'path' => '/sites/www.iowajpec.org/libraries/ckeditor_contextmenu/',
+            'buttons' => TRUE,
           ),
           'layoutmanager' => array(
             'name' => 'layoutmanager',
@@ -113,12 +119,6 @@ config.browserContextMenuOnCtrl = true;',
                 ),
               ),
             ),
-          ),
-          'menubutton' => array(
-            'name' => 'menubutton',
-            'desc' => 'Menu Button',
-            'path' => '/sites/www.iowajpec.org/libraries/ckeditor_menubutton/',
-            'buttons' => FALSE,
           ),
           'tippiewidgets' => array(
             'name' => 'tippiewidgets',
