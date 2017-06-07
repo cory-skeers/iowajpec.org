@@ -191,7 +191,13 @@
     background-size: contain;
     a.primary-button {
       margin-bottom: 0.8rem;
+      @include breakpoint(max-width $tippie-xs-min) {
+        display: block;
+        width: 80%;
+        text-align: center;
+      }
     }
+
   }
 // End Next Steps
 
