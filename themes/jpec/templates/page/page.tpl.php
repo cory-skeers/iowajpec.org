@@ -43,14 +43,16 @@
               <?php if (!empty($header_fields)): ?>
                 <div class="header-fields"><?php print render($header_fields); ?></div>
               <?php endif; ?>
+              <?php if (!empty($header_suffix_fields)): ?>
+                <div class="header-suffix"><?php print render($header_suffix_fields); ?></div>
+              <?php endif; ?>
             </div>
           </div>
+
           <?php if (!empty($header_image_tall)): ?>
             <?php print render($header_image_tall); ?>
           <?php endif; ?>
-          <?php if (!empty($header_suffix_fields)): ?>
-            <div class="header-suffix"><?php print render($header_suffix_fields); ?></div>
-          <?php endif; ?>
+
         </div>
       <?php endif; ?>
     <?php if ($breadcrumb || $messages || $tabs || $action_links): ?>
