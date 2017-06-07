@@ -109,10 +109,11 @@ $header_padding: 1.5rem;
     margin-top: $header_padding;
   }
 
-  .header-suffix {
-    background-color: $header_suffix_background;
-    padding: $header_padding;
-  }
+  // .header-suffix {
+  //   //background-color: $header_suffix_background;
+  //   padding: $header_padding;
+  //   padding-top: 0;
+  // }
 
   &.tall-image-story {
     .header-fields {
