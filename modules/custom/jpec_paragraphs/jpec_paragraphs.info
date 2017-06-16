@@ -119,4 +119,7 @@ features[paragraphs][] = social
 features[paragraphs][] = story_featured
 features[paragraphs][] = text_area
 features[paragraphs][] = video
+features[variable][] = youtube_color
+features[variable][] = youtube_privacy
+features[variable][] = youtube_suggest
 project path = sites/www.iowajpec.org/modules/custom
