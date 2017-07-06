@@ -765,3 +765,12 @@ function jpec_core_update_7042() {
     taxonomy_term_save($new_term);
   }
 }
+
+/**
+ * Enable redirect module
+ */
+function jpec_core_update_7043() {
+  if (!module_exists('redirect')) {
+    module_enable(array('redirect'));
+  }
+}
