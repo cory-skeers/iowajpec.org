@@ -120,7 +120,7 @@
           <h2 class="link-list-heading">UI Students</h2>
           <ul class="link-list">
             <li>
-              <?php print l(t('Academic'), 'students/academics');?>
+              <?php print l(t('Academics'), 'students/academics');?>
             </li>
             <li>
               <?php print l(t('Real-World Experiences'), 'students/real-world-experience');?>
@@ -129,10 +129,7 @@
               <?php print l(t('Student Ventures'), 'students/student-ventures');?>
             </li>
             <li>
-              <?php print l(t('Student Organizations'), 'students/student-organizations');?>
-            </li>
-            <li>
-              <?php print l(t('ENTR Class Events'), 'entr-class-events');?>
+              <?php print l(t('Student Clubs & Orgs'), 'students/student-organizations');?>
             </li>
           </ul>
         </div>
@@ -140,14 +137,26 @@
           <h2 class="link-list-heading">Community Programs</h2>
           <ul class="link-list">
             <li>
-              <?php print l(t('Startup Training'), 'tba');?>
+              <?php print l(t('Venture School'), 'community/venture-school');?>
             </li>
             <li>
-              <?php print l(t('Business Resources'), 'tba');?>
+              <?php print l(t('Faculty Innovators'), 'community/faculty-innovators');?>
             </li>
             <li>
-              <?php print l(t('K-12 Programs'), 'tba');?>
+              <?php print l(t('Business Consulting'), 'community/business-consulting');?>
             </li>
+            <li>
+              <?php print l(t('International Support'), 'community/international-business');?>
+            </li>
+            <li>
+              <?php print l(t('Internships'), 'tbd');?>
+            </li> 
+            <li>
+              <?php print l(t('SBDC'), 'iowa-small-business-development-center');?>
+            </li> 
+            <li>
+              <?php print l(t('K-12 Outreach'), 'community/jacobson-institute');?>
+            </li>                                    
           </ul>
         </div>
         <div class="footer-link-list tippie-information">
@@ -199,16 +208,7 @@
                 </span>
                 <span class="social-media-platform">LinkedId</span>
               </a>
-            </li>
-            <li>
-              <a href="https://instagram.com/iowajpec/" class="tippie-instagram">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                </span>
-                <span class="social-media-platform">Instagram</span>
-              </a>
-            </li>           
+            </li>          
           </ul>
         </div>
       </div>
