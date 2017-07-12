@@ -94,9 +94,9 @@ $bp-menu-links-inline: $grid-float-breakpoint;
         padding-bottom: 1.2rem;
       }
       // show children for Majors, MBA Programs, Master Programs
-      &.menu-link-majors, &.menu-link-mba-programs, 
-      &.menu-link-masters-programs, &.menu-link-mba-students,
-      &.menu-link-masters-students, &.menu-link-professional--executive-education {
+      //&.menu-link-academics, 
+      &.menu-link-real-world-experience,
+      &.menu-link-student-ventures {
         .dropdown-menu {
           display: block;
           float: none;
