@@ -25,11 +25,10 @@ $section-menu-max-width: 360px;
     
     // hiding top level menu items from side menu
     & > li.collapsed, & > li.last.leaf {
-      &.menu-link-future-graduate-students,
-      &.menu-link-future-undergraduates,
-      &.menu-link-current-students,
-      &.menu-link-about-tippie,
-      &.menu-link-program-finder
+      &.menu-link-for-students,
+      &.menu-link-for-community,
+      &.menu-link-about-iowa-jpec,
+      &.menu-link-events--competitions
        {
         display: none;
       }
