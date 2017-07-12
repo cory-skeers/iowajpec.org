@@ -638,6 +638,47 @@ function jpec_paragraphs_field_default_field_bases() {
     'type' => 'list_text',
   );
 
+  // Exported field_base: 'field_mandela_fellows_list'.
+  $field_bases['field_mandela_fellows_list'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_mandela_fellows_list',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'viewfield',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'viewfield',
+  );
+
+  // Exported field_base: 'field_mandela_list_year'.
+  $field_bases['field_mandela_list_year'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_mandela_list_year',
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'fellow_year',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
   // Exported field_base: 'field_paragraph_body'.
   $field_bases['field_paragraph_body'] = array(
     'active' => 1,

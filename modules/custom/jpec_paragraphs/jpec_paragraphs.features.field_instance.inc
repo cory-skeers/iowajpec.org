@@ -1575,6 +1575,105 @@ function jpec_paragraphs_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'paragraphs_item-mandela_fellows_list-field_mandela_fellows_list'.
+  $field_instances['paragraphs_item-mandela_fellows_list-field_mandela_fellows_list'] = array(
+    'bundle' => 'mandela_fellows_list',
+    'default_value' => array(
+      0 => array(
+        'vname' => 'mandela_fellows|fellows_by_year_pane',
+        'vargs' => '[paragraphs_item:field_mandela_list_year]',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'viewfield',
+        'settings' => array(),
+        'type' => 'viewfield_default',
+        'weight' => 1,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_mandela_fellows_list',
+    'label' => 'Fellows List',
+    'required' => 0,
+    'settings' => array(
+      'allowed_views' => array(
+        'admin_views_file' => 0,
+        'admin_views_node' => 0,
+        'admin_views_user' => 0,
+        'calendar' => 0,
+        'faculty_staff' => 0,
+        'feeds_log' => 0,
+        'founders_club_profiles' => 0,
+        'jpec_media_browser' => 0,
+        'mandela_fellows' => 'mandela_fellows',
+        'media_browser_plus_folders' => 0,
+        'news' => 0,
+        'story' => 0,
+        'webform_results' => 0,
+        'webform_submissions' => 0,
+        'webform_webforms' => 0,
+        'weight' => 0,
+      ),
+      'force_default' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'viewfield',
+      'settings' => array(),
+      'type' => 'viewfield_select',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'paragraphs_item-mandela_fellows_list-field_mandela_list_year'.
+  $field_instances['paragraphs_item-mandela_fellows_list-field_mandela_list_year'] = array(
+    'bundle' => 'mandela_fellows_list',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_mandela_list_year',
+    'label' => 'Year tag',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 1,
+    ),
+  );
+
   // Exported field_instance: 'paragraphs_item-social-field_facebook_page_name'.
   $field_instances['paragraphs_item-social-field_facebook_page_name'] = array(
     'bundle' => 'social',
@@ -2272,6 +2371,7 @@ function jpec_paragraphs_field_default_field_instances() {
   t('Events');
   t('Facebook page name');
   t('Factoid');
+  t('Fellows List');
   t('Image');
   t('Image position');
   t('Image size');
@@ -2292,6 +2392,7 @@ function jpec_paragraphs_field_default_field_instances() {
   t('Twitter username');
   t('URL');
   t('Video position');
+  t('Year tag');
   t('YouTube video URL');
 
   return $field_instances;

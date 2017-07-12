@@ -46,6 +46,11 @@ function jpec_paragraphs_paragraphs_info() {
       'bundle' => 'image',
       'locked' => '1',
     ),
+    'mandela_fellows_list' => array(
+      'name' => 'Mandela Fellows List',
+      'bundle' => 'mandela_fellows_list',
+      'locked' => '1',
+    ),
     'social' => array(
       'name' => 'Up and coming',
       'bundle' => 'social',
