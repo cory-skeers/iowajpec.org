@@ -5475,6 +5475,7 @@ button.close {
     @media all and (transform-3d), (-webkit-transform-3d) {
       .carousel-inner > .item {
         transition: transform 0.6s ease-in-out;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         -ms-perspective: 1000px;
         -o-perspective: 1000px;
@@ -5968,8 +5969,7 @@ button.close {
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none; }
+  filter: none; }
 
 .fa-stack {
   position: relative;
@@ -9260,7 +9260,8 @@ blockquote {
     .rrssb-buttons.large-format li {
       height: auto; }
       .rrssb-buttons.large-format li a {
-        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
         border-radius: 0.2em;
         padding: 8.5% 0 8.5% 12%; }
         .rrssb-buttons.large-format li a .rrssb-icon {
@@ -9274,7 +9275,8 @@ blockquote {
             top: 0;
             width: 100%; }
         .rrssb-buttons.large-format li a .rrssb-text {
-          backface-visibility: hidden; }
+          -webkit-backface-visibility: hidden;
+                  backface-visibility: hidden; }
   .rrssb-buttons.small-format {
     padding-top: 0; }
     .rrssb-buttons.small-format li {
@@ -9864,34 +9866,74 @@ table.table-condensed th, table.table-condensed td {
   content: ",";
   display: inline-block; }
 
-.page-mandela-washington-fellows .card-body, .page-mandela-washington-fellows .node-card_content-card .card-description-wrapper, .node-card_content-card .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .node-factoid-card .card-description-wrapper, .node-factoid-card .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .node-factoid-full .card-description-wrapper, .node-factoid-full .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .page-mandela-washington-fellows .card-wrapper, .page-mandela-washington-fellows .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .page-mandela-washington-fellows .field-type-entityreference > .field-items > .field-item, .page-mandela-washington-fellows .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .page-mandela-washington-fellows .field-type-entityreference > .field-items > .field-item, .page-mandela-washington-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-mandela-washington-fellows .card-body, .page-mandela-washington-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .page-mandela-washington-fellows .card-wrapper, .page-mandela-washington-fellows .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-mandela-washington-fellows .card-wrapper {
+.page-mandela-washington-fellows .card-body, .page-mandela-washington-fellows .node-card_content-card .card-description-wrapper, .node-card_content-card .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .node-factoid-card .card-description-wrapper, .node-factoid-card .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .node-factoid-full .card-description-wrapper, .node-factoid-full .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .page-mandela-washington-fellows .card-wrapper, .page-mandela-washington-fellows .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .page-mandela-washington-fellows .field-type-entityreference > .field-items > .field-item, .page-mandela-washington-fellows .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .page-mandela-washington-fellows .field-type-entityreference > .field-items > .field-item, .page-mandela-washington-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-mandela-washington-fellows .card-body, .page-mandela-washington-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .page-mandela-washington-fellows .card-wrapper, .page-mandela-washington-fellows .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-mandela-washington-fellows .card-wrapper,
+.view-mandela-fellows .card-body,
+.view-mandela-fellows .node-card_content-card .card-description-wrapper, .node-card_content-card
+.view-mandela-fellows .card-description-wrapper,
+.view-mandela-fellows .node-factoid-card .card-description-wrapper, .node-factoid-card
+.view-mandela-fellows .card-description-wrapper,
+.view-mandela-fellows .node-factoid-full .card-description-wrapper, .node-factoid-full
+.view-mandela-fellows .card-description-wrapper,
+.view-mandela-fellows .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper
+.view-mandela-fellows .card-wrapper,
+.view-mandela-fellows .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card
+.view-mandela-fellows .field-type-entityreference > .field-items > .field-item,
+.view-mandela-fellows .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper
+.view-mandela-fellows .field-type-entityreference > .field-items > .field-item,
+.view-mandela-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item
+.view-mandela-fellows .card-body,
+.view-mandela-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card
+.view-mandela-fellows .card-description-wrapper,
+.view-mandela-fellows .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item
+.view-mandela-fellows .card-description-wrapper,
+.view-mandela-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card
+.view-mandela-fellows .card-description-wrapper,
+.view-mandela-fellows .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item
+.view-mandela-fellows .card-description-wrapper,
+.view-mandela-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full
+.view-mandela-fellows .card-description-wrapper,
+.view-mandela-fellows .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item
+.view-mandela-fellows .card-description-wrapper,
+.view-mandela-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper
+.view-mandela-fellows .card-wrapper,
+.view-mandela-fellows .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item
+.view-mandela-fellows .card-wrapper {
   padding-top: 0; }
 
-.page-mandela-washington-fellows h4 {
+.page-mandela-washington-fellows h4,
+.view-mandela-fellows h4 {
   margin-bottom: 0; }
 
-.page-mandela-washington-fellows img {
+.page-mandela-washington-fellows img,
+.view-mandela-fellows img {
   width: 100%;
   height: auto; }
 
-.page-mandela-washington-fellows .field-name-field-mwf-country, .page-mandela-washington-fellows .field-name-field-mwf-city {
+.page-mandela-washington-fellows .field-name-field-mwf-country, .page-mandela-washington-fellows .field-name-field-mwf-city,
+.view-mandela-fellows .field-name-field-mwf-country,
+.view-mandela-fellows .field-name-field-mwf-city {
   display: inline-block; }
 
-.page-mandela-washington-fellows .field-name-field-mwf-city {
+.page-mandela-washington-fellows .field-name-field-mwf-city,
+.view-mandela-fellows .field-name-field-mwf-city {
   padding-right: 0px; }
-  .page-mandela-washington-fellows .field-name-field-mwf-city .field-item:after {
+  .page-mandela-washington-fellows .field-name-field-mwf-city .field-item:after,
+  .view-mandela-fellows .field-name-field-mwf-city .field-item:after {
     content: ",";
     display: inline-block; }
 
-.page-mandela-washington-fellows .field-name-field-mwf-title {
+.page-mandela-washington-fellows .field-name-field-mwf-title,
+.view-mandela-fellows .field-name-field-mwf-title {
   margin-top: 1rem; }
 
-.page-mandela-washington-fellows .views-row {
+.page-mandela-washington-fellows .views-row,
+.view-mandela-fellows .views-row {
   background-color: #f2f2f2;
   margin-bottom: 15px;
   max-width: 350px; }
 
-.page-mandela-washington-fellows .view-content {
+.page-mandela-washington-fellows .view-content,
+.view-mandela-fellows .view-content {
   display: -moz-flex;
   display: -ms-flex;
   display: -ms-flexbox;
@@ -9899,7 +9941,8 @@ table.table-condensed th, table.table-condensed td {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   @media (min-width: 768px) {
-    .page-mandela-washington-fellows .view-content .views-row {
+    .page-mandela-washington-fellows .view-content .views-row,
+    .view-mandela-fellows .view-content .views-row {
       margin-right: 15px;
       width: 23%; } }
 
@@ -9922,34 +9965,74 @@ table.table-condensed th, table.table-condensed td {
   content: ",";
   display: inline-block; }
 
-.page-mandela-washington-fellows .card-body, .page-mandela-washington-fellows .node-card_content-card .card-description-wrapper, .node-card_content-card .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .node-factoid-card .card-description-wrapper, .node-factoid-card .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .node-factoid-full .card-description-wrapper, .node-factoid-full .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .page-mandela-washington-fellows .card-wrapper, .page-mandela-washington-fellows .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .page-mandela-washington-fellows .field-type-entityreference > .field-items > .field-item, .page-mandela-washington-fellows .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .page-mandela-washington-fellows .field-type-entityreference > .field-items > .field-item, .page-mandela-washington-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-mandela-washington-fellows .card-body, .page-mandela-washington-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .page-mandela-washington-fellows .card-wrapper, .page-mandela-washington-fellows .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-mandela-washington-fellows .card-wrapper {
+.page-mandela-washington-fellows .card-body, .page-mandela-washington-fellows .node-card_content-card .card-description-wrapper, .node-card_content-card .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .node-factoid-card .card-description-wrapper, .node-factoid-card .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .node-factoid-full .card-description-wrapper, .node-factoid-full .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .page-mandela-washington-fellows .card-wrapper, .page-mandela-washington-fellows .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .page-mandela-washington-fellows .field-type-entityreference > .field-items > .field-item, .page-mandela-washington-fellows .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .page-mandela-washington-fellows .field-type-entityreference > .field-items > .field-item, .page-mandela-washington-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-mandela-washington-fellows .card-body, .page-mandela-washington-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-mandela-washington-fellows .card-description-wrapper, .page-mandela-washington-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .page-mandela-washington-fellows .card-wrapper, .page-mandela-washington-fellows .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .page-mandela-washington-fellows .card-wrapper,
+.view-mandela-fellows .card-body,
+.view-mandela-fellows .node-card_content-card .card-description-wrapper, .node-card_content-card
+.view-mandela-fellows .card-description-wrapper,
+.view-mandela-fellows .node-factoid-card .card-description-wrapper, .node-factoid-card
+.view-mandela-fellows .card-description-wrapper,
+.view-mandela-fellows .node-factoid-full .card-description-wrapper, .node-factoid-full
+.view-mandela-fellows .card-description-wrapper,
+.view-mandela-fellows .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .view-display-id-story_featured_pane .border-wrapper
+.view-mandela-fellows .card-wrapper,
+.view-mandela-fellows .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card
+.view-mandela-fellows .field-type-entityreference > .field-items > .field-item,
+.view-mandela-fellows .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper .field-type-entityreference > .field-items > .field-item, .paragraphs-item-card .view-display-id-story_featured_pane .border-wrapper
+.view-mandela-fellows .field-type-entityreference > .field-items > .field-item,
+.view-mandela-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-body, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item
+.view-mandela-fellows .card-body,
+.view-mandela-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-card_content-card
+.view-mandela-fellows .card-description-wrapper,
+.view-mandela-fellows .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .node-card_content-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item
+.view-mandela-fellows .card-description-wrapper,
+.view-mandela-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-card
+.view-mandela-fellows .card-description-wrapper,
+.view-mandela-fellows .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .node-factoid-card .paragraphs-item-card .field-type-entityreference > .field-items > .field-item
+.view-mandela-fellows .card-description-wrapper,
+.view-mandela-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full .card-description-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .node-factoid-full
+.view-mandela-fellows .card-description-wrapper,
+.view-mandela-fellows .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-description-wrapper, .node-factoid-full .paragraphs-item-card .field-type-entityreference > .field-items > .field-item
+.view-mandela-fellows .card-description-wrapper,
+.view-mandela-fellows .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper .card-wrapper, .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .view-display-id-story_featured_pane .border-wrapper
+.view-mandela-fellows .card-wrapper,
+.view-mandela-fellows .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item .card-wrapper, .view-display-id-story_featured_pane .border-wrapper .paragraphs-item-card .field-type-entityreference > .field-items > .field-item
+.view-mandela-fellows .card-wrapper {
   padding-top: 0; }
 
-.page-mandela-washington-fellows h4 {
+.page-mandela-washington-fellows h4,
+.view-mandela-fellows h4 {
   margin-bottom: 0; }
 
-.page-mandela-washington-fellows img {
+.page-mandela-washington-fellows img,
+.view-mandela-fellows img {
   width: 100%;
   height: auto; }
 
-.page-mandela-washington-fellows .field-name-field-mwf-country, .page-mandela-washington-fellows .field-name-field-mwf-city {
+.page-mandela-washington-fellows .field-name-field-mwf-country, .page-mandela-washington-fellows .field-name-field-mwf-city,
+.view-mandela-fellows .field-name-field-mwf-country,
+.view-mandela-fellows .field-name-field-mwf-city {
   display: inline-block; }
 
-.page-mandela-washington-fellows .field-name-field-mwf-city {
+.page-mandela-washington-fellows .field-name-field-mwf-city,
+.view-mandela-fellows .field-name-field-mwf-city {
   padding-right: 0px; }
-  .page-mandela-washington-fellows .field-name-field-mwf-city .field-item:after {
+  .page-mandela-washington-fellows .field-name-field-mwf-city .field-item:after,
+  .view-mandela-fellows .field-name-field-mwf-city .field-item:after {
     content: ",";
     display: inline-block; }
 
-.page-mandela-washington-fellows .field-name-field-mwf-title {
+.page-mandela-washington-fellows .field-name-field-mwf-title,
+.view-mandela-fellows .field-name-field-mwf-title {
   margin-top: 1rem; }
 
-.page-mandela-washington-fellows .views-row {
+.page-mandela-washington-fellows .views-row,
+.view-mandela-fellows .views-row {
   background-color: #f2f2f2;
   margin-bottom: 15px;
   max-width: 350px; }
 
-.page-mandela-washington-fellows .view-content {
+.page-mandela-washington-fellows .view-content,
+.view-mandela-fellows .view-content {
   display: -moz-flex;
   display: -ms-flex;
   display: -ms-flexbox;
@@ -9957,7 +10040,8 @@ table.table-condensed th, table.table-condensed td {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   @media (min-width: 768px) {
-    .page-mandela-washington-fellows .view-content .views-row {
+    .page-mandela-washington-fellows .view-content .views-row,
+    .view-mandela-fellows .view-content .views-row {
       margin-right: 15px;
       width: 23%; } }
 
@@ -10116,7 +10200,6 @@ table.table-condensed th, table.table-condensed td {
 .view-display-id-recent_news_cards_attachment > .view-content,
 .view-display-id-related_news_block > .view-content {
   -ms-flex-align: stretch;
-      -ms-grid-row-align: stretch;
       align-items: stretch; }
   @media (min-width: 768px) {
     .view-display-id-recent_news_cards_attachment > .view-content,
@@ -10235,7 +10318,6 @@ table.table-condensed th, table.table-condensed td {
 .view-display-id-recent_news_cards_attachment > .view-content,
 .view-display-id-related_news_block > .view-content {
   -ms-flex-align: stretch;
-      -ms-grid-row-align: stretch;
       align-items: stretch; }
   @media (min-width: 768px) {
     .view-display-id-recent_news_cards_attachment > .view-content,
@@ -10856,7 +10938,7 @@ table.table-condensed th, table.table-condensed td {
         background-color: #FFCD00; }
       .block-jpec-megamenu ul.nav li.link-depth-2.last {
         padding-bottom: 1.2rem; }
-      .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu {
+      .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-real-world-experience .dropdown-menu, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-student-ventures .dropdown-menu {
         display: block;
         float: none;
         border: none;
@@ -10864,21 +10946,21 @@ table.table-condensed th, table.table-condensed td {
         position: relative;
         padding-top: 5px;
         padding-bottom: 0; }
-        .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu > li, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu > li, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu > li, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu > li, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu > li, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu > li {
+        .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-real-world-experience .dropdown-menu > li, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-student-ventures .dropdown-menu > li {
           padding-top: 0px;
           padding-bottom: 0px; }
-          .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu > li.menu-link-compare-programs, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu > li.menu-link-short-courses, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu > li.menu-link-custom-corporate-education, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu > li.menu-link-contact-us, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu > li.menu-link-compare-programs, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu > li.menu-link-short-courses, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu > li.menu-link-custom-corporate-education, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu > li.menu-link-contact-us, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu > li.menu-link-compare-programs, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu > li.menu-link-short-courses, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu > li.menu-link-custom-corporate-education, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu > li.menu-link-contact-us, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu > li.menu-link-compare-programs, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu > li.menu-link-short-courses, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu > li.menu-link-custom-corporate-education, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu > li.menu-link-contact-us, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu > li.menu-link-compare-programs, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu > li.menu-link-short-courses, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu > li.menu-link-custom-corporate-education, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu > li.menu-link-contact-us, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu > li.menu-link-compare-programs, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu > li.menu-link-short-courses, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu > li.menu-link-custom-corporate-education, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu > li.menu-link-contact-us {
+          .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-real-world-experience .dropdown-menu > li.menu-link-compare-programs, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-real-world-experience .dropdown-menu > li.menu-link-short-courses, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-real-world-experience .dropdown-menu > li.menu-link-custom-corporate-education, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-real-world-experience .dropdown-menu > li.menu-link-contact-us, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-student-ventures .dropdown-menu > li.menu-link-compare-programs, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-student-ventures .dropdown-menu > li.menu-link-short-courses, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-student-ventures .dropdown-menu > li.menu-link-custom-corporate-education, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-student-ventures .dropdown-menu > li.menu-link-contact-us {
             display: none; }
-        .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu a {
+        .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-real-world-experience .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-student-ventures .dropdown-menu a {
           font-family: FranklinGothicBook;
           font-size: 0.9rem;
           padding-top: 4px;
           padding-bottom: 3px;
           padding-left: 30px; }
           @media (min-width: 992px) {
-            .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu a {
+            .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-real-world-experience .dropdown-menu a, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-student-ventures .dropdown-menu a {
               padding-left: 40px; } }
-          .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-majors .dropdown-menu a:hover, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-programs .dropdown-menu a:hover, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-programs .dropdown-menu a:hover, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-mba-students .dropdown-menu a:hover, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-masters-students .dropdown-menu a:hover, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-professional--executive-education .dropdown-menu a:hover {
+          .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-real-world-experience .dropdown-menu a:hover, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-student-ventures .dropdown-menu a:hover {
             background-color: transparent; }
   .block-jpec-megamenu ul.nav li li a:hover:before {
     content: '\f105';
@@ -10924,7 +11006,7 @@ ol.megamenu-column {
 
 #content .block-menu-block ul.menu {
   padding: 0; }
-  #content .block-menu-block ul.menu > li.collapsed.menu-link-future-graduate-students, #content .block-menu-block ul.menu > li.collapsed.menu-link-future-undergraduates, #content .block-menu-block ul.menu > li.collapsed.menu-link-current-students, #content .block-menu-block ul.menu > li.collapsed.menu-link-about-tippie, #content .block-menu-block ul.menu > li.collapsed.menu-link-program-finder, #content .block-menu-block ul.menu > li.last.leaf.menu-link-future-graduate-students, #content .block-menu-block ul.menu > li.last.leaf.menu-link-future-undergraduates, #content .block-menu-block ul.menu > li.last.leaf.menu-link-current-students, #content .block-menu-block ul.menu > li.last.leaf.menu-link-about-tippie, #content .block-menu-block ul.menu > li.last.leaf.menu-link-program-finder {
+  #content .block-menu-block ul.menu > li.collapsed.menu-link-for-students, #content .block-menu-block ul.menu > li.collapsed.menu-link-for-community, #content .block-menu-block ul.menu > li.collapsed.menu-link-about-iowa-jpec, #content .block-menu-block ul.menu > li.collapsed.menu-link-events--competitions, #content .block-menu-block ul.menu > li.last.leaf.menu-link-for-students, #content .block-menu-block ul.menu > li.last.leaf.menu-link-for-community, #content .block-menu-block ul.menu > li.last.leaf.menu-link-about-iowa-jpec, #content .block-menu-block ul.menu > li.last.leaf.menu-link-events--competitions {
     display: none; }
   #content .block-menu-block ul.menu > li > ul.menu {
     margin: 0; }
