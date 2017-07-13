@@ -10,7 +10,7 @@
  * @see html.tpl.php
  */
 ?>
-<header id="header" class="header" role="header">
+<header id="header" class="header" role="banner">
   <div class="navigation-wrapper">
     <div id="navigation" class="container navigation navbar" role="navigation">
       <div class="site-branding">
@@ -98,7 +98,7 @@
   <div class="video-modal"><?php print render($video_modal); ?></div>
 <?php endif; ?>
           
-<footer id="footer" class="footer" role="footer">
+<footer id="footer" class="footer" role="contentinfo">
   <div class="primary-footer">
     <div class="container">
       <div class="primary-footer-left">
