@@ -59,6 +59,7 @@ function jpec_preprocess_field(&$variables) {
 
       $wrapper = entity_metadata_wrapper('node', $variables['element']['#object']);
       // Get value of the event url field if there is one.
+      $action_url = '';
       if (!empty($wrapper->field_event_url->value())) {
         $form_id = $wrapper->field_event_url->value()->nid;
         $form_url = '/node/' . $form_id;
@@ -69,8 +70,10 @@ function jpec_preprocess_field(&$variables) {
         $action_url = $form_url['display_url']; 
       }
 
-      $variables['items'][0]['#markup'] = '<a href="' . $action_url . '" class="primary-button">' . $variables['items'][0]['#markup'] . '</a>';
-
+      if (!empty($action_url) && $action_url != '') {
+        $variables['items'][0]['#markup'] = '<a href="' . $action_url . '" class="primary-button">' . $variables['items'][0]['#markup'] . '</a>';
+      }
+      
       break;
 
     default:
