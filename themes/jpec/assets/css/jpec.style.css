@@ -1540,7 +1540,7 @@ pre {
   .row:after {
     clear: both; }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-title, .col-md-4, .node-webform .third, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .node-webform .half, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-field-person-title, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .calendar-calendar, .view .row > .list-group, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .node-webform .third, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .node-webform .half, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .calendar-calendar, .view .row > .list-group, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1703,7 +1703,7 @@ pre {
   margin-left: 100%; }
 
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-title, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-field-person-title, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left; }
   .col-sm-1 {
     width: 8.33333%; }
@@ -1711,7 +1711,7 @@ pre {
     width: 16.66667%; }
   .col-sm-3 {
     width: 25%; }
-  .col-sm-4, .page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-title {
+  .col-sm-4 {
     width: 33.33333%; }
   .col-sm-5 {
     width: 41.66667%; }
@@ -1719,7 +1719,7 @@ pre {
     width: 50%; }
   .col-sm-7 {
     width: 58.33333%; }
-  .col-sm-8, .page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-field-person-title {
+  .col-sm-8 {
     width: 66.66667%; }
   .col-sm-9 {
     width: 75%; }
@@ -10511,26 +10511,26 @@ table.table-condensed th, table.table-condensed td {
     overflow: hidden;
     outline: 0; }
 
-.page-people-directory .tabs {
-  margin-top: 2rem; }
-
 .page-people-directory .view-faculty-staff .views-row {
   margin-bottom: 1rem;
   padding: 1rem; }
   .page-people-directory .view-faculty-staff .views-row.views-row-odd {
     background-color: #f2f2f2; }
 
-.page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-row:before, .page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-row:after {
-  content: " ";
-  display: table; }
+.page-people-directory .views-widget-filter-title label,
+.page-people-directory .views-widget-filter-field_person_category_value label {
+  position: absolute;
+  top: -99999em;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  outline: 0; }
 
-.page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-row:after {
-  clear: both; }
-
-.page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-title .field-content {
-  font-size: 1.2rem;
-  line-height: 1;
-  font-family: FranklinGothicMedium; }
+.page-people-directory .views-exposed-widget .form-submit,
+.page-people-directory .views-submit-button,
+.page-people-directory .views-reset-button {
+  margin-top: 0;
+  margin-bottom: 1rem; }
 
 .node-type-person .node-person-full {
   padding-bottom: 2rem; }
@@ -10578,26 +10578,26 @@ table.table-condensed th, table.table-condensed td {
     overflow: hidden;
     outline: 0; }
 
-.page-people-directory .tabs {
-  margin-top: 2rem; }
-
 .page-people-directory .view-faculty-staff .views-row {
   margin-bottom: 1rem;
   padding: 1rem; }
   .page-people-directory .view-faculty-staff .views-row.views-row-odd {
     background-color: #f2f2f2; }
 
-.page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-row:before, .page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-row:after {
-  content: " ";
-  display: table; }
+.page-people-directory .views-widget-filter-title label,
+.page-people-directory .views-widget-filter-field_person_category_value label {
+  position: absolute;
+  top: -99999em;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  outline: 0; }
 
-.page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-row:after {
-  clear: both; }
-
-.page-people-directory .view-faculty-staff.view-display-id-advisory_council_page .views-field-title .field-content {
-  font-size: 1.2rem;
-  line-height: 1;
-  font-family: FranklinGothicMedium; }
+.page-people-directory .views-exposed-widget .form-submit,
+.page-people-directory .views-submit-button,
+.page-people-directory .views-reset-button {
+  margin-top: 0;
+  margin-bottom: 1rem; }
 
 .node-type-profile #page-header .container, .node-type-profile #page-header .page-node-done .region, .page-node-done .node-type-profile #page-header .region, .node-type-profile #page-header .page-founders-club .view-founders-club-profiles, .page-founders-club .node-type-profile #page-header .view-founders-club-profiles, .node-type-profile #page-header .page-people-directory .view-faculty-staff, .page-people-directory .node-type-profile #page-header .view-faculty-staff, .node-type-profile #page-header #page-header, .node-type-profile #page-header #ui-wrapper #uiowa-bar, #ui-wrapper .node-type-profile #page-header #uiowa-bar, .node-type-profile #page-header .page-user .region-content, .page-user .node-type-profile #page-header .region-content {
   width: 100%; }

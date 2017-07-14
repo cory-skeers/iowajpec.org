@@ -65,9 +65,7 @@
 
 // People Directory page
 .page-people-directory {
-  .tabs {
-    margin-top: 2rem;
-  }
+
   .view-faculty-staff {
     @extend .container;
     .views-row {
@@ -77,21 +75,18 @@
         background-color: $light_grey;
       }
     }
-    &.view-display-id-advisory_council_page {
-      .views-row {
-        @include clearfix;
-      }
-      .views-field-title {
-        @extend .col-sm-4;
-        .field-content {
-          @include fontsize(1.2); 
-          line-height: 1;
-          font-family: FranklinGothicMedium;
-        }        
-      }
-      .views-field-field-person-title {
-        @extend .col-sm-8;
-      }
+  }
+
+  .views-widget-filter-title,
+  .views-widget-filter-field_person_category_value {
+    label {
+      @include offscreen;
     }
+  }
+  .views-exposed-widget .form-submit,
+  .views-submit-button, 
+  .views-reset-button {
+    margin-top: 0;
+    margin-bottom: 1rem;
   }
 }
