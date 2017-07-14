@@ -94,7 +94,7 @@ $bp-menu-links-inline: $grid-float-breakpoint;
         padding-bottom: 1.2rem;
       }
       // show children for Majors, MBA Programs, Master Programs
-      //&.menu-link-academics, 
+      &.menu-link-academics, 
       &.menu-link-real-world-experience,
       &.menu-link-student-ventures {
         .dropdown-menu {
@@ -132,7 +132,18 @@ $bp-menu-links-inline: $grid-float-breakpoint;
           }
         }
       }
+      &.menu-link-academics {
+        .dropdown-menu {
+          > li {
+            display: none;
+          }
+          > li.menu-link-majors--certificates {
+            display: block;
+          }
+        }
+      }
     }
+
   }
 
   ul.nav li li {
