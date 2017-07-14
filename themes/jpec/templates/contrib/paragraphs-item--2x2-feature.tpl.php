@@ -41,11 +41,15 @@
       <?php print render($content['field_2x2_1_image']); ?>
       <?php if (!empty($content['field_2x2_1_title']) || !empty($content['field_2x2_1_description'])) { ?>      
         <div class="info">
-          <a href="<?php print $url_1; ?>">
+          <?php if (!empty($url_1)) : ?>
+              <a href="<?php print $url_1; ?>">
+          <?php endif; ?>    
             <?php print render($content['field_2x2_1_title']); ?>
             <?php print render($content['field_2x2_1_description']); ?>
             <span class="caret right" aria-hidden=true></span>
-          </a>
+          <?php if (!empty($url_1)) : ?>
+              </a>
+          <?php endif; ?> 
         </div>
       <?php } ?>      
     </div>
@@ -53,11 +57,15 @@
       <?php print render($content['field_2x2_2_image']); ?>
       <?php if (!empty($content['field_2x2_2_title']) || !empty($content['field_2x2_2_description'])) { ?>      
       <div class="info">
-        <a href="<?php print $url_2; ?>">
+        <?php if (!empty($url_2)) : ?>
+          <a href="<?php print $url_2; ?>">
+        <?php endif; ?> 
           <?php print render($content['field_2x2_2_title']); ?>
           <?php print render($content['field_2x2_2_description']); ?>
           <span class="caret right" aria-hidden=true></span>
-        </a>
+          <?php if (!empty($url_2)) : ?>
+            </a>
+          <?php endif; ?> 
       </div>
       <?php } ?>      
     </div>
@@ -65,11 +73,15 @@
       <?php print render($content['field_2x2_3_image']); ?>
       <?php if (!empty($content['field_2x2_3_title']) || !empty($content['field_2x2_3_description'])) { ?>       
       <div class="info">
-        <a href="<?php print $url_3; ?>">
+        <?php if (!empty($url_3)) : ?>
+          <a href="<?php print $url_3; ?>">
+        <?php endif; ?> 
           <?php print render($content['field_2x2_3_title']); ?>
           <?php print render($content['field_2x2_3_description']); ?>
           <span class="caret right" aria-hidden=true></span>
-        </a>
+          <?php if (!empty($url_3)) : ?>
+            </a>
+          <?php endif; ?> 
       </div>
       <?php } ?>      
     </div>
