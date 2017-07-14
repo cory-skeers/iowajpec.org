@@ -415,48 +415,6 @@ function jpec_page_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_header_story'.
-  $field_instances['node-page-field_header_story'] = array(
-    'bundle' => 'page',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'card' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_header_story',
-    'label' => 'Story Reference',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 9,
-    ),
-  );
-
   // Exported field_instance: 'node-page-field_header_type'.
   $field_instances['node-page-field_header_type'] = array(
     'bundle' => 'page',
@@ -671,7 +629,6 @@ function jpec_page_field_default_field_instances() {
   t('Profile Reference');
   t('Section Title');
   t('Short Image');
-  t('Story Reference');
   t('Tall Image');
   t('Upload a 2000px by 290px image. Face should fit in to the area within 500px from the center of the image, preferably closer to the right edge.');
   t('Upload a 2000px by 700px image. Face should fit in to the area within 500px from the center of the image, preferably closer to the right edge. You will be required to specify a cropping selection for small screens.');

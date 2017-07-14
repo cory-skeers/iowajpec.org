@@ -40,7 +40,6 @@ features[field_instance][] = node-page-field_header_custom_text
 features[field_instance][] = node-page-field_header_image_short
 features[field_instance][] = node-page-field_header_image_tall
 features[field_instance][] = node-page-field_header_profile
-features[field_instance][] = node-page-field_header_story
 features[field_instance][] = node-page-field_header_type
 features[field_instance][] = node-page-field_page_title
 features[field_instance][] = node-page-field_section_title

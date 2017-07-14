@@ -85,8 +85,7 @@ function jpec_page_field_group_info() {
       4 => 'field_page_title',
       5 => 'field_section_title',
       6 => 'field_header_profile',
-      7 => 'field_header_story',
-      8 => 'title',
+      7 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(
