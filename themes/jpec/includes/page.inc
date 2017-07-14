@@ -5,22 +5,6 @@
  */
 
 /**
-* Loads fieldable panels pane based on machine name.
-*/
-function jpec_load_fieldable_panels_by_name($name) {
-  $query = new EntityFieldQuery();
-  $result = $query
-    ->entityCondition('entity_type', 'fieldable_panels_pane')
-    ->propertyCondition('bundle', $name)
-    ->execute();
-  foreach ($result['fieldable_panels_pane'] as $panel) {
-    $panel_entity = fieldable_panels_panes_load($panel->fpid);
-  }
-  return $panel_entity;
-}
-
-
-/**
  * Implements hook_preprocess_page().
  */
 function jpec_preprocess_page(&$variables) {
@@ -75,7 +59,7 @@ function jpec_preprocess_page(&$variables) {
           }
 
           // Create reference to story entity.
-          $story = $wrapper->field_header_story;
+          //$story = $wrapper->field_header_story;
 
           // Create reference to profile entity.
           $profile = $wrapper->field_header_profile;          
