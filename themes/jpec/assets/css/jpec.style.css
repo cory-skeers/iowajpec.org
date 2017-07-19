@@ -11235,17 +11235,18 @@ ol.megamenu-column {
 .entity-paragraphs-item.paragraphs-item-event-reference {
   padding: 0; }
 
-.paragraphs-item-event-reference .content.container, .paragraphs-item-event-reference .page-node-done .content.region, .page-node-done .paragraphs-item-event-reference .content.region, .paragraphs-item-event-reference .page-founders-club .content.view-founders-club-profiles, .page-founders-club .paragraphs-item-event-reference .content.view-founders-club-profiles, .paragraphs-item-event-reference .page-people-directory .content.view-faculty-staff, .page-people-directory .paragraphs-item-event-reference .content.view-faculty-staff, .paragraphs-item-event-reference .node-type-profile .content#page-header, .node-type-profile .paragraphs-item-event-reference .content#page-header, .paragraphs-item-event-reference #ui-wrapper .content#uiowa-bar, #ui-wrapper .paragraphs-item-event-reference .content#uiowa-bar, .paragraphs-item-event-reference .page-user .content.region-content, .page-user .paragraphs-item-event-reference .content.region-content {
-  padding-top: 0; }
+#content .entity-paragraphs-item.paragraphs-item-event-reference .content.container, #content .entity-paragraphs-item.paragraphs-item-event-reference .page-node-done .content.region, .page-node-done #content .entity-paragraphs-item.paragraphs-item-event-reference .content.region, #content .entity-paragraphs-item.paragraphs-item-event-reference .page-founders-club .content.view-founders-club-profiles, .page-founders-club #content .entity-paragraphs-item.paragraphs-item-event-reference .content.view-founders-club-profiles, #content .entity-paragraphs-item.paragraphs-item-event-reference .page-people-directory .content.view-faculty-staff, .page-people-directory #content .entity-paragraphs-item.paragraphs-item-event-reference .content.view-faculty-staff, #content .entity-paragraphs-item.paragraphs-item-event-reference .node-type-profile .content#page-header, .node-type-profile #content .entity-paragraphs-item.paragraphs-item-event-reference .content#page-header, #content .entity-paragraphs-item.paragraphs-item-event-reference #ui-wrapper .content#uiowa-bar, #ui-wrapper #content .entity-paragraphs-item.paragraphs-item-event-reference .content#uiowa-bar, #content .entity-paragraphs-item.paragraphs-item-event-reference .page-user .content.region-content, .page-user #content .entity-paragraphs-item.paragraphs-item-event-reference .content.region-content {
+  padding-top: 0;
+  padding-bottom: 3rem; }
 
-.paragraphs-item-event-reference .event_container .next, .paragraphs-item-event-reference .event_container .event {
+#content .entity-paragraphs-item.paragraphs-item-event-reference .event_container .next, #content .entity-paragraphs-item.paragraphs-item-event-reference .event_container .event {
   width: 100%;
   padding: 1rem 2rem; }
-  .paragraphs-item-event-reference .event_container .next h3, .paragraphs-item-event-reference .event_container .event h3 {
+  #content .entity-paragraphs-item.paragraphs-item-event-reference .event_container .next h3, #content .entity-paragraphs-item.paragraphs-item-event-reference .event_container .event h3 {
     margin-bottom: 0; }
 
 @media (min-width: 768px) {
-  .paragraphs-item-event-reference .event_container {
+  #content .entity-paragraphs-item.paragraphs-item-event-reference .event_container {
     display: -moz-flex;
     display: -ms-flex;
     display: -ms-flexbox;
@@ -11255,9 +11256,9 @@ ol.megamenu-column {
     flex-wrap: wrap;
     margin-left: -10px;
     margin-right: -10px; }
-    .paragraphs-item-event-reference .event_container .next {
+    #content .entity-paragraphs-item.paragraphs-item-event-reference .event_container .next {
       width: 30%; }
-    .paragraphs-item-event-reference .event_container .event {
+    #content .entity-paragraphs-item.paragraphs-item-event-reference .event_container .event {
       width: 70%; } }
 
 .paragraphs-item-factoids {
