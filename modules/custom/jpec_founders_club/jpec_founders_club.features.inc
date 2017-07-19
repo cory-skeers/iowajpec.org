@@ -33,7 +33,7 @@ function jpec_founders_club_custom_breadcrumb_features_default_settings() {
   $custom_breadcrumbs['founders_club_profile'] = array(
     'name' => 'Founders Club Profile',
     'titles' => 'Founders Club',
-    'paths' => 'founders-club',
+    'paths' => 'foundersclub',
     'visibility_php' => '',
     'node_type' => 'founders_profile',
     'language' => '',
