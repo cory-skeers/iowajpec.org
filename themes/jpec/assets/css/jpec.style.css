@@ -10897,11 +10897,9 @@ table.table-condensed th, table.table-condensed td {
         .block-jpec-megamenu ul.nav a {
           padding-right: 40px;
           padding-left: 40px; } }
-      .block-jpec-megamenu ul.nav a .first-word {
-        font-family: FranklinGothicBook; }
-        @media (min-width: 992px) {
-          .block-jpec-megamenu ul.nav a .first-word {
-            display: block; } }
+      @media (min-width: 992px) {
+        .block-jpec-megamenu ul.nav a .first-word {
+          display: block; } }
       .block-jpec-megamenu ul.nav a .caret {
         border-top: 10px dashed;
         border-right: 10px solid transparent;
@@ -10945,7 +10943,8 @@ table.table-condensed th, table.table-condensed td {
         background-color: transparent;
         position: relative;
         padding-top: 5px;
-        padding-bottom: 0; }
+        padding-bottom: 0;
+        padding-left: 15px; }
         .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-academics .dropdown-menu > li, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-real-world-experience .dropdown-menu > li, .block-jpec-megamenu ul.nav li.link-depth-2.menu-link-student-ventures .dropdown-menu > li {
           padding-top: 0px;
           padding-bottom: 0px; }

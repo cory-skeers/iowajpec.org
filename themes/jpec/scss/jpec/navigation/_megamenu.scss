@@ -34,7 +34,7 @@ $bp-menu-links-inline: $grid-float-breakpoint;
       }
 
       .first-word {
-        font-family: FranklinGothicBook;
+        //font-family: FranklinGothicBook;
 
         @include breakpoint($bp-menu-links-inline) {
           display: block;
@@ -105,6 +105,7 @@ $bp-menu-links-inline: $grid-float-breakpoint;
           position: relative;
           padding-top: 5px;
           padding-bottom: 0;
+          padding-left: 15px;
           > li {
             padding-top: 0px;
             padding-bottom: 0px;
