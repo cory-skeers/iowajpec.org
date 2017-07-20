@@ -102,7 +102,7 @@
   <div class="primary-footer">
     <div class="container">
       <div class="primary-footer-left">
-        <a class="tippie-footer-link" href="http://tippie.uiowa.edu"><img alt="John Pappajohn Entrepreneurial Center at The University of Iowa" src="/<?php print drupal_get_path("theme", "jpec"); ?>/assets/images/jpec-uiowa.png"/></a>
+        <a class="tippie-footer-link" href="/"><img alt="John Pappajohn Entrepreneurial Center at The University of Iowa" src="/<?php print drupal_get_path("theme", "jpec"); ?>/assets/images/jpec-uiowa.png"/></a>
         <h2 class="offscreen">Contact Information</h2>
         <p class="tippie-address">
           John Pappajohn Entrepreneurial Center<br/>
@@ -131,6 +131,9 @@
             <li>
               <?php print l(t('Student Clubs & Orgs'), 'students/student-organizations');?>
             </li>
+            <li>
+              <?php print l(t('Entr Class Events'), 'entr-class-events');?>
+            </li>            
           </ul>
         </div>
         <div class="footer-link-list jpec-resources">
@@ -149,7 +152,7 @@
               <?php print l(t('International Support'), 'community/international-business');?>
             </li>
             <li>
-              <?php print l(t('Internships'), 'tbd');?>
+              <?php print l(t('Internships'), 'community/internships');?>
             </li> 
             <li>
               <?php print l(t('SBDC'), 'iowa-small-business-development-center');?>
@@ -172,8 +175,11 @@
               <?php print l(t('Competitions'), 'competitions');?>
             </li>
             <li>
+              <?php print l(t('Donate'), 'https://donate.givetoiowa.org/s/1773/foundation/interior.aspx?sid=1773&gid=2&pgid=509&cid=1288&bledit=1&dids=148.579&sort=1');?>
+            </li>   
+            <li>
               <?php print l(t('People Directory'), 'people-directory');?>
-            </li>           
+            </li>        
             <li>
               <?php print l(t('Contact Us'), 'contact-us');?>
             </li>            
