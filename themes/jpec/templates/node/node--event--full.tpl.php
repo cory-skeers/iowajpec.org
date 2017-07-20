@@ -10,6 +10,7 @@
  *
  * @ingroup themeable
  */
+//dpm($content);
 ?>
 
     <?php
@@ -61,3 +62,28 @@
   <?php print render($content['comments']); ?>
 
 </article>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "EducationEvent",
+  "name": "<?php print $title; ?>",
+  "description": "<?php print $content['field_event_body']['#items'][0]['safe_value']; ?>",
+  "url": "<?php print $GLOBALS['base_url'] . '/' . request_path(); ?>",
+  "image": "<?php print file_create_url($content['field_event_image'][0]['#item']['uri']); ?>",
+  "startDate": "<?php print $content['field_event_date']['#items'][0]['value']; ?>",
+  "endDate": "<?php print $content['field_event_date']['#items'][0]['value2']; ?>",
+  "location": {
+    "@type": "Place",
+    "name": "<?php print $content['field_event_location']['#items'][0]['title']; ?>",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "<?php print $content['field_event_address'][0]['#markup']; ?>"
+    }
+  },
+  "eventStatus" : "EventScheduled",
+  "organizer": {
+    "@id": "#Tippie"
+  }
+}
+</script>
