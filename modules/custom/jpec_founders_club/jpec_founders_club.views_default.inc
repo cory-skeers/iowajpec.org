@@ -170,7 +170,7 @@ function jpec_founders_club_views_default_views() {
   $handler->display->display_options['header']['area']['content'] = '<h2>Explore our student businesses</h2>
 <p>Housed in the 10,000 square-foot <a href="https://www.google.com/maps/place/322+N+Clinton+St,+Iowa+City,+IA+52245/@41.6653834,-91.5362675,17z/data=!3m1!4b1!4m5!3m4!1s0x87e441f136273b09:0xa559ffa58db739a7!8m2!3d41.6653794!4d-91.5340788">Bedell Entrepreneurial Learning Laboratory (BELL)</a>, the Founders Club is an on-campus business incubator for UI student entrepreneurs pursuing the creation of a startup. Members of the Founders Club have access to many resources, including office space, access to funding opportunities, and one-on-one mentoring from successful business professionals. Below is a list of student businesses currently participating in the Founders Club Program.</p>';
   $handler->display->display_options['header']['area']['format'] = 'filtered_html';
-  $handler->display->display_options['path'] = 'founders-club/current';
+  $handler->display->display_options['path'] = 'foundersclub/current';
   $handler->display->display_options['menu']['title'] = 'Current Founders Club Businesses';
   $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['name'] = 'main-menu';
@@ -310,7 +310,7 @@ function jpec_founders_club_views_default_views() {
     'field_founders_profile_body' => 'field_founders_profile_body',
     'field_fp_student_name' => 'field_fp_student_name',
   );
-  $handler->display->display_options['path'] = 'founders-club/past';
+  $handler->display->display_options['path'] = 'foundersclub/past';
   $handler->display->display_options['menu']['title'] = 'Past Founders Club Businesses';
   $handler->display->display_options['menu']['weight'] = '0';
   $handler->display->display_options['menu']['name'] = 'main-menu';

@@ -32,8 +32,10 @@ function jpec_founders_club_custom_breadcrumb_features_default_settings() {
   // Exported custom breadcrumb: founders_club_profile.
   $custom_breadcrumbs['founders_club_profile'] = array(
     'name' => 'Founders Club Profile',
-    'titles' => 'Founders Club',
-    'paths' => 'foundersclub',
+    'titles' => 'Founders Club
+Current',
+    'paths' => 'foundersclub
+foundersclub/[node:field-founder-profile-category]',
     'visibility_php' => '',
     'node_type' => 'founders_profile',
     'language' => '',
