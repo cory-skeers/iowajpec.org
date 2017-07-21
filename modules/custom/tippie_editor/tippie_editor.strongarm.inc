@@ -17,7 +17,6 @@ function tippie_editor_strongarm() {
   $strongarm->value = array(
     'main-menu' => 'main-menu',
     '- any -' => 0,
-    'devel' => 0,
     'management' => 0,
     'navigation' => 0,
     'user-menu' => 0,
@@ -52,9 +51,9 @@ function tippie_editor_strongarm() {
   $strongarm->name = 'ckeditor_link_autocomplete_vocabularies';
   $strongarm->value = array(
     '- any -' => 0,
-    14 => 0,
+    26 => 0,
     6 => 0,
-    13 => 0,
+    21 => 0,
     11 => 0,
   );
   $export['ckeditor_link_autocomplete_vocabularies'] = $strongarm;
@@ -67,6 +66,8 @@ function tippie_editor_strongarm() {
     'document' => 'document',
     '- any -' => 0,
     'image' => 0,
+    'video' => 0,
+    'audio' => 0,
   );
   $export['ckeditor_link_file_autocomplete_file_types'] = $strongarm;
 

@@ -200,6 +200,7 @@ h1, h2, h3, h4, h5, h6,',
         'weight' => 50,
         'status' => 1,
         'settings' => array(
+          'settings_source' => 'global',
           'local_paths' => 'https://org-iowajpec.stage.drupal.uiowa.edu
 /org-iowajpec/',
           'protocol_style' => 'full',
@@ -242,6 +243,7 @@ h1, h2, h3, h4, h5, h6,',
         'weight' => 50,
         'status' => 1,
         'settings' => array(
+          'settings_source' => 'global',
           'local_paths' => 'http://test.sitenow.uiowa.edu/tippie
 http://tippie.stage.drupal.uiowa.edu
 /tippie/',
