@@ -86,6 +86,7 @@ function jpec_event_views_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'date_views_pager';
   $handler->display->display_options['pager']['options']['date_id'] = 'day';
   $handler->display->display_options['pager']['options']['link_format'] = 'clean';
+  $handler->display->display_options['pager']['options']['skip_empty_pages'] = 0;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -144,7 +145,9 @@ function jpec_event_views_views_default_views() {
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'date_views_pager';
   $handler->display->display_options['pager']['options']['date_id'] = 'month';
+  $handler->display->display_options['pager']['options']['pager_position'] = 'both';
   $handler->display->display_options['pager']['options']['link_format'] = 'clean';
+  $handler->display->display_options['pager']['options']['skip_empty_pages'] = 0;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Date: Date (node) */
   $handler->display->display_options['arguments']['date_argument']['id'] = 'date_argument';
