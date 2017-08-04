@@ -26,6 +26,19 @@
   .views-row-odd {
     background-color: $light_grey;
   }
+
+  // hide the second date header in the footer
+  .date-nav-wrapper {
+    h3 {
+      display: none;
+    }
+  }
+  .view-header .date-nav-wrapper {
+    h3 {
+      display: block;
+    }
+  }
+ 
 }
 
 // full node

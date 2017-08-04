@@ -9547,6 +9547,12 @@ table.table-condensed th, table.table-condensed td {
 .page-events .views-row-odd {
   background-color: #f2f2f2; }
 
+.page-events .date-nav-wrapper h3 {
+  display: none; }
+
+.page-events .view-header .date-nav-wrapper h3 {
+  display: block; }
+
 .node-type-event .page-header .header-content {
   width: 100%; }
 
@@ -9685,6 +9691,12 @@ table.table-condensed th, table.table-condensed td {
 
 .page-events .views-row-odd {
   background-color: #f2f2f2; }
+
+.page-events .date-nav-wrapper h3 {
+  display: none; }
+
+.page-events .view-header .date-nav-wrapper h3 {
+  display: block; }
 
 .node-type-event .page-header .header-content {
   width: 100%; }
