@@ -243,3 +243,20 @@ function jpec_process_page(&$variables) {
 
   $variables['header_attributes'] = drupal_attributes($variables['header_attributes_array']);
 }
+
+/**
+ * Implements hook_preprocess_html().
+ */ 
+function jpec_preprocess_html() {
+  // Setup IE meta tag to force IE rendering mode.
+  $meta_ie_render_engine = array(
+     '#type' => 'html_tag',
+     '#tag' => 'meta',
+     '#attributes' => array(
+       'content' =>  'IE=edge,chrome=1',
+       'http-equiv' => 'X-UA-Compatible',
+     )
+   );
+  // Add header meta tag for IE head.
+  drupal_add_html_head($meta_ie_render_engine, 'meta_ie_render_engine');
+}
