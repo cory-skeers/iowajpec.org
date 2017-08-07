@@ -1,4 +1,7 @@
 .page-google-search {
+  #content {
+    @extend .container;
+  }
   h3 {
     display: none;
   }
