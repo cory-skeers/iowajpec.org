@@ -4,3 +4,8 @@
     color: $dark-grey;
   }
 }
+.page-taxonomy-term {
+  #content {
+    @extend .container;
+  }
+}
