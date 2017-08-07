@@ -774,3 +774,15 @@ function jpec_core_update_7043() {
     module_enable(array('redirect'));
   }
 }
+
+/**
+ * Enable Google Analytics, GTM modules
+ */
+function jpec_core_update_7044() {
+  if (!module_exists('google_tag')) {
+    module_enable(array('google_tag'));
+  }
+  if (!module_exists('google_analytics')) {
+    module_enable(array('google_analytics'));
+  }  
+}
