@@ -152,9 +152,6 @@
               <?php print l(t('International Support'), 'community/international-business');?>
             </li>
             <li>
-              <?php print l(t('Internships'), 'community/internships');?>
-            </li> 
-            <li>
               <?php print l(t('SBDC'), 'iowa-small-business-development-center');?>
             </li> 
             <li>
