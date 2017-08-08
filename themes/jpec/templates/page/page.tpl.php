@@ -131,9 +131,9 @@
             <li>
               <?php print l(t('Student Clubs & Orgs'), 'students/student-organizations');?>
             </li>
-            <li>
+<!--             <li>
               <?php print l(t('Entr Class Events'), 'entr-class-events');?>
-            </li>            
+            </li>  -->           
           </ul>
         </div>
         <div class="footer-link-list jpec-resources">
