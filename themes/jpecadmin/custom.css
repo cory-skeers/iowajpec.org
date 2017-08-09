@@ -102,3 +102,12 @@ body.adminimal-theme.adminimal-skin-material fieldset {
 .adminimal-theme .ui-widget-overlay {
   z-index: 100;
 }
+
+/* Styles for the HTML emails sent by webforms */
+#mimemail-body label {
+  font-weight: bold;
+}
+#mimemail-body .form-item {
+  display: block;
+  margin-top: 10px;
+}
