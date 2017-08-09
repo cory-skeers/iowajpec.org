@@ -104,13 +104,16 @@ body.adminimal-theme.adminimal-skin-material fieldset {
 }
 
 /* Styles for the HTML emails sent by webforms */
-#mimemail-body .webform-submission #main {
+#mimemail-body #main {
   font-family: Arial;
   font-size: 12px;
 }
 #mimemail-body label {
   font-weight: bold;
   display: block;
+}
+#mimemail-body label::after {
+  content: "</br>";
 }
 #mimemail-body .form-item {
   display: block;
