@@ -106,8 +106,8 @@ body.adminimal-theme.adminimal-skin-material fieldset {
 /* Styles for the HTML emails sent by webforms */
 #mimemail-body #main {
   font-family: "Calibri", "Tahoma", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 18px;
 }
 #mimemail-body label {
   font-weight: bold;
