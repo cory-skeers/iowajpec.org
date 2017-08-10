@@ -18,12 +18,21 @@
     </div>
     <div class="col-sm-10 col-xs-8">
       <?php print render($title_prefix); ?>
-        <h3<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h3>
+        <h3<?php print $title_attributes; ?>>
+        <?php if ($content['field_person_category'][0]['#markup'] != 'Advisory Council'): ?>
+          <a href="<?php print $node_url; ?>">
+        <?php endif ?>
+        <?php print $title; ?>
+        <?php if ($content['field_person_category'][0]['#markup'] != 'Advisory Council'): ?>
+          </a>
+        <?php endif ?>
+        </h3>
       <?php print render($title_suffix); ?>
       <?php
         // We hide the comments and links now so that we can render them later.
         hide($content['comments']);
         hide($content['links']);
+        hide($content['field_person_category']);
         print render($content);
       ?>
     </div>
