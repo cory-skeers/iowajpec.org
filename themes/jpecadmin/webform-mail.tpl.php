@@ -24,15 +24,26 @@
 ?>
 <p>Testing some crazy test!!!</p>
 
+<table>
+
 <?php 
   $components = $node->webform['components'];
   foreach ($components as $key => $component) {
-    print '<p>' . $component['name'] . '</p>';
+    print '<tr><td style="background:#F2F2F2;padding: 5px;">';
+    print '<p style="font-size:13px;"><strong>' . $component['name'] . '</strong></p>';
+    
+    if (!empty($submission->data[$key])) {
+      print '</td></tr><tr><td style="padding:5px">';
+      print 'p style="font-size:13px;">' . $submission->data[$key][0] . '</p>';
+      print '</td></tr>';
+    }
   }
 print($submission->data[2][0]);
 
 
 ?>
+
+</table>
 
 <?php print ($email['html'] ? '<p>' : '') . t('Submitted on [submission:date:long]'). ($email['html'] ? '</p>' : ''); ?><br/>
 
