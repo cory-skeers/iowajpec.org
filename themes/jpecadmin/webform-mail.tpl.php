@@ -32,7 +32,11 @@
 
 <?php print ($email['html'] ? '<p>' : '') . t('Submitted values are') . ':' . ($email['html'] ? '</p>' : ''); ?><br/>
 
-<?php print_r($submission);?>
+<?php 
+print_r($node);
+print_r($submission);
+
+?>
 
 <?php print ($email['html'] ? '<p>' : '') . t('The results of this submission may be viewed at:') . ($email['html'] ? '</p>' : ''); ?>
 
