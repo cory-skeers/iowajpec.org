@@ -33,7 +33,7 @@
     
     if (!empty($submission->data[$key])) {
       print '</td></tr><tr><td style="padding:5px;padding-left:20px;">';
-      print '<p style="font-size:14px;line-height:18px;font-family:Calibri,Arial,sans-serif;">&np' . $submission->data[$key][0] . '</p>';
+      print '<p style="font-size:14px;line-height:18px;font-family:Calibri,Arial,sans-serif;">' . $submission->data[$key][0] . '</p>';
       print '</td></tr>';
     }
   }
