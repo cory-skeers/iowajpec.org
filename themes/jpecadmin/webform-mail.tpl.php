@@ -33,9 +33,9 @@
 <?php print ($email['html'] ? '<p>' : '') . t('Submitted values are') . ':' . ($email['html'] ? '</p>' : ''); ?><br/>
 
 <?php 
-  $components = $node['webform']['components'];
+  $components = $node->webform['components'];
   foreach ($components as $key => $component) {
-    print_r($key);
+    print($component['name']);
   }
 print_r($submission);
 
