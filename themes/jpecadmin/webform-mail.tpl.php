@@ -26,8 +26,7 @@
 <?php 
   $components = $node->webform['components'];
   foreach ($components as $key => $component) {
-    print '<p>' . ($component['name']) . '</p>';
-    print '<p>' . ($submission['data'][$key]) . '</p>';
+    print '<p>' . $component['name'] . '</p>';
   }
 print_r($submission['data']);
 
