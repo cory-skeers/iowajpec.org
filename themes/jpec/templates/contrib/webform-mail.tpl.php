@@ -21,6 +21,7 @@
  * when using the "default" e-mail template.
  */
 ?>
+<p>Testing some crazy test!!!</p>
 <?php print ($email['html'] ? '<p>' : '') . t('Submitted on [submission:date:long]'). ($email['html'] ? '</p>' : ''); ?><br/>
 
 <?php if ($user->uid): ?>
