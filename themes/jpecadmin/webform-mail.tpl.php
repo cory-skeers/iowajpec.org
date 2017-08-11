@@ -20,7 +20,7 @@
  * The $email['email'] variable can be used to send different e-mails to different users
  * when using the "default" e-mail template.
  */
-dpm($submission);
+
 ?>
 <p>Testing some crazy test!!!</p>
 
