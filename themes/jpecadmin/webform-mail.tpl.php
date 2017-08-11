@@ -22,6 +22,17 @@
  */
 ?>
 <p>Testing some crazy test!!!</p>
+
+<?php 
+  $components = $node->webform['components'];
+  foreach ($components as $key => $component) {
+    print '<p>' . ($component['name']) . '</p>';
+    print '<p>' . ($submission['data'][$key]) . '</p>';
+  }
+print_r($submission['data']);
+
+?>
+
 <?php print ($email['html'] ? '<p>' : '') . t('Submitted on [submission:date:long]'). ($email['html'] ? '</p>' : ''); ?><br/>
 
 <?php if ($user->uid): ?>
@@ -31,15 +42,6 @@
 <?php endif; ?>
 
 <?php print ($email['html'] ? '<p>' : '') . t('Submitted values are') . ':' . ($email['html'] ? '</p>' : ''); ?><br/>
-
-<?php 
-  $components = $node->webform['components'];
-  foreach ($components as $key => $component) {
-    print($component['name']);
-  }
-print_r($submission);
-
-?>
 
 <?php print ($email['html'] ? '<p>' : '') . t('The results of this submission may be viewed at:') . ($email['html'] ? '</p>' : ''); ?>
 
