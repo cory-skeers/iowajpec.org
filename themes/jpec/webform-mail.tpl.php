@@ -20,7 +20,6 @@
  * The $email['email'] variable can be used to send different e-mails to different users
  * when using the "default" e-mail template.
  */
-
 ?>
 
 <table>
@@ -32,12 +31,33 @@
     print '<p style="font-size:14px;line-height:18px;font-family:Calibri,Arial,sans-serif;"><strong>' . $component['name'] . '</strong></p>';
     
     if (!empty($submission->data[$key])) {
-      print '</td></tr><tr><td style="padding:5px;padding-left:20px;">';
-      print '<p style="font-size:14px;line-height:18px;font-family:Calibri,Arial,sans-serif;">' . $submission->data[$key][0] . '</p>';
-      print '</td></tr>';
-    }
-  }
 
+      $submission_value = '';
+
+      if ($component['type'] == 'select') {
+        $options = array();
+        $items = explode("\n", $component['extra']['items']);
+        foreach ($items as $item) {
+          $item_parts = explode('|', $item);
+          if (isset($item_parts[0]) && isset($item_parts[1])) $options[$item_parts[0]] = $item_parts[1];
+        }
+        if (isset($options[$submission->data[$key][0]])) {
+          $submission_value = $options[$submission->data[$key][0]];
+        }
+      }
+
+      else {
+        $submission_value = $submission->data[$key][0];
+      }
+    
+
+
+      print '</td></tr><tr><td style="padding:5px;padding-left:20px;">';
+      print '<p style="font-size:14px;line-height:18px;font-family:Calibri,Arial,sans-serif;">' . $submission_value . '</p>';
+      print '</td></tr>';
+    
+  }
+}
 ?>
 
 </table>
