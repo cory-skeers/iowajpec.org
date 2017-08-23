@@ -96,7 +96,8 @@ $bp-menu-links-inline: $grid-float-breakpoint;
       // show children for Majors, MBA Programs, Master Programs
       &.menu-link-academics, 
       &.menu-link-real-world-experience,
-      &.menu-link-student-ventures {
+      &.menu-link-student-ventures,
+      &.menu-link-events {
         .dropdown-menu {
           display: block;
           float: none;
