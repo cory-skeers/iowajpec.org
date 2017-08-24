@@ -27,27 +27,42 @@
 <?php 
   $components = $node->webform['components'];
   foreach ($components as $key => $component) {
+
     print '<tr><td style="background:#F2F2F2;padding: 5px;">';
     print '<p style="font-size:14px;line-height:18px;font-family:Calibri,Arial,sans-serif;"><strong>' . $component['name'] . '</strong></p>';
     
     if (!empty($submission->data[$key])) {
-
+      
       $submission_value = '';
 
       if ($component['type'] == 'select') {
+
         $options = array();
         $items = explode("\n", $component['extra']['items']);
         foreach ($items as $item) {
-          $item_parts = explode('|', $item);
-          if (isset($item_parts[0]) && isset($item_parts[1])) $options[$item_parts[0]] = $item_parts[1];
-        }
-        if (isset($options[$submission->data[$key][0]])) {
-          $submission_value = $options[$submission->data[$key][0]];
-        }
-      }
 
+          $item = trim($item);
+          $item_parts = explode('|', $item);
+
+          if (isset($item_parts[0]) && isset($item_parts[1])) {
+            $options[$item_parts[0]] = $item_parts[1]; 
+          }
+          else if (isset($item_parts[0])) {
+            $options[$item_parts[0]] = trim($item_parts[0]);
+          }
+        }
+
+        foreach ($submission->data[$key] as $j => $value) {
+          if (isset($options[$submission->data[$key][$j]])) {
+            $submission_value .= $options[$submission->data[$key][$j]] . '</br>';
+          }
+        }
+        
+      }
       else {
-        $submission_value = $submission->data[$key][0];
+        foreach ($submission->data[$key] as $k => $sub) {
+          $submission_value .= $sub;
+        }
       }
     
 
