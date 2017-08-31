@@ -9634,7 +9634,7 @@ table.table-condensed th, table.table-condensed td {
   .featured-event .field-name-field-event-body {
     margin-top: 1rem; }
 
-.node-event-card .field-name-field-event-date {
+.node-event-card .field-name-field-event-date, .node-event-card .card-date {
   font-family: BlenderProBold;
   font-size: 3rem;
   text-transform: uppercase;
@@ -9657,7 +9657,7 @@ table.table-condensed th, table.table-condensed td {
 .node-event-card .field-name-field-event-room {
   display: none; }
 
-.node-event-card .field-name-field-event-date {
+.node-event-card .field-name-field-event-date, .node-event-card .card-date {
   font-family: BlenderProBold;
   font-size: 3rem;
   text-transform: uppercase;

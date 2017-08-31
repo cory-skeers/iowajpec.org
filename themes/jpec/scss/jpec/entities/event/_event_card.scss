@@ -1,7 +1,7 @@
 // event card - referenced from the Competition nodes
-.node-event-card {
+.node-event-card{
   //margin: 1rem 2rem;
-  .field-name-field-event-date {
+  .field-name-field-event-date, .card-date  {
     font-family: BlenderProBold;
     @include fontsize(3);
     text-transform: uppercase;
