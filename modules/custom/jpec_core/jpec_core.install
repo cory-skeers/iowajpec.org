@@ -786,3 +786,15 @@ function jpec_core_update_7044() {
     module_enable(array('google_analytics'));
   }  
 }
+
+/**
+ * Enable webform_phone, phone modules
+ */
+function jpec_core_update_7045() {
+  if (!module_exists('phone')) {
+    module_enable(array('phone'));
+  }
+  if (!module_exists('webform_phone')) {
+    module_enable(array('webform_phone'));
+  }  
+}
