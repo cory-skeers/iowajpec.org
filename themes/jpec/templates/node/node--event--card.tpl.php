@@ -29,11 +29,11 @@
       if ($start_date != $end_date) {
 
         if (date_format($start_date, 'Y-m') == date_format($end_date, 'Y-m')) {
-          print date_format($start_date, 'F') . ' ' . date_format($start_date, 'd') . ' - ' . date_format($end_date, 'd') . ', ' . date_format($start_date, 'Y');
+          print date_format($start_date, 'F') . ' ' . date_format($start_date, 'j') . ' - ' . date_format($end_date, 'j') . ', ' . date_format($start_date, 'Y');
         }
         else {
           // if start and end months are different, print the end month too
-          print date_format($start_date, 'F') . ' ' . date_format($start_date, 'd') . ' - ' . date_format($end_date, 'F') . ' ' . date_format($end_date, 'd') . ', ' . date_format($start_date, 'Y');
+          print date_format($start_date, 'F') . ' ' . date_format($start_date, 'j') . ' - ' . date_format($end_date, 'F') . ' ' . date_format($end_date, 'j') . ', ' . date_format($start_date, 'Y');
         }
       } 
       else {
