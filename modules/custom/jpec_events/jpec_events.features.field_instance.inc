@@ -312,8 +312,8 @@ function jpec_events_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'competition_event',
-          'fromto' => 'both',
+          'format_type' => 'full',
+          'fromto' => 'value',
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
@@ -1277,6 +1277,7 @@ function jpec_events_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
