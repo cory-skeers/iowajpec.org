@@ -72,6 +72,7 @@ function jpec_founders_club_views_default_views() {
   $handler->display->display_options['fields']['field_founders_profile_student']['field'] = 'field_founders_profile_student';
   $handler->display->display_options['fields']['field_founders_profile_student']['label'] = '';
   $handler->display->display_options['fields']['field_founders_profile_student']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_founders_profile_student']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_founders_profile_student']['type'] = 'field_collection_fields';
   $handler->display->display_options['fields']['field_founders_profile_student']['settings'] = array(
     'view_mode' => 'token',
@@ -95,6 +96,7 @@ function jpec_founders_club_views_default_views() {
   $handler->display->display_options['fields']['field_fp_student_name']['label'] = '';
   $handler->display->display_options['fields']['field_fp_student_name']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_fp_student_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_fp_student_name']['element_default_classes'] = FALSE;
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
