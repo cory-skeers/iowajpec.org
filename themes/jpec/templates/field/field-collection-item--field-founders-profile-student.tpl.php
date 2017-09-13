@@ -32,4 +32,5 @@
  *
  * @ingroup themeable
  */
-?><?php foreach ($items as $delta => $item): ?><?php print render($item); ?><?php endforeach; ?> 
+?>
+<?php print ($content['field_fp_student_name'][0]['#markup']); ?>
