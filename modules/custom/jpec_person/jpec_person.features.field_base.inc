@@ -67,7 +67,7 @@ function jpec_person_field_default_field_bases() {
     'settings' => array(
       'allowed_values' => array(
         'staff' => 'Staff',
-        'lecturer' => 'Lecturer',
+        'lecturer' => 'Faculty',
         'advisory_council' => 'Advisory Council',
       ),
       'allowed_values_function' => '',
