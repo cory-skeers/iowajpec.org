@@ -33,4 +33,4 @@
  * @ingroup themeable
  */
 ?>
-<?php print ($content['field_fp_student_name'][0]['#markup']); ?>
+<?php print trim(render($content)); ?>
