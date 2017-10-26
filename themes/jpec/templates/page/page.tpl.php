@@ -97,7 +97,7 @@
 <?php if (!empty($video_modal)): ?>
   <div class="video-modal"><?php print render($video_modal); ?></div>
 <?php endif; ?>
-          
+
 <footer id="footer" class="footer" role="contentinfo">
   <div class="primary-footer">
     <div class="container">
@@ -106,7 +106,7 @@
         <h2 class="offscreen">Contact Information</h2>
         <p class="tippie-address">
           John Pappajohn Entrepreneurial Center<br/>
-          108 John Pappajohn Business Building<br/> 
+          108 John Pappajohn Business Building<br/>
           Suite S160<br/>
           Iowa City, IA 52242-1994
         </p>
@@ -129,11 +129,11 @@
               <?php print l(t('Student Ventures'), 'students/student-ventures');?>
             </li>
             <li>
-              <?php print l(t('Student Clubs & Orgs'), 'students/student-organizations');?>
+              <?php print l(t('Student Clubs & Orgs'), 'students/student-clubs-organizations');?>
             </li>
             <li>
               <?php print l(t('Entre Class Events'), 'entreclassevents');?>
-            </li>          
+            </li>
           </ul>
         </div>
         <div class="footer-link-list jpec-resources">
@@ -153,10 +153,10 @@
             </li>
             <li>
               <?php print l(t('SBDC'), 'iowa-small-business-development-center');?>
-            </li> 
+            </li>
             <li>
               <?php print l(t('K-12 Outreach'), 'community/jacobson-institute');?>
-            </li>                                    
+            </li>
           </ul>
         </div>
         <div class="footer-link-list tippie-information">
@@ -173,16 +173,16 @@
             </li>
             <li>
               <?php print l(t('Donate'), 'https://donate.givetoiowa.org/s/1773/foundation/interior.aspx?sid=1773&gid=2&pgid=509&cid=1288&bledit=1&dids=148.579&sort=1');?>
-            </li>   
+            </li>
             <li>
               <?php print l(t('People Directory'), 'people-directory');?>
-            </li>        
+            </li>
             <li>
               <?php print l(t('Careers'), 'careers');?>
-            </li>  
+            </li>
             <li>
               <?php print l(t('Contact Us'), 'contact-us');?>
-            </li>            
+            </li>
           </ul>
         </div>
         <div class="footer-link-list tippie-social-media">
@@ -214,7 +214,7 @@
                 </span>
                 <span class="social-media-platform">LinkedId</span>
               </a>
-            </li>          
+            </li>
           </ul>
         </div>
       </div>
