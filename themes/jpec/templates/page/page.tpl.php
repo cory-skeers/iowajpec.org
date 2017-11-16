@@ -143,7 +143,7 @@
               <?php print l(t('Venture School'), 'community/venture-school');?>
             </li>
             <li>
-              <?php print l(t('Faculty Innovators'), 'community/faculty-innovators');?>
+              <?php print l(t('I-Corps Innovation Workshop'), 'community/i-corps-innovation-workshop');?>
             </li>
             <li>
               <?php print l(t('Business Consulting'), 'community/business-consulting');?>
