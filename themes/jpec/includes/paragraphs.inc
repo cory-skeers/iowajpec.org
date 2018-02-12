@@ -16,17 +16,31 @@ function jpec_preprocess_entity(&$variables) {
     $wrapper = entity_metadata_wrapper('paragraphs_item', $variables['paragraphs_item']);
 
     switch ($variables['elements']['#bundle']) {
-      
+
+      case 'event_reference' :
+        // hide the event reference paragraph if the event has expired
+        $wrapper = entity_metadata_wrapper('node', $variables['field_event_reference_event'][0]['entity']);
+
+        $today = date("Y-m-d 00:00:00");
+        $event_end_date = $wrapper->field_event_date->value()['value2'];
+
+        // compare the event's date with today; if before today, then hide
+        if ($event_end_date < $today ) {
+          $variables['classes_array'][] = 'hidden';
+        }
+
+        break;
+
       case 'text_area':
         if (!empty($variables['paragraphs_item']->field_text_area_style)) {
           $variables['classes_array'][] = $variables['paragraphs_item']->field_text_area_style[LANGUAGE_NONE][0]['value'];
         }
         break;
-      
+
       case 'image':
-         if (!empty($variables['paragraphs_item']->field_image_image_style)) { 
+         if (!empty($variables['paragraphs_item']->field_image_image_style)) {
           $image_size = $variables['paragraphs_item']->field_image_image_style[LANGUAGE_NONE][0]['value'];
-         
+
            switch ($image_size) {
 
             case '16%':
@@ -36,7 +50,7 @@ function jpec_preprocess_entity(&$variables) {
               if ($variables['paragraphs_item']->field_image_image_position[LANGUAGE_NONE][0]['value'] == 'right') {
                 $variables['image_classes_array'][] = 'col-sm-push-10';
                 $variables['text_classes_array'][] = 'col-sm-pull-2';
-              }              
+              }
             break;
             case '33%':
               $variables['image_classes_array'] = array('paragraph-image', 'col-sm-4');
@@ -46,7 +60,7 @@ function jpec_preprocess_entity(&$variables) {
                 $variables['image_classes_array'][] = 'col-sm-push-8';
                 $variables['text_classes_array'][] = 'col-sm-pull-4';
               }
-            break; 
+            break;
             case '50%':
               $variables['image_classes_array'] = array('paragraph-image', 'col-sm-6');
               $variables['text_classes_array'] = array('paragraph-body', 'col-sm-6');
@@ -54,8 +68,8 @@ function jpec_preprocess_entity(&$variables) {
               if ($variables['paragraphs_item']->field_image_image_position[LANGUAGE_NONE][0]['value'] == 'right') {
                 $variables['image_classes_array'][] = 'col-sm-push-6';
                 $variables['text_classes_array'][] = 'col-sm-pull-6';
-              }              
-            break; 
+              }
+            break;
             case '100%':
               $variables['image_classes_array'] = array('paragraph-image', 'col-sm-12');
               $variables['text_classes_array'] = array('paragraph-body', 'col-sm-12');
@@ -63,8 +77,8 @@ function jpec_preprocess_entity(&$variables) {
               if ($variables['paragraphs_item']->field_image_image_position[LANGUAGE_NONE][0]['value'] == 'right') {
                 $variables['image_classes_array'][] = 'col-sm-push-12';
                 $variables['text_classes_array'][] = 'col-sm-pull-12';
-              }              
-            break;                              
+              }
+            break;
            }
          }
          else {
@@ -76,27 +90,27 @@ function jpec_preprocess_entity(&$variables) {
           if ($variables['paragraphs_item']->field_image_image_position[LANGUAGE_NONE][0]['value'] == 'right') {
             $variables['image_classes_array'][] = 'col-sm-push-8';
             $variables['text_classes_array'][] = 'col-sm-pull-4';
-          }          
+          }
         }
 
         break;
 
       case 'video':
 
-         if (!empty($variables['paragraphs_item']->field_video_position)) { 
+         if (!empty($variables['paragraphs_item']->field_video_position)) {
 
           // Set default text classes.
-          $variables['text_classes_array'] = array('paragraph-body', 'col-sm-6');            
+          $variables['text_classes_array'] = array('paragraph-body', 'col-sm-6');
           // Set default video classes.
           $variables['video_classes_array'] = array('paragraph-video', 'col-sm-6');
           // If video is left, push and pull items in grid so they are flipped.
           if ($variables['paragraphs_item']->field_video_position[LANGUAGE_NONE][0]['value'] == 'left') {
             $variables['video_classes_array'][] = 'col-sm-pull-6';
             $variables['text_classes_array'][] = 'col-sm-push-6';
-          }          
+          }
         }
 
-        break;        
+        break;
 
       case '2x2_feature':
 
@@ -146,5 +160,5 @@ function jpec_process_entity(&$variables) {
     // Flatten the image and text classes.
     $variables['video_classes'] = implode(' ', $variables['video_classes_array']);
     $variables['text_classes'] = implode(' ', $variables['text_classes_array']);
-  }  
+  }
 }
