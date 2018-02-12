@@ -23,6 +23,9 @@
   .field-name-field-founders-profile-twitter a {
     @extend .twitter-link;
   }
+  .field-name-field-founders-profile-instagram a {
+    @extend .instagram-link;
+  }
 }
 
 // participants page
@@ -59,7 +62,7 @@
       @extend .hidden;
     }
     .views-exposed-widget .form-submit,
-    .views-submit-button, 
+    .views-submit-button,
     .views-reset-button {
       margin-top: 0;
     }

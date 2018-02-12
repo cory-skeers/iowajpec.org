@@ -9414,9 +9414,9 @@ blockquote {
     top: 10px;
     left: -25px; }
 
-.facebook-link, .node-type-founders-profile .field-name-field-founders-profile-facebook a, .twitter-link, .node-type-founders-profile .field-name-field-founders-profile-twitter a, .instagram-link, .linkedin-link, .email-link, .node-type-founders-profile .field-name-field-founders-profile-email a, .website-link, .node-type-founders-profile .field-name-field-founders-profile-url a, .phone-link, .node-type-founders-profile .field-name-field-founders-profile-phone .field-item {
+.facebook-link, .node-type-founders-profile .field-name-field-founders-profile-facebook a, .twitter-link, .node-type-founders-profile .field-name-field-founders-profile-twitter a, .instagram-link, .node-type-founders-profile .field-name-field-founders-profile-instagram a, .linkedin-link, .email-link, .node-type-founders-profile .field-name-field-founders-profile-email a, .website-link, .node-type-founders-profile .field-name-field-founders-profile-url a, .phone-link, .node-type-founders-profile .field-name-field-founders-profile-phone .field-item {
   font-family: FranklinGothicDemi; }
-  .facebook-link:before, .node-type-founders-profile .field-name-field-founders-profile-facebook a:before, .twitter-link:before, .node-type-founders-profile .field-name-field-founders-profile-twitter a:before, .instagram-link:before, .linkedin-link:before, .email-link:before, .node-type-founders-profile .field-name-field-founders-profile-email a:before, .website-link:before, .node-type-founders-profile .field-name-field-founders-profile-url a:before, .phone-link:before, .node-type-founders-profile .field-name-field-founders-profile-phone .field-item:before {
+  .facebook-link:before, .node-type-founders-profile .field-name-field-founders-profile-facebook a:before, .twitter-link:before, .node-type-founders-profile .field-name-field-founders-profile-twitter a:before, .instagram-link:before, .node-type-founders-profile .field-name-field-founders-profile-instagram a:before, .linkedin-link:before, .email-link:before, .node-type-founders-profile .field-name-field-founders-profile-email a:before, .website-link:before, .node-type-founders-profile .field-name-field-founders-profile-url a:before, .phone-link:before, .node-type-founders-profile .field-name-field-founders-profile-phone .field-item:before {
     font-family: FontAwesome;
     padding: 5px; }
 
@@ -9426,7 +9426,7 @@ blockquote {
 .twitter-link:before, .node-type-founders-profile .field-name-field-founders-profile-twitter a:before {
   content: "\f099"; }
 
-.instagram-link:before {
+.instagram-link:before, .node-type-founders-profile .field-name-field-founders-profile-instagram a:before {
   content: "\f16d"; }
 
 .linkedin-link:before {
