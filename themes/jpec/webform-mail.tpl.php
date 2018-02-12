@@ -24,18 +24,18 @@
 
 <table>
 
-<?php 
+<?php
   $components = $node->webform['components'];
   foreach ($components as $key => $component) {
 
     $types_to_ignore = array('fieldset','markup');
-    if (!in_array($component['type'], $types_to_ignore)) {
-    
+    if ((!in_array($component['type'], $types_to_ignore)) && !empty($submission->data[$key])) {
+
       print '<tr><td style="background:#F2F2F2;padding: 5px;">';
       print '<p style="font-size:14px;line-height:18px;font-family:Calibri,Arial,sans-serif;"><strong>' . $component['name'] . '</strong></p>';
-      
+
       if (!empty($submission->data[$key])) {
-        
+
         $submission_value = '';
 
         if ($component['type'] == 'select') {
@@ -48,7 +48,7 @@
             $item_parts = explode('|', $item);
 
             if (isset($item_parts[0]) && isset($item_parts[1])) {
-              $options[$item_parts[0]] = $item_parts[1]; 
+              $options[$item_parts[0]] = $item_parts[1];
             }
             else if (isset($item_parts[0])) {
               $options[$item_parts[0]] = trim($item_parts[0]);
@@ -60,14 +60,14 @@
               $submission_value .= $options[$submission->data[$key][$j]] . '</br>';
             }
           }
-          
+
         }
         else {
           foreach ($submission->data[$key] as $k => $sub) {
             $submission_value .= $sub;
           }
         }
-      
+
 
 
         print '</td></tr><tr><td style="padding:5px;padding-left:20px;">';
