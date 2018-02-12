@@ -99,6 +99,15 @@ function jpec_founders_club_strongarm() {
         'path' => array(
           'weight' => '3',
         ),
+        'rabbit_hole' => array(
+          'weight' => '0',
+        ),
+        'redirect' => array(
+          'weight' => '30',
+        ),
+        'xmlsitemap' => array(
+          'weight' => '30',
+        ),
       ),
       'display' => array(),
     ),
@@ -130,7 +139,7 @@ function jpec_founders_club_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_preview_founders_profile';
-  $strongarm->value = '1';
+  $strongarm->value = '0';
   $export['node_preview_founders_profile'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -146,6 +155,16 @@ function jpec_founders_club_strongarm() {
   $strongarm->name = 'pathauto_node_founders_profile_pattern';
   $strongarm->value = 'founders-club/[node:title]';
   $export['pathauto_node_founders_profile_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'xmlsitemap_settings_node_founders_profile';
+  $strongarm->value = array(
+    'status' => '1',
+    'priority' => '0.5',
+  );
+  $export['xmlsitemap_settings_node_founders_profile'] = $strongarm;
 
   return $export;
 }
