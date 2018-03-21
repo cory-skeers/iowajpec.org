@@ -5632,11 +5632,11 @@ button.close {
   .carousel-indicators {
     bottom: 20px; } }
 
-.clearfix:before, .clearfix:after {
+.clearfix:before, .clearfix:after, .page-foundersclub .views-field-field-founders-profile-body:after {
   content: " ";
   display: table; }
 
-.clearfix:after {
+.clearfix:after, .page-foundersclub .views-field-field-founders-profile-body:after {
   clear: both; }
 
 .center-block {
@@ -10068,7 +10068,7 @@ table.table-condensed th, table.table-condensed td {
 .node-type-founders-profile h2 {
   color: #FE5E00; }
 
-.node-type-founders-profile img {
+.node-type-founders-profile .field-name-field-card-image img {
   width: 100%;
   height: auto;
   margin-bottom: 2rem; }
@@ -10088,6 +10088,13 @@ table.table-condensed th, table.table-condensed td {
 
 .page-foundersclub .views-field-field-founders-profile-body {
   margin: 1.5rem 0; }
+
+.page-foundersclub .views-field-field-founders-profile-logo .field-content {
+  padding: 20px 0 10px 0; }
+  @media (min-width: 768px) {
+    .page-foundersclub .views-field-field-founders-profile-logo .field-content {
+      float: right;
+      padding: 20px 0 0 10px; } }
 
 .page-foundersclub .views-exposed-form .views-exposed-widget .form-submit,
 .page-foundersclub .views-exposed-form .views-submit-button,
@@ -10097,7 +10104,7 @@ table.table-condensed th, table.table-condensed td {
 .node-type-founders-profile h2 {
   color: #FE5E00; }
 
-.node-type-founders-profile img {
+.node-type-founders-profile .field-name-field-card-image img {
   width: 100%;
   height: auto;
   margin-bottom: 2rem; }
@@ -10117,6 +10124,13 @@ table.table-condensed th, table.table-condensed td {
 
 .page-foundersclub .views-field-field-founders-profile-body {
   margin: 1.5rem 0; }
+
+.page-foundersclub .views-field-field-founders-profile-logo .field-content {
+  padding: 20px 0 10px 0; }
+  @media (min-width: 768px) {
+    .page-foundersclub .views-field-field-founders-profile-logo .field-content {
+      float: right;
+      padding: 20px 0 0 10px; } }
 
 .page-foundersclub .views-exposed-form .views-exposed-widget .form-submit,
 .page-foundersclub .views-exposed-form .views-submit-button,

@@ -3,7 +3,7 @@
   h2 {
     color: $orange;
   }
-  img {
+  .field-name-field-card-image img {
     width: 100%;
     height: auto;
     margin-bottom: 2rem;
@@ -52,6 +52,19 @@
   }
   .views-field-field-founders-profile-body {
     margin: 1.5rem 0;
+    &:after {
+      @extend .clearfix;
+    }
+  }
+  .views-field-field-founders-profile-logo {
+    .field-content {
+      padding: 20px 0 10px 0;
+      @include breakpoint($tippie-sm-min) {
+        float: right;
+        padding: 20px 0 0 10px;
+      }
+    }
+
   }
 }
 
