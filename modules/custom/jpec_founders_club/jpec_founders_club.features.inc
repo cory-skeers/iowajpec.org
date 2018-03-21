@@ -70,6 +70,21 @@ function jpec_founders_club_image_default_styles() {
     ),
   );
 
+  // Exported image style: logo_250x180.
+  $styles['logo_250x180'] = array(
+    'label' => 'Logo 250x180',
+    'effects' => array(
+      2 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 250,
+          'height' => 180,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   return $styles;
 }
 

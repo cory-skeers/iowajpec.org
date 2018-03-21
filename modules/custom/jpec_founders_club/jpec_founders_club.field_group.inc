@@ -59,7 +59,8 @@ function jpec_founders_club_field_group_info() {
       0 => 'field_card_image',
       1 => 'field_founder_profile_category',
       2 => 'field_founders_profile_body',
-      3 => 'title',
+      3 => 'field_founders_profile_logo',
+      4 => 'title',
     ),
     'format_type' => 'tab',
     'format_settings' => array(

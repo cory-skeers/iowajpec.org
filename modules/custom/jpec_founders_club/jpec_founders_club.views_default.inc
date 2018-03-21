@@ -171,6 +171,56 @@ function jpec_founders_club_views_default_views() {
   $handler->display->display_options['header']['area']['content'] = '<h2>Explore our student businesses</h2>
 <p>Housed in the 10,000 square-foot <a href="https://www.google.com/maps/place/322+N+Clinton+St,+Iowa+City,+IA+52245/@41.6653834,-91.5362675,17z/data=!3m1!4b1!4m5!3m4!1s0x87e441f136273b09:0xa559ffa58db739a7!8m2!3d41.6653794!4d-91.5340788">Bedell Entrepreneurial Learning Laboratory (BELL)</a>, the Founders Club is an on-campus business incubator for UI student entrepreneurs pursuing the creation of a startup. Members of the Founders Club have access to many resources, including office space, access to funding opportunities, and one-on-one mentoring from successful business professionals. Below is a list of student businesses currently participating in the Founders Club Program.</p>';
   $handler->display->display_options['header']['area']['format'] = 'filtered_html';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Logo */
+  $handler->display->display_options['fields']['field_founders_profile_logo']['id'] = 'field_founders_profile_logo';
+  $handler->display->display_options['fields']['field_founders_profile_logo']['table'] = 'field_data_field_founders_profile_logo';
+  $handler->display->display_options['fields']['field_founders_profile_logo']['field'] = 'field_founders_profile_logo';
+  $handler->display->display_options['fields']['field_founders_profile_logo']['label'] = '';
+  $handler->display->display_options['fields']['field_founders_profile_logo']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_founders_profile_logo']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_founders_profile_logo']['settings'] = array(
+    'image_style' => 'logo_250x180',
+    'image_link' => 'content',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Student(s) */
+  $handler->display->display_options['fields']['field_founders_profile_student']['id'] = 'field_founders_profile_student';
+  $handler->display->display_options['fields']['field_founders_profile_student']['table'] = 'field_data_field_founders_profile_student';
+  $handler->display->display_options['fields']['field_founders_profile_student']['field'] = 'field_founders_profile_student';
+  $handler->display->display_options['fields']['field_founders_profile_student']['label'] = '';
+  $handler->display->display_options['fields']['field_founders_profile_student']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_founders_profile_student']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_founders_profile_student']['type'] = 'field_collection_fields';
+  $handler->display->display_options['fields']['field_founders_profile_student']['settings'] = array(
+    'view_mode' => 'token',
+  );
+  $handler->display->display_options['fields']['field_founders_profile_student']['delta_offset'] = '0';
+  /* Field: Content: Description */
+  $handler->display->display_options['fields']['field_founders_profile_body']['id'] = 'field_founders_profile_body';
+  $handler->display->display_options['fields']['field_founders_profile_body']['table'] = 'field_data_field_founders_profile_body';
+  $handler->display->display_options['fields']['field_founders_profile_body']['field'] = 'field_founders_profile_body';
+  $handler->display->display_options['fields']['field_founders_profile_body']['label'] = '';
+  $handler->display->display_options['fields']['field_founders_profile_body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_founders_profile_body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['field_founders_profile_body']['settings'] = array(
+    'trim_length' => '600',
+  );
+  /* Field: Field collection item: Name */
+  $handler->display->display_options['fields']['field_fp_student_name']['id'] = 'field_fp_student_name';
+  $handler->display->display_options['fields']['field_fp_student_name']['table'] = 'field_data_field_fp_student_name';
+  $handler->display->display_options['fields']['field_fp_student_name']['field'] = 'field_fp_student_name';
+  $handler->display->display_options['fields']['field_fp_student_name']['relationship'] = 'field_founders_profile_student_value';
+  $handler->display->display_options['fields']['field_fp_student_name']['label'] = '';
+  $handler->display->display_options['fields']['field_fp_student_name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_fp_student_name']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_fp_student_name']['element_default_classes'] = FALSE;
   $handler->display->display_options['path'] = 'foundersclub/current';
   $handler->display->display_options['menu']['title'] = 'Current Founders Club Businesses';
   $handler->display->display_options['menu']['weight'] = '0';
