@@ -149,8 +149,9 @@ function jpec_person_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'hidden',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'list_default',
         'weight' => 2,
       ),
     ),
