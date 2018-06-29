@@ -270,6 +270,9 @@ function jpec_news_views_views_default_views() {
   /* Display: Social News Block */
   $handler = $view->new_display('block', 'Social News Block', 'social_news_block');
   $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['defaults']['query'] = FALSE;
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
@@ -282,6 +285,17 @@ function jpec_news_views_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Content: Taxonomy terms on node */
+  $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
+  $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
+    'news' => 'news',
+    'audiences' => 0,
+    'fellow_year' => 0,
+    'media_folders' => 0,
+    'stories' => 0,
+  );
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Content: Date (field_news_date) */
   $handler->display->display_options['sorts']['field_news_date_value']['id'] = 'field_news_date_value';
@@ -289,6 +303,23 @@ function jpec_news_views_views_default_views() {
   $handler->display->display_options['sorts']['field_news_date_value']['field'] = 'field_news_date_value';
   $handler->display->display_options['sorts']['field_news_date_value']['order'] = 'DESC';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
+  /* Contextual filter: Taxonomy term: Name */
+  $handler->display->display_options['arguments']['name']['id'] = 'name';
+  $handler->display->display_options['arguments']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['arguments']['name']['field'] = 'name';
+  $handler->display->display_options['arguments']['name']['relationship'] = 'term_node_tid';
+  $handler->display->display_options['arguments']['name']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['name']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['name']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['name']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['name']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['name']['validate']['type'] = 'taxonomy_term';
+  $handler->display->display_options['arguments']['name']['validate_options']['vocabularies'] = array(
+    'news' => 'news',
+  );
+  $handler->display->display_options['arguments']['name']['validate_options']['type'] = 'name';
+  $handler->display->display_options['arguments']['name']['validate']['fail'] = 'empty';
+  $handler->display->display_options['arguments']['name']['limit'] = '0';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
