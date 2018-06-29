@@ -26,7 +26,21 @@ function jpec_paragraphs_field_widget_form_alter(&$element, &$form_state, $conte
       // Disable the token options.
       $element['token_help']['#access'] = FALSE;
       break;            
-    
+
+      // Up and Coming paragraph, news items view (by tag)
+      case 'field_social_news_view':
+        
+        // Hide the views dropdown selector - the social_news_view is selected by default and doesn't need to be changed by user.
+        $element['vname']['#access'] = FALSE;    
+
+        // Customize the arguments selector - change the title and description.
+        $element['vargs']['#title'] = 'News Tag'; 
+        $element['vargs']['#description'] = 'Please enter a tag from the News Vocabulary to display the news items.'; 
+
+        // Disable the token options.
+        $element['token_help']['#access'] = FALSE;
+      break;  
+
     default:
       break;
   }
