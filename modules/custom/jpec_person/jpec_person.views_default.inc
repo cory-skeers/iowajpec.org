@@ -441,6 +441,7 @@ function jpec_person_views_default_views() {
     'page_advisory' => 0,
   );
   $handler->display->display_options['inherit_exposed_filters'] = TRUE;
+  $handler->display->display_options['inherit_pager'] = TRUE;
 
   /* Display: Page - Advisory Council */
   $handler = $view->new_display('page', 'Page - Advisory Council', 'page_advisory');
