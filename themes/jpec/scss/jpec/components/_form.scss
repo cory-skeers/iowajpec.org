@@ -38,14 +38,14 @@
     }
     .l25-input.form-control {
       width: 25%;
-    }    
+    }
     .l75-input.form-control {
       width: 75%;
-    }  
+    }
     .l100-input.form-control, .long-input.form-control {
       width: 100%;
     }
-  }  
+  }
     // use .half to create 2 column layout
     .half {
       @extend .col-md-6;
@@ -66,14 +66,14 @@
       padding-right: 15px;
       .form-control {
         width: 100%;
-      }      
+      }
     }
-  
+
 
   .l10-input.form-control, .short-input.form-control {
     width: 100px;
   }
-  
+
 }
 
 .views-exposed-form {
@@ -81,14 +81,14 @@
     background-color: $gold;
     border: none;
     color: $body_text;
-    width: 240px;   
+    width: 240px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
   }
   .form-type-select {
-    //overflow: hidden; 
-    height: 40px;    
+    //overflow: hidden;
+    height: 40px;
     width: 240px;
     position: relative;
     display: block;
@@ -98,25 +98,28 @@
     font-family: FontAwesome;
     color: #000;
     padding: 10px;
-    position: absolute; 
+    position: absolute;
     right: 0; top: 0;
     background: $gold;
     z-index: 1;
     text-align: center;
     width: 15%;
-    height: 100%;      
+    height: 100%;
     pointer-events: none;
-    box-sizing: border-box;   
+    box-sizing: border-box;
   }
 }
 // buttons
 .views-exposed-form {
   .views-exposed-widget .form-submit {
     margin-top: 1.45em;
-    height: 40px;
+    height: 43px;
   }
   .views-exposed-widget {
     padding-right: 0.5em;
+  }
+  .form-control, select.form-select {
+    height: 43px;
   }
 }
 
