@@ -1,5 +1,5 @@
 // Person full node page
-.node-type-person {    
+.node-type-person {
 
   .node-person-full {
     padding-bottom: 2rem;
@@ -8,7 +8,7 @@
   .field-name-field-person-education {
     .field-label {
       @extend .h3;
-      
+
     }
   }
   .person-title .field-item {
@@ -51,7 +51,7 @@
     @extend .h4;
     margin: 0;
   }
-  
+
   .field-name-field-person-title,
   .field-name-field-person-custom-title {
     font-family: FranklinGothicBookItalic;
@@ -67,13 +67,31 @@
 .page-people-directory {
 
   .view-faculty-staff {
-    @extend .container;
+    //@extend .container;
     .views-row {
       margin-bottom: 1rem;
       padding: 1rem;
       &.views-row-odd {
         background-color: $light_grey;
       }
+    }
+    // tabs navigation
+    .view-header {
+      @include breakpoint($screen-md-min) {
+        float: left;
+        margin-right: 2rem;
+      }
+      margin-top: 0.6rem;
+      a.primary-button {
+        margin-bottom: 0.3rem;
+        &.active {
+          background-color: darken($orange, 10%);
+        }
+      }
+
+    }
+    .views-exposed-widgets {
+      margin: 0;
     }
   }
 
@@ -84,7 +102,7 @@
     }
   }
   .views-exposed-widget .form-submit,
-  .views-submit-button, 
+  .views-submit-button,
   .views-reset-button {
     margin-top: 0;
     margin-bottom: 1rem;
