@@ -204,7 +204,7 @@
               </a>
             </li>
             <li>
-              <a href="http://www.linkedin.com/groups/University-Iowa-John-Pappajohn-Entrepreneurial-3855242/about" class="tippie-linkedin">
+              <a href="https://www.linkedin.com/school/iowajpec/" class="tippie-linkedin">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
