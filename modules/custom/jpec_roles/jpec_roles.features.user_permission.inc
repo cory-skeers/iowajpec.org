@@ -26,6 +26,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'access all webform results',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'webform',
@@ -95,6 +96,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'access own webform results',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'webform',
@@ -105,6 +107,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'access own webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'webform',
@@ -182,6 +185,8 @@ function jpec_roles_user_default_permissions() {
     'name' => 'administer nodes',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -315,7 +320,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'create card_content content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -326,7 +330,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'create competition content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -358,7 +361,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'create factoid content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -381,7 +383,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'create founders_profile content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
@@ -403,7 +404,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'create mandela_fellow content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -414,7 +414,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'create news content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -425,7 +424,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'create page content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -436,7 +434,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'create person content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -447,7 +444,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'create profile content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -458,7 +454,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'create story content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -469,6 +464,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'create url aliases',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'path',
@@ -490,6 +486,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'delete all webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'webform',
@@ -550,7 +547,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'delete any founders_profile content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
@@ -651,7 +647,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'delete own card_content content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -662,7 +657,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'delete own competition content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -694,7 +688,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'delete own factoid content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -705,7 +698,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'delete own founders_profile content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
@@ -748,7 +740,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'delete own news content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -759,7 +750,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'delete own page content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -770,7 +760,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'delete own person content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -781,7 +770,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'delete own profile content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -792,7 +780,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'delete own story content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -814,6 +801,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'delete own webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'webform',
@@ -913,6 +901,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit all webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'webform',
@@ -953,6 +942,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit any event content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -973,7 +963,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit any founders_profile content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
@@ -1067,6 +1056,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit any webform content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1099,7 +1089,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit own card_content content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1110,7 +1099,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit own competition content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1142,7 +1130,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit own factoid content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1153,7 +1140,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit own founders_profile content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'founders club editor' => 'founders club editor',
       'webmaster' => 'webmaster',
     ),
@@ -1187,7 +1173,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit own mandela_fellow content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1198,7 +1183,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit own news content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1209,7 +1193,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit own page content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1220,7 +1203,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit own person content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1231,7 +1213,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit own profile content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1242,7 +1223,6 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit own story content',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'node',
@@ -1264,6 +1244,7 @@ function jpec_roles_user_default_permissions() {
     'name' => 'edit own webform submissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
       'webmaster' => 'webmaster',
     ),
     'module' => 'webform',
