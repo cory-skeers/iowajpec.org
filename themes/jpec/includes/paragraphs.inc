@@ -10,22 +10,29 @@
  * @see : https://www.drupal.org/node/2394519
  */
 function jpec_preprocess_entity(&$variables) {
-
+  
   if ($variables['entity_type'] == 'paragraphs_item') {
 
     $wrapper = entity_metadata_wrapper('paragraphs_item', $variables['paragraphs_item']);
-
+   
     switch ($variables['elements']['#bundle']) {
+      
 
       case 'event_reference' :
         // hide the event reference paragraph if the event has expired
         $wrapper = entity_metadata_wrapper('node', $variables['field_event_reference_event'][0]['entity']);
 
-        $today = date("Y-m-d 00:00:00");
-        $event_end_date = $wrapper->field_event_date->value()['value2'];
+        // get event nid  
+        $event_nid = $wrapper->getIdentifier();
 
-        // compare the event's date with today; if before today, then hide
-        if ($event_end_date < $today ) {
+        // get event start date
+        $event_date = $wrapper->field_event_date->value()['value'];
+
+        $event_deadline = $variables['elements']['field_event_reference_event'][0]['node'][$event_nid]['field_event_deadline']['#items'][0]['value'];
+        $today = date("Y-m-d 00:00:00");
+       
+        // compare the event's date and deadline with today; if before today, then hide
+        if ($event_deadline < $today || $event_date < $today) {
           $variables['classes_array'][] = 'hidden';
         }
 
