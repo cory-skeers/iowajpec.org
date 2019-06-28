@@ -209,7 +209,16 @@
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
                 </span>
-                <span class="social-media-platform">LinkedId</span>
+                <span class="social-media-platform">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/iowajpec/" class="tippie-instagram">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="social-media-platform">Instagram</span>
               </a>
             </li>
           </ul>
